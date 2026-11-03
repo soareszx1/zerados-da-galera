@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793744568,
+ "atualizadoEm": 1793748090,
  "jogos": {
   "aionii": {
    "appid": 3393110,
@@ -173,7 +173,7 @@
    "v": 4
   },
   "dirtiii": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
    "v": 4,
@@ -234,21 +234,21 @@
    "v": 4
   },
   "forzahorizonii": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
    "v": 4,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
    "v": 4,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
    "v": 4,
@@ -273,14 +273,14 @@
    "v": 4
   },
   "forzamotorsportiv": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
    "v": 4,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
    "v": 4,
@@ -386,14 +386,14 @@
    "v": 4
   },
   "granturismoiv": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
    "v": 4,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1793744568,
+   "em": 1793748090,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
    "v": 4,
@@ -426,6 +426,15 @@
    "titulo": "Halo: The Master Chief Collection",
    "v": 4
   },
+  "hifirush": {
+   "appid": 1817230,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Hi-Fi RUSH",
+   "slug": "hi-fi-rush",
+   "titulo": "Hi-Fi Rush",
+   "v": 4
+  },
   "hollowknightsilksong": {
    "appid": 1030300,
    "em": 1793733903,
@@ -442,6 +451,24 @@
    "nome": "Horizon Forbidden West™ - Edição Completa",
    "slug": "horizon-forbidden-west",
    "titulo": "Horizon Forbidden West",
+   "v": 4
+  },
+  "infamoussecondson": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Infamous Second Son",
+   "slug": "infamous-second-son",
+   "titulo": "Infamous Second Son",
+   "v": 4
+  },
+  "lastofus": {
+   "appid": 1888930,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "The Last of Us™ Part I",
+   "slug": "the-last-of-us",
+   "titulo": "The Last of Us",
    "v": 4
   },
   "legendofzeldatearsofthekingdom": {
@@ -462,6 +489,87 @@
    "titulo": "Mafia II",
    "v": 4
   },
+  "marvelsspiderman": {
+   "appid": 2651280,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Marvel's Spider-Man 2",
+   "slug": "marvel-s-spider-man",
+   "titulo": "Marvel's Spider-Man",
+   "v": 4
+  },
+  "marvelsspidermanii": {
+   "appid": 2651280,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Marvel's Spider-Man 2",
+   "slug": "marvel-s-spider-man-2",
+   "titulo": "Marvel's Spider-Man 2",
+   "v": 4
+  },
+  "metalgearsoliddeltasnakeeater": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Metal Gear Solid Delta: Snake Eater",
+   "slug": "metal-gear-solid-delta-snake-eater",
+   "titulo": "Metal Gear Solid Delta: Snake Eater",
+   "v": 4
+  },
+  "midnightclubiiidubedition": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Midnight Club 3: Dub Edition",
+   "slug": "midnight-club-3-dub-edition",
+   "titulo": "Midnight Club 3: Dub Edition",
+   "v": 4
+  },
+  "needforspeed": {
+   "appid": 1262540,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Need for Speed™ ",
+   "slug": "need-for-speed",
+   "titulo": "Need for Speed",
+   "v": 4
+  },
+  "needforspeedhotpursuit": {
+   "appid": 1328660,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Need for Speed™ Hot Pursuit Remastered",
+   "slug": "need-for-speed-hot-pursuit",
+   "titulo": "Need for Speed: Hot Pursuit",
+   "v": 4
+  },
+  "needforspeedmostwanted": {
+   "appid": 1262560,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Need for Speed™ Most Wanted",
+   "slug": "need-for-speed-most-wanted",
+   "titulo": "Need for Speed: Most Wanted",
+   "v": 4
+  },
+  "needforspeedtherun": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Need for Speed: The Run",
+   "slug": "need-for-speed-the-run",
+   "titulo": "Need for Speed: The Run",
+   "v": 4
+  },
+  "needforspeedunbound": {
+   "appid": 1846380,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Need for Speed™ Unbound",
+   "slug": "need-for-speed-unbound",
+   "titulo": "Need for Speed Unbound",
+   "v": 4
+  },
   "phantombladezero": {
    "appid": 4115450,
    "em": 1793733903,
@@ -469,6 +577,15 @@
    "nome": "Phantom Blade Zero",
    "slug": "phantom-blade-zero",
    "titulo": "Phantom Blade Zero",
+   "v": 4
+  },
+  "pokemonemerald": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Pokémon Emerald",
+   "slug": "pokemon-emerald",
+   "titulo": "Pokémon Emerald",
    "v": 4
   },
   "pokemonfirered": {
@@ -487,6 +604,105 @@
    "nome": "Pokémon Legends: Arceus",
    "slug": "pokemon-legends-arceus",
    "titulo": "Pokémon Legends: Arceus",
+   "v": 4
+  },
+  "pokemonletsgopikachuandletsgoeevee": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+   "slug": "pokemon-let-s-go-pikachu-and-let-s-go-eevee",
+   "titulo": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+   "v": 4
+  },
+  "pokemonswordandshield": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Pokémon Sword and Shield",
+   "slug": "pokemon-sword-and-shield",
+   "titulo": "Pokémon Sword and Shield",
+   "v": 4
+  },
+  "reddeadredemption": {
+   "appid": 2668510,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Red Dead Redemption",
+   "slug": "red-dead-redemption",
+   "titulo": "Red Dead Redemption",
+   "v": 4
+  },
+  "reddeadredemptionii": {
+   "appid": 1174180,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Red Dead Redemption 2",
+   "slug": "red-dead-redemption-2",
+   "titulo": "Red Dead Redemption 2",
+   "v": 4
+  },
+  "residenteviliv": {
+   "appid": 2050650,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Resident Evil 4",
+   "slug": "resident-evil-4",
+   "titulo": "Resident Evil 4",
+   "v": 4
+  },
+  "residentevilrequiem": {
+   "appid": 3764200,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Resident Evil Requiem",
+   "slug": "resident-evil-requiem",
+   "titulo": "Resident Evil Requiem",
+   "v": 4
+  },
+  "residentevilvillage": {
+   "appid": 1196590,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Resident Evil Village",
+   "slug": "resident-evil-village",
+   "titulo": "Resident Evil Village",
+   "v": 4
+  },
+  "saintsrowii": {
+   "appid": 9480,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Saints Row 2",
+   "slug": "saints-row-2",
+   "titulo": "Saints Row 2",
+   "v": 4
+  },
+  "saintsrowthethird": {
+   "appid": 55230,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Saints Row: The Third",
+   "slug": "saints-row-the-third",
+   "titulo": "Saints Row: The Third",
+   "v": 4
+  },
+  "shadowofthecolossus": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Shadow of the Colossus",
+   "slug": "shadow-of-the-colossus",
+   "titulo": "Shadow of the Colossus",
+   "v": 4
+  },
+  "shiftiiunleashed": {
+   "appid": 47920,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Shift 2 Unleashed",
+   "slug": "shift-2-unleashed",
+   "titulo": "Shift 2: Unleashed",
    "v": 4
   },
   "silverpines": {
@@ -516,6 +732,15 @@
    "titulo": "Stellar Blade",
    "v": 4
   },
+  "streetfightervi": {
+   "appid": 1364780,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Street Fighter™ 6",
+   "slug": "street-fighter-6",
+   "titulo": "Street Fighter 6",
+   "v": 4
+  },
   "supermariobroswonder": {
    "appid": null,
    "em": 1793733903,
@@ -523,6 +748,49 @@
    "nome": "Super Mario Bros. Wonder",
    "slug": "super-mario-bros-wonder",
    "titulo": "Super Mario Bros. Wonder",
+   "v": 4
+  },
+  "supermarioworld": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Super Mario World",
+   "slug": "super-mario-world",
+   "titulo": "Super Mario World",
+   "v": 4
+  },
+  "tekkenviii": {
+   "appid": 1778820,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "TEKKEN 8",
+   "slug": "tekken-8",
+   "titulo": "Tekken 8",
+   "v": 4
+  },
+  "tokyoxtremeracer": {
+   "appid": 2634950,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Tokyo Xtreme Racer",
+   "slug": "tokyo-xtreme-racer",
+   "titulo": "Tokyo Xtreme Racer",
+   "v": 4
+  },
+  "tokyoxtremeraceriii": {
+   "em": 1793748090,
+   "slug": "tokyo-xtreme-racer-3",
+   "titulo": "Tokyo Xtreme Racer 3",
+   "v": 4,
+   "vazio": true
+  },
+  "unchartedivathiefsend": {
+   "appid": null,
+   "em": 1793748090,
+   "emBreve": false,
+   "nome": "Uncharted 4: A Thief's End",
+   "slug": "uncharted-4-a-thief-s-end",
+   "titulo": "Uncharted 4: A Thief's End",
    "v": 4
   },
   "zeldaocarinaoftime": {

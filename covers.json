@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793744523,
+ "atualizadoEm": 1793748075,
  "capas": {
   "aionii": "covers/aionii.jpg",
   "alanwakeii": "covers/alanwakeii.jpg",
@@ -76,10 +76,20 @@
   "residenteviliv": "covers/residenteviliv.jpg",
   "residentevilrequiem": "covers/residentevilrequiem.jpg",
   "residentevilvillage": "covers/residentevilvillage.jpg",
+  "saintsrowii": "covers/saintsrowii.jpg",
+  "saintsrowthethird": "covers/saintsrowthethird.jpg",
+  "shadowofthecolossus": "covers/shadowofthecolossus.jpg",
+  "shiftiiunleashed": "covers/shiftiiunleashed.jpg",
   "silverpines": "covers/silverpines.jpg",
   "sonicpicopark": "covers/sonicpicopark.jpg",
   "stellarblade": "covers/stellarblade.jpg",
+  "streetfightervi": "covers/streetfightervi.jpg",
   "supermariobroswonder": "covers/supermariobroswonder.jpg",
+  "supermarioworld": "covers/supermarioworld.jpg",
+  "tekkenviii": "covers/tekkenviii.jpg",
+  "tokyoxtremeracer": "covers/tokyoxtremeracer.jpg",
+  "tokyoxtremeraceriii": "covers/tokyoxtremeraceriii.jpg",
+  "unchartedivathiefsend": "covers/unchartedivathiefsend.jpg",
   "zeldaocarinaoftime": "covers/zeldaocarinaoftime.jpg"
  },
  "falhas": {
