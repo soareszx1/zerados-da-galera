@@ -65,7 +65,9 @@ function mediaSrc(path,ver){
 function mimg(path,ver,cls,alt){if(!ver||S.mode!=="live")return "";const src=mediaSrc(path,ver);return `<img class="${cls}" data-m="${esc(mkey(path,ver))}" ${src?`src="${src}"`:""} alt="${esc(alt||"")}">`}
 const extImg = u => (typeof u==="string"&&/^https:\/\/(upload\.wikimedia\.org|thumb\.wikimedia\.org|media\.rawg\.io)\//.test(u))?u:"";
 const localCover = t => {const f=S.covers&&typeof ckey==="function"?S.covers[ckey(t)]:"";return typeof f==="string"&&/^covers\/[a-z0-9]+\.(jpg|png)$/.test(f)?f:""};
-const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const ext=!up&&(loc||extImg(g.coverUrl))?`<img class="cimg" src="${esc(loc||g.coverUrl)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:"";return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
+const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const src=loc||extImg(g.coverUrl);
+  const ext=!up&&src?`<img class="cbg" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><img class="cimg" src="${esc(src)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.querySelectorAll('img').forEach(i=>i.remove())">`:"";
+  return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
 const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
 function fileToImg(file,max,limit,crop){
   return new Promise((res,rej)=>{

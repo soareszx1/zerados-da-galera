@@ -613,3 +613,20 @@ button.key{cursor:pointer}
 .pick button[class*="s-"],.pick button[class*="t-"]{color:var(--on-pill);border-color:var(--line)}
 .pick button.t-N{color:var(--ink)}
 .pick button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--accent);transform:translateY(-1px)}
+
+/* v5: capas inteiras (sem cortar o título do jogo) sobre um fundo desfocado da própria capa */
+.cover .cbg{position:absolute;inset:-14%;width:128%;height:128%;max-width:none;object-fit:cover;filter:blur(18px) saturate(1.35) brightness(.55);z-index:0;pointer-events:none}
+.cover .cbg:not([src]){display:none}
+.cover .cimg{object-fit:contain;padding:10px;box-sizing:border-box;filter:drop-shadow(0 8px 14px rgba(0,0,0,.55))}
+.cover:has(.cimg[src])::before{display:none}
+/* capas pequenas e em pé: preenchem a caixa */
+.cover.mini .cbg,.pl .cover .cbg,.ghero .cover .cbg,.sc .cover .cbg,.fhero .cover .cbg,.tipcard .cover .cbg{display:none}
+.cover.mini .cimg,.pl .cover .cimg,.ghero .cover .cimg,.sc .cover .cimg,.fhero .cover .cimg,.tipcard .cover .cimg{object-fit:cover;padding:0;filter:none}
+.cover.mini{border-radius:8px;box-shadow:2px 2px 0 var(--shade)}
+.citem .cover.mini{width:44px;height:58px}
+.rec-item .cover.mini{width:42px;height:56px}
+.evrow .cover.mini{width:44px;height:58px}
+.cover:not(.mini) .cimg{transition:transform .25s ease}
+.card:hover .cover:not(.mini) .cimg,.scard:hover .cover .cimg{transform:scale(1.04)}
+@media (prefers-reduced-motion:reduce){.cover .cimg{transition:none}.card:hover .cover .cimg,.scard:hover .cover .cimg{transform:none}}
+.scard .cover{aspect-ratio:16/10}
