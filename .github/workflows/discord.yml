@@ -33,6 +33,7 @@ jobs:
           DISCORD_WEBHOOK_NEWS: ${{ secrets.DISCORD_WEBHOOK_NEWS }}
           DISCORD_WEBHOOK_AVISOS: ${{ secrets.DISCORD_WEBHOOK_AVISOS }}
           DISCORD_WEBHOOK_TIER: ${{ secrets.DISCORD_WEBHOOK_TIER }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: python scripts/discord_bot.py
       - name: Guardar memória do bot
         if: always()
