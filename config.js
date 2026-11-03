@@ -12,7 +12,7 @@ window.ZG_CONFIG = {
   },
   // Seu ID de usuário (aparece em Editar perfil → Sua conta, depois do primeiro login).
   // Ele te dá o Painel do dono: cargos, desafio do mês, clube do jogo, Discord e denúncias.
-  ownerUid: "",
+  ownerUid: "oUTn47prdthl6ErYE4jKdM7EMHn2",
   // Chave gratuita do RAWG (rawg.io/apidocs) para nomes e capas automáticas.
   rawgKey: ""
 };
