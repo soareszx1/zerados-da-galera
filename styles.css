@@ -668,3 +668,10 @@ button.key{cursor:pointer}
 .libgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:8px}
 .libin{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 8px;border:1.5px solid color-mix(in oklab,var(--line) 60%,transparent);border-radius:10px;font-size:13px;font-weight:600}
 .libin input{width:72px;text-align:right}
+
+/* v8: logo ZG */
+.logo a{display:inline-flex;align-items:center;gap:clamp(10px,2vw,16px)}
+.logomark{width:clamp(54px,9vw,84px);height:auto;aspect-ratio:1;border-radius:50%;flex:none;filter:drop-shadow(0 0 14px color-mix(in oklab,var(--accent) 45%,transparent));transition:transform .3s ease}
+.logo a:hover .logomark{transform:rotate(-8deg) scale(1.05)}
+.logo .logotext{display:block;color:inherit;transform:none}
+@media (prefers-reduced-motion:reduce){.logomark{transition:none}.logo a:hover .logomark{transform:none}}

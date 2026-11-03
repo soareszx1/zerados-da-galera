@@ -608,7 +608,7 @@ function openProfile(){
       <div class="field"><label for="p-mood">Status</label><input id="p-mood" maxlength="60" value="${esc(m?.mood||"")}" placeholder="Ex.: tentando passar do chefe final"></div>
       <div class="field full"><label for="p-bio">Sobre mim</label><textarea id="p-bio" maxlength="300" placeholder="Que tipo de jogo você curte, horários que costuma jogar…">${esc(m?.bio||"")}</textarea></div>
       ${myG.length?`<div class="field full"><span class="flabel">Vitrine: até 3 jogos favoritos no perfil</span>${pickRow("show",myG.map(([gid,g])=>({v:gid,l:esc(g.title)})),M.show)}</div>`:""}
-      <div class="field"><label for="p-discord">Usuário do Discord</label><input id="p-discord" maxlength="40" value="${esc(m?.discord||"")}" placeholder="Ex.: soarezx"></div>
+      <div class="field"><label for="p-discord">Usuário do Discord</label><input id="p-discord" maxlength="40" value="${esc(m?.discord||"")}" placeholder="Ex.: soarezx"><span class="hint">Seu <b>nome de usuário</b> do Discord (não o apelido). Com ele, você recebe no servidor os mesmos cargos do site.</span></div>
       <div class="field"><label for="p-steam">Perfil da Steam (opcional)</label><input id="p-steam" maxlength="120" value="${esc(steamLink(m?.steam)||"")}" placeholder="https://steamcommunity.com/id/seu-nome"><span class="hint">Para importar seus jogos e atualizar as horas sozinho.</span></div>
       <div class="field"><label for="p-goal">Meta de zerados em ${YEAR}</label><input id="p-goal" type="number" min="0" max="365" value="${m?.goal||""}" placeholder="Ex.: 12"></div>
       <div class="field full"><span class="flabel">Plataformas que você joga</span>${pickRow("plats",PLATFORMS.map(x=>({v:x,l:esc(x)})),M.plats)}</div>
