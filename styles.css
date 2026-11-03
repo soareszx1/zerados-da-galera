@@ -605,3 +605,11 @@ button.key{cursor:pointer}
 .popt.on{outline:3px solid var(--accent);outline-offset:1px}
 .popt:disabled{cursor:default}
 @media (max-width:860px){.fgrid2{grid-template-columns:1fr}.fhero{grid-template-columns:84px minmax(0,1fr)}}
+
+/* v4: botões de status e tier com cor e texto legível (a regra .pick button estava apagando a cor) */
+.pick button.s-jogando{background:var(--st-play)}.pick button.s-zerado{background:var(--st-done)}.pick button.s-platinado{background:var(--st-plat)}
+.pick button.s-pausado{background:var(--st-pause)}.pick button.s-dropado{background:var(--st-drop)}.pick button.s-quero{background:var(--st-queue)}
+.pick button.t-S{background:var(--tS)}.pick button.t-A{background:var(--tA)}.pick button.t-B{background:var(--tB)}.pick button.t-C{background:var(--tC)}.pick button.t-D{background:var(--tD)}.pick button.t-N{background:var(--tN)}
+.pick button[class*="s-"],.pick button[class*="t-"]{color:var(--on-pill);border-color:var(--line)}
+.pick button.t-N{color:var(--ink)}
+.pick button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--accent);transform:translateY(-1px)}
