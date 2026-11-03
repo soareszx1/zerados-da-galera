@@ -25,7 +25,7 @@ INDICE = "info.json"
 MAX_POR_VEZ = 40
 VALIDADE_DIAS = 7          # jogos já lançados: atualiza a cada 7 dias
 VALIDADE_EM_BREVE = 1      # jogos que ainda vão sair: todo dia (data muda, saem novidades)
-VERSAO = 3                 # mudou o jeito de montar a ficha: refaz todas
+VERSAO = 4                 # mudou o jeito de montar a ficha: refaz todas
 
 
 def slug(t):
@@ -115,7 +115,14 @@ def steam(titulo):
     rel = d.get("release_date") or {}
     avaliacao = {}
     try:
-        q = baixar(f"https://store.steampowered.com/appreviews/{appid}?json=1&language=all&purchase_type=all&num_per_page=0&filter=summary&l=brazilian").get("query_summary", {})
+        q = {}
+        for extra in ("&num_per_page=1", "&num_per_page=1&filter=all&review_type=all"):
+            try:
+                q = baixar(f"https://store.steampowered.com/appreviews/{appid}?json=1&language=all&purchase_type=all" + extra).get("query_summary", {})
+            except ValueError:
+                q = {}
+            if q.get("total_reviews"):
+                break
         tot = q.get("total_reviews") or 0
         if tot:
             avaliacao = {"texto": q.get("review_score_desc", ""), "pct": round(100 * (q.get("total_positive") or 0) / tot), "total": tot}
@@ -130,7 +137,7 @@ def steam(titulo):
         "generos": [g.get("description") for g in (d.get("genres") or [])][:6],
         "plataformasSteam": plats,
         "nota": (d.get("metacritic") or {}).get("score"),
-        "avaliacaoSteam": avaliacao,
+        "avaliacaoSteam": avaliacao or ({"recomendacoes": (d.get("recommendations") or {}).get("total")} if (d.get("recommendations") or {}).get("total") else {}),
         "preco": (d.get("price_overview") or {}).get("final_formatted") or ("Gratuito" if d.get("is_free") else ""),
         "banner": d.get("header_image") or "",
         "fundo": d.get("background_raw") or d.get("background") or "",
