@@ -65,7 +65,7 @@ function mediaSrc(path,ver){
 function mimg(path,ver,cls,alt){if(!ver||S.mode!=="live")return "";const src=mediaSrc(path,ver);return `<img class="${cls}" data-m="${esc(mkey(path,ver))}" ${src?`src="${src}"`:""} alt="${esc(alt||"")}">`}
 const extImg = u => (typeof u==="string"&&/^https:\/\/(upload\.wikimedia\.org|thumb\.wikimedia\.org|media\.rawg\.io)\//.test(u))?u:"";
 const localCover = t => {const f=S.covers&&typeof ckey==="function"?S.covers[ckey(t)]:"";return typeof f==="string"&&/^covers\/[a-z0-9]+\.(jpg|png)$/.test(f)?f:""};
-const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const src=loc||extImg(g.coverUrl);
+const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const src=loc||(typeof steamCover==="function"&&g.steamApp?steamCover(g.steamApp):"")||extImg(g.coverUrl);
   const ext=!up&&src?`<img class="cbg" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><img class="cimg" src="${esc(src)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.querySelectorAll('img').forEach(i=>i.remove())">`:"";
   return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
 const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
@@ -606,6 +606,7 @@ function openProfile(){
       <div class="field full"><label for="p-bio">Sobre mim</label><textarea id="p-bio" maxlength="300" placeholder="Que tipo de jogo você curte, horários que costuma jogar…">${esc(m?.bio||"")}</textarea></div>
       ${myG.length?`<div class="field full"><span class="flabel">Vitrine: até 3 jogos favoritos no perfil</span>${pickRow("show",myG.map(([gid,g])=>({v:gid,l:esc(g.title)})),M.show)}</div>`:""}
       <div class="field"><label for="p-discord">Usuário do Discord</label><input id="p-discord" maxlength="40" value="${esc(m?.discord||"")}" placeholder="Ex.: soarezx"></div>
+      <div class="field"><label for="p-steam">Perfil da Steam (opcional)</label><input id="p-steam" maxlength="120" value="${esc(steamLink(m?.steam)||"")}" placeholder="https://steamcommunity.com/id/seu-nome"><span class="hint">Para importar seus jogos e atualizar as horas sozinho.</span></div>
       <div class="field"><label for="p-goal">Meta de zerados em ${YEAR}</label><input id="p-goal" type="number" min="0" max="365" value="${m?.goal||""}" placeholder="Ex.: 12"></div>
       <div class="field full"><span class="flabel">Plataformas que você joga</span>${pickRow("plats",PLATFORMS.map(x=>({v:x,l:esc(x)})),M.plats)}</div>
       <div class="field"><label for="p-fav">Jogo favorito da vida</label><input id="p-fav" maxlength="60" value="${esc(m?.fav||"")}" placeholder="Ex.: The Witcher 3"></div>
@@ -951,10 +952,15 @@ function viewTier(){
   if(!S.tierWho)S.tierWho=mid&&P[mid]?mid:"galera";
   if(S.tierWho!=="galera"&&S.tierWho!=="mes"&&!P[S.tierWho])S.tierWho="galera";
   const ids=Object.keys(P).sort((a,b)=>a===mid?-1:b===mid?1:P[a].nick.localeCompare(P[b].nick,"pt"));
+  const fr=new Set(mid&&P[mid]&&typeof friendsOf==="function"?Object.keys(friendsOf(P[mid])):[]);
+  const others=ids.filter(id=>id!==mid);const amigos=others.filter(id=>fr.has(id)),resto=others.filter(id=>!fr.has(id));
+  const other=S.tierWho!=="mes"&&S.tierWho!=="galera"&&S.tierWho!==mid?P[S.tierWho]:null;
+  const opt=id=>`<option value="${esc(id)}" ${S.tierWho===id?"selected":""}>${esc(P[id].nick)}</option>`;
   const tabs=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
     <button data-act="tierwho" data-id="mes" aria-pressed="${S.tierWho==="mes"}">Do mês</button>
-    ${ids.map(id=>`<button data-act="tierwho" data-id="${esc(id)}" aria-pressed="${S.tierWho===id}">${glyph(P[id],true)} ${id===mid?"Minha":esc(P[id].nick)}</button>`).join("")}
-    <button data-act="tierwho" data-id="galera" aria-pressed="${S.tierWho==="galera"}">Galera toda</button></div>`;
+    ${mid&&P[mid]?`<button data-act="tierwho" data-id="${esc(mid)}" aria-pressed="${S.tierWho===mid}">${glyph(P[mid],true)} Minha</button>`:""}
+    <button data-act="tierwho" data-id="galera" aria-pressed="${S.tierWho==="galera"}">Galera toda</button>
+    ${others.length?`<label class="whosel${other?" on":""}">${other?glyph(other,true):""}<span class="sr-only">Ver a tier list de outra pessoa</span><select id="tierwho-sel"><option value="">${other?"Trocar pessoa…":`De outra pessoa (${others.length})…`}</option>${amigos.length?`<optgroup label="Amigos">${amigos.map(opt).join("")}</optgroup><optgroup label="Galera">${resto.map(opt).join("")}</optgroup>`:resto.map(opt).join("")}</select></label>`:""}</div>`;
   if(S.tierWho==="mes")return tabs+viewTierMes();
   const L=filtered().filter(g=>S.tierWho==="galera"||g.pid===S.tierWho);
   const who=S.tierWho==="galera"?null:P[S.tierWho];
@@ -1083,6 +1089,7 @@ function openNews(){
 }
 
 /* ---------- cliques das novidades e tier lists ---------- */
+document.addEventListener("change",e=>{if(e.target.id==="tierwho-sel"&&e.target.value){S.tierWho=e.target.value;renderView()}});
 document.addEventListener("click",async e=>{
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
   if(a==="tierwho"){S.tierWho=el.dataset.id;renderView();return}
@@ -1175,7 +1182,7 @@ function viewSaves(){
   const m=me();
   if(!m)return emptyBox("▶","Seus saves ficam aqui",S.mode==="live"&&!S.myId?"Entre para guardar onde parou em cada jogo, anotar a história, montar a cola de controles e marcar o que falta.":"Crie seu perfil e adicione um jogo para começar.",S.mode==="live"&&!S.myId?`<div class="actions"><button class="btn primary" data-act="auth" data-m="criar">Criar conta</button><button class="btn" data-act="auth" data-m="entrar">Entrar</button></div>`:"");
   const L=myGamesSorted();const ativos=L.filter(g=>["jogando","pausado"].includes(g.status));const resto=L.filter(g=>!["jogando","pausado"].includes(g.status));
-  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Meus Saves</span><h3>Onde você parou em cada jogo</h3><span class="hint">Abra a ficha quando for voltar a jogar: onde parou, história, controles, pendências e guias.</span></div>${S.canWrite?`<button class="btn primary small" data-act="add">+ Jogo</button>`:""}</div>
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Meus Saves</span><h3>Onde você parou em cada jogo</h3><span class="hint">Abra a ficha quando for voltar a jogar: onde parou, história, controles, pendências e guias.</span></div>${S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="steam">Importar da Steam</button><button class="btn primary small" data-act="add">+ Jogo</button></div>`:""}</div>
     ${ativos.length?`<section class="sec"><h4>Jogando agora (${ativos.length})</h4><div class="sgrid">${ativos.map(saveCard).join("")}</div></section>`:""}
     ${resto.length?`<section class="sec"><h4>Outros jogos (${resto.length})</h4><div class="sgrid">${resto.map(saveCard).join("")}</div></section>`:""}
     ${!L.length?emptyBox("+","Nenhum jogo ainda","Adicione o jogo que está jogando para criar o primeiro save."):""}</div>`;
@@ -1489,6 +1496,115 @@ async function fillCovers(all){if(fillBusy||!S.canWrite||!S.myId)return{done:0,m
     }}finally{fillBusy=false}
   return{done,miss,fail}}
 
+/* ---------- Steam: importar biblioteca e atualizar horas ---------- */
+// O robô do GitHub (scripts/steam.py) lê a biblioteca de quem colocou o perfil da Steam
+// e salva em steam/<id do jogador>.json. O site só lê esse arquivo.
+function parseSteam(v){
+  v=String(v||"").trim();if(!v)return "";
+  let m=/steamcommunity\.com\/profiles\/(\d{17})/i.exec(v);if(m)return m[1];
+  m=/steamcommunity\.com\/id\/([A-Za-z0-9_-]{2,32})/i.exec(v);if(m)return "vanity:"+m[1];
+  if(/^\d{17}$/.test(v))return v;
+  if(/^[A-Za-z0-9_-]{2,32}$/.test(v))return "vanity:"+v;
+  return null;
+}
+const steamLink = s => !s?"":/^\d{17}$/.test(s)?`https://steamcommunity.com/profiles/${s}`:s.startsWith("vanity:")?`https://steamcommunity.com/id/${encodeURIComponent(s.slice(7))}`:"";
+const steamCover = id => /^\d{1,9}$/.test(String(id||""))?`https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/${id}/library_600x900.jpg`:"";
+const steamMemo={};
+async function loadSteam(pid,force){
+  if(!pid||!/^[A-Za-z0-9]{10,40}$/.test(pid))return null;
+  if(!force&&steamMemo[pid]!==undefined)return steamMemo[pid];
+  try{const r=await fetch(`steam/${pid}.json?t=${Math.floor(Date.now()/300000)}`,{cache:"no-store"});steamMemo[pid]=r.ok?await r.json():null}catch{steamMemo[pid]=null}
+  return steamMemo[pid];
+}
+const hrs = min => Math.round((Number(min)||0)/6)/10;
+function steamOwnedKeys(){const m=me()||{};const keys=new Set(),apps=new Set();for(const g of Object.values(m.games||{})){keys.add(norm(g.title));if(g.steamApp)apps.add(Number(g.steamApp))}return {keys,apps}}
+
+async function openSteam(){
+  const m=me();if(!m||!S.canWrite){toast("Crie seu perfil primeiro");return}
+  M={type:"steam",data:null,sel:{},q:"",st:"auto",loading:true};drawSteam();
+  if(m.steam){M.data=await loadSteam(S.myId,true)}
+  if(M?.type!=="steam")return;M.loading=false;drawSteam();
+}
+function drawSteam(){
+  const m=me()||{};const d=M.data;
+  let body="";
+  const linkForm=`<div class="field"><label for="st-link">Link do seu perfil da Steam</label><input id="st-link" maxlength="120" value="${esc(steamLink(m.steam)||"")}" placeholder="https://steamcommunity.com/id/seu-nome"><span class="hint">Na Steam: clique no seu nome → Perfil → copie o endereço da página.</span></div>
+    <div class="actions" style="justify-content:flex-start"><button class="btn primary small" data-act="stlink">Salvar link</button>${m.steam?`<button class="btn small" data-act="stunlink">Desconectar Steam</button>`:""}</div>`;
+  const privHelp=`<ol class="hint" style="margin:6px 0 0;padding-left:18px"><li>Na Steam, abra seu perfil → <b>Editar perfil</b> → <b>Privacidade</b>.</li><li>Deixe <b>Meu perfil</b> e <b>Detalhes dos jogos</b> como <b>Público</b>.</li><li>Desmarque "Sempre manter meu tempo de jogo total privado".</li></ol>`;
+  if(M.loading)body=`<p class="hint">Carregando sua biblioteca…</p>`;
+  else if(!m.steam)body=`<p style="margin:0 0 10px">Conecte sua Steam para trazer seus jogos com as <b>horas já preenchidas</b>. Depois, as horas se atualizam sozinhas.</p>${linkForm}<p class="hint" style="margin-top:12px">Sua biblioteca precisa estar pública:</p>${privHelp}`;
+  else if(!d)body=`<p style="margin:0 0 10px"><b>Steam conectada.</b> O robô do site lê as bibliotecas de hora em hora. Volte aqui em até 1 hora para escolher os jogos.</p>${linkForm}<p class="hint" style="margin-top:12px">Enquanto isso, confira se sua biblioteca está pública:</p>${privHelp}`;
+  else if(d.erro==="perfil")body=`<p style="margin:0 0 10px">Não achei esse perfil na Steam. Confira o link.</p>${linkForm}`;
+  else if(d.privado||!(d.jogos||[]).length)body=`<p style="margin:0 0 10px">Achei seu perfil${d.nome?` (<b>${esc(d.nome)}</b>)`:""}, mas a <b>biblioteca está privada</b>. Deixe pública e espere o robô passar de novo (até 1 hora).</p>${privHelp}<div style="margin-top:12px">${linkForm}</div>`;
+  else{
+    const {keys,apps}=steamOwnedKeys();const q=norm(M.q);
+    const L=d.jogos.filter(j=>!q||norm(j.nome).includes(q));
+    const has=j=>apps.has(Number(j.appid))||keys.has(norm(j.nome));
+    const nSel=Object.values(M.sel).filter(Boolean).length;
+    body=`<p class="hint" style="margin:0 0 8px">Perfil <b>${esc(d.nome||"")}</b> · ${d.jogos.length} jogos · lido ${esc(quando(d.atualizadoEm*1000))}</p>
+      <div class="fgrid"><div class="field"><label for="st-q">Procurar</label><input id="st-q" value="${esc(M.q)}" placeholder="Nome do jogo"></div>
+      <div class="field"><label for="st-st">Entram como</label><select id="st-st">${[["auto","Automático (jogados na semana = Jogando)"],["jogando","Jogando"],["zerado","Zerado"],["pausado","Pausado"],["quero","Na fila"]].map(([v,l])=>`<option value="${v}" ${M.st===v?"selected":""}>${l}</option>`).join("")}</select></div></div>
+      <div class="actions" style="justify-content:flex-start;margin:4px 0 8px"><button class="btn small" data-act="stselrecent">Marcar os jogados recentemente</button><button class="btn small" data-act="stselnone">Limpar seleção</button></div>
+      <div class="stlist">${L.slice(0,300).map(j=>{const ja=has(j);return `<label class="strow${ja?" ja":""}"><img src="${esc(steamCover(j.appid))}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><span class="stn"><b>${esc(j.nome)}</b><span>${hrs(j.min)} h${j.min2w?` · <em>${hrs(j.min2w)} h nas últimas 2 semanas</em>`:""}</span></span>${ja?`<span class="chip">Já está na lista</span>`:`<input type="checkbox" data-stapp="${esc(j.appid)}" ${M.sel[j.appid]?"checked":""} aria-label="Importar ${esc(j.nome)}">`}</label>`}).join("")||`<p class="hint">Nenhum jogo com esse nome.</p>`}</div>
+      ${L.length>300?`<p class="hint">Mostrando 300 de ${L.length}. Use a busca.</p>`:""}
+      <div class="actions"><button class="btn" data-act="close">Fechar</button><button class="btn primary" data-act="stimport" ${nSel?"":"disabled"}>Importar ${nSel||""} jogo${nSel===1?"":"s"}</button></div>
+      <details style="margin-top:10px"><summary class="hint">Trocar ou desconectar a Steam</summary>${linkForm}</details>`;
+  }
+  const keepQ=document.activeElement?.id==="st-q";
+  $("#modal").innerHTML=overlay(`<h2>Importar da Steam</h2>${body}${(!d||d.privado||d.erro)&&!M.loading?`<div class="actions"><button class="btn" data-act="close">Fechar</button></div>`:""}<p class="err" id="sterr" role="alert"></p>`,"steambox");
+  if(keepQ){const i=$("#st-q");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}}
+}
+function stStatus(j){if(M.st!=="auto")return M.st;if(j.min2w)return "jogando";if(!j.min)return "quero";return "pausado"}
+async function importSteam(){
+  const d=M.data;const {keys,apps}=steamOwnedKeys();
+  const pick=d.jogos.filter(j=>M.sel[j.appid]&&!apps.has(Number(j.appid))&&!keys.has(norm(j.nome)));
+  if(!pick.length)return;
+  await saveMe(p=>{p.games=p.games||{};pick.forEach((j,i)=>{const st=stStatus(j);
+    p.games[newId("g")]={title:String(j.nome).slice(0,80),status:st,platform:"PC",year:isDone({status:st})?YEAR:null,fase:"",progress:st==="zerado"?100:0,hours:Math.round((j.min||0)/60),nota:null,tier:"",comment:"",rec:false,steamApp:Number(j.appid),updatedAt:(j.ult?j.ult*1000:Date.now()-i)}})});
+  closeModal();toast(`${pick.length} jogo${pick.length>1?"s":""} importado${pick.length>1?"s":""} da Steam`);
+}
+let steamSynced=false;
+async function syncSteam(){
+  const m=me();if(steamSynced||!m||!m.steam||!S.canWrite)return;steamSynced=true;
+  const d=await loadSteam(S.myId);if(!d||!Array.isArray(d.jogos))return;
+  const byApp=new Map(d.jogos.map(j=>[Number(j.appid),j]));const byName=new Map(d.jogos.map(j=>[norm(j.nome),j]));
+  const up={};
+  for(const [gid,g] of Object.entries(m.games||{})){
+    if(g.platform&&!["PC","Steam Deck"].includes(g.platform))continue;
+    const j=(g.steamApp&&byApp.get(Number(g.steamApp)))||byName.get(norm(g.title));if(!j)continue;
+    const h=Math.round((j.min||0)/60);const ch={};
+    if(h>(Number(g.hours)||0))ch.hours=h;if(!g.steamApp)ch.steamApp=Number(j.appid);
+    if(Object.keys(ch).length)up[gid]=ch;
+  }
+  if(!Object.keys(up).length)return;
+  saveMe(p=>{for(const [gid,ch] of Object.entries(up))if(p.games?.[gid])Object.assign(p.games[gid],ch)},{noDay:true}).then(()=>{const n=Object.values(up).filter(c=>c.hours).length;if(n)toast(`Horas da Steam atualizadas em ${n} jogo${n>1?"s":""}`)}).catch(()=>{});
+}
+
+document.addEventListener("input",e=>{
+  if(M?.type!=="steam")return;
+  if(e.target.id==="st-q"){M.q=e.target.value;drawSteam()}
+});
+document.addEventListener("change",e=>{
+  if(M?.type!=="steam")return;
+  if(e.target.id==="st-st"){M.st=e.target.value;return}
+  const a=e.target.dataset?.stapp;if(a!==undefined){M.sel[a]=e.target.checked;const n=Object.values(M.sel).filter(Boolean).length;const b=document.querySelector('[data-act="stimport"]');if(b){b.disabled=!n;b.textContent=`Importar ${n||""} jogo${n===1?"":"s"}`}}
+});
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(a==="steam"){openSteam();return}
+  if(M?.type!=="steam")return;
+  if(a==="stselrecent"){(M.data?.jogos||[]).forEach(j=>{if(j.min2w)M.sel[j.appid]=true});drawSteam();return}
+  if(a==="stselnone"){M.sel={};drawSteam();return}
+  if(a==="stimport"){el.disabled=true;try{await importSteam()}catch(err){const x=$("#sterr");if(x)x.textContent=errMsg(err);el.disabled=false}return}
+  if(a==="stlink"||a==="stunlink"){
+    const v=a==="stunlink"?"":parseSteam($("#st-link")?.value);
+    if(v===null){$("#sterr").textContent="Link não reconhecido. Use o endereço do seu perfil na Steam.";return}
+    el.disabled=true;
+    try{await saveMe(p=>{p.steam=v},{noDay:true});M.data=v?await loadSteam(S.myId,true):null;toast(v?"Steam conectada":"Steam desconectada");drawSteam()}
+    catch(err){$("#sterr").textContent=errMsg(err);el.disabled=false}
+  }
+});
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -1525,7 +1641,7 @@ document.addEventListener("submit",async e=>{
       const gl=Number($("#p-goal").value);const ns={...M.ns,bold:$("#p-bold").checked};const isNew=!S.players[S.myId];
       await saveMe(p=>{if(avV!==undefined)p.avatarV=avV;if(bnV!==undefined)p.bannerV=bnV;p.nick=nick;p.nameStyle=ns;p.plats=M.plats.slice();p.plat=M.plats[0]||"";p.goal=gl>0?Math.min(365,Math.round(gl)):null;
         p.fav=$("#p-fav").value.trim();p.title=$("#p-title").value.trim();p.mood=$("#p-mood").value.trim();p.bio=$("#p-bio").value.trim();p.showcase=(M.show||[]).slice(0,3);
-        p.discord=$("#p-discord").value.trim().replace(/^@/,"");p.color=M.color;p.glyph=M.glyph;p.games=p.games||{};p.friends=friendsOf(p)});
+        p.discord=$("#p-discord").value.trim().replace(/^@/,"");{const sv=parseSteam($("#p-steam")?.value);if(sv!==null)p.steam=sv;}p.color=M.color;p.glyph=M.glyph;p.games=p.games||{};p.friends=friendsOf(p)});
       closeModal();toast("Perfil salvo");if(isNew||S.view==="perfil")go("perfil-"+slug(nick));
     }catch(err){$("#perr").textContent=errMsg(err)}
   }
@@ -1579,7 +1695,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave"].includes(a))return;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
@@ -1727,7 +1843,7 @@ function onUser(u){
   if(u&&S.canWrite&&S.loaded&&!S.players[u.uid]&&!M)openProfile();
   autoCovers();
 }
-let autoCovDone=false;function autoCovers(){if(autoCovDone||!S.canWrite||!S.loaded||!S.myId||!S.players[S.myId])return;autoCovDone=true;setTimeout(()=>fillCovers(false).then(r=>{if(r.done)toast(`${r.done} capa(s) encontrada(s) para seus jogos`)}).catch(()=>{}),2500)}
+let autoCovDone=false;function autoCovers(){if(autoCovDone||!S.canWrite||!S.loaded||!S.myId||!S.players[S.myId])return;autoCovDone=true;setTimeout(()=>syncSteam(),1500);setTimeout(()=>fillCovers(false).then(r=>{if(r.done)toast(`${r.done} capa(s) encontrada(s) para seus jogos`)}).catch(()=>{}),2500)}
 let vbusy=false;function refreshVerify(){const u=AUTH&&AUTH.currentUser;if(!u||vbusy)return;vbusy=true;
   u.reload().then(()=>AUTH.currentUser.emailVerified?AUTH.currentUser.getIdToken(true).then(()=>{onUser(AUTH.currentUser);toast("E-mail confirmado! Pode criar seu perfil.")}):null).catch(()=>{}).finally(()=>{vbusy=false})}
 let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode==="live")renderAll()},80)}

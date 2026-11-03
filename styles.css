@@ -630,3 +630,22 @@ button.key{cursor:pointer}
 .card:hover .cover:not(.mini) .cimg,.scard:hover .cover .cimg{transform:scale(1.04)}
 @media (prefers-reduced-motion:reduce){.cover .cimg{transition:none}.card:hover .cover .cimg,.scard:hover .cover .cimg{transform:none}}
 .scard .cover{aspect-ratio:16/10}
+
+/* v6: importar da Steam */
+.stlist{display:flex;flex-direction:column;gap:6px;max-height:min(52vh,520px);overflow-y:auto;padding-right:4px}
+.strow{display:flex;align-items:center;gap:10px;padding:6px 8px;border:1.5px solid color-mix(in oklab,var(--line) 60%,transparent);border-radius:10px;background:var(--surface2);cursor:pointer}
+.strow img{width:36px;height:54px;object-fit:cover;border-radius:6px;flex:none;background:var(--surface)}
+.strow .stn{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.strow .stn b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.strow .stn span{font-size:12px;color:var(--muted)}
+.strow .stn em{font-style:normal;color:var(--accent)}
+.strow input{width:20px;height:20px;flex:none;accent-color:var(--accent)}
+.strow.ja{opacity:.6;cursor:default}
+.strow:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+
+/* v6: escolher de quem é a tier list (não vira bagunça com muita gente) */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.whosel{position:relative;display:inline-flex;align-items:center;gap:6px;border:2px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 6px 2px 12px;font-weight:700;font-size:13px}
+.whosel.on{background:var(--ink);color:var(--bg);box-shadow:3px 3px 0 var(--accent)}
+.whosel select{border:0;background:transparent;font-weight:700;font-size:13px;padding:5px 4px;max-width:200px;color:inherit;cursor:pointer}
+.whosel select option,.whosel select optgroup{color:var(--ink);background:var(--surface)}
