@@ -36,8 +36,13 @@ JOGO_PC = re.compile(r"\b(steam|epic games|gog|nuuvem|jogo|game|pc)\b", re.I)
 PRECO = re.compile(r"R\$\s?([\d.]+(?:,\d{2})?)")
 
 
+NAVEGADOR = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+
+
 def baixar(url, tipo="json"):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+    # sites de promoção costumam barrar robôs com nome próprio; para RSS usa um nome de navegador comum
+    ua = NAVEGADOR if tipo == "bin" else UA
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "*/*", "Accept-Language": "pt-BR,pt;q=0.9"})
     with urllib.request.urlopen(req, timeout=25) as r:
         dados = r.read()
     return json.loads(dados) if tipo == "json" else dados
