@@ -1,0 +1,173 @@
+{
+ "atualizadoEm": 1793733319,
+ "jogos": {
+  "armareforger": {
+   "appid": 1874880,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Arma Reforger",
+   "slug": "arma-reforger",
+   "titulo": "Arma Reforger"
+  },
+  "baldursgateiii": {
+   "appid": 1086940,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Baldur's Gate 3",
+   "slug": "baldur-s-gate-3",
+   "titulo": "Baldur's Gate 3"
+  },
+  "battlefieldvi": {
+   "appid": 2807960,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Battlefield™ 6",
+   "slug": "battlefield-6",
+   "titulo": "Battlefield™ 6"
+  },
+  "callofduty": {
+   "appid": 1938090,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Call of Duty®",
+   "slug": "call-of-duty",
+   "titulo": "Call of Duty®"
+  },
+  "counterstrikeii": {
+   "appid": 730,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Counter-Strike 2",
+   "slug": "counter-strike-2",
+   "titulo": "Counter-Strike 2"
+  },
+  "donkeykongbananza": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Donkey Kong Bananza",
+   "slug": "donkey-kong-bananza",
+   "titulo": "Donkey Kong Bananza"
+  },
+  "footballmanager27": {
+   "appid": 4540240,
+   "em": 1793733319,
+   "emBreve": true,
+   "nome": "International Football Manager 27",
+   "slug": "football-manager-27",
+   "titulo": "Football Manager 27"
+  },
+  "grandtheftautovi": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Grand Theft Auto VI",
+   "slug": "grand-theft-auto-vi",
+   "titulo": "Grand Theft Auto VI"
+  },
+  "hadesii": {
+   "appid": 1145350,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Hades II",
+   "slug": "hades-ii",
+   "titulo": "Hades II"
+  },
+  "hollowknightsilksong": {
+   "appid": 1030300,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Hollow Knight: Silksong",
+   "slug": "hollow-knight-silksong",
+   "titulo": "Hollow Knight: Silksong"
+  },
+  "horizonforbiddenwest": {
+   "appid": 2420110,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Horizon Forbidden West™ - Edição Completa",
+   "slug": "horizon-forbidden-west",
+   "titulo": "Horizon Forbidden West"
+  },
+  "legendofzeldatearsofthekingdom": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "The Legend of Zelda: Tears of the Kingdom",
+   "slug": "the-legend-of-zelda-tears-of-the-kingdom",
+   "titulo": "The Legend of Zelda: Tears of the Kingdom"
+  },
+  "mafiaii": {
+   "appid": 50130,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Mafia II (Classic)",
+   "slug": "mafia-ii",
+   "titulo": "Mafia II"
+  },
+  "phantombladezero": {
+   "appid": 4115450,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Phantom Blade Zero",
+   "slug": "phantom-blade-zero",
+   "titulo": "Phantom Blade Zero"
+  },
+  "pokemonfirered": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Pokémon FireRed and LeafGreen",
+   "slug": "pokemon-firered",
+   "titulo": "Pokémon FireRed"
+  },
+  "pokemonlegendsarceus": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Pokémon Legends: Arceus",
+   "slug": "pokemon-legends-arceus",
+   "titulo": "Pokémon Legends: Arceus"
+  },
+  "silverpines": {
+   "appid": 2333000,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Silver Pines",
+   "slug": "silver-pines",
+   "titulo": "Silver Pines"
+  },
+  "sonicpicopark": {
+   "appid": 4304060,
+   "em": 1793733319,
+   "emBreve": true,
+   "nome": "SONIC PICO PARK",
+   "slug": "sonic-pico-park",
+   "titulo": "Sonic Pico Park"
+  },
+  "stellarblade": {
+   "appid": 3489700,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Stellar Blade™",
+   "slug": "stellar-blade",
+   "titulo": "Stellar Blade"
+  },
+  "supermariobroswonder": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "Super Mario Bros. Wonder",
+   "slug": "super-mario-bros-wonder",
+   "titulo": "Super Mario Bros. Wonder"
+  },
+  "zeldaocarinaoftime": {
+   "appid": null,
+   "em": 1793733319,
+   "emBreve": false,
+   "nome": "The Legend of Zelda: Ocarina of Time",
+   "slug": "zelda-ocarina-of-time",
+   "titulo": "Zelda Ocarina Of Time"
+  }
+ }
+}

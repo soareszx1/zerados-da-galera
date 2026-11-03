@@ -1,11 +1,13 @@
 {
- "atualizadoEm": 1793730177,
+ "atualizadoEm": 1793733311,
  "capas": {
   "baldursgateiii": "covers/baldursgateiii.jpg",
   "battlefieldvi": "covers/battlefieldvi.jpg",
   "callofduty": "covers/callofduty.jpg",
   "counterstrikeii": "covers/counterstrikeii.jpg",
   "donkeykongbananza": "covers/donkeykongbananza.jpg",
+  "footballmanager27": "covers/footballmanager27.jpg",
+  "grandtheftautovi": "covers/grandtheftautovi.jpg",
   "hadesii": "covers/hadesii.jpg",
   "hollowknightsilksong": "covers/hollowknightsilksong.jpg",
   "horizonforbiddenwest": "covers/horizonforbiddenwest.jpg",
@@ -15,8 +17,10 @@
   "pokemonfirered": "covers/pokemonfirered.jpg",
   "pokemonlegendsarceus": "covers/pokemonlegendsarceus.jpg",
   "silverpines": "covers/silverpines.jpg",
+  "sonicpicopark": "covers/sonicpicopark.jpg",
   "stellarblade": "covers/stellarblade.jpg",
-  "supermariobroswonder": "covers/supermariobroswonder.jpg"
+  "supermariobroswonder": "covers/supermariobroswonder.jpg",
+  "zeldaocarinaoftime": "covers/zeldaocarinaoftime.jpg"
  },
  "falhas": {
   "armareforger": 1793730177.117135
