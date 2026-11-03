@@ -1,1 +1,692 @@
-{"atualizadoEm":0,"fontes":[],"itens":[]}
+{
+ "atualizadoEm": 1793719557473,
+ "fontes": [
+  {
+   "nome": "PlayStation Blog BR",
+   "ok": true,
+   "itens": 10
+  },
+  {
+   "nome": "Xbox Wire Brasil",
+   "ok": true,
+   "itens": 10
+  },
+  {
+   "nome": "IGN Brasil",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Jovem Nerd",
+   "ok": false,
+   "itens": 0
+  },
+  {
+   "nome": "Adrenaline",
+   "ok": false,
+   "itens": 0
+  },
+  {
+   "nome": "Hardware.com.br",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Eurogamer",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Nintendo Life",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "GameSpot",
+   "ok": true,
+   "itens": 15
+  }
+ ],
+ "itens": [
+  {
+   "title": "The Elder Scrolls VI: revelação do nome oficial",
+   "url": "https://www.youtube.com/watch?v=mFu8t9735IY#new_tab",
+   "summary": "The post The Elder Scrolls VI: revelação do nome oficial appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1793719275000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "'The Elder Scrolls 6' Finally Has An Official Title",
+   "url": "https://www.nintendolife.com/news/2026/11/the-elder-scrolls-6-finally-has-an-official-title",
+   "summary": "And a title logo. We forget quite how long we have been waiting for official news from the next entry in Bethesda's The Elder Scrolls series, and now the studio has finally,…",
+   "img": "https://images.nintendolife.com/5adec4802ebe3/large.jpg",
+   "at": 1793719200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Após sucesso nos games e telonas, livro de Exit 8 chega ao Brasil em dezembro, escrito pelo diretor do filme",
+   "url": "https://br.ign.com/the-exit-8/157250/apos-sucesso-nos-games-e-telonas-livro-de-exit-8-chega-ao-brasil-em-dezembro-escrito-pelo-diretor-do",
+   "summary": "Saída 8 é escrito por Genki Kawamura Sucesso nos games e telonas, Exit 8 ganha um novo formato em dezembro. Escrito por Genki Kawamura, que serviu como diretor da adaptação…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/1_141e.jpg",
+   "at": 1793718713000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The Elder Scrolls 6: Sentinel is confirmed, finally getting new trailer and full name, 8 years, 4 months, and 23 days after its reveal",
+   "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-revealed-bethesda-xbox",
+   "summary": "Today, Xbox and Bethesda have finally revealed the name and more information about The Elder Scrolls 6. The game, which we now know carries the subtitle Sentinel, was revealed in…",
+   "img": "https://assetsio.gnwcdn.com/ES-6.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793718487000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "The Elder Scrolls 6 Is Officially Titled Sentinel",
+   "url": "https://www.gamespot.com/articles/the-elder-scrolls-6-is-officially-titled-sentinel/",
+   "summary": "Confirming a recent report, Bethesda has confirmed the subtitle of the next Elder Scrolls game as The Elder Scrolls VI: Sentinel. This was shared as part of a 40-year anniversary…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Celebrating-40-Years-of-Bethesda-Game-Studios-8-5-screenshot.jpg?w=300",
+   "at": 1793718308000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Crise da memória faz preço do Raspberry Pi 5 de 16 GB disparar de US$ 120 para US$ 385",
+   "url": "https://www.hardware.com.br/noticias/raspberry-pi-5-16gb-preco-385-dolares-aumento/",
+   "summary": "Raspberry Pi 5 de 16 GB sobe para US$ 385 após novo reajuste. Modelo custava US$ 120 no lançamento e já acumula alta de 221%.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/placaa.jpg",
+   "at": 1793718013000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "This Puzzling “Very Positive” Roguelite Is Now Less Than Half Price, So It’s Time To Enter The Mysterious Manor",
+   "url": "https://www.gamespot.com/articles/this-puzzling-very-positive-roguelite-is-now-less-than-half-price-so-its-time-to-enter-the-mysterious-manor/",
+   "summary": "Many of the roguelites that I play are action-oriented. So, when Blue Prince kept the familiar \"‘\"one more run\" vibes while removing the action that I so crave, I was intrigued.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-blue-prince-lowest-price.jpg?w=300",
+   "at": 1793718000000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "CoD: Modern Warfare 4 Patch Notes Address DMZ’s Biggest Issue",
+   "url": "https://www.gamespot.com/articles/cod-modern-warfare-4-patch-notes-address-dmzs-biggest-issue/",
+   "summary": "The latest update arrived to Call of Duty: Modern Warfare 4 on November 2, and the patch notes detail several game fixes across multiplayer and DMZ. This brings much-needed spawn…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MW4-DMZ-TOUR-OF-HAJIN-023.jpg?w=300",
+   "at": 1793717941000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Buying GTA 6 Could Save You $5,000, Or At Least This Guy Thinks So",
+   "url": "https://www.gamespot.com/articles/buying-gta-6-could-save-you-5000-or-at-least-this-guy-thinks-so/",
+   "summary": "Self-made millionaire Mark Tilbury has shared some advice for how buying GTA 6 can actually save you $5,000. Just don't take this too seriously. Here's how he arrived at that…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Leonida_Keys_05.jpg?w=300",
+   "at": 1793717621000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "The Legend of Zelda: Ocarina of Time Artwork",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157239/the-legend-of-zelda-ocarina-of-time-artwork",
+   "summary": "",
+   "img": "https://sm.ign.com/ign_br/gallery/t/the-legend/the-legend-of-zelda-ocarina-of-time-artwork_fpbn.jpg",
+   "at": 1793716825000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Desenvolvedores do remake de Ocarina of Time adicionaram viagens rápidas, mas mudaram de ideia ao perceberem que o game nunca precisou em primeiro lugar",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157238/desenvolvedores-do-remake-de-ocarina-of-time-adicionaram-viagens-rapidas-mas-mudaram-de-ideia-ao-per",
+   "summary": "Por que mexer no que já é perfeito? O produtor de The Legend of Zelda, Eiji Aonuma, pediu à equipe responsável pelo remake de Ocarina of Time que adicionasse pontos de…",
+   "img": "https://sm.ign.com/ign_br/news/t/the-legend/the-legend-of-zelda-ocarina-of-time-remake-added-fast-travel_k232.jpg",
+   "at": 1793716825000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Zelda: Ocarina Of Time Switch 2 Cast Features A Returning Voice Actor From The N64 Original",
+   "url": "https://www.nintendolife.com/news/2026/11/zelda-ocarina-of-time-switch-2-cast-features-a-returning-voice-actor-from-the-n64-original",
+   "summary": "Vocal hero. Nintendo has today shared even more insights into the development of Ocarina of Time on Switch 2 in the latest chapters of its Ask the Developer series. One such story…",
+   "img": "https://images.nintendolife.com/63bd0177fcf2c/large.jpg",
+   "at": 1793716200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Direto de The Witcher: jogo de cartas Gwent está em oferta na Amazon",
+   "url": "https://br.ign.com/descontos/157248/direto-de-the-witcher-jogo-de-cartas-gwent-esta-em-oferta-na-amazon",
+   "summary": "Versão física do minijogo de The Witcher 3 reúne diferentes facções e partidas que exigem estratégia",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/gwent-the-witcher-capa_y25c.jpg",
+   "at": 1793715454000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "South Of Midnight Director Says He Would Not Have Funded The Game",
+   "url": "https://www.gamespot.com/articles/south-of-midnight-director-says-he-would-not-have-funded-the-game/",
+   "summary": "Xbox funded and published 2025's South of Midnight, a highly acclaimed action-adventure game set in the American Deep South. The game's creative director, David Sears, said he…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/SM.jpg?w=300",
+   "at": 1793715246000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Helldivers 2: novos tipos de Terminídios venenosos e mais cavernas de Insetos surgem por toda a galáxia hoje mesmo",
+   "url": "https://blog.br.playstation.com/2026/11/03/helldivers-2-novos-tipos-de-terminidios-venenosos-e-mais-cavernas-de-insetos-surgem-por-toda-a-galaxia-hoje-mesmo/",
+   "summary": "Atenção, Helldivers, O Ministério da Verdade confirma que um novo tipo de Terminídios rasteja pelas linhas de frente. A cepa, batizada como Nociva, é veloz, venenosa e se opõe…",
+   "img": "",
+   "at": 1793714840000,
+   "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "Nintendo oficializa 1º de novembro como \"Dia do Pikmin\" e estreia nova série de curtas baseada na franquia",
+   "url": "https://br.ign.com/pikmin-4/157247/nintendo-oficializa-1o-de-novembro-como-dia-do-pikmin-e-estreia-nova-serie-de-curtas-baseada-na-fran",
+   "summary": "O filho preferido de Shigeru Miyamoto A franquia Pikmin acaba de ganhar uma série inédita de curtas animados intitulada Hello! Pikmin. A novidade foi revelada durante uma…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/p1_r7wq.jpg",
+   "at": 1793714587000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Community: \"I Think Of Her Every Time I Play It\" - Your Zelda: Ocarina Of Time Memories",
+   "url": "https://www.nintendolife.com/features/community-i-think-of-her-every-time-i-play-it-your-zelda-ocarina-of-time-memories",
+   "summary": "Dost thou sense it? With the Switch 2 remake of the N64's The Legend of Zelda: Ocarina of Time fast approaching, we recently asked Nintendo Life readers to share their memories of…",
+   "img": "https://images.nintendolife.com/e2c10051ebc88/large.jpg",
+   "at": 1793714400000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Remedy’s Big Bet On Control Resonant Appears To Be Paying Off",
+   "url": "https://www.gamespot.com/articles/remedys-big-bet-on-control-resonant-appears-to-be-paying-off/",
+   "summary": "Following the September release of Control Resonant , business is boomin' for developer Remedy Entertainment. The studio reported that its third-quarter revenue surged 226% to…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/09/6a1fd8132b48ed1533f6ad23_CONTROL_Resonant_main_f98eec.jpg?w=300",
+   "at": 1793713861000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "É por isso que a Nintendo decidiu fazer mais um remake de The Legend of Zelda: Ocarina of Time",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157240/e-por-isso-que-a-nintendo-decidiu-fazer-mais-um-remake-de-the-legend-of-zelda-ocarina-of-time",
+   "summary": "O clássico nunca sai da moda A Nintendo explicou por que decidiu desenvolver mais um remake de The Legend of Zelda: Ocarina of Time . No primeiro artigo da série de perguntas e…",
+   "img": "https://sm.ign.com/ign_br/news/n/nintendo-e/nintendo-explains-why-it-chose-to-do-another-the-legend-of-z_dfc5.jpg",
+   "at": 1793713850000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Uma parcela assustadora de jogadores revelou que abriria mão de seus pets em troca de jogar GTA 6 mais cedo",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157245/uma-parcela-assustadora-de-jogadores-revelou-que-abriria-mao-de-seus-pets-em-troca-de-jogar-gta-6-ma",
+   "summary": "Sim, estamos julgando Uma pesquisa com 1.300 jogadores estadunidenses revela tendências preocupantes em relação a GTA 6 — mais especificamente, a disposição deles de abandonar…",
+   "img": "https://sm.ign.com/ign_br/news/a/a-concerni/a-concerning-amount-of-gta-fans-would-give-up-their-pets-to_ur2c.jpg",
+   "at": 1793713371000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Black Friday da Amazon: 007 First Light para PS5 fica abaixo de R$ 230",
+   "url": "https://br.ign.com/descontos/157244/black-friday-da-amazon-007-first-light-para-ps5-fica-abaixo-de-r-230",
+   "summary": "Edição exclusiva da loja inclui embalagem diferenciada e traje adicional para James Bond",
+   "img": "https://sm.ign.com/ign_br/news/0/007-first-/007-first-light-is-getting-free-dlc-later-this-week_rkkg.jpg",
+   "at": 1793713093000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Durante o Pichau Arena 2026, AMD destaca o Sul do Brasil como mercado gamer que merece mais atenção",
+   "url": "https://www.hardware.com.br/noticia/amd-mercado-gamer-sul-brasil-pichau-arena-2026/",
+   "summary": "Durante o Pichau Arena 2026, representante da AMD destaca o potencial do mercado gamer no Sul do Brasil e comenta a recepção do público e a expansão regional.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/AMD-stand.jpg",
+   "at": 1793712981000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "COD: Modern Warfare 4 DMZ patch has nerfed UAV Towers so you're not immediately visible everywhere you go",
+   "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-uav-tower-nerf",
+   "summary": "The Call of Duty: Modern Warfare 4 patches continue, with the latest delivering some big changes to the game's extraction mode DMZ. The latest hotfix introduced a key balance…",
+   "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(6).jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793712979000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Novo easter egg do Google transporta usuários diretamente a 1998 ao pesquisarem The Legend of Zelda: Ocarina of Time",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157243/novo-easter-egg-do-google-transporta-usuarios-diretamente-a-1998-ao-pesquisarem-the-legend-of-zelda",
+   "summary": "*música do Link abrindo um baú* O Google acaba de ganhar um easter egg de The Legend of Zelda: Ocarina of Time que transporta você de volta à versão de 1998 do mecanismo de busca…",
+   "img": "https://sm.ign.com/ign_br/news/g/google-has/google-has-a-cool-the-legend-of-zelda-ocarina-of-time-easter_1r73.jpg",
+   "at": 1793712932000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Esquenta Black Friday! Smart TV Philips Ambilight 55″ 4K por menos de R$2.500 para quem é prime na Amazon!",
+   "url": "https://www.hardware.com.br/hardware-indica/oferta-exclusiva-prime-philips-ambilight-55-4k-por-menos-de-r2-500-no-esquenta-black-friday/",
+   "summary": "Aproveite a oferta e transforme seu entretenimento com a Philips Ambilight 55 4K. Filmes, séries e jogos em outro nível!",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/1-54.jpg",
+   "at": 1793712637000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Itch.io remove terabytes de conteúdo gerado por IA e lança filtro para jogadores evitarem a tecnologia",
+   "url": "https://www.hardware.com.br/games/itch-io-remove-terabytes-ia/",
+   "summary": "Plataforma de jogos independentes intensifica combate a conteúdos automatizados após registrar aumento expressivo na criação de páginas de jogos",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Itch.io-remove-terabytes-de-conteudo-gerado-por-IA-e-lanca-filtro-para-jogadores-evitarem-a-tecnologia.jpg",
+   "at": 1793712320000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Borderlands Franchise Hits 100 Million Sales As Gearbox Hints At What’s Next",
+   "url": "https://www.gamespot.com/articles/borderlands-2-is-still-the-best-selling-game-in-the-series-despite-borderlands-4-milestone/",
+   "summary": "The Borderlands franchise has reached a new sales milestone, as developer Gearbox Software announced that Borderlands 4 had pushed the series over the 100 million units sold mark.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/original/1837/18375603/4598238-borderlands4.jpg?w=300",
+   "at": 1793711857000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GOG Wants To Bring Back Physical PC Games, But There’s A Catch",
+   "url": "https://www.gamespot.com/articles/gog-wants-to-bring-back-physical-pc-games-but-theres-a-catch/",
+   "summary": "While PlayStation 5 console owners are preparing for a discless future , PC gamers have been living in all-digital world for decades now. The advent of Steam and cheaper broadband…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Flashback.jpg?w=300",
+   "at": 1793711694000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Intel pode descontinuar Arc B580 para priorizar placas de vídeo voltadas à IA",
+   "url": "https://www.hardware.com.br/tecnologia/intel-descontinuar-arc-b580/",
+   "summary": "Intel estaria considerando direcionar a produção para GPUs profissionais mais lucrativas, mas ainda não confirmou o fim de sua principal placa Battlemage para jogos",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Intel-pode-descontinuar-Arc-B580-para-priorizar-placas-de-video-voltadas-a-IA.jpg",
+   "at": 1793711274000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Hey Barbie! PowerWash Simulator 2's Next DLC Gets Pretty In Pink On Switch 2 Next Month",
+   "url": "https://www.nintendolife.com/news/2026/11/hey-barbie-powerwash-simulator-2s-next-dlc-gets-pretty-in-pink-on-switch-2-next-month",
+   "summary": "Never Kenough. Pink really does go with everything, it seems, as developer FuturLab has announced that PowerWash Simulator 2 will be getting some Dream House DLC next month. The…",
+   "img": "https://images.nintendolife.com/4cf16af46be2a/large.jpg",
+   "at": 1793710800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Monitor gamer vira escudo contra bala perdida e pode ter salvado vida de jogador: “Melhores US$ 280 que já gastei”",
+   "url": "https://www.hardware.com.br/games/monitor-escudo-contra-bala-perdida/",
+   "summary": "Equipamento de US$ 280 impediu que projétil atravessasse a tela após disparo atingir residência; fabricante se manifestou sobre o caso",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Monitor-gamer-vira-escudo-contra-bala-perdida-e-pode-ter-salvado-vida-de-jogador.jpeg",
+   "at": 1793710286000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Ofertas da Black Friday de 2026 da PlayStation Store",
+   "url": "https://blog.br.playstation.com/2026/11/03/ofertas-black-friday-playstation-2026/",
+   "summary": "Este ano, as ofertas da Black Friday de PlayStation começam mais cedo na PlayStation Store! A partir de amanhã, quarta-feira, 4 de novembro, você encontrará grandes descontos de…",
+   "img": "",
+   "at": 1793709738000,
+   "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "20 anos de PlayStation Store: desenvolvedores revelam os jogos incríveis que mais os surpreenderam",
+   "url": "https://blog.br.playstation.com/2026/11/03/20-anos-de-playstation-store-desenvolvedores-revelam-os-jogos-incriveis-que-mais-os-surpreenderam/",
+   "summary": "Há 20 anos, a PlayStation Store conecta jogadores a jogos de todos os tipos e estilos, de grandes aventuras de sucesso a tesouros indies e tudo o que há entre eles. Para marcar a…",
+   "img": "",
+   "at": 1793708558000,
+   "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "World of Warcraft: Forever – Como o suporte a controles reinventa a maneira de jogar em Azeroth",
+   "url": "https://news.xbox.com/pt-br/2026/11/03/world-of-warcraft-forever-controles/",
+   "summary": "The post World of Warcraft: Forever – Como o suporte a controles reinventa a maneira de jogar em Azeroth appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1793708554000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Cosy Witch RPG 'Witchbrook' Will Support Crossplay Between Switch 1 & 2 At Launch",
+   "url": "https://www.nintendolife.com/news/2026/11/cosy-witch-rpg-witchbrook-will-support-crossplay-between-switch-1-and-2-at-launch",
+   "summary": "Switchbrook. It has been a good couple of weeks for Witchbrook news. After keeping an eye on Chucklefish's witch RPG for years, we finally got a release date in last month's Indie…",
+   "img": "https://images.nintendolife.com/5b16ab2a3aec9/large.jpg",
+   "at": 1793708100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Indie game website itch.io expands its AI disclosure filter as 'AI slop' continues to overwhelm Steam and other storefronts",
+   "url": "https://www.eurogamer.net/itchio-generative-ai-filters-slop",
+   "summary": "Indie game storefront itch.io has expanded its AI disclosure filters, allowing its users to better separate games made with the controversial technology from those who don't. Read…",
+   "img": "https://assetsio.gnwcdn.com/itch-logo-black-new-svg.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793707436000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Google cria Easter egg de Zelda: Ocarina of Time que leva usuários de volta a 1998",
+   "url": "https://www.hardware.com.br/games/google-easter-egg-zelda-ocarina-of-time/",
+   "summary": "Nova surpresa no buscador recria sua interface clássica e celebra a chegada do remake de Zelda ao Nintendo Switch 2",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Google-cria-Easter-egg-de-Zelda-Ocarina-of-Time-que-leva-usuarios-de-volta-a-1998.jpg",
+   "at": 1793707095000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Jogos de Nintendo Switch 2 começam a funcionar no Mac, com Donkey Kong Bananza a 60 FPS",
+   "url": "https://www.hardware.com.br/games/nintendo-switch-2-mac-donkey-kong-bananza/",
+   "summary": "Projeto executa código ARM64 diretamente nos chips Apple Silicon e já apresenta resultados com o M4 Pro",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Jogos-de-Nintendo-Switch-2-comecam-a-funcionar-no-Mac-com-Donkey-Kong-Bananza-a-60-FPS.jpg",
+   "at": 1793706134000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Review: Wild Blue Skies (Switch) - An Unoriginal Alternative To Star Fox 64",
+   "url": "https://www.nintendolife.com/reviews/switch-eshop/wild-blue-skies",
+   "summary": "Can't let you do that, Blue Bombers! Wild Blue Skies is Star Fox 64 -lite. Gameplay, identity, story: everything is pretty much a license-free version of Star Fox 64. That isn’t…",
+   "img": "https://images.nintendolife.com/77b18aa74de3a/large.jpg",
+   "at": 1793705400000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "It looks like Call of Duty: Modern Warfare 4 had fewer active players at launch in the US compared to last year's Black Ops 7",
+   "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-player-engagement-black-ops-7",
+   "summary": "It's been speculated for a while that Call of Duty may be losing its lustre. Although we don't have concrete data with detailed statistics for each game released in the last…",
+   "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(4).jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793704961000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Remedy revenue soars by 226% following release of Control Resonant, the developer's fastest-selling game ever",
+   "url": "https://www.eurogamer.net/control-resonant-remedy-revenue-leaps",
+   "summary": "Remedy - the developer behind the recently released Control Resonant - has released a scorcher of a quarterly financial report. It shows that following Resonant's release in…",
+   "img": "https://assetsio.gnwcdn.com/Control-Resonant_Dhpy5QW.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793699808000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Days Gone studio's next PlayStation exclusive to be revealed and released in 2027, according to new report",
+   "url": "https://www.eurogamer.net/sony-bend-studio-next-playstation-game-2027",
+   "summary": "Sony's Bend Studio, perhaps one of its lesser discussed development houses, has apparently been deep in development on its next title. The game is reportedly set to be announced…",
+   "img": "https://assetsio.gnwcdn.com/The-main-character-from-Days-Gone-holding-a-large-gun-in-his-hands.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793697519000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Zelda: Ocarina Of Time Switch 2 \"Free N64 Box Replica\" Announced For Argos Midnight Launch (UK)",
+   "url": "https://www.nintendolife.com/news/2026/11/zelda-ocarina-of-time-switch-2-free-n64-box-replica-announced-for-argos-midnight-launch-uk",
+   "summary": "\"One night only\". As we get closer to the launch of Zelda: Ocarina of Time remake, more retailers have been revealing all sorts of goodies. Read the full article on…",
+   "img": "https://images.nintendolife.com/0f855dd77c7ea/large.jpg",
+   "at": 1793687400000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Round Up: The Reviews Are In For Stellar Blade's Switch 2 Port",
+   "url": "https://www.nintendolife.com/news/2026/11/round-up-the-reviews-are-in-for-stellar-blades-switch-2-port",
+   "summary": "Is it a stellar port? It's all about Link this week, but there is another notable release arriving for the Switch 2 on the same day. It's Shift Up's action game, Stellar Blade .…",
+   "img": "https://images.nintendolife.com/b5734a47a18ea/large.jpg",
+   "at": 1793683800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "After Cancelling Zelda Switch 2 Pre-Orders, Walmart Is Now Supposedly Sending Out $519 Gift Cards",
+   "url": "https://www.nintendolife.com/news/2026/11/after-cancelling-zelda-switch-2-pre-orders-walmart-is-now-supposedly-sending-out-usd519-gift-cards",
+   "summary": "Some customers also claim they've been able to \"reorder\" the system. Last week, Walmart reportedly cancelled Zelda Switch 2 pre-orders a day before the launch after it \"oversold\"…",
+   "img": "https://images.nintendolife.com/5b3c5bb652577/large.jpg",
+   "at": 1793676600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Square Enix's 'Harvest Sale' Includes Huge Discounts On Final Fantasy VII Remake Intergrade And Rebirth",
+   "url": "https://www.nintendolife.com/news/2026/11/square-enixs-harvest-sale-includes-huge-discounts-on-final-fantasy-vii-remake-intergrade-and-rebirth",
+   "summary": "Get ready for Revelation. The Final Fantasy VII Remake trilogy will wrap next year with the release of Revelation and if you're wanting to catch up on the series, now is the…",
+   "img": "https://images.nintendolife.com/18cbd9df5eb05/large.jpg",
+   "at": 1793670300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Sonic Racing: CrossWorlds - Year Two 2.0.0 Patch Notes Preview - New Additions, Changes & Improvements",
+   "url": "https://www.nintendolife.com/news/2026/11/sonic-racing-crossworlds-year-two-2-0-0-patch-notes-preview-new-additions-changes-and-improvements",
+   "summary": "Paid and free character updates are also on the way. It's another huge week in gaming, and Sonic Racing: CrossWorlds is joining in on the fun with its launch of \"Year Two\". This…",
+   "img": "https://images.nintendolife.com/18e28c0a27fab/large.jpg",
+   "at": 1793666700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Epic Just Saved Fortnite–For Now, Anyway",
+   "url": "https://www.gamespot.com/articles/epic-just-saved-fortnite-for-now-anyway/",
+   "summary": "It's been a rough year for Fortnite , but Epic took a big swing with its new One Piece-themed Treasure Hunters season and, thankfully, it's paying off. Player counts are way up,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fortnite-one-piece-season.jpg?w=300",
+   "at": 1793665373000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "WoW: Forever Excavation Site: Wetlands Dungeon Guide – Quests, Bosses, and Loot",
+   "url": "https://www.gamespot.com/articles/wow-forever-excavation-site-wetlands-dungeon-guide-quests-bosses-and-loot/",
+   "summary": "Of all of World of Warcraft : Forever’s new dungeons, Excavation Site: Wetlands could very well be the shortest. It’s also one of the sweetest for lore-heads, owing to its links…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/10/wow-forever-excavation-site-wetlands-guide.jpg?w=300",
+   "at": 1793664566000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "WoW: Forever Ruins of Lordaeron Dungeon Guide – Quests, Bosses, and Loot",
+   "url": "https://www.gamespot.com/articles/wow-forever-ruins-of-lordaeron-dungeon-guide-quests-bosses-and-loot/",
+   "summary": "Where the great city of Lordaeron once proudly stood, only desolate ruins remain. The good news is that this makes it the perfect location for some good ol’ fashioned plundering,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/10/wow-forever-ruins-of-lordaeron-guide.jpg?w=300",
+   "at": 1793664350000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "WoW: Forever City of Dalaran Dungeon Guide – Quests, Bosses, and Loot",
+   "url": "https://www.gamespot.com/articles/wow-forever-city-of-dalaran-dungeon-guide-quests-bosses-and-loot/",
+   "summary": "All we got to see of the gleaming city of Dalaran back in the day was a giant purple dome. This eventually changed with Wrath of the Lich King, but we never got to see its full…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/10/wow-forever-city-of-dalaran-guide.jpg?w=300",
+   "at": 1793664286000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Best WoW: Forever Addons To Download In 2026",
+   "url": "https://www.gamespot.com/articles/best-wow-forever-addons-to-download-in-2026/",
+   "summary": "World of Warcraft : Forever and addons go together like Alterac Swiss and the finest bottle of Dalaran Noir. There are a ton of them out there, from major overhauls that…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/wow-forever-addons-best.jpg?w=300",
+   "at": 1793664160000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Final Fantasy XIV Evercold, próxima expansão do MMORPG da Square Enix, ganha nova data de lançamento",
+   "url": "https://br.ign.com/final-fantasy-xiv-online-evercold/157236/final-fantasy-xiv-evercold-proxima-expansao-do-mmorpg-da-square-enix-ganha-nova-data-de-lancamento",
+   "summary": "A próxima expansão do MMORPG estava prevista para ser lançada em janeiro de 2027, mas os Guerreiros da Luz terão que esperar um pouco mais O lançamento de Final Fantasy XIV:…",
+   "img": "https://sm.ign.com/ign_br/news/f/final-fant/final-fantasy-xiv-evercold-delayed-new-release-date-announce_5u7d.jpg",
+   "at": 1793662616000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Há 25 anos, este jogo de Dreamcast mostrou as limitações das notas de review dos games",
+   "url": "https://br.ign.com/rez/157235/ha-25-anos-este-jogo-de-dreamcast-mostrou-as-limitacoes-das-notas-de-review-dos-games",
+   "summary": "Um lançamento de 2001 foi um dos exemplos da polaridade que os jogos podem ter em suas avaliações Hoje, o game é considerado um clássico cult e muitos veículos reconsideraram suas…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/image_wrq3.jpg",
+   "at": 1793658629000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Review: Stellar Blade: Complete Edition (Switch 2) - Perfectly Playable, Despite Drawbacks",
+   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/stellar-blade-complete-edition",
+   "summary": "Razor sharp, but a little unrefined. Though the genre has evolved and deepened over time, gacha games have historically not been praised for their depth and complexity, often…",
+   "img": "https://images.nintendolife.com/a8f04e6a4de55/large.jpg",
+   "at": 1793656800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "PS6: vazamentos e rumores indicam que, assim como o PS5, o próximo console da Sony virá equipado com um slot para SSD NVMe",
+   "url": "https://br.ign.com/playstation-6/157234/ps6-vazamentos-e-rumores-indicam-que-assim-como-o-ps5-o-proximo-console-da-sony-vira-equipado-com-um",
+   "summary": "Cada vez mais detalhes sobre as especificações do console são reveladas Aparentemente, o formato M.2 NVMe será mantido, com um grande salto para o PCIe 5.0 e a bem-vinda…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/image_dars.jpg",
+   "at": 1793655030000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "\"O mal pode triunfar repetidas vezes, mas sempre prepara o terreno para algo bom\": frase do autor de O Senhor dos Anéis foi escrita em uma carta ao filho durant",
+   "url": "https://br.ign.com/o-senhor-dos-aneis/157233/o-mal-pode-triunfar-repetidas-vezes-mas-sempre-prepara-o-terreno-para-algo-bom-frase-do-autor-de-o-s",
+   "summary": "Enquanto Cristopher Tolkien se preparava para servir na Força Aérea Real, pai dele escrevia uma carta que tem tudo a ver com LOTR J. R. R. Tolkien escreveu grande parte de suas…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/1366-2000_t11t.jpg",
+   "at": 1793651431000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Yakuza creator's new studio and its debut game Gang of Dragon are no more after losing funding from NetEase",
+   "url": "https://www.eurogamer.net/yakuza-creator-new-studio-closed-netease",
+   "summary": "Nagoshi Studio has officially shut down and its first game called Gang of Dragon is seemingly no more, months after publisher NetEase pulled funding from the Yakuza-like project.…",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-03-07-at-17.05.06.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793651409000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Um engenheiro decidiu construir uma casa com 100 mil jornais velhos. Mais de um século depois, paredes e móveis de papel ainda podem ser vistos",
+   "url": "https://br.ign.com/tech/157232/um-engenheiro-decidiu-construir-uma-casa-com-100-mil-jornais-velhos-mais-de-um-seculo-depois-paredes",
+   "summary": "A famosa Paper House ainda está de pé e seus detalhes são impressionantes Na primeira metade do século XX, um engenheiro americano construiu uma casa com paredes de papel usando…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/image_5s43.jpg",
+   "at": 1793647830000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The Borderlands series has sold over 100 million copies, and Gearbox is \"cooking hard on more Borderlands 4 content for next year\"",
+   "url": "https://www.eurogamer.net/borderlands-100-million-copies-gearbox",
+   "summary": "The Borderlands series has sold more than 100m copies across all games, developer Gearbox Software has announced. No surprise, then - the studio also said it's cooking up \"big…",
+   "img": "https://assetsio.gnwcdn.com/borderlands-4-claptrap-holding-trash-on-coastal-bonescape-beach.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793645055000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "“Lembro-me deles perfeitamente”: há 37 anos, Kevin Costner conheceu dois figurantes que hoje são estrelas internacionais",
+   "url": "https://br.ign.com/cinema-tv/157231/lembro-me-deles-perfeitamente-ha-37-anos-kevin-costner-conheceu-dois-figurantes-que-hoje-sao-estrela",
+   "summary": "Astro foi muito atencioso com dois jovens que se tornariam grandes atores Futuras estrelas de Hollywood apareceram como figurantes em um filme estrelado por Kevin Costner 37 anos…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/image_z2x7.jpg",
+   "at": 1793644229000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Nintendo tried adding fast travel to The Legend of Zelda: Ocarina of Time remake, before devs realised \"we were missing out on the moments of discovery\"",
+   "url": "https://www.eurogamer.net/nintendo-fast-travel-legend-of-zelda-ocarina-of-time-remake",
+   "summary": "The Legend of Zelda: Ocarina of Time is being wrapped up in all kinds of modern touches for its imminent Nintendo Switch 2 remake (that owl seems to be less chatty , for…",
+   "img": "https://assetsio.gnwcdn.com/Ocarina-of-Time-Link.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793642498000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Jogos precisam de iluminação ultra realista? Jogadores do Reddit defendem gráficos sem ray tracing",
+   "url": "https://www.hardware.com.br/games/jogadores-do-reddit-defendem-graficos-sem-ray-tracing/",
+   "summary": "Discussão no Reddit compara Red Dead Redemption 2 e Cyberpunk 2077 e questiona se o custo do path tracing compensa.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/cyberpunk-2077-h.webp",
+   "at": 1793639670000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Microsoft e Epic Games criticam uso de IA para copiar seus jogos, mas são acusadas de hipocrisia",
+   "url": "https://www.hardware.com.br/noticias/microsoft-e-epic-games-criticam-uso-de-ia-para-copiar-seus-jogos/",
+   "summary": "Empresas usam notificações de direitos autorais para derrubar projetos não oficiais.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/09/Microsoft-avanca-com-reset-do-Xbox-e-prepara-centenas-de-novas-demissoes.jpg",
+   "at": 1793639360000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Para enfrentar viagem de 5 horas, jogador transforma banco traseiro de caminhonete em espaço gamer com PS5 e monitor",
+   "url": "https://www.hardware.com.br/noticias/jogador-transforma-caminhonete-espaco-gamer-ps5/",
+   "summary": "Para uma viagem de 5 horas, jogador instalou um PS5 e um monitor no banco traseiro de sua caminhonete. A montagem chamou atenção no Reddit.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/ps5.jpg",
+   "at": 1793639052000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Review: Marvel's Guardians Of The Galaxy: Encore Edition (Switch 2) - A Bright And Charming Adventure With An Okay Port",
+   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/marvels-guardians-of-the-galaxy-encore-edition",
+   "summary": "The cloudy skies have cleared. While cloud streaming has its benefits, nothing beats having a native version of a game. Guardians of the Galaxy launched on the first Nintendo…",
+   "img": "https://images.nintendolife.com/380b5b8df3648/large.jpg",
+   "at": 1793638800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "GTA 6: Sony sobe exigência do PS5 para firmware 14.22 e dificulta desbloqueio",
+   "url": "https://www.hardware.com.br/noticias/gta-6-ps5-firmware-14-22-desbloqueio/",
+   "summary": "Sony eleva para 14.22 o firmware exigido para GTA 6 no PS5. A mudança dificulta o desbloqueio do console e complica a vida de quem utiliza jailbreak.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-6-novo-firmware-1600x900.jpg",
+   "at": 1793638304000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Nintendo Shares Ocarina Of Time Switch 2 Design Sketches",
+   "url": "https://www.nintendolife.com/news/2026/11/nintendo-shares-ocarina-of-time-switch-2-design-sketches",
+   "summary": "Ink's awakening. The latest Ask the Developer interviews are positively packed with interesting tidbits about the making of Ocarina of Time on Switch 2. One such story is all…",
+   "img": "https://images.nintendolife.com/5c64028d519f8/large.jpg",
+   "at": 1793637000000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "COD Modern Warfare 4 has seemingly answered DMZ players' PvE calls with new Story Mission changes - but there are major caveats",
+   "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-story-missions-pve",
+   "summary": "For as long as Call of Duty: Modern Warfare 4's DMZ extraction mode has been available, there've been calls for PvE-only servers . Developer Infinity Ward , for its part, has…",
+   "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(1).webp?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793636380000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Feature: Threads Of Time - The Best Ocarina References & Easter Eggs In The Wider Zelda Series",
+   "url": "https://www.nintendolife.com/features/threads-of-time-the-best-ocarina-references-and-easter-eggs-in-the-wider-zelda-series",
+   "summary": "Links to the future. The Legend of Zelda: Ocarina of Time is a masterpiece. An enduring classic that set the standard, and often the template, for virtually every single…",
+   "img": "https://images.nintendolife.com/48dceb4c179cb/large.jpg",
+   "at": 1793635200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Microsoft promete reduzir em até 90% o uso de VRAM do Ray Tracing sem exigir novas GPUs",
+   "url": "https://www.hardware.com.br/games/clustered-geometry-directx-reduz-memoria/",
+   "summary": "Novas tecnologias do DirectX reduziram o consumo de memória de 7,5 GB para apenas 774 MB em testes com a Radeon RX 9070, elevando o desempenho de 1,2 para 79 FPS.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/directx-raytracing-clusters-memoria-rx-9070-9daa8c.webp",
+   "at": 1793634905000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "One World of Warcraft: Forever player is working on a first-person mod that's a love letter to retro RPGs like Hexen and Morrowind",
+   "url": "https://www.eurogamer.net/world-of-warcraft-forever-first-person-mod-rpg",
+   "summary": "One World of Warcraft: Forever player is attempting to turn Blizzard's new MMO endeavour into a Morrowind-esque first-person fantasy RPG, full of retro animations harkening back…",
+   "img": "https://assetsio.gnwcdn.com/wow-forever-retro.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793632884000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Redragon Zeus Lite com 40% de desconto: esse headset gamer custa pouco e entrega muito",
+   "url": "https://www.hardware.com.br/hardware-indica/redragon-zeus-lite-com-41-de-desconto-esse-headset-gamer-custa-pouco-e-entrega-muito/",
+   "summary": "Redragon Zeus Lite com 40% off: headset gamer com drivers de 53mm, microfone removível com redução de ruído e conforto em tecido para longas sessões.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/05/2-7-1511x850.jpg",
+   "at": 1793629834000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "As the controversy around AI-created video game copies continues, Anthropic seemingly restricts Claude's cloning abilities",
+   "url": "https://www.eurogamer.net/anthropic-claude-generative-ai-game-clones-update",
+   "summary": "An update to Anthropic's Claude AI software has seemingly blocked the creation of outright clones or copies of existing games. Instead, Claude has been altered to only create…",
+   "img": "https://assetsio.gnwcdn.com/Stellar-Blade_robotic-old-man.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793629781000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Over a decade later, Bloodborne remains so popular it reportedly sold a quarter of a million copies this year alone",
+   "url": "https://www.eurogamer.net/bloodborne-251-000-sales-in-2016-ps4",
+   "summary": "Bloodborne, FromSoftware's singular Lovecraftian action-RPG, has reportedly sold more than 251,000 copies this year alone. Read more",
+   "img": "https://assetsio.gnwcdn.com/Bloodborne-artwork-showing-a-cloaked-male-known-as-a-Hunter-skulking-in-a-moonlit-gothic-city.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793626531000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "RTX 3060 recupera liderança no Steam, enquanto PCs com 32 GB de RAM registram forte queda",
+   "url": "https://www.hardware.com.br/games/rtx-3060-recupera-lideranca-steam/",
+   "summary": "Pesquisa de outubro mostra uma reviravolta no hardware dos jogadores, com o retorno das configurações de 16 GB de RAM e placas de vídeo com 8 GB de VRAM ao topo",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/RTX-3060-recupera-lideranca-no-Steam-enquanto-PCs-com-32-GB-de-RAM-registram-forte-queda.jpg",
+   "at": 1793623310000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "\"We're doing great,\" says id Software boss, despite losing \"about half of our studio\" amid devastating Xbox cuts",
+   "url": "https://www.eurogamer.net/id-software-doing-great-losing-half-the-studio",
+   "summary": "Iconic Doom and Quake developer id Software was among the most heavily impacted Microsoft-owned studios during Xbox CEO Asha Sharma's devastating business \"reset\" earlier this…",
+   "img": "https://assetsio.gnwcdn.com/A-demonic-looking-character-in-Doom-The-Dark-Ages.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793621531000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Soulframe to launch into free open beta this week, as Warframe devs go head-to-head with WoW: Forever",
+   "url": "https://www.eurogamer.net/soulframe-open-prelude-date-verse-of-the-veillands",
+   "summary": "Soulframe's Preludes (its own version of a beta) is finally opening its doors to the whole world ahead of the Verse of the Veilands update. Starting this week, anyone who wants to…",
+   "img": "https://assetsio.gnwcdn.com/Soulframe_Screenshot_10.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793618266000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Jogada da Semana: Medo",
+   "url": "https://blog.br.playstation.com/2026/10/30/jogada-da-semana-medo/",
+   "summary": "Estamos na época mais assustadora do ano, então a comunidade já estava preparada para o tema desta semana! Vamos conhecer algumas das imagens mais arrepiantes enviadas: Abrimos a…",
+   "img": "",
+   "at": 1793375999000,
+   "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "Próxima Semana em XBOX: novos jogos de 2 a 6 de novembro",
+   "url": "https://news.xbox.com/pt-br/2026/10/30/proxima-semana-em-xbox-novos-jogos-de-2-a-6-de-novembro/",
+   "summary": "The post Próxima Semana em XBOX: novos jogos de 2 a 6 de novembro appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1793368822000,
+   "source": "Xbox Wire Brasil"
+  }
+ ]
+}
