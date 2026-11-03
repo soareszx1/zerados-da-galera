@@ -1,714 +1,1027 @@
 {
- "atualizadoEm": 1793748090,
+ "atualizadoEm": 1793749256,
  "jogos": {
   "aionii": {
    "appid": 3393110,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "AION 2",
    "slug": "aion-2",
    "titulo": "Aion 2",
-   "v": 4
+   "v": 5
   },
   "alanwakeii": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Terror"
+   ],
    "nome": "Alan Wake 2",
    "slug": "alan-wake-2",
    "titulo": "Alan Wake 2",
-   "v": 4
+   "v": 5
   },
   "armareforger": {
    "appid": 1874880,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Estratégia",
+    "Simulação",
+    "Ação"
+   ],
    "nome": "Arma Reforger",
    "slug": "arma-reforger",
    "titulo": "Arma Reforger",
-   "v": 4
+   "v": 5
   },
   "assassinscreedivblackflag": {
    "appid": 242050,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Assassin’s Creed® IV Black Flag™",
    "slug": "assassin-s-creed-iv-black-flag",
    "titulo": "Assassin's Creed IV: Black Flag",
-   "v": 4
+   "v": 5
   },
   "assassinscreedodyssey": {
    "appid": 812140,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Assassin's Creed® Odyssey",
    "slug": "assassin-s-creed-odyssey",
    "titulo": "Assassin's Creed Odyssey",
-   "v": 4
+   "v": 5
   },
   "assassinscreedvalhalla": {
    "appid": 2208920,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Assassin's Creed Valhalla",
    "slug": "assassin-s-creed-valhalla",
    "titulo": "Assassin's Creed Valhalla",
-   "v": 4
+   "v": 5
   },
   "atomicheart": {
    "appid": 668580,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Atomic Heart",
    "slug": "atomic-heart",
    "titulo": "Atomic Heart",
-   "v": 4
+   "v": 5
   },
   "baldursgateiii": {
    "appid": 1086940,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Estratégia",
+    "Aventura"
+   ],
    "nome": "Baldur's Gate 3",
    "slug": "baldur-s-gate-3",
    "titulo": "Baldur's Gate 3",
-   "v": 4
+   "v": 5
   },
   "batmanarkhamasylum": {
    "appid": 35020,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Batman: Arkham Asylum Demo",
    "slug": "batman-arkham-asylum",
    "titulo": "Batman: Arkham Asylum",
-   "v": 4
+   "v": 5
   },
   "batmanarkhamcity": {
    "appid": 200240,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Luta",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Batman Arkham City Demo",
    "slug": "batman-arkham-city",
    "titulo": "Batman: Arkham City",
-   "v": 4
+   "v": 5
   },
   "batmanarkhamknight": {
    "appid": 208650,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Batman™: Arkham Knight",
    "slug": "batman-arkham-knight",
    "titulo": "Batman: Arkham Knight",
-   "v": 4
+   "v": 5
   },
   "battlefieldvi": {
    "appid": 2807960,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "Battlefield™ 6",
    "slug": "battlefield-6",
    "titulo": "Battlefield™ 6",
-   "v": 4
+   "v": 5
   },
   "bioshockinfinite": {
    "appid": 8870,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "BioShock Infinite",
    "slug": "bioshock-infinite",
    "titulo": "BioShock Infinite",
-   "v": 4
+   "v": 5
   },
   "bloodborne": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Terror",
+    "RPG",
+    "Ação"
+   ],
    "nome": "Bloodborne",
    "slug": "bloodborne",
    "titulo": "Bloodborne",
-   "v": 4
+   "v": 5
   },
   "callofduty": {
    "appid": 1938090,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "Call of Duty®",
    "slug": "call-of-duty",
    "titulo": "Call of Duty®",
-   "v": 4
+   "v": 5
   },
   "counterstrikeii": {
    "appid": 730,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "Counter-Strike 2",
    "slug": "counter-strike-2",
    "titulo": "Counter-Strike 2",
-   "v": 4
+   "v": 5
   },
   "darksoulsiii": {
    "appid": 374320,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Ação"
+   ],
    "nome": "DARK SOULS™ III",
    "slug": "dark-souls-iii",
    "titulo": "Dark Souls III",
-   "v": 4
+   "v": 5
   },
   "defjamfightforny": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Luta"
+   ],
    "nome": "Def Jam: Fight for NY",
    "slug": "def-jam-fight-for-ny",
    "titulo": "Def Jam: Fight for NY",
-   "v": 4
+   "v": 5
   },
   "devilmaycryv": {
    "appid": 601150,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Devil May Cry 5",
    "slug": "devil-may-cry-5",
    "titulo": "Devil May Cry 5",
-   "v": 4
+   "v": 5
   },
   "dirtiii": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "dmcdevilmaycry": {
    "appid": 220440,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "DmC: Devil May Cry",
    "slug": "dmc-devil-may-cry",
    "titulo": "DmC: Devil May Cry",
-   "v": 4
+   "v": 5
   },
   "donkeykongbananza": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Plataforma"
+   ],
    "nome": "Donkey Kong Bananza",
    "slug": "donkey-kong-bananza",
    "titulo": "Donkey Kong Bananza",
-   "v": 4
+   "v": 5
   },
   "fifastreet": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Esporte"
+   ],
    "nome": "FIFA Street",
    "slug": "fifa-street",
    "titulo": "FIFA Street",
-   "v": 4
+   "v": 5
   },
   "finalfantasyviiremake": {
    "appid": 1462040,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "FINAL FANTASY VII REMAKE INTERGRADE",
    "slug": "final-fantasy-vii-remake",
    "titulo": "Final Fantasy VII Remake",
-   "v": 4
+   "v": 5
   },
   "footballmanager27": {
    "appid": 4540240,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": true,
+   "estilos": [
+    "Esporte",
+    "Estratégia",
+    "Simulação"
+   ],
    "nome": "International Football Manager 27",
    "slug": "football-manager-27",
    "titulo": "Football Manager 27",
-   "v": 4
+   "v": 5
   },
   "forzahorizon": {
    "appid": 2483190,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Esporte",
+    "Simulação"
+   ],
    "nome": "Forza Horizon 6",
    "slug": "forza-horizon",
    "titulo": "Forza Horizon",
-   "v": 4
+   "v": 5
   },
   "forzahorizonii": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "forzahorizonv": {
    "appid": 1551360,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Esporte",
+    "Simulação",
+    "Aventura"
+   ],
    "nome": "Forza Horizon 5",
    "slug": "forza-horizon-5",
    "titulo": "Forza Horizon 5",
-   "v": 4
+   "v": 5
   },
   "forzahorizonvi": {
    "appid": 2483190,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Esporte",
+    "Simulação"
+   ],
    "nome": "Forza Horizon 6",
    "slug": "forza-horizon-6",
    "titulo": "Forza Horizon 6",
-   "v": 4
+   "v": 5
   },
   "forzamotorsportiv": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "godofwar": {
    "appid": 1593500,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "God of War",
    "slug": "god-of-war",
    "titulo": "God of War",
-   "v": 4
+   "v": 5
   },
   "godofwariii": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "God of War III",
    "slug": "god-of-war-iii",
    "titulo": "God of War III",
-   "v": 4
+   "v": 5
   },
   "grandtheftautoiv": {
    "appid": 12210,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto IV: The Complete Edition",
    "slug": "grand-theft-auto-iv",
    "titulo": "Grand Theft Auto IV",
-   "v": 4
+   "v": 5
   },
   "grandtheftautoivthelostanddamned": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto IV: The Lost and Damned",
    "slug": "grand-theft-auto-iv-the-lost-and-damned",
    "titulo": "Grand Theft Auto IV: The Lost and Damned",
-   "v": 4
+   "v": 5
   },
   "grandtheftautosanandreas": {
    "appid": 1547000,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto: San Andreas – The Definitive Edition",
    "slug": "grand-theft-auto-san-andreas",
    "titulo": "Grand Theft Auto: San Andreas",
-   "v": 4
+   "v": 5
   },
   "grandtheftautotheballadofgaytony": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto: The Ballad of Gay Tony",
    "slug": "grand-theft-auto-the-ballad-of-gay-tony",
    "titulo": "Grand Theft Auto: The Ballad of Gay Tony",
-   "v": 4
+   "v": 5
   },
   "grandtheftautothetrilogythedefinitiveedition": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto: The Trilogy – The Definitive Edition",
    "slug": "grand-theft-auto-the-trilogy-the-definitive-edit",
    "titulo": "Grand Theft Auto: The Trilogy – The Definitive Edition",
-   "v": 4
+   "v": 5
   },
   "grandtheftautov": {
    "appid": 3240220,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Tiro",
+    "Simulação",
+    "Aventura"
+   ],
    "nome": "Grand Theft Auto V Enhanced",
    "slug": "grand-theft-auto-v",
    "titulo": "Grand Theft Auto V",
-   "v": 4
+   "v": 5
   },
   "grandtheftautovi": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": true,
+   "estilos": [
+    "Tiro",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto VI",
    "slug": "grand-theft-auto-vi",
    "titulo": "Grand Theft Auto VI",
-   "v": 4
+   "v": 5
   },
   "grandtheftautovicecity": {
    "appid": 1546990,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Grand Theft Auto: Vice City – The Definitive Edition",
    "slug": "grand-theft-auto-vice-city",
    "titulo": "Grand Theft Auto: Vice City",
-   "v": 4
+   "v": 5
   },
   "granturismoiiiaspec": {
    "appid": null,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida"
+   ],
    "nome": "Gran Turismo",
    "slug": "gran-turismo-3-a-spec",
    "titulo": "Gran Turismo 3: A-Spec",
-   "v": 4
+   "v": 5
   },
   "granturismoiv": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1793748090,
+   "em": 1793749256,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "hadesii": {
    "appid": 1145350,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Ação"
+   ],
    "nome": "Hades II",
    "slug": "hades-ii",
    "titulo": "Hades II",
-   "v": 4
+   "v": 5
   },
   "haloiv": {
    "appid": 1064273,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "Halo 4",
    "slug": "halo-4",
    "titulo": "Halo 4",
-   "v": 4
+   "v": 5
   },
   "halothemasterchiefcollection": {
    "appid": 976730,
-   "em": 1793744568,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
    "nome": "Halo: The Master Chief Collection",
    "slug": "halo-the-master-chief-collection",
    "titulo": "Halo: The Master Chief Collection",
-   "v": 4
+   "v": 5
   },
   "hifirush": {
    "appid": 1817230,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Ação"
+   ],
    "nome": "Hi-Fi RUSH",
    "slug": "hi-fi-rush",
    "titulo": "Hi-Fi Rush",
-   "v": 4
+   "v": 5
   },
   "hollowknightsilksong": {
    "appid": 1030300,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Hollow Knight: Silksong",
    "slug": "hollow-knight-silksong",
    "titulo": "Hollow Knight: Silksong",
-   "v": 4
+   "v": 5
   },
   "horizonforbiddenwest": {
    "appid": 2420110,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Horizon Forbidden West™ - Edição Completa",
    "slug": "horizon-forbidden-west",
    "titulo": "Horizon Forbidden West",
-   "v": 4
+   "v": 5
   },
   "infamoussecondson": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Infamous Second Son",
    "slug": "infamous-second-son",
    "titulo": "Infamous Second Son",
-   "v": 4
+   "v": 5
   },
   "lastofus": {
    "appid": 1888930,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Terror",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "The Last of Us™ Part I",
    "slug": "the-last-of-us",
    "titulo": "The Last of Us",
-   "v": 4
+   "v": 5
   },
   "legendofzeldatearsofthekingdom": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "The Legend of Zelda: Tears of the Kingdom",
    "slug": "the-legend-of-zelda-tears-of-the-kingdom",
    "titulo": "The Legend of Zelda: Tears of the Kingdom",
-   "v": 4
+   "v": 5
   },
   "mafiaii": {
    "appid": 50130,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Mafia II (Classic)",
    "slug": "mafia-ii",
    "titulo": "Mafia II",
-   "v": 4
+   "v": 5
   },
   "marvelsspiderman": {
    "appid": 2651280,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Marvel's Spider-Man 2",
    "slug": "marvel-s-spider-man",
    "titulo": "Marvel's Spider-Man",
-   "v": 4
+   "v": 5
   },
   "marvelsspidermanii": {
    "appid": 2651280,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Marvel's Spider-Man 2",
    "slug": "marvel-s-spider-man-2",
    "titulo": "Marvel's Spider-Man 2",
-   "v": 4
+   "v": 5
   },
   "metalgearsoliddeltasnakeeater": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Metal Gear Solid Delta: Snake Eater",
    "slug": "metal-gear-solid-delta-snake-eater",
    "titulo": "Metal Gear Solid Delta: Snake Eater",
-   "v": 4
+   "v": 5
   },
   "midnightclubiiidubedition": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida"
+   ],
    "nome": "Midnight Club 3: Dub Edition",
    "slug": "midnight-club-3-dub-edition",
    "titulo": "Midnight Club 3: Dub Edition",
-   "v": 4
+   "v": 5
   },
   "needforspeed": {
    "appid": 1262540,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Simulação",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Need for Speed™ ",
    "slug": "need-for-speed",
    "titulo": "Need for Speed",
-   "v": 4
+   "v": 5
   },
   "needforspeedhotpursuit": {
    "appid": 1328660,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Ação"
+   ],
    "nome": "Need for Speed™ Hot Pursuit Remastered",
    "slug": "need-for-speed-hot-pursuit",
    "titulo": "Need for Speed: Hot Pursuit",
-   "v": 4
+   "v": 5
   },
   "needforspeedmostwanted": {
    "appid": 1262560,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Need for Speed™ Most Wanted",
    "slug": "need-for-speed-most-wanted",
    "titulo": "Need for Speed: Most Wanted",
-   "v": 4
+   "v": 5
   },
   "needforspeedtherun": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida"
+   ],
    "nome": "Need for Speed: The Run",
    "slug": "need-for-speed-the-run",
    "titulo": "Need for Speed: The Run",
-   "v": 4
+   "v": 5
   },
   "needforspeedunbound": {
    "appid": 1846380,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Ação"
+   ],
    "nome": "Need for Speed™ Unbound",
    "slug": "need-for-speed-unbound",
    "titulo": "Need for Speed Unbound",
-   "v": 4
+   "v": 5
   },
   "phantombladezero": {
    "appid": 4115450,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Ação"
+   ],
    "nome": "Phantom Blade Zero",
    "slug": "phantom-blade-zero",
    "titulo": "Phantom Blade Zero",
-   "v": 4
+   "v": 5
   },
   "pokemonemerald": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG"
+   ],
    "nome": "Pokémon Emerald",
    "slug": "pokemon-emerald",
    "titulo": "Pokémon Emerald",
-   "v": 4
+   "v": 5
   },
   "pokemonfirered": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG"
+   ],
    "nome": "Pokémon FireRed and LeafGreen",
    "slug": "pokemon-firered",
    "titulo": "Pokémon FireRed",
-   "v": 4
+   "v": 5
   },
   "pokemonlegendsarceus": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Ação"
+   ],
    "nome": "Pokémon Legends: Arceus",
    "slug": "pokemon-legends-arceus",
    "titulo": "Pokémon Legends: Arceus",
-   "v": 4
+   "v": 5
   },
   "pokemonletsgopikachuandletsgoeevee": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG"
+   ],
    "nome": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
    "slug": "pokemon-let-s-go-pikachu-and-let-s-go-eevee",
    "titulo": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
-   "v": 4
+   "v": 5
   },
   "pokemonswordandshield": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "RPG"
+   ],
    "nome": "Pokémon Sword and Shield",
    "slug": "pokemon-sword-and-shield",
    "titulo": "Pokémon Sword and Shield",
-   "v": 4
+   "v": 5
   },
   "reddeadredemption": {
    "appid": 2668510,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Red Dead Redemption",
    "slug": "red-dead-redemption",
    "titulo": "Red Dead Redemption",
-   "v": 4
+   "v": 5
   },
   "reddeadredemptionii": {
    "appid": 1174180,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Red Dead Redemption 2",
    "slug": "red-dead-redemption-2",
    "titulo": "Red Dead Redemption 2",
-   "v": 4
+   "v": 5
   },
   "residenteviliv": {
    "appid": 2050650,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Terror",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Resident Evil 4",
    "slug": "resident-evil-4",
    "titulo": "Resident Evil 4",
-   "v": 4
+   "v": 5
   },
   "residentevilrequiem": {
    "appid": 3764200,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Terror",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Resident Evil Requiem",
    "slug": "resident-evil-requiem",
    "titulo": "Resident Evil Requiem",
-   "v": 4
+   "v": 5
   },
   "residentevilvillage": {
    "appid": 1196590,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Terror",
+    "Ação"
+   ],
    "nome": "Resident Evil Village",
    "slug": "resident-evil-village",
    "titulo": "Resident Evil Village",
-   "v": 4
+   "v": 5
   },
   "saintsrowii": {
    "appid": 9480,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Saints Row 2",
    "slug": "saints-row-2",
    "titulo": "Saints Row 2",
-   "v": 4
+   "v": 5
   },
   "saintsrowthethird": {
    "appid": 55230,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Saints Row: The Third",
    "slug": "saints-row-the-third",
    "titulo": "Saints Row: The Third",
-   "v": 4
+   "v": 5
   },
   "shadowofthecolossus": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Shadow of the Colossus",
    "slug": "shadow-of-the-colossus",
    "titulo": "Shadow of the Colossus",
-   "v": 4
+   "v": 5
   },
   "shiftiiunleashed": {
    "appid": 47920,
-   "em": 1793748090,
+   "em": 1793749256,
    "emBreve": false,
+   "estilos": [
+    "Corrida"
+   ],
    "nome": "Shift 2 Unleashed",
    "slug": "shift-2-unleashed",
    "titulo": "Shift 2: Unleashed",
-   "v": 4
+   "v": 5
   },
   "silverpines": {
    "appid": 2333000,
    "em": 1793733903,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Silver Pines",
    "slug": "silver-pines",
    "titulo": "Silver Pines",
@@ -718,6 +1031,9 @@
    "appid": 4304060,
    "em": 1793733903,
    "emBreve": true,
+   "estilos": [
+    "Ação"
+   ],
    "nome": "SONIC PICO PARK",
    "slug": "sonic-pico-park",
    "titulo": "Sonic Pico Park",
@@ -727,6 +1043,11 @@
    "appid": 3489700,
    "em": 1793733903,
    "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Stellar Blade™",
    "slug": "stellar-blade",
    "titulo": "Stellar Blade",
@@ -736,6 +1057,10 @@
    "appid": 1364780,
    "em": 1793748090,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Street Fighter™ 6",
    "slug": "street-fighter-6",
    "titulo": "Street Fighter 6",
@@ -745,6 +1070,9 @@
    "appid": null,
    "em": 1793733903,
    "emBreve": false,
+   "estilos": [
+    "Plataforma"
+   ],
    "nome": "Super Mario Bros. Wonder",
    "slug": "super-mario-bros-wonder",
    "titulo": "Super Mario Bros. Wonder",
@@ -754,6 +1082,9 @@
    "appid": null,
    "em": 1793748090,
    "emBreve": false,
+   "estilos": [
+    "Plataforma"
+   ],
    "nome": "Super Mario World",
    "slug": "super-mario-world",
    "titulo": "Super Mario World",
@@ -763,6 +1094,9 @@
    "appid": 1778820,
    "em": 1793748090,
    "emBreve": false,
+   "estilos": [
+    "Ação"
+   ],
    "nome": "TEKKEN 8",
    "slug": "tekken-8",
    "titulo": "Tekken 8",
@@ -772,6 +1106,10 @@
    "appid": 2634950,
    "em": 1793748090,
    "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "RPG"
+   ],
    "nome": "Tokyo Xtreme Racer",
    "slug": "tokyo-xtreme-racer",
    "titulo": "Tokyo Xtreme Racer",
@@ -788,6 +1126,12 @@
    "appid": null,
    "em": 1793748090,
    "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Plataforma",
+    "Aventura",
+    "Ação"
+   ],
    "nome": "Uncharted 4: A Thief's End",
    "slug": "uncharted-4-a-thief-s-end",
    "titulo": "Uncharted 4: A Thief's End",
@@ -797,6 +1141,10 @@
    "appid": null,
    "em": 1793733903,
    "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação"
+   ],
    "nome": "The Legend of Zelda: Ocarina of Time",
    "slug": "zelda-ocarina-of-time",
    "titulo": "Zelda Ocarina Of Time",
