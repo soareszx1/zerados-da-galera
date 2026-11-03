@@ -432,13 +432,21 @@ function viewJogo(){
   return `<div class="page"><a class="btn small back" href="#estante">← Estante</a>
     <section class="box ghero">${coverBox(cov)}<div style="display:flex;flex-direction:column;gap:12px;min-width:0">
       <span class="eyebrow">Página do jogo</span><h2>${esc(title)}</h2>
-      <div class="stats">
-        <div class="stat"><b>${notas.length?fmtNota(notas.reduce((a,b)=>a+b,0)/notas.length):"–"}</b><span>nota média</span></div>
-        <div class="stat"><b>${hrs.length?Math.round(hrs.reduce((a,b)=>a+b,0)/hrs.length)+" h":"–"}</b><span>tempo pra zerar</span></div>
-        <div class="stat"><b>${E.filter(isDone).length}</b><span>zeraram</span></div>
-        <div class="stat"><b>${E.filter(g=>g.status==="jogando").length}</b><span>jogando</span></div>
-        <div class="stat"><b>${E.filter(g=>g.status==="quero").length}</b><span>na fila</span></div>
-      </div>
+      ${(()=>{const inf=typeof loadInfo==="function"?(loadInfo(ckey(title)),infoMemo[ckey(title)]):null;const av=inf&&inf.avaliacaoSteam;
+        const hl="https://howlongtobeat.com/?q="+encodeURIComponent(inf&&inf.nome||title);
+        return `<div class="sgroups">
+        <div class="sgroup"><span class="flabel">Nossa galera</span><div class="stats">
+          <div class="stat"><b>${notas.length?fmtNota(notas.reduce((a,b)=>a+b,0)/notas.length):"–"}</b><span>nota da galera${notas.length?` (${notas.length})`:""}</span></div>
+          <div class="stat"><b>${hrs.length?Math.round(hrs.reduce((a,b)=>a+b,0)/hrs.length)+" h":"–"}</b><span>pra zerar (galera)</span></div>
+          <div class="stat"><b>${E.filter(isDone).length}</b><span>zeraram</span></div>
+          <div class="stat"><b>${E.filter(g=>g.status==="jogando").length}</b><span>jogando</span></div>
+          <div class="stat"><b>${E.filter(g=>g.status==="quero").length}</b><span>na fila</span></div>
+        </div></div>
+        <div class="sgroup net"><span class="flabel">Na internet</span><div class="stats">
+          <div class="stat"><b>${inf&&inf.nota?`<span class="gscore">${esc(inf.nota)}</span>`:"–"}</b><span>Metacritic</span></div>
+          <div class="stat"><b>${av&&av.pct?esc(av.pct)+"%":"–"}</b><span>${av&&av.texto?esc(av.texto)+" na Steam":"avaliações Steam"}</span></div>
+          <a class="stat linkstat" href="${esc(hl)}" target="_blank" rel="noopener noreferrer"><b>Ver ↗</b><span>tempo pra zerar (HowLongToBeat)</span></a>
+        </div></div></div>`})()}
       ${plats.length?`<div class="ptags">${plats.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>`:""}
       ${m&&S.canWrite?(inMine?`<div><button class="btn small" data-act="edit" data-id="${esc(Object.keys(m.games).find(k=>m.games[k]===inMine))}">Editar o meu</button></div>`:`<div class="actions"><button class="btn small primary" data-act="addtitle" data-t="${esc(title)}">Adicionar à minha lista</button><button class="btn small" data-act="quickfila" data-t="${esc(title)}">+ Fila</button></div>`):""}
     </div></section>
