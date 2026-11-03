@@ -1,7 +1,7 @@
 # Zerados da Galera
 
 Comunidade da galera para registrar jogos zerados, o que está jogando, dicas, tier list, chat e ranking.
-Criado por **João Rodrigues**.
+Criado por **Gordões Enterprise**.
 
 Site estático (GitHub Pages) + Firebase (login e banco de dados) + RAWG (nomes e capas dos jogos).
 

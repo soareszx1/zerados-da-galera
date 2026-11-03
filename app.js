@@ -21,7 +21,7 @@ const ROLES = {
 const RX = {gg:{l:"GG",t:"Mandou bem"},hype:{l:"Hype",t:"Fiquei com vontade"},fila:{l:"+ Fila",t:"Quero jogar também"}};
 const GLYPHS = ["▲","●","■","✖","★","◆","♥","⚡"];
 const COLORS = ["#FF4D6D","#FF9F1C","#E9C400","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5"];
-const VIEWS = ["inicio","saves","quadro","estante","tierlist","novidades","dicas","chat","ranking"];
+const VIEWS = ["inicio","saves","quadro","estante","tierlist","novidades","promocoes","dicas","chat","ranking"];
 const SKINS = {padrao:{l:"Padrão",lv:1,sw:"#FF3B6B"},neon:{l:"Neon",lv:3,sw:"#00C98D"},gameboy:{l:"Game Boy",lv:5,sw:"#6E8F0B"},ouro:{l:"Ouro",lv:8,sw:"#D99A00"},vapor:{l:"Vaporwave",lv:12,sw:"#FF4FD8"}};
 const LEVEL_NAMES = [[20,"Mito"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Aventureiro"],[1,"Novato"]];
 
@@ -243,7 +243,7 @@ function renderBanner(){
   else B.innerHTML="";
 }
 function renderTabs(){
-  const labels={inicio:"Início",saves:"Meus Saves",quadro:"Quadro",novidades:"Novidades",estante:"Galera",tierlist:"Tier List",jogando:"Jogando agora",dicas:"Dicas",chat:"Chat",ranking:"Ranking"};
+  const labels={inicio:"Início",saves:"Meus Saves",quadro:"Quadro",novidades:"Novidades",promocoes:"Promoções",estante:"Galera",tierlist:"Tier List",jogando:"Jogando agora",dicas:"Dicas",chat:"Chat",ranking:"Ranking"};
   const un=S.view==="chat"?0:chatUnread();
   $("#tabs").innerHTML=VIEWS.map(v=>`<a class="tab" role="tab" href="#${v}" aria-selected="${S.view===v}">${labels[v]}${v==="chat"&&un?` <span class="tabn">${un>9?"9+":un}</span>`:""}</a>`).join("");
   $("#filters").hidden=!["estante","tierlist","jogando","dicas"].includes(S.view)||!allGames().length;
@@ -262,7 +262,7 @@ function renderView(){
     V.innerHTML=`<section class="box hero-empty"><div class="big">P1<br>START</div><div><h2>Ninguém deu start ainda</h2>
       <p>Crie seu perfil, cadastre os jogos que você já zerou na vida, os que zerou em ${YEAR} e o que está jogando agora. Depois chame a galera.</p>
       <div class="actions">${S.mode==="live"&&S.canWrite?`<button class="btn primary" data-act="profile">Criar meu perfil</button>`:""}<button class="btn" data-act="demo">Ver como fica com exemplo</button></div></div></section>`;return}
-  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,jogo:viewJogo,novidades:viewNovidades,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
+  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
   const log0=$("#chatlog");const nearBottom=!log0||log0.scrollHeight-log0.scrollTop-log0.clientHeight<80;const focused=document.activeElement?.id;
   V.innerHTML=fn();
   for(const id of ["chat-text","cmt-text"]){const el=document.getElementById(id);if(el&&S.drafts?.[id]){el.value=S.drafts[id]}}
@@ -961,26 +961,38 @@ function tierRows(games,cover){
     const chips=Object.values(byT).map(c=>`<a class="chip" href="#jogo-${esc(slug(c.title))}" style="color:inherit;text-decoration:none">${coverBox(c.gs.find(x=>x.coverV||x.coverUrl)||c.gs[0],"mini")}<span class="ct">${esc(c.title)}</span>${cover==="dots"?`<span class="dots">${c.ps.filter(Boolean).map(p=>glyph(p,true)).join("")}</span>`:""}</a>`).join("");
     if(!t&&!chips)return "";return `<div class="trow"><div class="tlabel t-${t||"N"}">${t||"?"}</div><div class="titems">${chips||'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
 }
+// estilos de jogo (vêm do índice de fichas: info.json → estilos)
+const ESTILOS=["Corrida","Tiro","Ação","Aventura","RPG","Luta","Terror","Esporte","Plataforma","Estratégia","Simulação","Puzzle"];
+const estilosDe = t => {const e=infoIdx()[ckey(t)];return e&&Array.isArray(e.estilos)?e.estilos:[]};
+const passaEstilo = t => !S.tierGenre||estilosDe(t).includes(S.tierGenre);
+function genreSel(titles){
+  const tem=new Set();titles.forEach(t=>estilosDe(t).forEach(x=>tem.add(x)));
+  const ops=ESTILOS.filter(x=>tem.has(x)||x===S.tierGenre);
+  if(!ops.length)return "";
+  return `<label class="whosel${S.tierGenre?" on":""}"><span class="sr-only">Filtrar por estilo de jogo</span><select id="tiergenre-sel"><option value="">Todos os estilos</option>${ops.map(x=>`<option value="${esc(x)}"${S.tierGenre===x?" selected":""}>${esc(x)}</option>`).join("")}</select></label>`;
+}
 function viewTier(){
   const P=players();const mid=meId();
-  if(!S.tierWho)S.tierWho=mid&&P[mid]?mid:"galera";
-  if(S.tierWho!=="galera"&&S.tierWho!=="mes"&&!P[S.tierWho])S.tierWho="galera";
+  if(!S.tierWho||S.tierWho==="galera")S.tierWho=mid&&P[mid]?mid:"mes";
+  if(S.tierWho!=="mes"&&!P[S.tierWho])S.tierWho="mes";
   const ids=Object.keys(P).sort((a,b)=>a===mid?-1:b===mid?1:P[a].nick.localeCompare(P[b].nick,"pt"));
   const fr=new Set(mid&&P[mid]&&typeof friendsOf==="function"?Object.keys(friendsOf(P[mid])):[]);
   const others=ids.filter(id=>id!==mid);const amigos=others.filter(id=>fr.has(id)),resto=others.filter(id=>!fr.has(id));
-  const other=S.tierWho!=="mes"&&S.tierWho!=="galera"&&S.tierWho!==mid?P[S.tierWho]:null;
+  const other=S.tierWho!=="mes"&&S.tierWho!==mid?P[S.tierWho]:null;
   const opt=id=>`<option value="${esc(id)}" ${S.tierWho===id?"selected":""}>${esc(P[id].nick)}</option>`;
+  let titles;
+  if(S.tierWho==="mes"){const tl=tierlists()[S.tlMonth]||tierlists()[Object.keys(tierlists()).sort().reverse()[0]];titles=(tl&&Array.isArray(tl.games)?tl.games:[]).map(g=>g.title)}
+  const L=S.tierWho==="mes"?[]:filtered().filter(g=>g.pid===S.tierWho);
+  if(S.tierWho!=="mes")titles=L.filter(g=>g.tier).map(g=>g.title);
   const tabs=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
     <button data-act="tierwho" data-id="mes" aria-pressed="${S.tierWho==="mes"}">Do mês</button>
     ${mid&&P[mid]?`<button data-act="tierwho" data-id="${esc(mid)}" aria-pressed="${S.tierWho===mid}">${glyph(P[mid],true)} Minha</button>`:""}
-    <button data-act="tierwho" data-id="galera" aria-pressed="${S.tierWho==="galera"}">Galera toda</button>
-    ${others.length?`<label class="whosel${other?" on":""}">${other?glyph(other,true):""}<span class="sr-only">Ver a tier list de outra pessoa</span><select id="tierwho-sel"><option value="">${other?"Trocar pessoa…":`De outra pessoa (${others.length})…`}</option>${amigos.length?`<optgroup label="Amigos">${amigos.map(opt).join("")}</optgroup><optgroup label="Galera">${resto.map(opt).join("")}</optgroup>`:resto.map(opt).join("")}</select></label>`:""}</div>`;
+    ${others.length?`<label class="whosel${other?" on":""}">${other?glyph(other,true):""}<span class="sr-only">Ver a tier list de outra pessoa</span><select id="tierwho-sel"><option value="">${other?"Trocar pessoa…":`De outra pessoa (${others.length})…`}</option>${amigos.length?`<optgroup label="Amigos">${amigos.map(opt).join("")}</optgroup><optgroup label="Galera">${resto.map(opt).join("")}</optgroup>`:resto.map(opt).join("")}</select></label>`:""}
+    ${genreSel(titles||[])}</div>`;
   if(S.tierWho==="mes")return tabs+viewTierMes();
-  const L=filtered().filter(g=>S.tierWho==="galera"||g.pid===S.tierWho);
-  const who=S.tierWho==="galera"?null:P[S.tierWho];
-  const head=who?`<div class="tierhead">${glyph(who)}<div><h3>Tier list de ${nk(who)}</h3><span class="hint">${L.filter(g=>g.tier).length} jogos ranqueados · jogos sem tier não aparecem${S.tierWho===mid&&S.canWrite?" · para mudar o tier de um jogo, edite o jogo":""}</span></div></div>`
-    :`<div class="tierhead"><div><h3>Tier list da galera</h3><span class="hint">Todos os tiers juntos; as bolinhas mostram quem colocou o jogo em cada tier.</span></div></div>`;
-  return tabs+head+`<section class="box tierlist" aria-label="Tier list">${tierRows(L,who?"":"dots")}</section>`;
+  const who=P[S.tierWho];const LF=L.filter(g=>passaEstilo(g.title));
+  const head=`<div class="tierhead">${glyph(who)}<div><h3>Tier list de ${nk(who)}</h3><span class="hint">${LF.filter(g=>g.tier).length} jogos${S.tierGenre?" de "+esc(S.tierGenre):""}</span></div></div>`;
+  return tabs+head+`<section class="box tierlist" aria-label="Tier list">${S.tierGenre&&!LF.some(g=>g.tier)?`<div class="trow"><div class="titems"><span class="empty-row">Nenhum jogo de ${esc(S.tierGenre)} nesta tier list.</span></div></div>`:tierRows(LF,"")}</section>`;
 }
 /* ---------- tier list do mês por votação ---------- */
 const TSCORE={S:5,A:4,B:3,C:2,D:1};
@@ -1007,8 +1019,8 @@ function tlChip(x){const g=allGames().find(y=>norm(y.title)===norm(x.title));con
   return `<a class="chip" href="#jogo-${esc(slug(x.title))}" style="color:inherit;text-decoration:none">${coverBox(cg,"mini")}<span class="ct">${esc(x.title)}</span>${x.n?`<span class="vn" title="média ${String(x.avg).replace(".",",")}">${x.n} voto${x.n>1?"s":""}</span>`:""}</a>`}
 function monthlyRows(month){
   const r=tlResult(month);if(!r)return "";
-  return TIERS.map(t=>{const arr=r.tiers[t]||[];return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems">${arr.length?arr.map(tlChip).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("")
-    +(r.pending.length?`<div class="trow"><div class="tlabel t-N">?</div><div class="titems">${r.pending.map(tlChip).join("")}<span class="empty-row">sem votos ainda</span></div></div>`:"");
+  return TIERS.map(t=>{const arr=(r.tiers[t]||[]).filter(x=>passaEstilo(x.title));return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems">${arr.length?arr.map(tlChip).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("")
+    +(r.pending.filter(x=>passaEstilo(x.title)).length?`<div class="trow"><div class="tlabel t-N">?</div><div class="titems">${r.pending.filter(x=>passaEstilo(x.title)).map(tlChip).join("")}<span class="empty-row">sem votos ainda</span></div></div>`:"");
 }
 function voteBox(month){
   const tl=tierlists()[month];if(!tl||tl.status!=="aberta"||!Array.isArray(tl.games))return "";
@@ -1025,7 +1037,7 @@ function viewTierMes(){
   const st=tl?(tl.status==="aberta"?`<span class="pill s-jogando">Votação aberta</span>`:tl.status==="encerrada"?`<span class="pill s-zerado">Resultado final</span>`:""):"";
   const top=`<div class="tierhead"><div style="flex:1;min-width:0"><span class="eyebrow">Tier list do mês</span><h3>${tl?esc(tl.title||"Os melhores do mês"):"Nenhuma tier list mensal ainda"}</h3>
       ${tl?`<span class="hint">${st} ${esc(monthName(S.tlMonth))}${r&&!r.legacy?` · ${r.voters} pessoa${r.voters===1?"":"s"} votaram`:""}${tl.note?` · ${esc(tl.note)}`:""}</span>`:`<span class="hint">${staff?"Lance a primeira votação com os jogos que a galera jogou este mês.":"O dono do site lança uma votação por mês com os melhores jogos."}</span>`}</div>
-    <div class="actions">${keys.length>1?`<select id="tl-month" aria-label="Mês">${keys.map(k=>`<option value="${k}"${k===S.tlMonth?" selected":""}>${esc(monthName(k))}</option>`).join("")}</select>`:""}
+    <div class="actions">${keys.length?`<select id="tl-month" aria-label="Mês">${keys.map(k=>`<option value="${k}"${k===S.tlMonth?" selected":""}>${esc(monthName(k))}</option>`).join("")}</select>`:""}
       ${staff&&!all[monthKey()]?`<button class="btn small primary" data-act="monthly" data-m="${monthKey()}">Lançar votação do mês</button>`:""}
       ${staff&&tl?`<button class="btn small" data-act="monthly" data-m="${S.tlMonth}">Gerenciar</button>`:""}</div></div>`;
   return top+(tl?`<div class="tlgrid"><section class="box tierlist" aria-label="Resultado da tier list do mês">${monthlyRows(S.tlMonth)}</section>${voteBox(S.tlMonth)}</div>`:"");
@@ -1080,7 +1092,7 @@ function viewNovidades(){
   if(S.newsSrc&&!srcs.includes(S.newsSrc))S.newsSrc="";
   const AF=A.filter(n=>!S.newsSrc||n.source===S.newsSrc);
   const upd=S.autoNews?.atualizadoEm;
-  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Novidades</span><h3>O que está rolando no mundo dos games</h3><span class="hint">Destaques escolhidos pela staff e notícias puxadas automaticamente dos sites, sempre com link para a matéria original.</span></div>
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Novidades</span><h3>O que está rolando no mundo dos games</h3></div>
     ${staff?`<button class="btn primary small" data-act="newsadd">+ Postar destaque</button>`:""}</div>
     ${L.length?`<section class="sec"><h4>Destaques da galera</h4><div class="ngrid">${L.map(n=>newsCard(n)).join("")}</div></section>`:""}
     <section class="sec"><h4>Notícias dos sites${upd?` · atualizado há ${ago(upd)}`:""}</h4>
@@ -1104,6 +1116,7 @@ function openNews(){
 
 /* ---------- cliques das novidades e tier lists ---------- */
 document.addEventListener("change",e=>{if(e.target.id==="tierwho-sel"&&e.target.value){S.tierWho=e.target.value;renderView()}});
+document.addEventListener("change",e=>{if(e.target.id==="tiergenre-sel"){S.tierGenre=e.target.value;renderView()}});
 document.addEventListener("click",async e=>{
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
   if(a==="tierwho"){S.tierWho=el.dataset.id;renderView();return}
@@ -1196,7 +1209,7 @@ function viewSaves(){
   const m=me();
   if(!m)return emptyBox("▶","Seus saves ficam aqui",S.mode==="live"&&!S.myId?"Entre para guardar onde parou em cada jogo, anotar a história, montar a cola de controles e marcar o que falta.":"Crie seu perfil e adicione um jogo para começar.",S.mode==="live"&&!S.myId?`<div class="actions"><button class="btn primary" data-act="auth" data-m="criar">Criar conta</button><button class="btn" data-act="auth" data-m="entrar">Entrar</button></div>`:"");
   const L=myGamesSorted();const ativos=L.filter(g=>["jogando","pausado"].includes(g.status));const resto=L.filter(g=>!["jogando","pausado"].includes(g.status));
-  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Meus Saves</span><h3>Onde você parou em cada jogo</h3><span class="hint">Abra a ficha quando for voltar a jogar: onde parou, história, controles, pendências e guias.</span></div>${S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="steam">Importar da Steam</button><button class="btn primary small" data-act="add">+ Jogo</button></div>`:""}</div>
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Meus Saves</span><h3>Onde você parou em cada jogo</h3></div>${S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="steam">Importar da Steam</button><button class="btn primary small" data-act="add">+ Jogo</button></div>`:""}</div>
     ${ativos.length?`<section class="sec"><h4>Jogando agora (${ativos.length})</h4><div class="sgrid">${ativos.map(saveCard).join("")}</div></section>`:""}
     ${resto.length?`<section class="sec"><h4>Outros jogos (${resto.length})</h4><div class="sgrid">${resto.map(saveCard).join("")}</div></section>`:""}
     ${!L.length?emptyBox("+","Nenhum jogo ainda","Adicione o jogo que está jogando para criar o primeiro save."):""}</div>`;
@@ -1426,7 +1439,7 @@ function boardCard(b,compact){
 }
 function viewQuadro(){
   const L=boardList().filter(b=>!S.boardType||b.type===S.boardType);
-  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Quadro da galera</span><h3>Avisos, convites e enquetes</h3><span class="hint">Publicados pelo dono e pelos moderadores. Responda, confirme presença e vote.</span></div>
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Quadro da galera</span><h3>Avisos, convites e enquetes</h3></div>
     ${isStaff()?`<div class="actions"><button class="btn small primary" data-act="bnew" data-t="aviso">+ Aviso</button><button class="btn small" data-act="bnew" data-t="evento">+ Convite</button><button class="btn small" data-act="bnew" data-t="enquete">+ Enquete</button></div>`:""}</div>
     <div class="tierpick" role="group" aria-label="Filtrar"><button data-act="btype" data-id="" aria-pressed="${!S.boardType}">Tudo</button>${Object.entries({aviso:"Avisos",evento:"Convites",enquete:"Enquetes"}).map(([k,l])=>`<button data-act="btype" data-id="${k}" aria-pressed="${S.boardType===k}">${l}</button>`).join("")}</div>
     ${L.length?`<div class="bgrid">${L.map(b=>boardCard(b)).join("")}</div>`:emptyBox("!","Nada no quadro ainda",isStaff()?"Publique um aviso, chame a galera para jogar ou abra uma enquete.":"Quando a staff publicar avisos, convites ou enquetes, eles aparecem aqui.")}</div>`;
@@ -1666,7 +1679,7 @@ function newsAbout(name){
 function infoBox(title){
   const k=ckey(title);loadInfo(k);const d=infoMemo[k];
   if(d===null||d===undefined)return `<section class="box card ginfo"><span class="eyebrow">Sobre o jogo</span><p class="hint">Buscando as informações do jogo…</p></section>`;
-  if(!d)return `<section class="box card ginfo"><span class="eyebrow">Sobre o jogo</span><p class="hint" style="margin:0">Ainda não temos a ficha desse jogo. O robô do site procura na Steam e na Wikipédia de hora em hora.</p></section>`;
+  if(!d)return `<section class="box card ginfo"><span class="eyebrow">Sobre o jogo</span><p class="hint" style="margin:0">Ficha ainda não disponível.</p></section>`;
   const banner=safeImg(d.banner);const loc=localCover(title);
   const plats=(d.plataformas&&d.plataformas.length?d.plataformas:d.plataformasSteam)||[];
   const fact=(l,v)=>v?`<div class="gfact"><span>${esc(l)}</span><b>${v}</b></div>`:"";
@@ -1699,6 +1712,34 @@ function infoBox(title){
 // selo no estilo do Metacritic: verde (75+), amarelo (50–74), vermelho (abaixo de 50)
 function mcBadge(n){n=Math.round(Number(n));if(!(n>=0&&n<=100))return "–";const c=n>=75?"good":n>=50?"mixed":"bad";
   return `<span class="mc mc-${c}" title="Metascore ${n} de 100">${n}</span>`}
+
+/* ---------- Promoções (robô scripts/promos.py → promos.json) ---------- */
+const PROMO_CLS=[["pc","Jogos de PC"],["console","Consoles"],["gratis","Grátis"],["hardware","Hardware e acessórios"]];
+const PROMO_SITES={
+  pc:[["Steam · ofertas","https://store.steampowered.com/specials"],["Epic Games","https://store.epicgames.com/pt-BR/"],["GOG · promoções","https://www.gog.com/pt/games?discounted=true"],["Nuuvem","https://www.nuuvem.com/br-pt/"],["GG.deals","https://gg.deals/br/deals/"],["IsThereAnyDeal","https://isthereanydeal.com/"]],
+  console:[["PlayStation Store","https://store.playstation.com/pt-br/pages/deals"],["Xbox · ofertas","https://www.xbox.com/pt-BR/promotions/sales/sales-and-specials"],["Nintendo eShop","https://www.nintendo.com/pt-br/store/sales-and-deals/"],["PSPrices","https://psprices.com/region-br/"],["Deku Deals","https://www.dekudeals.com/?country=br"]],
+  gratis:[["Epic · grátis da semana","https://store.epicgames.com/pt-BR/free-games"],["GamerPower","https://www.gamerpower.com/"],["Prime Gaming","https://gaming.amazon.com/"],["Steam · grátis","https://store.steampowered.com/genre/Free%20to%20Play/"]],
+  hardware:[["Pelando","https://www.pelando.com.br/"],["Promobit","https://www.promobit.com.br/"],["Hardmob · promoções","https://www.hardmob.com.br/forums/407-Promocoes"],["KaBuM! · ofertas","https://www.kabum.com.br/ofertas"],["Terabyte","https://www.terabyteshop.com.br/promocoes"],["Pichau","https://www.pichau.com.br/"],["Zoom · histórico de preço","https://www.zoom.com.br/"]]
+};
+function promoList(){return S.mode==="demo"?[]:(S.promos?.itens||[]).filter(p=>safeUrl(p.u)&&p.t&&PROMO_CLS.some(c=>c[0]===p.cls))}
+function promoCard(p){const url=safeUrl(p.u),img=safeUrl(p.img||"");
+  const fim=p.ate?Math.ceil((p.ate-Date.now())/86400000):null;
+  return `<article class="box pcard">${img?`<a class="pimg" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('noimg');this.remove()"></a>`:""}
+    <div class="pbody"><span class="eyebrow">${esc(p.src||hostOf(url))}${p.plat?` · ${esc(p.plat)}`:""}</span><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(p.t)}</a></h3>
+      <div class="pprice">${p.pct&&p.pct<100?`<span class="poff">-${esc(p.pct)}%</span>`:""}${p.preco?`<b>${esc(p.preco)}</b>`:""}${p.de&&p.de!==p.preco?`<s>${esc(p.de)}</s>`:""}</div>
+      <div class="nmeta"><span class="hint">${fim!==null&&fim>=0?(fim<=1?"acaba hoje":`até ${fim} dias`):ago(p.at)}</span><a class="linkbtn" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Ver oferta ↗</a></div></div></article>`}
+function viewPromocoes(){
+  const A=promoList();const cls=S.promoCls||"";
+  const AF=A.filter(p=>!cls||p.cls===cls);
+  const cnt=k=>A.filter(p=>p.cls===k).length;
+  const upd=S.promos?.atualizadoEm;
+  const sites=(cls?[PROMO_CLS.find(c=>c[0]===cls)]:PROMO_CLS).map(([k,n])=>`<div class="psites"><h4>${esc(n)}</h4><div class="ptags">${PROMO_SITES[k].map(([nm,u])=>`<a class="tag" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(nm)} ↗</a>`).join("")}</div></div>`).join("");
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Promoções</span><h3>Ofertas da semana</h3>${upd?`<span class="hint">atualizado há ${ago(upd)}</span>`:""}</div></div>
+    <div class="tierpick" role="group" aria-label="Tipo de promoção"><button data-act="promocls" data-id="" aria-pressed="${!cls}">Todas</button>${PROMO_CLS.map(([k,n])=>`<button data-act="promocls" data-id="${k}" aria-pressed="${cls===k}">${esc(n)}${cnt(k)?` <span class="tabn">${cnt(k)}</span>`:""}</button>`).join("")}</div>
+    ${AF.length?`<div class="pgrid">${AF.map(promoCard).join("")}</div>`:`<p class="hint">${S.mode==="demo"?"No modo exemplo as promoções não aparecem.":"Nenhuma promoção nessa categoria agora."}</p>`}
+    <section class="sec"><h4>Onde procurar</h4><div class="psitegrid">${sites}</div></section></div>`;
+}
+document.addEventListener("click",e=>{const el=e.target.closest('[data-act="promocls"]');if(!el)return;S.promoCls=el.dataset.id;renderView()});
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
@@ -1790,7 +1831,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
@@ -1968,6 +2009,7 @@ let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode=
     if(first)autoCovers();
   },()=>{clearTimeout(timer);if(S.mode!=="demo")S.mode=Object.keys(S.players).length?"live":"offline";S.stale=true;renderAll()});
   fetch("news.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.itens)){S.autoNews=j;softRender()}}).catch(()=>{});
+  fetch("promos.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.itens)){S.promos=j;softRender()}}).catch(()=>{});
   fetch("info.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.jogos&&typeof j.jogos==="object"){S.infoIdx=j;softRender()}}).catch(()=>{});
   fetch("covers.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.capas&&typeof j.capas==="object"){S.covers=j.capas;softRender()}}).catch(()=>{});
   AUTH.getRedirectResult().catch(()=>{});

@@ -716,3 +716,28 @@ button.key{cursor:pointer}
 .gfact .mc{min-width:38px;height:38px;font-size:19px}
 .stat b .mc,.gfact b .mc{color:#111;font-size:22px;font-weight:800;font-family:var(--f-body);text-transform:none;letter-spacing:-.02em;margin:0}
 .gfact b .mc{font-size:19px}
+
+/* v12: títulos de notícia legíveis + aba Promoções */
+.ncard h3,.card .ncard h3,.pcard h3{font-family:var(--f-body);font-weight:700;font-size:16px;line-height:1.3;letter-spacing:0;text-transform:none}
+.card .ncard.small h3{font-size:15px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:14px}
+.pcard{display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.pcard .pimg{position:relative;display:block;aspect-ratio:460/215;max-width:100%;background:var(--surface2);border-bottom:2px solid var(--line);overflow:hidden}
+.pcard .pimg img{width:100%;height:100%;object-fit:cover;display:block}
+.pcard .poff{position:absolute;top:8px;left:8px;background:#4c6b22;color:#beee11;font-family:var(--f-body);font-weight:800;font-size:15px;padding:2px 8px;border-radius:6px}
+.pcard .pbody{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.pcard h3 a{color:inherit;text-decoration:none}
+.pcard h3 a:hover{text-decoration:underline}
+.pprice{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pprice b{font-size:18px;font-weight:800;color:var(--accent)}
+.pprice s{color:var(--muted);font-size:13px}
+.pcard .nmeta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}
+.psitegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:10px}
+.psites h4{margin:0 0 8px;font-size:14px;font-weight:700;color:var(--ink);font-family:var(--f-body);letter-spacing:0;text-transform:none}
+.psites .tag{font-size:12px;padding:3px 8px;text-decoration:none;color:var(--ink);border-style:solid}
+.psites .tag:hover{border-color:var(--accent);color:var(--accent)}
+.pcard{padding:0}
+.pcard .pimg{width:100%}
+.pcard .pimg.noimg{display:none}
+.pcard .poff{position:static;align-self:center;font-size:14px}
+.pcard{align-items:stretch}.pcard .pbody{align-self:stretch;width:auto;text-align:left}

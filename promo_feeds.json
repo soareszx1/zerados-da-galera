@@ -1,0 +1,9 @@
+{
+  "_ajuda": "Sites de promoção (RSS) que o robô lê. Ele separa sozinho em PC, console, grátis e hardware e ignora o que não for de games ou PC. Para tirar um site, apague o bloco dele.",
+  "fontes": [
+    {"nome": "Hardmob", "url": "https://www.hardmob.com.br/external.php?type=RSS2&forumids=407"},
+    {"nome": "Gatry", "url": "https://gatry.com/rss"},
+    {"nome": "Promobit", "url": "https://www.promobit.com.br/blog/feed/"},
+    {"nome": "Pelando", "url": "https://www.pelando.com.br/api/feeds/deals?type=hot"}
+  ]
+}
