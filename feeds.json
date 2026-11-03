@@ -1,0 +1,14 @@
+{
+  "_ajuda": "Lista de sites de onde o robô puxa notícias. Para tirar um site, apague o bloco dele. Para adicionar, copie um bloco e troque nome e url do feed. filtrar=true guarda só notícias que falam de games.",
+  "fontes": [
+    {"nome": "PlayStation Blog BR", "url": "https://blog.br.playstation.com/feed/", "filtrar": false},
+    {"nome": "Xbox Wire Brasil", "url": "https://news.xbox.com/pt-br/feed/", "filtrar": false},
+    {"nome": "IGN Brasil", "url": "https://br.ign.com/feed.xml", "filtrar": false},
+    {"nome": "Jovem Nerd", "url": "https://jovemnerd.com.br/feed/", "filtrar": true},
+    {"nome": "Adrenaline", "url": "https://adrenaline.com.br/feed/", "filtrar": true},
+    {"nome": "Hardware.com.br", "url": "https://www.hardware.com.br/feed/", "filtrar": true},
+    {"nome": "Eurogamer", "url": "https://www.eurogamer.net/feed", "filtrar": false},
+    {"nome": "Nintendo Life", "url": "https://www.nintendolife.com/feeds/latest", "filtrar": false},
+    {"nome": "GameSpot", "url": "https://www.gamespot.com/feeds/mashup/", "filtrar": false}
+  ]
+}

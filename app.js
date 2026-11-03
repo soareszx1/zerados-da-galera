@@ -19,7 +19,7 @@ const ROLES = {
 const RX = {gg:{l:"GG",t:"Mandou bem"},hype:{l:"Hype",t:"Fiquei com vontade"},fila:{l:"+ Fila",t:"Quero jogar também"}};
 const GLYPHS = ["▲","●","■","✖","★","◆","♥","⚡"];
 const COLORS = ["#FF4D6D","#FF9F1C","#E9C400","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5"];
-const VIEWS = ["inicio","estante","tierlist","jogando","dicas","chat","ranking"];
+const VIEWS = ["inicio","saves","quadro","estante","tierlist","novidades","dicas","chat","ranking"];
 const SKINS = {padrao:{l:"Padrão",lv:1,sw:"#FF3B6B"},neon:{l:"Neon",lv:3,sw:"#00C98D"},gameboy:{l:"Game Boy",lv:5,sw:"#6E8F0B"},ouro:{l:"Ouro",lv:8,sw:"#D99A00"},vapor:{l:"Vaporwave",lv:12,sw:"#FF4FD8"}};
 const LEVEL_NAMES = [[20,"Mito"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Aventureiro"],[1,"Novato"]];
 
@@ -63,7 +63,7 @@ function mediaSrc(path,ver){
   return null;
 }
 function mimg(path,ver,cls,alt){if(!ver||S.mode!=="live")return "";const src=mediaSrc(path,ver);return `<img class="${cls}" data-m="${esc(mkey(path,ver))}" ${src?`src="${src}"`:""} alt="${esc(alt||"")}">`}
-const extImg = u => (typeof u==="string"&&u.startsWith("https://media.rawg.io/"))?u:"";
+const extImg = u => (typeof u==="string"&&/^https:\/\/(upload\.wikimedia\.org|thumb\.wikimedia\.org|media\.rawg\.io)\//.test(u))?u:"";
 const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const ext=!up&&extImg(g.coverUrl)?`<img class="cimg" src="${esc(g.coverUrl)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer">`:"";return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
 const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
 function fileToImg(file,max,limit,crop){
@@ -204,6 +204,8 @@ function notifsFor(pid){
       out.push({at,p:o,h:`#jogo-${slug(g.title)}`,html:`<b>${esc(o.nick)}</b> reagiu com ${r.map(x=>`<b>${RX[x]?.l||x}</b>`).join(" e ")} em <b>${esc(g.title)}</b>`})}}
   const c=cfg();
   if(c.challenge?.at)out.push({at:c.challenge.at,p:null,h:"#inicio",html:`Novo desafio do mês: <b>${esc(c.challenge.title)}</b>`});
+  for(const b of (typeof boardList==="function"?boardList():[]))if(b.by!==pid)out.push({at:b.at||0,p:P[b.by]||null,h:"#quadro",html:`${b.type==="evento"?"Convite para jogar":b.type==="enquete"?"Nova enquete":"Novo aviso"}: <b>${esc(b.title)}</b>`});
+  for(const [k,t] of Object.entries(typeof tierlists==="function"?tierlists():{}))if(t&&t.status==="aberta")out.push({at:t.at||0,p:null,h:"#tierlist",html:`Votação aberta: <b>${esc(t.title||"Tier list do mês")}</b>`});
   if(c.club?.at)out.push({at:c.club.at,p:null,h:"#inicio",html:`Clube do jogo: <b>${esc(c.club.title)}</b>`});
   return out.sort((a,b)=>b.at-a.at).slice(0,40);
 }
@@ -237,7 +239,7 @@ function renderBanner(){
   else B.innerHTML="";
 }
 function renderTabs(){
-  const labels={inicio:"Início",estante:"Estante",tierlist:"Tier List",jogando:"Jogando agora",dicas:"Dicas",chat:"Chat",ranking:"Ranking"};
+  const labels={inicio:"Início",saves:"Meus Saves",quadro:"Quadro",novidades:"Novidades",estante:"Galera",tierlist:"Tier List",jogando:"Jogando agora",dicas:"Dicas",chat:"Chat",ranking:"Ranking"};
   const un=S.view==="chat"?0:chatUnread();
   $("#tabs").innerHTML=VIEWS.map(v=>`<a class="tab" role="tab" href="#${v}" aria-selected="${S.view===v}">${labels[v]}${v==="chat"&&un?` <span class="tabn">${un>9?"9+":un}</span>`:""}</a>`).join("");
   $("#filters").hidden=!["estante","tierlist","jogando","dicas"].includes(S.view)||!allGames().length;
@@ -256,7 +258,7 @@ function renderView(){
     V.innerHTML=`<section class="box hero-empty"><div class="big">P1<br>START</div><div><h2>Ninguém deu start ainda</h2>
       <p>Crie seu perfil, cadastre os jogos que você já zerou na vida, os que zerou em ${YEAR} e o que está jogando agora. Depois chame a galera.</p>
       <div class="actions">${S.mode==="live"&&S.canWrite?`<button class="btn primary" data-act="profile">Criar meu perfil</button>`:""}<button class="btn" data-act="demo">Ver como fica com exemplo</button></div></div></section>`;return}
-  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,jogo:viewJogo}[S.view]||viewHome;
+  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,jogo:viewJogo,novidades:viewNovidades,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
   const log0=$("#chatlog");const nearBottom=!log0||log0.scrollHeight-log0.scrollTop-log0.clientHeight<80;const focused=document.activeElement?.id;
   V.innerHTML=fn();
   for(const id of ["chat-text","cmt-text"]){const el=document.getElementById(id);if(el&&S.drafts?.[id]){el.value=S.drafts[id]}}
@@ -312,6 +314,9 @@ function viewHome(){
       <div class="xpinfo">${s.playing} jogando agora${stale?` · <b style="color:var(--accent)">${stale} parado${stale>1?"s":""} há mais de 2 semanas</b>`:""}</div></div>
       <div class="actions"><button class="btn primary small" data-act="add">+ Jogo</button><a class="btn small" href="#jogando">Atualizar o que estou jogando</a></div></section>`}
   else if(S.mode==="live"&&S.canWrite)left+=`<section class="box hello"><div class="hi"><span class="eyebrow">Novo por aqui?</span><h2>Entre na galera</h2><p style="margin:0;color:var(--muted)">Crie seu perfil e comece a registrar o que joga.</p></div><button class="btn primary" data-act="profile">Criar meu perfil</button></section>`;
+  if(m){const cont=myGamesSorted().filter(g=>["jogando","pausado"].includes(g.status)).slice(0,4);
+    left+=`<section class="box card"><span class="eyebrow">Continuar jogando</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Onde você parou</h3><a class="btn small" href="#saves">Meus Saves</a></div>
+      ${cont.length?`<div class="cont">${cont.map(g=>`<div class="citem">${coverBox(g,"mini")}<div class="t"><a href="#${saveHash(g.pid,g.gid)}"><b>${esc(g.title)}</b></a><span>${esc(paradoEm(g)||"sem anotação")}${g.next?` · próximo: ${esc(g.next)}`:""}</span><span class="hint">${g.updatedAt>1e9?quando(g.updatedAt):""}</span></div>${S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}</div>`).join("")}</div>`:'<span class="hint">Marque um jogo como "Jogando" para ele aparecer aqui.</span>'}</section>`}
   // desafio
   const ch=c.challenge;
   if(ch&&ch.title){const done=Object.entries(P).filter(([,p])=>p.challenges?.[ch.id]);const mine=m&&m.challenges?.[ch.id];const left_d=daysUntil(ch.until);
@@ -327,16 +332,24 @@ function viewHome(){
       <div class="sub">Todo mundo jogando o mesmo jogo${cl.until?` até ${esc(fmtDate(cl.until))}`:""}. O progresso vem da lista de cada um.</div>
       ${parts.length?parts.map(g=>`<div class="prow"><div class="nm">${glyph(g.p,true)}<span>${nk(g.p)}</span></div><div class="bar"><i style="width:${isDone(g)?100:Math.min(100,Number(g.progress)||0)}%"></i></div><div class="v">${isDone(g)?"zerou":(Number(g.progress)||0)+"%"}</div></div>`).join(""):'<span class="hint">Ninguém entrou ainda.</span>'}
       ${m&&S.canWrite&&!inMine?`<div><button class="btn small primary" data-act="joinclub">Entrar no clube</button></div>`:""}</section>`}
-  // mural
-  const fr=m?new Set([...friendIds(mid),mid]):null;const bl=m?blockedBy(mid):new Set();
-  const feed=feedItems().filter(f=>!bl.has(f.p?._id)&&(!S.feedFriends||!fr||fr.has(f.p?._id))).slice(0,18);
-  left+=`<section class="box card"><span class="eyebrow">Mural da galera</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>O que rolou</h3>${m?`<div class="seg"><button data-act="feedall" aria-pressed="${!S.feedFriends}">Todos</button><button data-act="feedfr" aria-pressed="${!!S.feedFriends}">Amigos</button></div>`:""}</div>
-    <div class="feed">${feed.map(f=>`<div class="fitem">${f.p?glyph(f.p,true):""}<div class="tx"><a href="#perfil-${esc(pslug(f.p))}" style="text-decoration:none"><b>${nk(f.p)}</b></a> ${f.html}</div><span class="when">${ago(f.at)}</span></div>`).join("")||'<span class="hint">Nada ainda.</span>'}</div></section>`;
+  // tier list do mês
+  const tlk=Object.keys(tierlists()).sort().reverse()[0];
+  if(tlk){const tl=tierlists()[tlk];left+=`<section class="box card"><span class="eyebrow">Tier list do mês</span><h3>${esc(tl.title||"Os melhores do mês")}</h3><div class="sub">${esc(monthName(tlk))}${tl.note?` · ${esc(tl.note)}`:""}</div><div class="tierlist compact">${monthlyRows(tlk)}</div><div class="actions"><a class="btn small ${tl.status==="aberta"?"primary":""}" href="#tierlist" data-act="tierwho" data-id="mes">${tl.status==="aberta"?"Votar agora":"Ver todas as tier lists"}</a>${tl.status==="aberta"?`<span class="hint">Votação aberta</span>`:""}</div></section>`}
+  else if(isStaff())left+=`<section class="box card"><span class="eyebrow">Tier list do mês</span><p style="margin:0">Lance a primeira votação da tier list do mês. <button class="linkbtn" data-act="monthly" data-m="${monthKey()}">Lançar votação</button></p></section>`;
+  // quadro da galera
+  const bl=boardList();
+  if(bl.length||isStaff())left+=`<section class="box card"><span class="eyebrow">Quadro da galera</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Avisos, convites e enquetes</h3>${isStaff()?`<button class="btn small" data-act="bnew" data-t="aviso">+ Publicar</button>`:""}</div>
+    ${bl.length?`<div class="bstack">${bl.slice(0,3).map(b=>boardCard(b,true)).join("")}</div>${bl.length>3?`<div><a class="btn small" href="#quadro">Ver tudo (${bl.length})</a></div>`:""}`:'<span class="hint">Nada publicado ainda. Use os botões para avisar a galera, chamar para jogar ou abrir uma enquete.</span>'}</section>`;
   // direita
   const ids=Object.keys(P).sort((a,b)=>xpOf(b)-xpOf(a));
   right+=`<section class="box card"><span class="eyebrow">A galera</span><h3>${ids.length} jogador${ids.length>1?"es":""}</h3><div class="galera">${ids.map(galeraRow).join("")}</div>${m&&S.canWrite?`<div><button class="btn small" data-act="find">Procurar e adicionar amigos</button></div>`:""}</section>`;
   if(m){const rs=recsFor(mid);right+=`<section class="box card"><span class="eyebrow">Pra você</span><h3>A galera acha que você vai curtir</h3>
     ${rs.length?rs.map(r=>`<div class="rec-item">${coverBox(r.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(r.title))}" style="color:inherit">${esc(r.title)}</a></b>${r.by.map(b=>`${esc(b.p.nick)}${typeof b.nota==="number"?" ("+fmtNota(b.nota)+")":""}`).join(", ")} curti${r.by.length>1?"ram":"u"}</div><button class="rx" data-act="quickfila" data-t="${esc(r.title)}">+ Fila</button></div>`).join(""):'<span class="hint">Dê nota nos seus jogos para as sugestões ficarem certeiras.</span>'}</section>`}
+  const wid=S.mode==="live"&&/^\d{15,22}$/.test(S.config.discordWidget||"")?S.config.discordWidget:"";
+  if(wid||(S.mode==="live"&&S.config.discord)){const dark=matchMedia("(prefers-color-scheme: dark)").matches;
+    right+=`<section class="box card"><span class="eyebrow">Discord da galera</span><h3>Bora conversar por lá</h3>${wid?`<iframe class="dwidget" src="https://discord.com/widget?id=${wid}&theme=${dark?"dark":"light"}" title="Quem está online no Discord" loading="lazy" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>`:""}${S.config.discord?`<div><a class="btn discord small" href="${esc(S.config.discord)}" target="_blank" rel="noopener">Entrar no servidor</a></div>`:""}</section>`}
+  const nw=[...newsList().slice(0,2),...autoNews()].slice(0,4);
+  if(nw.length||isStaff())right+=`<section class="box card"><span class="eyebrow">Novidades</span><h3>Do mundo dos games</h3>${nw.map(n=>newsCard({...n,by:n.by||null,id:n.by?n.id:null},true)).join("")||'<span class="hint">Nenhuma novidade ainda.</span>'}<div class="actions"><a class="btn small" href="#novidades">Ver todas</a>${isStaff()?`<button class="btn small" data-act="newsadd">+ Postar</button>`:""}</div></section>`;
   const coops=Object.entries(P).filter(([,p])=>p.coop&&p.coop.title&&daysSince(p.coop.at)<15);
   right+=`<section class="box card"><span class="eyebrow">Procurando coop</span><h3>Bora jogar junto</h3>
     ${coops.length?coops.map(([pid,p])=>`<div class="rec-item">${glyph(p)}<div class="t"><b>${nk(p)} · ${esc(p.coop.title)}</b>${esc(p.coop.note||"")}${p.discord?` · Discord: <code>${esc(p.discord)}</code>`:""}</div>${p.discord?`<button class="rx" data-act="copy" data-text="${esc(p.discord)}">Copiar</button>`:""}</div>`).join(""):'<span class="hint">Ninguém procurando parceiro agora.</span>'}
@@ -346,19 +359,12 @@ function viewHome(){
   right+=`<section class="box card"><span class="eyebrow">Na fila da galera</span><h3>Lançamentos e desejos</h3>
     ${wl.length?wl.map(w=>{const d=daysUntil(w.lanc);return `<div class="rec-item">${coverBox(w.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(w.title))}" style="color:inherit">${esc(w.title)}</a></b>${w.ps.map(p=>esc(p.nick)).join(", ")}</div><div class="count">${d===null?"–":d>0?d:d===0?"Hoje":"Saiu"}<small>${d===null?"sem data":d>0?"dias":""}</small></div></div>`}).join(""):'<span class="hint">Marque jogos como “Na fila” e coloque a data de lançamento para aparecer a contagem regressiva.</span>'}</section>`;
   right+=`<section class="box card"><span class="eyebrow">Em breve</span><h3>Vem aí</h3><ul class="soon">
-    <li>Bot no Discord avisando quando alguém zera</li><li>Mensagens privadas</li><li>Notificações no celular</li><li>Mande sua ideia no chat #geral</li></ul></section>`;
+    <li>Domínio próprio</li><li>Bot no Discord avisando quando alguém zera</li><li>Mensagens privadas</li><li>Notificações no celular</li><li>Mande sua ideia no chat #geral</li></ul></section>`;
   return `<div class="home"><div class="col">${left}</div><div class="col">${right}</div></div>`;
 }
 
 /* ---------- ESTANTE / TIER / JOGANDO / DICAS ---------- */
 function viewEstante(){const L=filtered();return L.length?`<div class="grid">${L.map(gameCard).join("")}</div>`:emptyBox("?","Nada por aqui",allGames().length?"Nenhum jogo bate com esses filtros.":"Ainda não tem nenhum jogo cadastrado.")}
-function viewTier(){
-  const L=filtered();
-  const rows=[...TIERS,""].map(t=>{const items=L.filter(g=>(g.tier||"")===t);const byT={};items.forEach(g=>{const k=norm(g.title);(byT[k]||(byT[k]={title:g.title,ps:[],gs:[]})).ps.push(g.p);byT[k].gs.push(g)});
-    const chips=Object.values(byT).map(c=>`<a class="chip" href="#jogo-${esc(slug(c.title))}" style="color:inherit;text-decoration:none">${coverBox(c.gs.find(x=>x.coverV)||c.gs[0],"mini")}<span class="ct">${esc(c.title)}</span><span class="dots">${c.ps.map(p=>glyph(p,true)).join("")}</span></a>`).join("");
-    if(!t&&!chips)return "";return `<div class="trow"><div class="tlabel t-${t||"N"}">${t||"?"}</div><div class="titems">${chips||'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
-  return `<section class="box tierlist" aria-label="Tier list">${rows}</section>`;
-}
 function viewJogando(){
   const L=filtered().filter(g=>g.status==="jogando"||(S.f.status&&g.status===S.f.status));
   if(!L.length)return emptyBox("II","Ninguém jogando agora","Marque um jogo como “Jogando” para ele aparecer aqui com a fase e o progresso.");
@@ -400,6 +406,7 @@ function viewRanking(){
       ${bars(i=>st[i].done,"Zerados de todos os tempos","Zerados + platinados na vida toda")}
       ${bars(i=>st[i].hours,"Horas registradas","Soma das horas informadas em cada jogo")}
     </div><div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+      <div class="box panel"><h3>Atividade recente</h3><div class="sub">O que a galera mexeu por último</div><div class="feed">${feedItems().slice(0,10).map(f=>`<div class="fitem">${f.p?glyph(f.p,true):""}<div class="tx"><b>${nk(f.p)}</b> ${f.html}</div><span class="when">${ago(f.at)}</span></div>`).join("")||'<span class="empty-row">Nada ainda.</span>'}</div></div>
       <div class="box panel"><h3>Conquistas</h3><div class="sub">As mais raras primeiro</div><div class="badges">${B.map(x=>badgeHTML(x.b,x.who)).join("")||'<span class="empty-row">Ninguém desbloqueou nada ainda.</span>'}</div></div>
       <div class="box panel"><h3>Tempo pra zerar</h3><div class="sub">Média das horas de quem zerou</div><div class="cons">${ttl.map(c=>row(c)+`<span class="nota" style="font-size:18px">${Math.round(c.avg)}<small> h</small></span></div>`).join("")||'<span class="empty-row">Ninguém informou horas ainda.</span>'}</div></div>
       <div class="box panel"><h3>A galera recomenda</h3><div class="sub">Nota média, priorizando jogos que mais de uma pessoa jogou</div><div class="cons">${cons.map(c=>row(c)+`<span class="nota" style="font-size:18px">${fmtNota(c.avg)}</span></div>`).join("")||'<span class="empty-row">Sem notas ainda.</span>'}</div></div>
@@ -437,7 +444,7 @@ function viewJogo(){
         ${g.fase&&!isDone(g)?`<div class="fase">Parou em: <b>${esc(g.fase)}</b> · ${Number(g.progress)||0}%</div>`:""}
         ${g.comment?`<p class="quote">${esc(g.comment)}</p>`:""}
         ${hasTips(g)?`<button class="tipsbtn" data-act="tips" data-pid="${esc(g.pid)}" data-id="${esc(g.gid)}"><span class="ic">?!</span>${tipsLabel(g)}</button>`:""}
-        ${reactRow(g)}</div><span class="nota">${fmtNota(g.nota)}<small>/10</small></span></div>`).join("")||'<span class="hint">Ninguém cadastrou ainda.</span>'}
+        ${reactRow(g)}<a class="cbtn" href="#${saveHash(g.pid,g.gid)}">Ver o save de ${esc(g.p.nick)} →</a></div><span class="nota">${fmtNota(g.nota)}<small>/10</small></span></div>`).join("")||'<span class="hint">Ninguém cadastrou ainda.</span>'}
     </div></section>
     <section class="box card" id="conversa"><span class="eyebrow">Conversa</span><h3>${th.length?`${th.length} comentário${th.length>1?"s":""}`:"Comece a conversa"}</h3>
       <div class="thread">${th.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===mid||S.isOwner);return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}</div><p>${esc(c.x)}</p></div></div>`}).join("")}</div>
@@ -480,6 +487,7 @@ function viewPerfil(){
       <div class="tile"><b>${so.ggIn}</b><span>reações recebidas</span></div>
     </div>
     <section class="box card"><span class="eyebrow">Atividade</span><h3>${activeYear} dia${activeYear===1?"":"s"} ativo${activeYear===1?"":"s"} em ${YEAR}</h3>${heatmap(p.days)}<span class="hint">Cada quadradinho é um dia em que ${mine?"você":esc(p.nick)} atualizou algo.</span></section>
+    ${G.some(g=>g.tier)?`<section class="box card"><span class="eyebrow">Tier list</span><h3>Tier list de ${nk(p)}</h3><div class="tierlist compact">${tierRows(G.filter(g=>g.tier),"")}</div></section>`:""}
     ${playing.length?`<section class="box card"><span class="eyebrow">Jogando agora</span><h3>${playing.length} jogo${playing.length>1?"s":""}</h3><div class="minis">${playing.map(mini).join("")}</div></section>`:""}
     ${done.length?`<section class="box card"><span class="eyebrow">Últimos zerados</span><div class="minis">${done.map(mini).join("")}</div></section>`:""}
     <div><button class="btn small" data-act="filterplayer" data-id="${esc(pid)}">Ver todos os jogos de ${esc(p.nick)} na estante</button></div>
@@ -624,9 +632,9 @@ function openGame(gid,pre){
       <div class="field full"><label for="g-title">Nome do jogo</label><input id="g-title" maxlength="80" required autocomplete="off" value="${esc(g?.title||pre?.title||"")}" placeholder="Comece a digitar, ex.: Hollow"><div class="sugg" id="sugg" role="listbox" aria-label="Sugestões de jogos"></div></div>
       <div class="field full"><span class="flabel">Capa</span><div class="cvrow"><div class="cvprev" id="cvprev">${curCover||`<span class="ini">${esc(initials(g?.title||pre?.title||"?"))}</span>`}</div>
         <div class="cvbtns"><label class="btn small" for="g-cover">${g?.coverV?"Trocar capa":"Enviar capa"}</label><input id="g-cover" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
-        <button type="button" class="btn small ghost" data-act="rmcover" ${curCover?"":"hidden"} id="rmcover">Remover capa</button><span class="hint">Ao escolher o jogo na lista, a capa vem sozinha. Também dá para enviar a sua.</span></div></div></div>
+        <button type="button" class="btn small ghost" data-act="rmcover" ${curCover?"":"hidden"} id="rmcover">Remover capa</button><span class="hint">Ao escolher o jogo na lista, a capa vem da Wikipédia. Também dá para enviar a sua.</span></div></div></div>
       <div class="field full"><span class="flabel">Status</span>${pickRow("status",Object.entries(STATUS).map(([v,o])=>({v,l:o.l,cls:"s-"+v,style:"color:var(--on-pill)"})),M.status)}</div>
-      <div class="field"><label for="g-plat">Plataforma em que jogou</label><select id="g-plat">${plOpts.map(p=>`<option${p===(g?.platform||myPl[0]||"PC")?" selected":""}>${esc(p)}</option>`).join("")}</select></div>
+      <div class="field"><label for="g-plat">Plataforma em que jogou</label><span class="hint" id="platHint"></span><select id="g-plat">${plOpts.map(p=>`<option${p===(g?.platform||myPl[0]||"PC")?" selected":""}>${esc(p)}</option>`).join("")}</select></div>
       <div class="field" id="yearField"><label for="g-year">Ano em que zerou</label><input id="g-year" type="number" min="1980" max="${YEAR}" placeholder="vazio = não lembro" value="${g?(g.year??""):YEAR}"></div>
       <div class="field" id="lancField"><label for="g-lanc">Data de lançamento (se ainda não saiu)</label><input id="g-lanc" type="date" value="${esc(g?.lanc||"")}"></div>
       <div class="field full" id="runField"><span class="flabel">Como zerou</span>${pickRow("run",Object.entries(RUNS).map(([v,l])=>({v,l})),M.run)}</div>
@@ -668,18 +676,20 @@ function drawSugg(q,ai,loading){
 function onTitleInput(q){
   clearTimeout(suggT);if(suggCtl){suggCtl.abort();suggCtl=null}q=q.trim();if(q.length<2){$("#sugg").innerHTML="";return}
   const key=norm(q);if(suggMemo[key]){drawSugg(q,suggMemo[key]);return}
-  const can=!!rawgKey();drawSugg(q,null,can&&q.length>=3);if(!can||q.length<3)return;
+  const can=true;drawSugg(q,null,can&&q.length>=3);if(!can||q.length<3)return;
   suggT=setTimeout(async()=>{const ctl=new AbortController();suggCtl=ctl;
     const prompt=`Você é um catálogo de videogames. Alguém está digitando o nome de um jogo num formulário: "${q.slice(0,60)}".
 Liste até 6 jogos reais (lançados ou já anunciados) que provavelmente correspondem ao que a pessoa quer, do mais provável ao menos provável. Considere erros de digitação, abreviações, nomes em português e números de sequência.
 Para cada um, dê o nome oficial exatamente como aparece nas lojas, o ano de lançamento (ou null se não lançado) e as plataformas, usando somente estes nomes: ${PLATFORMS.filter(x=>x!=="Outro").join(", ")}.
 Responda somente com JSON neste formato: [{"title":"...","year":2024,"platforms":["PC","PS5"]}]. Se nada fizer sentido, responda [].`;
-    try{const arr=await rawgSearch(q,ctl.signal);
+    try{const arr=await wikiSearch(q,ctl.signal);
       suggMemo[key]=arr;if(M?.type==="game"&&norm($("#g-title")?.value||"")===key)drawSugg(q,arr);
     }catch(e){if(ctl.signal.aborted)return;if(M?.type==="game")drawSugg(q,[])}
   },450);
 }
-function pickGame(i){const x=M?.sugg?.[i];if(!x)return;$("#g-title").value=x.title;$("#sugg").innerHTML="";const mine=platsOf(me()||{});const best=(x.platforms||[]).find(p=>mine.includes(p))||(x.platforms||[])[0];const sel=$("#g-plat");if(best&&sel&&[...sel.options].some(o=>o.value===best))sel.value=best;const pv=$("#cvprev");if(pv&&typeof M.cover!=="string"&&!M.hasUpload){if(x.img){M.coverUrl=x.img;pv.innerHTML=`<img src="${esc(x.img)}" alt="" referrerpolicy="no-referrer">`;const rb=$("#rmcover");if(rb)rb.hidden=false}else pv.innerHTML=`<span class="ini">${esc(initials(x.title))}</span>`}}
+function pickGame(i){const x=M?.sugg?.[i];if(!x)return;
+  if(x.wtitle){wikiPlatforms(x.wtitle).then(pl=>{if(!pl.length||M?.type!=="game")return;const mine=platsOf(me()||{});const best=pl.find(p=>mine.includes(p))||pl[0];const sel=$("#g-plat");if(sel&&[...sel.options].some(o=>o.value===best))sel.value=best;const h=$("#platHint");if(h)h.textContent="Saiu em: "+pl.join(", ")}).catch(()=>{})}
+  if(x.upcoming){M.status="quero";document.querySelectorAll('[data-pick="status"] button').forEach(b=>b.setAttribute("aria-pressed",b.dataset.v==="quero"));syncYear()}$("#g-title").value=x.title;$("#sugg").innerHTML="";const mine=platsOf(me()||{});const best=(x.platforms||[]).find(p=>mine.includes(p))||(x.platforms||[])[0];const sel=$("#g-plat");if(best&&sel&&[...sel.options].some(o=>o.value===best))sel.value=best;const pv=$("#cvprev");if(pv&&typeof M.cover!=="string"&&!M.hasUpload){if(x.img){M.coverUrl=x.img;pv.innerHTML=`<img src="${esc(x.img)}" alt="" referrerpolicy="no-referrer">`;const rb=$("#rmcover");if(rb)rb.hidden=false}else pv.innerHTML=`<span class="ini">${esc(initials(x.title))}</span>`}}
 
 function openSettings(){
   M={type:"settings"};const c=S.config;const ch=c.challenge||{},cl=c.club||{};
@@ -687,7 +697,8 @@ function openSettings(){
   reps.sort((a,b)=>(b.at||0)-(a.at||0));
   $("#modal").innerHTML=overlay(`<h2>Painel do dono</h2>
     <div class="field"><label for="s-discord">Convite do servidor do Discord</label><input id="s-discord" maxlength="120" value="${esc(c.discord||"")}" placeholder="https://discord.gg/seu-convite"><span class="hint">Use um convite que não expira (Convidar pessoas → Editar link → Nunca).</span></div>
-    <div class="field"><label for="s-rawg">Chave do RAWG (capas e nomes automáticos)</label><input id="s-rawg" maxlength="64" autocomplete="off" value="${esc(S.config.rawgKey||"")}" placeholder="Cole aqui a chave de rawg.io/apidocs"><span class="hint">É gratuita. Depois de salvar, as sugestões com capa aparecem ao adicionar um jogo.</span></div>
+    <div class="field"><label for="s-widget">ID do servidor do Discord (para o widget de quem está online)</label><input id="s-widget" maxlength="22" inputmode="numeric" value="${esc(S.config.discordWidget||"")}" placeholder="Ex.: 123456789012345678"><span class="hint">No Discord: Configurações do servidor → Widget → ative "Habilitar widget do servidor" e copie o ID do servidor.</span></div>
+    <div class="sec"><h4>Capas</h4><p class="hint" style="margin:0 0 8px">Procura na Wikipédia a capa de todo jogo cadastrado que ainda está sem foto, de todo mundo.</p><button type="button" class="btn" data-act="fillcovers" id="fillcov">Buscar capas que faltam</button></div>
     <div class="sec"><h4>Desafio do mês</h4><div class="fgrid"><div class="field full"><label for="s-ch-t">Título</label><input id="s-ch-t" maxlength="60" value="${esc(ch.title||"")}" placeholder="Ex.: Zerar um jogo de terror"></div>
       <div class="field full"><label for="s-ch-d">Descrição</label><input id="s-ch-d" maxlength="160" value="${esc(ch.desc||"")}"></div>
       <div class="field"><label for="s-ch-u">Termina em</label><input id="s-ch-u" type="date" value="${esc(ch.until||"")}"></div></div><span class="hint">Deixe o título vazio para encerrar. Mudar o título cria um desafio novo.</span></div>
@@ -842,7 +853,7 @@ function openTerms(){
     <p style="margin:0"><b>Quem vê.</b> Perfis, jogos, comentários e dicas são públicos para quem abrir o site. O chat só aparece para quem está logado. Denúncias só o dono do site vê.</p>
     <p style="margin:0"><b>Regras.</b> Nada de ofensa, assédio, spam, conteúdo adulto ou ilegal. Conteúdo que quebre as regras pode ser apagado e a conta bloqueada.</p>
     <p style="margin:0"><b>Seus direitos (LGPD).</b> Você pode baixar todos os seus dados e excluir sua conta a qualquer momento em <i>Editar perfil</i>. Ao excluir, apagamos seu perfil, jogos, imagens, comentários e mensagens.</p>
-    <p style="margin:0"><b>Onde fica.</b> Os dados ficam no Firebase (Google). O site é hospedado no GitHub Pages. Capas e nomes de jogos vêm do RAWG.</p>
+    <p style="margin:0"><b>Onde fica.</b> Os dados ficam no Firebase (Google). O site é hospedado no GitHub Pages. Nomes, capas e plataformas dos jogos vêm da Wikipédia e da Wikidata.</p>
     <p style="margin:0"><b>Contato.</b> Fale com o dono do site pelo Discord da galera.</p></div>
     <div class="mfoot"><div class="r">${back?`<button type="button" class="btn" data-act="authmode" data-m="${back}">Voltar</button>`:`<button type="button" class="btn" data-act="close">Fechar</button>`}</div></div>`);
 }
@@ -887,6 +898,594 @@ async function rawgSearch(q,signal){
     platforms:[...new Set((x.platforms||[]).map(p=>RAWG_PLAT(p?.platform?.name)).filter(Boolean))].slice(0,6),img:rawgImg(x.background_image)})).filter(x=>x.title);
 }
 
+/* ================== v2: Wikipédia, tier lists por pessoa e do mês, Novidades ================== */
+
+/* ---------- Wikipédia + Wikidata: nomes, ano, capa e plataformas ---------- */
+const WIKI_PLAT = n => {n=String(n||"");
+  if(/^(Microsoft Windows|Windows|macOS|Linux|SteamOS)$/.test(n))return "PC";if(n==="PlayStation 5")return "PS5";if(n==="PlayStation 4")return "PS4";
+  if(/^Xbox Series/.test(n))return "Xbox Series";if(n==="Xbox One")return "Xbox One";if(n==="Nintendo Switch 2")return "Switch 2";if(n==="Nintendo Switch")return "Switch";
+  if(n==="Steam Deck")return "Steam Deck";if(n==="iOS"||n==="Android"||n==="iPadOS")return "Mobile";
+  if(/PlayStation|Xbox|Nintendo|Game Boy|Wii|GameCube|Sega|Mega Drive|Genesis|Dreamcast|Atari|Neo Geo|PSP|Vita|Super NES|NES|Nintendo 64|3DS|DS/.test(n))return "Retrô / Emulador";return null};
+const cleanTitle = t => String(t||"").replace(/\s*\((\d{4} )?(video )?game\)$/i,"").replace(/\s*\(\d{4}\)$/,"").trim();
+async function wikiSearch(q,signal){
+  const u="https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(q+' hastemplate:"Infobox video game"')+"&gsrlimit=7&prop=pageimages|description&piprop=thumbnail&pithumbsize=400&pilicense=any&format=json&origin=*";
+  const j=await fetch(u,{signal}).then(r=>{if(!r.ok)throw new Error("wiki "+r.status);return r.json()});
+  return Object.values(j.query?.pages||{}).sort((a,b)=>a.index-b.index).map(p=>{const y=/(19[7-9]\d|20\d\d)/.exec(p.description||"");
+    return {title:cleanTitle(p.title).slice(0,80),wtitle:p.title,year:y?Number(y[1]):null,upcoming:/upcoming/i.test(p.description||""),platforms:[],img:extImg(p.thumbnail?.source||"")}}).filter(x=>x.title);
+}
+const platMemo={};
+async function wikiPlatforms(wtitle){
+  if(platMemo[wtitle])return platMemo[wtitle];
+  try{
+    const a=await fetch("https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&titles="+encodeURIComponent(wtitle)+"&format=json&origin=*").then(r=>r.json());
+    const qid=Object.values(a.query?.pages||{})[0]?.pageprops?.wikibase_item;if(!qid)return [];
+    const e=await fetch("https://www.wikidata.org/w/api.php?action=wbgetentities&ids="+qid+"&props=claims&format=json&origin=*").then(r=>r.json());
+    const ids=[...new Set((e.entities?.[qid]?.claims?.P400||[]).map(c=>c.mainsnak?.datavalue?.value?.id).filter(Boolean))].slice(0,40);if(!ids.length)return [];
+    const l=await fetch("https://www.wikidata.org/w/api.php?action=wbgetentities&ids="+ids.join("|")+"&props=labels&languages=en&languagefallback=1&format=json&origin=*").then(r=>r.json());
+    return platMemo[wtitle]=[...new Set(ids.map(id=>WIKI_PLAT(l.entities?.[id]?.labels?.en?.value)).filter(Boolean))];
+  }catch{return []}
+}
+
+/* ---------- quem pode publicar (dono, admin, moderador) ---------- */
+const isStaff = () => S.mode==="live"&&(S.isOwner||(S.myId&&(S.roles[S.myId]||[]).some(r=>r==="admin"||r==="moderador")));
+const monthKey = (d=new Date()) => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");
+const MESES=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+const monthName = k => {const m=/^(\d{4})-(\d{2})$/.exec(k||"");return m?`${MESES[Number(m[2])-1]} de ${m[1]}`:k};
+const tierlists = () => S.mode==="demo"?DEMO_TL:(S.tierlists||{});
+const newsList = () => (S.mode==="demo"?DEMO_NEWS:(S.news||[])).slice().sort((a,b)=>(b.at||0)-(a.at||0));
+const DEMO_TL={[monthKey()]:{title:"Os melhores do mês",note:"Vale até o fim do mês.",status:"aberta",games:[{title:"Hades II"},{title:"Astro Bot"},{title:"Balatro"},{title:"Cyberpunk 2077"},{title:"Starfield"}],at:T(13)}};
+const DEMO_NEWS=[{id:"n1",title:"Lançamentos de novembro: o que chega nos consoles",url:"https://example.com/lancamentos",source:"Exemplo",summary:"Lista dos jogos que saem este mês.",at:T(12)},{id:"n2",title:"Patch grande chega com modo coop",url:"https://example.com/patch",source:"Exemplo",summary:"",at:T(9)}];
+
+/* ---------- tier list: por pessoa, da galera ou do mês ---------- */
+function tierRows(games,cover){
+  if(!games.some(g=>g.tier))return `<div class="trow"><div class="titems"><span class="empty-row">Nenhum jogo ranqueado ainda. Ao editar um jogo, escolha o tier (S, A, B, C ou D).</span></div></div>`;
+  return TIERS.map(t=>{const items=games.filter(g=>(g.tier||"")===t);const byT={};items.forEach(g=>{const k=norm(g.title);(byT[k]||(byT[k]={title:g.title,ps:[],gs:[]})).ps.push(g.p);byT[k].gs.push(g)});
+    const chips=Object.values(byT).map(c=>`<a class="chip" href="#jogo-${esc(slug(c.title))}" style="color:inherit;text-decoration:none">${coverBox(c.gs.find(x=>x.coverV||x.coverUrl)||c.gs[0],"mini")}<span class="ct">${esc(c.title)}</span>${cover==="dots"?`<span class="dots">${c.ps.filter(Boolean).map(p=>glyph(p,true)).join("")}</span>`:""}</a>`).join("");
+    if(!t&&!chips)return "";return `<div class="trow"><div class="tlabel t-${t||"N"}">${t||"?"}</div><div class="titems">${chips||'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
+}
+function viewTier(){
+  const P=players();const mid=meId();
+  if(!S.tierWho)S.tierWho=mid&&P[mid]?mid:"galera";
+  if(S.tierWho!=="galera"&&S.tierWho!=="mes"&&!P[S.tierWho])S.tierWho="galera";
+  const ids=Object.keys(P).sort((a,b)=>a===mid?-1:b===mid?1:P[a].nick.localeCompare(P[b].nick,"pt"));
+  const tabs=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
+    <button data-act="tierwho" data-id="mes" aria-pressed="${S.tierWho==="mes"}">Do mês</button>
+    ${ids.map(id=>`<button data-act="tierwho" data-id="${esc(id)}" aria-pressed="${S.tierWho===id}">${glyph(P[id],true)} ${id===mid?"Minha":esc(P[id].nick)}</button>`).join("")}
+    <button data-act="tierwho" data-id="galera" aria-pressed="${S.tierWho==="galera"}">Galera toda</button></div>`;
+  if(S.tierWho==="mes")return tabs+viewTierMes();
+  const L=filtered().filter(g=>S.tierWho==="galera"||g.pid===S.tierWho);
+  const who=S.tierWho==="galera"?null:P[S.tierWho];
+  const head=who?`<div class="tierhead">${glyph(who)}<div><h3>Tier list de ${nk(who)}</h3><span class="hint">${L.filter(g=>g.tier).length} jogos ranqueados · jogos sem tier não aparecem${S.tierWho===mid&&S.canWrite?" · para mudar o tier de um jogo, edite o jogo":""}</span></div></div>`
+    :`<div class="tierhead"><div><h3>Tier list da galera</h3><span class="hint">Todos os tiers juntos; as bolinhas mostram quem colocou o jogo em cada tier.</span></div></div>`;
+  return tabs+head+`<section class="box tierlist" aria-label="Tier list">${tierRows(L,who?"":"dots")}</section>`;
+}
+/* ---------- tier list do mês por votação ---------- */
+const TSCORE={S:5,A:4,B:3,C:2,D:1};
+const scoreTier = s => s>=4.5?"S":s>=3.5?"A":s>=2.5?"B":s>=1.5?"C":"D";
+const DEMO_VOTES={[monthKey()]:{d1:{v:{hadesii:"S",astrobot:"S",balatro:"A",starfield:"D"}},d2:{v:{hadesii:"A",astrobot:"S",balatro:"S",cyberpunk2077:"B"}},d3:{v:{hadesii:"S",balatro:"A",cyberpunk2077:"B",starfield:"C"}}}};
+const votesOf = month => S.mode==="demo"?(DEMO_VOTES[month]||{}):(S.votes?.[month]||{});
+function ensureVotes(month){
+  if(S.mode!=="live"||!month||!S.db)return;S.voteSubs=S.voteSubs||{};if(S.voteSubs[month])return;
+  S.voteSubs[month]=S.db.collection(`tierlists/${month}/votes`).onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.votes={...(S.votes||{}),[month]:o};softRender()},()=>{});
+}
+function tlResult(month){
+  const tl=tierlists()[month];if(!tl)return null;
+  if(tl.status==="encerrada"&&tl.final)return {tiers:tl.final.tiers||{},pending:tl.final.pending||[],voters:tl.final.voters||0,closed:true};
+  if(!Array.isArray(tl.games))return {tiers:tl.tiers||{},pending:[],voters:0,legacy:true};
+  ensureVotes(month);
+  const V=votesOf(month);const res={};TIERS.forEach(t=>res[t]=[]);const pending=[];
+  tl.games.forEach(g=>{const k=norm(g.title);const vs=Object.values(V).map(v=>v?.v?.[k]).filter(x=>TSCORE[x]);
+    if(!vs.length){pending.push({title:g.title,coverUrl:g.coverUrl||"",n:0});return}
+    const avg=vs.reduce((s,x)=>s+TSCORE[x],0)/vs.length;res[scoreTier(avg)].push({title:g.title,coverUrl:g.coverUrl||"",n:vs.length,avg:Math.round(avg*100)/100})});
+  TIERS.forEach(t=>res[t].sort((a,b)=>b.avg-a.avg||b.n-a.n));
+  return {tiers:res,pending,voters:Object.values(V).filter(v=>Object.keys(v?.v||{}).length).length};
+}
+function tlChip(x){const g=allGames().find(y=>norm(y.title)===norm(x.title));const cg=g&&(g.coverV||g.coverUrl)?g:{title:x.title,coverUrl:x.coverUrl};
+  return `<a class="chip" href="#jogo-${esc(slug(x.title))}" style="color:inherit;text-decoration:none">${coverBox(cg,"mini")}<span class="ct">${esc(x.title)}</span>${x.n?`<span class="vn" title="média ${String(x.avg).replace(".",",")}">${x.n} voto${x.n>1?"s":""}</span>`:""}</a>`}
+function monthlyRows(month){
+  const r=tlResult(month);if(!r)return "";
+  return TIERS.map(t=>{const arr=r.tiers[t]||[];return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems">${arr.length?arr.map(tlChip).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("")
+    +(r.pending.length?`<div class="trow"><div class="tlabel t-N">?</div><div class="titems">${r.pending.map(tlChip).join("")}<span class="empty-row">sem votos ainda</span></div></div>`:"");
+}
+function voteBox(month){
+  const tl=tierlists()[month];if(!tl||tl.status!=="aberta"||!Array.isArray(tl.games))return "";
+  if(S.mode==="demo")return `<section class="box card"><span class="eyebrow">Seu voto</span><p class="hint" style="margin:0">No modo exemplo não dá para votar.</p></section>`;
+  if(!me()||!S.canWrite)return `<section class="box card"><span class="eyebrow">Votação aberta</span><p style="margin:0">Entre e crie seu perfil para votar.</p></section>`;
+  const mine=votesOf(month)[S.myId]?.v||{};const done=tl.games.filter(g=>mine[norm(g.title)]).length;
+  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Escolha o tier de cada jogo</h3><div class="sub">Pode mudar até a votação ser encerrada. Toque de novo para tirar o voto.</div>
+    <div class="vlist">${tl.games.map(g=>{const k=norm(g.title);return `<div class="mrow">${coverBox({title:g.title,coverUrl:g.coverUrl},"mini")}<span class="ct">${esc(g.title)}</span><div class="pick">${TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="vote" data-m="${esc(month)}" data-k="${esc(k)}" data-t="${t}" aria-pressed="${mine[k]===t}" aria-label="Votar ${t} em ${esc(g.title)}">${t}</button>`).join("")}</div></div>`}).join("")}</div></section>`;
+}
+function viewTierMes(){
+  const all=tierlists();const keys=Object.keys(all).sort().reverse();
+  if(!S.tlMonth||!all[S.tlMonth])S.tlMonth=keys[0]||"";
+  const tl=all[S.tlMonth];const staff=isStaff();const r=tl?tlResult(S.tlMonth):null;
+  const st=tl?(tl.status==="aberta"?`<span class="pill s-jogando">Votação aberta</span>`:tl.status==="encerrada"?`<span class="pill s-zerado">Resultado final</span>`:""):"";
+  const top=`<div class="tierhead"><div style="flex:1;min-width:0"><span class="eyebrow">Tier list do mês</span><h3>${tl?esc(tl.title||"Os melhores do mês"):"Nenhuma tier list mensal ainda"}</h3>
+      ${tl?`<span class="hint">${st} ${esc(monthName(S.tlMonth))}${r&&!r.legacy?` · ${r.voters} pessoa${r.voters===1?"":"s"} votaram`:""}${tl.note?` · ${esc(tl.note)}`:""}</span>`:`<span class="hint">${staff?"Lance a primeira votação com os jogos que a galera jogou este mês.":"O dono do site lança uma votação por mês com os melhores jogos."}</span>`}</div>
+    <div class="actions">${keys.length>1?`<select id="tl-month" aria-label="Mês">${keys.map(k=>`<option value="${k}"${k===S.tlMonth?" selected":""}>${esc(monthName(k))}</option>`).join("")}</select>`:""}
+      ${staff&&!all[monthKey()]?`<button class="btn small primary" data-act="monthly" data-m="${monthKey()}">Lançar votação do mês</button>`:""}
+      ${staff&&tl?`<button class="btn small" data-act="monthly" data-m="${S.tlMonth}">Gerenciar</button>`:""}</div></div>`;
+  return top+(tl?`<div class="tlgrid"><section class="box tierlist" aria-label="Resultado da tier list do mês">${monthlyRows(S.tlMonth)}</section>${voteBox(S.tlMonth)}</div>`:"");
+}
+function openMonthly(month){
+  const cur=clone(tierlists()[month]||{title:"Os melhores do mês",note:"",games:[],status:""});
+  const pick={};
+  (Array.isArray(cur.games)?cur.games:[]).forEach(x=>pick[norm(x.title)]={title:x.title,coverUrl:x.coverUrl||"",on:true});
+  if(!Array.isArray(cur.games))TIERS.forEach(t=>(cur.tiers?.[t]||[]).forEach(x=>pick[norm(x.title)]={title:x.title,coverUrl:x.coverUrl||"",on:true}));
+  const [y,mm]=month.split("-").map(Number);const start=new Date(y,mm-1,1).getTime(),end=new Date(y,mm,1).getTime();
+  allGames().filter(g=>(g.updatedAt>=start&&g.updatedAt<end)||(isDone(g)&&Number(g.year)===y)).forEach(g=>{const k=norm(g.title);if(!pick[k])pick[k]={title:g.title,coverUrl:extImg(g.coverUrl)||"",on:false}});
+  const exists=!!tierlists()[month];
+  M={type:"monthly",month,pick,status:cur.status||""};
+  $("#modal").innerHTML=overlay(`<h2>Tier list de ${esc(monthName(month))}</h2>
+    ${exists?`<p style="margin:0">Situação: <b>${cur.status==="aberta"?"votação aberta":cur.status==="encerrada"?"encerrada (resultado final)":"rascunho"}</b></p>`:""}
+    <div class="fgrid"><div class="field"><label for="tl-title">Título</label><input id="tl-title" maxlength="60" value="${esc(cur.title||"")}"></div>
+      <div class="field"><label for="tl-note">Recado (opcional)</label><input id="tl-note" maxlength="140" value="${esc(cur.note||"")}" placeholder="Ex.: vale até dia 30"></div></div>
+    <p class="hint" style="margin:0">Marque os jogos que entram na votação. Aparecem os que a galera mexeu neste mês; dá para adicionar outros.</p>
+    <div class="mlist" id="mlist"></div>
+    <div class="field"><label for="tl-add">Adicionar outro jogo</label><div class="actions"><input id="tl-add" maxlength="80" placeholder="Nome do jogo" style="flex:1;min-width:160px"><button type="button" class="btn small" data-act="tladd">Adicionar</button></div></div>
+    <div class="err" id="tlerr"></div>
+    <div class="mfoot"><div class="actions">${exists?`<button type="button" class="btn small danger" data-act="tldel">Apagar</button>`:""}
+      ${exists&&cur.status==="aberta"?`<button type="button" class="btn small" data-act="tlclose">Encerrar votação</button>`:""}
+      ${exists&&cur.status==="encerrada"?`<button type="button" class="btn small" data-act="tlreopen">Reabrir votação</button>`:""}</div>
+      <div class="r"><button type="button" class="btn ghost" data-act="close">Cancelar</button><button type="button" class="btn primary" data-act="tlsave">${exists?"Salvar":"Lançar votação"}</button></div></div>`);
+  drawMonthly();
+}
+function drawMonthly(){
+  const L=Object.entries(M.pick).sort((a,b)=>(b[1].on-a[1].on)||a[1].title.localeCompare(b[1].title,"pt"));
+  $("#mlist").innerHTML=L.map(([k,x])=>`<label class="mrow mcheck">${coverBox({title:x.title,coverUrl:x.coverUrl},"mini")}<span class="ct">${esc(x.title)}</span><input type="checkbox" data-tlk="${esc(k)}" ${x.on?"checked":""} aria-label="Incluir ${esc(x.title)}"></label>`).join("")||'<span class="hint">Ninguém mexeu em jogos este mês ainda. Adicione abaixo.</span>';
+}
+
+/* ---------- Novidades ---------- */
+const safeUrl = u => {try{const x=new URL(u);return x.protocol==="https:"?x.href:""}catch{return ""}};
+const hostOf = u => {try{return new URL(u).hostname.replace(/^www\./,"")}catch{return ""}};
+function newsCard(n,small){
+  const url=safeUrl(n.url);if(!url)return "";const img=safeUrl(n.img||"");const by=players()[n.by];
+  return `<article class="box ncard${small?" small":""}">${img&&!small?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="nimg"><img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"></a>`:""}
+    <div class="nbody"><span class="eyebrow">${esc(n.source||hostOf(url))}</span><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a></h3>
+      ${n.summary&&!small?`<p>${esc(n.summary)}</p>`:""}
+      <div class="nmeta"><span class="hint">${by?`postado por ${nk(by)} · `:""}${ago(n.at)}</span>${isStaff()&&n.id?`<button class="linkbtn" data-act="newsdel" data-id="${esc(n.id)}">apagar</button>`:""}</div></div></article>`;
+}
+function autoNews(){return S.mode==="demo"?[]:(S.autoNews?.itens||[]).filter(n=>safeUrl(n.url)&&n.title)}
+function autoCard(n){const url=safeUrl(n.url),img=safeUrl(n.img||"");
+  return `<article class="box ncard">${img?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="nimg"><img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"></a>`:""}
+    <div class="nbody"><span class="eyebrow">${esc(n.source||hostOf(url))}</span><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a></h3>
+      ${n.summary?`<p>${esc(n.summary)}</p>`:""}
+      <div class="nmeta"><span class="hint">${ago(n.at)} · fonte: ${esc(n.source||hostOf(url))}</span><a class="linkbtn" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Ler no site ↗</a></div></div></article>`}
+function viewNovidades(){
+  const L=newsList();const staff=isStaff();const A=autoNews();
+  const srcs=[...new Set(A.map(n=>n.source).filter(Boolean))];
+  if(S.newsSrc&&!srcs.includes(S.newsSrc))S.newsSrc="";
+  const AF=A.filter(n=>!S.newsSrc||n.source===S.newsSrc);
+  const upd=S.autoNews?.atualizadoEm;
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Novidades</span><h3>O que está rolando no mundo dos games</h3><span class="hint">Destaques escolhidos pela staff e notícias puxadas automaticamente dos sites, sempre com link para a matéria original.</span></div>
+    ${staff?`<button class="btn primary small" data-act="newsadd">+ Postar destaque</button>`:""}</div>
+    ${L.length?`<section class="sec"><h4>Destaques da galera</h4><div class="ngrid">${L.map(n=>newsCard(n)).join("")}</div></section>`:""}
+    <section class="sec"><h4>Notícias dos sites${upd?` · atualizado há ${ago(upd)}`:""}</h4>
+      ${srcs.length>1?`<div class="tierpick" role="group" aria-label="Filtrar por site"><button data-act="newsrc" data-id="" aria-pressed="${!S.newsSrc}">Todos</button>${srcs.map(s=>`<button data-act="newsrc" data-id="${esc(s)}" aria-pressed="${S.newsSrc===s}">${esc(s)}</button>`).join("")}</div>`:""}
+      ${AF.length?`<div class="ngrid">${AF.map(autoCard).join("")}</div>`:`<span class="hint">${S.mode==="demo"?"No modo exemplo as notícias automáticas não aparecem.":"As notícias automáticas aparecem aqui depois que o robô rodar pela primeira vez."}</span>`}</section>
+    ${!L.length&&!A.length&&staff?`<p class="hint">Dica: poste um destaque colando o link de uma notícia.</p>`:""}</div>`;
+}
+function openNews(){
+  M={type:"news"};
+  $("#modal").innerHTML=overlay(`<h2>Postar novidade</h2>
+    <div class="field"><label for="nw-url">Link da notícia</label><input id="nw-url" type="url" maxlength="500" placeholder="https://..." required></div>
+    <div class="field"><label for="nw-title">Título</label><input id="nw-title" maxlength="140" required placeholder="Ex.: Hades II ganha data na Switch 2"></div>
+    <div class="fgrid"><div class="field"><label for="nw-source">Site (opcional)</label><input id="nw-source" maxlength="40" placeholder="Preenchido pelo link"></div>
+      <div class="field"><label for="nw-img">Link da imagem (opcional)</label><input id="nw-img" type="url" maxlength="500" placeholder="https://...jpg"></div></div>
+    <div class="field"><label for="nw-sum">Resumo (opcional)</label><textarea id="nw-sum" maxlength="300" placeholder="Uma ou duas frases sobre a notícia"></textarea></div>
+    <span class="hint">Dica: para pegar a imagem, clique com o botão direito na foto da notícia e escolha "Copiar endereço da imagem".</span>
+    <div class="err" id="nwerr"></div>
+    <div class="mfoot"><div class="r"><button type="button" class="btn ghost" data-act="close">Cancelar</button><button type="button" class="btn primary" data-act="newssave">Publicar</button></div></div>`);
+  $("#nw-url").focus();
+}
+
+/* ---------- cliques das novidades e tier lists ---------- */
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(a==="tierwho"){S.tierWho=el.dataset.id;renderView();return}
+  if(a==="newsrc"){S.newsSrc=el.dataset.id;renderView();return}
+  if(a==="tladd"&&M?.type==="monthly"){const v=$("#tl-add").value.trim();if(!v)return;const k=norm(v);const g=allGames().find(y=>norm(y.title)===k);
+    M.pick[k]=M.pick[k]||{title:g?.title||v,coverUrl:extImg(g?.coverUrl)||""};M.pick[k].on=true;$("#tl-add").value="";drawMonthly();
+    if(!M.pick[k].coverUrl){wikiSearch(v).then(r=>{const hit=r.find(x=>norm(x.title)===k)||r[0];if(hit&&M?.type==="monthly"&&M.pick[k]){if(hit.img)M.pick[k].coverUrl=hit.img;drawMonthly()}}).catch(()=>{})}return}
+  if(a==="monthly"){if(isStaff())openMonthly(el.dataset.m);return}
+  if(a==="vote"){
+    if(S.mode!=="live"||!me()||!S.canWrite){toast("Entre para votar");return}
+    const month=el.dataset.m,k=el.dataset.k,t=el.dataset.t;const cur=clone(votesOf(month)[S.myId]||{v:{}});cur.v=cur.v||{};
+    if(cur.v[k]===t)delete cur.v[k];else cur.v[k]=t;cur.at=Date.now();
+    S.votes={...(S.votes||{}),[month]:{...votesOf(month),[S.myId]:cur}};renderView();
+    queue(()=>S.db.doc(`tierlists/${month}/votes/${S.myId}`).set(cur)).catch(err=>toast(err?.code==="permission-denied"?"A votação está encerrada.":errMsg(err)));return}
+  if(a==="newsadd"){if(isStaff())openNews();return}
+  if(S.mode!=="live"||!isStaff())return;
+  if(["tlsave","tlclose","tlreopen"].includes(a)&&M?.type==="monthly"){
+    const games=Object.values(M.pick).filter(x=>x.on).map(x=>({title:x.title,coverUrl:x.coverUrl||""}));
+    if(!games.length){$("#tlerr").textContent="Marque pelo menos um jogo.";return}
+    const prev=tierlists()[M.month]||{};
+    const doc={title:$("#tl-title").value.trim()||"Os melhores do mês",note:$("#tl-note").value.trim(),games,status:prev.status||"aberta",by:prev.by||S.myId,at:prev.at||Date.now(),updatedAt:Date.now()};
+    if(a==="tlclose"){const r=tlResult(M.month);doc.status="encerrada";doc.final={tiers:r.tiers,pending:r.pending,voters:r.voters,at:Date.now()}}
+    if(a==="tlreopen"){doc.status="aberta";doc.final=null}
+    if(a==="tlsave"&&prev.final&&doc.status==="encerrada")doc.final=prev.final;
+    try{await S.db.doc(`tierlists/${M.month}`).set(doc);S.tierlists={...(S.tierlists||{}),[M.month]:doc};S.tlMonth=M.month;S.tierWho="mes";closeModal();renderAll();
+      toast({tlsave:prev.status?"Tier list salva":"Votação lançada!",tlclose:"Votação encerrada, resultado final publicado",tlreopen:"Votação reaberta"}[a])}catch(err){$("#tlerr").textContent=errMsg(err)}return}
+  if(a==="tldel"&&M?.type==="monthly"){if(!M.confirmDel){M.confirmDel=true;el.textContent="Confirmar: apagar";return}
+    try{await S.db.doc(`tierlists/${M.month}`).delete();const o={...(S.tierlists||{})};delete o[M.month];S.tierlists=o;S.tlMonth="";closeModal();renderAll();toast("Tier list apagada")}catch(err){$("#tlerr").textContent=errMsg(err)}return}
+  if(a==="newssave"&&M?.type==="news"){const url=safeUrl($("#nw-url").value.trim()),title=$("#nw-title").value.trim();
+    if(!url){$("#nwerr").textContent="Cole um link que comece com https://";return}if(!title){$("#nwerr").textContent="Escreva um título.";return}
+    const img=$("#nw-img").value.trim();if(img&&!safeUrl(img)){$("#nwerr").textContent="O link da imagem precisa começar com https://";return}
+    const id=newId("n");const doc={title:title.slice(0,140),url,source:($("#nw-source").value.trim()||hostOf(url)).slice(0,40),img:safeUrl(img),summary:$("#nw-sum").value.trim().slice(0,300),by:S.myId,at:Date.now()};
+    try{await S.db.doc(`news/${id}`).set(doc);closeModal();toast("Novidade publicada")}catch(err){$("#nwerr").textContent=errMsg(err)}return}
+  if(a==="newsdel"){if(el.dataset.confirm!=="1"){el.dataset.confirm="1";el.textContent="confirmar?";return}
+    try{await S.db.doc(`news/${el.dataset.id}`).delete();toast("Novidade apagada")}catch(err){toast(errMsg(err))}return}
+});
+document.addEventListener("change",e=>{if(e.target.id==="tl-month"){S.tlMonth=e.target.value;renderView()}
+  const k=e.target.dataset?.tlk;if(k!==undefined&&M?.type==="monthly"&&M.pick[k])M.pick[k].on=e.target.checked});
+
+/* ================== v3: Meus Saves (ficha de retomada) ================== */
+const BTN = {
+  PlayStation:["✕","○","△","□","L1","R1","L2","R2","L3","R3","Touchpad","Options","↑","↓","←","→"],
+  Xbox:["A","B","X","Y","LB","RB","LT","RT","LS","RS","View","Menu","↑","↓","←","→"],
+  Switch:["A","B","X","Y","L","R","ZL","ZR","L-stick","R-stick","+","−","↑","↓","←","→"],
+  PC:["Esc","Tab","Shift","Ctrl","Alt","Espaço","E","F","Q","R","Clique esq.","Clique dir.","Roda","1","2","3"]
+};
+const famOf = plat => /^PS/.test(plat||"")?"PlayStation":/^Xbox/.test(plat||"")?"Xbox":/Switch/.test(plat||"")?"Switch":"PC";
+const quando = t => {const a=ago(t);return a==="agora"?"agora mesmo":"há "+a};
+const fichaPath = (pid,gid) => `players/${pid}/saves/${gid}`;
+const saveHash = (pid,gid) => `save-${pid}-${gid}`;
+const myGamesSorted = () => {const m=me();if(!m)return [];const ord={jogando:0,pausado:1,quero:2,zerado:3,platinado:4,dropado:5};
+  return Object.entries(m.games||{}).map(([gid,g])=>({...g,gid,pid:S.myId,p:m})).sort((a,b)=>(ord[a.status]??9)-(ord[b.status]??9)||(b.updatedAt||0)-(a.updatedAt||0))};
+function paradoEm(g){return g.lastNote||g.fase||""}
+
+/* ---------- carregar a ficha aberta e as fichas da galera para o mesmo jogo ---------- */
+function watchFicha(pid,gid){
+  const key=pid+"/"+gid;if(S.ficha?.key===key)return;
+  if(S.ficha?.unsub)S.ficha.unsub();
+  S.ficha={key,pid,gid,data:null,loading:true};
+  if(S.mode!=="live"||!S.db){S.ficha.loading=false;return}
+  S.ficha.unsub=S.db.doc(fichaPath(pid,gid)).onSnapshot(sn=>{if(S.ficha?.key!==key)return;S.ficha.data=(sn.exists&&sn.data())||{};S.ficha.loading=false;if(S.view==="save")renderViewKeep()},()=>{if(S.ficha?.key===key){S.ficha.loading=false;S.ficha.data={}}});
+}
+function renderViewKeep(){const y=window.scrollY;renderView();try{window.scrollTo(0,y)}catch{}}
+const comm={};
+function loadComm(title){
+  const k=norm(title);if(comm[k]||S.mode!=="live"||!S.db)return comm[k]||[];
+  comm[k]=[];
+  const others=allGames().filter(g=>norm(g.title)===k);
+  Promise.all(others.map(g=>S.db.doc(fichaPath(g.pid,g.gid)).get().then(sn=>sn.exists?{pid:g.pid,gid:g.gid,p:g.p,d:sn.data()||{}}:null).catch(()=>null)))
+    .then(r=>{comm[k]=r.filter(Boolean);if(["save","jogo"].includes(S.view))renderViewKeep()});
+  return [];
+}
+function saveFicha(mut){
+  const f=S.ficha;if(!f||f.pid!==S.myId)return Promise.reject(new Error("não é seu"));
+  return queue(async()=>{const cur=clone(f.data||{});mut(cur);cur.updatedAt=Date.now();f.data=cur;renderViewKeep();await S.db.doc(fichaPath(f.pid,f.gid)).set(cur)});
+}
+
+/* ---------- aba Meus Saves ---------- */
+function saveCard(g){
+  const ds=daysSince(g.updatedAt);const prog=Math.min(100,Number(g.progress)||0);
+  return `<article class="box scard">${coverBox(g)}
+    <div class="sbody"><div class="meta"><span class="pill s-${esc(g.status)}">${esc(STATUS[g.status]?.l||g.status)}</span>${g.platform?`<span class="tag">${esc(g.platform)}</span>`:""}${g.updatedAt>1e9?`<span class="tag">${ds>=14?`parado há ${ds} dias`:quando(g.updatedAt)}</span>`:""}</div>
+      <h3 class="gtitle"><a href="#${saveHash(g.pid,g.gid)}">${esc(g.title)}</a></h3>
+      ${paradoEm(g)?`<div class="fase"><span class="flabel">Parei em</span><br>${esc(paradoEm(g))}</div>`:`<div class="hint">Ainda sem anotação de onde parou.</div>`}
+      ${g.next?`<div class="fase"><span class="flabel">Próximo objetivo</span><br><b>${esc(g.next)}</b></div>`:""}
+      ${["jogando","pausado"].includes(g.status)?`<div class="bar"><i style="width:${prog}%"></i></div>`:""}
+      <div class="actions" style="margin-top:auto">${g.pid===meId()&&S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}<a class="btn small" href="#${saveHash(g.pid,g.gid)}">Abrir ficha</a></div></div></article>`;
+}
+function viewSaves(){
+  const m=me();
+  if(!m)return emptyBox("▶","Seus saves ficam aqui",S.mode==="live"&&!S.myId?"Entre para guardar onde parou em cada jogo, anotar a história, montar a cola de controles e marcar o que falta.":"Crie seu perfil e adicione um jogo para começar.",S.mode==="live"&&!S.myId?`<div class="actions"><button class="btn primary" data-act="auth" data-m="criar">Criar conta</button><button class="btn" data-act="auth" data-m="entrar">Entrar</button></div>`:"");
+  const L=myGamesSorted();const ativos=L.filter(g=>["jogando","pausado"].includes(g.status));const resto=L.filter(g=>!["jogando","pausado"].includes(g.status));
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Meus Saves</span><h3>Onde você parou em cada jogo</h3><span class="hint">Abra a ficha quando for voltar a jogar: onde parou, história, controles, pendências e guias.</span></div>${S.canWrite?`<button class="btn primary small" data-act="add">+ Jogo</button>`:""}</div>
+    ${ativos.length?`<section class="sec"><h4>Jogando agora (${ativos.length})</h4><div class="sgrid">${ativos.map(saveCard).join("")}</div></section>`:""}
+    ${resto.length?`<section class="sec"><h4>Outros jogos (${resto.length})</h4><div class="sgrid">${resto.map(saveCard).join("")}</div></section>`:""}
+    ${!L.length?emptyBox("+","Nenhum jogo ainda","Adicione o jogo que está jogando para criar o primeiro save."):""}</div>`;
+}
+
+/* ---------- ficha do jogo ---------- */
+const FTABS={onde:"Onde parei",diario:"Diário",historia:"História",controles:"Controles",pend:"Pendências",dicas:"Prints e dicas",guias:"Guias e links"};
+function viewSave(){
+  const [pid,gid]=(S.route||"").split("-");const p=players()[pid];const g=p?.games?.[gid];
+  if(!g)return `<div class="page"><a class="btn small back" href="#saves">← Meus Saves</a>${emptyBox("?","Save não encontrado","Esse jogo não existe mais ou foi removido.")}</div>`;
+  watchFicha(pid,gid);const f=S.ficha;const d=f.data||{};const mine=pid===meId()&&S.canWrite;const G={...g,gid,pid,p};
+  if(!FTABS[S.saveTab])S.saveTab="onde";
+  const tabs=`<div class="tierpick ftabs" role="tablist">${Object.entries(FTABS).map(([k,l])=>`<button role="tab" data-act="ftab" data-id="${k}" aria-pressed="${S.saveTab===k}">${l}${k==="pend"&&d.todo?.length?` ${d.todo.filter(x=>!x.d).length}`:""}${k==="diario"&&d.diary?.length?` ${d.diary.length}`:""}</button>`).join("")}</div>`;
+  const head=`<section class="box fhero">${coverBox(G)}<div class="fh"><span class="eyebrow">${mine?"Seu save":"Save de "+esc(p.nick)}</span><h2>${esc(g.title)}</h2>
+    <div class="meta"><span class="pill s-${esc(g.status)}">${esc(STATUS[g.status]?.l||g.status)}</span>${g.platform?`<span class="tag">${esc(g.platform)}</span>`:""}${g.hours?`<span class="tag">${esc(g.hours)} h</span>`:""}${g.updatedAt>1e9?`<span class="tag">última vez ${quando(g.updatedAt)}</span>`:""}</div>
+    <div class="actions">${mine?`<button class="btn primary small" data-act="session" data-id="${esc(gid)}">Joguei agora</button><button class="btn small" data-act="edit" data-id="${esc(gid)}">Editar jogo</button>`:""}<a class="btn small ghost" href="#jogo-${esc(slug(g.title))}">Página do jogo</a></div></div></section>`;
+  let body="";
+  if(f.loading)body=`<div class="loading">Carregando o save<span class="blink">_</span></div>`;
+  else body={onde:fOnde,diario:fDiario,historia:fHistoria,controles:fControles,pend:fPend,dicas:fDicas,guias:fGuias}[S.saveTab](G,d,mine);
+  return `<div class="page"><a class="btn small back" href="${mine?"#saves":"#perfil-"+esc(pslug(p))}">← ${mine?"Meus Saves":esc(p.nick)}</a>${head}${tabs}${body}</div>`;
+}
+function fOnde(g,d,mine){
+  const prog=Number(g.progress)||0,h=Number(g.hours)||0;
+  const est=prog>=5&&prog<100&&h>0?Math.max(0,Math.round(h/prog*100-h)):null;
+  const hz=allGames().filter(x=>isDone(x)&&norm(x.title)===norm(g.title)&&Number(x.hours)>0).map(x=>Number(x.hours));const media=hz.length?Math.round(hz.reduce((a,b)=>a+b,0)/hz.length):null;
+  const last=(d.diary||[]).slice(-1)[0];
+  return `<div class="fgrid2"><section class="box card onde">
+      <span class="eyebrow">Parei em</span><p class="big-note">${esc(d.note||g.lastNote||g.fase||"Nenhuma anotação ainda.")}</p>
+      ${g.next||d.next?`<div><span class="flabel">Próximo objetivo</span><p class="next">${esc(d.next||g.next)}</p></div>`:""}
+      ${g.fase?`<div class="hint">Fase/área: <b>${esc(g.fase)}</b></div>`:""}
+      ${["jogando","pausado"].includes(g.status)?`<div class="bar"><i style="width:${Math.min(100,prog)}%"></i></div><div class="pct">${prog}% · ${h} h jogadas${est!==null?` · faltam uns ${est} h no seu ritmo`:""}${media?` · a galera zerou em ~${media} h`:""}</div>`:""}
+      ${mine?`<div class="actions"><button class="btn primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button></div>`:""}</section>
+    <section class="box card"><span class="eyebrow">Última sessão</span>${last?`<div class="hint">${esc(new Date(last.at).toLocaleDateString("pt-BR"))}${last.h?` · ${esc(last.h)} h`:""}</div><p style="margin:0;white-space:pre-wrap">${esc(last.txt||"")}</p>${last.shot?`<div class="shot"><div class="ph">${mimg(`players/${g.pid}/shots/${last.shot}`,1,"","Print da sessão")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${last.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}`:`<p class="hint" style="margin:0">Use "Joguei agora" ao parar de jogar: em 10 segundos você anota o que fez, o próximo passo e um print.</p>`}
+      ${(d.todo||[]).filter(x=>!x.d).length?`<div><span class="flabel">Pendências</span><ul class="mini-todo">${d.todo.filter(x=>!x.d).slice(0,4).map(x=>`<li>${esc(x.t)}</li>`).join("")}</ul></div>`:""}</section></div>`;
+}
+function fDiario(g,d,mine){
+  const L=(d.diary||[]).slice().reverse();
+  return `<section class="box card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Diário de sessões</h3>${mine?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">+ Joguei agora</button>`:""}</div>
+    ${L.length?`<ol class="diary">${L.map(e=>`<li><div class="dd">${esc(new Date(e.at).toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"}))}</div><div class="dt">${e.fase?`<span class="tag">${esc(e.fase)}</span> `:""}${e.h?`<span class="tag">${esc(e.h)} h</span>`:""}<p>${esc(e.txt||"")}</p>${e.next?`<p class="hint">Próximo: ${esc(e.next)}</p>`:""}
+      ${e.shot?`<div class="shot" style="max-width:260px"><div class="ph">${mimg(`players/${g.pid}/shots/${e.shot}`,1,"","Print")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${e.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}
+      ${mine?`<button class="linkbtn" data-act="diarydel" data-id="${esc(e.id)}">apagar</button>`:""}</div></li>`).join("")}</ol>`:'<span class="hint">Nenhuma sessão registrada ainda.</span>'}</section>`;
+}
+const plotMemo={};
+async function wikiPlot(title,wtitle){
+  const W=(host,params)=>fetch(`https://${host}/w/api.php?${new URLSearchParams({...params,format:"json"})}&origin=*`).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
+  let en=wtitle;
+  if(!en){const r=await wikiSearch(title);en=r[0]?.wtitle;if(!en)return null}
+  const ll=await W("en.wikipedia.org",{action:"query",prop:"langlinks",lllang:"pt",titles:en,redirects:1});
+  const pt=Object.values(ll.query?.pages||{})[0]?.langlinks?.[0]?.["*"];
+  const EN=/^(Plot|Synopsis|Story|Premise|Setting and plot|Plot and setting|Setting and story)$/i,PT=/^(Enredo|Sinopse|História|Premissa|Narrativa|Trama|Enredo e personagens)$/i;
+  const tries=pt?[["pt.wikipedia.org",pt,PT],["en.wikipedia.org",en,EN]]:[["en.wikipedia.org",en,EN]];
+  for(const [host,t,re] of tries){
+    const ex=await W(host,{action:"query",prop:"extracts",explaintext:1,exsectionformat:"wiki",titles:t,redirects:1});
+    const txt=Object.values(ex.query?.pages||{})[0]?.extract||"";
+    for(const part of txt.split(/\n(?===\s)/)){const m=/^==\s*([^=]+?)\s*==\s*\n/.exec(part);if(m&&re.test(m[1].trim())){
+      const out=part.replace(/^==.*\n/,"").replace(/^===+\s*([^=]+?)\s*===+$/gm,"\n$1\n").trim();
+      if(out)return {lang:host.slice(0,2),title:t,url:`https://${host}/wiki/${encodeURIComponent(t.replace(/ /g,"_"))}`,text:out.slice(0,8000)}}}
+  }
+  return {none:true,url:`https://en.wikipedia.org/wiki/${encodeURIComponent(en.replace(/ /g,"_"))}`};
+}
+function fHistoria(g,d,mine){
+  const k=norm(g.title);const pl=plotMemo[k];
+  return `<div class="fgrid2"><section class="box card"><span class="eyebrow">Relembrar a história</span><h3>Resumo do enredo</h3>
+      ${!pl?`<p class="hint" style="margin:0">Puxa o resumo da Wikipédia, em português quando existir. Ele fica escondido para não dar spoiler sem querer.</p><div><button class="btn small primary" data-act="plot" data-t="${esc(g.title)}" data-w="${esc(d.wtitle||g.wtitle||"")}">Buscar resumo</button></div>`
+        :pl==="…"?`<div class="loading">Buscando na Wikipédia<span class="blink">_</span></div>`
+        :pl==="erro"?`<p class="hint" style="margin:0">Não consegui falar com a Wikipédia agora. Verifique a internet ou se algum bloqueador está impedindo, e tente de novo.</p><div><button class="btn small" data-act="plot" data-t="${esc(g.title)}" data-w="${esc(d.wtitle||g.wtitle||"")}">Tentar de novo</button></div>`
+        :pl.none?`<p class="hint" style="margin:0">A Wikipédia não tem uma seção de enredo para esse jogo.</p><a class="btn small" href="${esc(pl.url)}" target="_blank" rel="noopener">Abrir artigo</a>`
+        :`<div class="spoiler hidden-sp" data-act="reveal" role="button" tabindex="0" aria-label="Revelar resumo com spoiler"><p class="tiptext">${esc(pl.text)}</p></div><span class="hint">Fonte: <a href="${esc(pl.url)}" target="_blank" rel="noopener">Wikipédia${pl.lang==="pt"?"":" (em inglês)"}</a>, licença CC BY-SA.</span>`}
+    </section>
+    <section class="box card"><span class="eyebrow">Anotações de lore</span><h3>${mine?"O que você precisa lembrar":"Anotações de "+esc(g.p.nick)}</h3>
+      ${mine?`<textarea id="lore-text" class="fta" maxlength="5000" placeholder="Personagens, facções, quem é quem, mistérios que ainda não entendeu…">${esc(d.lore||"")}</textarea><div><button class="btn small primary" data-act="lore">Salvar anotações</button></div>`
+        :d.lore?`<p class="tiptext">${esc(d.lore)}</p>`:`<span class="hint">Sem anotações.</span>`}</section></div>`;
+}
+function fControles(g,d,mine){
+  const fam=d.ctlFam||famOf(g.platform);const rows=d.controls||[];const others=loadComm(g.title).filter(c=>c.pid!==g.pid&&(c.d.controls||[]).length);
+  return `<div class="fgrid2"><section class="box card"><span class="eyebrow">Cola de controles · ${esc(fam)}</span><h3>${mine?"Sua cola":"Cola de "+esc(g.p.nick)}</h3>
+      ${rows.length?`<table class="ctl"><tbody>${rows.map((r,i)=>`<tr><td>${esc(r.a)}</td><td><span class="key">${esc(r.b)}</span></td>${mine?`<td><button class="linkbtn" data-act="ctldel" data-i="${i}" aria-label="Remover">×</button></td>`:""}</tr>`).join("")}</tbody></table>`:`<span class="hint">${mine?"Nenhum comando ainda. Adicione abaixo os que você sempre esquece.":"Sem cola de controles."}</span>`}
+      ${mine?`<div class="ctlform"><div class="field"><label for="ctl-fam">Controle</label><select id="ctl-fam">${Object.keys(BTN).map(k=>`<option${k===fam?" selected":""}>${k}</option>`).join("")}</select></div>
+        <div class="field"><label for="ctl-a">Ação</label><input id="ctl-a" maxlength="40" placeholder="Ex.: Esquivar, Abrir mapa, Parry"></div>
+        <div class="field"><label for="ctl-b">Botão</label><input id="ctl-b" maxlength="30" placeholder="Toque nos botões abaixo ou digite"></div>
+        <div class="keys">${BTN[fam].map(b=>`<button type="button" class="key" data-act="ctlkey" data-k="${esc(b)}">${esc(b)}</button>`).join("")}<button type="button" class="key" data-act="ctlkey" data-k=" + ">+</button></div>
+        <div><button class="btn small primary" data-act="ctladd">Adicionar à cola</button></div></div>`:""}</section>
+    <section class="box card"><span class="eyebrow">Colas da galera</span><h3>Quem já montou</h3>
+      ${others.length?others.map(c=>`<div class="gmini">${glyph(c.p)}<div class="t"><b>${nk(c.p)}</b><span>${(c.d.controls||[]).length} comandos · ${esc(c.d.ctlFam||"")}</span></div>${mine?`<button class="btn small" data-act="ctlcopy" data-pid="${esc(c.pid)}">Copiar</button>`:`<a class="btn small ghost" href="#${saveHash(c.pid,c.gid)}">Ver</a>`}</div>`).join(""):`<span class="hint">Ninguém da galera montou cola para este jogo ainda.</span>`}</section></div>`;
+}
+function fPend(g,d,mine){
+  const T=d.todo||[];const n=T.filter(x=>x.d).length;
+  return `<section class="box card"><span class="eyebrow">Pendências · ${n} de ${T.length} feitas</span><h3>O que falta fazer</h3>
+    ${T.length?`<div class="bar"><i style="width:${T.length?n/T.length*100:0}%"></i></div><ul class="todo">${T.map((x,i)=>`<li class="${x.d?"done":""}"><label><input type="checkbox" data-todo="${i}" ${x.d?"checked":""} ${mine?"":"disabled"}> <span>${esc(x.t)}</span></label>${mine?`<button class="linkbtn" data-act="tododel" data-i="${i}" aria-label="Remover">×</button>`:""}</li>`).join("")}</ul>`:`<span class="hint">${mine?"Coletáveis, missões paralelas, troféus, builds para testar…":"Nada anotado."}</span>`}
+    ${mine?`<div class="actions"><input id="todo-new" maxlength="120" placeholder="Ex.: 3 corações de vida no Templo do Fogo" style="flex:1;min-width:180px"><button class="btn small primary" data-act="todoadd">Adicionar</button></div>`:""}</section>`;
+}
+function fDicas(g,d,mine){
+  const sh=g.shots||[];
+  return `<section class="box card"><span class="eyebrow">Prints e dicas</span>${g.tips?`<div class="${g.spoiler?"spoiler hidden-sp":""}" ${g.spoiler?'data-act="reveal" role="button" tabindex="0" aria-label="Revelar spoiler"':""}><p class="tiptext">${esc(g.tips)}</p></div>`:""}
+    ${sh.length?`<div class="shotgrid">${sh.map(x=>{const path=`players/${g.pid}/shots/${x.id}`;return `<figure class="shot" style="margin:0"><div class="ph">${mimg(path,1,"","Print")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(path,1))}" data-cap="${esc(x.cap||"")}" aria-label="Ampliar print"></button></div>${x.cap?`<figcaption class="cap">${esc(x.cap)}</figcaption>`:""}</figure>`}).join("")}</div>`:""}
+    ${!g.tips&&!sh.length?`<span class="hint">Nenhuma dica ou print ainda.</span>`:""}${mine?`<div><button class="btn small" data-act="edit" data-id="${esc(g.gid)}">Editar dicas e prints</button></div>`:""}</section>`;
+}
+function guideLinks(title){
+  const q=encodeURIComponent(title),qq=s=>"https://www.google.com/search?q="+encodeURIComponent(s);
+  return [
+    ["Wiki do jogo (Fandom)",`https://community.fandom.com/wiki/Special:Search?query=${q}&scope=cross-wiki`,"Personagens, itens, chefes, lore"],
+    ["Mapa interativo",qq(`${title} mapa interativo OR "interactive map" site:mapgenie.io OR site:game8.co`),"MapGenie, Game8 e outros"],
+    ["Onde achar colecionáveis",qq(`${title} todos os colecionáveis localização`),"Guias de colecionáveis"],
+    ["Troféus e conquistas",qq(`${title} trophy guide site:powerpyx.com OR site:psnprofiles.com OR site:trueachievements.com`),"PowerPyx, PSNProfiles, TrueAchievements"],
+    ["Detonado em vídeo",`https://www.youtube.com/results?search_query=${encodeURIComponent(title+" detonado")}`,"YouTube"],
+    ["Tempo para zerar",`https://howlongtobeat.com/?q=${q}`,"HowLongToBeat"],
+    ["Wikipédia",`https://pt.wikipedia.org/w/index.php?search=${q}`,"História e informações do jogo"]
+  ];
+}
+function fGuias(g,d,mine){
+  const others=loadComm(g.title).filter(c=>c.pid!==g.pid).flatMap(c=>(c.d.links||[]).map(l=>({...l,p:c.p})));
+  const mineL=d.links||[];
+  return `<div class="fgrid2"><section class="box card"><span class="eyebrow">Atalhos</span><h3>Guias, mapas e wikis</h3><div class="glinks">${guideLinks(g.title).map(([t,u,s])=>`<a class="glink" href="${esc(u)}" target="_blank" rel="noopener noreferrer"><b>${esc(t)} ↗</b><span>${esc(s)}</span></a>`).join("")}</div></section>
+    <section class="box card"><span class="eyebrow">Links salvos</span><h3>${mine?"Seus links":"Links de "+esc(g.p.nick)}</h3>
+      ${mineL.length?mineL.map((l,i)=>`<div class="lrow"><a href="${esc(safeUrl(l.u))}" target="_blank" rel="noopener noreferrer">${esc(l.t)} ↗</a><span class="hint">${esc(hostOf(l.u))}</span>${mine?`<button class="linkbtn" data-act="linkdel" data-i="${i}" aria-label="Remover">×</button>`:""}</div>`).join(""):`<span class="hint">${mine?"Achou um mapa ou guia bom? Salve aqui para a galera também ver.":"Nenhum link salvo."}</span>`}
+      ${mine?`<div class="fgrid"><div class="field"><label for="lk-t">Nome</label><input id="lk-t" maxlength="60" placeholder="Ex.: Mapa dos colecionáveis"></div><div class="field"><label for="lk-u">Link</label><input id="lk-u" type="url" maxlength="400" placeholder="https://..."></div></div><div><button class="btn small primary" data-act="linkadd">Salvar link</button></div>`:""}
+      ${others.length?`<div class="sec" style="margin-top:8px"><h4>Links da galera</h4>${others.map(l=>`<div class="lrow">${glyph(l.p,true)}<a href="${esc(safeUrl(l.u))}" target="_blank" rel="noopener noreferrer">${esc(l.t)} ↗</a><span class="hint">${esc(hostOf(l.u))}</span></div>`).join("")}</div>`:""}</section></div>`;
+}
+
+/* ---------- "Joguei agora": registrar sessão ---------- */
+function openSession(gid){
+  const m=me();const g=m?.games?.[gid];if(!g)return;
+  M={type:"session",gid,status:g.status==="quero"?"jogando":g.status,shot:null};
+  $("#modal").innerHTML=overlay(`<h2>Joguei agora · ${esc(g.title)}</h2>
+    <div class="field"><label for="ss-txt">O que você fez / onde parou</label><textarea id="ss-txt" maxlength="1000" placeholder="Ex.: derrotei o chefe da ponte, parei no acampamento antes da caverna">${""}</textarea></div>
+    <div class="field"><label for="ss-next">Próximo objetivo</label><input id="ss-next" maxlength="120" value="${esc(g.next||"")}" placeholder="Ex.: pegar a chave azul no norte do mapa"></div>
+    <div class="fgrid"><div class="field"><label for="ss-fase">Fase / área / capítulo</label><input id="ss-fase" maxlength="80" value="${esc(g.fase||"")}"></div>
+      <div class="field"><label for="ss-prog">Progresso: <b id="ss-progv">${Number(g.progress)||0}%</b></label><input id="ss-prog" type="range" min="0" max="100" step="5" value="${Number(g.progress)||0}"></div>
+      <div class="field"><label for="ss-h">Horas desta sessão</label><input id="ss-h" type="number" min="0" max="24" step="0.5" placeholder="Ex.: 2"></div></div>
+    <div class="field"><span class="flabel">Status</span>${pickRow("status",[["jogando","Continuo jogando"],["pausado","Pausei"],["zerado","Zerei!"],["platinado","Platinei!"],["dropado","Larguei"]].map(([v,l])=>({v,l,cls:"s-"+v,style:"color:var(--on-pill)"})),M.status)}</div>
+    <div class="field"><span class="flabel">Print (opcional)</span><div class="actions"><label class="btn small" for="ss-shot">Escolher print</label><input id="ss-shot" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden><span class="hint" id="ss-shotname"></span></div></div>
+    <div class="err" id="sserr"></div>
+    <div class="mfoot"><div class="r"><button type="button" class="btn ghost" data-act="close">Cancelar</button><button type="button" class="btn primary" data-act="sessave">Salvar sessão</button></div></div>`);
+  $("#ss-txt").focus();
+}
+async function saveSession(){
+  const gid=M.gid;const m=me();const g=m?.games?.[gid];if(!g)return;
+  const txt=$("#ss-txt").value.trim(),next=$("#ss-next").value.trim(),fase=$("#ss-fase").value.trim();
+  let prog=Number($("#ss-prog").value)||0;const h=Math.max(0,Math.min(24,Number($("#ss-h").value)||0));const st=M.status;
+  if(!txt&&!next&&!M.shot&&!h){$("#sserr").textContent="Escreva ao menos o que fez ou o próximo objetivo.";return}
+  if(st==="zerado"||st==="platinado")prog=100;
+  const entry={id:newId("e"),at:Date.now(),txt:txt.slice(0,1000),next:next.slice(0,120),fase:fase.slice(0,80),h};
+  try{
+    if(M.shot){const sid=newId("s");const sp=`players/${S.myId}/shots/${sid}`;await S.db.doc(sp).set({img:M.shot,gid});media[mkey(sp,1)]=M.shot;entry.shot=sid}
+    const fp=fichaPath(S.myId,gid);const sn=await S.db.doc(fp).get();const cur=(sn.exists&&sn.data())||{};
+    cur.diary=[...(cur.diary||[]),entry].slice(-300);if(txt)cur.note=txt.slice(0,1000);cur.next=next;cur.updatedAt=Date.now();
+    await S.db.doc(fp).set(cur);if(S.ficha?.key===S.myId+"/"+gid)S.ficha.data=cur;
+    await saveMe(p=>{const x=p.games[gid];if(!x)return;x.fase=fase;x.next=next.slice(0,120);if(txt)x.lastNote=txt.slice(0,160);x.progress=prog;x.hours=Math.round(((Number(x.hours)||0)+h)*10)/10;
+      if(x.status!==st){x.status=st;if(st==="zerado"||st==="platinado")x.year=x.year||YEAR}x.updatedAt=Date.now()});
+    closeModal();toast(st==="zerado"?"Zerou! Que tal dar nota e escrever o que achou?":st==="platinado"?"Platinou! Parabéns!":"Sessão salva");
+    if(st==="zerado"||st==="platinado")setTimeout(()=>openGame(gid),400);
+  }catch(err){$("#sserr").textContent=errMsg(err)}
+}
+
+/* ---------- cliques da ficha ---------- */
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(a==="ftab"){S.saveTab=el.dataset.id;renderViewKeep();return}
+  if(a==="session"){if(S.mode==="live"&&me()&&S.canWrite)openSession(el.dataset.id);return}
+  if(a==="sessave"&&M?.type==="session"){el.disabled=true;await saveSession();el.disabled=false;return}
+  if(a==="plot"){const t=el.dataset.t,k=norm(t);plotMemo[k]="…";renderViewKeep();
+    try{plotMemo[k]=(await wikiPlot(t,el.dataset.w))||{none:true,url:`https://pt.wikipedia.org/w/index.php?search=${encodeURIComponent(t)}`}}catch{plotMemo[k]="erro"}renderViewKeep();return}
+  if(a==="ctlkey"){const i=$("#ctl-b");if(i){i.value=(i.value+el.dataset.k).slice(0,30);i.focus()}return}
+  const f=S.ficha;if(!f||f.pid!==S.myId||S.mode!=="live")return;
+  const done=p=>p.catch(err=>toast(errMsg(err)));
+  if(a==="lore"){done(saveFicha(d=>{d.lore=$("#lore-text").value.slice(0,5000)}).then(()=>toast("Anotações salvas")));return}
+  if(a==="ctladd"){const ac=$("#ctl-a").value.trim(),b=$("#ctl-b").value.trim();if(!ac||!b){toast("Preencha a ação e o botão");return}
+    done(saveFicha(d=>{d.ctlFam=$("#ctl-fam").value;d.controls=[...(d.controls||[]),{a:ac.slice(0,40),b:b.slice(0,30)}].slice(0,60)}));return}
+  if(a==="ctldel"){const i=Number(el.dataset.i);done(saveFicha(d=>{d.controls=(d.controls||[]).filter((_,j)=>j!==i)}));return}
+  if(a==="ctlcopy"){const src=(comm[norm(players()[f.pid]?.games?.[f.gid]?.title||"")]||[]).find(c=>c.pid===el.dataset.pid);if(!src)return;
+    done(saveFicha(d=>{d.ctlFam=src.d.ctlFam||d.ctlFam;const have=new Set((d.controls||[]).map(x=>norm(x.a)));d.controls=[...(d.controls||[]),...(src.d.controls||[]).filter(x=>!have.has(norm(x.a)))].slice(0,60)}).then(()=>toast("Cola copiada")));return}
+  if(a==="todoadd"){const t=$("#todo-new").value.trim();if(!t)return;done(saveFicha(d=>{d.todo=[...(d.todo||[]),{t:t.slice(0,120),d:false}].slice(0,200)}));return}
+  if(a==="tododel"){const i=Number(el.dataset.i);done(saveFicha(d=>{d.todo=(d.todo||[]).filter((_,j)=>j!==i)}));return}
+  if(a==="linkadd"){const t=$("#lk-t").value.trim(),u=safeUrl($("#lk-u").value.trim());if(!t||!u){toast("Coloque um nome e um link que comece com https://");return}
+    done(saveFicha(d=>{d.links=[...(d.links||[]),{t:t.slice(0,60),u}].slice(0,40)}).then(()=>toast("Link salvo")));return}
+  if(a==="linkdel"){const i=Number(el.dataset.i);done(saveFicha(d=>{d.links=(d.links||[]).filter((_,j)=>j!==i)}));return}
+  if(a==="diarydel"){if(el.dataset.confirm!=="1"){el.dataset.confirm="1";el.textContent="confirmar?";return}const id=el.dataset.id;
+    const ent=(f.data?.diary||[]).find(x=>x.id===id);done(saveFicha(d=>{d.diary=(d.diary||[]).filter(x=>x.id!==id)}).then(()=>{if(ent?.shot)S.db.doc(`players/${S.myId}/shots/${ent.shot}`).delete().catch(()=>{})}));return}
+});
+document.addEventListener("change",async e=>{
+  const t=e.target;
+  if(t.dataset?.todo!==undefined&&S.ficha?.pid===S.myId){const i=Number(t.dataset.todo);saveFicha(d=>{if(d.todo?.[i])d.todo[i].d=t.checked}).catch(err=>toast(errMsg(err)));return}
+  if(t.id==="ctl-fam"&&S.ficha?.pid===S.myId){saveFicha(d=>{d.ctlFam=t.value}).catch(()=>{});return}
+  if(t.id==="ss-shot"&&M?.type==="session"){const f=t.files[0];t.value="";if(!f)return;try{M.shot=await fileToImg(f,1280,190000);$("#ss-shotname").textContent="Print pronto ✓"}catch{$("#sserr").textContent="Não consegui ler essa imagem."}}
+});
+document.addEventListener("input",e=>{if(e.target.id==="ss-prog"){const v=$("#ss-progv");if(v)v.textContent=e.target.value+"%"}});
+
+/* ================== v3: Quadro da galera (avisos, convites, enquetes) ================== */
+const BTYPES={aviso:"Aviso",evento:"Convite para jogar",enquete:"Enquete"};
+const DEMO_BOARD=[
+  {id:"b1",type:"aviso",title:"Bem-vindos ao Zerados da Galera!",text:"Criem o perfil, cadastrem o que estão jogando e usem o \"Joguei agora\" sempre que pararem de jogar.",pinned:true,by:"d1",at:T(2)},
+  {id:"b2",type:"evento",title:"Noite de Hades II",text:"Bora trocar build e ver quem chega mais longe.",ev:{game:"Hades II",when:new Date(Date.now()+2*864e5).toISOString().slice(0,16),where:"Discord · Jogatina 1",slots:6},by:"d1",at:T(10)},
+  {id:"b3",type:"enquete",title:"Qual o jogo do clube de dezembro?",poll:{opts:["Silksong","Balatro","Astro Bot"],multi:false},by:"d1",at:T(12)}];
+const DEMO_RESP={b2:{d2:{rsvp:"vou"},d3:{rsvp:"talvez"}},b3:{d2:{vote:[0]},d3:{vote:[1]},d1:{vote:[0]}}};
+const boardList = () => (S.mode==="demo"?DEMO_BOARD:(S.board||[])).slice().sort((a,b)=>(!!b.pinned-!!a.pinned)||(b.at||0)-(a.at||0));
+const respOf = id => S.mode==="demo"?(DEMO_RESP[id]||{}):(S.resp?.[id]||{});
+function ensureResp(id){
+  if(S.mode!=="live"||!S.db)return;S.respSubs=S.respSubs||{};if(S.respSubs[id])return;
+  S.respSubs[id]=S.db.collection(`board/${id}/resp`).onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.resp={...(S.resp||{}),[id]:o};softRender()},()=>{});
+}
+function fmtWhen(iso){const d=new Date(iso);if(isNaN(d))return "";const dias=Math.round((new Date(d.toDateString())-new Date(new Date().toDateString()))/864e5);
+  const hh=d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});const dt=d.toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"2-digit"});
+  return `${dt} às ${hh}${dias===0?" · hoje":dias===1?" · amanhã":dias>1?` · em ${dias} dias`:" · já passou"}`}
+function calLink(b){const d=new Date(b.ev?.when);if(isNaN(d))return "";const e=new Date(d.getTime()+2*3600e3);const f=x=>x.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(b.title)}&dates=${f(d)}/${f(e)}&details=${encodeURIComponent((b.text||"")+"\n\nZerados da Galera")}&location=${encodeURIComponent(b.ev?.where||"")}`}
+function boardCard(b,compact){
+  ensureResp(b.id);const R=respOf(b.id);const mid=meId();const mine=mid?R[mid]:null;const by=players()[b.by];
+  const thread=commentsFor("quadro-"+b.id);const open=S.boardOpen===b.id;
+  let body="";
+  if(b.type==="evento"){const vai=Object.entries(R).filter(([,r])=>r.rsvp==="vou").map(([u])=>u),tal=Object.entries(R).filter(([,r])=>r.rsvp==="talvez").map(([u])=>u);
+    const slots=Number(b.ev?.slots)||0;const cheio=slots&&vai.length>=slots;
+    body=`<div class="evrow">${b.ev?.game?coverBox({title:b.ev.game,coverUrl:b.ev.coverUrl},"mini"):""}<div><b>${esc(b.ev?.game||"")}</b><div class="hint">${esc(fmtWhen(b.ev?.when))}${b.ev?.where?` · ${esc(b.ev.where)}`:""}${slots?` · ${vai.length}/${slots} vagas`:""}</div></div></div>
+      <div class="rsvp">${[["vou","Vou"],["talvez","Talvez"],["nao","Não vou"]].map(([v,l])=>`<button class="rx" data-act="rsvp" data-id="${esc(b.id)}" data-v="${v}" aria-pressed="${mine?.rsvp===v}" ${cheio&&v==="vou"&&mine?.rsvp!=="vou"?"disabled":""}>${l}${v==="vou"&&vai.length?` <b>${vai.length}</b>`:v==="talvez"&&tal.length?` <b>${tal.length}</b>`:""}</button>`).join("")}
+        ${calLink(b)?`<a class="linkbtn" href="${esc(calLink(b))}" target="_blank" rel="noopener">Adicionar à agenda</a>`:""}</div>
+      ${vai.length?`<div class="who-list">${vai.map(u=>players()[u]?glyph(players()[u],true):"").join("")}<span class="hint" style="margin-left:8px">${vai.map(u=>esc(players()[u]?.nick||"")).filter(Boolean).join(", ")} ${vai.length>1?"vão":"vai"}</span></div>`:""}`}
+  else if(b.type==="enquete"){const opts=b.poll?.opts||[];const tot=Object.values(R).filter(r=>Array.isArray(r.vote)&&r.vote.length).length;const cnt=opts.map((_,i)=>Object.values(R).filter(r=>Array.isArray(r.vote)&&r.vote.includes(i)).length);
+    const fechada=b.poll?.until&&new Date(b.poll.until)<new Date();
+    body=`<div class="poll">${opts.map((o,i)=>{const pct=tot?Math.round(cnt[i]/tot*100):0;const on=mine?.vote?.includes(i);return `<button class="popt${on?" on":""}" data-act="pvote" data-id="${esc(b.id)}" data-i="${i}" ${fechada?"disabled":""} aria-pressed="${!!on}"><i style="width:${pct}%"></i><span>${esc(o)}</span><b>${pct}%</b></button>`}).join("")}</div>
+      <div class="hint">${tot} voto${tot===1?"":"s"}${b.poll?.multi?" · pode escolher mais de uma":""}${b.poll?.until?` · ${fechada?"encerrada":"até "+esc(new Date(b.poll.until).toLocaleDateString("pt-BR"))}`:""}</div>`}
+  return `<article class="box bcard t-${esc(b.type)}"><div class="bhead"><span class="btype">${esc(BTYPES[b.type]||"Aviso")}</span>${b.pinned?`<span class="tag">fixado</span>`:""}<span class="hint">${by?nk(by)+" · ":""}${ago(b.at)}</span>
+      ${isStaff()?`<span class="bacts"><button class="linkbtn" data-act="bpin" data-id="${esc(b.id)}">${b.pinned?"desafixar":"fixar"}</button><button class="linkbtn" data-act="bedit" data-id="${esc(b.id)}">editar</button><button class="linkbtn" data-act="bdel" data-id="${esc(b.id)}">apagar</button></span>`:""}</div>
+    <h3>${esc(b.title)}</h3>${b.text?`<p class="btext">${esc(compact&&b.text.length>220?b.text.slice(0,220)+"…":b.text)}</p>`:""}${body}
+    <div><button class="cbtn" data-act="bthread" data-id="${esc(b.id)}">${thread.length?`${thread.length} resposta${thread.length>1?"s":""}`:"Responder"}</button></div>
+    ${open?`<div class="thread">${thread.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===meId()||S.isOwner);return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}</div><p>${esc(c.x)}</p></div></div>`}).join("")}
+      ${me()&&S.canWrite?`<div class="composer"><label class="flabel" for="cmt-text">Sua resposta</label><textarea id="cmt-text" maxlength="600"></textarea><div><button class="btn small primary" data-act="csend" data-t="${esc("quadro-"+b.id)}">Enviar</button></div></div>`:`<span class="hint">Entre para responder.</span>`}</div>`:""}
+  </article>`;
+}
+function viewQuadro(){
+  const L=boardList().filter(b=>!S.boardType||b.type===S.boardType);
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Quadro da galera</span><h3>Avisos, convites e enquetes</h3><span class="hint">Publicados pelo dono e pelos moderadores. Responda, confirme presença e vote.</span></div>
+    ${isStaff()?`<div class="actions"><button class="btn small primary" data-act="bnew" data-t="aviso">+ Aviso</button><button class="btn small" data-act="bnew" data-t="evento">+ Convite</button><button class="btn small" data-act="bnew" data-t="enquete">+ Enquete</button></div>`:""}</div>
+    <div class="tierpick" role="group" aria-label="Filtrar"><button data-act="btype" data-id="" aria-pressed="${!S.boardType}">Tudo</button>${Object.entries({aviso:"Avisos",evento:"Convites",enquete:"Enquetes"}).map(([k,l])=>`<button data-act="btype" data-id="${k}" aria-pressed="${S.boardType===k}">${l}</button>`).join("")}</div>
+    ${L.length?`<div class="bgrid">${L.map(b=>boardCard(b)).join("")}</div>`:emptyBox("!","Nada no quadro ainda",isStaff()?"Publique um aviso, chame a galera para jogar ou abra uma enquete.":"Quando a staff publicar avisos, convites ou enquetes, eles aparecem aqui.")}</div>`;
+}
+function openBoard(type,id){
+  const b=id?boardList().find(x=>x.id===id):null;type=b?.type||type;M={type:"board",btype:type,id:b?.id||null,multi:!!b?.poll?.multi};
+  const opts=b?.poll?.opts||["",""];
+  $("#modal").innerHTML=overlay(`<h2>${b?"Editar":"Novo"}: ${esc(BTYPES[type])}</h2>
+    <div class="field"><label for="bd-title">Título</label><input id="bd-title" maxlength="100" value="${esc(b?.title||"")}" placeholder="${type==="evento"?"Ex.: Noite de coop no sábado":type==="enquete"?"Ex.: Qual o jogo do clube do mês?":"Ex.: Novidades no site"}"></div>
+    <div class="field"><label for="bd-text">${type==="enquete"?"Explicação (opcional)":"Texto"}</label><textarea id="bd-text" maxlength="1500">${esc(b?.text||"")}</textarea></div>
+    ${type==="evento"?`<div class="fgrid"><div class="field"><label for="bd-game">Jogo</label><input id="bd-game" maxlength="80" value="${esc(b?.ev?.game||"")}" placeholder="Ex.: Hades II"></div>
+      <div class="field"><label for="bd-when">Dia e hora</label><input id="bd-when" type="datetime-local" value="${esc(b?.ev?.when||"")}"></div>
+      <div class="field"><label for="bd-where">Onde</label><input id="bd-where" maxlength="80" value="${esc(b?.ev?.where||"")}" placeholder="Ex.: Discord · Jogatina 1, party da PSN"></div>
+      <div class="field"><label for="bd-slots">Vagas (opcional)</label><input id="bd-slots" type="number" min="0" max="100" value="${esc(b?.ev?.slots||"")}"></div></div>`:""}
+    ${type==="enquete"?`<div class="field"><span class="flabel">Opções (2 a 8)</span><div id="bd-opts">${opts.map((o,i)=>`<input class="bd-opt" maxlength="80" value="${esc(o)}" placeholder="Opção ${i+1}">`).join("")}</div><div><button type="button" class="btn small ghost" data-act="boptadd">+ Opção</button></div></div>
+      <div class="fgrid"><label class="chk"><input type="checkbox" id="bd-multi" ${b?.poll?.multi?"checked":""}> Pode votar em mais de uma</label><div class="field"><label for="bd-until">Encerra em (opcional)</label><input id="bd-until" type="date" value="${esc(b?.poll?.until||"")}"></div></div>`:""}
+    <label class="chk"><input type="checkbox" id="bd-pin" ${b?.pinned?"checked":""}> Fixar no topo</label>
+    <div class="err" id="bderr"></div>
+    <div class="mfoot"><div class="r"><button type="button" class="btn ghost" data-act="close">Cancelar</button><button type="button" class="btn primary" data-act="bsave">Publicar</button></div></div>`);
+  $("#bd-title").focus();
+}
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(a==="btype"){S.boardType=el.dataset.id;renderViewKeep();return}
+  if(a==="bthread"){S.boardOpen=S.boardOpen===el.dataset.id?"":el.dataset.id;renderViewKeep();return}
+  if(a==="boptadd"){const box=$("#bd-opts");if(box&&box.children.length<8){box.insertAdjacentHTML("beforeend",`<input class="bd-opt" maxlength="80" placeholder="Opção ${box.children.length+1}">`)}return}
+  if(a==="rsvp"||a==="pvote"){
+    if(S.mode!=="live"){toast("No modo exemplo nada é salvo");return}if(!me()||!S.canWrite){toast("Entre para participar");return}
+    const id=el.dataset.id;const b=boardList().find(x=>x.id===id);if(!b)return;const cur=clone(respOf(id)[S.myId]||{});
+    if(a==="rsvp"){cur.rsvp=cur.rsvp===el.dataset.v?"":el.dataset.v}
+    else{const i=Number(el.dataset.i);let v=Array.isArray(cur.vote)?cur.vote.slice():[];if(b.poll?.multi){v=v.includes(i)?v.filter(x=>x!==i):[...v,i]}else{v=v[0]===i?[]:[i]}cur.vote=v}
+    cur.at=Date.now();S.resp={...(S.resp||{}),[id]:{...respOf(id),[S.myId]:cur}};renderViewKeep();
+    queue(()=>S.db.doc(`board/${id}/resp/${S.myId}`).set(cur)).catch(err=>toast(errMsg(err)));return}
+  if(!isStaff())return;
+  if(a==="bnew"){openBoard(el.dataset.t);return}
+  if(a==="bedit"){openBoard(null,el.dataset.id);return}
+  if(a==="bpin"){const b=boardList().find(x=>x.id===el.dataset.id);if(!b)return;try{await S.db.doc(`board/${b.id}`).update({pinned:!b.pinned});toast(b.pinned?"Desafixado":"Fixado no topo")}catch(err){toast(errMsg(err))}return}
+  if(a==="bdel"){if(el.dataset.confirm!=="1"){el.dataset.confirm="1";el.textContent="confirmar?";return}try{await S.db.doc(`board/${el.dataset.id}`).delete();toast("Apagado")}catch(err){toast(errMsg(err))}return}
+  if(a==="bsave"&&M?.type==="board"){
+    const title=$("#bd-title").value.trim();if(!title){$("#bderr").textContent="Dê um título.";return}
+    const prev=M.id?boardList().find(x=>x.id===M.id):null;
+    const doc={type:M.btype,title:title.slice(0,100),text:$("#bd-text").value.trim().slice(0,1500),pinned:$("#bd-pin").checked,by:prev?.by||S.myId,at:prev?.at||Date.now(),updatedAt:Date.now()};
+    if(M.btype==="evento"){const when=$("#bd-when").value;if(!when){$("#bderr").textContent="Escolha o dia e a hora.";return}
+      const game=$("#bd-game").value.trim();doc.ev={game:game.slice(0,80),when,where:$("#bd-where").value.trim().slice(0,80),slots:Math.max(0,Math.min(100,Number($("#bd-slots").value)||0)),coverUrl:prev?.ev?.coverUrl||""};
+      const g=allGames().find(x=>norm(x.title)===norm(game));if(g&&extImg(g.coverUrl))doc.ev.coverUrl=g.coverUrl;
+      else if(game&&!doc.ev.coverUrl){try{const r=await wikiSearch(game);if(r[0]?.img)doc.ev.coverUrl=r[0].img}catch{}}}
+    if(M.btype==="enquete"){const opts=[...document.querySelectorAll(".bd-opt")].map(i=>i.value.trim()).filter(Boolean).slice(0,8);if(opts.length<2){$("#bderr").textContent="Coloque pelo menos 2 opções.";return}
+      doc.poll={opts:opts.map(o=>o.slice(0,80)),multi:$("#bd-multi").checked,until:$("#bd-until").value||""}}
+    try{await S.db.doc(`board/${M.id||newId("b")}`).set(doc);closeModal();toast(M.id?"Atualizado":"Publicado no quadro")}catch(err){$("#bderr").textContent=errMsg(err)}return}
+});
+
+/* ---------- capas automáticas ---------- */
+const ROM={"2":"ii","3":"iii","4":"iv","5":"v","6":"vi","7":"vii","8":"viii","9":"ix","10":"x"};
+const ckey=t=>norm(String(t||"").replace(/\b(10|[2-9])\b/g,m=>ROM[m]).replace(/^the\s+/i,""));
+function coverMatch(title,res){const k=ckey(title);if(k.length<3)return null;
+  for(const r of res){const w=ckey(r.title);if(!r.img)continue;if(w===k)return r}
+  for(const r of res){const w=ckey(r.title);if(!r.img||w.length<3)continue;
+    const a=w.includes(k)?k:k.includes(w)?w:null;if(a&&a.length>=Math.max(5,0.5*Math.max(w.length,k.length)))return r}
+  // palavras parecidas (aceita um erro de digitação por palavra), só nos 3 primeiros resultados
+  const qw=cwords(title);if(qw.length<2)return null;
+  for(const r of res.slice(0,3)){if(!r.img)continue;const rw=cwords(r.title);if(rw.length>qw.length+2)continue;
+    if(qw.every(q=>rw.some(x=>x===q||(q.length>=5&&lev1(q,x)))))return r}
+  return null}
+const cwords=t=>String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/'/g,"").replace(/\b(10|[2-9])\b/g,m=>ROM[m]).split(/[^a-z0-9]+/).filter(w=>w&&!["the","of","and","a","bros"].includes(w));
+function lev1(a,b){if(Math.abs(a.length-b.length)>1)return false;let i=0,j=0,d=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue}if(++d>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}return d+(a.length-i)+(b.length-j)<=1}
+const coverMemo={};
+async function findCover(title){const k=ckey(title);if(k in coverMemo)return coverMemo[k];
+  let r=null;try{r=coverMatch(title,await wikiSearch(String(title).replace(/\b(10|[2-9])\b/g,m=>ROM[m].toUpperCase())))||coverMatch(title,await wikiSearch(title))}catch(e){throw e}
+  coverMemo[k]=r?{img:r.img,wtitle:r.wtitle}:null;return coverMemo[k]}
+let fillBusy=false;
+async function fillCovers(all){if(fillBusy||!S.canWrite||!S.myId)return{done:0,miss:0,fail:true};fillBusy=true;let done=0,miss=0,fail=false;
+  try{const pids=all&&S.isOwner?Object.keys(S.players):[S.myId];
+    for(const pid of pids){const p=S.players[pid];if(!p)continue;const found={};
+      for(const [gid,g] of Object.entries(p.games||{})){if(g.coverV||extImg(g.coverUrl))continue;
+        try{const c=await findCover(g.title);if(c){found[gid]=c;done++}else miss++}catch{fail=true;break}}
+      if(fail)break;
+      if(Object.keys(found).length){
+        await queue(async()=>{const cur=clone(S.players[pid]);delete cur._id;
+          for(const [gid,c] of Object.entries(found))if(cur.games?.[gid]&&!cur.games[gid].coverV&&!extImg(cur.games[gid].coverUrl)){cur.games[gid].coverUrl=c.img;cur.games[gid].wtitle=c.wtitle}
+          S.players[pid]={...cur,_id:pid};softRender();await S.db.doc("players/"+pid).set(cur)})}
+    }}finally{fillBusy=false}
+  return{done,miss,fail}}
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -901,7 +1500,7 @@ function saveDocOf(col,uid,mut,prune){return queue(async()=>{
   if(prune&&cur[prune]){const ks=Object.entries(cur[prune]).sort((a,b)=>(b[1].at||0)-(a[1].at||0));if(ks.length>400)cur[prune]=Object.fromEntries(ks.slice(0,400))}
   store[uid]=cur;if(col==="comments")flattenComments();renderAll();await S.db.doc(`${col}/${uid}`).set(cur);
 })}
-function errMsg(e){return e?.code==="permission-denied"||e?.code==="permission_denied"?"Você não tem permissão para isso. Confirme seu e-mail ou entre de novo.":"Não foi possível salvar agora. Tente de novo em instantes."}
+function errMsg(e){return e?.code==="permission-denied"||e?.code==="permission_denied"?"Sem permissão. Se você acabou de confirmar o e-mail, saia e entre de novo na sua conta.":"Não foi possível salvar agora. Tente de novo em instantes."}
 const newId = p => p+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
 function addToList(title,status){if(!me()||!S.canWrite){toast("Crie seu perfil primeiro");return}
   if(Object.values(me().games||{}).some(g=>norm(g.title)===norm(title))){toast("Esse jogo já está na sua lista");return}
@@ -930,9 +1529,9 @@ document.addEventListener("submit",async e=>{
   if(id==="sform"){
     const v=$("#s-discord").value.trim();
     if(v&&!/^https:\/\/(discord\.gg|discord\.com\/invite)\/[\w-]+\/?$/.test(v)){$("#serr").textContent="Cole um convite no formato https://discord.gg/xxxx";return}
-    const rk=$("#s-rawg").value.trim();
-    if(rk&&!/^[A-Za-z0-9]{20,64}$/.test(rk)){$("#serr").textContent="A chave do RAWG parece incompleta. Copie de novo em rawg.io/apidocs.";return}
-    const c=clone(S.config||{});c.discord=v;c.rawgKey=rk;
+    const wid=$("#s-widget").value.trim();
+    if(wid&&!/^\d{15,22}$/.test(wid)){$("#serr").textContent="O ID do servidor tem só números (15 a 22 dígitos).";return}
+    const c=clone(S.config||{});c.discord=v;c.discordWidget=wid;
     const cht=$("#s-ch-t").value.trim();
     if(!cht)delete c.challenge;else{const prev=c.challenge;c.challenge={id:prev&&prev.title===cht?prev.id:newId("c"),title:cht,desc:$("#s-ch-d").value.trim(),until:$("#s-ch-u").value||"",at:prev&&prev.title===cht?prev.at:Date.now()}}
     const clt=$("#s-cl-t").value.trim();
@@ -977,6 +1576,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
@@ -986,6 +1586,8 @@ document.addEventListener("click",async e=>{
   if(a==="terms"){openTerms();return}
   if(a==="logout"){AUTH&&AUTH.signOut().then(()=>{toast("Até a próxima!");go("inicio")});return}
   if(a==="resend"){AUTH?.currentUser?.sendEmailVerification().then(()=>toast("E-mail reenviado")).catch(e=>toast(authMsg(e)));return}
+  if(a==="fillcovers"){const b=$("#fillcov");if(b){b.disabled=true;b.textContent="Buscando…"}
+    fillCovers(true).then(r=>{toast(r.fail?"A Wikipédia não respondeu nesta rede. Tente de novo mais tarde (ou pelo celular).":r.done?`${r.done} capa(s) adicionada(s)`+(r.miss?` · ${r.miss} sem capa encontrada`:""):r.miss?`Nenhuma capa nova encontrada (${r.miss} sem correspondência)`:"Todos os jogos já têm capa")}).catch(e=>toast(errMsg(e))).finally(()=>{const b=$("#fillcov");if(b){b.disabled=false;b.textContent="Buscar capas que faltam"}});return}
   if(a==="reloaduser"){const u=AUTH?.currentUser;if(!u)return;u.reload().then(()=>u.getIdToken(true)).then(()=>{onUser(AUTH.currentUser);toast(AUTH.currentUser.emailVerified?"E-mail confirmado!":"Ainda não confirmado. Abra o link do e-mail.")}).catch(e=>toast(authMsg(e)));return}
   if(a==="export"){downloadMyData();return}
   if(a==="delaccount"&&M?.type==="profile"){if(!M.confirmDelAcc){M.confirmDelAcc=true;el.textContent="Tem certeza? Clique de novo para apagar tudo";return}
@@ -1094,7 +1696,7 @@ document.querySelectorAll("#scope button").forEach(b=>b.addEventListener("click"
 /* ---------- rotas ---------- */
 function route(h){
   h=(h??location.hash.slice(1))||"";try{h=decodeURIComponent(h)}catch{}
-  if(VIEWS.includes(h)){S.view=h;S.route=""}else if(h.startsWith("perfil-")){S.view="perfil";S.route=h.slice(7)}else if(h.startsWith("jogo-")){S.view="jogo";S.route=h.slice(5)}else{S.view="inicio";S.route=""}
+  if(VIEWS.includes(h)||h==="jogando"){S.view=h;S.route=""}else if(h.startsWith("save-")){S.view="save";S.route=h.slice(5)}else if(h.startsWith("perfil-")){S.view="perfil";S.route=h.slice(7)}else if(h.startsWith("jogo-")){S.view="jogo";S.route=h.slice(5)}else{S.view="inicio";S.route=""}
   if(M)closeModal();renderAll();try{window.scrollTo({top:0})}catch{}
 }
 function go(h){if(location.hash.slice(1)===h){route(h);return}try{location.hash=h}catch{route(h)}}
@@ -1120,16 +1722,30 @@ function onUser(u){
   if(S.mode!=="demo"&&S.mode!=="loading")S.mode="live";
   renderAll();
   if(u&&S.canWrite&&S.loaded&&!S.players[u.uid]&&!M)openProfile();
+  autoCovers();
 }
+let autoCovDone=false;function autoCovers(){if(autoCovDone||!S.canWrite||!S.loaded||!S.myId||!S.players[S.myId])return;autoCovDone=true;setTimeout(()=>fillCovers(false).then(r=>{if(r.done)toast(`${r.done} capa(s) encontrada(s) para seus jogos`)}).catch(()=>{}),2500)}
+let vbusy=false;function refreshVerify(){const u=AUTH&&AUTH.currentUser;if(!u||vbusy)return;vbusy=true;
+  u.reload().then(()=>AUTH.currentUser.emailVerified?AUTH.currentUser.getIdToken(true).then(()=>{onUser(AUTH.currentUser);toast("E-mail confirmado! Pode criar seu perfil.")}):null).catch(()=>{}).finally(()=>{vbusy=false})}
 let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode==="live")renderAll()},80)}
 (function boot(){
   if(!window.firebase||!CFG.firebase||!CFG.firebase.apiKey){S.notConfigured=true;S.mode="offline";renderAll();return}
   try{firebase.initializeApp(CFG.firebase)}catch(e){}
   const fs=firebase.firestore();try{fs.settings({ignoreUndefinedProperties:true,merge:true})}catch{}
   AUTH=firebase.auth();AUTH.languageCode="pt";
-  S.db={doc:p=>fs.doc(p),collection:p=>fs.collection(p)};
+  const isPerm=e=>e?.code==="permission-denied"||e?.code==="permission_denied";
+  // Se o e-mail foi confirmado depois do login, o "crachá" (token) antigo ainda diz "não confirmado".
+  // Em caso de permissão negada, renova o crachá e tenta de novo uma vez.
+  const retry=fn=>fn().catch(async e=>{const u=AUTH&&AUTH.currentUser;if(!isPerm(e)||!u)throw e;
+    try{await u.reload();await u.getIdToken(true)}catch{throw e}
+    if(!S.canWrite&&AUTH.currentUser.emailVerified)onUser(AUTH.currentUser);return fn()});
+  const wrap=r=>({set:(d,o)=>retry(()=>o?r.set(d,o):r.set(d)),update:d=>retry(()=>r.update(d)),delete:()=>retry(()=>r.delete()),get:(...a)=>r.get(...a),onSnapshot:(...a)=>r.onSnapshot(...a)});
+  S.db={doc:p=>wrap(fs.doc(p)),collection:p=>fs.collection(p)};
   fs.doc("roles/all").onSnapshot(sn=>{const d=sn.exists&&sn.data();S.roles=(d&&d.map&&typeof d.map==="object")?d.map:{};softRender()},()=>{});
   fs.doc("config/site").onSnapshot(sn=>{S.config=(sn.exists&&sn.data())||{};softRender()},()=>{});
+  fs.collection("board").onSnapshot(sn=>{S.board=sn.docs.map(d=>({id:d.id,...(d.data()||{})}));softRender()},()=>{});
+  fs.collection("tierlists").onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.tierlists=o;softRender()},()=>{});
+  fs.collection("news").onSnapshot(sn=>{S.news=sn.docs.map(d=>({id:d.id,...(d.data()||{})}));softRender()},()=>{});
   fs.collection("comments").onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.comDocs=o;flattenComments();softRender()},()=>{});
   let timer=setTimeout(()=>{S.stale=true;if(S.mode==="loading")S.mode="live";renderAll()},10000);
   fs.collection("players").onSnapshot(snap=>{
@@ -1139,7 +1755,11 @@ let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode=
     if(S.mode==="loading")S.mode="live";else if(S.mode==="demo")S.prevMode="live";
     renderAll();
     const u=AUTH.currentUser;if(first&&u&&S.canWrite&&!P[u.uid]&&!M)openProfile();
+    if(first)autoCovers();
   },()=>{clearTimeout(timer);if(S.mode!=="demo")S.mode=Object.keys(S.players).length?"live":"offline";S.stale=true;renderAll()});
+  fetch("news.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.itens)){S.autoNews=j;softRender()}}).catch(()=>{});
   AUTH.getRedirectResult().catch(()=>{});
-  AUTH.onAuthStateChanged(onUser);
+  AUTH.onAuthStateChanged(u=>{onUser(u);if(u&&!S.canWrite)refreshVerify()});
+  // Quem confirmou o e-mail em outra aba: ao voltar para o site, atualiza sozinho.
+  window.addEventListener("focus",()=>{const u=AUTH.currentUser;if(u&&!S.canWrite)refreshVerify()});
 })();
