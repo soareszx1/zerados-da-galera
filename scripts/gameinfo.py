@@ -25,6 +25,7 @@ INDICE = "info.json"
 MAX_POR_VEZ = 40
 VALIDADE_DIAS = 7          # jogos já lançados: atualiza a cada 7 dias
 VALIDADE_EM_BREVE = 1      # jogos que ainda vão sair: todo dia (data muda, saem novidades)
+VERSAO = 2                 # mudou o jeito de montar a ficha: refaz todas
 
 
 def slug(t):
@@ -166,7 +167,9 @@ def wiki(titulo):
 
             def ids(prop):
                 return [c["mainsnak"].get("datavalue", {}).get("value", {}).get("id") for c in w.get(prop, []) if c["mainsnak"].get("datavalue")]
-            datas = sorted(c["mainsnak"]["datavalue"]["value"]["time"] for c in w.get("P577", []) if c["mainsnak"].get("datavalue"))
+            claims577 = [c for c in w.get("P577", []) if c["mainsnak"].get("datavalue")]
+            preferidas = [c for c in claims577 if c.get("rank") == "preferred"] or [c for c in claims577 if c.get("rank") != "deprecated"]
+            datas = sorted(c["mainsnak"]["datavalue"]["value"]["time"] for c in preferidas)
             todos = {p: [i for i in ids(p) if i][:6] for p in ("P178", "P123", "P136", "P400")}
             todos_ids = sorted({i for v in todos.values() for i in v})
             nomes = {}
@@ -208,7 +211,7 @@ def main():
     feitos = 0
     for k, titulo in sorted(titulos().items()):
         atual = jogos.get(k)
-        if atual:
+        if atual and atual.get("v") == VERSAO:
             dias = VALIDADE_EM_BREVE if atual.get("emBreve") else VALIDADE_DIAS
             if agora - atual.get("em", 0) < dias * 86400 and os.path.exists(f"{PASTA}/{k[:60]}.json"):
                 continue
@@ -226,7 +229,7 @@ def main():
             print(f"  wiki erro: {e}")
             w = None
         if not s and not w:
-            jogos[k] = {"titulo": titulo, "slug": slug(titulo), "em": int(agora), "vazio": True}
+            jogos[k] = {"titulo": titulo, "slug": slug(titulo), "em": int(agora), "vazio": True, "v": VERSAO}
             print(f"sem ficha: {titulo}")
             continue
         info = dict(w or {})
@@ -247,7 +250,7 @@ def main():
         info["atualizadoEm"] = int(agora)
         json.dump(info, open(f"{PASTA}/{k[:60]}.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         jogos[k] = {"titulo": titulo, "nome": info.get("nome") or titulo, "slug": slug(titulo), "em": int(agora),
-                    "emBreve": bool(info.get("emBreve")), "appid": info.get("appid")}
+                    "emBreve": bool(info.get("emBreve")), "appid": info.get("appid"), "v": VERSAO}
         print(f"ficha: {titulo} ({', '.join(f['nome'] for f in info['fontes'])})")
         time.sleep(0.6)
     json.dump({"atualizadoEm": int(agora), "jogos": jogos}, open(INDICE, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
