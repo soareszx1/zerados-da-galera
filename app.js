@@ -28,7 +28,7 @@ const LEVEL_NAMES = [[20,"Mito"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Av
 const S = {
   mode:"loading", players:{}, comments:[], myComDoc:null, myId:null, canWrite:false, db:null, user:null, sample:null,
   view:"inicio", route:"", f:{player:"",scope:"all",q:"",status:"",platform:"",sort:"recent"},
-  stale:false, roles:{}, config:{}, isOwner:false, seed:null, rx:{}, rar:{}
+  stale:false, roles:{}, config:{}, isOwner:false, rx:{}, rar:{}
 };
 
 /* ---------- utilidades ---------- */
@@ -239,7 +239,6 @@ function renderBanner(){
   if(S.mode==="demo")B.innerHTML=`<div class="banner"><span>Modo exemplo: esses perfis são fictícios e nada aqui é salvo.</span><button class="btn small" data-act="exitdemo">Voltar pra galera de verdade</button></div>`;
   else if(S.mode==="offline")B.innerHTML=`<div class="banner"><span>${S.notConfigured?"O site ainda não foi configurado: preencha o arquivo config.js com os dados do Firebase.":"Não deu pra carregar a galera agora. Verifique a internet e recarregue a página."}</span><button class="btn small" data-act="demo">Ver como fica</button></div>`;
   else if(S.mode==="live"&&S.myId&&!S.canWrite)B.innerHTML=`<div class="banner"><span>Confirme seu e-mail para participar: mandamos um link para <b>${esc(S.email||"")}</b> (olhe o spam também).</span><span class="actions"><button class="btn small" data-act="resend">Reenviar</button><button class="btn small primary" data-act="reloaduser">Já confirmei</button></span></div>`;
-  else if(S.mode==="live"&&S.seed)B.innerHTML=`<div class="banner"><span>Seu perfil <b>${esc(S.seed.player?.nick||"")}</b> · ${esc(S.seed.player?.title||"")} já está montado com ${Object.keys(S.seed.player?.games||{}).length} jogos.${S.players[S.myId]?` Ao ativar, ele substitui o apelido e o visual do perfil “${esc(S.players[S.myId].nick)}” e mantém os jogos que já estão nele.`:" É só ativar."}</span><button class="btn small primary" data-act="claim">Ativar meu perfil</button></div>`;
   else if(S.stale)B.innerHTML=`<div class="banner"><span>Conexão lenta: os dados podem estar desatualizados.</span></div>`;
   else B.innerHTML="";
 }
@@ -1839,10 +1838,6 @@ document.addEventListener("click",async e=>{
   if(a==="skin"){try{localStorage.setItem("zg-skin",el.dataset.k)}catch{}renderAll();toast("Tema aplicado");return}
   // daqui pra baixo precisa estar logado e com perfil
   const live=S.mode==="live",m=me();
-  if(a==="claim"&&S.seed){const sd=S.seed;
-    try{await saveMe(p=>{const keep=p.games||{},keepR=p.reacts;Object.assign(p,clone(sd.player));p.games={...keep,...(p.games||{})};if(keepR)p.reacts=keepR});
-      if(Array.isArray(sd.roles)&&sd.roles.length){const cur=new Set([...(S.roles[S.myId]||[]),...sd.roles]);const next={...S.roles,[S.myId]:[...cur]};await S.db.doc("roles/all").set({map:next});S.roles=next}
-      S.db.doc("seed/owner").delete().catch(()=>{});S.seed=null;renderAll();toast("Perfil ativado")}catch(err){toast(errMsg(err))}return}
   if(!live){if(["react","quickfila","challenge","joinclub","friend","csend"].includes(a))toast("No modo exemplo nada é salvo");return}
   if(a==="role"){if(!S.isOwner)return;const pid=el.dataset.pid,k=el.dataset.k;const cur=(S.roles[pid]||[]).slice();const i=cur.indexOf(k);if(i<0)cur.push(k);else cur.splice(i,1);const next={...S.roles,[pid]:cur};
     try{await S.db.doc("roles/all").set({map:next});S.roles=next;renderAll();toast("Cargos atualizados")}catch(err){toast(errMsg(err))}return}

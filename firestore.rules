@@ -1,0 +1,114 @@
+rules_version = '2';
+// Regras de segurança do Zerados da Galera (cópia versionada das regras publicadas no Firebase).
+// Publicar: firebase deploy --only firestore:rules   (ou colar em Firestore → Regras → Publicar).
+// Sempre altere AQUI primeiro, para o histórico do GitHub guardar cada mudança.
+// O ID do dono (ownerUid no config.js) está na função isOwner abaixo.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function verified() {
+      return signedIn() && (request.auth.token.email_verified == true
+        || request.auth.token.firebase.sign_in_provider == 'google.com');
+    }
+    function isOwner() { return signedIn() && request.auth.uid == 'oUTn47prdthl6ErYE4jKdM7EMHn2'; }
+    function isSelf(uid) { return verified() && request.auth.uid == uid; }
+    // Staff: dono, ou quem tem o cargo Admin ou Moderador no site.
+    function isStaff() {
+      return isOwner() || (verified()
+        && exists(/databases/$(database)/documents/roles/all)
+        && request.auth.uid in get(/databases/$(database)/documents/roles/all).data.map
+        && get(/databases/$(database)/documents/roles/all).data.map[request.auth.uid].hasAny(['admin', 'moderador']));
+    }
+    function validImage() {
+      return !('img' in request.resource.data)
+        || (request.resource.data.img is string && request.resource.data.img.size() < 300000);
+    }
+
+    // Perfis e jogos: todo mundo vê, cada um só mexe no próprio.
+    match /players/{uid} {
+      allow read: if true;
+      allow create, update: if (isSelf(uid) || isOwner())
+        && request.resource.data.nick is string
+        && request.resource.data.nick.size() > 0
+        && request.resource.data.nick.size() <= 30;
+      allow delete: if isSelf(uid) || isOwner();
+
+      // Capas, prints, foto e banner do jogador.
+      match /{sub=**} {
+        allow read: if true;
+        allow create, update: if (isSelf(uid) || isOwner()) && validImage();
+        allow delete: if isSelf(uid) || isOwner();
+      }
+    }
+
+    // Comentários: públicos; cada um escreve no próprio documento; o dono pode moderar.
+    match /comments/{uid} {
+      allow read: if true;
+      allow write: if isSelf(uid) || isOwner();
+    }
+
+    // Chat: só quem está logado e confirmou o e-mail.
+    match /chat/{uid} {
+      allow read: if verified();
+      allow write: if isSelf(uid) || isOwner();
+    }
+
+    // Cargos e configurações do site: só o dono muda.
+    match /roles/{doc} {
+      allow read: if true;
+      allow write: if isOwner();
+    }
+    match /config/{doc} {
+      allow read: if true;
+      allow write: if isOwner();
+    }
+
+    // Tier list do mês: todo mundo vê; só a staff lança e encerra a votação.
+    match /tierlists/{month} {
+      allow read: if true;
+      allow write: if isStaff();
+
+      // Votos: cada um vota só por si, e só enquanto a votação estiver aberta.
+      match /votes/{uid} {
+        allow read: if true;
+        allow write: if isSelf(uid)
+          && get(/databases/$(database)/documents/tierlists/$(month)).data.status == 'aberta';
+      }
+    }
+
+    // Quadro da galera: avisos, convites e enquetes publicados pela staff.
+    match /board/{id} {
+      allow read: if true;
+      allow write: if isStaff()
+        && (request.resource == null || (request.resource.data.title is string && request.resource.data.title.size() <= 100));
+
+      // Respostas (presença no convite, voto na enquete): cada um só a sua.
+      match /resp/{uid} {
+        allow read: if true;
+        allow write: if isSelf(uid);
+      }
+    }
+
+    // Novidades: todo mundo vê; só a staff posta, e o link precisa ser https.
+    match /news/{id} {
+      allow read: if true;
+      allow create, update: if isStaff()
+        && request.resource.data.title is string && request.resource.data.title.size() <= 140
+        && request.resource.data.url is string && request.resource.data.url.size() <= 500
+        && request.resource.data.url.matches('https://.*');
+      allow delete: if isStaff();
+    }
+
+    // Denúncias: cada um escreve as suas; só o dono lê todas.
+    match /reports/{uid} {
+      allow read: if isOwner() || isSelf(uid);
+      allow write: if isSelf(uid);
+    }
+
+    // Qualquer outro caminho: bloqueado.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
