@@ -17,15 +17,15 @@ import unicodedata
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from covers import baixar, chave, combina, romano, limpar_titulo  # noqa: E402
+from covers import baixar, chave, combina, romano, limpar_titulo, sem_acento  # noqa: E402
 
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
 PASTA = "info"
 INDICE = "info.json"
-MAX_POR_VEZ = 40
+MAX_POR_VEZ = 80
 VALIDADE_DIAS = 7          # jogos já lançados: atualiza a cada 7 dias
 VALIDADE_EM_BREVE = 1      # jogos que ainda vão sair: todo dia (data muda, saem novidades)
-VERSAO = 4                 # mudou o jeito de montar a ficha: refaz todas
+VERSAO = 5                 # mudou o jeito de montar a ficha: refaz todas (5: gêneros da Wikipédia + estilos)
 
 
 def slug(t):
@@ -216,6 +216,29 @@ def wiki(titulo):
     return out
 
 
+# estilo de jogo (filtro da tier list) -> palavras que aparecem nos gêneros da Steam/Wikidata
+ESTILOS = [
+    ("Corrida", ("corrida", "racing", "kart", "rally", "driving")),
+    ("Tiro", ("shooter", "tiro", "fps", "battle royale", "tatico em primeira")),
+    ("Luta", ("fighting", "luta", "beat 'em up", "brawler")),
+    ("Terror", ("horror", "terror")),
+    ("RPG", ("rpg", "jrpg", "role-playing", "role playing")),
+    ("Esporte", ("esporte", "sports", "football", "soccer", "futebol", "esportivo", "basketball", "golf", "skate")),
+    ("Plataforma", ("platform", "plataforma", "metroidvania")),
+    ("Estratégia", ("estrategia", "strategy", "tactical", "tower defense", "4x")),
+    ("Simulação", ("simulacao", "simulation", "simulator", "simulador", "management", "gerenciamento")),
+    ("Puzzle", ("puzzle", "quebra-cabeca")),
+    ("Aventura", ("aventura", "adventure", "open world", "mundo aberto")),
+    ("Ação", ("acao", "action", "hack and slash", "stealth")),
+]
+
+
+def estilos(info):
+    nomes = [sem_acento(g) for g in (info.get("generos") or []) + (info.get("generosWiki") or [])]
+    achados = [nome for nome, chaves in ESTILOS if any(re.search(r"\b" + re.escape(c), g) for g in nomes for c in chaves)]
+    return achados[:4]
+
+
 def main():
     os.makedirs(PASTA, exist_ok=True)
     try:
@@ -227,6 +250,12 @@ def main():
     feitos = 0
     for k, titulo in sorted(titulos().items()):
         atual = jogos.get(k)
+        arq = f"{PASTA}/{k[:60]}.json"
+        if atual and "estilos" not in atual and not atual.get("vazio") and os.path.exists(arq):
+            try:  # fichas antigas: calcula o estilo com o que já está salvo
+                atual["estilos"] = estilos(json.load(open(arq, encoding="utf-8")))
+            except (OSError, ValueError):
+                pass
         if atual and atual.get("v") == VERSAO:
             dias = VALIDADE_EM_BREVE if atual.get("emBreve") else VALIDADE_DIAS
             if agora - atual.get("em", 0) < dias * 86400 and os.path.exists(f"{PASTA}/{k[:60]}.json"):
@@ -249,6 +278,8 @@ def main():
             print(f"sem ficha: {titulo}")
             continue
         info = dict(w or {})
+        if w and w.get("generos"):
+            info["generosWiki"] = w["generos"]
         info.update({kk: vv for kk, vv in (s or {}).items() if vv not in (None, "", [], {})})
         if w and s:  # junta o melhor dos dois
             for campo in ("plataformas", "lancamento", "ano"):
@@ -266,7 +297,8 @@ def main():
         info["atualizadoEm"] = int(agora)
         json.dump(info, open(f"{PASTA}/{k[:60]}.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         jogos[k] = {"titulo": titulo, "nome": info.get("nome") or titulo, "slug": slug(titulo), "em": int(agora),
-                    "emBreve": bool(info.get("emBreve")), "appid": info.get("appid"), "v": VERSAO}
+                    "emBreve": bool(info.get("emBreve")), "appid": info.get("appid"),
+                    "estilos": estilos(info), "v": VERSAO}
         print(f"ficha: {titulo} ({', '.join(f['nome'] for f in info['fontes'])})")
         time.sleep(0.6)
     json.dump({"atualizadoEm": int(agora), "jogos": jogos}, open(INDICE, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
