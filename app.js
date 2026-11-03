@@ -67,7 +67,7 @@ function mediaSrc(path,ver){
 function mimg(path,ver,cls,alt){if(!ver||S.mode!=="live")return "";const src=mediaSrc(path,ver);return `<img class="${cls}" data-m="${esc(mkey(path,ver))}" ${src?`src="${src}"`:""} alt="${esc(alt||"")}">`}
 const extImg = u => (typeof u==="string"&&/^https:\/\/(upload\.wikimedia\.org|thumb\.wikimedia\.org|media\.rawg\.io)\//.test(u))?u:"";
 const localCover = t => {const f=S.covers&&typeof ckey==="function"?S.covers[ckey(t)]:"";return typeof f==="string"&&/^covers\/[a-z0-9]+\.(jpg|png)$/.test(f)?f:""};
-const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const src=loc||(typeof steamCover==="function"&&g.steamApp?steamCover(g.steamApp):"")||extImg(g.coverUrl);
+const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const sapp=g.steamApp||(typeof infoAppid==="function"?infoAppid(g.title):null);const src=loc||(typeof steamCover==="function"&&sapp?steamCover(sapp):"")||extImg(g.coverUrl);
   const ext=!up&&src?`<img class="cbg" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><img class="cimg" src="${esc(src)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.querySelectorAll('img').forEach(i=>i.remove())">`:"";
   return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
 const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
@@ -421,7 +421,7 @@ function viewRanking(){
 /* ---------- PÁGINA DO JOGO ---------- */
 function viewJogo(){
   const sl=S.route;const E=allGames().filter(g=>slug(g.title)===sl);
-  const title=E[0]?.title||(cfg().club&&slug(cfg().club.title)===sl?cfg().club.title:"");
+  const title=E[0]?.title||(cfg().club&&slug(cfg().club.title)===sl?cfg().club.title:"")||(typeof titleFromSlug==="function"?titleFromSlug(sl):"");
   if(!title)return `<div class="page"><a class="btn small back" href="#inicio">← Voltar</a>${emptyBox("?","Jogo não encontrado","Ninguém da galera cadastrou esse jogo ainda.")}</div>`;
   const notas=E.map(g=>g.nota).filter(n=>typeof n==="number");const hrs=E.filter(g=>isDone(g)&&Number(g.hours)>0).map(g=>Number(g.hours));
   const cov=E.find(g=>g.coverV)||E[0]||{title};const m=me();const inMine=m&&Object.values(m.games||{}).find(g=>slug(g.title)===sl);
@@ -442,6 +442,7 @@ function viewJogo(){
       ${plats.length?`<div class="ptags">${plats.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>`:""}
       ${m&&S.canWrite?(inMine?`<div><button class="btn small" data-act="edit" data-id="${esc(Object.keys(m.games).find(k=>m.games[k]===inMine))}">Editar o meu</button></div>`:`<div class="actions"><button class="btn small primary" data-act="addtitle" data-t="${esc(title)}">Adicionar à minha lista</button><button class="btn small" data-act="quickfila" data-t="${esc(title)}">+ Fila</button></div>`):""}
     </div></section>
+    ${typeof infoBox==="function"?infoBox(title):""}
     <section class="box card"><span class="eyebrow">Quem jogou</span><h3>A galera nesse jogo</h3><div class="entries">
       ${ents.map(g=>`<div class="entry" style="border:2px solid var(--line);border-radius:12px;background:var(--surface2)">${glyph(g.p)}<div class="body">
         <a class="nm" href="#perfil-${esc(pslug(g.p))}" style="color:inherit;text-decoration:none">${nk(g.p)}</a>
@@ -1631,6 +1632,63 @@ function libHTML(pid,p,mine){
   return `<section class="box card libbox"><div class="libtop"><div><span class="eyebrow">Biblioteca</span><div class="libtotal"><b>${L.total.toLocaleString("pt-BR")}</b><span>jogos</span></div></div>${mine&&S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="profile">Editar números</button>${L.steamN?"":`<button class="btn small" data-act="steam">Conectar Steam</button>`}</div>`:""}</div><div class="libchips">${chips.join("")}</div></section>`;
 }
 
+/* ---------- Ficha do jogo (estilo loja da Steam) ---------- */
+// O robô do GitHub (scripts/gameinfo.py) monta info/<chave>.json com dados da Steam e da Wikipédia.
+const infoMemo={};
+function infoIdx(){return (S.infoIdx&&S.infoIdx.jogos)||{}}
+function loadInfo(k){
+  if(!k||!/^[a-z0-9]{3,60}$/.test(k))return;
+  if(infoMemo[k]!==undefined)return;infoMemo[k]=null;
+  fetch(`info/${k}.json?t=${Math.floor(Date.now()/600000)}`,{cache:"no-store"}).then(r=>r.ok?r.json():false).then(j=>{infoMemo[k]=j||false;softRender()}).catch(()=>{infoMemo[k]=false;softRender()});
+}
+// título de um jogo que ninguém cadastrou, mas que aparece na tier list do mês, no quadro ou no índice de fichas
+function titleFromSlug(sl){
+  for(const t of Object.values(tierlists()))for(const g of (t?.games||[]))if(g&&slug(g.title)===sl)return g.title;
+  for(const b of (typeof boardList==="function"?boardList():[]))if(b?.ev?.game&&slug(b.ev.game)===sl)return b.ev.game;
+  for(const e of Object.values(infoIdx()))if(e&&e.slug===sl&&e.titulo)return e.titulo;
+  return "";
+}
+const infoAppid = t => {const e=infoIdx()[ckey(t)];return e&&e.appid?e.appid:null};
+const safeImg = u => typeof u==="string"&&/^https:\/\/(shared\.|cdn\.)?(cloudflare\.|akamai\.)?steamstatic\.com\/|^https:\/\/(cdn\.akamai\.steamstatic\.com|steamcdn-a\.akamaihd\.net)\//.test(u)?u:"";
+function newsAbout(name){
+  const words=String(name||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[:™®]/g," ").split(/\s+/).filter(w=>w.length>=3&&!["the","of","and","edition"].includes(w));
+  if(!words.length)return [];const key=words.slice(0,3).join(" ");
+  const nrm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[:™®]/g," ").replace(/\s+/g," ");
+  return [...(typeof autoNews==="function"?autoNews():[]),...(S.news||[])].filter(n=>nrm(n.title).includes(key)).slice(0,4);
+}
+function infoBox(title){
+  const k=ckey(title);loadInfo(k);const d=infoMemo[k];
+  if(d===null||d===undefined)return `<section class="box card ginfo"><span class="eyebrow">Sobre o jogo</span><p class="hint">Buscando as informações do jogo…</p></section>`;
+  if(!d)return `<section class="box card ginfo"><span class="eyebrow">Sobre o jogo</span><p class="hint" style="margin:0">Ainda não temos a ficha desse jogo. O robô do site procura na Steam e na Wikipédia de hora em hora.</p></section>`;
+  const banner=safeImg(d.banner);const loc=localCover(title);
+  const plats=(d.plataformas&&d.plataformas.length?d.plataformas:d.plataformasSteam)||[];
+  const fact=(l,v)=>v?`<div class="gfact"><span>${esc(l)}</span><b>${v}</b></div>`:"";
+  const list=a=>(a||[]).filter(Boolean).map(esc).join(", ");
+  let quando="";
+  if(d.dataISO){const dd=daysUntil(d.dataISO);if(dd!==null&&dd>0)quando=`<span class="pill gsoon">Faltam ${dd} dia${dd>1?"s":""}</span>`}
+  else if(d.emBreve)quando=`<span class="pill gsoon">Em breve</span>`;
+  const shots=(d.imagens||[]).filter(i=>safeImg(i.p)&&safeImg(i.g)).slice(0,8);
+  const news=newsAbout(d.nome||title);
+  const fontes=(d.fontes||[]).filter(f=>/^https:\/\//.test(f.link||""));
+  return `<section class="box card ginfo">
+    ${banner?`<div class="gbanner"><img src="${esc(banner)}" alt="${esc(d.nome||title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>`:""}
+    <div class="ghead"><div><span class="eyebrow">Sobre o jogo</span><h3>${esc(d.nome||title)}</h3></div>${quando}</div>
+    ${d.resumo?`<p class="gdesc">${esc(d.resumo)}</p>`:""}
+    <div class="gfacts">
+      ${fact("Lançamento",esc(d.lancamento||d.lancamentoWiki||(d.emBreve?"A anunciar":"")))}
+      ${fact("Estúdio",list(d.estudio))}
+      ${fact("Editora",list(d.editora))}
+      ${fact("Nota (Metacritic)",d.nota?`<span class="gscore">${esc(d.nota)}</span>`:"")}
+      ${fact("Preço na Steam",esc(d.preco||""))}
+    </div>
+    ${(d.generos||[]).length?`<div class="ptags">${d.generos.map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>`:""}
+    ${plats.length?`<div class="gplats"><span class="flabel">Plataformas</span><div class="ptags">${plats.map(p=>`<span class="tag">${esc(p)}</span>`).join("")}</div></div>`:""}
+    ${shots.length?`<div class="gshots" role="list">${shots.map((s,i)=>`<a role="listitem" href="${esc(s.g)}" target="_blank" rel="noopener noreferrer"><img src="${esc(s.p)}" alt="Imagem ${i+1} de ${esc(d.nome||title)}" loading="lazy" referrerpolicy="no-referrer"></a>`).join("")}</div>`:""}
+    ${news.length?`<div class="gnews"><span class="flabel">Novidades sobre o jogo</span>${news.map(n=>`<a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer"><b>${esc(n.title)}</b><span>${esc(n.source||"")}</span></a>`).join("")}</div>`:""}
+    <div class="gfoot">${fontes.map(f=>`<a class="btn small" href="${esc(f.link)}" target="_blank" rel="noopener noreferrer">${f.nome==="Steam"?"Ver na Steam":"Ler na "+esc(f.nome)}</a>`).join("")}<span class="hint">Informações: ${fontes.map(f=>esc(f.nome)).join(" e ")||"Steam / Wikipédia"}</span></div>
+  </section>`;
+}
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -1903,6 +1961,7 @@ let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode=
     if(first)autoCovers();
   },()=>{clearTimeout(timer);if(S.mode!=="demo")S.mode=Object.keys(S.players).length?"live":"offline";S.stale=true;renderAll()});
   fetch("news.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.itens)){S.autoNews=j;softRender()}}).catch(()=>{});
+  fetch("info.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.jogos&&typeof j.jogos==="object"){S.infoIdx=j;softRender()}}).catch(()=>{});
   fetch("covers.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.capas&&typeof j.capas==="object"){S.covers=j.capas;softRender()}}).catch(()=>{});
   AUTH.getRedirectResult().catch(()=>{});
   AUTH.onAuthStateChanged(u=>{onUser(u);if(u&&!S.canWrite)refreshVerify()});
