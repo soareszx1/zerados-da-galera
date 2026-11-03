@@ -649,3 +649,22 @@ button.key{cursor:pointer}
 .whosel.on{background:var(--ink);color:var(--bg);box-shadow:3px 3px 0 var(--accent)}
 .whosel select{border:0;background:transparent;font-weight:700;font-size:13px;padding:5px 4px;max-width:200px;color:inherit;cursor:pointer}
 .whosel select option,.whosel select optgroup{color:var(--ink);background:var(--surface)}
+
+/* v7: biblioteca (contador de jogos) */
+.libbox{display:flex;flex-direction:column;gap:12px}
+.libtop{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.libtotal{display:flex;align-items:baseline;gap:8px}
+.libtotal b{font-family:var(--f-display);font-size:44px;line-height:1;color:var(--accent)}
+.libtotal span{font-weight:700;color:var(--muted)}
+.libchips{display:flex;flex-wrap:wrap;gap:8px}
+.libchip{display:flex;flex-direction:column;gap:1px;min-width:92px;padding:8px 12px;border:2px solid var(--line);border-radius:12px;background:var(--surface2);color:inherit;text-decoration:none}
+.libchip b{font-family:var(--f-display);font-size:20px;line-height:1.1}
+.libchip span{font-weight:700;font-size:13px}
+.libchip em{font-style:normal;font-size:11px;color:var(--muted)}
+.libchip.steam{background:linear-gradient(135deg,#1b2838,#2a475e);color:#fff;border-color:#66c0f4}
+.libchip.steam em{color:#c7d5e0}
+.libchip.steam:hover{box-shadow:0 0 0 2px #66c0f4}
+.libedit summary{cursor:pointer}
+.libgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:8px}
+.libin{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 8px;border:1.5px solid color-mix(in oklab,var(--line) 60%,transparent);border-radius:10px;font-size:13px;font-weight:600}
+.libin input{width:72px;text-align:right}

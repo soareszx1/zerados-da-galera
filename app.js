@@ -479,6 +479,7 @@ function viewPerfil(){
       <div class="pacts">${mine&&S.canWrite?`<button class="btn small" data-act="profile">Editar perfil</button>`:friendBtn(pid)}<button class="btn small primary" data-act="retro" data-id="${esc(pid)}">Retrospectiva ${YEAR}</button>${Object.keys(P).length>1?`<button class="btn small" data-act="compare" data-id="${esc(pid)}">Comparar</button>`:""}</div></div>
     ${p.mood||p.bio?`<div style="padding:0 18px 12px;display:flex;flex-direction:column;gap:6px">${p.mood?`<div class="mood">${esc(p.mood)}</div>`:""}${p.bio?`<p style="margin:0;max-width:65ch;white-space:pre-wrap">${esc(p.bio)}</p>`:""}</div>`:""}
     <div style="padding:0 18px 18px"><div class="xpbar"><i style="width:${l.pct}%"></i></div><div class="xpinfo" style="margin-top:4px">Nível ${l.L} · faltam ${l.next-x} XP para o ${l.L+1}</div></div></section>
+  ${libHTML(pid,p,mine)}
   ${showcase.length?`<section class="box card"><span class="eyebrow">Vitrine</span><h3>Favoritos de ${nk(p)}</h3><div class="showcase">${showcase.map(g=>`<a href="#jogo-${esc(slug(g.title))}" class="sc">${coverBox(g)}<b>${esc(g.title)}</b>${typeof g.nota==="number"?`<span class="tag">nota ${fmtNota(g.nota)}</span>`:""}</a>`).join("")}</div></section>`:""}
   <div class="pgrid"><div class="col">
     <div class="tiles">
@@ -609,6 +610,9 @@ function openProfile(){
       <div class="field"><label for="p-steam">Perfil da Steam (opcional)</label><input id="p-steam" maxlength="120" value="${esc(steamLink(m?.steam)||"")}" placeholder="https://steamcommunity.com/id/seu-nome"><span class="hint">Para importar seus jogos e atualizar as horas sozinho.</span></div>
       <div class="field"><label for="p-goal">Meta de zerados em ${YEAR}</label><input id="p-goal" type="number" min="0" max="365" value="${m?.goal||""}" placeholder="Ex.: 12"></div>
       <div class="field full"><span class="flabel">Plataformas que você joga</span>${pickRow("plats",PLATFORMS.map(x=>({v:x,l:esc(x)})),M.plats)}</div>
+      <details class="field full libedit"${Object.keys(m?.lib||{}).length?" open":""}><summary class="flabel">Sua biblioteca: quantos jogos você tem em cada plataforma (opcional)</summary>
+        <span class="hint">A Steam é contada sozinha quando você conecta o perfil. Aqui você coloca o resto.</span>
+        <div class="libgrid">${LIBPLATS.map(x=>`<label class="libin"><span>${esc(x==="PC"?"PC (fora da Steam)":x)}</span><input type="number" min="0" max="9999" inputmode="numeric" data-lib="${esc(x)}" value="${esc(m?.lib?.[x]||"")}" placeholder="0"></label>`).join("")}</div></details>
       <div class="field"><label for="p-fav">Jogo favorito da vida</label><input id="p-fav" maxlength="60" value="${esc(m?.fav||"")}" placeholder="Ex.: The Witcher 3"></div>
       <div class="field"><span class="flabel">Símbolo</span>${pickRow("glyph",GLYPHS.map(g=>({v:g,l:g})),M.glyph)}</div>
       <div class="field full"><span class="flabel">Sua cor</span>${pickRow("color",COLORS.map(c=>({v:c,l:"",a:"cor "+c,style:`background:${c}`})),M.color,"swatch")}</div>
@@ -1605,6 +1609,26 @@ document.addEventListener("click",async e=>{
   }
 });
 
+/* ---------- Biblioteca (contador de jogos, estilo Steam) ---------- */
+const LIBPLATS = ["PS5","PS4","Xbox Series","Xbox One","Switch 2","Switch","PC","Mobile","Retrô / Emulador","Outro"];
+function libOf(pid,p){
+  const st=p?.steam?steamMemo[pid]:null;
+  if(p?.steam&&steamMemo[pid]===undefined)loadSteam(pid).then(()=>softRender());
+  const steamN=st&&!st.privado&&Array.isArray(st.jogos)?st.jogos.length:0;
+  const steamH=steamN?Math.round(st.jogos.reduce((a,j)=>a+(j.min||0),0)/60):0;
+  const man=Object.entries(p?.lib||{}).filter(([k,n])=>LIBPLATS.includes(k)&&Number(n)>0).map(([k,n])=>[k,Math.round(Number(n))]);
+  const total=steamN+man.reduce((a,[,n])=>a+n,0);
+  return {total,steamN,steamH,man,st};
+}
+function libHTML(pid,p,mine){
+  const L=libOf(pid,p);
+  if(!L.total)return mine&&S.canWrite?`<section class="box card libbox empty"><span class="eyebrow">Biblioteca</span><p style="margin:0">Mostre quantos jogos você tem: <button class="linkbtn" data-act="steam">conecte a Steam</button> ou <button class="linkbtn" data-act="profile">coloque os números de cada plataforma</button>.</p></section>`:"";
+  const chips=[];
+  if(L.steamN)chips.push(`<a class="libchip steam" href="${esc(steamLink(p.steam))}" target="_blank" rel="noopener"><b>${L.steamN}</b><span>Steam</span><em>${L.steamH.toLocaleString("pt-BR")} h · automático</em></a>`);
+  L.man.sort((a,b)=>b[1]-a[1]).forEach(([k,n])=>chips.push(`<div class="libchip"><b>${n}</b><span>${esc(k)}</span></div>`));
+  return `<section class="box card libbox"><div class="libtop"><div><span class="eyebrow">Biblioteca</span><div class="libtotal"><b>${L.total.toLocaleString("pt-BR")}</b><span>jogos</span></div></div>${mine&&S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="profile">Editar números</button>${L.steamN?"":`<button class="btn small" data-act="steam">Conectar Steam</button>`}</div>`:""}</div><div class="libchips">${chips.join("")}</div></section>`;
+}
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -1641,7 +1665,7 @@ document.addEventListener("submit",async e=>{
       const gl=Number($("#p-goal").value);const ns={...M.ns,bold:$("#p-bold").checked};const isNew=!S.players[S.myId];
       await saveMe(p=>{if(avV!==undefined)p.avatarV=avV;if(bnV!==undefined)p.bannerV=bnV;p.nick=nick;p.nameStyle=ns;p.plats=M.plats.slice();p.plat=M.plats[0]||"";p.goal=gl>0?Math.min(365,Math.round(gl)):null;
         p.fav=$("#p-fav").value.trim();p.title=$("#p-title").value.trim();p.mood=$("#p-mood").value.trim();p.bio=$("#p-bio").value.trim();p.showcase=(M.show||[]).slice(0,3);
-        p.discord=$("#p-discord").value.trim().replace(/^@/,"");{const sv=parseSteam($("#p-steam")?.value);if(sv!==null)p.steam=sv;}p.color=M.color;p.glyph=M.glyph;p.games=p.games||{};p.friends=friendsOf(p)});
+        p.discord=$("#p-discord").value.trim().replace(/^@/,"");{const sv=parseSteam($("#p-steam")?.value);if(sv!==null)p.steam=sv;}{const lib={};document.querySelectorAll("[data-lib]").forEach(i=>{const n=Math.round(Number(i.value));if(n>0&&LIBPLATS.includes(i.dataset.lib))lib[i.dataset.lib]=Math.min(9999,n)});p.lib=lib;}p.color=M.color;p.glyph=M.glyph;p.games=p.games||{};p.friends=friendsOf(p)});
       closeModal();toast("Perfil salvo");if(isNew||S.view==="perfil")go("perfil-"+slug(nick));
     }catch(err){$("#perr").textContent=errMsg(err)}
   }
