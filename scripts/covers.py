@@ -114,6 +114,12 @@ def buscar(q):
 
 
 def titulos_do_site():
+    """Títulos das listas da galera, da tier list do mês, do quadro e do clube."""
+    try:
+        from gameinfo import titulos
+        return titulos()
+    except Exception as e:  # se der errado, cai na leitura simples só das listas
+        print(f"títulos completos falharam ({e}); usando só as listas")
     vistos, token = {}, ""
     while True:
         url = f"https://firestore.googleapis.com/v1/projects/{PROJETO}/databases/(default)/documents/players?pageSize=300"
