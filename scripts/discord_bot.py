@@ -23,8 +23,10 @@ import urllib.request
 
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
 SITE = os.environ.get("SITE_URL", "https://soareszx1.github.io/zerados-da-galera/").rstrip("/") + "/"
-HOOK = os.environ.get("DISCORD_WEBHOOK", "").strip()
-HOOK_NEWS = os.environ.get("DISCORD_WEBHOOK_NEWS", "").strip()
+HOOK = os.environ.get("DISCORD_WEBHOOK", "").strip()            # #zerados-e-conquistas (e o padrão)
+HOOK_NEWS = os.environ.get("DISCORD_WEBHOOK_NEWS", "").strip()   # #noticias-games
+HOOK_AVISOS = os.environ.get("DISCORD_WEBHOOK_AVISOS", "").strip() or HOOK  # #avisos (quadro do site)
+HOOK_TIER = os.environ.get("DISCORD_WEBHOOK_TIER", "").strip() or HOOK      # #tier-list-do-mes
 ESTADO = "discord-state/state.json"
 UA = "ZeradosDaGalera-DiscordBot/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
 MAX_POSTS = 12
@@ -137,12 +139,12 @@ def eventos():
         st = t.get("status")
         if st == "aberta":
             jogos = ", ".join(x.get("title", "") for x in (t.get("games") or [])[:10])
-            saida.append((f"tl|{mes}|aberta", None, {"title": f"Votação aberta: {t.get('title') or 'Tier list do mês'}",
+            saida.append((f"tl|{mes}|aberta", "tier", {"title": f"Votação aberta: {t.get('title') or 'Tier list do mês'}",
                                                      "url": SITE + "#tierlist", "description": f"Vote no tier de cada jogo no site.\nNa disputa: {jogos}", "color": 0x4CC9F0}))
         elif st == "encerrada":
             final = (t.get("final") or {}).get("tiers") or {}
             linhas = [f"**{k}**: " + ", ".join(x.get("title", "") for x in final.get(k, [])) for k in "SABCD" if final.get(k)]
-            saida.append((f"tl|{mes}|encerrada", None, {"title": f"Resultado: {t.get('title') or 'Tier list do mês'}",
+            saida.append((f"tl|{mes}|encerrada", "tier", {"title": f"Resultado: {t.get('title') or 'Tier list do mês'}",
                                                         "url": SITE + "#tierlist", "description": "\n".join(linhas)[:1500] or "Confira no site.", "color": 0x9B5DE5}))
     tipos = {"aviso": ("Aviso", 0xFF9F1C), "evento": ("Convite para jogar", 0x4CC9F0), "enquete": ("Enquete", 0xB79CFF)}
     for bid, b in colecao("board"):
@@ -161,7 +163,7 @@ def eventos():
         cap = capa(((b.get("ev") or {}).get("coverUrl")))
         if cap:
             emb["thumbnail"] = {"url": cap}
-        saida.append((f"b|{bid}", None, emb))
+        saida.append((f"b|{bid}", "aviso", emb))
     for nid, n in colecao("news"):
         url = n.get("url") or ""
         if url.startswith("https://"):
@@ -196,7 +198,7 @@ def main():
         os.makedirs(os.path.dirname(ESTADO), exist_ok=True)
         json.dump({"vistos": [k for k, _, _ in lista]}, open(ESTADO, "w", encoding="utf-8"))
         print(f"Primeira execução: {len(lista)} itens memorizados, nada postado.")
-        postar(HOOK, "O bot do **Zerados da Galera** está ligado! Daqui pra frente eu aviso aqui quando alguém zerar um jogo ou abrir votação. " + SITE)
+        postar(HOOK, "O bot do **Zerados da Galera** está ligado! Daqui pra frente eu aviso aqui quando alguém entrar na galera, zerar ou platinar um jogo. " + SITE)
         return
     vistos = set(estado.get("vistos", []))
     postados, noticias = 0, 0
@@ -212,7 +214,8 @@ def main():
         else:
             if postados >= MAX_POSTS:
                 break
-            ok = postar(HOOK_NEWS if (tipo == "news" and HOOK_NEWS) else HOOK, embed={k: v for k, v in emb.items() if v})
+            destino = {"news": HOOK_NEWS or HOOK, "aviso": HOOK_AVISOS, "tier": HOOK_TIER}.get(tipo, HOOK)
+            ok = postar(destino, embed={k: v for k, v in emb.items() if v})
             postados += 1
         if ok:
             vistos.add(chave)
