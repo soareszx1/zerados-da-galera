@@ -1,6 +1,24 @@
 {
- "atualizadoEm": 1793740974,
+ "atualizadoEm": 1793744568,
  "jogos": {
+  "aionii": {
+   "appid": 3393110,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "AION 2",
+   "slug": "aion-2",
+   "titulo": "Aion 2",
+   "v": 4
+  },
+  "alanwakeii": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Alan Wake 2",
+   "slug": "alan-wake-2",
+   "titulo": "Alan Wake 2",
+   "v": 4
+  },
   "armareforger": {
    "appid": 1874880,
    "em": 1793733903,
@@ -8,6 +26,42 @@
    "nome": "Arma Reforger",
    "slug": "arma-reforger",
    "titulo": "Arma Reforger",
+   "v": 4
+  },
+  "assassinscreedivblackflag": {
+   "appid": 242050,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Assassin’s Creed® IV Black Flag™",
+   "slug": "assassin-s-creed-iv-black-flag",
+   "titulo": "Assassin's Creed IV: Black Flag",
+   "v": 4
+  },
+  "assassinscreedodyssey": {
+   "appid": 812140,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Assassin's Creed® Odyssey",
+   "slug": "assassin-s-creed-odyssey",
+   "titulo": "Assassin's Creed Odyssey",
+   "v": 4
+  },
+  "assassinscreedvalhalla": {
+   "appid": 2208920,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Assassin's Creed Valhalla",
+   "slug": "assassin-s-creed-valhalla",
+   "titulo": "Assassin's Creed Valhalla",
+   "v": 4
+  },
+  "atomicheart": {
+   "appid": 668580,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Atomic Heart",
+   "slug": "atomic-heart",
+   "titulo": "Atomic Heart",
    "v": 4
   },
   "baldursgateiii": {
@@ -19,6 +73,33 @@
    "titulo": "Baldur's Gate 3",
    "v": 4
   },
+  "batmanarkhamasylum": {
+   "appid": 35020,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Batman: Arkham Asylum Demo",
+   "slug": "batman-arkham-asylum",
+   "titulo": "Batman: Arkham Asylum",
+   "v": 4
+  },
+  "batmanarkhamcity": {
+   "appid": 200240,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Batman Arkham City Demo",
+   "slug": "batman-arkham-city",
+   "titulo": "Batman: Arkham City",
+   "v": 4
+  },
+  "batmanarkhamknight": {
+   "appid": 208650,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Batman™: Arkham Knight",
+   "slug": "batman-arkham-knight",
+   "titulo": "Batman: Arkham Knight",
+   "v": 4
+  },
   "battlefieldvi": {
    "appid": 2807960,
    "em": 1793733903,
@@ -26,6 +107,24 @@
    "nome": "Battlefield™ 6",
    "slug": "battlefield-6",
    "titulo": "Battlefield™ 6",
+   "v": 4
+  },
+  "bioshockinfinite": {
+   "appid": 8870,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "BioShock Infinite",
+   "slug": "bioshock-infinite",
+   "titulo": "BioShock Infinite",
+   "v": 4
+  },
+  "bloodborne": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Bloodborne",
+   "slug": "bloodborne",
+   "titulo": "Bloodborne",
    "v": 4
   },
   "callofduty": {
@@ -46,6 +145,49 @@
    "titulo": "Counter-Strike 2",
    "v": 4
   },
+  "darksoulsiii": {
+   "appid": 374320,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "DARK SOULS™ III",
+   "slug": "dark-souls-iii",
+   "titulo": "Dark Souls III",
+   "v": 4
+  },
+  "defjamfightforny": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Def Jam: Fight for NY",
+   "slug": "def-jam-fight-for-ny",
+   "titulo": "Def Jam: Fight for NY",
+   "v": 4
+  },
+  "devilmaycryv": {
+   "appid": 601150,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Devil May Cry 5",
+   "slug": "devil-may-cry-5",
+   "titulo": "Devil May Cry 5",
+   "v": 4
+  },
+  "dirtiii": {
+   "em": 1793744568,
+   "slug": "dirt-3",
+   "titulo": "Dirt 3",
+   "v": 4,
+   "vazio": true
+  },
+  "dmcdevilmaycry": {
+   "appid": 220440,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "DmC: Devil May Cry",
+   "slug": "dmc-devil-may-cry",
+   "titulo": "DmC: Devil May Cry",
+   "v": 4
+  },
   "donkeykongbananza": {
    "appid": null,
    "em": 1793733903,
@@ -53,6 +195,24 @@
    "nome": "Donkey Kong Bananza",
    "slug": "donkey-kong-bananza",
    "titulo": "Donkey Kong Bananza",
+   "v": 4
+  },
+  "fifastreet": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "FIFA Street",
+   "slug": "fifa-street",
+   "titulo": "FIFA Street",
+   "v": 4
+  },
+  "finalfantasyviiremake": {
+   "appid": 1462040,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "FINAL FANTASY VII REMAKE INTERGRADE",
+   "slug": "final-fantasy-vii-remake",
+   "titulo": "Final Fantasy VII Remake",
    "v": 4
   },
   "footballmanager27": {
@@ -64,6 +224,140 @@
    "titulo": "Football Manager 27",
    "v": 4
   },
+  "forzahorizon": {
+   "appid": 2483190,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Forza Horizon 6",
+   "slug": "forza-horizon",
+   "titulo": "Forza Horizon",
+   "v": 4
+  },
+  "forzahorizonii": {
+   "em": 1793744568,
+   "slug": "forza-horizon-2",
+   "titulo": "Forza Horizon 2",
+   "v": 4,
+   "vazio": true
+  },
+  "forzahorizoniii": {
+   "em": 1793744568,
+   "slug": "forza-horizon-3",
+   "titulo": "Forza Horizon 3",
+   "v": 4,
+   "vazio": true
+  },
+  "forzahorizoniv": {
+   "em": 1793744568,
+   "slug": "forza-horizon-4",
+   "titulo": "Forza Horizon 4",
+   "v": 4,
+   "vazio": true
+  },
+  "forzahorizonv": {
+   "appid": 1551360,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Forza Horizon 5",
+   "slug": "forza-horizon-5",
+   "titulo": "Forza Horizon 5",
+   "v": 4
+  },
+  "forzahorizonvi": {
+   "appid": 2483190,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Forza Horizon 6",
+   "slug": "forza-horizon-6",
+   "titulo": "Forza Horizon 6",
+   "v": 4
+  },
+  "forzamotorsportiv": {
+   "em": 1793744568,
+   "slug": "forza-motorsport-4",
+   "titulo": "Forza Motorsport 4",
+   "v": 4,
+   "vazio": true
+  },
+  "gearsofwariv": {
+   "em": 1793744568,
+   "slug": "gears-of-war-4",
+   "titulo": "Gears of War 4",
+   "v": 4,
+   "vazio": true
+  },
+  "godofwar": {
+   "appid": 1593500,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "God of War",
+   "slug": "god-of-war",
+   "titulo": "God of War",
+   "v": 4
+  },
+  "godofwariii": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "God of War III",
+   "slug": "god-of-war-iii",
+   "titulo": "God of War III",
+   "v": 4
+  },
+  "grandtheftautoiv": {
+   "appid": 12210,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto IV: The Complete Edition",
+   "slug": "grand-theft-auto-iv",
+   "titulo": "Grand Theft Auto IV",
+   "v": 4
+  },
+  "grandtheftautoivthelostanddamned": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto IV: The Lost and Damned",
+   "slug": "grand-theft-auto-iv-the-lost-and-damned",
+   "titulo": "Grand Theft Auto IV: The Lost and Damned",
+   "v": 4
+  },
+  "grandtheftautosanandreas": {
+   "appid": 1547000,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto: San Andreas – The Definitive Edition",
+   "slug": "grand-theft-auto-san-andreas",
+   "titulo": "Grand Theft Auto: San Andreas",
+   "v": 4
+  },
+  "grandtheftautotheballadofgaytony": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto: The Ballad of Gay Tony",
+   "slug": "grand-theft-auto-the-ballad-of-gay-tony",
+   "titulo": "Grand Theft Auto: The Ballad of Gay Tony",
+   "v": 4
+  },
+  "grandtheftautothetrilogythedefinitiveedition": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+   "slug": "grand-theft-auto-the-trilogy-the-definitive-edit",
+   "titulo": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+   "v": 4
+  },
+  "grandtheftautov": {
+   "appid": 3240220,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto V Enhanced",
+   "slug": "grand-theft-auto-v",
+   "titulo": "Grand Theft Auto V",
+   "v": 4
+  },
   "grandtheftautovi": {
    "appid": null,
    "em": 1793733903,
@@ -73,6 +367,38 @@
    "titulo": "Grand Theft Auto VI",
    "v": 4
   },
+  "grandtheftautovicecity": {
+   "appid": 1546990,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Grand Theft Auto: Vice City – The Definitive Edition",
+   "slug": "grand-theft-auto-vice-city",
+   "titulo": "Grand Theft Auto: Vice City",
+   "v": 4
+  },
+  "granturismoiiiaspec": {
+   "appid": null,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Gran Turismo",
+   "slug": "gran-turismo-3-a-spec",
+   "titulo": "Gran Turismo 3: A-Spec",
+   "v": 4
+  },
+  "granturismoiv": {
+   "em": 1793744568,
+   "slug": "gran-turismo-4",
+   "titulo": "Gran Turismo 4",
+   "v": 4,
+   "vazio": true
+  },
+  "granturismovii": {
+   "em": 1793744568,
+   "slug": "gran-turismo-7",
+   "titulo": "Gran Turismo 7",
+   "v": 4,
+   "vazio": true
+  },
   "hadesii": {
    "appid": 1145350,
    "em": 1793733903,
@@ -80,6 +406,24 @@
    "nome": "Hades II",
    "slug": "hades-ii",
    "titulo": "Hades II",
+   "v": 4
+  },
+  "haloiv": {
+   "appid": 1064273,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Halo 4",
+   "slug": "halo-4",
+   "titulo": "Halo 4",
+   "v": 4
+  },
+  "halothemasterchiefcollection": {
+   "appid": 976730,
+   "em": 1793744568,
+   "emBreve": false,
+   "nome": "Halo: The Master Chief Collection",
+   "slug": "halo-the-master-chief-collection",
+   "titulo": "Halo: The Master Chief Collection",
    "v": 4
   },
   "hollowknightsilksong": {
