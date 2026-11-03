@@ -28,6 +28,13 @@ HOOK_NEWS = os.environ.get("DISCORD_WEBHOOK_NEWS", "").strip()   # #noticias-gam
 HOOK_AVISOS = os.environ.get("DISCORD_WEBHOOK_AVISOS", "").strip() or HOOK  # #avisos (quadro do site)
 HOOK_TIER = os.environ.get("DISCORD_WEBHOOK_TIER", "").strip() or HOOK      # #tier-list-do-mes
 ESTADO = "discord-state/state.json"
+BOT_TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()       # bot de verdade, só para os cargos
+GUILD = os.environ.get("DISCORD_GUILD_ID", "1567240115082764289").strip()
+# cargo do site -> pedaço do nome do cargo no Discord
+CARGOS = {"fundador": "Fundador", "admin": "Admin", "moderador": "Moderador", "suporte": "Suporte",
+          "curador": "Curador de Guias", "cacador": "Caçador de Troféus", "speedrunner": "Speedrunner",
+          "coop": "Parceiro de Coop", "streamer": "Streamer", "completista": "Completista",
+          "veterano": "Veterano", "novato": "Novato"}
 UA = "ZeradosDaGalera-DiscordBot/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
 MAX_POSTS = 12
 MAX_NOTICIAS = 5
@@ -111,6 +118,95 @@ def postar(hook, conteudo=None, embed=None):
     return False
 
 
+def discord_api(metodo, caminho, dados=None):
+    """Chamada à API do Discord como o bot (só para cargos)."""
+    corpo = json.dumps(dados).encode() if dados is not None else None
+    for tentativa in range(4):
+        req = urllib.request.Request("https://discord.com/api/v10" + caminho, data=corpo, method=metodo, headers={
+            "Authorization": "Bot " + BOT_TOKEN, "User-Agent": UA, "Content-Type": "application/json",
+            "X-Audit-Log-Reason": "Sincronizado com o site Zerados da Galera"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                txt = r.read()
+                return json.loads(txt) if txt else {}
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                try:
+                    espera = float(json.loads(e.read() or b"{}").get("retry_after", 2))
+                except ValueError:
+                    espera = 2
+                time.sleep(min(espera, 10) + 0.5)
+                continue
+            raise
+    return {}
+
+
+def sincronizar_cargos(estado):
+    """Dá no Discord os mesmos cargos que a pessoa tem no site.
+
+    O vínculo é pelo "Usuário do Discord" que cada um coloca no perfil do site.
+    O bot só tira cargos que ele mesmo deu, então nada colocado à mão é mexido.
+    """
+    if not BOT_TOKEN:
+        print("DISCORD_BOT_TOKEN não configurado; cargos não sincronizados.")
+        return
+    try:
+        roles_doc = dict(colecao("roles")).get("all", {}).get("map", {}) or {}
+        jogadores = dict(colecao("players"))
+        roles_dc = discord_api("GET", f"/guilds/{GUILD}/roles")
+    except Exception as e:
+        print(f"Cargos: não consegui ler os dados ({e}).")
+        return
+    def limpa(t):
+        return re.sub(r"[^a-z0-9]", "", slug(t))
+    por_nome = {}
+    for r in roles_dc:
+        for chave, nome in CARGOS.items():
+            if limpa(nome) and limpa(nome) in limpa(r.get("name", "")):
+                por_nome.setdefault(chave, r["id"])
+    dados = estado.setdefault("cargos", {})   # discord user id -> [ids de cargos dados pelo bot]
+    vistos_dc = {}
+    for pid, p in jogadores.items():
+        usuario = str(p.get("discord") or "").strip().lstrip("@").lower()
+        if not re.fullmatch(r"[a-z0-9_.]{2,32}", usuario):
+            continue
+        try:
+            achados = discord_api("GET", f"/guilds/{GUILD}/members/search?" + urllib.parse.urlencode({"query": usuario, "limit": 10}))
+        except Exception as e:
+            print(f"Cargos: busca de {usuario} falhou ({e}).")
+            continue
+        membro = next((m for m in achados if (m.get("user") or {}).get("username", "").lower() == usuario), None)
+        if not membro:
+            continue
+        uid = membro["user"]["id"]
+        if uid in vistos_dc:           # dois perfis dizendo ser a mesma pessoa: ignora os dois
+            vistos_dc[uid] = None
+            continue
+        vistos_dc[uid] = (pid, membro)
+    for uid, par in vistos_dc.items():
+        if not par:
+            continue
+        pid, membro = par
+        quer = {por_nome[c] for c in (roles_doc.get(pid) or []) if c in por_nome}
+        tem = set(membro.get("roles") or [])
+        dei = set(dados.get(uid, []))
+        for rid in quer - tem:
+            try:
+                discord_api("PUT", f"/guilds/{GUILD}/members/{uid}/roles/{rid}")
+                dei.add(rid)
+                print(f"Cargos: +{rid} para {membro['user']['username']}")
+            except Exception as e:
+                print(f"Cargos: não deu para dar {rid} ({e}). O cargo do bot precisa ficar acima dos outros.")
+        for rid in (dei - quer) & tem:
+            try:
+                discord_api("DELETE", f"/guilds/{GUILD}/members/{uid}/roles/{rid}")
+                dei.discard(rid)
+                print(f"Cargos: -{rid} de {membro['user']['username']}")
+            except Exception as e:
+                print(f"Cargos: não deu para tirar {rid} ({e}).")
+        dados[uid] = sorted(dei & (quer | tem))
+
+
 def eventos():
     """Lista tudo que pode virar post, cada um com uma chave única."""
     jogadores = dict(colecao("players"))
@@ -186,17 +282,24 @@ def eventos():
 def main():
     os.makedirs(os.path.dirname(ESTADO), exist_ok=True)
     open(os.path.join(os.path.dirname(ESTADO), ".keep"), "w").close()
-    if not HOOK:
-        print("DISCORD_WEBHOOK não configurado; nada a fazer.")
-        return
     try:
         estado = json.load(open(ESTADO, encoding="utf-8"))
     except (OSError, ValueError):
-        estado = None
+        estado = {}
+    primeira = "vistos" not in estado
+
+    def salvar():
+        json.dump(estado, open(ESTADO, "w", encoding="utf-8"))
+
+    sincronizar_cargos(estado)
+    if not HOOK:
+        salvar()
+        print("DISCORD_WEBHOOK não configurado; avisos não postados.")
+        return
     lista = eventos()
-    if estado is None:
-        os.makedirs(os.path.dirname(ESTADO), exist_ok=True)
-        json.dump({"vistos": [k for k, _, _ in lista]}, open(ESTADO, "w", encoding="utf-8"))
+    if primeira:
+        estado["vistos"] = [k for k, _, _ in lista]
+        salvar()
         print(f"Primeira execução: {len(lista)} itens memorizados, nada postado.")
         postar(HOOK, "O bot do **Zerados da Galera** está ligado! Daqui pra frente eu aviso aqui quando alguém entrar na galera, zerar ou platinar um jogo. " + SITE)
         return
@@ -219,7 +322,8 @@ def main():
             postados += 1
         if ok:
             vistos.add(chave)
-    json.dump({"vistos": sorted(vistos)[-5000:]}, open(ESTADO, "w", encoding="utf-8"))
+    estado["vistos"] = sorted(vistos)[-5000:]
+    salvar()
     print(f"Postados: {postados} avisos, {noticias} notícias.")
 
 
