@@ -64,7 +64,8 @@ function mediaSrc(path,ver){
 }
 function mimg(path,ver,cls,alt){if(!ver||S.mode!=="live")return "";const src=mediaSrc(path,ver);return `<img class="${cls}" data-m="${esc(mkey(path,ver))}" ${src?`src="${src}"`:""} alt="${esc(alt||"")}">`}
 const extImg = u => (typeof u==="string"&&/^https:\/\/(upload\.wikimedia\.org|thumb\.wikimedia\.org|media\.rawg\.io)\//.test(u))?u:"";
-const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const ext=!up&&extImg(g.coverUrl)?`<img class="cimg" src="${esc(g.coverUrl)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer">`:"";return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
+const localCover = t => {const f=S.covers&&typeof ckey==="function"?S.covers[ckey(t)]:"";return typeof f==="string"&&/^covers\/[a-z0-9]+\.(jpg|png)$/.test(f)?f:""};
+const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const ext=!up&&(loc||extImg(g.coverUrl))?`<img class="cimg" src="${esc(loc||g.coverUrl)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:"";return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
 const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
 function fileToImg(file,max,limit,crop){
   return new Promise((res,rej)=>{
@@ -1758,6 +1759,7 @@ let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode=
     if(first)autoCovers();
   },()=>{clearTimeout(timer);if(S.mode!=="demo")S.mode=Object.keys(S.players).length?"live":"offline";S.stale=true;renderAll()});
   fetch("news.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.itens)){S.autoNews=j;softRender()}}).catch(()=>{});
+  fetch("covers.json?t="+Math.floor(Date.now()/600000),{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.capas&&typeof j.capas==="object"){S.covers=j.capas;softRender()}}).catch(()=>{});
   AUTH.getRedirectResult().catch(()=>{});
   AUTH.onAuthStateChanged(u=>{onUser(u);if(u&&!S.canWrite)refreshVerify()});
   // Quem confirmou o e-mail em outra aba: ao voltar para o site, atualiza sozinho.
