@@ -443,8 +443,8 @@ function viewJogo(){
           <div class="stat"><b>${E.filter(g=>g.status==="quero").length}</b><span>na fila</span></div>
         </div></div>
         <div class="sgroup net"><span class="flabel">Na internet</span><div class="stats">
-          <div class="stat"><b>${inf&&inf.nota?`<span class="gscore">${esc(inf.nota)}</span>`:"–"}</b><span>Metacritic</span></div>
-          <div class="stat"><b>${av&&av.pct?esc(av.pct)+"%":"–"}</b><span>${av&&av.texto?esc(av.texto)+" na Steam":"avaliações Steam"}</span></div>
+          <div class="stat"><b>${inf&&inf.nota?mcBadge(inf.nota):"–"}</b><span>Metacritic</span></div>
+          <div class="stat"><b>${av&&av.pct?esc(av.pct)+"%":av&&av.recomendacoes?Number(av.recomendacoes).toLocaleString("pt-BR"):"–"}</b><span>${av&&av.texto?esc(av.texto)+" na Steam":av&&av.recomendacoes?"recomendações na Steam":"avaliações Steam"}</span></div>
           <a class="stat linkstat" href="${esc(hl)}" target="_blank" rel="noopener noreferrer"><b>Ver ↗</b><span>tempo pra zerar (HowLongToBeat)</span></a>
         </div></div></div>`})()}
       ${plats.length?`<div class="ptags">${plats.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>`:""}
@@ -1686,7 +1686,7 @@ function infoBox(title){
       ${fact("Lançamento",esc(d.lancamento||d.lancamentoWiki||(d.emBreve?"A anunciar":"")))}
       ${fact("Estúdio",list(d.estudio))}
       ${fact("Editora",list(d.editora))}
-      ${fact("Nota (Metacritic)",d.nota?`<span class="gscore">${esc(d.nota)}</span>`:"")}
+      ${fact("Nota (Metacritic)",d.nota?mcBadge(d.nota):"")}
       ${fact("Preço na Steam",esc(d.preco||""))}
     </div>
     ${(d.generos||[]).length?`<div class="ptags">${d.generos.map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>`:""}
@@ -1696,6 +1696,10 @@ function infoBox(title){
     <div class="gfoot">${fontes.map(f=>`<a class="btn small" href="${esc(f.link)}" target="_blank" rel="noopener noreferrer">${f.nome==="Steam"?"Ver na Steam":"Ler na "+esc(f.nome)}</a>`).join("")}<span class="hint">Informações: ${fontes.map(f=>esc(f.nome)).join(" e ")||"Steam / Wikipédia"}</span></div>
   </section>`;
 }
+
+// selo no estilo do Metacritic: verde (75+), amarelo (50–74), vermelho (abaixo de 50)
+function mcBadge(n){n=Math.round(Number(n));if(!(n>=0&&n<=100))return "–";const c=n>=75?"good":n>=50?"mixed":"bad";
+  return `<span class="mc mc-${c}" title="Metascore ${n} de 100">${n}</span>`}
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();

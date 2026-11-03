@@ -707,3 +707,10 @@ button.key{cursor:pointer}
 .sgroup.net .stat{background:color-mix(in oklab,var(--accent2) 12%,var(--surface2))}
 .linkstat{color:inherit;text-decoration:none;cursor:pointer}
 .linkstat:hover{outline:2px solid var(--accent2)}
+
+/* v11: selo do Metacritic */
+.mc{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;padding:0 6px;border-radius:8px;font-family:var(--f-body);font-weight:800;font-size:22px;line-height:1;color:#111;letter-spacing:-.02em;box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.mc-good{background:#00CE7A}
+.mc-mixed{background:#FFBD3F}
+.mc-bad{background:#FF6874}
+.gfact .mc{min-width:38px;height:38px;font-size:19px}
