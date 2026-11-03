@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793748420898,
+ "atualizadoEm": 1793749158648,
  "fontes": [
   {
    "nome": "Steam",
@@ -22,7 +22,7 @@
    "itens": 0
   },
   {
-   "nome": "Gatry",
+   "nome": "Pelando",
    "ok": false,
    "itens": 0
   },
@@ -32,9 +32,24 @@
    "itens": 4
   },
   {
-   "nome": "Pelando",
+   "nome": "Oferta Esperta",
    "ok": false,
    "itens": 0
+  },
+  {
+   "nome": "Deku Deals",
+   "ok": false,
+   "itens": 0
+  },
+  {
+   "nome": "Xbox Wire · ofertas",
+   "ok": true,
+   "itens": 1
+  },
+  {
+   "nome": "PlayStation Blog · ofertas",
+   "ok": true,
+   "itens": 10
   }
  ],
  "itens": [
@@ -48,7 +63,7 @@
    "pct": 50,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1781187782",
    "ate": 1793901600000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "CONTROL Resonant",
@@ -60,7 +75,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3669870/1e0c76e4253d347bb1304c3f213570251d924edf/header.jpg?t=1793357289",
    "ate": 1794333600000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Loftia",
@@ -72,7 +87,7 @@
    "pct": 17,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320980/header.jpg?t=1793732506",
    "ate": 1794938453000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "007 First Light",
@@ -84,7 +99,7 @@
    "pct": 40,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/c5b553fd05ba41aefa6daeddac95849a10c93022/header_alt_assets_4.jpg?t=1791886607",
    "ate": 1794247200000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "R.E.P.O.",
@@ -96,7 +111,7 @@
    "pct": 35,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/62177765c05399116f0453fe1177b00ceed698c4/header_alt_assets_3.jpg?t=1793278962",
    "ate": 1794243600000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Potato Please",
@@ -108,7 +123,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg?t=1793717995",
    "ate": 1794765636000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "PEAK",
@@ -120,7 +135,7 @@
    "pct": 38,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3527290/31bac6b2eccf09b368f5e95ce510bae2baf3cfcd/header.jpg?t=1792684718",
    "ate": 1794736800000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Queen's Domain",
@@ -132,7 +147,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg?t=1793628353",
    "ate": 1793984443000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "No Man's Sky",
@@ -144,7 +159,7 @@
    "pct": 60,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/9f1ca9e3b7d1dccb7b5af404a6739ddc1118ef32/header_alt_assets_26.jpg?t=1793196605",
    "ate": 1794247200000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Probably Stolen - Cyberpunk Shopkeeper Sim",
@@ -156,7 +171,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348910/b241a3bc1cb144e70a4840157e127212738ea5b3/header_alt_assets_3.jpg?t=1793711740",
    "ate": 1794416439000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Pulse Drive",
@@ -168,7 +183,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3793800/78dac9676b34ff9a66dc7aa5993e56fcf15a60b1/header.jpg?t=1793744447",
    "ate": 1794938447000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "DJ Life Simulator: Aprenda a ser DJ na Vida Real",
@@ -180,7 +195,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3994790/bc00b94a5aab07885ebb840008d543844b0e679c/header.jpg?t=1793742420",
    "ate": 1794932535000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Distant Trails",
@@ -192,7 +207,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3194960/b33a68f43b26d380dfa01d92bca82665336500d7/header.jpg?t=1793741754",
    "ate": 1794333651000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Astra Bestiary",
@@ -204,7 +219,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3529090/7073a54814c357cf42c389f812ff6455ba2f916a/header.jpg?t=1793739633",
    "ate": 1794333631000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "HELLO HACKER - Project Daybreak",
@@ -216,7 +231,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4380090/1c0d042c3f1997ffd4266838dde43729ed03f160/header.jpg?t=1793738538",
    "ate": 1794333616000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Empty House",
@@ -228,7 +243,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5029430/7c5bcd5b9e1477012391dcece7961631f980f6ad/header.jpg?t=1793739862",
    "ate": 1794938420000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "BugPot",
@@ -240,7 +255,7 @@
    "pct": 23,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5243610/afc1f614c35622dd4033aa453435a7bc88a3c9b6/header.jpg?t=1793737146",
    "ate": 1794333602000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Beach Volleyball VR",
@@ -252,7 +267,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5415860/f4fa0f99c6096090433123c38a1498592cb02f24/header.jpg?t=1793736396",
    "ate": 1794938435000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Doodle Duel",
@@ -264,7 +279,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5361480/90e6e7c149c16b7634ccb73764a26059d9d0b9bf/header.jpg?t=1793734396",
    "ate": 1794333614000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Purrfect Bliss",
@@ -276,7 +291,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4688870/f3ffe1b18fc14db93686cc6ff1540f9e64cc625b/header.jpg?t=1793732668",
    "ate": 1794333627000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Be a Pirate! ",
@@ -288,7 +303,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5176710/fb5ea135f4595c37ba8e65aa37a182ad8e0aaf12/header.jpg?t=1793732282",
    "ate": 1794592801000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Tumble Tavern",
@@ -300,7 +315,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5163190/cee9e2792a8ef05b1d9dd6d443438e67b1901d06/header.jpg?t=1793731442",
    "ate": 1794938401000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "The Wake Event",
@@ -312,7 +327,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4757720/8908b599a451a27badad0ac57cd3c7039a6aee11/header.jpg?t=1793731207",
    "ate": 1794333606000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Aetheris Core",
@@ -324,7 +339,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4608850/a3df00e3bf0cb00500dde54d1a601ce7aff51bd7/header.jpg?t=1793730387",
    "ate": 1794938425000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Mandala: Type To Defend",
@@ -336,7 +351,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4281480/c30b961e4a20e05fe131e2c02ca7312db76af9d5/header.jpg?t=1793729200",
    "ate": 1794938439000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Dungeon Rampage Remastered",
@@ -348,7 +363,7 @@
    "pct": 35,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3053950/eac09ebd91ad5af0c09404e715ea7672c2404120/header_alt_assets_2.jpg?t=1793730506",
    "ate": 1794938400000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Quadium 4004 Workbench",
@@ -360,7 +375,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4625320/ef8ea7f3b23359f3da2f9631e72390a6e7a2e9c0/header.jpg?t=1793728947",
    "ate": 1794938425000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Turbo Turkey: Feathered Frenzy!",
@@ -372,7 +387,7 @@
    "pct": 40,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4635950/8bf9ac859611c13bb5063c2d34c57a620ec11753/header.jpg?t=1793728941",
    "ate": 1794765620000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Clanker Calamity",
@@ -384,7 +399,7 @@
    "pct": 15,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/877900/6771cb26363f34ccb1b0fd0f9f8c97682ffa2315/header.jpg?t=1793728928",
    "ate": 1794333607000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Hearsay",
@@ -396,7 +411,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5274720/fb0f1fbd4e9f0b6b942773e7c35a9e98de755e0e/header.jpg?t=1793728893",
    "ate": 1794333630000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Maze 1211",
@@ -408,7 +423,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5423570/4a83f4bae0fdb24ae1257099a0c291fadd818ea0/header.jpg?t=1793728831",
    "ate": 1794333630000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Ironfields",
@@ -420,7 +435,7 @@
    "pct": 10,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4700280/3c2e053566144e341cd562ec0e6008a4c46f0366/header.jpg?t=1793728829",
    "ate": 1794765628000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Kick",
@@ -432,7 +447,7 @@
    "pct": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3760370/d5e0d563d85638e59c3f1c58b135782a1b43be20/header.jpg?t=1793728828",
    "ate": 1794938426000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Sorry We're Closed",
@@ -443,7 +458,7 @@
    "pct": 100,
    "img": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
    "ate": 1793894400000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Highway Driving (Epic Games) Giveaway",
@@ -456,7 +471,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$9.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Dark Mystery (Epic Games) Giveaway",
@@ -469,7 +484,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$7.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Horse Racing (Epic Games) Giveaway",
@@ -482,7 +497,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$9.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Epic World - Hunt For Quest (Epic Games) Giveaway",
@@ -495,7 +510,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$6.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Gladiator: Blades of Fury (Epic Games) Giveaway",
@@ -508,7 +523,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$9.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Quiztopia: The Ultimate Trivia (Epic Games) Giveaway",
@@ -521,7 +536,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$7.99",
    "ate": 1794182340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "My Darkest Witch (IndieGala) Giveaway",
@@ -533,7 +548,7 @@
    "img": "https://www.gamerpower.com/offers/1/69061997da81d.jpg",
    "plat": "PC, DRM-Free",
    "de": "$4.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Galaxy Kart (Mobile) Giveaway",
@@ -546,7 +561,7 @@
    "plat": "Android, iOS",
    "de": "$4.99",
    "ate": 1793923140000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Sorry We're Closed (Epic Games) Giveaway",
@@ -559,7 +574,7 @@
    "plat": "PC, Epic Games Store",
    "de": "$24.99",
    "ate": 1793923140000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Free itch.io Games Bundle",
@@ -572,7 +587,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$384.00",
    "ate": 1795391940000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "MOLOKAUST (itch.io) Giveaway",
@@ -585,7 +600,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$10.00",
    "ate": 1793836740000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Octane100 (itch.io) Giveaway",
@@ -598,7 +613,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$0.99",
    "ate": 1793750340000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Heirloom (itch.io) Giveaway",
@@ -611,7 +626,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$0.99",
    "ate": 1793836740000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "ANCIENT EVIL (IndieGala) Giveaway",
@@ -623,7 +638,7 @@
    "img": "https://www.gamerpower.com/offers/1/69024dade7c16.jpg",
    "plat": "PC, DRM-Free",
    "de": "$4.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Last Room (IndieGala) Giveaway",
@@ -635,7 +650,7 @@
    "img": "https://www.gamerpower.com/offers/1/68f91bd81c328.jpg",
    "plat": "PC, DRM-Free",
    "de": "$29.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Best Plumber (IndieGala) Giveaway",
@@ -647,7 +662,7 @@
    "img": "https://www.gamerpower.com/offers/1/68f40b259de93.jpg",
    "plat": "PC, DRM-Free",
    "de": "$29.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Sausage Hunter (Indiegala) Giveaway",
@@ -659,7 +674,7 @@
    "img": "https://www.gamerpower.com/offers/1/68eadb2d6f0c4.jpg",
    "plat": "PC, DRM-Free",
    "de": "$29.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Battle Ram (IndieGala) Giveaway",
@@ -671,7 +686,7 @@
    "img": "https://www.gamerpower.com/offers/1/68efabd65f913.jpg",
    "plat": "PC, DRM-Free",
    "de": "$29.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Leaper (IndieGala) Giveaway",
@@ -683,7 +698,7 @@
    "img": "https://www.gamerpower.com/offers/1/68e6513c31514.jpg",
    "plat": "PC, DRM-Free",
    "de": "$4.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Dwarven Realms (Steam) Key Giveaway",
@@ -695,7 +710,7 @@
    "img": "https://www.gamerpower.com/offers/1/6a59119a8eb8d.jpg",
    "plat": "PC, Steam",
    "de": "$9.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Very Realistic Game Dev Simulator (Itch.io) Giveaway",
@@ -708,7 +723,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$1.99",
    "ate": 1793923175000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Cherophobia (Itch.io) Giveaway",
@@ -721,7 +736,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$1.99",
    "ate": 1793923140000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "GigaBash (Stove) Giveaway",
@@ -733,7 +748,7 @@
    "img": "https://www.gamerpower.com/offers/1/69567c4ee0fa3.jpg",
    "plat": "PC",
    "de": "$24.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Do You Have a Moment to Talk About Our Lord and Savior? (Itch.io) Giveaway",
@@ -746,7 +761,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$2.99",
    "ate": 1793923140000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Assassin at Crimson Keep (itch.io) Giveaway",
@@ -759,7 +774,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$4.99",
    "ate": 1793836799000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Project Malice (itch.io) Giveaway",
@@ -772,7 +787,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$9.99",
    "ate": 1793923199000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Buckler 2 (itch.io) Giveaway",
@@ -785,7 +800,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$3.99",
    "ate": 1793923199000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Roseblight (itch.io) Giveaway",
@@ -798,7 +813,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$7.99",
    "ate": 1793923199000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Solace Inc. (itchio) Giveaway",
@@ -811,7 +826,7 @@
    "plat": "PC, Itch.io, DRM-Free",
    "de": "$3.99",
    "ate": 1793923140000,
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "Sharknado VR (Rift) Giveaway",
@@ -823,7 +838,7 @@
    "img": "https://www.gamerpower.com/offers/1/689aece93310e.jpg",
    "plat": "VR",
    "de": "$1.99",
-   "at": 1793748420898
+   "at": 1793749158648
   },
   {
    "t": "RTX 5060 ou RX 9060 XT: qual placa de vídeo comprar em 2026",
@@ -856,6 +871,83 @@
    "cls": "hardware",
    "img": "https://www.promobit.com.br/blog/wp-content/uploads/2021/11/13152031/Capa-Blog-3.png",
    "at": 1791915300000
+  },
+  {
+   "t": "Dias para Jogar de Graça – Stellaris: Console Edition e Cities: Skylines – Xbox One Edition",
+   "u": "https://news.xbox.com/pt-br/2021/03/11/dias-para-jogar-de-graca-stellaris-console-edition-e-cities-skylines-xbox-one-edition/",
+   "src": "Xbox Wire · ofertas",
+   "cls": "console",
+   "at": 1615467600000
+  },
+  {
+   "t": "A promoção Planeta das Ofertas da PlayStation Store já está disponível",
+   "u": "https://blog.br.playstation.com/2026/10/21/a-promocao-planeta-das-ofertas-da-playstation-store-ja-esta-disponivel/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1792586627000
+  },
+  {
+   "t": "Conheça os jogos mais baixados do mês de agosto na PlayStation Store",
+   "u": "https://blog.br.playstation.com/2025/09/05/conheca-os-jogos-mais-baixados-do-mes-de-agosto-na-playstation-store/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1757082410000
+  },
+  {
+   "t": "Conheça os jogos mais baixados da PlayStation Store durante o mês de maio",
+   "u": "https://blog.br.playstation.com/2025/06/04/conheca-os-jogos-mais-baixados-da-playstation-store-durante-o-mes-de-maio/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1749042236000
+  },
+  {
+   "t": "A promoção Ofertas de Outro Nível chega hoje à PlayStation Store",
+   "u": "https://blog.br.playstation.com/2025/05/07/a-promocao-ofertas-de-outro-nivel-chega-hoje-a-playstation-store/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1746624442000
+  },
+  {
+   "t": "Conheça os jogos mais baixados da PlayStation Store durante abril",
+   "u": "https://blog.br.playstation.com/2025/05/05/conheca-os-jogos-mais-baixados-da-playstation-store-durante-abril/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1746453797000
+  },
+  {
+   "t": "A promoção Grandes Jogos, Grandes Descontos chega hoje à PlayStation Store",
+   "u": "https://blog.br.playstation.com/2025/04/23/a-promocao-grandes-jogos-grandes-descontos-chega-hoje-a-playstation-store-2/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1745417126000
+  },
+  {
+   "t": "A Promoção Semana do Consumidor da PlayStation Store começa hoje",
+   "u": "https://blog.br.playstation.com/2025/03/12/a-promocao-semana-do-consumidor-da-playstation-store-comeca-hoje/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1741786482000
+  },
+  {
+   "t": "A promoção Escolhas da Crítica chegou na PlayStation Store",
+   "u": "https://blog.br.playstation.com/2025/01/29/a-promocao-escolhas-da-critica-chegou-na-playstation-store/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1738161515000
+  },
+  {
+   "t": "Chegou a hora de conferir os jogos mais baixados da PlayStation Store durante dezembro",
+   "u": "https://blog.br.playstation.com/2025/01/10/chegou-a-hora-de-conferir-os-jogos-mais-baixados-da-playstation-store-durante-dezembro/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1736518567000
+  },
+  {
+   "t": "A Promoção de Férias da PlayStation Store continua!",
+   "u": "https://blog.br.playstation.com/2024/12/19/a-promocao-de-ferias-chega-a-playstation-store/",
+   "src": "PlayStation Blog · ofertas",
+   "cls": "console",
+   "at": 1734615221000
   }
  ]
 }
