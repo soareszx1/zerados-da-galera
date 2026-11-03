@@ -1,0 +1,40 @@
+name: Bot do Discord
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"   # a cada 20 minutos
+  workflow_dispatch: {}       # botão "Run workflow" para rodar na hora
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discord
+  cancel-in-progress: false
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recuperar memória do bot
+        uses: actions/cache/restore@v4
+        with:
+          path: discord-state
+          key: discord-state-${{ github.run_id }}
+          restore-keys: discord-state-
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Postar novidades no Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK_NEWS: ${{ secrets.DISCORD_WEBHOOK_NEWS }}
+        run: python scripts/discord_bot.py
+      - name: Guardar memória do bot
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: discord-state
+          key: discord-state-${{ github.run_id }}
