@@ -1,7 +1,10 @@
 {
- "atualizadoEm": 1793726963,
+ "atualizadoEm": 1793730177,
  "capas": {
   "baldursgateiii": "covers/baldursgateiii.jpg",
+  "battlefieldvi": "covers/battlefieldvi.jpg",
+  "callofduty": "covers/callofduty.jpg",
+  "counterstrikeii": "covers/counterstrikeii.jpg",
   "donkeykongbananza": "covers/donkeykongbananza.jpg",
   "hadesii": "covers/hadesii.jpg",
   "hollowknightsilksong": "covers/hollowknightsilksong.jpg",
@@ -15,6 +18,8 @@
   "stellarblade": "covers/stellarblade.jpg",
   "supermariobroswonder": "covers/supermariobroswonder.jpg"
  },
- "falhas": {},
+ "falhas": {
+  "armareforger": 1793730177.117135
+ },
  "fonte": "Wikipédia"
 }
