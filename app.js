@@ -13,6 +13,8 @@ const ROLES = {
   cacador:{l:"Caçador de Troféus",c:"var(--st-plat)",d:"Vive atrás de platina"},
   speedrunner:{l:"Speedrunner",c:"var(--st-queue)",d:"Zera rápido demais"},
   coop:{l:"Parceiro de Coop",c:"var(--st-play)",d:"Sempre topa jogar junto"},
+  streamer:{l:"Streamer",c:"#9B5DE5",d:"Faz live dos jogos"},
+  completista:{l:"Completista",c:"#2EC27E",d:"Só larga com 100%"},
   veterano:{l:"Veterano",c:"var(--st-drop)",d:"Joga desde o Atari"},
   novato:{l:"Novato",c:"var(--st-pause)",d:"Chegou agora"}
 };
