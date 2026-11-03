@@ -17,7 +17,7 @@ import urllib.request
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
 CHAVE = os.environ.get("STEAM_API_KEY", "").strip()
 PASTA = "steam"
-UA = "ZeradosDaGalera-Steam/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
+UA = "ZeradosDaGalera-Steam/1.0 (+https://zeradosdagalera.com.br/)"
 API = "https://api.steampowered.com"
 
 

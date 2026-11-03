@@ -13,7 +13,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
-UA = "ZeradosDaGalera-NewsBot/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
+UA = "ZeradosDaGalera-NewsBot/1.0 (+https://zeradosdagalera.com.br/)"
 MAX_ITENS = 80
 POR_FONTE = 15
 TRECHO = 180

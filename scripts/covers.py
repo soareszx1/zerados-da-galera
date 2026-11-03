@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
-UA = "ZeradosDaGalera-Capas/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
+UA = "ZeradosDaGalera-Capas/1.0 (+https://zeradosdagalera.com.br/)"
 INDICE = "covers.json"
 PASTA = "covers"
 MAX_POR_VEZ = 60

@@ -22,7 +22,7 @@ import urllib.error
 import urllib.request
 
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
-SITE = os.environ.get("SITE_URL", "https://soareszx1.github.io/zerados-da-galera/").rstrip("/") + "/"
+SITE = os.environ.get("SITE_URL", "https://zeradosdagalera.com.br/").rstrip("/") + "/"
 HOOK = os.environ.get("DISCORD_WEBHOOK", "").strip()            # #zerados-e-conquistas (e o padrão)
 HOOK_NEWS = os.environ.get("DISCORD_WEBHOOK_NEWS", "").strip()   # #noticias-games
 HOOK_AVISOS = os.environ.get("DISCORD_WEBHOOK_AVISOS", "").strip() or HOOK  # #avisos (quadro do site)
@@ -35,7 +35,7 @@ CARGOS = {"fundador": "Fundador", "admin": "Admin", "moderador": "Moderador", "s
           "curador": "Curador de Guias", "cacador": "Caçador de Troféus", "speedrunner": "Speedrunner",
           "coop": "Parceiro de Coop", "streamer": "Streamer", "completista": "Completista",
           "veterano": "Veterano", "novato": "Novato"}
-UA = "ZeradosDaGalera-DiscordBot/1.0 (+https://soareszx1.github.io/zerados-da-galera/)"
+UA = "ZeradosDaGalera-DiscordBot/1.0 (+https://zeradosdagalera.com.br/)"
 MAX_POSTS = 12
 MAX_NOTICIAS = 5
 COR = 0xFF3B6B
