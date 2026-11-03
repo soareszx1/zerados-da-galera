@@ -668,7 +668,7 @@ function drawSugg(q,ai,loading){
 function onTitleInput(q){
   clearTimeout(suggT);if(suggCtl){suggCtl.abort();suggCtl=null}q=q.trim();if(q.length<2){$("#sugg").innerHTML="";return}
   const key=norm(q);if(suggMemo[key]){drawSugg(q,suggMemo[key]);return}
-  const can=!!CFG.rawgKey;drawSugg(q,null,can&&q.length>=3);if(!can||q.length<3)return;
+  const can=!!rawgKey();drawSugg(q,null,can&&q.length>=3);if(!can||q.length<3)return;
   suggT=setTimeout(async()=>{const ctl=new AbortController();suggCtl=ctl;
     const prompt=`Você é um catálogo de videogames. Alguém está digitando o nome de um jogo num formulário: "${q.slice(0,60)}".
 Liste até 6 jogos reais (lançados ou já anunciados) que provavelmente correspondem ao que a pessoa quer, do mais provável ao menos provável. Considere erros de digitação, abreviações, nomes em português e números de sequência.
@@ -687,6 +687,7 @@ function openSettings(){
   reps.sort((a,b)=>(b.at||0)-(a.at||0));
   $("#modal").innerHTML=overlay(`<h2>Painel do dono</h2>
     <div class="field"><label for="s-discord">Convite do servidor do Discord</label><input id="s-discord" maxlength="120" value="${esc(c.discord||"")}" placeholder="https://discord.gg/seu-convite"><span class="hint">Use um convite que não expira (Convidar pessoas → Editar link → Nunca).</span></div>
+    <div class="field"><label for="s-rawg">Chave do RAWG (capas e nomes automáticos)</label><input id="s-rawg" maxlength="64" autocomplete="off" value="${esc(S.config.rawgKey||"")}" placeholder="Cole aqui a chave de rawg.io/apidocs"><span class="hint">É gratuita. Depois de salvar, as sugestões com capa aparecem ao adicionar um jogo.</span></div>
     <div class="sec"><h4>Desafio do mês</h4><div class="fgrid"><div class="field full"><label for="s-ch-t">Título</label><input id="s-ch-t" maxlength="60" value="${esc(ch.title||"")}" placeholder="Ex.: Zerar um jogo de terror"></div>
       <div class="field full"><label for="s-ch-d">Descrição</label><input id="s-ch-d" maxlength="160" value="${esc(ch.desc||"")}"></div>
       <div class="field"><label for="s-ch-u">Termina em</label><input id="s-ch-u" type="date" value="${esc(ch.until||"")}"></div></div><span class="hint">Deixe o título vazio para encerrar. Mudar o título cria um desafio novo.</span></div>
@@ -878,8 +879,9 @@ const RAWG_PLAT = p => {const n=String(p||"");
   if(n==="Nintendo Switch 2")return "Switch 2";if(n==="Nintendo Switch")return "Switch";if(n==="iOS"||n==="Android")return "Mobile";if(n==="Linux"||n==="macOS")return "PC";
   if(/PlayStation|Xbox|NES|SNES|Nintendo 64|GameCube|Wii|Game Boy|Nintendo DS|Nintendo 3DS|Genesis|Sega|Dreamcast|Atari|Neo Geo|PSP|PS Vita/.test(n))return "Retrô / Emulador";return null};
 const rawgImg = u => (typeof u==="string"&&u.startsWith("https://media.rawg.io/"))?u.replace("/media/games/","/media/crop/600/400/games/").replace("/media/screenshots/","/media/crop/600/400/screenshots/"):"";
+const rawgKey = () => CFG.rawgKey || (typeof S.config?.rawgKey==="string"?S.config.rawgKey:"");
 async function rawgSearch(q,signal){
-  const r=await fetch(`https://api.rawg.io/api/games?key=${encodeURIComponent(CFG.rawgKey)}&search=${encodeURIComponent(q)}&page_size=7`,{signal});
+  const r=await fetch(`https://api.rawg.io/api/games?key=${encodeURIComponent(rawgKey())}&search=${encodeURIComponent(q)}&page_size=7`,{signal});
   if(!r.ok)throw new Error("rawg "+r.status);const j=await r.json();
   return (j.results||[]).slice(0,7).map(x=>({title:String(x.name||"").slice(0,80),year:x.released?Number(String(x.released).slice(0,4)):null,
     platforms:[...new Set((x.platforms||[]).map(p=>RAWG_PLAT(p?.platform?.name)).filter(Boolean))].slice(0,6),img:rawgImg(x.background_image)})).filter(x=>x.title);
@@ -928,7 +930,9 @@ document.addEventListener("submit",async e=>{
   if(id==="sform"){
     const v=$("#s-discord").value.trim();
     if(v&&!/^https:\/\/(discord\.gg|discord\.com\/invite)\/[\w-]+\/?$/.test(v)){$("#serr").textContent="Cole um convite no formato https://discord.gg/xxxx";return}
-    const c=clone(S.config||{});c.discord=v;
+    const rk=$("#s-rawg").value.trim();
+    if(rk&&!/^[A-Za-z0-9]{20,64}$/.test(rk)){$("#serr").textContent="A chave do RAWG parece incompleta. Copie de novo em rawg.io/apidocs.";return}
+    const c=clone(S.config||{});c.discord=v;c.rawgKey=rk;
     const cht=$("#s-ch-t").value.trim();
     if(!cht)delete c.challenge;else{const prev=c.challenge;c.challenge={id:prev&&prev.title===cht?prev.id:newId("c"),title:cht,desc:$("#s-ch-d").value.trim(),until:$("#s-ch-u").value||"",at:prev&&prev.title===cht?prev.at:Date.now()}}
     const clt=$("#s-cl-t").value.trim();
