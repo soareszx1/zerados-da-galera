@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zerados da Galera</title>
+<meta name="description" content="Comunidade da galera para registrar jogos zerados, o que está jogando, dicas, tier list e muito mais.">
+<meta name="theme-color" content="#FF3B6B">
+<meta property="og:title" content="Zerados da Galera">
+<meta property="og:description" content="Jogos zerados, jogando agora, dicas, tier list, chat e ranking da galera.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF3B6B'/%3E%3Ctext x='32' y='46' font-family='Arial Black,Impact,sans-serif' font-size='40' text-anchor='middle' fill='white'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="logo"><a href="#inicio">Zerados<br>da <span>Galera</span></a></h1>
+    <div class="actions" id="actions"></div>
+  </header>
+  <div id="banner"></div>
+  <nav class="tabs" role="tablist" id="tabs" aria-label="Seções"></nav>
+  <div class="filters" id="filters">
+    <input type="search" id="q" placeholder="Buscar jogo…" aria-label="Buscar jogo">
+    <div class="seg" id="scope" role="group" aria-label="Período">
+      <button data-scope="all" aria-pressed="true">Todos os tempos</button>
+      <button data-scope="year" aria-pressed="false" id="yearBtn">Zerados no ano</button>
+    </div>
+    <select id="status" aria-label="Status">
+      <option value="">Todos os status</option><option value="jogando">Jogando</option><option value="zerado">Zerado</option>
+      <option value="platinado">Platinado / 100%</option><option value="pausado">Pausado</option><option value="dropado">Dropado</option><option value="quero">Na fila</option>
+    </select>
+    <select id="platform" aria-label="Plataforma"><option value="">Todas as plataformas</option></select>
+    <span id="pfilter"></span>
+    <select id="sort" aria-label="Ordenar"><option value="recent">Mais recentes</option><option value="nota">Maior nota</option><option value="az">A–Z</option></select>
+  </div>
+  <main id="view"></main>
+  <footer class="credits"><span>Criado por <b>João Rodrigues</b></span><span><button class="linkbtn" data-act="terms">Termos e privacidade</button> · Dados de jogos: <a href="https://rawg.io" target="_blank" rel="noopener">RAWG</a></span></footer>
+</div>
+<div id="modal"></div>
+<div id="toast"></div>
+<div id="lightbox"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
