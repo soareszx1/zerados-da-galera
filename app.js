@@ -3059,7 +3059,7 @@ function gkDraw(){
     ${sel}
     <div class="gkform">
       <label class="field"><span class="flabel">Status</span><select id="gk-st">${Object.keys(GK_ST).map(k=>`<option value="${k}"${M.st===k?" selected":""}>${esc(gkStL(k,M.k))}</option>`).join("")}</select></label>
-      <label class="field"><span class="flabel">Tier</span><select id="gk-tier"><option value="">Sem tier</option>${GK_TIERS.map(t=>`<option${M.tier===t?" selected":""}>${t}</option>`).join("")}</select></label>
+      <div class="field gktierf"><span class="flabel">Tier</span><input type="hidden" id="gk-tier" value="${esc(M.tier)}"><div class="pick gktp">${GK_TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="gktp" data-t="${t}" aria-pressed="${M.tier===t}" aria-label="Tier ${t}">${t}</button>`).join("")}</div></div>
       <label class="field"><span class="flabel">Nota (0 a 10)</span><input id="gk-nota" type="number" min="0" max="10" step="0.5" inputmode="decimal" value="${M.nota??""}"></label>
       <label class="field full"><span class="flabel">Comentário <span class="hint">(opcional, sem spoiler)</span></span><textarea id="gk-c" maxlength="400" rows="3">${esc(M.c)}</textarea></label>
     </div>
@@ -3106,6 +3106,7 @@ document.addEventListener("click",async e=>{
     return}
   if(M?.type!=="geek")return;
   if(a==="gkk"){gkReadForm();M.k=el.dataset.k;M.t="";M.img="";M.res=[];M.y=null;M.ref="";gkDraw();const q=$("#gk-q");if(q&&M.q)q.dispatchEvent(new Event("input",{bubbles:true}));return}
+  if(a==="gktp"){const t=el.dataset.t===M.tier?"":el.dataset.t;M.tier=t;const i=$("#gk-tier");if(i)i.value=t;el.parentElement.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===t));return}
   if(a==="gkpick"){gkReadForm();const r=M.res[Number(el.dataset.i)];if(!r)return;Object.assign(M,{t:r.t,img:gkImg(r.img),y:r.y||null,ref:r.ref||""});gkDraw();return}
   if(a==="gkmanual"){gkReadForm();M.t=String(M.q||"").trim().slice(0,90);M.img="";gkDraw();return}
   if(a==="gkclear"){gkReadForm();M.t="";M.img="";M.res=[];gkDraw();return}
@@ -3157,6 +3158,144 @@ autoNews=function(){return _autoNewsGk().filter(n=>n.cat!=="geek")};
 /* ---------- XP: um pouco, sem desequilibrar (no máximo 400) ---------- */
 const _xpOfGk=xpOf;
 xpOf=function(pid){let g=0;for(const x of mediaOf(pid)){g+=3;if(x.st==="visto")g+=5;if(x.c)g+=5;if(x.tier)g+=2}return _xpOfGk(pid)+Math.min(400,g)};
+
+/* ================= v26: primeiros passos, perfil vazio e MODO ARRASTAR na tier list ================= */
+
+/* ---------- primeiros passos (Início) ---------- */
+const ONB_XP=150;
+function onbSteps(p){
+  const pid=p._id||S.myId;const G=Object.values(p.games||{});
+  const comentou=comms().some(c=>c.by===pid),curtiu=Object.keys(p.likes||{}).length>0;
+  return [
+    {k:"perfil",t:"Coloque uma foto, banner ou bio",ok:!!(p.avatarV||p.bannerV||(p.bio&&p.bio.trim().length>3)),btn:`<button class="btn small" data-act="profile">Editar perfil</button>`},
+    {k:"jogos",t:"Adicione 3 jogos na sua estante",ok:G.length>=3,prog:`${Math.min(3,G.length)}/3`,btn:`<button class="btn small primary" data-act="add">+ Jogo</button><button class="btn small" data-act="steam">Importar da Steam</button>`},
+    {k:"tier",t:"Dê tier (S a D) para um jogo",ok:G.some(g=>g.tier),btn:`<a class="btn small" href="#tierlist" data-act="onbtier">Abrir Tier List</a>`},
+    {k:"geek",t:"Adicione um anime, série, filme ou mangá",ok:(typeof mediaOf==="function"?mediaOf(pid):[]).length>0,btn:`<button class="btn small" data-act="gkadd" data-k="anime">+ Anime/filme</button>`},
+    {k:"social",t:"Curta ou comente algo da galera",ok:comentou||curtiu,btn:`<a class="btn small" href="#feed">Ver o feed</a>`},
+  ];
+}
+function onbHidden(){try{return localStorage.getItem("zg-onb-hide")==="1"}catch{return false}}
+function onbBox(){
+  const m=me();if(!m||!S.canWrite||S.mode!=="live"||m.onb||onbHidden())return "";
+  const st=onbSteps({...m,_id:S.myId});const feitos=st.filter(s=>s.ok).length;const tudo=feitos===st.length;
+  return `<section class="box card onb"><div class="gkph2"><span class="eyebrow">🚀 Primeiros passos · ${feitos}/${st.length}</span><button class="linkbtn" data-act="onbhide">esconder</button></div>
+    <h3>${tudo?"Tudo pronto! Resgate seu prêmio":"Monte seu perfil e ganhe +"+ONB_XP+" XP e a conquista “Primeiros passos”"}</h3>
+    <div class="xpbar"><i style="width:${feitos/st.length*100}%"></i></div>
+    <ol class="onbl">${st.map(s=>`<li class="${s.ok?"ok":""}"><span class="onbck" aria-hidden="true">${s.ok?"✓":""}</span><span class="onbt">${esc(s.t)}${s.prog&&!s.ok?` <span class="hint">${s.prog}</span>`:""}</span>${s.ok?"":`<span class="onbb">${s.btn}</span>`}</li>`).join("")}</ol>
+    ${tudo?`<button class="btn primary" data-act="onbclaim">Resgatar +${ONB_XP} XP</button>`:""}</section>`;
+}
+const _viewHomeOnb=viewHome;
+viewHome=function(){const h=_viewHomeOnb.apply(this,arguments);const b=onbBox();if(!b)return h;
+  const i=h.indexOf('<section class="box hello">');return i>=0?h.slice(0,i)+b+h.slice(i):b+h};
+BADGES.push({id:"primeirospassos",ic:"🚀",col:"#16A3C7",t:"Primeiros passos",ok:(s,o,pid)=>!!players()[pid]?.onb,d:()=>"completou o perfil"});
+
+/* ---------- perfil vazio: convida em vez de ficar em branco ---------- */
+const _viewPerfilOnb=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilOnb.apply(this,arguments);const pid=pidBySlug(S.route);const p=players()[pid];if(!p)return h;
+  const nG=Object.keys(p.games||{}).length,nM=(typeof mediaOf==="function"?mediaOf(pid):[]).length;if(nG)return h;
+  const mine=pid===S.myId;
+  const box=mine?`<section class="box card vazio"><span class="big" aria-hidden="true">🎮</span><div><h3>Sua estante está vazia</h3><p>Adicione os jogos que você zerou, o que está jogando e o que quer jogar. Pela Steam, vem tudo de uma vez.</p>
+      <div class="actions"><button class="btn primary" data-act="add">+ Jogo</button><button class="btn" data-act="steam">Importar da Steam</button>${nM?"":`<button class="btn" data-act="gkadd" data-k="anime">+ Anime/filme</button>`}</div></div></section>`
+    :`<section class="box card vazio"><span class="big" aria-hidden="true">👀</span><div><h3>${nk(p)} ainda não adicionou jogos</h3><p>Chama no chat do site ou no Discord e pergunta o que ele está jogando!</p>
+      <div class="actions"><button class="btn small" data-act="chatopen">Abrir o chat</button><a class="btn small" href="https://discord.gg/62sU9dEnSj" target="_blank" rel="noopener">Discord da galera</a></div></div></section>`;
+  const i=h.indexOf("</section>",h.indexOf('class="box phero"'));return i>0?h.slice(0,i+10)+box+h.slice(i+10):h};
+
+/* ================= MODO ARRASTAR (tier list estilo sites de montar tier list) ================= */
+S.dragMode=(()=>{try{return localStorage.getItem("zg-drag")==="1"}catch{return false}})();
+function dragOwn(){const mid=meId();if(!mid||!MINE())return null;
+  if(S.tierCat==="jogos"||!S.tierCat)return S.tierWho===mid?{k:"jogos"}:null;
+  return (typeof GK_KINDS!=="undefined"&&GK_KINDS[S.tierCat]&&S.gkWho?.[S.tierCat]==="eu")?{k:S.tierCat}:null}
+function dragItems(k){const mid=meId();
+  if(k==="jogos")return allGames().filter(g=>g.pid===mid).map(g=>({src:"g",key:g.gid,title:g.title,tier:g.tier||"",img:coverBox(g,"mini"),at:g.updatedAt||0}));
+  return mediaOf(mid).filter(x=>x.k===k).map(x=>({src:"m",key:x.mid,title:x.t,tier:x.tier||"",img:gkPoster(x),at:x.at||0}));
+}
+function dragTile(x){return `<div class="dtile2" data-src="${x.src}" data-key="${esc(x.key)}" data-tier="${esc(x.tier)}" tabindex="0" role="button" aria-label="${esc(x.title)}${x.tier?`, tier ${x.tier}`:", sem tier"}" title="${esc(x.title)}">${x.img}<span>${esc(x.title)}</span></div>`}
+function dragBoard(k){
+  const L=dragItems(k).sort((a,b)=>(b.at||0)-(a.at||0));const q=(S.dragQ||"").trim().toLowerCase();
+  const pool=L.filter(x=>!x.tier&&(!q||x.title.toLowerCase().includes(q)));
+  return `<div class="dragwrap"><p class="hint draghelp">Arraste as capas para o tier. No celular, segure e arraste; ou toque numa capa e depois na letra do tier. Salva sozinho.</p>
+    <section class="box tierlist dboard">${["S","A","B","C","D"].map(t=>`<div class="trow dzone" data-t="${t}"><button type="button" class="tlabel t-${t}" data-act="dragto" data-t="${t}" aria-label="Mover para o tier ${t}">${t}</button><div class="titems dzi">${L.filter(x=>x.tier===t).map(dragTile).join("")}</div></div>`).join("")}</section>
+    <section class="box card dpoolbox"><div class="gkph2"><span class="eyebrow">Sem tier · ${L.filter(x=>!x.tier).length}</span><button type="button" class="btn small" data-act="dragto" data-t="">Tirar do tier</button></div>
+      ${L.filter(x=>!x.tier).length>12?`<input id="drag-q" placeholder="Filtrar…" value="${esc(S.dragQ||"")}" aria-label="Filtrar títulos sem tier" autocomplete="off">`:""}
+      <div class="titems dzi dpool dzone" data-t="">${pool.map(dragTile).join("")||`<span class="empty-row">${L.length?"Tudo ranqueado! 🎉":k==="jogos"?"Adicione jogos na estante para montar sua tier list.":"Adicione títulos para montar sua tier list."}</span>`}</div></section></div>`;
+}
+function dragBar(){const o=dragOwn();if(!o)return "";
+  return `<div class="dragbar"><button type="button" class="chip2 dragtgl" data-act="dragmode" aria-pressed="${!!S.dragMode}">✋ Modo arrastar ${S.dragMode?"ligado":"desligado"}</button>${S.dragMode?`<span class="hint" id="drag-st"></span>`:""}</div>`}
+const _viewTierDrag=viewTier;
+viewTier=function(){const h=_viewTierDrag.apply(this,arguments);const o=dragOwn();if(!o)return h;
+  const cut=h.indexOf('</div>',h.indexOf('class="tlcats"'))+6;const top=h.slice(0,cut);
+  if(!S.dragMode){const pk=h.indexOf('<div class="tierpick"');if(pk<0)return top+dragBar()+h.slice(cut);
+    const end=h.indexOf("</div>",pk)+6;return h.slice(0,end)+dragBar()+h.slice(end)}
+  const pk=h.indexOf('<div class="tierpick"');const pick=pk>=0?h.slice(pk,h.indexOf("</div>",pk)+6):"";
+  try{const f=document.getElementById("filters");if(f)f.hidden=true}catch{}
+  return top+pick+dragBar()+dragBoard(o.k)};
+
+// salvar em lote (várias arrastadas viram uma gravação só)
+const DRAG={pend:{},t:null,busy:false};
+function dragQueue(src,key,tier){DRAG.pend[src+"|"+key]=tier;const st=$("#drag-st");if(st)st.textContent="salvando…";clearTimeout(DRAG.t);DRAG.t=setTimeout(dragFlush,700)}
+async function dragFlush(){if(DRAG.busy){DRAG.t=setTimeout(dragFlush,500);return}const P=DRAG.pend;DRAG.pend={};if(!Object.keys(P).length)return;DRAG.busy=true;
+  try{await saveMe(p=>{for(const [k,t] of Object.entries(P)){const [src,key]=k.split("|");const box=src==="g"?p.games:p.media;const it=box?.[key];if(!it)continue;if(t)it.tier=t;else delete it.tier}});
+    const st=$("#drag-st");if(st){st.textContent="salvo ✓";setTimeout(()=>{const s2=$("#drag-st");if(s2&&s2.textContent==="salvo ✓")s2.textContent=""},1800)}}
+  catch(err){toast(errMsg(err));const st=$("#drag-st");if(st)st.textContent="não salvou"}
+  finally{DRAG.busy=false}}
+function dragMove(tile,t,anim=true){
+  const zone=document.querySelector(`.dboard .dzone[data-t="${t}"] .dzi`)||(t===""?document.querySelector(".dpool"):null);if(!zone||!tile)return;
+  if(tile.dataset.tier===t)return;
+  zone.querySelector(".empty-row")?.remove();
+  const first=tile.getBoundingClientRect();zone.appendChild(tile);tile.dataset.tier=t;
+  if(anim&&tile.animate){const last=tile.getBoundingClientRect();try{tile.animate([{transform:`translate(${first.left-last.left}px,${first.top-last.top}px) scale(1.08)`},{transform:"translate(0,0) scale(1)"}],{duration:260,easing:"cubic-bezier(.2,.8,.2,1.2)"})}catch{}}
+  tile.classList.add("dropped");setTimeout(()=>tile.classList.remove("dropped"),400);
+  const lab=tile.getAttribute("aria-label").split(",")[0];tile.setAttribute("aria-label",lab+(t?`, tier ${t}`:", sem tier"));
+  const cnt=document.querySelector(".dpoolbox .eyebrow");if(cnt)cnt.textContent="Sem tier · "+document.querySelectorAll(".dpool .dtile2").length;
+  dragQueue(tile.dataset.src,tile.dataset.key,t);
+}
+// arrastar com o dedo ou o mouse (pointer events: funciona igual no celular e no PC)
+let DG=null;
+document.addEventListener("pointerdown",e=>{const tile=e.target.closest(".dboard .dtile2,.dpool .dtile2");if(!tile||e.button>0)return;
+  DG={tile,x:e.clientX,y:e.clientY,id:e.pointerId,on:false,ghost:null,zone:null,timer:null,touch:e.pointerType==="touch"};
+  if(DG.touch)DG.timer=setTimeout(()=>{if(DG&&!DG.on)dragStart(e.clientX,e.clientY)},220);   // no celular: segura um instante para pegar (deixa rolar a página)
+});
+function dragStart(x,y){if(!DG)return;DG.on=true;S.dragging=true;const r=DG.tile.getBoundingClientRect();
+  const g=DG.tile.cloneNode(true);g.classList.add("dghost");g.style.width=r.width+"px";g.style.left=r.left+"px";g.style.top=r.top+"px";document.body.appendChild(g);
+  DG.ghost=g;DG.dx=x-r.left;DG.dy=y-r.top;DG.tile.classList.add("lifting");document.body.classList.add("dragging");try{navigator.vibrate?.(15)}catch{}}
+document.addEventListener("pointermove",e=>{if(!DG||e.pointerId!==DG.id)return;
+  if(!DG.on){const d=Math.hypot(e.clientX-DG.x,e.clientY-DG.y);if(DG.touch){if(d>10){clearTimeout(DG.timer);DG=null}return}if(d<6)return;dragStart(e.clientX,e.clientY)}
+  e.preventDefault();DG.ghost.style.left=(e.clientX-DG.dx)+"px";DG.ghost.style.top=(e.clientY-DG.dy)+"px";
+  DG.ghost.style.transform=`rotate(${Math.max(-8,Math.min(8,(e.clientX-DG.x)/25))}deg) scale(1.1)`;
+  const el=document.elementFromPoint(e.clientX,e.clientY);const z=el?.closest?.(".dzone");
+  if(z!==DG.zone){DG.zone?.classList.remove("over");DG.zone=z;z?.classList.add("over")}
+  if(e.clientY<70)window.scrollBy(0,-12);else if(e.clientY>innerHeight-70)window.scrollBy(0,12);
+},{passive:false});
+function dragEnd(e){if(!DG)return;clearTimeout(DG.timer);const d=DG;DG=null;
+  if(!d.on){ // toque/clique simples: seleciona a capa
+    const was=d.tile.classList.contains("sel");document.querySelectorAll(".dtile2.sel").forEach(x=>x.classList.remove("sel"));if(!was)d.tile.classList.add("sel");return}
+  d.ghost?.remove();d.tile.classList.remove("lifting");document.body.classList.remove("dragging");d.zone?.classList.remove("over");
+  S.dragging=false;if(d.zone)dragMove(d.tile,d.zone.dataset.t);
+  if(S.dragRerender){S.dragRerender=false;setTimeout(()=>{if(!S.dragging)renderView()},50)}
+}
+document.addEventListener("pointerup",dragEnd);document.addEventListener("pointercancel",e=>{if(DG&&!DG.on){clearTimeout(DG.timer);DG=null}else dragEnd(e)});
+document.addEventListener("touchmove",e=>{if(S.dragging)e.preventDefault()},{passive:false});
+document.addEventListener("contextmenu",e=>{if(e.target.closest(".dboard,.dpool"))e.preventDefault()});
+// teclado: Enter seleciona; teclas S A B C D ou 0 movem
+document.addEventListener("keydown",e=>{const tile=e.target.closest?.(".dtile2");if(!tile)return;const k=e.key.toUpperCase();
+  if(["S","A","B","C","D"].includes(k)){e.preventDefault();dragMove(tile,k);tile.focus()}else if(k==="0"||k==="DELETE"||k==="BACKSPACE"){e.preventDefault();dragMove(tile,"");tile.focus()}
+  else if(k==="ENTER"||k===" "){e.preventDefault();tile.classList.toggle("sel")}});
+document.addEventListener("input",e=>{if(e.target.id!=="drag-q")return;S.dragQ=e.target.value;const q=S.dragQ.trim().toLowerCase();
+  document.querySelectorAll(".dpool .dtile2").forEach(t=>{t.hidden=!!q&&!t.title.toLowerCase().includes(q)})});
+document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(!["dragmode","dragto","onbclaim","onbhide","onbtier","chatopen"].includes(a))return;e.stopImmediatePropagation();
+  if(a==="dragmode"){S.dragMode=!S.dragMode;try{localStorage.setItem("zg-drag",S.dragMode?"1":"0")}catch{}renderView();return}
+  if(a==="dragto"){const sel=document.querySelector(".dtile2.sel");if(!sel){toast("Toque numa capa primeiro (ou arraste)");return}sel.classList.remove("sel");dragMove(sel,el.dataset.t);return}
+  if(a==="onbhide"){try{localStorage.setItem("zg-onb-hide","1")}catch{}renderView();return}
+  if(a==="onbtier"){S.tierCat="jogos";S.tierWho=meId();return}
+  if(a==="chatopen"){const f=document.getElementById("chatfab");if(f)f.click();else location.hash="#chat";return}
+  if(a==="onbclaim"){const m=me();if(!m||m.onb)return;if(!onbSteps({...m,_id:S.myId}).every(s=>s.ok)){toast("Falta algum passo");return}
+    el.disabled=true;saveMe(p=>{if(p.onb)return;p.onb=Date.now();p.missXp=(Number(p.missXp)||0)+ONB_XP;const mes=monthKey();p.sxp=p.sxp||{};p.sxp[mes]=(Number(p.sxp[mes])||0)+ONB_XP})
+      .then(()=>{toast(`+${ONB_XP} XP e conquista “Primeiros passos”! 🚀`);renderAll()}).catch(err=>{el.disabled=false;toast(errMsg(err))});return}
+},true);
+// não redesenha a tela no meio de uma arrastada (chegou dado novo? redesenha quando soltar)
+const _renderViewDrag=renderView;
+renderView=function(){if(S.dragging){S.dragRerender=true;return}return _renderViewDrag.apply(this,arguments)};
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
