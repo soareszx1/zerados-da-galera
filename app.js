@@ -2856,6 +2856,7 @@ const gkMonths = k => Object.keys(S.tierlists||{}).filter(id=>id.endsWith("~"+k)
 function catBar(){return `<div class="tlcats" role="tablist" aria-label="Categoria da tier list">${TL_CATS.map(([k,ic,l])=>`<button role="tab" data-act="gkcat" data-k="${k}" aria-selected="${S.tierCat===k}">${ic} ${l}</button>`).join("")}</div>`}
 const _viewTierGk=viewTier;
 viewTier=function(){
+  try{const f=document.getElementById("filters");if(f)f.hidden=!!GK_KINDS[S.tierCat]||!allGames().length}catch{}
   if(!GK_KINDS[S.tierCat])return catBar()+_viewTierGk.apply(this,arguments);
   return catBar()+gkTierView(S.tierCat);
 };
