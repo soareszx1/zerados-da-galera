@@ -1620,8 +1620,11 @@ async function importSteam(){
   const d=M.data;const {keys,apps}=steamOwnedKeys();
   const pick=d.jogos.filter(j=>M.sel[j.appid]&&!apps.has(Number(j.appid))&&!keys.has(norm(j.nome)));
   if(!pick.length)return;
+  const agora=Date.now();
+  // jogos importados entram "quietos": não viram atividade no feed, não contam como atualizados hoje nem pontuam temporada/liga
   await saveMe(p=>{p.games=p.games||{};pick.forEach((j,i)=>{const st=stStatus(j);
-    p.games[newId("g")]={title:String(j.nome).slice(0,80),status:st,platform:"PC",year:isDone({status:st})?YEAR:null,fase:"",progress:st==="zerado"?100:0,hours:Math.round((j.min||0)/60),nota:null,tier:"",comment:"",rec:false,steamApp:Number(j.appid),updatedAt:(j.ult?j.ult*1000:Date.now()-i)}})});
+    p.games[newId("g")]={title:String(j.nome).slice(0,80),status:st,platform:"PC",year:isDone({status:st})?YEAR:null,fase:"",progress:st==="zerado"?100:0,hours:Math.round((j.min||0)/60),nota:null,tier:"",comment:"",rec:false,steamApp:Number(j.appid),updatedAt:0,imp:agora}});
+    p.steamImp={n:pick.length+(p.steamImp&&p.steamImp.at>agora-36e5?p.steamImp.n:0),at:agora}});
   closeModal();toast(`${pick.length} jogo${pick.length>1?"s":""} importado${pick.length>1?"s":""} da Steam`);
 }
 let steamSynced=false;
@@ -1684,6 +1687,16 @@ function libHTML(pid,p,mine){
   if(L.steamN)chips.push(`<a class="libchip steam" href="${esc(steamLink(p.steam))}" target="_blank" rel="noopener"><b>${L.steamN}</b><span>Steam</span><em>${L.steamH.toLocaleString("pt-BR")} h · automático</em></a>`);
   L.man.sort((a,b)=>b[1]-a[1]).forEach(([k,n])=>chips.push(`<div class="libchip"><b>${n}</b><span>${esc(k)}</span></div>`));
   return `<section class="box card libbox"><div class="libtop"><div><span class="eyebrow">Biblioteca</span><div class="libtotal"><b>${L.total.toLocaleString("pt-BR")}</b><span>jogos</span></div></div>${mine&&S.canWrite?`<div class="actions" style="margin:0"><button class="btn small" data-act="profile">Editar números</button>${L.steamN?"":`<button class="btn small" data-act="steam">Conectar Steam</button>`}</div>`:""}</div><div class="libchips">${chips.join("")}</div></section>`;
+}
+
+/* importações antigas da Steam marcaram dezenas de jogos como "atualizados agora" de uma vez:
+   aqui esses lotes viram "importados" (sem data), para não lotar o feed nem mexer em temporada, liga e missões */
+function fixSteamBurst(p){
+  const G=Object.values(p.games||{}).filter(g=>g&&g.steamApp&&!g.imp&&Number(g.updatedAt)>1e9).sort((a,b)=>a.updatedAt-b.updatedAt);
+  let i=0;while(i<G.length){let j=i;while(j+1<G.length&&G[j+1].updatedAt-G[i].updatedAt<=5000)j++;
+    if(j-i+1>=5){const at=G[j].updatedAt;for(let k=i;k<=j;k++){G[k].imp=at;G[k].updatedAt=0}
+      if(!p.steamImp||p.steamImp.at<at)p.steamImp={n:j-i+1,at}}
+    i=j+1}
 }
 
 /* ---------- Ficha do jogo (estilo loja da Steam) ---------- */
@@ -2115,6 +2128,7 @@ function feedList(){
       extra:`${isDone(g)&&stars?`<div class="fstars">${stars}</div>`:""}${isDone(g)&&g.comment?`<p class="frev">“${esc(cap(g.comment,280))}”</p>`:""}`});}
   for(const [pid,p] of Object.entries(P)){
     for(const [lid,l] of Object.entries(p.lists||{}))if(l?.t)out.push({key:`l:${pid}:${lid}`,at:l.at||0,pid,html:`criou a lista <a href="#lista-${esc(pid)}-${esc(lid)}"><b>${esc(l.t)}</b></a> · ${(l.items||[]).length} jogos`});
+    if(p.steamImp?.n&&p.steamImp.at>1e9)out.push({key:`si:${pid}:${p.steamImp.at}`,at:p.steamImp.at,pid,html:`importou <b>${p.steamImp.n} jogo${p.steamImp.n>1?"s":""}</b> da Steam 🎮`});
     if(p.coop&&daysSince(p.coop.at)<15)out.push({key:`o:${pid}:${p.coop.at}`,at:p.coop.at,pid,html:`procura parceiro para <a href="#jogo-${esc(slug(p.coop.title))}"><b>${esc(p.coop.title)}</b></a>`});
     if(p.liga?.last?.mv&&p.liga.w)out.push({key:`lg:${pid}:${p.liga.w}`,at:startOf(p.liga.w)+3600e3,pid,html:p.liga.last.mv>0?`subiu para a <b>${LIGAS[p.liga.t].n}</b> ${LIGAS[p.liga.t].ic}`:`caiu para a <b>${LIGAS[p.liga.t].n}</b>`});
   }
@@ -2844,7 +2858,7 @@ function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode!=="live")ret
   fs.collection("comments").onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.comDocs=o;flattenComments();softRender()},()=>{});
   let timer=setTimeout(()=>{S.stale=true;if(S.mode==="loading")S.mode="live";renderAll()},10000);
   fs.collection("players").onSnapshot(snap=>{
-    const P={};snap.docs.forEach(d=>{const v=d.data();if(v&&v.nick)P[d.id]={...v,_id:d.id,games:v.games||{}}});S.players=P;
+    const P={};snap.docs.forEach(d=>{const v=d.data();if(v&&v.nick)P[d.id]={...v,_id:d.id,games:v.games||{}}});for(const p of Object.values(P))fixSteamBurst(p);S.players=P;
     if(!snap.metadata.fromCache){clearTimeout(timer);S.stale=false}
     const first=!S.loaded;S.loaded=true;
     if(S.mode==="loading")S.mode="live";else if(S.mode==="demo")S.prevMode="live";
