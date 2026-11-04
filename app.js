@@ -70,7 +70,7 @@ const localCover = t => {const f=S.covers&&typeof ckey==="function"?S.covers[cke
 const coverBox = (g,cls="") => {const up=g.pid&&g.coverV?mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cbg","")+mimg(`players/${g.pid}/covers/${g.gid}`,g.coverV,"cimg","Capa de "+g.title):"";const loc=!up&&localCover(g.title);const sapp=g.steamApp||(typeof infoAppid==="function"?infoAppid(g.title):null);const src=loc||(typeof steamCover==="function"&&sapp?steamCover(sapp):"")||extImg(g.coverUrl);
   const ext=!up&&src?`<img class="cbg" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><img class="cimg" src="${esc(src)}" alt="Capa de ${esc(g.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.querySelectorAll('img').forEach(i=>i.remove())">`:"";
   return `<div ${coverAttrs(g.title,cls)}>${up||ext}<span class="ini">${esc(initials(g.title))}</span></div>`};
-const glyph = (p,sm) => `<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`;
+const glyph = (p,sm) => frameWrap(p,sm,`<span class="glyph${sm?" sm":""}" style="--pc:${esc(p?.color||"#888")}" aria-hidden="true">${esc(p?.glyph||"●")}${p?._id?mimg(`players/${p._id}/media/avatar`,p.avatarV,"",""):""}</span>`);
 function fileToImg(file,max,limit,crop){
   return new Promise((res,rej)=>{
     if(!file||!/^image\//.test(file.type))return rej(new Error("tipo"));
@@ -150,7 +150,7 @@ function socialOf(pid){
 function xpOf(pid){
   const p=players()[pid];if(!p)return 0;let x=0;
   for(const g of Object.values(p.games||{})){x+=5;if(g.status==="jogando")x+=10;if(isDone(g))x+=50;if(g.status==="platinado")x+=70;if(g.comment)x+=10;if(typeof g.nota==="number")x+=5;if(g.tips)x+=30;x+=Math.min(6,(g.shots||[]).length)*10}
-  const so=socialOf(pid);x+=so.ggIn*5+so.cm*5+so.chal*100+so.days*3;return x;
+  x+=Math.max(0,Math.min(1e6,Number(p.missXp)||0));const so=socialOf(pid);x+=so.ggIn*5+so.cm*5+so.chal*100+so.days*3;return x;
 }
 function levelOf(x){const L=Math.floor(Math.sqrt(x/40))+1;const base=40*(L-1)**2,next=40*L**2;return {L,base,next,pct:(x-base)/(next-base)*100,name:(LEVEL_NAMES.find(([n])=>L>=n)||[0,"Novato"])[1]}}
 const lvlChip = pid => {const l=levelOf(xpOf(pid));return `<span class="lvl" title="${esc(l.name)}">Nv ${l.L} · ${esc(l.name)}</span>`};
@@ -172,7 +172,7 @@ const BADGES = [
   {id:"desafio",ic:"★",col:"var(--st-plat)",t:"Desafiante",ok:(s,o)=>o.chal>=1,d:(s,o)=>`${o.chal} desafio${o.chal>1?"s":""} cumprido${o.chal>1?"s":""}`},
   {id:"assiduo",ic:"30",col:"var(--tA)",t:"Assíduo",ok:(s,o)=>o.days>=30,d:(s,o)=>`${o.days} dias ativos`}
 ];
-function badgesOf(pid){const p=players()[pid];if(!p)return [];const s=stats(p),o=socialOf(pid);return BADGES.filter(b=>b.ok(s,o)).map(b=>({...b,desc:b.d(s,o)}))}
+function badgesOf(pid){const p=players()[pid];if(!p)return [];const s=stats(p),o=socialOf(pid);return BADGES.filter(b=>b.ok(s,o,pid)).map(b=>({...b,desc:b.d(s,o,pid)}))}
 function computeRarity(){const ids=Object.keys(players());const cnt={};ids.forEach(id=>badgesOf(id).forEach(b=>cnt[b.id]=(cnt[b.id]||0)+1));const r={};for(const b of BADGES){const pct=ids.length?(cnt[b.id]||0)/ids.length*100:0;r[b.id]={pct,c:pct<=20?"lendaria":pct<=40?"epica":pct<=70?"rara":"comum"}}return r}
 const RAR_L={comum:"Comum",rara:"Rara",epica:"Épica",lendaria:"Lendária"};
 const badgeHTML=(b,who)=>{const r=S.rar[b.id]||{pct:0,c:"comum"};return `<div class="badge"><span class="bi" style="background:${b.col}">${b.ic}</span><div><b>${esc(b.t)}</b>${who?esc(who)+" · ":""}${esc(b.desc)}<div class="rarline"><span class="rar ${r.c}">${RAR_L[r.c]}</span>${Math.round(r.pct)}% da galera tem</div></div></div>`};
@@ -382,6 +382,7 @@ function viewHome(){
     ${wl.length?wl.map(w=>{const d=daysUntil(w.lanc);return `<div class="rec-item">${coverBox(w.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(w.title))}" style="color:inherit">${esc(w.title)}</a></b>${w.ps.map(p=>esc(p.nick)).join(", ")}</div><div class="count">${d===null?"–":d>0?d:d===0?"Hoje":"Saiu"}<small>${d===null?"sem data":d>0?"dias":""}</small></div></div>`}).join(""):'<span class="hint">Marque jogos como “Na fila” e coloque a data de lançamento para aparecer a contagem regressiva.</span>'}</section>`;
   right+=`<section class="box card"><span class="eyebrow">Em breve</span><h3>Vem aí</h3><ul class="soon">
     <li>🎁 <b>Sorteios da galera</b>: jogos e gift cards para quem participa</li><li>Mensagens privadas</li><li>Notificações no celular</li><li>Mande sua ideia no chat #geral</li></ul></section>`;
+  const _mc=missionsCard();if(_mc){const i=left.indexOf("</section>");left=i>=0?left.slice(0,i+10)+_mc+left.slice(i+10):_mc+left}
   return `<div class="home"><div class="col">${left}</div><div class="col">${right}</div></div>`;
 }
 
@@ -424,7 +425,7 @@ function viewRanking(){
   const tt={};allGames().filter(g=>isDone(g)&&Number(g.hours)>0).forEach(g=>{const k=norm(g.title);(tt[k]||(tt[k]={title:g.title,h:[],gs:[]})).h.push(Number(g.hours));tt[k].gs.push(g)});
   const ttl=Object.values(tt).map(c=>({...c,avg:c.h.reduce((x,y)=>x+y,0)/c.h.length})).sort((x,y)=>y.gs.length-x.gs.length||y.avg-x.avg).slice(0,8);
   const row=c=>`<div class="crow">${coverBox(c.gs.find(x=>x.coverV)||c.gs[0],"mini")}<span class="ct"><a href="#jogo-${esc(slug(c.title))}" style="color:inherit">${esc(c.title)}</a></span><span class="dots">${c.gs.map(g=>glyph(g.p,true)).join("")}</span>`;
-  return `<div class="rank"><div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+  return seasonBox()+`<div class="rank"><div style="display:flex;flex-direction:column;gap:18px;min-width:0">
       ${bars(i=>xp[i],"Nível e XP","XP por zerar, platinar, escrever dicas, comentar, receber GG e cumprir desafios")}
       ${bars(i=>st[i].year,`Zerados em ${YEAR}`,"Quem mais fechou jogo este ano")}
       ${bars(i=>st[i].done,"Zerados de todos os tempos","Zerados + platinados na vida toda")}
@@ -503,9 +504,9 @@ function viewPerfil(){
   const B=badgesOf(pid);const rl=rolesOf(pid);const activeYear=Object.keys(p.days||{}).filter(k=>k.startsWith(String(YEAR))).length;
   const myL=meId()?levelOf(xpOf(meId())).L:1;const fids=friendIds(pid);const showcase=(p.showcase||[]).map(gid=>p.games?.[gid]?{...p.games[gid],gid,pid,p}:null).filter(Boolean).slice(0,3);let skin="padrao";try{skin=localStorage.getItem("zg-skin")||"padrao"}catch{}
   return `<div class="page"><a class="btn small back" href="#inicio">← Início</a>
-  <section class="box phero"><div class="pbanner" style="--pc:${esc(p.color)}">${p._id?mimg(`players/${p._id}/media/banner`,p.bannerV,"bimg",""):""}</div>
-    <div class="phead">${glyph(p)}<div class="nmw"><h2>${nk(p)}</h2>${p.title?`<div class="ptitle">${esc(p.title)}</div>`:""}
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">${lvlChip(pid)}<span class="xpinfo">${x} XP</span></div>${roleChips(pid)}</div>
+  <section class="box phero"${themeStyle(p)}>${fxLayer(p)}<div class="pbanner" style="--pc:${esc(p.color)}">${p._id?mimg(`players/${p._id}/media/banner`,p.bannerV,"bimg",""):""}</div>
+    <div class="phead">${glyph(p)}<div class="nmw"><h2>${nk(p)}${vitrineBadges(pid)}</h2>${p.title?`<div class="ptitle">${esc(p.title)}</div>`:""}
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">${lvlChip(pid)}${streakChip(p)}<span class="xpinfo">${x} XP</span></div>${roleChips(pid)}</div>
       <div class="pacts">${mine&&S.canWrite?`<button class="btn small" data-act="profile">Editar perfil</button>`:friendBtn(pid)}<button class="btn small primary" data-act="retro" data-id="${esc(pid)}">Retrospectiva ${YEAR}</button>${Object.keys(P).length>1?`<button class="btn small" data-act="compare" data-id="${esc(pid)}">Comparar</button>`:""}</div></div>
     ${p.mood||p.bio?`<div style="padding:0 18px 12px;display:flex;flex-direction:column;gap:6px">${p.mood?`<div class="mood">${esc(p.mood)}</div>`:""}${p.bio?`<p style="margin:0;max-width:65ch;white-space:pre-wrap">${esc(p.bio)}</p>`:""}</div>`:""}
     <div style="padding:0 18px 18px"><div class="xpbar"><i style="width:${l.pct}%"></i></div><div class="xpinfo" style="margin-top:4px">Nível ${l.L} · faltam ${l.next-x} XP para o ${l.L+1}</div></div></section>
@@ -1774,9 +1775,9 @@ function pessoaCard(pid){
   const amigo=mid&&P[mid]&&friendsOf(P[mid])[pid];
   const jog=Object.values(p.games||{}).filter(g=>g.status==="jogando").sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0)).slice(0,2);
   const ult=lastActive(p);
-  return `<a class="box pcard2" href="#perfil-${esc(pslug(p))}" style="--pc:${esc(p.color||"#888")}">
-    <div class="pc2top">${glyph(p)}<div class="pc2nm"><b>${nk(p)}</b>${pid===mid?' <span class="you">VOCÊ</span>':amigo?' <span class="you amigo">AMIGO</span>':""}${p.title?`<span class="ptitle">${esc(p.title)}</span>`:""}</div></div>
-    <div class="pc2meta">${lvlChip(pid)}${ult>1e9?`<span class="hint">ativo há ${ago(ult)}</span>`:""}</div>
+  return `<a class="box pcard2" href="#perfil-${esc(pslug(p))}" style="--pc:${esc(p.color||"#888")}"${cz(p).theme&&cz(p).theme!=="nenhum"?` data-th="${cz(p).theme}"`:""}>${fxLayer(p,true)}
+    <div class="pc2top">${glyph(p)}<div class="pc2nm"><b>${nk(p)}${vitrineBadges(pid)}</b>${pid===mid?' <span class="you">VOCÊ</span>':amigo?' <span class="you amigo">AMIGO</span>':""}${p.title?`<span class="ptitle">${esc(p.title)}</span>`:""}</div></div>
+    <div class="pc2meta">${lvlChip(pid)}${streakChip(p)}${ult>1e9?`<span class="hint">ativo há ${ago(ult)}</span>`:""}</div>
     ${roleChips(pid)}
     <div class="pc2stats"><span><b>${s.done}</b>zerados</span><span><b>${s.playing}</b>jogando</span><span><b>${s.plat}</b>platinas</span><span><b>${Math.round(s.hours)}</b>horas</span></div>
     ${jog.length?`<div class="pc2now"><span class="flabel">Jogando agora</span>${jog.map(g=>`<span class="tag">${esc(g.title)}</span>`).join("")}</div>`:""}
@@ -1798,13 +1799,248 @@ function viewPessoas(){
 document.addEventListener("click",e=>{const el=e.target.closest('[data-act="pessoasord"]');if(!el)return;S.pessoasOrd=el.dataset.id;renderView()});
 document.addEventListener("input",e=>{if(e.target.id!=="pessoas-q")return;S.pessoasQ=e.target.value;const pos=e.target.selectionStart;renderView();const i=document.getElementById("pessoas-q");if(i){i.focus();try{i.setSelectionRange(pos,pos)}catch{}}});
 
+/* =====================================================================
+   GAMIFICAÇÃO: missões, sequência (streak), temporadas, conquistas,
+   personalização estilo Nitro (de graça) e ligação com o Discord
+   ===================================================================== */
+const DAY=864e5;
+const startOf = k => new Date(k+"T00:00:00").getTime();
+function weekStartKey(d=new Date()){const x=new Date(d);const wd=(x.getDay()+6)%7;x.setDate(x.getDate()-wd);return dkey(x)}
+function daysUntilWeekEnd(){const wd=(new Date().getDay()+6)%7;return 7-wd}
+function daysLeftMonth(){const n=new Date();return new Date(n.getFullYear(),n.getMonth()+1,0).getDate()-n.getDate()+1}
+const cap1 = t => String(t||"").charAt(0).toUpperCase()+String(t||"").slice(1);
+const prevMonthKey = (k=monthKey()) => {const [y,m]=k.split("-").map(Number);return monthKey(new Date(y,m-2,1))};
+
+/* ---------- sequência de dias ---------- */
+function streakOf(p){
+  const d=p?.days||{};let n=0;const x=new Date();
+  if(!d[dkey(x)])x.setDate(x.getDate()-1);
+  while(d[dkey(x)]){n++;x.setDate(x.getDate()-1)}
+  return n;
+}
+function bestStreakOf(p){
+  const ks=Object.keys(p?.days||{}).sort();let best=0,cur=0,prev=null;
+  for(const k of ks){const t=startOf(k);cur=prev!==null&&Math.round((t-prev)/DAY)===1?cur+1:1;best=Math.max(best,cur);prev=t}
+  return best;
+}
+const streakMult = n => n>=30?2:n>=14?1.75:n>=7?1.5:n>=3?1.2:1;
+const streakChip = p => {const n=streakOf(p);return n>=2?`<span class="streak${n>=7?" hot":""}" title="${n} dias seguidos ativo">🔥 ${n}</span>`:""};
+
+/* ---------- missões ---------- */
+const MISS_D={
+  checkin:{t:"Marcar presença no site",xp:10,ok:(p,c)=>!!p.days?.[c.dia],act:"checkin"},
+  upd:{t:"Atualize um jogo seu (onde parou, progresso ou nota)",xp:25,ok:(p,c)=>Object.values(p.games||{}).some(g=>(g.updatedAt||0)>=c.t0),href:"#saves"},
+  react:{t:"Reaja ao jogo de alguém da galera",xp:20,ok:(p,c)=>Object.values(p.reacts||{}).some(r=>(r?.at||0)>=c.t0),href:"#estante"},
+  com:{t:"Comente no jogo de alguém",xp:25,ok:(p,c)=>comms().some(x=>x.by===p._id&&x.at>=c.t0),href:"#estante"},
+  quadro:{t:"Responda um convite ou enquete do Quadro",xp:20,ok:(p,c)=>Object.values(S.resp||{}).some(r=>(r?.[p._id]?.at||0)>=c.t0),href:"#quadro"}
+};
+const MISS_W={
+  dias4:{t:"Fique ativo em 4 dias da semana",xp:80,meta:4,prog:(p,c)=>Object.keys(p.days||{}).filter(k=>k>=c.wk).length},
+  zerar:{t:"Zere ou platine um jogo",xp:120,meta:1,prog:(p,c)=>Object.values(p.games||{}).filter(g=>isDone(g)&&(g.updatedAt||0)>=c.w0).length,href:"#saves"},
+  dica:{t:"Escreva uma dica ou guia num jogo",xp:100,meta:1,prog:(p,c)=>Object.values(p.games||{}).filter(g=>g.tips&&(g.updatedAt||0)>=c.w0).length,href:"#dicas"},
+  react5:{t:"Reaja a 5 jogos da galera",xp:80,meta:5,prog:(p,c)=>Object.values(p.reacts||{}).filter(r=>(r?.at||0)>=c.w0).length,href:"#estante"},
+  com3:{t:"Comente 3 vezes",xp:80,meta:3,prog:(p,c)=>comms().filter(x=>x.by===p._id&&x.at>=c.w0).length,href:"#estante"},
+  vote:{t:"Vote na tier list do mês",xp:60,meta:1,prog:(p,c)=>((typeof votesOf==="function"?votesOf(monthKey()):{})[p._id]?.at||0)>=c.w0?1:0,href:"#tierlist",need:()=>tierlists()[monthKey()]?.status==="aberta"},
+  coop:{t:"Peça parceiro de coop ou chame alguém pra jogar",xp:60,meta:1,prog:(p,c)=>(p.coop?.at||0)>=c.w0?1:0,act:"coop"}
+};
+function pickBy(seed,arr,n){const a=arr.slice();const out=[];let h=hash(seed);while(out.length<n&&a.length){const i=h%a.length;out.push(a.splice(i,1)[0]);h=hash(String(h)+seed)}return out}
+function missionsFor(p){
+  const dia=today(),wk=weekStartKey();const c={dia,t0:startOf(dia),wk,w0:startOf(wk)};
+  if(typeof ensureVotes==="function"&&tierlists()[monthKey()])ensureVotes(monthKey());
+  if(typeof ensureResp==="function")(typeof boardList==="function"?boardList():[]).slice(0,6).forEach(b=>ensureResp(b.id));
+  const dIds=["checkin",...pickBy("d"+dia,["upd","react","com","quadro"],2)];
+  const wPool=Object.keys(MISS_W).filter(k=>k!=="dias4"&&(!MISS_W[k].need||MISS_W[k].need()));
+  const wIds=["dias4",...pickBy("w"+wk,wPool,3)];
+  const claimed=p.miss||{};
+  const daily=dIds.map(id=>{const m=MISS_D[id];const key=`d:${dia}:${id}`;return {id,key,...m,done:!!m.ok(p,c),claimed:!!claimed[key],prog:m.ok(p,c)?1:0,meta:1}});
+  const weekly=wIds.map(id=>{const m=MISS_W[id];const key=`w:${wk}:${id}`;const pr=Math.min(m.meta,m.prog(p,c));return {id,key,...m,done:pr>=m.meta,claimed:!!claimed[key],prog:pr}});
+  const bauKey=`d:${dia}:bau`;
+  return {daily,weekly,bau:{key:bauKey,xp:40,done:daily.every(x=>x.claimed),claimed:!!claimed[bauKey]}};
+}
+async function claimMission(key,base){
+  const m=me();if(!m||!S.canWrite)return;if(m.miss?.[key]){toast("Já resgatado");return}
+  const mult=streakMult(streakOf(m));const xp=Math.round(base*mult);const mes=monthKey();
+  try{await saveMe(p=>{p.miss=p.miss||{};p.miss[key]=xp;p.missXp=(Number(p.missXp)||0)+xp;p.missN=(Number(p.missN)||0)+1;p.sxp=p.sxp||{};p.sxp[mes]=(Number(p.sxp[mes])||0)+xp;
+      const lim=dkey(new Date(Date.now()-45*DAY));for(const k of Object.keys(p.miss)){const d=k.split(":")[1]||"";if(d<lim)delete p.miss[k]}
+      const ml=monthKey(new Date(Date.now()-400*DAY));for(const k of Object.keys(p.sxp))if(k<ml)delete p.sxp[k]});
+    toast(`+${xp} XP${mult>1?` (bônus de sequência ×${mult})`:""}`);
+  }catch(err){toast(errMsg(err))}
+}
+function missionsCard(){
+  const m=me();if(!m||!S.canWrite||S.mode!=="live")return "";
+  const R=missionsFor({...m,_id:S.myId});const st=streakOf(m),mult=streakMult(st);
+  const row=x=>`<div class="mis${x.claimed?" ok":x.done?" ready":""}"><span class="mck" aria-hidden="true">${x.claimed?"✓":x.done?"!":""}</span>
+    <div class="mtx"><b>${esc(x.t)}</b>${x.meta>1?`<div class="mbar"><i style="width:${x.prog/x.meta*100}%"></i></div><span class="hint">${x.prog}/${x.meta}</span>`:""}</div>
+    ${x.claimed?`<span class="mxp done">+${m.miss?.[x.key]||x.xp}</span>`:x.done?`<button class="btn small primary" data-act="mclaim" data-k="${esc(x.key)}" data-xp="${x.xp}">Resgatar +${Math.round(x.xp*mult)}</button>`
+      :x.act==="checkin"?`<button class="btn small" data-act="mcheckin">Marcar</button>`:x.act==="coop"?`<button class="btn small" data-act="coop">Ir</button>`:x.href?`<a class="btn small" href="${x.href}">Ir</a>`:`<span class="mxp">+${x.xp}</span>`}</div>`;
+  const fd=R.daily.filter(x=>x.claimed).length,fw=R.weekly.filter(x=>x.claimed).length;
+  return `<section class="box card missions"><div class="mhead"><div><span class="eyebrow">Missões</span><h3>Hoje e nesta semana</h3></div>
+      <div class="mstreak${st>=7?" hot":""}" title="Dias seguidos ativo"><span class="fl" aria-hidden="true">🔥</span><b>${st}</b><span>${st===1?"dia":"dias"} seguidos${mult>1?` · XP ×${mult}`:""}</span></div></div>
+    <div class="mgroup"><div class="mgt"><span class="flabel">Diárias · ${fd}/${R.daily.length}</span><span class="hint">renovam à meia-noite</span></div>${R.daily.map(row).join("")}
+      <div class="mis bau${R.bau.claimed?" ok":R.bau.done?" ready":""}"><span class="mck" aria-hidden="true">🎁</span><div class="mtx"><b>Baú diário</b><span class="hint">complete as 3 diárias</span></div>
+        ${R.bau.claimed?`<span class="mxp done">+${m.miss?.[R.bau.key]||R.bau.xp}</span>`:R.bau.done?`<button class="btn small primary" data-act="mclaim" data-k="${R.bau.key}" data-xp="${R.bau.xp}">Abrir +${Math.round(R.bau.xp*mult)}</button>`:`<span class="mxp">+${R.bau.xp}</span>`}</div></div>
+    <div class="mgroup"><div class="mgt"><span class="flabel">Semanais · ${fw}/${R.weekly.length}</span><span class="hint">faltam ${daysUntilWeekEnd()} dia${daysUntilWeekEnd()>1?"s":""}</span></div>${R.weekly.map(row).join("")}</div>
+    <div class="mfoot2"><span class="hint">Sequência: 3 dias = ×1,2 · 7 = ×1,5 · 14 = ×1,75 · 30 = ×2 no XP das missões</span><a class="linkbtn" href="#ranking">Temporada ↗</a></div></section>`;
+}
+
+/* ---------- temporadas mensais ---------- */
+function seasonPts(p,mes){
+  if(!p)return 0;const dias=Object.keys(p.days||{}).filter(k=>k.startsWith(mes)).length;
+  const t0=startOf(mes+"-01"),[y,m]=mes.split("-").map(Number),t1=new Date(y,m,1).getTime();
+  const zer=Object.values(p.games||{}).filter(g=>isDone(g)&&(g.updatedAt||0)>=t0&&(g.updatedAt||0)<t1).length;
+  return (Number(p.sxp?.[mes])||0)+dias*5+zer*50;
+}
+let _seasonMemo={t:0,v:null};
+function seasonData(){
+  if(_seasonMemo.v&&Date.now()-_seasonMemo.t<3000)return _seasonMemo.v;
+  const P=players();const ids=Object.keys(P);const cur=monthKey();const champs={};const top1={},top3={};
+  let mk=prevMonthKey(cur);
+  for(let i=0;i<12;i++){const sc=ids.map(id=>[id,seasonPts(P[id],mk)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,3);
+    if(sc.length){champs[mk]=sc;sc.forEach(([id],j)=>{(top3[id]=top3[id]||[]).push(mk);if(j===0)(top1[id]=top1[id]||[]).push(mk)})}
+    mk=prevMonthKey(mk)}
+  const atual=ids.map(id=>[id,seasonPts(P[id],cur)]).sort((a,b)=>b[1]-a[1]);
+  _seasonMemo={t:Date.now(),v:{cur,atual,champs,top1,top3}};return _seasonMemo.v;
+}
+function seasonBox(){
+  const P=players();const D=seasonData();const mid=meId();const medal=["🥇","🥈","🥉"];
+  const lista=D.atual.slice(0,10);const minha=D.atual.findIndex(x=>x[0]===mid);
+  const hof=Object.entries(D.champs).slice(0,6);
+  return `<section class="box season"><div class="shead"><div><span class="eyebrow">Temporada</span><h3>${esc(cap1(monthName(D.cur)))}</h3><span class="hint">termina em ${daysLeftMonth()} dia${daysLeftMonth()>1?"s":""} · o ranking zera todo mês</span></div>
+      <div class="sprize"><b>Prêmios</b><span>🥇 Moldura e título de Campeão</span><span>🥈🥉 Moldura do Pódio</span><span>Todos: cargo no Discord</span></div></div>
+    <div class="slist">${lista.map(([id,v],i)=>`<a class="srow${id===mid?" me":""}" href="#perfil-${esc(pslug(P[id]))}"><span class="spos">${medal[i]||i+1}</span>${glyph(P[id],true)}<span class="snm">${nk(P[id])}</span>${streakChip(P[id])}<span class="spts">${v} pts</span></a>`).join("")||'<span class="hint">Ninguém pontuou ainda neste mês.</span>'}</div>
+    ${minha>9?`<div class="hint">Você está em ${minha+1}º com ${D.atual[minha][1]} pts.</div>`:""}
+    <div class="hint">Pontos: XP de missões + 5 por dia ativo + 50 por jogo zerado no mês.</div>
+    ${hof.length?`<details class="hof"><summary class="flabel">Campeões das temporadas</summary>${hof.map(([mk,sc])=>`<div class="hofrow"><b>${esc(cap1(monthName(mk)))}</b>${sc.map(([id],j)=>`<span>${medal[j]} ${nk(P[id]||{nick:"?"})}</span>`).join("")}</div>`).join("")}</details>`:""}</section>`;
+}
+
+/* ---------- conquistas novas ---------- */
+const shotsOf = p => Object.values(p?.games||{}).reduce((s,g)=>s+((g.shots||[]).length),0);
+const notas10 = p => Object.values(p?.games||{}).filter(g=>g.nota===10).length;
+BADGES.push(
+  {id:"zero50",ic:"50",col:"var(--tS)",t:"Zerador nato",ok:s=>s.done>=50,d:s=>`${s.done} zerados`},
+  {id:"zero100",ic:"💯",col:"var(--st-plat)",t:"Lenda viva",ok:s=>s.done>=100,d:s=>`${s.done} zerados`},
+  {id:"plat5",ic:"🏆",col:"var(--st-plat)",t:"Caçador de platinas",ok:s=>s.plat>=5,d:s=>`${s.plat} platinas`},
+  {id:"horas1k",ic:"⏳",col:"var(--tA)",t:"Mil horas",ok:s=>s.hours>=1000,d:s=>`${Math.round(s.hours)} h`},
+  {id:"streak7",ic:"🔥",col:"#ff7a18",t:"Em chamas",ok:(s,o,pid)=>bestStreakOf(players()[pid])>=7,d:(s,o,pid)=>`${bestStreakOf(players()[pid])} dias seguidos`},
+  {id:"streak30",ic:"☄️",col:"#ff3d00",t:"Imparável",ok:(s,o,pid)=>bestStreakOf(players()[pid])>=30,d:(s,o,pid)=>`${bestStreakOf(players()[pid])} dias seguidos`},
+  {id:"miss10",ic:"🎯",col:"var(--tC)",t:"Missionário",ok:(s,o,pid)=>(players()[pid]?.missN||0)>=10,d:(s,o,pid)=>`${players()[pid]?.missN||0} missões`},
+  {id:"miss100",ic:"🎖️",col:"var(--tB)",t:"Viciado em missões",ok:(s,o,pid)=>(players()[pid]?.missN||0)>=100,d:(s,o,pid)=>`${players()[pid]?.missN||0} missões`},
+  {id:"podio",ic:"🥉",col:"#cd7f32",t:"Pódio da temporada",ok:(s,o,pid)=>!!seasonData().top3[pid],d:(s,o,pid)=>`top 3 em ${(seasonData().top3[pid]||[]).map(monthName).join(", ")}`},
+  {id:"campeao",ic:"👑",col:"#f5c518",t:"Campeão da temporada",ok:(s,o,pid)=>!!seasonData().top1[pid],d:(s,o,pid)=>`campeão em ${(seasonData().top1[pid]||[]).map(monthName).join(", ")}`},
+  {id:"foto",ic:"📸",col:"var(--st-queue)",t:"Fotógrafo",ok:(s,o,pid)=>shotsOf(players()[pid])>=20,d:(s,o,pid)=>`${shotsOf(players()[pid])} prints`},
+  {id:"nota10",ic:"10",col:"var(--accent)",t:"Obra-prima",ok:(s,o,pid)=>notas10(players()[pid])>=5,d:(s,o,pid)=>`${notas10(players()[pid])} notas 10`},
+  {id:"popular",ic:"🤝",col:"var(--tC)",t:"Popular",ok:(s,o,pid)=>Object.keys(friendsOf(players()[pid])).length>=5,d:(s,o,pid)=>`${Object.keys(friendsOf(players()[pid])).length} amigos`},
+  {id:"nv10",ic:"X",col:"var(--tS)",t:"Dois dígitos",ok:(s,o,pid)=>levelOf(xpOf(pid)).L>=10,d:()=>"chegou ao nível 10"},
+  {id:"nv20",ic:"XX",col:"#f5c518",t:"Mito",ok:(s,o,pid)=>levelOf(xpOf(pid)).L>=20,d:()=>"chegou ao nível 20"}
+);
+const badgeMini = b => `<span class="bmini" style="--bc:${b.col}" title="${esc(b.t)} · ${esc(b.desc||"")}">${b.ic}</span>`;
+function vitrineBadges(pid){const p=players()[pid];const have=badgesOf(pid);const ids=(p?.cosm?.badges||[]).filter(id=>have.some(b=>b.id===id)).slice(0,3);
+  return ids.length?`<span class="bvit">${ids.map(id=>badgeMini(have.find(b=>b.id===id))).join("")}</span>`:""}
+
+/* ---------- personalização (desbloqueáveis) ---------- */
+const REQ_TXT = r => r.lv?`Nível ${r.lv}`:r.streak?`Sequência de ${r.streak} dias`:r.badge?`Conquista “${(BADGES.find(b=>b.id===r.badge)||{}).t||r.badge}”`:r.top1?"Campeão de temporada":r.top3?"Top 3 de temporada":r.miss?`${r.miss} missões`:"";
+function unlocked(pid,r){
+  if(!r)return true;const p=players()[pid];if(!p)return false;
+  if(r.lv&&levelOf(xpOf(pid)).L<r.lv)return false;
+  if(r.streak&&bestStreakOf(p)<r.streak)return false;
+  if(r.miss&&(p.missN||0)<r.miss)return false;
+  if(r.badge&&!badgesOf(pid).some(b=>b.id===r.badge))return false;
+  if(r.top1&&!seasonData().top1[pid])return false;
+  if(r.top3&&!seasonData().top3[pid])return false;
+  return true;
+}
+const FRAMES={nenhuma:{l:"Nenhuma"},neon:{l:"Pulso neon",r:{lv:2}},arcoiris:{l:"Arco-íris",r:{lv:3}},pixel:{l:"Pixel",r:{lv:4}},ouro:{l:"Ouro",r:{lv:5}},
+  gelo:{l:"Gelo",r:{lv:6}},coracao:{l:"Coração",r:{lv:7}},glitch:{l:"Glitch",r:{lv:8}},galaxia:{l:"Galáxia",r:{lv:10}},lendario:{l:"Lendário",r:{lv:20}},
+  fogo:{l:"Fogo",r:{streak:7}},cometa:{l:"Cometa",r:{streak:30}},raio:{l:"Raio",r:{miss:30}},platina:{l:"Platina",r:{badge:"platina"}},
+  podio:{l:"Pódio",r:{top3:true}},coroa:{l:"Coroa do campeão",r:{top1:true}}};
+const PFX={nenhum:{l:"Nenhum"},estrelas:{l:"Estrelas",r:{lv:2}},confete:{l:"Confete",r:{lv:3}},neve:{l:"Neve",r:{lv:4}},bolhas:{l:"Bolhas",r:{lv:5}},
+  coracoes:{l:"Corações",r:{lv:6}},chuva:{l:"Chuva neon",r:{lv:8}},pixels:{l:"Pixels",r:{lv:10}},aurora:{l:"Aurora",r:{lv:12}},raios:{l:"Tempestade",r:{lv:15}},
+  brasas:{l:"Brasas",r:{streak:14}},fogos:{l:"Fogos de artifício",r:{top3:true}}};
+const PTHEME={nenhum:{l:"Padrão"},duo:{l:"Duas cores",r:{lv:3}},animado:{l:"Gradiente animado",r:{lv:7}}};
+const THEMECOLORS=["#FF3B6B","#FF9F1C","#F5C518","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5","#00C9A7","#0F0F1A","#7A1F3D","#1F4E79"];
+Object.assign(NAMEMODES,{contorno:"Contorno",sombra:"Sombra 3D",arcoiris:"Arco-íris",onda:"Onda",gradanim:"Gradiente pulsante",glitch:"Glitch",fogo:"Fogo",holo:"Holográfico"});
+Object.assign(NAMEFONTS,{pixel:"Pixel",futuro:"Futurista",marcador:"Marcador",cursiva:"Cursiva",terror:"Terror",letreiro:"Letreiro"});
+const NAMEMODE_REQ={brilho:{lv:2},contorno:{lv:2},sombra:{lv:3},arcoiris:{lv:4},onda:{lv:5},gradanim:{lv:6},glitch:{lv:9},holo:{lv:12},fogo:{streak:7}};
+const NAMEFONT_REQ={pixel:{lv:3},futuro:{lv:4},marcador:{lv:5},cursiva:{lv:6},terror:{lv:7},letreiro:{lv:8}};
+const GIF_REQ={avatar:{lv:2},banner:{lv:4}};
+const cz = p => (p&&typeof p.cosm==="object"&&p.cosm)||{};
+function frameWrap(p,sm,html){const f=cz(p).frame;return f&&FRAMES[f]&&f!=="nenhuma"?`<span class="gfr fr-${f}${sm?" sm":""}">${html}</span>`:html}
+function fxLayer(p,small){const f=cz(p).fx;if(!f||!PFX[f]||f==="nenhum")return "";const n=small?8:16;
+  return `<span class="pfx fx-${f}" aria-hidden="true">${Array.from({length:n},(_,i)=>`<i style="--i:${i};--x:${(hash(f+i)%100)}%;--d:${3+hash(i+f)%5}s;--dl:-${hash(f+"d"+i)%6}s"></i>`).join("")}</span>`}
+function themeStyle(p){const t=cz(p).theme;if(!t||!PTHEME[t]||t==="nenhum")return "";const [a,b]=(cz(p).tc||[]).filter(c=>THEMECOLORS.includes(c));
+  return a?` data-th="${t}" style="--th1:${a};--th2:${b||a}"`:""}
+
+/* ---------- avatar e banner animados (GIF/WebP sem perder a animação) ---------- */
+function readRaw(file,max){return new Promise((res,rej)=>{if(file.size>max)return rej(new Error("grande"));const fr=new FileReader();fr.onload=()=>res(fr.result);fr.onerror=()=>rej(new Error("ler"));fr.readAsDataURL(file)})}
+async function animatedOrNull(file,kind){
+  if(!/^image\/(gif|webp)$/.test(file.type))return null;
+  if(!unlocked(S.myId,GIF_REQ[kind])){toast(`${kind==="avatar"?"Foto":"Banner"} animado libera no ${REQ_TXT(GIF_REQ[kind])}. Usei a imagem parada.`);return null}
+  try{return await readRaw(file,205000)}catch{toast("GIF maior que 200 KB: usei a imagem parada. Comprima em ezgif.com para manter a animação.");return null}
+}
+
+/* ---------- editor de aparência no perfil ---------- */
+function optGrid(name,dict,cur,pid,prev){
+  return `<div class="pick czgrid" data-pick="${name}">${Object.entries(dict).map(([k,o])=>{const ok=unlocked(pid,o.r);
+    return `<button type="button" class="czopt${ok?"":" locked"}" data-v="${k}" aria-pressed="${k===cur}" ${ok?"":"disabled"} title="${ok?esc(o.l):"Libera com: "+esc(REQ_TXT(o.r))}">${prev(k)}<span>${esc(o.l)}</span>${ok?"":`<small>🔒 ${esc(REQ_TXT(o.r))}</small>`}</button>`}).join("")}</div>`;
+}
+function aparenciaHTML(){
+  const pid=S.myId;const m=me()||{};const c=M.cosm;const fake=k=>({...m,_id:"",avatarV:null,cosm:{frame:k}});
+  const have=badgesOf(pid);const lv=levelOf(xpOf(pid)).L;
+  return `<div class="field full aparencia"><span class="flabel">✨ Aparência <span class="hint">· tudo de graça, libera jogando, cumprindo missões e na temporada (você está no nível ${lv})</span></span>
+    <details open><summary>Moldura do avatar</summary>${optGrid("czframe",FRAMES,c.frame,pid,k=>`<span class="czprev">${frameWrap({cosm:{frame:k}},false,glyph({...m,cosm:{}}))}</span>`)}</details>
+    <details><summary>Efeito no perfil</summary>${optGrid("czfx",PFX,c.fx,pid,k=>`<span class="czprev fxbox">${fxLayer({cosm:{fx:k}},true)}</span>`)}</details>
+    <details><summary>Tema do perfil</summary>${optGrid("czth",PTHEME,c.theme,pid,k=>`<span class="czprev thbox" data-th="${k}" style="--th1:${c.tc[0]};--th2:${c.tc[1]}"></span>`)}
+      <div class="flabel">Cores do tema</div>${pickRow("cztc1",THEMECOLORS.map(x=>({v:x,l:"",a:"cor "+x,style:`background:${x}`})),c.tc[0],"swatch")}${pickRow("cztc2",THEMECOLORS.map(x=>({v:x,l:"",a:"cor "+x,style:`background:${x}`})),c.tc[1],"swatch")}</details>
+    <details><summary>Conquistas em destaque (até 3, aparecem do lado do seu nome)</summary>${have.length?`<div class="pick czgrid" data-pick="czb">${have.map(b=>`<button type="button" class="czopt" data-v="${b.id}" aria-pressed="${c.badges.includes(b.id)}">${badgeMini(b)}<span>${esc(b.t)}</span></button>`).join("")}</div>`:'<span class="hint">Você ainda não tem conquistas. Elas aparecem no seu perfil conforme você joga.</span>'}</details>
+    <span class="hint">Foto animada (GIF/WebP até 200 KB): ${unlocked(pid,GIF_REQ.avatar)?"liberada ✓":"🔒 "+REQ_TXT(GIF_REQ.avatar)} · Banner animado: ${unlocked(pid,GIF_REQ.banner)?"liberado ✓":"🔒 "+REQ_TXT(GIF_REQ.banner)}</span></div>`;
+}
+function lockNamePickers(){
+  const pid=S.myId;
+  const lock=(name,req)=>document.querySelectorAll(`[data-pick="${name}"] button`).forEach(b=>{const r=req[b.dataset.v];if(r&&!unlocked(pid,r)){b.disabled=true;b.classList.add("locked");b.title="Libera com: "+REQ_TXT(r);b.innerHTML+=` <small>🔒</small>`}});
+  lock("nsmode",NAMEMODE_REQ);lock("nsfont",NAMEFONT_REQ);
+}
+const _openProfile0=openProfile;
+openProfile=function(){
+  _openProfile0();if(M?.type!=="profile")return;const c=cz(me());
+  M.cosm={frame:FRAMES[c.frame]?c.frame:"nenhuma",fx:PFX[c.fx]?c.fx:"nenhum",theme:PTHEME[c.theme]?c.theme:"nenhum",tc:[(c.tc||[])[0]||THEMECOLORS[6],(c.tc||[])[1]||THEMECOLORS[0]],badges:(c.badges||[]).slice(0,3)};
+  const nf=$("#nkprev")?.closest(".field");if(nf)nf.insertAdjacentHTML("afterend",aparenciaHTML());
+  lockNamePickers();
+};
+document.addEventListener("click",e=>{
+  const b=e.target.closest(".pick[data-pick] button");if(!b||M?.type!=="profile"||!M.cosm)return;
+  const name=b.parentElement.dataset.pick;if(!name.startsWith("cz"))return;
+  e.stopImmediatePropagation();if(b.disabled)return;const v=b.dataset.v;
+  if(name==="czb"){const a=M.cosm.badges;const i=a.indexOf(v);if(i<0){if(a.length>=3){toast("Escolha no máximo 3");return}a.push(v)}else a.splice(i,1);b.setAttribute("aria-pressed",i<0);return}
+  if(name==="czframe")M.cosm.frame=v;else if(name==="czfx")M.cosm.fx=v;else if(name==="czth")M.cosm.theme=v;
+  else if(name==="cztc1"||name==="cztc2"){M.cosm.tc[name==="cztc1"?0:1]=v;document.querySelectorAll(".thbox").forEach(x=>{x.style.setProperty("--th1",M.cosm.tc[0]);x.style.setProperty("--th2",M.cosm.tc[1])})}
+  b.parentElement.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+},true);
+
+/* ---------- ações das missões ---------- */
+document.addEventListener("click",e=>{
+  const el=e.target.closest('[data-act="mclaim"],[data-act="mcheckin"]');if(!el)return;
+  if(el.dataset.act==="mcheckin"){saveMe(()=>{}).then(()=>toast("Presença marcada! 🔥")).catch(err=>toast(errMsg(err)));return}
+  claimMission(el.dataset.k,Number(el.dataset.xp)||0);
+});
+
+/* ---------- resumo para o robô do Discord (nível, conquistas, sequência, temporada) ---------- */
+function lvlSnap(pid){const p=players()[pid];if(!p)return null;const x=xpOf(pid);const cur=monthKey(),pv=prevMonthKey(cur);
+  return {L:levelOf(x).L,xp:x,b:badgesOf(pid).map(b=>b.id).sort(),st:streakOf(p),s:{[cur]:seasonPts(p,cur),[pv]:seasonPts(p,pv)}}}
+const snapKey = s => s?JSON.stringify([s.L,s.b,s.st>=7?Math.floor(s.st/7):0,Object.entries(s.s||{}).map(([k,v])=>k+":"+Math.floor(v/50))]):"";
+let _snapBusy=false;
+if(typeof setInterval==="function")setInterval(()=>{
+  if(_snapBusy||S.mode!=="live"||!S.canWrite||!S.myId||!S.players?.[S.myId]||M)return;
+  const s=lvlSnap(S.myId);if(snapKey(s)===snapKey(S.players[S.myId].lvl))return;
+  _snapBusy=true;saveMe(()=>{},{noDay:true}).catch(()=>{}).finally(()=>{_snapBusy=false});
+},45000);
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
 function saveMe(mut,opt={}){return queue(async()=>{
   const cur=clone(S.players[S.myId]||{games:{}});delete cur._id;mut(cur);cur.updatedAt=Date.now();
   if(!opt.noDay){cur.days=cur.days||{};const t=today();cur.days[t]=(cur.days[t]||0)+1;const lim=dkey(new Date(Date.now()-400*864e5));for(const k of Object.keys(cur.days))if(k<lim)delete cur.days[k]}
-  delete cur._id;S.players[S.myId]={...cur,_id:S.myId};renderAll();await S.db.doc("players/"+S.myId).set(cur);
+  delete cur._id;S.players[S.myId]={...cur,_id:S.myId};try{const sn=lvlSnap(S.myId);if(sn){cur.lvl=sn;S.players[S.myId].lvl=sn}}catch{}renderAll();await S.db.doc("players/"+S.myId).set(cur);
 })}
 function flattenComments(){const out=[];for(const [uid,d] of Object.entries(S.comDocs||{}))for(const [cid,c] of Object.entries(d.items||{}))if(c&&typeof c.x==="string"&&typeof c.t==="string")out.push({cid,by:uid,t:c.t,x:c.x.slice(0,600),at:Number(c.at)||0});S.comments=out}
 function saveDocOf(col,uid,mut,prune){return queue(async()=>{
@@ -1834,7 +2070,7 @@ document.addEventListener("submit",async e=>{
       const gl=Number($("#p-goal").value);const ns={...M.ns,bold:$("#p-bold").checked};const isNew=!S.players[S.myId];
       await saveMe(p=>{if(avV!==undefined)p.avatarV=avV;if(bnV!==undefined)p.bannerV=bnV;p.nick=nick;p.nameStyle=ns;p.plats=M.plats.slice();p.plat=M.plats[0]||"";p.goal=gl>0?Math.min(365,Math.round(gl)):null;
         p.fav=$("#p-fav").value.trim();p.title=$("#p-title").value.trim();p.mood=$("#p-mood").value.trim();p.bio=$("#p-bio").value.trim();p.showcase=(M.show||[]).slice(0,3);
-        p.discord=$("#p-discord").value.trim().replace(/^@/,"");{const sv=parseSteam($("#p-steam")?.value);if(sv!==null)p.steam=sv;}{const lib={};document.querySelectorAll("[data-lib]").forEach(i=>{const n=Math.round(Number(i.value));if(n>0&&LIBPLATS.includes(i.dataset.lib))lib[i.dataset.lib]=Math.min(9999,n)});p.lib=lib;}p.color=M.color;p.glyph=M.glyph;p.games=p.games||{};p.friends=friendsOf(p)});
+        p.discord=$("#p-discord").value.trim().replace(/^@/,"");{const sv=parseSteam($("#p-steam")?.value);if(sv!==null)p.steam=sv;}{const lib={};document.querySelectorAll("[data-lib]").forEach(i=>{const n=Math.round(Number(i.value));if(n>0&&LIBPLATS.includes(i.dataset.lib))lib[i.dataset.lib]=Math.min(9999,n)});p.lib=lib;}p.color=M.color;p.glyph=M.glyph;if(M.cosm)p.cosm=clone(M.cosm);p.games=p.games||{};p.friends=friendsOf(p)});
       closeModal();toast("Perfil salvo");if(isNew||S.view==="perfil")go("perfil-"+slug(nick));
     }catch(err){$("#perr").textContent=errMsg(err)}
   }
@@ -1990,8 +2226,8 @@ document.addEventListener("change",async e=>{
   if(t.id==="p-import"&&M?.type==="profile"){const f=t.files[0];t.value="";if(!f)return;
     try{await importBackup(f);closeModal();toast("Backup importado!")}catch(err){$("#perr").textContent=err.message||"Não consegui importar esse arquivo."}return}
   if(t.id==="cmp-a"||t.id==="cmp-b"){M[t.id==="cmp-a"?"a":"b"]=t.value;drawCompare();return}
-  if(t.id==="p-avatar"&&M?.type==="profile"){const f=t.files[0];t.value="";if(!f)return;try{const d=await fileToImg(f,0,60000,{w:256,h:256});M.avatar=d;$("#avprev").innerHTML=`<span class="glyph" style="--pc:${esc(M.color)}"><img src="${d}" alt=""></span>`;$("#rmavatar").hidden=false}catch{$("#perr").textContent="Não consegui ler essa imagem."}return}
-  if(t.id==="p-banner"&&M?.type==="profile"){const f=t.files[0];t.value="";if(!f)return;try{const d=await fileToImg(f,0,170000,{w:1200,h:400});M.banner=d;$("#bnprev").innerHTML=`<img class="bimg" src="${d}" alt="">`;$("#rmbanner").hidden=false}catch{$("#perr").textContent="Não consegui ler essa imagem."}return}
+  if(t.id==="p-avatar"&&M?.type==="profile"){const f=t.files[0];t.value="";if(!f)return;try{const d=(await animatedOrNull(f,"avatar"))||await fileToImg(f,0,60000,{w:256,h:256});M.avatar=d;$("#avprev").innerHTML=`<span class="glyph" style="--pc:${esc(M.color)}"><img src="${d}" alt=""></span>`;$("#rmavatar").hidden=false}catch{$("#perr").textContent="Não consegui ler essa imagem."}return}
+  if(t.id==="p-banner"&&M?.type==="profile"){const f=t.files[0];t.value="";if(!f)return;try{const d=(await animatedOrNull(f,"banner"))||await fileToImg(f,0,170000,{w:1200,h:400});M.banner=d;$("#bnprev").innerHTML=`<img class="bimg" src="${d}" alt="">`;$("#rmbanner").hidden=false}catch{$("#perr").textContent="Não consegui ler essa imagem."}return}
   if(t.id==="g-shots"&&M){const files=[...t.files].slice(0,6-M.shots.length);t.value="";$("#gerr").textContent="";
     for(const f of files){try{const d=await fileToImg(f,1280,190000);M.shots.push({id:newId("s"),cap:"",img:d})}catch{$("#gerr").textContent="Alguma imagem não pôde ser lida."}}renderShotEditor();return}
   if(t.id==="g-cover"&&M){const f=t.files[0];t.value="";if(!f)return;try{const d=await fileToImg(f,420,180000);M.cover=d;$("#cvprev").innerHTML=`<img src="${d}" alt="">`;$("#rmcover").hidden=false}catch{$("#gerr").textContent="Não consegui ler essa imagem."}return}
