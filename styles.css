@@ -1336,3 +1336,8 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .gkinfo .frev.clamp.open{display:block}
 .gkinfo .bmore{margin-top:-2px}
 @keyframes nudge{0%,100%{transform:none}30%{transform:scale(1.015)}60%{transform:scale(.995)}}.nudge{animation:nudge .25s ease}@media (prefers-reduced-motion:reduce){.nudge{animation:none}}
+.gkinfo{width:100%}
+.gkinfo .frev,.gkinfo .frev.clamp,.gkinfo .frev.clamp.open{display:block;-webkit-line-clamp:unset;align-self:stretch;max-width:100%;overflow-wrap:anywhere}
+.gkinfo .frev.clamp{max-height:calc(1.45em * 5 + 16px);overflow:hidden;-webkit-mask-image:linear-gradient(#000 calc(100% - 26px),transparent);mask-image:linear-gradient(#000 calc(100% - 26px),transparent)}
+.gkinfo .frev.clamp.open{max-height:none;-webkit-mask-image:none;mask-image:none}
+.btext.clamp{overflow-wrap:anywhere}
