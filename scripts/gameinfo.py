@@ -15,6 +15,8 @@ import sys
 import time
 import unicodedata
 import urllib.parse
+import urllib.request
+import html
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from covers import baixar, chave, combina, romano, limpar_titulo, sem_acento  # noqa: E402
@@ -22,10 +24,10 @@ from covers import baixar, chave, combina, romano, limpar_titulo, sem_acento  # 
 PROJETO = os.environ.get("FIREBASE_PROJECT", "zerados-da-galera")
 PASTA = "info"
 INDICE = "info.json"
-MAX_POR_VEZ = 80
+MAX_POR_VEZ = 200
 VALIDADE_DIAS = 7          # jogos já lançados: atualiza a cada 7 dias
 VALIDADE_EM_BREVE = 1      # jogos que ainda vão sair: todo dia (data muda, saem novidades)
-VERSAO = 5                 # mudou o jeito de montar a ficha: refaz todas (5: gêneros da Wikipédia + estilos)
+VERSAO = 6                 # mudou o jeito de montar a ficha: refaz todas (5: gêneros da Wikipédia + estilos; 6: tags da Steam + estilos novos)
 
 
 def slug(t):
@@ -128,6 +130,7 @@ def steam(titulo):
             avaliacao = {"texto": q.get("review_score_desc", ""), "pct": round(100 * (q.get("total_positive") or 0) / tot), "total": tot}
     except Exception as e:
         print(f"  avaliações da steam falharam: {e}")
+    tags = tags_steam(appid)
     plats = [n for k, n in (("windows", "PC"), ("mac", "Mac"), ("linux", "Linux")) if (d.get("platforms") or {}).get(k)]
     return {
         "fonte": "Steam", "appid": appid, "nome": d.get("name") or titulo,
@@ -144,7 +147,22 @@ def steam(titulo):
         "imagens": [{"p": s.get("path_thumbnail"), "g": s.get("path_full")} for s in (d.get("screenshots") or [])[:8]],
         "video": next((m.get("mp4", {}).get("480") for m in (d.get("movies") or []) if m.get("mp4")), None),
         "link": f"https://store.steampowered.com/app/{appid}/",
+        "tags": tags,
     }
+
+
+def tags_steam(appid):
+    """Tags da comunidade da Steam (as mais votadas primeiro): é o que melhor diz o estilo do jogo."""
+    try:
+        req = urllib.request.Request(f"https://store.steampowered.com/app/{appid}/?l=english", headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+            "Cookie": "birthtime=0; lastagecheckage=1-January-1980; wants_mature_content=1; mature_content=1"})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            h = r.read().decode("utf-8", "replace")
+    except Exception as e:
+        print(f"  tags da steam falharam: {e}")
+        return []
+    return [html.unescape(t.strip()) for t in re.findall(r'class="app_tag"[^>]*>\s*([^<]+?)\s*<', h)][:20]
 
 
 # ---------- Wikipédia / Wikidata ----------
@@ -217,26 +235,96 @@ def wiki(titulo):
 
 
 # estilo de jogo (filtro da tier list) -> palavras que aparecem nos gêneros da Steam/Wikidata
-ESTILOS = [
+ESTILOS = [  # palavras dos gêneros (Wikipédia em português/inglês e gêneros gerais da Steam)
     ("Corrida", ("corrida", "racing", "kart", "rally", "driving")),
     ("Tiro", ("shooter", "tiro", "fps", "battle royale", "tatico em primeira")),
     ("Luta", ("fighting", "luta", "beat 'em up", "brawler")),
     ("Terror", ("horror", "terror")),
-    ("RPG", ("rpg", "jrpg", "role-playing", "role playing")),
+    ("Sobrevivência", ("sobrevivencia", "survival")),
+    ("Mundo aberto", ("mundo aberto", "open world", "sandbox")),
+    ("Metroidvania", ("metroidvania",)),
+    ("Soulslike", ("soulslike", "souls-like")),
+    ("Roguelike", ("roguelike", "roguelite", "rogue-like", "rogue-lite")),
+    ("RPG", ("rpg", "jrpg", "role-playing", "role playing", "interpretacao de papeis")),
     ("Esporte", ("esporte", "sports", "football", "soccer", "futebol", "esportivo", "basketball", "golf", "skate")),
-    ("Plataforma", ("platform", "plataforma", "metroidvania")),
-    ("Estratégia", ("estrategia", "strategy", "tactical", "tower defense", "4x")),
+    ("Plataforma", ("platform", "plataforma")),
+    ("Furtivo", ("stealth", "furtivo", "furtividade")),
+    ("Hack and slash", ("hack and slash", "hack 'n' slash")),
+    ("Estratégia", ("estrategia", "strategy", "tower defense", "4x")),
     ("Simulação", ("simulacao", "simulation", "simulator", "simulador", "management", "gerenciamento")),
     ("Puzzle", ("puzzle", "quebra-cabeca")),
-    ("Aventura", ("aventura", "adventure", "open world", "mundo aberto")),
-    ("Ação", ("acao", "action", "hack and slash", "stealth")),
+    ("Aventura", ("aventura", "adventure")),
+    ("Ação", ("acao", "action")),
 ]
 
+# tags da Steam (em inglês, minúsculas) -> estilos do site
+TAGS = {
+    "action": ["Ação"], "action-adventure": ["Ação", "Aventura"], "adventure": ["Aventura"], "exploration": ["Aventura"],
+    "rpg": ["RPG"], "action rpg": ["RPG", "Ação"], "jrpg": ["RPG"], "crpg": ["RPG"], "party-based rpg": ["RPG"],
+    "turn-based rpg": ["RPG"], "strategy rpg": ["RPG", "Estratégia"], "mmorpg": ["RPG"], "dungeon crawler": ["RPG"],
+    "fps": ["Tiro"], "shooter": ["Tiro"], "third-person shooter": ["Tiro"], "looter shooter": ["Tiro"], "hero shooter": ["Tiro"],
+    "tactical shooter": ["Tiro"], "arena shooter": ["Tiro"], "battle royale": ["Tiro"], "extraction shooter": ["Tiro"], "military": ["Tiro"],
+    "racing": ["Corrida"], "driving": ["Corrida"], "arcade racing": ["Corrida"], "sim racing": ["Corrida"], "automobile sim": ["Corrida"], "offroad": ["Corrida"],
+    "fighting": ["Luta"], "beat 'em up": ["Luta"], "2d fighter": ["Luta", "2D"], "3d fighter": ["Luta"], "martial arts": ["Luta"],
+    "horror": ["Terror"], "psychological horror": ["Terror"], "survival horror": ["Terror", "Sobrevivência"], "lovecraftian": ["Terror"],
+    "survival": ["Sobrevivência"], "open world survival craft": ["Sobrevivência", "Mundo aberto"], "survival craft": ["Sobrevivência"], "crafting": ["Sobrevivência"],
+    "open world": ["Mundo aberto"], "sandbox": ["Mundo aberto"],
+    "metroidvania": ["Metroidvania"], "souls-like": ["Soulslike"], "soulslike": ["Soulslike"],
+    "roguelike": ["Roguelike"], "roguelite": ["Roguelike"], "action roguelike": ["Roguelike"], "roguelike deckbuilder": ["Roguelike", "Estratégia"], "rogue-like": ["Roguelike"], "rogue-lite": ["Roguelike"],
+    "platformer": ["Plataforma"], "2d platformer": ["Plataforma", "2D"], "3d platformer": ["Plataforma"], "precision platformer": ["Plataforma"], "puzzle platformer": ["Plataforma", "Puzzle"],
+    "2d": ["2D"], "side scroller": ["2D"], "pixel graphics": ["2D"], "2.5d": ["2D"],
+    "stealth": ["Furtivo"], "hack and slash": ["Hack and slash"], "character action game": ["Hack and slash"],
+    "strategy": ["Estratégia"], "rts": ["Estratégia"], "turn-based strategy": ["Estratégia"], "grand strategy": ["Estratégia"], "tower defense": ["Estratégia"],
+    "4x": ["Estratégia"], "turn-based tactics": ["Estratégia"], "card battler": ["Estratégia"], "deckbuilding": ["Estratégia"], "moba": ["Estratégia"],
+    "simulation": ["Simulação"], "farming sim": ["Simulação"], "life sim": ["Simulação"], "management": ["Simulação"], "city builder": ["Simulação"],
+    "automation": ["Simulação"], "colony sim": ["Simulação"], "flight": ["Simulação"],
+    "puzzle": ["Puzzle"], "logic": ["Puzzle"],
+    "sports": ["Esporte"], "football (soccer)": ["Esporte"], "soccer": ["Esporte"], "basketball": ["Esporte"], "skateboarding": ["Esporte"], "golf": ["Esporte"],
+    "co-op": ["Cooperativo"], "online co-op": ["Cooperativo"], "local co-op": ["Cooperativo"],
+    "story rich": ["Narrativo"], "choices matter": ["Narrativo"], "visual novel": ["Narrativo"], "interactive fiction": ["Narrativo"],
+    "indie": ["Indie"],
+}
+# jogos que não estão na Steam (Nintendo, PlayStation): estilo conferido à mão
+MANUAL = {
+    "The Legend of Zelda: Tears of the Kingdom": ["Aventura", "Mundo aberto", "Ação", "Puzzle"],
+    "The Legend of Zelda: Breath of the Wild": ["Aventura", "Mundo aberto", "Ação", "Sobrevivência"],
+    "Super Mario Bros. Wonder": ["Plataforma", "2D", "Cooperativo"],
+    "Super Mario Odyssey": ["Plataforma", "Aventura"],
+    "Pokémon Legends: Arceus": ["RPG", "Mundo aberto", "Aventura"],
+    "Pokémon FireRed": ["RPG", "2D", "Aventura"],
+    "Pokémon Scarlet": ["RPG", "Mundo aberto", "Aventura"],
+    "Pokémon Violet": ["RPG", "Mundo aberto", "Aventura"],
+    "Donkey Kong Bananza": ["Plataforma", "Aventura", "Ação"],
+    "Metroid Dread": ["Metroidvania", "2D", "Ação"],
+    "Bloodborne": ["Soulslike", "RPG", "Ação", "Terror"],
+    "Demon's Souls": ["Soulslike", "RPG", "Ação"],
+    "Mario Kart 8 Deluxe": ["Corrida", "Cooperativo"],
+    "Mario Kart World": ["Corrida", "Mundo aberto", "Cooperativo"],
+    "Super Smash Bros. Ultimate": ["Luta", "2D"],
+    "Animal Crossing: New Horizons": ["Simulação"],
+}
+MANUAL_K = {chave(t): v for t, v in MANUAL.items()}
 
-def estilos(info):
-    nomes = [sem_acento(g) for g in (info.get("generos") or []) + (info.get("generosWiki") or [])]
-    achados = [nome for nome, chaves in ESTILOS if any(re.search(r"\b" + re.escape(c), g) for g in nomes for c in chaves)]
-    return achados[:4]
+
+def estilos(info, titulo=""):
+    m = MANUAL_K.get(chave(titulo or info.get("titulo") or ""))
+    if m:
+        return m[:6]
+    achados = []
+    for t in (info.get("tags") or [])[:12]:  # só as tags mais votadas
+        for e in TAGS.get(str(t).lower(), []):
+            if e not in achados:
+                achados.append(e)
+    nomes = [sem_acento(g) for g in (info.get("generosWiki") or [])]
+    if not achados:  # sem tags: gêneros gerais da Steam também valem
+        nomes += [sem_acento(g) for g in (info.get("generos") or [])]
+    for nome, chaves in ESTILOS:
+        if nome not in achados and any(re.search(r"\b" + re.escape(c), g) for g in nomes for c in chaves):
+            achados.append(nome)
+    # "Indie", "Narrativo" e "Cooperativo" só como complemento, nunca como único estilo
+    if achados and all(e in ("Indie", "Narrativo", "Cooperativo") for e in achados) and "Aventura" not in achados:
+        achados.append("Aventura")
+    return achados[:6]
 
 
 def main():
@@ -253,7 +341,7 @@ def main():
         arq = f"{PASTA}/{k[:60]}.json"
         if atual and "estilos" not in atual and not atual.get("vazio") and os.path.exists(arq):
             try:  # fichas antigas: calcula o estilo com o que já está salvo
-                atual["estilos"] = estilos(json.load(open(arq, encoding="utf-8")))
+                atual["estilos"] = estilos(json.load(open(arq, encoding="utf-8")), titulo)
             except (OSError, ValueError):
                 pass
         if atual and atual.get("v") == VERSAO:
@@ -298,7 +386,7 @@ def main():
         json.dump(info, open(f"{PASTA}/{k[:60]}.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         jogos[k] = {"titulo": titulo, "nome": info.get("nome") or titulo, "slug": slug(titulo), "em": int(agora),
                     "emBreve": bool(info.get("emBreve")), "appid": info.get("appid"),
-                    "estilos": estilos(info), "v": VERSAO}
+                    "estilos": estilos(info, titulo), "v": VERSAO}
         print(f"ficha: {titulo} ({', '.join(f['nome'] for f in info['fontes'])})")
         time.sleep(0.6)
     json.dump({"atualizadoEm": int(agora), "jogos": jogos}, open(INDICE, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
