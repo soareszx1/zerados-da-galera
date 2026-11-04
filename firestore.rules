@@ -20,6 +20,13 @@ service cloud.firestore {
         && request.auth.uid in get(/databases/$(database)/documents/roles/all).data.map
         && get(/databases/$(database)/documents/roles/all).data.map[request.auth.uid].hasAny(['admin', 'moderador']));
     }
+    // Castigo: a staff pode silenciar alguém por um tempo (mod/castigos). Quem está de castigo não comenta nem manda mensagem.
+    function muted() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/mod/castigos)
+        && request.auth.uid in get(/databases/$(database)/documents/mod/castigos).data.map
+        && get(/databases/$(database)/documents/mod/castigos).data.map[request.auth.uid].until > request.time.toMillis();
+    }
     function validImage() {
       return !('img' in request.resource.data)
         || (request.resource.data.img is string && request.resource.data.img.size() < 300000);
@@ -42,16 +49,16 @@ service cloud.firestore {
       }
     }
 
-    // Comentários: públicos; cada um escreve no próprio documento; o dono pode moderar.
+    // Comentários: públicos; cada um escreve no próprio documento (se não estiver de castigo); dono e moderadores podem apagar.
     match /comments/{uid} {
       allow read: if true;
-      allow write: if isSelf(uid) || isOwner();
+      allow write: if (isSelf(uid) && !muted()) || isOwner() || isStaff();
     }
 
     // Chat: só quem está logado e confirmou o e-mail.
     match /chat/{uid} {
       allow read: if verified();
-      allow write: if isSelf(uid) || isOwner();
+      allow write: if (isSelf(uid) && !muted()) || isOwner() || isStaff();
     }
 
     // Cargos e configurações do site: só o dono muda.
@@ -100,10 +107,16 @@ service cloud.firestore {
       allow delete: if isStaff();
     }
 
-    // Denúncias: cada um escreve as suas; só o dono lê todas.
+    // Denúncias: cada um escreve as suas; dono e moderadores leem todas.
     match /reports/{uid} {
-      allow read: if isOwner() || isSelf(uid);
+      allow read: if isOwner() || isStaff() || isSelf(uid);
       allow write: if isSelf(uid);
+    }
+
+    // Moderação: castigos, denúncias resolvidas e registro de ações. Todo logado lê (para saber se está de castigo); só a staff escreve.
+    match /mod/{doc} {
+      allow read: if signedIn();
+      allow write: if isStaff();
     }
 
     // Qualquer outro caminho: bloqueado.

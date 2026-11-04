@@ -280,7 +280,7 @@ function renderView(){
     V.innerHTML=`<section class="box hero-empty"><div class="big">P1<br>START</div><div><h2>Ninguém deu start ainda</h2>
       <p>Crie seu perfil, cadastre os jogos que você já zerou na vida, os que zerou em ${YEAR} e o que está jogando agora. Depois chame a galera.</p>
       <div class="actions">${S.mode==="live"&&S.canWrite?`<button class="btn primary" data-act="profile">Criar meu perfil</button>`:""}<button class="btn" data-act="demo">Ver como fica com exemplo</button></div></div></section>`;return}
-  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,pessoas:viewPessoas,feed:viewFeed,listas:viewListas,lista:viewLista,reviews:viewReviews,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
+  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,pessoas:viewPessoas,feed:viewFeed,listas:viewListas,lista:viewLista,reviews:viewReviews,moderacao:viewModeracao,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
   const log0=$("#chatlog");const nearBottom=!log0||log0.scrollHeight-log0.scrollTop-log0.clientHeight<80;const focused=document.activeElement?.id;
   // guarda o que a pessoa está digitando: a tela é redesenhada quando chegam dados novos e o texto não pode sumir
   const keep={};let caret=null;
@@ -485,7 +485,7 @@ function viewJogo(){
         ${reactRow(g)}<a class="cbtn" href="#${saveHash(g.pid,g.gid)}">Ver o save de ${esc(g.p.nick)} →</a></div><span class="nota">${fmtNota(g.nota)}<small>/10</small></span></div>`).join("")||'<span class="hint">Ninguém cadastrou ainda.</span>'}
     </div></section>
     <section class="box card" id="conversa"><span class="eyebrow">Conversa</span><h3>${th.length?`${th.length} comentário${th.length>1?"s":""}`:"Comece a conversa"}</h3>
-      <div class="thread">${th.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===mid||S.isOwner);return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}</div><p>${esc(c.x)}</p></div></div>`}).join("")}</div>
+      <div class="thread">${th.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===mid||S.isOwner||isStaff());return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}${repBtn("c",c.cid,c.by)}</div><p>${esc(c.x)}</p></div></div>`}).join("")}</div>
       ${m&&S.canWrite?`<div class="composer"><label class="flabel" for="cmt-text">Seu comentário</label><textarea id="cmt-text" maxlength="600" placeholder="Pergunte, dê dica, conte onde travou…"></textarea><div><button class="btn small primary" data-act="csend" data-t="${esc(sl)}">Enviar</button></div></div>`:`<span class="hint">${S.mode==="demo"?"No modo exemplo não dá para comentar.":"Crie seu perfil para comentar."}</span>`}
     </section></div>`;
 }
@@ -598,13 +598,13 @@ function viewChat(){
       ${S.room!=="geral"&&mid&&room.by===mid?`<button class="btn small ghost" data-act="editgroup" data-id="${esc(S.room)}">Editar grupo</button>`:""}</header>
       <div class="chatlog" id="chatlog">${msgs.map((m,i)=>{const p=players()[m.by];if(!p)return "";const prev=msgs[i-1];
         const dia=dkey(new Date(m.at)),novoDia=!prev||dkey(new Date(prev.at))!==dia;const cont=!novoDia&&prev&&prev.by===m.by&&m.at-prev.at<300000;
-        const can=S.mode==="live"&&(m.by===mid||S.isOwner),mine=S.mode==="live"&&m.by===mid;const hh=horaMsg(m.at);const editing=!!m.mid&&S.chatEdit===m.mid;
+        const can=S.mode==="live"&&(m.by===mid||S.isOwner||isStaff()),mine=S.mode==="live"&&m.by===mid;const hh=horaMsg(m.at);const editing=!!m.mid&&S.chatEdit===m.mid;
         return `${novoDia?`<div class="daysep"><span>${esc(diaMsg(m.at))}</span></div>`:""}<div class="msg${cont?" grp":""}${mine?" mine":""}">
           <div class="mav">${cont?`<span class="mtime" title="${esc(new Date(m.at).toLocaleString("pt-BR"))}">${hh}</span>`:`<a href="#perfil-${esc(pslug(p))}" aria-label="Perfil de ${esc(p.nick)}">${glyph(p)}</a>`}</div>
           <div class="mb">${cont?"":`<div class="mhead2"><a class="mnick" href="#perfil-${esc(pslug(p))}">${nk(p)}</a><time title="${esc(new Date(m.at).toLocaleString("pt-BR"))}">${esc(quandoMsg(m.at))}</time></div>`}
             ${editing?`<div class="ced"><textarea id="med-${esc(m.mid)}" maxlength="800" aria-label="Editar mensagem">${esc(S.chatEditText??m.x)}</textarea><div class="facts"><button class="btn small primary" data-act="medsave" data-id="${esc(m.mid)}">Salvar</button><button class="btn small ghost" data-act="medcancel">Cancelar</button></div></div>`
             :`<p>${esc(m.x)}${m.ed?` <span class="edtag hint">(editado)</span>`:""}</p>`}
-          </div>${can&&!editing?`<div class="mtools">${mine?`<button class="linkbtn" data-act="medit" data-id="${esc(m.mid)}" aria-label="Editar mensagem">editar</button>`:""}<button class="linkbtn" data-act="mdel" data-id="${esc(m.mid)}" data-by="${esc(m.by)}" aria-label="Apagar mensagem">apagar</button></div>`:""}</div>`}).join("")||'<div class="hint" style="padding:20px">Nenhuma mensagem ainda. Mande a primeira.</div>'}</div>
+          </div>${!can&&!editing&&m.mid?`<div class="mtools">${repBtn("m",m.mid,m.by)}</div>`:""}${can&&!editing?`<div class="mtools">${!mine?repBtn("m",m.mid,m.by):""}${mine?`<button class="linkbtn" data-act="medit" data-id="${esc(m.mid)}" aria-label="Editar mensagem">editar</button>`:""}<button class="linkbtn" data-act="mdel" data-id="${esc(m.mid)}" data-by="${esc(m.by)}" aria-label="Apagar mensagem">apagar</button></div>`:""}</div>`}).join("")||'<div class="hint" style="padding:20px">Nenhuma mensagem ainda. Mande a primeira.</div>'}</div>
       ${mid&&S.canWrite?`<form class="chatform" id="chatform"><label class="flabel" for="chat-text" hidden>Mensagem</label><textarea id="chat-text" maxlength="800" rows="1" placeholder="Mensagem para ${S.room==="geral"?"#geral":esc(room.name)}"></textarea><button class="btn primary" type="submit">Enviar</button></form>
         <div class="hint" style="padding:0 12px 10px">O chat só aparece para quem está logado. Grupos organizam a conversa, mas qualquer membro logado consegue ler.</div>`:`<div class="hint" style="padding:12px">${S.mode==="demo"?"No modo exemplo não dá para mandar mensagem.":"Crie seu perfil para conversar."}</div>`}
     </section></div>`;
@@ -1467,7 +1467,7 @@ function boardCard(b,compact){
       ${isStaff()?`<span class="bacts"><button class="linkbtn" data-act="bpin" data-id="${esc(b.id)}">${b.pinned?"desafixar":"fixar"}</button><button class="linkbtn" data-act="bedit" data-id="${esc(b.id)}">editar</button><button class="linkbtn" data-act="bdel" data-id="${esc(b.id)}">apagar</button></span>`:""}</div>
     <h3>${esc(b.title)}</h3>${b.text?`<p class="btext">${esc(compact&&b.text.length>220?b.text.slice(0,220)+"…":b.text)}</p>`:""}${body}
     <div><button class="cbtn" data-act="bthread" data-id="${esc(b.id)}">${thread.length?`${thread.length} resposta${thread.length>1?"s":""}`:"Responder"}</button></div>
-    ${open?`<div class="thread">${thread.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===meId()||S.isOwner);return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}</div><p>${esc(c.x)}</p></div></div>`}).join("")}
+    ${open?`<div class="thread">${thread.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===meId()||S.isOwner||isStaff());return `<div class="cmt">${glyph(p)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}${repBtn("c",c.cid,c.by)}</div><p>${esc(c.x)}</p></div></div>`}).join("")}
       ${me()&&S.canWrite?`<div class="composer"><label class="flabel" for="cmt-text">Sua resposta</label><textarea id="cmt-text" maxlength="600"></textarea><div><button class="btn small primary" data-act="csend" data-t="${esc("quadro-"+b.id)}">Enviar</button></div></div>`:`<span class="hint">Entre para responder.</span>`}</div>`:""}
   </article>`;
 }
@@ -2111,8 +2111,8 @@ const likeBtn = key => {const L=likesOf(key);const on=L.includes(S.myId);return 
 /* ---------- comentários genéricos (feed, listas, fórum) ---------- */
 function miniThread(t,ph){
   const th=commentsFor(t);const id="ct-"+hash(t).toString(36);
-  return `<div class="mthread">${th.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===S.myId||S.isOwner);
-      return `<div class="cmt sm">${glyph(p,true)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}</div><p>${esc(c.x)}</p></div></div>`}).join("")}
+  return `<div class="mthread">${th.map(c=>{const p=players()[c.by];if(!p)return "";const can=S.mode==="live"&&(c.by===S.myId||S.isOwner||isStaff());
+      return `<div class="cmt sm">${glyph(p,true)}<div class="bubble"><div class="meta2"><b>${nk(p)}</b><span>${ago(c.at)}</span>${can?`<button class="linkbtn" data-act="cdel" data-cid="${esc(c.cid)}" data-by="${esc(c.by)}">apagar</button>`:""}${repBtn("c",c.cid,c.by)}</div><p>${esc(c.x)}</p></div></div>`}).join("")}
     ${MINE()?`<div class="mcomp"><input id="${id}" maxlength="400" placeholder="${esc(ph||"Escreva um comentário…")}" aria-label="Comentário"><button class="btn small primary" data-act="tsend" data-t="${esc(t)}" data-in="${id}">Enviar</button></div>`:""}</div>`;
 }
 function sendComment(t,x,extra){
@@ -2167,8 +2167,8 @@ function heartbeat(){
 if(typeof setInterval==="function"){setTimeout(heartbeat,8000);setInterval(heartbeat,120e3)}
 function onlineBox(){
   const P=players();const ids=onlineIds();if(!ids.length||S.mode!=="live")return "";
-  return `<section class="box card online"><span class="eyebrow">🟢 Online agora</span><div class="onl">${ids.map(id=>{const p=P[id];const j=Object.values(p.games||{}).filter(g=>g.status==="jogando").sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))[0];
-    return `<a class="onp" href="#perfil-${esc(pslug(p))}">${glyph(p)}<span><b>${nk(p)}</b>${j?`<small>jogando ${esc(j.title)}</small>`:""}</span></a>`}).join("")}</div></section>`;
+  return `<section class="box card online"><span class="eyebrow">🟢 Online agora</span><div class="onl">${ids.map(id=>{const p=P[id];const j=Object.values(p.games||{}).filter(g=>g.status==="jogando"&&(g.updatedAt||0)>Date.now()-3*864e5).sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))[0];
+    return `<a class="onp" href="#perfil-${esc(pslug(p))}">${glyph(p)}<span><b>${nk(p)}</b>${j?`<small>🎮 na estante: ${esc(j.title)}</small>`:""}</span></a>`}).join("")}</div></section>`;
 }
 
 /* ---------- LIGAS SEMANAIS (estilo Duolingo) ---------- */
@@ -2335,10 +2335,10 @@ function qHTML(q,full){
   const P=players();const p=P[q.by];if(!p)return "";const A=answersOf(q);const k=qKey(q);const open=full||S.qOpen===k;const solved=!!q.best;
   return `<article class="box qcard${solved?" solved":""}"><div class="qhead">${glyph(p,true)}<b>${nk(p)}</b><span class="hint">${ago(q.at)}${full?"":` · <a href="#jogo-${esc(q.t.slice(2))}">${esc(titleFromAny(q.t.slice(2)))}</a>`}</span>${solved?`<span class="tag ok">✅ resolvida</span>`:""}</div>
     <p class="qx">${q.h?`<span class="tag">${esc(q.h)}</span> `:""}${esc(q.x)}</p>
-    <div class="facts">${likeBtn("v:"+k).replace("♥","▲")}<button class="lk" data-act="qopen" data-id="${esc(k)}" aria-expanded="${open}">💬 ${A.length} resposta${A.length===1?"":"s"}</button>${(q.by===S.myId||S.isOwner)?`<button class="linkbtn" data-act="cdel" data-cid="${esc(q.cid)}" data-by="${esc(q.by)}">apagar</button>`:""}</div>
+    <div class="facts">${likeBtn("v:"+k).replace("♥","▲")}<button class="lk" data-act="qopen" data-id="${esc(k)}" aria-expanded="${open}">💬 ${A.length} resposta${A.length===1?"":"s"}</button>${(q.by===S.myId||S.isOwner||isStaff())?`<button class="linkbtn" data-act="cdel" data-cid="${esc(q.cid)}" data-by="${esc(q.by)}">apagar</button>`:""}${repBtn("c",q.cid,q.by)}</div>
     ${open?`<div class="answers">${A.map(a=>{const ap=P[a.by];if(!ap)return "";const best=q.best===a.by+"."+a.cid;
       return `<div class="ans${best?" best":""}">${glyph(ap,true)}<div class="bubble"><div class="meta2"><b>${nk(ap)}</b><span>${ago(a.at)}</span>${best?`<span class="tag ok">melhor resposta</span>`:""}</div><p>${esc(a.x)}</p>
-        <div class="facts">${likeBtn("v:"+a.by+"."+a.cid).replace("♥","▲")}${q.by===S.myId&&a.by!==S.myId&&!best?`<button class="linkbtn" data-act="qbest" data-q="${esc(q.cid)}" data-a="${esc(a.by+"."+a.cid)}">✅ marcar como melhor</button>`:""}${(a.by===S.myId||S.isOwner)?`<button class="linkbtn" data-act="cdel" data-cid="${esc(a.cid)}" data-by="${esc(a.by)}">apagar</button>`:""}</div></div></div>`}).join("")}
+        <div class="facts">${likeBtn("v:"+a.by+"."+a.cid).replace("♥","▲")}${q.by===S.myId&&a.by!==S.myId&&!best?`<button class="linkbtn" data-act="qbest" data-q="${esc(q.cid)}" data-a="${esc(a.by+"."+a.cid)}">✅ marcar como melhor</button>`:""}${(a.by===S.myId||S.isOwner||isStaff())?`<button class="linkbtn" data-act="cdel" data-cid="${esc(a.cid)}" data-by="${esc(a.by)}">apagar</button>`:""}${repBtn("c",a.cid,a.by)}</div></div></div>`}).join("")}
       ${MINE()?`<div class="mcomp"><input id="an-${esc(k.replace(/\W/g,""))}" maxlength="600" placeholder="Sua resposta…" aria-label="Resposta"><button class="btn small primary" data-act="tsend" data-t="${esc("a~"+k)}" data-in="an-${esc(k.replace(/\W/g,""))}">Responder</button></div>`:""}</div>`:""}</article>`;
 }
 function forumBox(sl){
@@ -2595,6 +2595,180 @@ document.addEventListener("click",e=>{
     S.chatEdit=null;S.chatEditText=null;saveDocOf("chat",S.myId,d=>{if(d.msgs?.[id]){d.msgs[id].x=x.slice(0,800);d.msgs[id].ed=Date.now()}}).then(()=>toast("Mensagem editada")).catch(err=>toast(errMsg(err)));return}
 });
 
+/* =====================================================================
+   MODERAÇÃO: Guardião (bot automático), denúncias de mensagens,
+   moderadores apagando conteúdo, castigo (silenciar por um tempo) e registro
+   ===================================================================== */
+S.mod={castigos:{},log:{},resolvidas:{}};
+
+/* ---------- 🛡️ Guardião: filtro automático ---------- */
+// ofensas pesadas, preconceito e ameaças: a mensagem é barrada
+const GUARD_BLOCK=["viado","viadinho","bichinha","traveco","sapatao","retardado","retardada","mongoloide","aleijado","crioulo","macaco imundo",
+  "filho da puta","filha da puta","fdp","arrombado","arrombada","vagabunda","piranha","vai tomar no cu","vtnc","tnc","vai se foder","vsf",
+  "se mate","vai se matar","estupr","nazista","heil hitler","lixo humano","cancer humano"];
+// palavrões comuns: passam, mas aparecem disfarçados (p*rra)
+const GUARD_MASK=["porra","caralho","merda","foda","foder","fodase","puta","pqp","krl","caralhas","bosta","cacete","desgraca","cuzao","cuzão","otario","otário","otaria","otária","desgraça","babaca","idiota","imbecil"];
+function guardNorm(t){
+  return " "+String(t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
+    .replace(/[0@4]/g,m=>({"0":"o","@":"a","4":"a"}[m])).replace(/[1!]/g,"i").replace(/3/g,"e").replace(/[5$]/g,"s").replace(/7/g,"t")
+    .replace(/\b(\w)[.\-_*](?=\w\b)/g,"$1").replace(/[^a-z\s]/g," ").replace(/(\w)\1{2,}/g,"$1$1").replace(/\s+/g," ")+" ";
+}
+const guardHas = (n,w) => {const x=w.replace(/(\w)\1+/g,"$1");const nn=n.replace(/(\w)\1+/g,"$1");return nn.includes(" "+x+" ")||(x.length>=5&&nn.includes(" "+x))};
+function guardCheck(text){
+  const n=guardNorm(text);const hit=GUARD_BLOCK.find(w=>guardHas(n,w));
+  if(hit)return {block:true,why:"linguagem ofensiva ou preconceituosa"};
+  let clean=String(text);
+  for(const w of GUARD_MASK){const re=new RegExp(`\\b(${w.split("").join("[\\W_]*")})\\b`,"gi");clean=clean.replace(re,m=>m[0]+"*".repeat(Math.max(1,m.length-2))+m[m.length-1])}
+  return {block:false,clean};
+}
+// anti-spam: muitas mensagens seguidas ou a mesma mensagem repetida
+const _sent=[];let _spamUntil=0;let _guardStrikes=[];
+function spamCheck(text){
+  const now=Date.now();if(now<_spamUntil)return `Calma! Espere ${Math.ceil((_spamUntil-now)/1000)}s para mandar de novo.`;
+  while(_sent.length&&now-_sent[0].at>15000)_sent.shift();
+  if(_sent.length>=5){_spamUntil=now+30000;return "Muitas mensagens seguidas. Espere 30 segundos."}
+  const t=norm(text);if(t.length>3&&_sent.filter(s=>s.t===t).length>=2){_spamUntil=now+20000;return "Mensagem repetida. Espere um pouquinho."}
+  _sent.push({t,at:now});return "";
+}
+function castigoDe(uid){const c=S.mod.castigos?.[uid];return c&&Number(c.until)>Date.now()?c:null}
+function guardLocked(){try{return Number(localStorage.getItem("zg-guard-lock")||0)}catch{return 0}}
+// roda antes de qualquer envio (chat, comentários, fórum, edições)
+function guardSend(field){
+  if(!field)return true;const text=field.value||"";if(!text.trim())return true;
+  const c=castigoDe(S.myId);if(c){toast(`🔇 Você está de castigo até ${new Date(c.until).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}${c.why?` · ${c.why}`:""}`);return false}
+  const lk=guardLocked();if(lk>Date.now()){toast(`🛡️ Guardião: envio pausado por ${Math.ceil((lk-Date.now())/60000)} min por mensagens ofensivas.`);return false}
+  const sp=spamCheck(text);if(sp){toast("🛡️ "+sp);return false}
+  const r=guardCheck(text);
+  if(r.block){
+    const now=Date.now();_guardStrikes=_guardStrikes.filter(t=>now-t<600000);_guardStrikes.push(now);
+    if(_guardStrikes.length>=3){try{localStorage.setItem("zg-guard-lock",String(now+600000))}catch{}}
+    toast(`🛡️ Guardião: mensagem barrada por ${r.why}. Reescreva, por favor.${_guardStrikes.length>=3?" Envio pausado por 10 min.":""}`);
+    if(S.mode==="live"&&S.myId)autoReport(text,r.why);
+    return false;
+  }
+  if(r.clean!==text)field.value=r.clean;
+  return true;
+}
+function autoReport(text,why){
+  const cur=clone(S.myReports||{items:{}});cur.items=cur.items||{};
+  cur.items[newId("r")]={target:S.myId,why:"🛡️ Guardião: "+why,x:String(text).slice(0,200),at:Date.now(),auto:true};
+  const ks=Object.entries(cur.items).sort((a,b)=>(b[1].at||0)-(a[1].at||0));if(ks.length>60)cur.items=Object.fromEntries(ks.slice(0,60));
+  S.myReports=cur;S.db.doc(`reports/${S.myId}`).set(cur).catch(()=>{});
+}
+// intercepta os botões de envio antes dos outros (fase de captura)
+const GUARD_ACTS={csend:()=>$("#cmt-text"),tsend:el=>document.getElementById(el.dataset.in),qsend:el=>document.getElementById("qx-"+el.dataset.sl),cedsave:el=>document.getElementById("ed-"+el.dataset.cid),medsave:el=>document.getElementById("med-"+el.dataset.id)};
+document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(!el)return;const f=GUARD_ACTS[el.dataset.act];if(!f||S.mode!=="live")return;
+  if(!guardSend(f(el))){e.stopImmediatePropagation();e.preventDefault()}},true);
+document.addEventListener("submit",e=>{if(e.target.id!=="chatform"||S.mode!=="live")return;if(!guardSend($("#chat-text"))){e.stopImmediatePropagation();e.preventDefault()}},true);
+document.addEventListener("keydown",e=>{if(e.key!=="Enter"||e.shiftKey||e.target.id!=="chat-text"||S.mode!=="live")return;if(!guardSend(e.target)){e.stopImmediatePropagation();e.preventDefault()}},true);
+
+/* ---------- denunciar mensagem ou comentário ---------- */
+function repBtn(kind,id,by){if(S.mode!=="live"||!S.canWrite||!me()||!id||by===S.myId)return "";return `<button class="linkbtn rep" data-act="mrep" data-k="${kind}" data-id="${esc(id)}" data-by="${esc(by)}" aria-label="Denunciar">denunciar</button>`}
+function refText(k,id,by){if(k==="m"){const m=chatData().msgs.find(x=>x.mid===id&&x.by===by);return m?{x:m.x,t:"chat:"+m.r}:null}const c=comms().find(x=>x.cid===id&&x.by===by);return c?{x:c.x,t:c.t}:null}
+function openMsgReport(k,id,by){
+  const p=players()[by];const ref=refText(k,id,by);M={type:"mrep",k,id,by,why:"Ofensa ou assédio"};
+  $("#modal").innerHTML=overlay(`<h2>Denunciar ${k==="m"?"mensagem":"comentário"}</h2>
+    <div class="repq">${p?glyph(p,true)+" "+nk(p):""}<p>“${esc(ref?.x||"")}”</p></div>
+    <div class="field"><span class="flabel">Motivo</span>${pickRow("why",["Ofensa ou assédio","Preconceito","Spam","Spoiler sem aviso","Conteúdo impróprio","Outro"].map(v=>({v,l:v})),"Ofensa ou assédio")}</div>
+    <div class="field"><label for="mrep-x">Detalhes (opcional)</label><textarea id="mrep-x" maxlength="300"></textarea></div>
+    <span class="hint">A denúncia vai para o dono e os moderadores. Quem você denunciou não fica sabendo.</span>
+    <div class="mfoot"><div class="r"><button type="button" class="btn ghost" data-act="close">Cancelar</button><button class="btn primary" type="button" data-act="mrepsend">Enviar denúncia</button></div></div>`);
+}
+
+/* ---------- castigo, registro e denúncias resolvidas ---------- */
+function modLog(acao,alvo,x){
+  if(!isStaff()||!S.db)return;const id=newId("l");
+  S.db.doc("mod/log").set({items:{[id]:{by:S.myId,acao:String(acao).slice(0,80),alvo:alvo||"",x:String(x||"").slice(0,160),at:Date.now()}}},{merge:true}).catch(()=>{});
+}
+async function castigar(uid,min,why){
+  if(!isStaff()||!uid)return;if(uid===S.myId){toast("Você não pode se castigar 😅");return}
+  if(rolesOf(uid).some(r=>r==="admin"||r==="moderador")&&!S.isOwner){toast("Só o dono castiga moderadores");return}
+  const until=Date.now()+min*60000;
+  await S.db.doc("mod/castigos").set({map:{[uid]:{until,why:String(why||"").slice(0,120),by:S.myId,at:Date.now()}}},{merge:true});
+  modLog(`castigou por ${durTxt(min)}`,uid,why);toast(`🔇 ${players()[uid]?.nick||"Pessoa"} de castigo por ${durTxt(min)}`);
+}
+async function tirarCastigo(uid){
+  if(!isStaff())return;await S.db.doc("mod/castigos").update({["map."+uid]:firebase.firestore.FieldValue.delete()});
+  modLog("tirou o castigo",uid,"");toast("Castigo retirado");
+}
+const durTxt = m => m>=10080?`${Math.round(m/10080)} semana${m>=20160?"s":""}`:m>=1440?`${Math.round(m/1440)} dia${m>=2880?"s":""}`:m>=60?`${Math.round(m/60)} h`:`${m} min`;
+const DURS=[[10,"10 min"],[60,"1 hora"],[1440,"1 dia"],[4320,"3 dias"],[10080,"1 semana"]];
+
+/* ---------- assinaturas (castigos para todos; denúncias e registro só para a staff) ---------- */
+let _modSub=null,_modStaffSub=null;
+function modSubscribe(){
+  if(S.mode!=="live"||!S.db||!S.myId)return;
+  if(!_modSub)_modSub=S.db.doc("mod/castigos").onSnapshot(sn=>{S.mod.castigos=(sn.exists&&sn.data()?.map)||{};softRender()},()=>{});
+  if(isStaff()&&!_modStaffSub){
+    const a=S.db.doc("mod/log").onSnapshot(sn=>{S.mod.log=(sn.exists&&sn.data()?.items)||{};if(S.view==="moderacao")softRender()},()=>{});
+    const b=S.db.doc("mod/resolvidas").onSnapshot(sn=>{S.mod.resolvidas=(sn.exists&&sn.data()?.map)||{};softRender()},()=>{});
+    const c=S.isOwner?null:S.db.collection("reports").onSnapshot(sn=>{const o={};sn.docs.forEach(d=>{o[d.id]=d.data()||{}});S.reports=o;softRender()},()=>{});
+    _modStaffSub=[a,b,c];
+  }
+}
+if(typeof setInterval==="function"){setTimeout(modSubscribe,4000);setInterval(modSubscribe,20000)}
+
+function allReports(){const out=[];for(const [uid,d] of Object.entries(S.reports||{}))for(const [rid,r] of Object.entries(d.items||{}))if(r)out.push({...r,rid,uid,key:uid+"."+rid});return out.sort((a,b)=>(b.at||0)-(a.at||0))}
+const openReports = () => allReports().filter(r=>!S.mod.resolvidas[r.key]);
+
+/* ---------- painel de moderação ---------- */
+function viewModeracao(){
+  if(!isStaff())return `<div class="page">${emptyBox("🛡️","Só para a staff","Esta página é do dono e dos moderadores.")}</div>`;
+  const P=players();const R=openReports();const res=allReports().filter(r=>S.mod.resolvidas[r.key]).slice(0,15);
+  const cast=Object.entries(S.mod.castigos||{}).filter(([,c])=>Number(c.until)>Date.now());
+  const log=Object.values(S.mod.log||{}).sort((a,b)=>(b.at||0)-(a.at||0)).slice(0,40);
+  const nick=id=>esc(P[id]?.nick||"?");
+  const repCard=r=>{const alvo=r.ref?.by||r.target;const pa=P[alvo];const ref=r.ref?refText(r.ref.k,r.ref.id,r.ref.by):null;const gone=r.ref&&!ref;
+    return `<article class="box modcard${r.auto?" auto":""}"><div class="mhead3"><span class="tag">${esc(r.why||"Denúncia")}</span><span class="hint">${r.auto?"detectado pelo Guardião":`por ${nick(r.uid)}`} · ${ago(r.at)}</span></div>
+      <div class="mtarget">${pa?glyph(pa,true)+" "+nk(pa):"?"}${castigoDe(alvo)?` <span class="tag">🔇 de castigo</span>`:""}</div>
+      ${ref?`<p class="mq">“${esc(ref.x)}”</p>`:r.x?`<p class="mq">“${esc(r.x)}”</p>`:""}${gone?`<span class="hint">(conteúdo já apagado)</span>`:""}${r.det?`<div class="hint">Detalhes: ${esc(r.det)}</div>`:""}
+      <div class="facts">${ref&&!gone?`<button class="btn small danger" data-act="modapaga" data-key="${esc(r.key)}">Apagar conteúdo</button>`:""}
+        ${alvo&&alvo!==S.myId?`<select class="moddur" id="dur-${esc(r.key.replace(/\W/g,""))}" aria-label="Tempo de castigo">${DURS.map(([m,l])=>`<option value="${m}">${l}</option>`).join("")}</select><button class="btn small" data-act="modcast" data-uid="${esc(alvo)}" data-key="${esc(r.key)}" data-why="${esc(r.why||"")}">🔇 Castigar</button>`:""}
+        <button class="btn small ghost" data-act="modok" data-key="${esc(r.key)}">Dispensar</button></div></article>`};
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">🛡️ Moderação</span><h3>${R.length} denúncia${R.length===1?"":"s"} aberta${R.length===1?"":"s"}</h3><span class="hint">Visível só para o dono e os moderadores.</span></div></div>
+    <div class="modgrid"><div class="col">
+      ${R.length?R.map(repCard).join(""):'<section class="box card"><span class="hint">Nenhuma denúncia aberta. Tudo em paz por aqui ✌️</span></section>'}
+      ${res.length?`<details class="box card"><summary class="flabel">Resolvidas recentemente (${res.length})</summary>${res.map(r=>`<div class="hint">${esc(r.why||"")} · ${nick(r.ref?.by||r.target)} · ${esc(S.mod.resolvidas[r.key]?.acao||"")} por ${nick(S.mod.resolvidas[r.key]?.by)}</div>`).join("")}</details>`:""}
+    </div><div class="col">
+      <section class="box card"><span class="eyebrow">🔇 Castigos ativos</span>${cast.length?cast.map(([uid,c])=>`<div class="srow">${P[uid]?glyph(P[uid],true):""}<span class="snm">${nick(uid)}<small class="hint"> até ${new Date(c.until).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}${c.why?" · "+esc(c.why):""}</small></span><button class="btn small" data-act="moduncast" data-uid="${esc(uid)}">Tirar</button></div>`).join(""):'<span class="hint">Ninguém de castigo.</span>'}
+        <div class="flabel" style="margin-top:12px">Castigar alguém</div>
+        <div class="modform"><select id="mc-uid" aria-label="Pessoa"><option value="">Escolha a pessoa…</option>${Object.keys(P).filter(id=>id!==S.myId).sort((a,b)=>P[a].nick.localeCompare(P[b].nick,"pt")).map(id=>`<option value="${esc(id)}">${esc(P[id].nick)}</option>`).join("")}</select>
+          <select id="mc-dur" aria-label="Tempo">${DURS.map(([m,l])=>`<option value="${m}">${l}</option>`).join("")}</select><input id="mc-why" maxlength="120" placeholder="Motivo (a pessoa vê)"><button class="btn small primary" data-act="modcastf">Castigar</button></div>
+        <span class="hint">De castigo, a pessoa continua vendo o site, mas não comenta nem manda mensagem no chat.</span></section>
+      <section class="box card"><span class="eyebrow">🛡️ Guardião</span><p class="hint" style="margin:0">O bot barra automaticamente ofensas, preconceito e ameaças, disfarça palavrões (p*rra) e segura spam (5 mensagens em 15 s ou mensagem repetida). Quem insiste 3 vezes fica 10 min sem enviar, e cada bloqueio aparece aqui como denúncia.</p></section>
+      <section class="box card"><span class="eyebrow">Registro</span>${log.length?log.map(l=>`<div class="hint" style="color:var(--ink)"><b>${nick(l.by)}</b> ${esc(l.acao)}${l.alvo?` · ${nick(l.alvo)}`:""}${l.x?` · “${esc(cap(l.x,60))}”`:""} <span class="hint">${ago(l.at)}</span></div>`).join(""):'<span class="hint">Nenhuma ação ainda.</span>'}</section>
+    </div></div></div>`;
+}
+if(!VIEWS.includes("moderacao"))VIEWS.push("moderacao");
+
+/* ---------- banner de castigo e botão do painel ---------- */
+const _renderBanner0=renderBanner;
+renderBanner=function(){_renderBanner0();const c=S.mode==="live"&&S.myId?castigoDe(S.myId):null;if(!c)return;
+  const B=$("#banner");if(!B||typeof B.insertAdjacentHTML!=="function")return;B.insertAdjacentHTML("beforeend",`<div class="banner mute"><span>🔇 Você está de castigo até <b>${new Date(c.until).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}</b>${c.why?` · motivo: ${esc(c.why)}`:""}. Até lá não dá para comentar nem mandar mensagem.</span></div>`)};
+const _renderActions1=renderActions;
+renderActions=function(){_renderActions1();if(S.mode!=="live"||!isStaff())return;const A=$("#actions");if(!A||typeof A.insertAdjacentHTML!=="function"||A.querySelector('[data-act="modpanel"]'))return;
+  const n=openReports().length;A.insertAdjacentHTML("beforeend",`<a class="btn" data-act="modpanel" href="#moderacao">🛡️ Moderação${n?`<span class="n">${n>9?"9+":n}</span>`:""}</a>`)};
+
+/* ---------- ações ---------- */
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(a==="mrep"){openMsgReport(el.dataset.k,el.dataset.id,el.dataset.by);return}
+  if(a==="mrepsend"&&M?.type==="mrep"){const ref=refText(M.k,M.id,M.by);const det=($("#mrep-x")?.value||"").trim();
+    try{const cur=clone(S.myReports||{items:{}});cur.items=cur.items||{};cur.items[newId("r")]={target:M.by,why:M.why,x:String(ref?.x||"").slice(0,300),det:det.slice(0,300),ref:{k:M.k,id:M.id,by:M.by},at:Date.now()};
+      await S.db.doc(`reports/${S.myId}`).set(cur);S.myReports=cur;closeModal();toast("Denúncia enviada. Obrigado por ajudar a manter a galera em paz 🛡️")}catch(err){toast(errMsg(err))}return}
+  if(!isStaff())return;
+  if(a==="modapaga"){const r=allReports().find(x=>x.key===el.dataset.key);if(!r?.ref)return;if(el.dataset.c!=="1"){el.dataset.c="1";el.textContent="Confirmar apagar";return}
+    const {k,id,by}=r.ref;const ref=refText(k,id,by);
+    try{if(k==="m")await saveDocOf("chat",by,d=>{if(d.msgs)delete d.msgs[id]});else await saveDocOf("comments",by,d=>{if(d.items)delete d.items[id]});
+      modLog(k==="m"?"apagou mensagem do chat":"apagou comentário",by,ref?.x);
+      await S.db.doc("mod/resolvidas").set({map:{[r.key]:{by:S.myId,at:Date.now(),acao:"conteúdo apagado"}}},{merge:true});toast("Conteúdo apagado")}catch(err){toast(errMsg(err))}return}
+  if(a==="modcast"){const sel=document.getElementById("dur-"+el.dataset.key.replace(/\W/g,""));const min=Number(sel?.value||60);
+    try{await castigar(el.dataset.uid,min,el.dataset.why);await S.db.doc("mod/resolvidas").set({map:{[el.dataset.key]:{by:S.myId,at:Date.now(),acao:`castigo de ${durTxt(min)}`}}},{merge:true})}catch(err){toast(errMsg(err))}return}
+  if(a==="modcastf"){const uid=$("#mc-uid")?.value;if(!uid){toast("Escolha a pessoa");return}try{await castigar(uid,Number($("#mc-dur").value),$("#mc-why").value.trim())}catch(err){toast(errMsg(err))}return}
+  if(a==="moduncast"){try{await tirarCastigo(el.dataset.uid)}catch(err){toast(errMsg(err))}return}
+  if(a==="modok"){try{await S.db.doc("mod/resolvidas").set({map:{[el.dataset.key]:{by:S.myId,at:Date.now(),acao:"dispensada"}}},{merge:true});modLog("dispensou uma denúncia","","")}catch(err){toast(errMsg(err))}return}
+});
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -2685,7 +2859,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","pessoasord","like","feedf","feedmore","feedc","qopen","tsend","qsend","qbest","listnew","listedit","listdel","listord","lsadd","lssave","metaset","pbet","presult","shareprof","sharegame","install","mclaim","mcheckin","cedit","cedsave","cedcancel","medit","medsave","medcancel","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","pessoasord","like","feedf","feedmore","feedc","qopen","tsend","qsend","qbest","listnew","listedit","listdel","listord","lsadd","lssave","metaset","pbet","presult","shareprof","sharegame","install","mclaim","mcheckin","cedit","cedsave","cedcancel","medit","medsave","medcancel","mrep","mrepsend","modapaga","modcast","modcastf","moduncast","modok","modpanel","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
@@ -2736,8 +2910,8 @@ document.addEventListener("click",async e=>{
   if(!live){if(["react","quickfila","challenge","joinclub","friend","csend"].includes(a))toast("No modo exemplo nada é salvo");return}
   if(a==="role"){if(!S.isOwner)return;const pid=el.dataset.pid,k=el.dataset.k;const cur=(S.roles[pid]||[]).slice();const i=cur.indexOf(k);if(i<0)cur.push(k);else cur.splice(i,1);const next={...S.roles,[pid]:cur};
     try{await S.db.doc("roles/all").set({map:next});S.roles=next;renderAll();toast("Cargos atualizados")}catch(err){toast(errMsg(err))}return}
-  if(a==="cdel"){const by=el.dataset.by,cid=el.dataset.cid;if(by!==S.myId&&!S.isOwner)return;saveDocOf("comments",by,d=>{if(d.items)delete d.items[cid]}).then(()=>toast("Comentário apagado")).catch(e=>toast(errMsg(e)));return}
-  if(a==="mdel"){const by=el.dataset.by,mid=el.dataset.id;if(by!==S.myId&&!S.isOwner)return;saveDocOf("chat",by,d=>{if(d.msgs)delete d.msgs[mid]}).catch(e=>toast(errMsg(e)));return}
+  if(a==="cdel"){const by=el.dataset.by,cid=el.dataset.cid;if(by!==S.myId&&!S.isOwner&&!isStaff())return;if(by!==S.myId)modLog("apagou comentário",by,(comms().find(x=>x.cid===cid&&x.by===by)||{}).x);saveDocOf("comments",by,d=>{if(d.items)delete d.items[cid]}).then(()=>toast("Comentário apagado")).catch(e=>toast(errMsg(e)));return}
+  if(a==="mdel"){const by=el.dataset.by,mid=el.dataset.id;if(by!==S.myId&&!S.isOwner&&!isStaff())return;if(by!==S.myId)modLog("apagou mensagem do chat",by,(chatData().msgs.find(x=>x.mid===mid)||{}).x);saveDocOf("chat",by,d=>{if(d.msgs)delete d.msgs[mid]}).catch(e=>toast(errMsg(e)));return}
   if(!m||!S.canWrite){toast("Crie seu perfil primeiro");return}
   if(a==="react"){const k=rkey(el.dataset.pid,el.dataset.id),r=el.dataset.r;const src=players()[el.dataset.pid]?.games?.[el.dataset.id];let added=false;
     try{await saveMe(p=>{p.reacts=p.reacts||{};const cur=reactsOf(p.reacts[k]);const arr=cur.r.slice();const i=arr.indexOf(r);if(i<0){arr.push(r);added=true}else arr.splice(i,1);if(arr.length)p.reacts[k]={r:arr,at:Date.now()};else delete p.reacts[k];
