@@ -33,6 +33,7 @@ HARDWARE = re.compile(
     r"water ?cooler|placa[- ]m[aã]e|notebook gamer|cadeira gamer|webcam|microfone|controle|joystick|dualsense|"
     r"dualshock|volante|mousepad|roteador|steam deck|rog ally|legion go|pc gamer|placa de som|hub usb)\b", re.I)
 CONSOLE = re.compile(r"\b(ps5|ps4|playstation|psn|ps plus|xbox|game pass|nintendo|switch)\b", re.I)
+FORA = re.compile(r"\b(smart ?tv|tv \d|televis|impressora|geladeira|lavadora|celular|smartphone|galaxy s\d|iphone)", re.I)
 JOGO_PC = re.compile(r"\b(steam|epic games|gog|nuuvem|jogo para pc|game pc)\b", re.I)
 
 
@@ -272,10 +273,10 @@ def promobit():
             if o.get("offer_id") in vistos:
                 continue
             vistos.add(o.get("offer_id"))
-            texto = f"{o.get('offer_title', '')} {o.get('category_slug', '')} {o.get('subcategory_slug', '')}"
-            cls = classe(texto)
-            if not cls and re.search(r"games|informatica|computador", o.get("category_slug") or ""):
-                cls = "hardware" if "informatica" in (o.get("category_slug") or "") else "console"
+            titulo = o.get("offer_title") or ""
+            if FORA.search(titulo):
+                continue
+            cls = classe(titulo)
             if not cls:
                 continue
             base = o.get("offer_old_price") if (o.get("offer_old_price") or 0) > 1 else None
