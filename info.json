@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793795024,
+ "atualizadoEm": 1793800146,
  "jogos": {
   "absolver": {
    "appid": 473690,
@@ -59,6 +59,22 @@
    "nome": "ARK: The Survival Of The Fittest",
    "slug": "ark-survival-of-the-fittest",
    "titulo": "ARK: Survival Of The Fittest",
+   "v": 6
+  },
+  "armaiii": {
+   "appid": 107410,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação",
+    "Simulação",
+    "Mundo aberto",
+    "Cooperativo"
+   ],
+   "nome": "Arma 3",
+   "slug": "arma-3",
+   "titulo": "Arma 3",
    "v": 6
   },
   "armareforger": {
@@ -139,6 +155,21 @@
    "nome": "Assassin's Creed Valhalla",
    "slug": "assassin-s-creed-valhalla",
    "titulo": "Assassin's Creed Valhalla",
+   "v": 6
+  },
+  "assettocorsacompetizione": {
+   "appid": 805550,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Simulação",
+    "Esporte",
+    "Mundo aberto"
+   ],
+   "nome": "Assetto Corsa Competizione",
+   "slug": "assetto-corsa-competizione",
+   "titulo": "Assetto Corsa Competizione",
    "v": 6
   },
   "atomicheart": {
@@ -326,7 +357,7 @@
    "v": 6
   },
   "blackdesertsaretired": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "black-desert-sa-retired",
    "titulo": "Black Desert SA (Retired)",
    "v": 6,
@@ -477,6 +508,20 @@
    "titulo": "Call of Duty®",
    "v": 6
   },
+  "callofdutyblackopsii": {
+   "appid": 202970,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Ação",
+    "Tiro",
+    "Cooperativo"
+   ],
+   "nome": "Call of Duty®: Black Ops II",
+   "slug": "call-of-duty-black-ops-ii",
+   "titulo": "Call of Duty: Black Ops II",
+   "v": 6
+  },
   "castlecrashers": {
    "appid": 204360,
    "em": 1793760094,
@@ -508,6 +553,20 @@
    "nome": "Celeste",
    "slug": "celeste",
    "titulo": "Celeste",
+   "v": 6
+  },
+  "companyofheroesii": {
+   "appid": 231430,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Estratégia",
+    "Tiro",
+    "Cooperativo"
+   ],
+   "nome": "Company of Heroes 2",
+   "slug": "company-of-heroes-2",
+   "titulo": "Company of Heroes 2",
    "v": 6
   },
   "counterstrikeii": {
@@ -650,11 +709,25 @@
    "v": 6
   },
   "dirtiii": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
    "v": 6,
    "vazio": true
+  },
+  "dirtrallyii0": {
+   "appid": 690790,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Simulação",
+    "Esporte"
+   ],
+   "nome": "DiRT Rally 2.0",
+   "slug": "dirt-rally-2-0",
+   "titulo": "DiRT Rally 2.0",
+   "v": 6
   },
   "dmcdevilmaycry": {
    "appid": 220440,
@@ -716,6 +789,23 @@
    "titulo": "Dragon's Dogma 2",
    "v": 6
   },
+  "dyinglight": {
+   "appid": 239140,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Terror",
+    "Sobrevivência",
+    "Cooperativo",
+    "Mundo aberto",
+    "Ação",
+    "Tiro"
+   ],
+   "nome": "Dying Light",
+   "slug": "dying-light",
+   "titulo": "Dying Light",
+   "v": 6
+  },
   "eldenring": {
    "appid": 1245620,
    "em": 1793760094,
@@ -746,6 +836,37 @@
    "slug": "the-elder-scrolls-online",
    "titulo": "The Elder Scrolls Online",
    "v": 6
+  },
+  "farcryvi": {
+   "appid": 2369390,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Mundo aberto",
+    "Tiro",
+    "Ação",
+    "Aventura",
+    "Cooperativo",
+    "Sobrevivência"
+   ],
+   "nome": "Far Cry® 6",
+   "slug": "far-cry-6",
+   "titulo": "Far Cry 6",
+   "v": 6
+  },
+  "fearstofathomepisode1": {
+   "em": 1793800146,
+   "slug": "fears-to-fathom-episode-1",
+   "titulo": "Fears to Fathom - Episode 1",
+   "v": 6,
+   "vazio": true
+  },
+  "fearstofathomepisodeiii": {
+   "em": 1793800146,
+   "slug": "fears-to-fathom-episode-3",
+   "titulo": "Fears to Fathom - Episode 3",
+   "v": 6,
+   "vazio": true
   },
   "fifastreet": {
    "appid": null,
@@ -805,21 +926,21 @@
    "v": 6
   },
   "forzahorizonii": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
    "v": 6,
@@ -858,14 +979,14 @@
    "v": 6
   },
   "forzamotorsportiv": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
    "v": 6,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
    "v": 6,
@@ -1006,6 +1127,23 @@
    "titulo": "Grand Theft Auto V",
    "v": 6
   },
+  "grandtheftautovenhanced": {
+   "appid": 3240220,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Mundo aberto",
+    "Ação",
+    "Tiro",
+    "Aventura",
+    "Corrida",
+    "Simulação"
+   ],
+   "nome": "Grand Theft Auto V Enhanced",
+   "slug": "grand-theft-auto-v-enhanced",
+   "titulo": "Grand Theft Auto V Enhanced",
+   "v": 6
+  },
   "grandtheftautovi": {
    "appid": null,
    "em": 1793760094,
@@ -1048,14 +1186,14 @@
    "v": 6
   },
   "granturismoiv": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
    "v": 6,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
    "v": 6,
@@ -1215,6 +1353,20 @@
    "nome": "Infamous Second Son",
    "slug": "infamous-second-son",
    "titulo": "Infamous Second Son",
+   "v": 6
+  },
+  "insurgencysandstorm": {
+   "appid": 581320,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação",
+    "Cooperativo"
+   ],
+   "nome": "Insurgency: Sandstorm",
+   "slug": "insurgency-sandstorm",
+   "titulo": "Insurgency: Sandstorm",
    "v": 6
   },
   "kurtzpel": {
@@ -1633,6 +1785,21 @@
    "titulo": "Ori and the Will of the Wisps",
    "v": 6
   },
+  "outlast": {
+   "appid": 238320,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Terror",
+    "Sobrevivência",
+    "Aventura",
+    "Ação"
+   ],
+   "nome": "Outlast",
+   "slug": "outlast",
+   "titulo": "Outlast",
+   "v": 6
+  },
   "paladins": {
    "appid": 444090,
    "em": 1793760094,
@@ -1988,7 +2155,7 @@
    "v": 6
   },
   "residentevilreverse": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "resident-evil-re-verse",
    "titulo": "Resident Evil Re:Verse",
    "v": 6,
@@ -2058,6 +2225,21 @@
    "titulo": "Resident Evil Village",
    "v": 6
   },
+  "rideiv": {
+   "appid": 1259980,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Corrida",
+    "Esporte",
+    "Mundo aberto",
+    "Simulação"
+   ],
+   "nome": "RIDE 4",
+   "slug": "ride-4",
+   "titulo": "RIDE 4",
+   "v": 6
+  },
   "riseofthetombraider": {
    "appid": 391220,
    "em": 1793760094,
@@ -2105,6 +2287,23 @@
    "nome": "Saints Row: The Third",
    "slug": "saints-row-the-third",
    "titulo": "Saints Row: The Third",
+   "v": 6
+  },
+  "satisfactory": {
+   "appid": 526870,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Simulação",
+    "Mundo aberto",
+    "Sobrevivência",
+    "Cooperativo",
+    "Aventura",
+    "Tiro"
+   ],
+   "nome": "Satisfactory",
+   "slug": "satisfactory",
+   "titulo": "Satisfactory",
    "v": 6
   },
   "seaofthieves": {
@@ -2201,6 +2400,21 @@
    "titulo": "Silver Pines",
    "v": 6
   },
+  "smiteii": {
+   "appid": 2437170,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Estratégia",
+    "Ação",
+    "Aventura",
+    "RPG"
+   ],
+   "nome": "SMITE 2",
+   "slug": "smite-2",
+   "titulo": "SMITE 2",
+   "v": 6
+  },
   "sonicpicopark": {
    "appid": 4304060,
    "em": 1793760094,
@@ -2279,6 +2493,34 @@
    "nome": "SPORE™ Galactic Adventures",
    "slug": "spore-galactic-adventures",
    "titulo": "Spore: Galactic Adventures",
+   "v": 6
+  },
+  "squad": {
+   "appid": 393380,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Ação"
+   ],
+   "nome": "Squad",
+   "slug": "squad",
+   "titulo": "Squad",
+   "v": 6
+  },
+  "squad44": {
+   "appid": 736220,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Simulação",
+    "Ação",
+    "Estratégia"
+   ],
+   "nome": "Squad 44",
+   "slug": "squad-44",
+   "titulo": "Squad 44",
    "v": 6
   },
   "stellarblade": {
@@ -2413,7 +2655,7 @@
    "v": 6
   },
   "tokyoxtremeraceriii": {
-   "em": 1793795024,
+   "em": 1793800146,
    "slug": "tokyo-xtreme-racer-3",
    "titulo": "Tokyo Xtreme Racer 3",
    "v": 6,
@@ -2434,6 +2676,22 @@
    "nome": "Rise of the Tomb Raider™",
    "slug": "tomb-raider",
    "titulo": "Tomb Raider",
+   "v": 6
+  },
+  "tomclancysghostreconwildlands": {
+   "appid": 460930,
+   "em": 1793800146,
+   "emBreve": false,
+   "estilos": [
+    "Mundo aberto",
+    "Tiro",
+    "Cooperativo",
+    "Furtivo",
+    "Ação"
+   ],
+   "nome": "Tom Clancy's Ghost Recon® Wildlands",
+   "slug": "tom-clancy-s-ghost-recon-wildlands",
+   "titulo": "Tom Clancy's Ghost Recon® Wildlands",
    "v": 6
   },
   "tomclancysrainbowsixsiege": {
