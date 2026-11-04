@@ -25,9 +25,12 @@ jobs:
         run: python scripts/covers.py
       - name: Montar fichas dos jogos (Steam + Wikipédia)
         run: python scripts/gameinfo.py
+      - name: Páginas de compartilhamento dos perfis (prévia no WhatsApp/Discord)
+        run: python scripts/sharepages.py
+        continue-on-error: true
       - name: Salvar capas no site
         run: |
           git config user.name "zerados-capas[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add covers.json covers info.json info || true
+          git add covers.json covers info.json info p || true
           if git diff --cached --quiet; then echo "Nada novo."; else git commit -m "Atualiza capas e fichas" && git pull --rebase && git push; fi
