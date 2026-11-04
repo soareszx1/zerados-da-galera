@@ -1284,3 +1284,23 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
   #actions .btn{flex:none;padding:6px 11px;font-size:13px;min-height:34px}
   #actions .btn .gly,#actions .btn img{width:22px;height:22px}
 }
+
+/* v29 — compartilhar, convite e redes */
+.shbox{max-width:560px}
+.shfmt{display:flex;gap:6px;margin:4px 0 10px}
+.shprev{display:grid;place-items:center;min-height:160px;max-height:52vh;overflow:hidden;border-radius:14px;background:var(--surface2);border:1.5px solid var(--line);margin-bottom:10px}
+.shprev img{max-height:52vh;width:auto;max-width:100%;display:block}
+.shtxt{font-size:13px;color:var(--muted);background:var(--surface2);border-radius:10px;padding:8px 10px;margin-bottom:10px;overflow-wrap:anywhere}
+.shbtns{display:flex;flex-wrap:wrap;gap:8px}
+.shbtns .btn{text-decoration:none}
+.shw{border-color:#25D366!important}.shx{border-color:#E7E9EA!important}.sht{border-color:#2AABEE!important}.shf{border-color:#1877F2!important}
+.sharerow{display:flex;gap:8px;flex-wrap:wrap;margin:-4px 0 12px}
+.gkph2 [data-act="shpc"]{margin-left:auto}
+.redeswrap{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:0 18px 12px}
+.redes{display:flex;flex-wrap:wrap;gap:6px}
+.rede{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:13px;padding:4px 10px;border-radius:999px;border:1.5px solid var(--rc,var(--line));background:color-mix(in srgb,var(--rc,var(--accent)) 12%,var(--surface2));color:var(--ink);text-decoration:none;cursor:pointer}
+.rede b{color:var(--rc,var(--accent));font-weight:800}
+.rede.add{border-style:dashed;color:var(--muted);background:transparent}
+.convby{font-size:12.5px;color:var(--muted);text-decoration:none}
+.redbox{max-width:560px}.redform{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.redform input{width:100%}
+@media (max-width:560px){.redform{grid-template-columns:1fr}}
