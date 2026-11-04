@@ -996,7 +996,7 @@ function tierRows(games,cover){
     if(!t&&!chips)return "";return `<div class="trow"><div class="tlabel t-${t||"N"}">${t||"?"}</div><div class="titems">${chips||'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
 }
 // estilos de jogo (vêm do índice de fichas: info.json → estilos)
-const ESTILOS=["Corrida","Tiro","Ação","Aventura","RPG","Luta","Terror","Esporte","Plataforma","Estratégia","Simulação","Puzzle"];
+const ESTILOS=["Ação","Aventura","RPG","Tiro","Corrida","Luta","Terror","Sobrevivência","Mundo aberto","Metroidvania","Soulslike","Roguelike","Plataforma","2D","Furtivo","Hack and slash","Estratégia","Simulação","Puzzle","Esporte","Cooperativo","Narrativo","Indie"];
 const estilosDe = t => {const e=infoIdx()[ckey(t)];return e&&Array.isArray(e.estilos)?e.estilos:[]};
 const passaEstilo = t => !S.tierGenre||estilosDe(t).includes(S.tierGenre);
 function genreSel(titles){
@@ -1026,7 +1026,7 @@ function viewTier(){
   if(S.tierWho==="mes")return tabs+viewTierMes();
   const who=P[S.tierWho];const LF=L.filter(g=>passaEstilo(g.title));
   const head=`<div class="tierhead">${glyph(who)}<div><h3>Tier list de ${nk(who)}</h3><span class="hint">${LF.filter(g=>g.tier).length} jogos${S.tierGenre?" de "+esc(S.tierGenre):""}</span></div></div>`;
-  return tabs+head+`<section class="box tierlist" aria-label="Tier list">${S.tierGenre&&!LF.some(g=>g.tier)?`<div class="trow"><div class="titems"><span class="empty-row">Nenhum jogo de ${esc(S.tierGenre)} nesta tier list.</span></div></div>`:tierRows(LF,"")}</section>`;
+  return tabs+head+`<section class="box tierlist" aria-label="Tier list">${S.tierGenre&&!LF.some(g=>g.tier)?`<div class="trow"><div class="titems"><span class="empty-row">Nenhum jogo de ${esc(S.tierGenre)} na tier list de ${nk(who)}. <button class="btn small" data-act="tiergenreclr">Ver todos os estilos</button></span></div></div>`:tierRows(LF,"")}</section>`;
 }
 /* ---------- tier list do mês por votação ---------- */
 const TSCORE={S:5,A:4,B:3,C:2,D:1};
@@ -1149,11 +1149,13 @@ function openNews(){
 }
 
 /* ---------- cliques das novidades e tier lists ---------- */
-document.addEventListener("change",e=>{if(e.target.id==="tierwho-sel"&&e.target.value){S.tierWho=e.target.value;renderView()}});
+function tierGenreFix(){if(!S.tierGenre||S.tierWho==="mes")return;const L=filtered().filter(g=>g.pid===S.tierWho&&g.tier);if(!L.some(g=>estilosDe(g.title).includes(S.tierGenre)))S.tierGenre=""}
+document.addEventListener("change",e=>{if(e.target.id==="tierwho-sel"&&e.target.value){S.tierWho=e.target.value;tierGenreFix();renderView()}});
+document.addEventListener("click",e=>{if(e.target.closest('[data-act="tiergenreclr"]')){e.stopImmediatePropagation();S.tierGenre="";renderView()}},true);
 document.addEventListener("change",e=>{if(e.target.id==="tiergenre-sel"){S.tierGenre=e.target.value;renderView()}});
 document.addEventListener("click",async e=>{
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(a==="tierwho"){S.tierWho=el.dataset.id;renderView();return}
+  if(a==="tierwho"){S.tierWho=el.dataset.id;tierGenreFix();renderView();return}
   if(a==="newsrc"){S.newsSrc=el.dataset.id;renderView();return}
   if(a==="tladd"&&M?.type==="monthly"){const v=$("#tl-add").value.trim();if(!v)return;const k=norm(v);const g=allGames().find(y=>norm(y.title)===k);
     M.pick[k]=M.pick[k]||{title:g?.title||v,coverUrl:extImg(g?.coverUrl)||""};M.pick[k].on=true;$("#tl-add").value="";drawMonthly();
@@ -2777,7 +2779,16 @@ themeStyle=function(p){const t=cz(p).theme;if(t&&SCENES[t])return ` data-th="${t
 const _viewPerfilSc=viewPerfil;
 const _renderViewSc=renderView;
 renderView=function(){_renderViewSc.apply(this,arguments);try{const ph=document.querySelector('.phero[data-th^="sc-"]');const r=document.documentElement;if(ph&&SCENES[ph.dataset.th])r.dataset.psc=ph.dataset.th;else delete r.dataset.psc}catch{}};
+function cenarioBox(){const p=me()||{};const cur=cz(p).theme||"nenhum";const pid=S.myId;
+  const opts=[["nenhum",{l:"Sem cenário",tag:"cores normais"}],...Object.entries(SCENES)];
+  return `<section class="box card scbox"><span class="eyebrow">🎮 Cenário do perfil</span><div class="sub" style="margin-top:0">Arte de jogo no topo do seu perfil e no fundo da página para quem te visita. Clique para trocar.</div><div class="scgrid">${opts.map(([k,o])=>{const ok=k==="nenhum"||unlocked(pid,o.r);
+    return `<button type="button" class="scopt${ok?"":" locked"}" data-act="scpick" data-k="${k}" aria-pressed="${k===cur}" ${ok?"":"disabled"}><span class="thbox" data-th="${k}"></span><b>${esc(o.l)}</b><small>${ok?esc(o.tag):"🔒 "+esc(REQ_TXT(o.r))}</small></button>`}).join("")}</div></section>`}
+document.addEventListener("click",e=>{const b=e.target.closest('[data-act="scpick"]');if(!b)return;e.stopImmediatePropagation();e.preventDefault();if(b.disabled||!S.canWrite)return;
+  const k=b.dataset.k;saveMe(p=>{p.cosm={...(p.cosm&&typeof p.cosm==="object"?p.cosm:{}),theme:k}},{noDay:true}).then(()=>{renderAll();toast(k==="nenhum"?"Cenário removido":"Cenário aplicado 🎮")}).catch(err=>toast(errMsg(err)))},true);
 viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
+  if(S.myId&&h.includes('<span class="eyebrow">Tema do site</span>')&&pidBySlug(S.route)===S.myId){
+    h=h.replace('<section class="box card"><span class="eyebrow">Tema do site</span>',cenarioBox()+'<section class="box card"><span class="eyebrow">Tema do site</span>');
+    h=h.replace('Vale só para você.</div>','Vale só para você. No seu perfil, se tiver cenário, as cores do cenário aparecem no meio da página; o tema do site continua no topo e nas outras páginas.</div>')}
   return h.replace(/(<section class="box phero" data-th="(sc-[a-z0-9]+)"[^>]*>)/,(m,a,k)=>SCENES[k]?a+`<span class="sctag">${esc(SCENES[k].tag)}</span>`:a)};
 
 /* ---------- escrita ---------- */
