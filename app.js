@@ -23,7 +23,7 @@ const GLYPHS = ["▲","●","■","✖","★","◆","♥","⚡"];
 const COLORS = ["#FF4D6D","#FF9F1C","#E9C400","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5"];
 const VIEWS = ["inicio","saves","quadro","pessoas","estante","tierlist","novidades","promocoes","dicas","chat","ranking"];
 const SKINS = {padrao:{l:"Padrão",lv:1,sw:"#FF3B6B"},neon:{l:"Neon",lv:3,sw:"#00C98D"},gameboy:{l:"Game Boy",lv:5,sw:"#6E8F0B"},ouro:{l:"Ouro",lv:8,sw:"#D99A00"},vapor:{l:"Vaporwave",lv:12,sw:"#FF4FD8"}};
-const LEVEL_NAMES = [[20,"Mito"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Aventureiro"],[1,"Novato"]];
+const LEVEL_NAMES = [[30,"Imortal"],[25,"Titã"],[20,"Mito"],[16,"Mestre"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Aventureiro"],[1,"Novato"]];
 
 const S = {
   mode:"loading", players:{}, comments:[], myComDoc:null, myId:null, canWrite:false, db:null, user:null, sample:null,
@@ -148,11 +148,20 @@ function socialOf(pid){
   return {ggIn,cm,chal:Object.keys(p?.challenges||{}).length,days:Object.keys(p?.days||{}).length};
 }
 function xpOf(pid){
-  const p=players()[pid];if(!p)return 0;let x=0;
-  for(const g of Object.values(p.games||{})){x+=5;if(g.status==="jogando")x+=10;if(isDone(g))x+=50;if(g.status==="platinado")x+=70;if(g.comment)x+=10;if(typeof g.nota==="number")x+=5;if(g.tips)x+=30;x+=Math.min(6,(g.shots||[]).length)*10}
-  x+=Math.max(0,Math.min(1e6,Number(p.missXp)||0));const so=socialOf(pid);x+=so.ggIn*5+so.cm*5+so.chal*100+so.days*3;return x;
+  // Equilíbrio (v22): o que você zera ESTE ANO e o que faz no site vale mais que despejar o histórico inteiro de uma vez.
+  const p=players()[pid];if(!p)return 0;let x=0;const G=Object.values(p.games||{});
+  const proprios=G.filter(g=>!g.imp),imp=G.filter(g=>g.imp);
+  x+=Math.min(200,proprios.length)*5+Math.min(300,imp.length)*2;          // estante (importados da Steam valem menos)
+  x+=Math.min(5,G.filter(g=>g.status==="jogando").length)*10;              // jogando agora (até 5)
+  const D=G.filter(isDone),ano=D.filter(g=>Number(g.year)===YEAR).length,antigos=D.length-ano;
+  x+=ano*50+Math.min(40,antigos)*25+Math.max(0,antigos-40)*10;               // zerados: do ano cheio, histórico com retorno menor
+  for(const g of G){if(g.status==="platinado")x+=70;if(g.comment)x+=10;if(typeof g.nota==="number")x+=5;if(g.tips)x+=30;x+=Math.min(6,(g.shots||[]).length)*10}
+  x+=Math.max(0,Math.min(1e6,Number(p.missXp)||0));const so=socialOf(pid);x+=Math.min(400,so.ggIn)*5+Math.min(400,so.cm)*5+so.chal*100+so.days*5;return x;
 }
-function levelOf(x){const L=Math.floor(Math.sqrt(x/40))+1;const base=40*(L-1)**2,next=40*L**2;return {L,base,next,pct:(x-base)/(next-base)*100,name:(LEVEL_NAMES.find(([n])=>L>=n)||[0,"Novato"])[1]}}
+// Curva: 30·(L−1)^2.2 — nível 5 ≈ 1 semana ativa, 10 ≈ 1 mês, 20 ≈ 4–5 meses, 30 ≈ quase 1 ano jogando e participando todo dia.
+const LV_XP = L => Math.round(30*Math.pow(Math.max(0,L-1),2.2));
+function levelOf(x){x=Math.max(0,Number(x)||0);let L=Math.floor(Math.pow(x/30,1/2.2))+1;while(LV_XP(L+1)<=x)L++;while(L>1&&LV_XP(L)>x)L--;
+  const base=LV_XP(L),next=LV_XP(L+1);return {L,base,next,pct:(x-base)/(next-base)*100,name:(LEVEL_NAMES.find(([n])=>L>=n)||[0,"Novato"])[1]}}
 const lvlChip = pid => {const l=levelOf(xpOf(pid));return `<span class="lvl" title="${esc(l.name)}">Nv ${l.L} · ${esc(l.name)}</span>`};
 const BADGES = [
   {id:"primeiro",ic:"1",col:"var(--tC)",t:"Primeiro zerado",ok:s=>s.done>=1,d:s=>`${s.done} zerado${s.done>1?"s":""}`},
@@ -1903,7 +1912,7 @@ function missionsCard(){
       :x.act==="checkin"?`<button class="btn small" data-act="mcheckin">Marcar</button>`:x.act==="coop"?`<button class="btn small" data-act="coop">Ir</button>`:x.href?`<a class="btn small" href="${x.href}">Ir</a>`:`<span class="mxp">+${x.xp}</span>`}</div>`;
   const fd=R.daily.filter(x=>x.claimed).length,fw=R.weekly.filter(x=>x.claimed).length;
   return `<section class="box card missions"><div class="mhead"><div><span class="eyebrow">Missões</span><h3>Hoje e nesta semana</h3></div>
-      <div class="mstreak${st>=7?" hot":""}" title="Dias seguidos ativo"><span class="fl" aria-hidden="true">🔥</span><b>${st}</b><span>${st===1?"dia":"dias"} seguidos${mult>1?` · XP ×${mult}`:""}</span></div></div>
+      <div class="mstreak${st>=7?" hot":""}" title="Dias seguidos ativo"><span class="fl" aria-hidden="true">🔥</span><b>${st}</b><span>${st===1?"dia seguido":"dias seguidos"}${mult>1?` · XP ×${mult}`:""}</span></div></div>
     <div class="mgroup"><div class="mgt"><span class="flabel">Diárias · ${fd}/${R.daily.length}</span><span class="hint">renovam à meia-noite</span></div>${R.daily.map(row).join("")}
       <div class="mis bau${R.bau.claimed?" ok":R.bau.done?" ready":""}"><span class="mck" aria-hidden="true">🎁</span><div class="mtx"><b>Baú diário</b><span class="hint">complete as 3 diárias</span></div>
         ${R.bau.claimed?`<span class="mxp done">+${m.miss?.[R.bau.key]||R.bau.xp}</span>`:R.bau.done?`<button class="btn small primary" data-act="mclaim" data-k="${R.bau.key}" data-xp="${R.bau.xp}">Abrir +${Math.round(R.bau.xp*mult)}</button>`:`<span class="mxp">+${R.bau.xp}</span>`}</div></div>
@@ -2421,7 +2430,7 @@ function destaquesCard(pid){
   const D=seasonData();const pos=D.atual.findIndex(x=>x[0]===pid);const L=LIGAS[ligaOf(p)];const des=Object.entries(p.desafios||{});
   const tiles=[
     rara?`<div class="dtile"><span class="dic">${badgeMini(rara)}</span><b>${esc(rara.t)}</b><span>conquista mais rara · só ${Math.max(1,Math.round(S.rar[rara.id]?.pct||0))}% da galera tem</span></div>`:"",
-    `<div class="dtile"><span class="dic">🔥</span><b>${bestStreakOf(p)} dias</b><span>maior sequência${streakOf(p)>1?` · agora ${streakOf(p)}`:""}</span></div>`,
+    `<div class="dtile"><span class="dic">🔥</span><b>${bestStreakOf(p)} ${bestStreakOf(p)===1?"dia":"dias"}</b><span>maior sequência${streakOf(p)>1?` · agora ${streakOf(p)}`:""}</span></div>`,
     `<div class="dtile"><span class="dic">${L.ic}</span><b>${L.n}</b><span>liga desta semana</span></div>`,
     pos>=0&&D.atual[pos][1]>0?`<div class="dtile"><span class="dic">🏆</span><b>${pos+1}º lugar</b><span>temporada de ${esc(monthName(D.cur))}</span></div>`:"",
     des.length?`<div class="dtile"><span class="dic">🏁</span><b>${des.length} desafio${des.length>1?"s":""}</b><span>${des.slice(-3).map(([,e])=>esc(e)).join(" · ")}</span></div>`:"",
@@ -2772,7 +2781,7 @@ document.addEventListener("click",async e=>{
 });
 
 /* ---------- v21: cenários de jogos no perfil (arte original, nada de marca registrada) ---------- */
-const SCENES={"sc-sinal": {"l": "Sinal desconhecido", "tag": "horror espacial", "r": {"lv": 4}}, "sc-fogueira": {"l": "Fogueira sombria", "tag": "fantasia sombria", "r": {"lv": 3}}, "sc-neon": {"l": "Cidade neon", "tag": "cyberpunk", "r": {"lv": 5}}, "sc-8bit": {"l": "Fliperama 8-bit", "tag": "retrô", "r": {"lv": 2}}, "sc-pista": {"l": "Pista noturna", "tag": "corrida", "r": {"lv": 6}}, "sc-ruinas": {"l": "Terra devastada", "tag": "pós-apocalipse", "r": {"lv": 7}}, "sc-oeste": {"l": "Pôr do sol no oeste", "tag": "faroeste", "r": {"lv": 8}}, "sc-reino": {"l": "Reino medieval", "tag": "medieval", "r": {"lv": 9}}, "sc-sakura": {"l": "Japão feudal", "tag": "samurai", "r": {"lv": 10}}, "sc-piratas": {"l": "Mar dos piratas", "tag": "piratas", "r": {"lv": 11}}, "sc-cosmos": {"l": "Odisseia espacial", "tag": "ficção científica", "r": {"lv": 12}}, "sc-mansao": {"l": "Mansão assombrada", "tag": "terror", "r": {"lv": 14}}};
+const SCENES={"sc-sinal": {"l": "Sinal desconhecido", "tag": "horror espacial", "r": {"lv": 4}}, "sc-fogueira": {"l": "Fogueira sombria", "tag": "fantasia sombria", "r": {"lv": 3}}, "sc-neon": {"l": "Cidade neon", "tag": "cyberpunk", "r": {"lv": 5}}, "sc-8bit": {"l": "Fliperama 8-bit", "tag": "retrô", "r": {"lv": 2}}, "sc-pista": {"l": "Pista noturna", "tag": "corrida", "r": {"lv": 6}}, "sc-ruinas": {"l": "Terra devastada", "tag": "pós-apocalipse", "r": {"lv": 7}}, "sc-oeste": {"l": "Pôr do sol no oeste", "tag": "faroeste", "r": {"lv": 8}}, "sc-reino": {"l": "Reino medieval", "tag": "medieval", "r": {"lv": 9}}, "sc-sakura": {"l": "Japão feudal", "tag": "samurai", "r": {"lv": 10}}, "sc-piratas": {"l": "Mar dos piratas", "tag": "piratas", "r": {"lv": 11}}, "sc-cosmos": {"l": "Odisseia espacial", "tag": "ficção científica", "r": {"lv": 12}}, "sc-mansao": {"l": "Mansão assombrada", "tag": "terror", "r": {"lv": 14}}, "sc-masmorra": {"l": "Masmorra", "tag": "dungeon", "r": {"lv": 13}}, "sc-fundomar": {"l": "Fundo do mar", "tag": "aquático", "r": {"lv": 15}}, "sc-arena": {"l": "Arena de luta", "tag": "luta", "r": {"lv": 16}}, "sc-vulcao": {"l": "Forja vulcânica", "tag": "vulcão", "r": {"lv": 17}}, "sc-gelo": {"l": "Picos gelados", "tag": "neve", "r": {"lv": 18}}, "sc-estadio": {"l": "Estádio à noite", "tag": "esporte", "r": {"lv": 19}}, "sc-selva": {"l": "Selva perdida", "tag": "exploração", "r": {"lv": 20}}, "sc-hangar": {"l": "Hangar de robôs", "tag": "mecha", "r": {"lv": 22}}, "sc-encantada": {"l": "Floresta encantada", "tag": "fantasia", "r": {"lv": 24}}, "sc-dunas": {"l": "Dunas e ruínas", "tag": "deserto", "r": {"lv": 26}}, "sc-buraconegro": {"l": "Horizonte de eventos", "tag": "cosmos", "r": {"lv": 30}}, "sc-inferno": {"l": "Coração em chamas", "tag": "sequência 30", "r": {"streak": 30}}, "sc-campeao": {"l": "Salão do campeão", "tag": "campeão", "r": {"top1": true}}};
 Object.entries(SCENES).forEach(([k,o])=>{PTHEME[k]={l:"🎮 "+o.l,r:o.r}});
 const _themeStyle0=themeStyle;
 themeStyle=function(p){const t=cz(p).theme;if(t&&SCENES[t])return ` data-th="${t}"`;return _themeStyle0(p)};
@@ -2789,7 +2798,7 @@ viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
   if(S.myId&&h.includes('<span class="eyebrow">Tema do site</span>')&&pidBySlug(S.route)===S.myId){
     h=h.replace('<section class="box card"><span class="eyebrow">Tema do site</span>',cenarioBox()+'<section class="box card"><span class="eyebrow">Tema do site</span>');
     h=h.replace('Vale só para você.</div>','Vale só para você. No seu perfil, se tiver cenário, as cores do cenário aparecem no meio da página; o tema do site continua no topo e nas outras páginas.</div>')}
-  return h.replace(/(<section class="box phero" data-th="(sc-[a-z0-9]+)"[^>]*>)/,(m,a,k)=>SCENES[k]?a+`<span class="sctag">${esc(SCENES[k].tag)}</span>`:a)};
+  return h};
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
