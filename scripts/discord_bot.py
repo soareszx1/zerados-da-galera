@@ -303,12 +303,18 @@ def eventos():
             if capa(g.get("coverUrl")):
                 emb["thumbnail"] = {"url": g["coverUrl"]}
             saida.append((f"g|{pid}|{gid}|{st}", None, emb))
+    ultimo_dia = ultimo_dia_do_mes()
     for mes, t in colecao("tierlists"):
         st = t.get("status")
+        tipo = mes.split("~")[1] if "~" in mes else "jogos"
+        oque = TIPOS_TL.get(tipo, "jogo")
         if st == "aberta":
             jogos = ", ".join(x.get("title", "") for x in (t.get("games") or [])[:10])
             saida.append((f"tl|{mes}|aberta", "tier", {"title": f"Votação aberta: {t.get('title') or 'Tier list do mês'}",
-                                                     "url": SITE + "#tierlist", "description": f"Vote no tier de cada jogo no site.\nNa disputa: {jogos}", "color": 0x4CC9F0}))
+                                                     "url": SITE + "#tierlist", "description": f"Vote no tier de cada {oque} no site.\nNa disputa: {jogos}", "color": 0x4CC9F0}))
+            if ultimo_dia and mes.split("~")[0] == mes_atual():
+                saida.append((f"tl|{mes}|lembrete", "tier", {"title": f"⏰ Último dia para votar: {t.get('title') or 'Tier list do mês'}",
+                                                           "url": SITE + "#tierlist", "description": f"A votação fecha com o fim do mês. Já deu o tier de cada {oque}?", "color": 0xFF9F1C}))
         elif st == "encerrada":
             final = (t.get("final") or {}).get("tiers") or {}
             linhas = [f"**{k}**: " + ", ".join(x.get("title", "") for x in final.get(k, [])) for k in "SABCD" if final.get(k)]
@@ -342,14 +348,90 @@ def eventos():
         auto = json.load(open("news.json", encoding="utf-8")).get("itens", [])
     except (OSError, ValueError):
         auto = []
-    for n in auto[:20]:
+    for n in [x for x in auto if x.get("cat") != "geek"][:20]:
         url = n.get("url") or ""
         if url.startswith("https://"):
             emb = {"title": (n.get("title") or "")[:250], "url": url, "description": (n.get("summary") or "")[:300] or None,
                    "color": 0x16A3C7, "footer": {"text": "Fonte: " + (n.get("source") or "")}}
             saida.append((f"a|{url}", "auto", emb))
+    for pid, p in jogadores.items():
+        nick = p.get("nick") or "Alguém"
+        for mid, x in (p.get("media") or {}).items():
+            if not isinstance(x, dict) or x.get("st") != "visto" or not x.get("t"):
+                continue
+            k = x.get("k") or "anime"
+            verbo = {"manga": "terminou de ler", "filme": "assistiu"}.get(k, "terminou")
+            desc = " · ".join(v for v in [TIPOS_TL.get(k, "").capitalize(), f"tier {x['tier']}" if x.get("tier") else "", f"nota {nota(x.get('nota'))}" if nota(x.get("nota")) else ""] if v)
+            if x.get("c"):
+                desc += "\n“" + str(x["c"])[:200] + "”"
+            emb = {"title": f"{nick} {verbo} {x['t']}", "url": SITE + "#midia-" + slug(x["t"]), "description": desc or None, "color": 0xB14DFF}
+            img = x.get("img") or ""
+            if img.startswith("https://"):
+                emb["thumbnail"] = {"url": img}
+            saida.append((f"m|{pid}|{mid}|visto", None, emb))
     saida.extend(eventos_gamificacao(jogadores))
+    saida.extend(resumo_semana(jogadores))
     return saida
+
+
+TIPOS_TL = {"jogos": "jogo", "anime": "anime", "serie": "série", "filme": "filme", "manga": "mangá"}
+
+
+def agora_br():
+    return time.gmtime(time.time() - 3 * 3600)  # horário de Brasília
+
+
+def mes_atual():
+    h = agora_br()
+    return f"{h.tm_year}-{h.tm_mon:02d}"
+
+
+def ultimo_dia_do_mes():
+    """True no último dia do mês (horário de Brasília), a partir das 10h."""
+    h = agora_br()
+    amanha = time.gmtime(time.time() - 3 * 3600 + 86400)
+    return amanha.tm_mon != h.tm_mon and h.tm_hour >= 10
+
+
+def resumo_semana(jogadores):
+    """Toda segunda (a partir das 10h, horário de Brasília): o que a galera fez nos últimos 7 dias."""
+    h = agora_br()
+    if h.tm_wday != 0 or h.tm_hour < 10:
+        return []
+    semana = time.strftime("%G-W%V", h)
+    limite = (time.time() - 7 * 86400) * 1000
+    zerados, ativos, geek = [], {}, 0
+    for pid, p in jogadores.items():
+        nick = p.get("nick") or "Alguém"
+        for g in (p.get("games") or {}).values():
+            try:
+                quando = float(g.get("updatedAt") or 0)
+            except (TypeError, ValueError):
+                quando = 0
+            if quando < limite:
+                continue
+            ativos[nick] = ativos.get(nick, 0) + 1
+            if g.get("status") in ("zerado", "platinado"):
+                zerados.append(f"**{nick}** {'platinou' if g.get('status') == 'platinado' else 'zerou'} {g.get('title') or 'um jogo'}")
+        for x in (p.get("media") or {}).values():
+            try:
+                if isinstance(x, dict) and float(x.get("at") or 0) >= limite:
+                    geek += 1
+                    ativos[nick] = ativos.get(nick, 0) + 1
+            except (TypeError, ValueError):
+                pass
+    if not zerados and not ativos:
+        return []
+    top = sorted(ativos.items(), key=lambda kv: -kv[1])[:3]
+    partes = []
+    if zerados:
+        partes.append(f"🏁 **{len(zerados)} zerado{'s' if len(zerados) > 1 else ''}**\n" + "\n".join(zerados[:8]) + ("\n…" if len(zerados) > 8 else ""))
+    if top:
+        partes.append("🔥 **Mais ativos:** " + ", ".join(f"{n} ({q})" for n, q in top))
+    if geek:
+        partes.append(f"🎌 {geek} {'títulos' if geek > 1 else 'título'} de anime, série, filme ou mangá {'atualizados' if geek > 1 else 'atualizado'}")
+    partes.append("Missões novas da semana já estão no site. Bora!")
+    return [(f"sem|{semana}", "aviso", {"title": "📊 Resumo da semana na galera", "url": SITE + "#feed", "description": "\n\n".join(partes)[:1800], "color": 0x16A3C7})]
 
 
 def main():
@@ -382,6 +464,9 @@ def main():
     com_nivel = {k.split("|")[1] for k, _, _ in lista if k.split("|")[0] in ("lv", "cq")}
     novos = com_nivel - conhecidos
     vistos.update(k for k, _, _ in lista if k.split("|")[0] in ("lv", "cq") and k.split("|")[1] in novos)
+    if "geek" not in estado:
+        vistos.update(k for k, _, _ in lista if k.startswith("m|"))
+        estado["geek"] = 1
     if "gami" not in estado:
         vistos.update(k for k, _, _ in lista if k.startswith("tp|"))
         estado["gami"] = 1
