@@ -3297,6 +3297,77 @@ document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if
 const _renderViewDrag=renderView;
 renderView=function(){if(S.dragging){S.dragRerender=true;return}return _renderViewDrag.apply(this,arguments)};
 
+/* ================= v27: MEU PC — monte seu setup no perfil (estilo montador de PC das lojas) ================= */
+// Dados: players/{uid}.pc = {cpu,mb,gpu,ram,mouse,kb,mon} (texto livre; o catálogo pc.json só ajuda a achar o nome certo)
+const PC_SLOTS=[["cpu","Processador"],["mb","Placa-mãe"],["gpu","Placa de vídeo"],["ram","Memória RAM"],["mon","Monitor"],["kb","Teclado"],["mouse","Mouse"]];
+const PC_BRANDS=[[/\b(rtx|gtx|geforce|nvidia)\b/i,"#76b900","NVIDIA"],[/\b(radeon|rx ?\d)/i,"#ed1c24","AMD Radeon"],[/\bryzen|\bamd\b|athlon|\bfx-/i,"#ed1c24","AMD"],
+  [/\barc\b/i,"#0071c5","Intel Arc"],[/\bintel|core i\d|core ultra|pentium|celeron/i,"#0071c5","Intel"],[/\basus|\brog\b|\btuf\b/i,"#e8e8e8","ASUS"],[/\bmsi\b/i,"#ff0000","MSI"],
+  [/gigabyte|aorus/i,"#ff6a00","Gigabyte"],[/asrock/i,"#00a8e8","ASRock"],[/logitech/i,"#00b8fc","Logitech"],[/razer/i,"#44d62c","Razer"],[/hyperx/i,"#e31837","HyperX"],
+  [/corsair/i,"#ffd200","Corsair"],[/redragon/i,"#d71920","Redragon"],[/steelseries/i,"#ff5200","SteelSeries"],[/kingston/i,"#e4002b","Kingston"],[/samsung|odyssey/i,"#1428a0","Samsung"],
+  [/\blg\b|ultragear/i,"#ff2d7a","LG"],[/\baoc\b/i,"#e30613","AOC"],[/\bdell\b|alienware/i,"#007db8","Dell"],[/benq|zowie/i,"#7a2bd8","BenQ"],[/keychron/i,"#f5a623","Keychron"],
+  [/wooting/i,"#ff4b4b","Wooting"],[/\bxpg\b/i,"#e60012","XPG"],[/g\.skill|trident/i,"#d4d4d4","G.Skill"],[/acer|nitro/i,"#83b81a","Acer"],[/gloriou/i,"#f0f0f0","Glorious"]];
+const pcBrand = v => {for(const [re,c,n] of PC_BRANDS)if(re.test(v||""))return {c,n};return null};
+// ilustrações originais (SVG), pintadas com a cor da marca
+function pcIcon(k,c){c=c||"var(--accent)";const s=`stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"`;
+  const body={
+    cpu:`<rect x="14" y="14" width="36" height="36" rx="4" ${s}/><rect x="22" y="22" width="20" height="20" rx="2" fill="${c}"/>${[20,28,36,44].map(v=>`<path d="M${v} 6v8M${v} 50v8M6 ${v}h8M50 ${v}h8" ${s}/>`).join("")}`,
+    mb:`<rect x="6" y="6" width="52" height="52" rx="4" ${s}/><rect x="14" y="14" width="16" height="16" rx="2" fill="${c}"/><path d="M38 14v28M44 14v28M50 14v28" ${s}/><rect x="12" y="40" width="22" height="5" rx="1" fill="${c}" opacity=".7"/><rect x="12" y="49" width="22" height="4" rx="1" ${s}/>`,
+    gpu:`<rect x="4" y="16" width="56" height="30" rx="4" ${s}/><circle cx="20" cy="31" r="9" ${s}/><circle cx="44" cy="31" r="9" ${s}/><path d="M20 22v18M11 31h18M44 22v18M35 31h18" stroke="${c}" stroke-width="2.4"/><path d="M10 46v6h20v-6" ${s}/><rect x="4" y="12" width="56" height="4" rx="2" fill="${c}"/>`,
+    ram:`<rect x="4" y="20" width="56" height="20" rx="2" ${s}/>${[10,20,30,40].map(v=>`<rect x="${v}" y="24" width="7" height="10" rx="1" fill="${c}"/>`).join("")}<path d="M8 40v6M14 40v6M20 40v6M26 40v6M38 40v6M44 40v6M50 40v6M56 40v6" ${s}/><rect x="4" y="16" width="56" height="4" rx="2" fill="${c}" opacity=".6"/>`,
+    mon:`<rect x="4" y="8" width="56" height="36" rx="4" ${s}/><rect x="9" y="13" width="46" height="26" rx="2" fill="${c}" opacity=".85"/><path d="M26 44l-3 10h18l-3-10M18 56h28" ${s}/>`,
+    kb:`<rect x="4" y="18" width="56" height="30" rx="5" ${s}/>${[10,18,26,34,42,50].map(v=>`<rect x="${v}" y="24" width="5" height="5" rx="1" fill="${c}"/>`).join("")}${[14,22,30,38,46].map(v=>`<rect x="${v}" y="32" width="5" height="5" rx="1" fill="${c}" opacity=".7"/>`).join("")}<rect x="18" y="40" width="28" height="4" rx="1" fill="${c}"/>`,
+    mouse:`<rect x="18" y="6" width="28" height="52" rx="14" ${s}/><path d="M32 6v18M18 24h28" ${s}/><rect x="29.5" y="11" width="5" height="9" rx="2.5" fill="${c}"/><path d="M22 44c3 6 17 6 20 0" stroke="${c}" stroke-width="2.4" fill="none"/>`}[k]||"";
+  return `<svg viewBox="0 0 64 64" class="pcico" aria-hidden="true" style="--pcc:${c}">${body}</svg>`}
+
+function pcOf(p){const o=p&&typeof p.pc==="object"&&p.pc?p.pc:{};const r={};for(const [k] of PC_SLOTS)if(typeof o[k]==="string"&&o[k].trim())r[k]=o[k].trim().slice(0,80);return r}
+function pcBox(pid){const p=players()[pid];const pc=pcOf(p);const mine=pid===S.myId&&MINE();const n=Object.keys(pc).length;
+  if(!n&&!mine)return "";
+  return `<section class="box card pcbox"><div class="gkph2"><span class="eyebrow">🖥️ ${mine?"Meu PC":"PC de "+esc(p.nick)}</span>${mine?`<button class="btn small${n?"":" primary"}" data-act="pcedit">${n?"Editar":"Montar meu PC"}</button>`:""}</div>
+    ${n?`<div class="pcgrid">${PC_SLOTS.filter(([k])=>pc[k]||mine).map(([k,l])=>{const b=pcBrand(pc[k]);return `<div class="pcslot${pc[k]?"":" vazio"}" style="--pcc:${b?.c||"var(--accent)"}">${pcIcon(k,b?.c)}<div><span class="pcl">${l}${b?` · <b>${esc(b.n)}</b>`:""}</span><span class="pcv">${pc[k]?esc(pc[k]):"—"}</span></div></div>`}).join("")}</div>`
+      :`<p class="hint" style="margin:0">Mostre para a galera com o que você joga: processador, placa de vídeo, monitor, teclado e mouse. É só digitar que aparecem as opções.</p>`}</section>`}
+const _viewPerfilPc=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilPc.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;const box=pcBox(pid);if(!box)return h;
+  const i=h.indexOf('<span class="eyebrow">Setup</span>');
+  if(i>=0){const e=h.indexOf("</section>",i)+10;return h.slice(0,e)+box+h.slice(e)}
+  const c1=h.indexOf('<div class="col">');const c2=c1>=0?h.indexOf('<div class="col">',c1+5):-1;
+  return c2>=0?h.slice(0,c2+17)+box+h.slice(c2+17):h};
+
+/* ---------- editor com busca (digita e aparecem as opções) ---------- */
+async function pcCat(){if(S.pcCat)return S.pcCat;try{S.pcCat=await fetch("pc.json?v=1").then(r=>r.json())}catch{S.pcCat={}}return S.pcCat}
+const pcNorm = s => String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9.]+/g," ").trim();
+function pcFind(k,q){const L=(S.pcCat||{})[k]||[];const t=pcNorm(q).split(" ").filter(Boolean);if(!t.length)return L.slice(0,8);
+  const sc=[];for(const x of L){const n=pcNorm(x);if(!t.every(w=>n.includes(w)||n.replace(/ /g,"").includes(w)))continue;sc.push([(n.startsWith(t[0])?0:1)+n.length/200,x])}
+  return sc.sort((a,b)=>a[0]-b[0]).slice(0,8).map(x=>x[1])}
+async function pcOpen(){const pc=pcOf(me());M={type:"pc",v:{...pc},open:"",hi:0};pcDraw();await pcCat()}
+function pcDraw(){if(M?.type!=="pc")return;
+  $("#modal").innerHTML=overlay(`<h2>🖥️ Meu PC</h2><p class="hint" style="margin-top:0">Digite e escolha na lista. Não achou? Escreva do seu jeito, vale também.</p>
+    <div class="pcform">${PC_SLOTS.map(([k,l])=>{const b=pcBrand(M.v[k]);return `<div class="pcf" data-k="${k}">${pcIcon(k,b?.c)}<label class="field"><span class="flabel">${l}</span>
+      <input id="pc-${k}" data-k="${k}" autocomplete="off" maxlength="80" value="${esc(M.v[k]||"")}" placeholder="${{cpu:"Ex.: Ryzen 5 5600",mb:"Ex.: B550M",gpu:"Ex.: RTX 4060",ram:"Ex.: 16GB DDR4 3200",mon:"Ex.: 27 QHD 165Hz",kb:"Ex.: Redragon Kumara",mouse:"Ex.: G305"}[k]}" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pcl-${k}"></label>
+      <div class="pclist" id="pcl-${k}" role="listbox" hidden></div></div>`}).join("")}</div>
+    <p class="err" id="pc-err" role="alert"></p>
+    <div class="actions"><button class="btn" data-act="close">Cancelar</button><button class="btn primary" data-act="pcsave">Salvar</button></div>`,"pcmodal");
+}
+function pcShow(k){const inp=$("#pc-"+k),box=$("#pcl-"+k);if(!inp||!box)return;const L=pcFind(k,inp.value);M.open=k;M.list=L;M.hi=Math.min(M.hi||0,Math.max(0,L.length-1));
+  box.innerHTML=L.map((x,i)=>{const b=pcBrand(x);return `<button type="button" role="option" class="pco${i===M.hi?" hi":""}" data-act="pcpick" data-k="${k}" data-i="${i}" aria-selected="${i===M.hi}">${b?`<span class="pcb" style="--pcc:${b.c}">${esc(b.n)}</span>`:""}<span>${esc(x)}</span></button>`}).join("")
+    +(inp.value.trim()&&!L.some(x=>pcNorm(x)===pcNorm(inp.value))?`<div class="pcown">Vai ficar como você escreveu: <b>${esc(inp.value.trim())}</b></div>`:"");
+  box.hidden=!box.innerHTML;inp.setAttribute("aria-expanded",String(!box.hidden))}
+function pcHideAll(except){document.querySelectorAll(".pclist").forEach(b=>{if(b.id!=="pcl-"+except){b.hidden=true;$("#pc-"+b.id.slice(4))?.setAttribute("aria-expanded","false")}})}
+function pcSet(k,v){M.v[k]=v;const inp=$("#pc-"+k);if(inp)inp.value=v;const b=pcBrand(v);const f=inp?.closest(".pcf");if(f){const old=f.querySelector(".pcico");if(old)old.outerHTML=pcIcon(k,b?.c)}$("#pcl-"+k).hidden=true;inp?.setAttribute("aria-expanded","false")}
+document.addEventListener("focusin",e=>{const k=e.target.dataset?.k;if(M?.type!=="pc"||!e.target.id?.startsWith("pc-")||!k)return;pcHideAll(k);M.hi=0;pcCat().then(()=>pcShow(k))});
+document.addEventListener("input",e=>{if(M?.type!=="pc"||!e.target.id?.startsWith("pc-"))return;const k=e.target.dataset.k;M.v[k]=e.target.value;M.hi=0;pcShow(k)});
+document.addEventListener("keydown",e=>{if(M?.type!=="pc"||!e.target.id?.startsWith("pc-"))return;const k=e.target.dataset.k;const box=$("#pcl-"+k);if(!box||box.hidden)return;
+  if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();const n=(M.list||[]).length;if(!n)return;M.hi=(M.hi+(e.key==="ArrowDown"?1:n-1))%n;pcShow(k)}
+  else if(e.key==="Enter"){e.preventDefault();const v=(M.list||[])[M.hi];if(v)pcSet(k,v);const nx=PC_SLOTS[PC_SLOTS.findIndex(s=>s[0]===k)+1];if(nx)$("#pc-"+nx[0])?.focus()}
+  else if(e.key==="Escape"){e.stopPropagation();box.hidden=true}});
+document.addEventListener("mousedown",e=>{if(M?.type==="pc"&&!e.target.closest(".pcf"))pcHideAll("")});
+document.addEventListener("click",async e=>{const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;if(!["pcedit","pcpick","pcsave"].includes(a))return;e.stopImmediatePropagation();
+  if(a==="pcedit"){if(!MINE())return;pcOpen();return}
+  if(M?.type!=="pc")return;
+  if(a==="pcpick"){const v=(M.list||[])[Number(el.dataset.i)];if(v)pcSet(el.dataset.k,v);return}
+  if(a==="pcsave"){const out={};for(const [k] of PC_SLOTS){const v=($("#pc-"+k)?.value||"").trim().slice(0,80);if(v)out[k]=v}
+    el.disabled=true;try{await saveMe(p=>{if(Object.keys(out).length)p.pc=out;else delete p.pc});closeModal();renderAll();toast("PC salvo! 🖥️")}catch(err){el.disabled=false;$("#pc-err").textContent=errMsg(err)}}
+},true);
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
