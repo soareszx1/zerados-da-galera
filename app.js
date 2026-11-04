@@ -3648,6 +3648,30 @@ wikiSearch=async function(q,signal){q=String(q||"").trim();
   const seen=new Set(),out=[];for(const x of [...a,...b]){const k=x.wtitle||x.title;if(seen.has(k))continue;seen.add(k);out.push(x)}
   const n=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();const qq=n(q);
   out.sort((x,y)=>(n(y.title).startsWith(qq)-n(x.title).startsWith(qq)));return out.slice(0,8)};
+/* v30: busca de animes no Descobrir */
+const AN_MAP=m=>({id:m.id,t:m.title.english||m.title.romaji,t2:m.title.english&&m.title.romaji!==m.title.english?m.title.romaji:"",img:m.coverImage?.large||"",ep:m.episodes,next:m.nextAiringEpisode,
+  cr:(m.externalLinks||[]).find(l=>/crunchyroll/i.test(l.site))?.url||"",links:(m.externalLinks||[]).filter(l=>/netflix|prime|disney|hidive|max/i.test(l.site)).map(l=>({s:l.site,u:l.url})).slice(0,2),gen:(m.genres||[]).slice(0,3),score:m.averageScore});
+let anT=null,anSeq=0;
+async function anBusca(q){const my=++anSeq;q=q.trim();S.anQ=q;if(q.length<2){S.anRes=null;S.anBusy=false;anRender();return}
+  S.anBusy=true;anRender();
+  try{const r=await fetch("https://graphql.anilist.co",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify({query:"query($s:String){Page(perPage:24){media(search:$s,type:ANIME,isAdult:false,sort:SEARCH_MATCH){id title{romaji english} coverImage{large} episodes nextAiringEpisode{episode airingAt} externalLinks{site url} genres averageScore}}}",variables:{s:q}})}).then(r=>r.json());
+    if(my!==anSeq)return;S.anRes=(r?.data?.Page?.media||[]).map(AN_MAP);S.anErr=false}catch{if(my!==anSeq)return;S.anRes=[];S.anErr=true}
+  S.anBusy=false;anRender()}
+function anRender(){if(S.view!=="animes")return;const el=document.getElementById("an-q");const pos=el?el.selectionStart:null,foc=document.activeElement===el;renderView();
+  const n=document.getElementById("an-q");if(n&&foc){n.focus();try{n.setSelectionRange(pos,pos)}catch{}}}
+const _viewAnimesV30=viewAnimes;
+viewAnimes=function(){const q=S.anQ||"";let h;
+  if(q.length>=2&&S.anRes){const save=S.gkSeason,f=S.anFilter;S.gkSeason={...(save||{season:"FALL",year:new Date().getFullYear()}),err:false,list:S.anRes};S.anFilter="todos";
+    try{h=_viewAnimesV30()}finally{S.gkSeason=save;S.anFilter=f}
+    h=h.replace(/<h3>Lançamentos[^<]*<\/h3>/,`<h3>Resultados para “${esc(q)}”</h3>`).replace(/<div class="gkkinds">[\s\S]*?<\/div>/,"");
+    if(!S.anRes.length)h=h.replace(/<p class="hint">Nada nesse filtro\.<\/p>/,`<p class="hint">${S.anErr?"Não deu para buscar agora. Tente de novo.":"Nenhum anime encontrado."}</p>`)}
+  else h=_viewAnimesV30();
+  const bar=`<div class="ansearch"><input id="an-q" type="search" placeholder="Buscar anime" aria-label="Buscar anime" autocomplete="off" maxlength="80" value="${esc(q)}">${q?`<button type="button" class="btn small" data-act="anclr">Limpar</button>`:""}${S.anBusy?`<span class="hint">buscando…</span>`:""}</div>`;
+  return h.replace(/(<div class="page animes">\s*<div class="tierhead">[\s\S]*?<\/div><\/div>)/,`$1${bar}`)};
+document.addEventListener("input",e=>{if(e.target.id!=="an-q")return;clearTimeout(anT);const v=e.target.value;anT=setTimeout(()=>anBusca(v),450)});
+document.addEventListener("keydown",e=>{if(e.target.id==="an-q"&&e.key==="Enter"){clearTimeout(anT);anBusca(e.target.value)}});
+document.addEventListener("click",e=>{if(!e.target.closest('[data-act="anclr"]'))return;e.stopImmediatePropagation();anSeq++;S.anQ="";S.anRes=null;S.anBusy=false;renderView();document.getElementById("an-q")?.focus()},true);
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
