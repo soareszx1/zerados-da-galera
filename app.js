@@ -242,10 +242,27 @@ function renderBanner(){
   else if(S.stale)B.innerHTML=`<div class="banner"><span>Conexão lenta: os dados podem estar desatualizados.</span></div>`;
   else B.innerHTML="";
 }
+// navegação: 5 seções principais (barra embaixo no celular), sub-abas dentro de cada uma e chat flutuante
+const NAV=[
+  {k:"inicio",ic:"🏠",n:"Início",v:["inicio"]},
+  {k:"jogos",ic:"🎮",n:"Meus Jogos",v:["saves"],extra:["save"]},
+  {k:"galera",ic:"👥",n:"Galera",v:["estante","ranking","quadro"],extra:["perfil","jogando"]},
+  {k:"tier",ic:"🏆",n:"Tier List",v:["tierlist"]},
+  {k:"descobrir",ic:"🔥",n:"Descobrir",v:["novidades","promocoes","dicas"],extra:["jogo"]}
+];
+const SUBN={estante:"Jogadores",ranking:"Ranking",quadro:"Quadro",novidades:"Novidades",promocoes:"Promoções",dicas:"Dicas"};
+const navOf = v => NAV.find(g=>g.v.includes(v)||(g.extra||[]).includes(v));
 function renderTabs(){
-  const labels={inicio:"Início",saves:"Meus Saves",quadro:"Quadro",novidades:"Novidades",promocoes:"Promoções",estante:"Galera",tierlist:"Tier List",jogando:"Jogando agora",dicas:"Dicas",chat:"Chat",ranking:"Ranking"};
   const un=S.view==="chat"?0:chatUnread();
-  $("#tabs").innerHTML=VIEWS.map(v=>`<a class="tab" role="tab" href="#${v}" aria-selected="${S.view===v}">${labels[v]}${v==="chat"&&un?` <span class="tabn">${un>9?"9+":un}</span>`:""}</a>`).join("");
+  const cur=navOf(S.view);S.navLast=S.navLast||{};if(cur&&cur.v.includes(S.view))S.navLast[cur.k]=S.view;
+  $("#tabs").innerHTML=NAV.map(g=>{const on=cur&&cur.k===g.k;const dest=(S.navLast[g.k]&&g.v.includes(S.navLast[g.k]))?S.navLast[g.k]:g.v[0];
+    return `<a class="tab" href="#${dest}" ${on?'aria-current="page"':""}><span class="tic" aria-hidden="true">${g.ic}</span><span class="tlb">${g.n}</span></a>`}).join("");
+  const sub=$("#subtabs");
+  if(sub){const subs=cur&&cur.v.length>1?cur.v:[];
+    sub.hidden=!subs.length;
+    sub.innerHTML=subs.map(v=>`<a class="subtab" href="#${v}" ${S.view===v?'aria-current="page"':""}>${SUBN[v]||v}</a>`).join("");}
+  const fab=$("#chatfab");
+  if(fab){fab.hidden=S.view==="chat";fab.innerHTML=`<span aria-hidden="true">💬</span><span class="tlb">Chat</span>${un?`<span class="tabn" aria-label="${un} mensagens novas">${un>9?"9+":un}</span>`:""}`;}
   $("#filters").hidden=!["estante","tierlist","jogando","dicas"].includes(S.view)||!allGames().length;
   renderPlatforms();
   const pf=$("#pfilter"),fp=S.f.player&&players()[S.f.player];

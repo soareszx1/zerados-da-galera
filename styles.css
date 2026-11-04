@@ -742,3 +742,28 @@ button.key{cursor:pointer}
 .pcard .poff{position:static;align-self:center;font-size:14px}
 .pcard{align-items:stretch}.pcard .pbody{align-self:stretch;width:auto;text-align:left}
 .pfilt{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+
+/* v13: navegação em 5 seções + sub-abas + chat flutuante + barra no celular */
+.tabs{gap:8px}
+.tab{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;font-family:var(--f-body);font-weight:700;font-size:15px;letter-spacing:0;text-transform:none}
+.tab .tic{font-size:18px;line-height:1}
+.tab[aria-current="page"]{background:var(--ink);color:var(--bg);box-shadow:3px 3px 0 var(--accent)}
+.subtabs{display:flex;gap:6px;margin-top:12px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.subtabs::-webkit-scrollbar{display:none}
+.subtab{flex:none;min-height:40px;display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:inherit;text-decoration:none;font-weight:600;font-size:14px}
+.subtab[aria-current="page"]{border-color:var(--accent);background:var(--accent);color:#fff}
+.chatfab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:10px 18px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--line);box-shadow:3px 3px 0 var(--ink)}
+.chatfab .tabn{background:#fff;color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:720px){
+  .tabs{position:fixed;left:0;right:0;bottom:0;top:auto;margin:0;z-index:30;display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+    padding:4px max(4px,env(safe-area-inset-left,0px)) calc(4px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px));
+    background:var(--surface);border-top:2px solid var(--line);overflow:visible}
+  .tab{flex-direction:column;gap:2px;min-height:56px;padding:4px 2px;border:0;border-radius:10px;background:transparent;font-size:11px;justify-content:center;text-align:center;box-shadow:none}
+  .tab .tic{font-size:22px}
+  .tab[aria-current="page"]{background:var(--surface2);color:var(--accent);box-shadow:none}
+  .tab .tlb{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+  .chatfab{bottom:calc(78px + env(safe-area-inset-bottom,0px));padding:10px 14px}
+  .chatfab .tlb{display:none}
+}
