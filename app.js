@@ -282,9 +282,13 @@ function renderView(){
       <div class="actions">${S.mode==="live"&&S.canWrite?`<button class="btn primary" data-act="profile">Criar meu perfil</button>`:""}<button class="btn" data-act="demo">Ver como fica com exemplo</button></div></div></section>`;return}
   const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,pessoas:viewPessoas,feed:viewFeed,listas:viewListas,lista:viewLista,reviews:viewReviews,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
   const log0=$("#chatlog");const nearBottom=!log0||log0.scrollHeight-log0.scrollTop-log0.clientHeight<80;const focused=document.activeElement?.id;
+  // guarda o que a pessoa está digitando: a tela é redesenhada quando chegam dados novos e o texto não pode sumir
+  const keep={};let caret=null;
+  V.querySelectorAll("input[id],textarea[id]").forEach(el=>{if(el.type==="file"||el.type==="checkbox"||el.type==="radio")return;if(el.value)keep[el.id]=el.value;if(el.id===focused){try{caret=[el.selectionStart,el.selectionEnd]}catch{}}});
   V.innerHTML=fn();
-  for(const id of ["chat-text","cmt-text"]){const el=document.getElementById(id);if(el&&S.drafts?.[id]){el.value=S.drafts[id]}}
-  if(focused){const el=document.getElementById(focused);if(el&&V.contains(el)){el.focus();try{const n=el.value?.length||0;el.setSelectionRange(n,n)}catch{}}}
+  for(const [id,v] of Object.entries(keep)){const el=document.getElementById(id);if(el&&V.contains(el)&&!el.value)el.value=v}
+  for(const id of ["chat-text","cmt-text"]){const el=document.getElementById(id);if(el&&S.drafts?.[id]&&!el.value){el.value=S.drafts[id]}}
+  if(focused){const el=document.getElementById(focused);if(el&&V.contains(el)){el.focus({preventScroll:true});try{const n=el.value?.length||0;el.setSelectionRange(caret?caret[0]:n,caret?caret[1]:n)}catch{}}}
   const log=$("#chatlog");if(log&&(nearBottom||S.chatJump)){log.scrollTop=log.scrollHeight;S.chatJump=false}
 }
 
@@ -567,7 +571,7 @@ function chatData(){
   const rooms={geral:{name:"geral",members:null,by:null}};const msgs=[];const left={};
   for(const [uid,d] of Object.entries(S.chat||{})){
     for(const [rid,r] of Object.entries(d.rooms||{}))if(rid.startsWith("g-")&&r&&typeof r.name==="string")rooms[rid]={name:r.name.slice(0,40),members:Array.isArray(r.members)?r.members:[],by:uid,at:r.at||0};
-    for(const [mid,m] of Object.entries(d.msgs||{}))if(m&&typeof m.x==="string")msgs.push({mid,by:uid,r:m.r,x:m.x.slice(0,800),at:Number(m.at)||0});
+    for(const [mid,m] of Object.entries(d.msgs||{}))if(m&&typeof m.x==="string")msgs.push({mid,by:uid,r:m.r,x:m.x.slice(0,800),at:Number(m.at)||0,ed:Number(m.ed)||0});
     left[uid]=d.left||{};
   }
   return {rooms,msgs,left};
@@ -576,6 +580,9 @@ function myRooms(){const d=chatData(),mid=meId();return Object.entries(d.rooms).
 function chatSeen(rid){try{return Number(localStorage.getItem("zg-seen-"+rid))||0}catch{return 0}}
 function setChatSeen(rid){try{localStorage.setItem("zg-seen-"+rid,String(Date.now()))}catch{}}
 function chatUnread(){const d=chatData(),mid=meId();const mine=new Set(myRooms().map(([r])=>r));return d.msgs.filter(m=>mine.has(m.r)&&m.by!==mid&&m.at>chatSeen(m.r)).length}
+const horaMsg = t => new Date(t).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+function diaMsg(t){const k=dkey(new Date(t));if(k===today())return "Hoje";if(k===dkey(new Date(Date.now()-864e5)))return "Ontem";return new Date(t).toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"long"})}
+function quandoMsg(t){const k=dkey(new Date(t));const h=horaMsg(t);if(k===today())return "hoje às "+h;if(k===dkey(new Date(Date.now()-864e5)))return "ontem às "+h;return new Date(t).toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})+" às "+h}
 function viewChat(){
   const d=chatData();const rooms=myRooms();if(!S.room||!rooms.some(([r])=>r===S.room))S.room="geral";
   const room=d.rooms[S.room];const bl=meId()?blockedBy(meId()):new Set();
@@ -589,9 +596,15 @@ function viewChat(){
     <section class="chatmain"><header class="chathead"><div><b>${S.room==="geral"?"# geral":esc(room.name)}</b><div class="hint">${membersLine}</div></div>
       ${S.room!=="geral"&&mid&&room.by!==mid?`<button class="btn small ghost" data-act="leavegroup" data-id="${esc(S.room)}">Sair do grupo</button>`:""}
       ${S.room!=="geral"&&mid&&room.by===mid?`<button class="btn small ghost" data-act="editgroup" data-id="${esc(S.room)}">Editar grupo</button>`:""}</header>
-      <div class="chatlog" id="chatlog">${msgs.map((m,i)=>{const p=players()[m.by];if(!p)return "";const prev=msgs[i-1];const cont=prev&&prev.by===m.by&&m.at-prev.at<300000;
-        const can=S.mode==="live"&&(m.by===mid||S.isOwner);
-        return `<div class="msg${cont?" cont":""}">${cont?'<span class="gsp"></span>':glyph(p)}<div class="mb">${cont?"":`<div class="meta2">${nk(p)}<span>${ago(m.at)}</span></div>`}<p>${esc(m.x)}${can?` <button class="linkbtn" data-act="mdel" data-id="${esc(m.mid)}" data-by="${esc(m.by)}" aria-label="Apagar mensagem">apagar</button>`:""}</p></div></div>`}).join("")||'<div class="hint" style="padding:20px">Nenhuma mensagem ainda. Mande a primeira.</div>'}</div>
+      <div class="chatlog" id="chatlog">${msgs.map((m,i)=>{const p=players()[m.by];if(!p)return "";const prev=msgs[i-1];
+        const dia=dkey(new Date(m.at)),novoDia=!prev||dkey(new Date(prev.at))!==dia;const cont=!novoDia&&prev&&prev.by===m.by&&m.at-prev.at<300000;
+        const can=S.mode==="live"&&(m.by===mid||S.isOwner),mine=S.mode==="live"&&m.by===mid;const hh=horaMsg(m.at);const editing=!!m.mid&&S.chatEdit===m.mid;
+        return `${novoDia?`<div class="daysep"><span>${esc(diaMsg(m.at))}</span></div>`:""}<div class="msg${cont?" grp":""}${mine?" mine":""}">
+          <div class="mav">${cont?`<span class="mtime" title="${esc(new Date(m.at).toLocaleString("pt-BR"))}">${hh}</span>`:`<a href="#perfil-${esc(pslug(p))}" aria-label="Perfil de ${esc(p.nick)}">${glyph(p)}</a>`}</div>
+          <div class="mb">${cont?"":`<div class="mhead2"><a class="mnick" href="#perfil-${esc(pslug(p))}">${nk(p)}</a><time title="${esc(new Date(m.at).toLocaleString("pt-BR"))}">${esc(quandoMsg(m.at))}</time></div>`}
+            ${editing?`<div class="ced"><textarea id="med-${esc(m.mid)}" maxlength="800" aria-label="Editar mensagem">${esc(S.chatEditText??m.x)}</textarea><div class="facts"><button class="btn small primary" data-act="medsave" data-id="${esc(m.mid)}">Salvar</button><button class="btn small ghost" data-act="medcancel">Cancelar</button></div></div>`
+            :`<p>${esc(m.x)}${m.ed?` <span class="edtag hint">(editado)</span>`:""}</p>`}
+          </div>${can&&!editing?`<div class="mtools">${mine?`<button class="linkbtn" data-act="medit" data-id="${esc(m.mid)}" aria-label="Editar mensagem">editar</button>`:""}<button class="linkbtn" data-act="mdel" data-id="${esc(m.mid)}" data-by="${esc(m.by)}" aria-label="Apagar mensagem">apagar</button></div>`:""}</div>`}).join("")||'<div class="hint" style="padding:20px">Nenhuma mensagem ainda. Mande a primeira.</div>'}</div>
       ${mid&&S.canWrite?`<form class="chatform" id="chatform"><label class="flabel" for="chat-text" hidden>Mensagem</label><textarea id="chat-text" maxlength="800" rows="1" placeholder="Mensagem para ${S.room==="geral"?"#geral":esc(room.name)}"></textarea><button class="btn primary" type="submit">Enviar</button></form>
         <div class="hint" style="padding:0 12px 10px">O chat só aparece para quem está logado. Grupos organizam a conversa, mas qualquer membro logado consegue ler.</div>`:`<div class="hint" style="padding:12px">${S.mode==="demo"?"No modo exemplo não dá para mandar mensagem.":"Crie seu perfil para conversar."}</div>`}
     </section></div>`;
@@ -2505,6 +2518,45 @@ document.addEventListener("keydown",e=>{if(e.key!=="Enter")return;const t=e.targ
 /* ---------- tarefas periódicas: virada da liga e congelamento ---------- */
 if(typeof setInterval==="function"){setTimeout(()=>{ligaRollover();freezeCheck()},6000);setInterval(()=>{ligaRollover();freezeCheck()},300e3)}
 
+/* ---------- editar os próprios comentários (feed, jogos, quadro, listas e fórum) ---------- */
+function commentEl(btn){const box=btn.closest(".bubble,.qcard");if(!box)return null;return box.classList.contains("qcard")?box.querySelector(".qx"):box.querySelector(":scope > p")}
+function openEditor(btn,text){
+  const el=commentEl(btn);if(!el)return;const cid=btn.dataset.cid;
+  el.outerHTML=`<div class="ced" data-cid="${esc(cid)}"><textarea id="ed-${esc(cid)}" maxlength="600" aria-label="Editar comentário">${esc(text)}</textarea>
+    <div class="facts"><button class="btn small primary" data-act="cedsave" data-cid="${esc(cid)}">Salvar</button><button class="btn small ghost" data-act="cedcancel">Cancelar</button></div></div>`;
+  const ta=document.getElementById("ed-"+cid);if(ta){ta.focus();ta.setSelectionRange(ta.value.length,ta.value.length)}
+}
+function addEditButtons(){
+  if(S.mode!=="live"||!S.myId)return;
+  document.querySelectorAll(`#view [data-act="cdel"][data-by="${CSS.escape(S.myId)}"]`).forEach(b=>{
+    if(b.previousElementSibling?.dataset?.act==="cedit")return;const c=comms().find(x=>x.cid===b.dataset.cid&&x.by===S.myId);if(!c)return;
+    b.insertAdjacentHTML("beforebegin",`<button class="linkbtn" data-act="cedit" data-cid="${esc(c.cid)}">editar</button>`);
+    if(S.editing?.cid===c.cid)openEditor(b,S.editing.text);
+  });
+  document.querySelectorAll('#view [data-act="cdel"]').forEach(b=>{const c=comms().find(x=>x.cid===b.dataset.cid&&x.by===b.dataset.by);
+    if(c?.ed&&!b.parentElement.querySelector(".edtag"))b.parentElement.insertAdjacentHTML("beforeend",`<span class="edtag hint">(editado)</span>`)});
+}
+const _renderView1=renderView;
+renderView=function(){_renderView1();try{addEditButtons()}catch{}};
+document.addEventListener("input",e=>{if(e.target.id?.startsWith("ed-")&&S.editing)S.editing.text=e.target.value});
+document.addEventListener("click",e=>{
+  const el=e.target.closest('[data-act="cedit"],[data-act="cedsave"],[data-act="cedcancel"]');if(!el)return;const a=el.dataset.act;
+  if(a==="cedit"){const c=comms().find(x=>x.cid===el.dataset.cid&&x.by===S.myId);if(!c)return;S.editing={cid:c.cid,text:c.x};openEditor(el.nextElementSibling||el,c.x);return}
+  if(a==="cedcancel"){S.editing=null;renderView();return}
+  if(a==="cedsave"){const cid=el.dataset.cid;const x=(document.getElementById("ed-"+cid)?.value||"").trim();if(!x){toast("O comentário não pode ficar vazio");return}
+    S.editing=null;saveDocOf("comments",S.myId,d=>{if(d.items?.[cid]){d.items[cid].x=x.slice(0,600);d.items[cid].ed=Date.now()}},"items").then(()=>toast("Comentário editado")).catch(err=>toast(errMsg(err)));return}
+});
+
+/* ---------- editar mensagens do chat ---------- */
+document.addEventListener("input",e=>{if(e.target.id?.startsWith("med-"))S.chatEditText=e.target.value});
+document.addEventListener("click",e=>{
+  const el=e.target.closest('[data-act="medit"],[data-act="medsave"],[data-act="medcancel"]');if(!el)return;const a=el.dataset.act;
+  if(a==="medit"){S.chatEdit=el.dataset.id;S.chatEditText=null;renderView();const t=document.getElementById("med-"+el.dataset.id);if(t){t.focus();t.setSelectionRange(t.value.length,t.value.length)}return}
+  if(a==="medcancel"){S.chatEdit=null;S.chatEditText=null;renderView();return}
+  if(a==="medsave"){const id=el.dataset.id;const x=(document.getElementById("med-"+id)?.value||"").trim();if(!x){toast("A mensagem não pode ficar vazia");return}
+    S.chatEdit=null;S.chatEditText=null;saveDocOf("chat",S.myId,d=>{if(d.msgs?.[id]){d.msgs[id].x=x.slice(0,800);d.msgs[id].ed=Date.now()}}).then(()=>toast("Mensagem editada")).catch(err=>toast(errMsg(err)));return}
+});
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -2513,7 +2565,7 @@ function saveMe(mut,opt={}){return queue(async()=>{
   if(!opt.noDay){cur.days=cur.days||{};const t=today();cur.days[t]=(cur.days[t]||0)+1;const lim=dkey(new Date(Date.now()-400*864e5));for(const k of Object.keys(cur.days))if(k<lim)delete cur.days[k]}
   delete cur._id;S.players[S.myId]={...cur,_id:S.myId};try{const sn=lvlSnap(S.myId);if(sn){cur.lvl=sn;S.players[S.myId].lvl=sn}}catch{}renderAll();await S.db.doc("players/"+S.myId).set(cur);
 })}
-function flattenComments(){const out=[];for(const [uid,d] of Object.entries(S.comDocs||{}))for(const [cid,c] of Object.entries(d.items||{}))if(c&&typeof c.x==="string"&&typeof c.t==="string")out.push({cid,by:uid,t:c.t,x:c.x.slice(0,600),at:Number(c.at)||0,...(typeof c.best==="string"?{best:c.best}:{}),...(typeof c.h==="string"?{h:c.h.slice(0,120)}:{})});S.comments=out}
+function flattenComments(){const out=[];for(const [uid,d] of Object.entries(S.comDocs||{}))for(const [cid,c] of Object.entries(d.items||{}))if(c&&typeof c.x==="string"&&typeof c.t==="string")out.push({cid,by:uid,t:c.t,x:c.x.slice(0,600),at:Number(c.at)||0,...(typeof c.best==="string"?{best:c.best}:{}),...(typeof c.h==="string"?{h:c.h.slice(0,120)}:{}),...(c.ed?{ed:Number(c.ed)||0}:{})});S.comments=out}
 function saveDocOf(col,uid,mut,prune){return queue(async()=>{
   const store=col==="comments"?S.comDocs:S.chat;const cur=clone(store[uid]||{});mut(cur);
   if(prune&&cur[prune]){const ks=Object.entries(cur[prune]).sort((a,b)=>(b[1].at||0)-(a[1].at||0));if(ks.length>400)cur[prune]=Object.fromEntries(ks.slice(0,400))}
@@ -2595,7 +2647,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","pessoasord","like","feedf","feedmore","feedc","qopen","tsend","qsend","qbest","listnew","listedit","listdel","listord","lsadd","lssave","metaset","pbet","presult","shareprof","sharegame","install","mclaim","mcheckin","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","pessoasord","like","feedf","feedmore","feedc","qopen","tsend","qsend","qbest","listnew","listedit","listdel","listord","lsadd","lssave","metaset","pbet","presult","shareprof","sharegame","install","mclaim","mcheckin","cedit","cedsave","cedcancel","medit","medsave","medcancel","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
@@ -2742,7 +2794,11 @@ function onUser(u){
 let autoCovDone=false;function autoCovers(){if(autoCovDone||!S.canWrite||!S.loaded||!S.myId||!S.players[S.myId])return;autoCovDone=true;setTimeout(()=>syncSteam(),1500);setTimeout(()=>fillCovers(false).then(r=>{if(r.done)toast(`${r.done} capa(s) encontrada(s) para seus jogos`)}).catch(()=>{}),2500)}
 let vbusy=false;function refreshVerify(){const u=AUTH&&AUTH.currentUser;if(!u||vbusy)return;vbusy=true;
   u.reload().then(()=>AUTH.currentUser.emailVerified?AUTH.currentUser.getIdToken(true).then(()=>{onUser(AUTH.currentUser);toast("E-mail confirmado! Pode criar seu perfil.")}):null).catch(()=>{}).finally(()=>{vbusy=false})}
-let rt=null;function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode==="live")renderAll()},80)}
+let rt=null,lastType=0;
+document.addEventListener("input",e=>{if(e.target.matches?.("#view input,#view textarea"))lastType=Date.now()});
+// enquanto a pessoa digita, espera ela dar uma pausa antes de redesenhar a tela
+function softRender(){clearTimeout(rt);rt=setTimeout(()=>{if(S.mode!=="live")return;const a=document.activeElement;
+  if(a&&a.matches?.("#view input,#view textarea")&&Date.now()-lastType<2500){softRender();return}renderAll()},80)}
 (function boot(){
   if(!window.firebase||!CFG.firebase||!CFG.firebase.apiKey){S.notConfigured=true;S.mode="offline";renderAll();return}
   try{firebase.initializeApp(CFG.firebase)}catch(e){}

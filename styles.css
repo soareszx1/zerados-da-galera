@@ -1019,3 +1019,29 @@ h2 .bmini{min-width:26px;height:26px;font-size:13px}
 .mside{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .mside .ligachip{margin:0;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:12px;font-size:14px}
 @media (max-width:520px){.mside{width:100%;justify-content:space-between}}
+.ced{display:flex;flex-direction:column;gap:6px;margin-top:4px}.ced textarea{width:100%;min-height:70px;border:2px solid var(--accent);background:var(--surface);color:var(--ink);border-radius:10px;padding:8px 10px;font:inherit;resize:vertical;box-sizing:border-box}.edtag{font-size:11px}
+
+/* v18: chat mais legível (estilo Discord) */
+.chatlog{gap:0;padding:12px 6px}
+.msg{display:flex!important;align-items:flex-start;gap:12px;margin:0;padding:6px 10px;border-radius:10px;position:relative}
+.msg:not(.grp){margin-top:10px}
+.msg.grp{padding-top:2px;padding-bottom:2px}
+.msg:hover{background:color-mix(in srgb,var(--ink) 5%,transparent)}
+.msg .mav{flex:none;width:48px;display:flex;justify-content:center}
+.msg .mav a{display:inline-grid;text-decoration:none}
+.msg .mav .glyph{width:40px;height:40px;font-size:18px}
+.msg .mav .gfr{padding:3px}
+.msg .mtime{font-size:11px;color:var(--muted);opacity:0;line-height:22px;font-variant-numeric:tabular-nums}
+.msg:hover .mtime{opacity:1}
+.msg .mb{flex:1;min-width:0}
+.mhead2{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:3px;line-height:1.25}
+.mnick{text-decoration:none;font-weight:700;font-size:15px}
+.mhead2 time{font-size:12px;color:var(--muted)}
+.msg p{margin:0;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere}
+.msg .mtools{position:absolute;top:4px;right:8px;display:flex;gap:10px;opacity:0;background:var(--surface);border:1.5px solid var(--line);border-radius:8px;padding:2px 8px}
+.msg:hover .mtools,.msg .mtools:focus-within{opacity:1}
+.msg .linkbtn{opacity:1}
+.daysep{display:flex;align-items:center;gap:10px;margin:16px 6px 4px;color:var(--muted);font-size:12px;font-weight:700;text-transform:capitalize}
+.daysep::before,.daysep::after{content:"";flex:1;height:1px;background:var(--line)}
+@media (hover:none){.msg .mtools{opacity:1;position:static;background:none;border:0;padding:0;margin-left:auto}.msg .mtime{opacity:1}}
+.mnick{color:var(--ink)}
