@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793761878350,
+ "atualizadoEm": 1793762227368,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -45,9 +45,76 @@
    "nome": "GameSpot",
    "ok": true,
    "itens": 15
+  },
+  {
+   "nome": "JBox",
+   "ok": true,
+   "itens": 10
+  },
+  {
+   "nome": "AnimeNew",
+   "ok": true,
+   "itens": 10
+  },
+  {
+   "nome": "IntoxiAnime",
+   "ok": true,
+   "itens": 10
+  },
+  {
+   "nome": "Anime News Network",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Omelete",
+   "ok": false,
+   "itens": 0
+  },
+  {
+   "nome": "Cinema com Rapadura",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Pipoca Moderna",
+   "ok": true,
+   "itens": 15
+  },
+  {
+   "nome": "Jovem Nerd (filmes e séries)",
+   "ok": false,
+   "itens": 0
   }
  ],
  "itens": [
+  {
+   "title": "Promise Me the Spotlight Anime Unveils Teaser, Main Cast, Staff",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/promise-me-the-spotlight-anime-unveils-teaser-main-cast-staff/.243469",
+   "summary": "Haruna Mikawa, Taihi Kimura, Mai Kanno, Yukari Anzai star in studio TEAM TillDawn's anime",
+   "img": "",
+   "at": 1793761200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Pero Pero★Sparkles Anime Reveals Cast, Staff, January Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/pero-pero-sparkles-anime-reveals-cast-staff-january-debut/.243506",
+   "summary": "Yuki Sakakihara, Mai Kanno, Ai Fairouz, Yōhei Azakami star",
+   "img": "",
+   "at": 1793760882000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Kemono Jihen Manga's Climax Is 'Imminent'",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/kemono-jihen-manga-climax-is-imminent/.243495",
+   "summary": "Series to end in 26th volume",
+   "img": "",
+   "at": 1793760155000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Box ilustrado de O Senhor dos Anéis está com 40% de desconto na Black Friday da Amazon",
    "url": "https://br.ign.com/descontos/157297/box-ilustrado-de-o-senhor-dos-aneis-esta-com-40-de-desconto-na-black-friday-da-amazon",
@@ -55,6 +122,15 @@
    "img": "https://sm.ign.com/ign_br/screenshot/default/box-senhor-dos-aneis-alan-lee-capa-1280x720-v2_wkdu.jpg",
    "at": 1793759991000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Otaku Vampire’s Love Bite ganha adaptação para anime",
+   "url": "https://animenew.com.br/otaku-vampires-love-bite-anime/",
+   "summary": "O mangá Otaku Vampire’s Love Bite (Oshi ni Amagami), de Julietta Suzuki, criadora de Kamisama Kiss, receberá uma adaptação em anime. O anúncio chegou acompanhado de um vídeo…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Otaku-Vampires-Love-Bite-ganha-adaptacao-para-anime.webp",
+   "at": 1793758206000,
+   "cat": "geek",
+   "source": "AnimeNew"
   },
   {
    "title": "Como migrar um site WordPress para a Hostinger: veja o passo a passo",
@@ -65,6 +141,42 @@
    "source": "IGN Brasil"
   },
   {
+   "title": "Witch on the Holy Night ganhará adaptação em mangá",
+   "url": "https://animenew.com.br/witch-on-the-holy-night-ganha-manga/",
+   "summary": "O filme de anime Witch on the Holy Night (Mahoutsukai no Yoru) ganhará uma adaptação em mangá desenhada por Keigo Maki, autor de Shikimori’s Not Just a Cutie. A publicação começa…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Witch-on-the-Holy-Night-ganhara-adaptacao-em-manga.webp",
+   "at": 1793757849000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Anunciado anime de The Bloodthirsty Bride Devours the King para 2027",
+   "url": "https://animenew.com.br/the-bloodthirsty-bride-devours-the-king-anime/",
+   "summary": "O mangá The Bloodthirsty Bride Devours the King (Chi ni Ueta Hanayome wa Ō o Kurau) ganhará uma adaptação em anime para TV em 2027. O anúncio aconteceu na segunda-feira, 2 de…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Anunciado-anime-de-The-Bloodthirsty-Bride-Devours-the-King-para-2027.webp",
+   "at": 1793757527000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Criador de Claymore lança novo mangá de fantasia",
+   "url": "https://animenew.com.br/bartlet-fairy-basslet-novo-manga-norihiro-yagi/",
+   "summary": "O mangaká Norihiro Yagi, conhecido por Claymore, iniciou uma nova série intitulada BARTLET FAIRY BASSLET. O mangá estreou nesta no início de novembro, na plataforma Shonen Jump+.…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Criador-de-Claymore-lanca-novo-manga.webp",
+   "at": 1793756952000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Jorge & Mateus perdem show de réveillon em Fortaleza após apoio a Flávio Bolsonaro",
+   "url": "https://pipocamoderna.com.br/2026/11/jorge-mateus-cancelados-fortaleza/",
+   "summary": "Prefeitura confirma cancelamentoJorge & Mateus foram retirados da programação do Réveillon de Fortaleza após uma onda de protestos contra o apoio do cantor Jorge à candidatura de…",
+   "img": "",
+   "at": 1793756767000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
    "title": "Sonic Racing: CrossWorlds - Year Two 2.0.0 Patch Now Live - New Additions, Changes & Improvements",
    "url": "https://www.nintendolife.com/news/2026/11/sonic-racing-crossworlds-year-two-2-0-0-patch-now-live-new-additions-changes-and-improvements",
    "summary": "Including paid and free updates. : It's another huge week in gaming, and Sonic Racing: CrossWorlds is joining in on the fun with its launch of \"Year Two\". Read the full article on…",
@@ -73,12 +185,147 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Travel Back in Time with Zelda Easter Egg on Google",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-03/travel-back-in-time-with-zelda-easter-egg-on-google/.243471",
+   "summary": "Will you take on the mantle of \"Hero of Time?\"",
+   "img": "",
+   "at": 1793754000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Witch on the Holy Night Film Gets Manga Adaptation",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/witch-on-the-holy-night-film-gets-manga-adaptation/.243494",
+   "summary": "Shikimori's Not Just a Cutie's Keigo Maki debuts manga on November 11",
+   "img": "",
+   "at": 1793753805000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Marina Ruy Barbosa recebe apoios de famosos após ataques de bolsonaristas",
+   "url": "https://pipocamoderna.com.br/2026/11/marina-ruy-barbosa-apoio-malu-galli-janones/",
+   "summary": "Artistas saem em defesa de MarinaMarina Ruy Barbosa recebeu uma onda de apoio de artistas e políticos após o rompimento de amizades provocado por seu posicionamento nas eleições…",
+   "img": "",
+   "at": 1793751520000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "Kaeruno Erefante Launches Manga Diary of a Male Porn Star Sequel",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/kaeruno-erefante-launches-manga-diary-of-a-male-porn-star-sequel/.243477",
+   "summary": "AV Danyū Hajimemashita Reiwa-hen sequel manga launched on October 30",
+   "img": "",
+   "at": 1793750400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Morre Eliana Rocha, atriz de Pé na Cova, aos 82 anos",
+   "url": "https://pipocamoderna.com.br/2026/11/morre-eliana-rocha-atriz-pe-na-cova/",
+   "summary": "Miguel Falabella anuncia morte da atrizA atriz Eliana Rocha, conhecida pelo papel de Luz Divina na série de comédia “Pé na Cova”, morreu aos 82 anos. A notícia foi divulgada nesta…",
+   "img": "",
+   "at": 1793749434000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "Otaku Vampire's Love Bite Manga Gets TV Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/otaku-vampire-love-bite-manga-gets-tv-anime/.243498",
+   "summary": "\"Bloody romantic comedy\" from Kamisama Kiss creator Julietta Suzuki",
+   "img": "",
+   "at": 1793749299000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "‘Gundam 0080: War in the Pocket’ será exibido no RJ esta semana",
+   "url": "https://www.jbox.com.br/2026/11/03/gundam-0080-war-in-the-pocket-sera-exibido-no-rj-esta-semana/",
+   "summary": "Minissérie faz parte da programação da sessão Filmes da Meia-Noite do Estação Claro Rio, na madrugada de sexta para sábado.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/gundam-WarinthePocket-destacada.jpg?ssl=1",
+   "at": 1793748565000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Neve Campbell confirma retorno como Sidney Prescott em Pânico 8",
+   "url": "https://pipocamoderna.com.br/2026/11/neve-campbell-confirma-retorno-panico-8/",
+   "summary": "Sidney Prescott estará de voltaNeve Campbell confirmou que voltará a interpretar Sidney Prescott em “Pânico 8”, próximo capítulo da franquia de terror criada por Wes Craven. A…",
+   "img": "",
+   "at": 1793748353000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "Mashle: Magic and Muscles Manga Gets Live-Action Film on March 19",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/mashle-magic-and-muscles-manga-gets-live-action-film-on-march-19/.243497",
+   "summary": "Warner Brothers, Fuji TV, Credeus, Toho collaborate on project",
+   "img": "",
+   "at": 1793748053000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Justiça anula sentença favorável a Ana Castela por uso de cavalo em clipe",
+   "url": "https://pipocamoderna.com.br/2026/11/justica-anula-sentenca-ana-castela-cavalo-pipoco/",
+   "summary": "Tribunal determina reabertura do processoAna Castela perdeu uma decisão favorável na Justiça do Paraná em um processo sobre o uso de um cavalo no videoclipe de “Pipoco”, sucesso…",
+   "img": "",
+   "at": 1793747695000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "Emenda Pix de obras paga show de Jorge e Mateus no interior de SP",
+   "url": "https://pipocamoderna.com.br/2026/11/emenda-pix-obras-paga-shows-jorge-mateus/",
+   "summary": "Dinheiro para obras foi usado em showsUma emenda parlamentar de R$ 1,1 milhão destinada a obras de infraestrutura em Fartura, no interior de São Paulo, foi utilizada pela…",
+   "img": "",
+   "at": 1793746929000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "Watari Sakou's Honey Trap Method Manga Ends on December 1",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/watari-sakou-honey-trap-method-manga-ends-on-december-1/.243466",
+   "summary": "Spy romance manga launched in March earlier this year",
+   "img": "",
+   "at": 1793746800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Marina Ruy Barbosa rompe com amigas após apoio a Lula nas eleições",
+   "url": "https://pipocamoderna.com.br/2026/11/marina-ruy-barbosa-rompe-amizades-apoio-lula/",
+   "summary": "Amizades rompidas após divergências políticasMarina Ruy Barbosa perdeu amizades de décadas depois de manifestar apoio à reeleição de Luiz Inácio Lula da Silva (PT). A atriz se…",
+   "img": "",
+   "at": 1793745931000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
    "title": "\"Já assisti cinquenta vezes\": historiador militar escolhe o melhor filme sobre a Segunda Guerra Mundial",
    "url": "https://br.ign.com/cinema-tv/157293/ja-assisti-cinquenta-vezes-historiador-militar-escolhe-o-melhor-filme-sobre-a-segunda-guerra-mundial",
    "summary": "Um filme de guerra extraordinário e incomum que ganhou um Oscar em 1954 Diferentemente da ação e violência dos filmes de guerra mais comuns, esse longa da década de 50 foca na…",
    "img": "https://sm.ign.com/ign_br/screenshot/default/1366-2000_hf79.jpg",
    "at": 1793745033000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Steve Ellis, cantor do sucesso Everlasting Love, morre aos 76 anos",
+   "url": "https://pipocamoderna.com.br/2026/11/morre-steve-ellis-love-affair-everlasting-love/",
+   "summary": "Vocalista da banda britânica Love Affair morreu em 30 de outubro, após complicações de doença crônica",
+   "img": "",
+   "at": 1793744056000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "'I'm Running for Crown Princess, but All I Want is a Steady Paycheck!' Manga Ends",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/im-running-for-crown-princess-but-all-i-want-is-a-steady-paycheck-manga-ends/.243474",
+   "summary": "Makana Watari's manga adaptation of Yuuri Seo's light novels launched in 2019",
+   "img": "",
+   "at": 1793743200000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Cyberpunk 2: Já sabemos em qual cidade se passará a sequência de Cyberpunk 2077, e essa foi a melhor decisão possível",
@@ -111,6 +358,15 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Copy-of-Gravhounds6-Dozer-Cone_4k-1.png?w=300",
    "at": 1793740465000,
    "source": "GameSpot"
+  },
+  {
+   "title": "Seraph of the End Manga Ends on December 4",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/seraph-of-the-end-manga-ends-on-december-4/.243493",
+   "summary": "Series debuted in 2012",
+   "img": "",
+   "at": 1793739600000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Grand Theft Auto VI: pré-download inicia em 10 de novembro",
@@ -159,6 +415,24 @@
    "img": "https://sm.ign.com/ign_br/screenshot/default/acer-nitro-v15-i7-thumb_dg61.jpg",
    "at": 1793736545000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "The Super Mario Galaxy Movie, Resident Evil Reboot Film Earn Nominations for Hollywood Music in Media Awards",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/the-super-mario-galaxy-movie-resident-evil-reboot-film-earn-nominations-for-hollywood-music-in-/.243484",
+   "summary": "Monster Hunter Outlanders game also gets nomination",
+   "img": "",
+   "at": 1793736000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "HIDIVE Confirms English Dub for Nia Liston: The Merciless Maiden Anime, Reveals Series Leaving Service in November",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/hidive-confirms-english-dub-for-nia-liston-the-merciless-maiden-anime-reveals-series-leaving-/.243492",
+   "summary": "Dub debuts on November 18",
+   "img": "",
+   "at": 1793736000000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "WoW: Forever Shamans Are Protesting Class Changes After Being “Completely Ignored”",
@@ -233,6 +507,15 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Hollywood Reporter: Sony to Co-Finance, Distribute Live-Action Naruto Film, Begin Production in Spring 2027",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-03/hollywood-reporter-sony-to-co-finance-distribute-live-action-naruto-film-begin-production-in-spring-/.243485",
+   "summary": "Sony to handle international distribution for Lionsgate's film adaptation following multi-studio bidding",
+   "img": "",
+   "at": 1793732400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "The Elder Scrolls 6: Sentinel pode ter revelado seu nome oficial, mas a Bethesda diz que ainda vai \"levar um tempo até estarmos prontos para compartilhar mais\"",
    "url": "https://br.ign.com/the-elder-scrolls-vi/157274/the-elder-scrolls-6-sentinel-pode-ter-revelado-seu-nome-oficial-mas-a-bethesda-diz-que-ainda-vai-lev",
    "summary": "A espera não acabou A Bethesda finalmente revelou o nome de The Elder Scrolls VI: Sentinel , mais de oito anos após ter dado uma prévia do jogo na E3 2018; no entanto, ao que tudo…",
@@ -281,6 +564,15 @@
    "source": "Xbox Wire Brasil"
   },
   {
+   "title": "Stellar Blade Game Review",
+   "url": "https://www.animenewsnetwork.com/review/game/switch-2/stellar-blade/.243411",
+   "summary": "This game was made for people who specifically want a sexy action RPG.",
+   "img": "",
+   "at": 1793728800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "See How Battlefield 6’s Highly Requested New Feature Works",
    "url": "https://www.gamespot.com/articles/see-how-battlefield-6s-highly-requested-new-feature-works/",
    "summary": "Battlefield 6 is just a week away from its second phase of content for Season 5, and Battlefield Studios reveals the game's highly requested server browser feature will arrive…",
@@ -297,12 +589,39 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "RuPaul volta ao Brasil após 20 anos para comandar festa em São Paulo",
+   "url": "https://pipocamoderna.com.br/2026/11/rupaul-volta-brasil-festa-dj-sao-paulo/",
+   "summary": "RuPaul retorna ao Brasil em janeiroRuPaul voltará ao Brasil após 20 anos para comandar uma festa em São Paulo. A criadora e apresentadora de “RuPaul’s Drag Race” fará seu primeiro…",
+   "img": "",
+   "at": 1793727440000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
+   "title": "A Fazenda 18 bate recorde de audiência com expulsão de Mônica",
+   "url": "https://pipocamoderna.com.br/2026/11/a-fazenda-18-recorde-audiencia-sabado-expulsao-monica/",
+   "summary": "Expulsão impulsiona audiênciaA expulsão de Mônica Fonseca deu a “A Fazenda 18” sua maior audiência aos sábados desde a estreia da temporada. A edição exibida em 31 de outubro…",
+   "img": "",
+   "at": 1793726540000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
    "title": "Call of Duty: Warzone Temporada 1 – tudo o que você precisa saber",
    "url": "https://www.callofduty.com/br/pt/blog/2026/11/call-of-duty-modern-warfare-4-warzone-season-1#new_tab",
    "summary": "The post Call of Duty: Warzone Temporada 1 – tudo o que você precisa saber appeared first on Xbox Wire em Português .",
    "img": "",
    "at": 1793725798000,
    "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Justin Timberlake prepara documentário sobre polêmicas com Janet Jackson e Britney Spears",
+   "url": "https://pipocamoderna.com.br/2026/11/justin-timberlake-documentario-janet-jackson-britney-spears/",
+   "summary": "Documentário revisitará controvérsiasJustin Timberlake prepara uma série documental sobre sua trajetória, que contará com a participação de Janet Jackson e abordará as acusações…",
+   "img": "",
+   "at": 1793725686000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
   },
   {
    "title": "Review: Zero Parades: Director's Cut (Switch 2) - ZA/UM Returns With Another Atmospheric, Cerebral Yet Overly Familiar RPG",
@@ -319,6 +638,15 @@
    "img": "",
    "at": 1793724591000,
    "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "Malévola Alves desafia MC Loma após notificação para apagar post sobre Bolsa Família",
+   "url": "https://pipocamoderna.com.br/2026/11/malevola-alves-mc-loma-bolsa-familia/",
+   "summary": "Influenciadora se recusa a retirar postagemMalévola Alves afirmou nesta terça-feira (3/11) que não pretende apagar uma publicação sobre MC Loma, mesmo após receber uma notificação…",
+   "img": "",
+   "at": 1793722803000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
   },
   {
    "title": "25 Years Of Xbox Bundle Includes All These Games For $570",
@@ -345,6 +673,15 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Eliana amarga pior audiência na Globo, abaixo até do Auto Esporte",
+   "url": "https://pipocamoderna.com.br/2026/11/eliana-pior-audiencia-globo-auto-esporte/",
+   "summary": "Eliana registra pior audiência desde a estreiaEliana atingiu seu pior resultado de audiência desde que estreou nas tardes de domingo da Globo. O programa “Em Família com Eliana”…",
+   "img": "",
+   "at": 1793721330000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
    "title": "Pack Resident Evil para Switch 2 em promoção: leve RE 7, Village e Requiem com 29% OFF",
    "url": "https://www.hardware.com.br/hardware-indica/pack-resident-evil-para-switch-2-em-promocao-leve-re-7-village-e-requiem-com-29-off/",
    "summary": "Resident Evil Generation Pack para Switch 2 com 29% OFF: leve RE 7, Village e Requiem em um só pacote.",
@@ -367,6 +704,15 @@
    "img": "",
    "at": 1793720015000,
    "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Girls Band Cry: Novo filme ganha data de estreia",
+   "url": "https://www.jbox.com.br/2026/11/03/girls-band-cry-novo-filme-ganha-data-de-estreia/",
+   "summary": "Produção da Toei Animation chega em maio do ano que vem nos cinemas japoneses, dando sequência aos acontecimentos do animê de 2024.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/girls-band-cry-filme-destacada.jpg?ssl=1",
+   "at": 1793719900000,
+   "cat": "geek",
+   "source": "JBox"
   },
   {
    "title": "GTA 6 terá pré-download liberado em 10 de novembro e exigirá até 212 GB",
@@ -399,6 +745,15 @@
    "img": "https://images.nintendolife.com/5adec4802ebe3/large.jpg",
    "at": 1793719200000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "‘Bocchi the Rock!’ terá filme prelúdio sobre Seika, irmã mais velha de Nijika",
+   "url": "https://www.jbox.com.br/2026/11/03/bocchi-the-rock-tera-filme-preludio-sobre-seika-irma-mais-velha-de-nijika/",
+   "summary": "2ª temporada do animê regular também segue em produção.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Bocchi-the-rock-filme-destacada.jpg?ssl=1",
+   "at": 1793718854000,
+   "cat": "geek",
+   "source": "JBox"
   },
   {
    "title": "The Elder Scrolls 6: Sentinel is confirmed, finally getting new trailer and full name, 8 years, 4 months, and 23 days after its reveal",
@@ -449,6 +804,15 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Humberto Martins desiste da política após receber 0,01% dos votos",
+   "url": "https://pipocamoderna.com.br/2026/11/humberto-martins-desiste-politica-derrota-eleitoral/",
+   "summary": "Ator abandona planos políticosHumberto Martins desistiu de seguir carreira política após receber apenas 1.124 votos nas eleições de outubro, quando concorreu a deputado federal…",
+   "img": "",
+   "at": 1793713770000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
+  },
+  {
    "title": "Durante o Pichau Arena 2026, AMD destaca o Sul do Brasil como mercado gamer que merece mais atenção",
    "url": "https://www.hardware.com.br/noticia/amd-mercado-gamer-sul-brasil-pichau-arena-2026/",
    "summary": "Durante o Pichau Arena 2026, representante da AMD destaca o potencial do mercado gamer no Sul do Brasil e comenta a recepção do público e a expansão regional.",
@@ -471,6 +835,15 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/1-54.jpg",
    "at": 1793712637000,
    "source": "Hardware.com.br"
+  },
+  {
+   "title": "Itália reabre investigação sobre assassinato de Pasolini após 51 anos",
+   "url": "https://pipocamoderna.com.br/2026/11/italia-reabre-investigacao-assassinato-pasolini/",
+   "summary": "Justiça volta a investigar assassinatoO Ministério Público de Roma reabriu a investigação sobre o assassinato do cineasta e escritor Pier Paolo Pasolini, morto aos 53 anos na…",
+   "img": "",
+   "at": 1793712485000,
+   "cat": "geek",
+   "source": "Pipoca Moderna"
   },
   {
    "title": "Itch.io remove terabytes de conteúdo gerado por IA e lança filtro para jogadores evitarem a tecnologia",
@@ -543,6 +916,15 @@
    "img": "https://assetsio.gnwcdn.com/itch-logo-black-new-svg.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793707436000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Bloodthirsty Bride – Romance entre Vampira e Rei tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/bloodthirsty-bride-romance-entre-vampira-e-rei-tem-anuncio-de-anime/",
+   "summary": "... O post Bloodthirsty Bride – Romance entre Vampira e Rei tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793707399000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "Google cria Easter egg de Zelda: Ocarina of Time que leva usuários de volta a 1998",
@@ -649,12 +1031,30 @@
    "source": "Eurogamer"
   },
   {
+   "title": "Crítica | As Esculturas sem Cabeça | Pipoca e Nanquim",
+   "url": "https://www.jbox.com.br/2026/11/02/critica-as-esculturas-sem-cabeca-pipoca-e-nanquim/",
+   "summary": "Entre histórias inventivas e clichês, coletânea de Junji Ito é charmosa, mas fica aquém de outras do autor.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/10/jbox-critica-destacada-asesculturas.jpg?ssl=1",
+   "at": 1793642514000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
    "title": "Nintendo tried adding fast travel to The Legend of Zelda: Ocarina of Time remake, before devs realised \"we were missing out on the moments of discovery\"",
    "url": "https://www.eurogamer.net/nintendo-fast-travel-legend-of-zelda-ocarina-of-time-remake",
    "summary": "The Legend of Zelda: Ocarina of Time is being wrapped up in all kinds of modern touches for its imminent Nintendo Switch 2 remake (that owl seems to be less chatty , for…",
    "img": "https://assetsio.gnwcdn.com/Ocarina-of-Time-Link.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793642498000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Filme ‘Cães Sem Nome’ será exibido de graça em SP nesta quarta",
+   "url": "https://www.jbox.com.br/2026/11/02/filme-caes-sem-nome-sera-exibido-de-graca-em-sp-nesta-quarta/",
+   "summary": "Projeção será no cinema do Bunkyo, localizado na Liberdade.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/caessemnome-destacada.jpg?ssl=1",
+   "at": 1793639833000,
+   "cat": "geek",
+   "source": "JBox"
   },
   {
    "title": "Jogos precisam de iluminação ultra realista? Jogadores do Reddit defendem gráficos sem ray tracing",
@@ -673,6 +1073,15 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "Head Phones President e Exist Trace se reúnem em show no Brasil em abril",
+   "url": "https://www.jbox.com.br/2026/11/02/head-phones-president-e-exist-trace-se-reunem-em-show-no-brasil-em-abril/",
+   "summary": "Fusão de vozes femininas do metal japonês, evento POWER ROCK VOICES já tem ingressos à venda.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/powerrockvopices2027-destacada.jpg?ssl=1",
+   "at": 1793637298000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
    "title": "COD Modern Warfare 4 has seemingly answered DMZ players' PvE calls with new Story Mission changes - but there are major caveats",
    "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-story-missions-pve",
    "summary": "For as long as Call of Duty: Modern Warfare 4's DMZ extraction mode has been available, there've been calls for PvE-only servers . Developer Infinity Ward , for its part, has…",
@@ -687,6 +1096,177 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Warhammer-Survivors.jpg?w=300",
    "at": 1793636273000,
    "source": "GameSpot"
+  },
+  {
+   "title": "Bocchi the Rock! recebe adaptação para novo filme",
+   "url": "https://animenew.com.br/filme-bocchi-the-rock-2027/",
+   "summary": "O anime Bocchi the Rock! ganhará um novo filme previsto para estrear em 2027. O anúncio veio acompanhado de um trailer teaser e confirmou que a produção adaptará uma história…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Bocchi-the-Rock-recebe-adaptacao-para-novo-filme.webp",
+   "at": 1793629894000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Dublagem de ‘Dragon Ball Super’ chega completa via streaming pela 1ª vez no Disney+",
+   "url": "https://www.jbox.com.br/2026/11/02/dublagem-de-dragon-ball-super-chega-completa-via-streaming-pela-1a-vez-no-disney/",
+   "summary": "Versão disponível é a mesma exibida por canais de TV anos atrás.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/dragonballsuper-destacada.jpg?ssl=1",
+   "at": 1793628082000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Bocchi the Rock – Anime tem anuncio de Filme Original",
+   "url": "https://www.intoxianime.com/2026/11/bocchi-the-rock-anime-tem-anuncio-de-filme-original/",
+   "summary": "... O post Bocchi the Rock – Anime tem anuncio de Filme Original apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793540600000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Shiba Inu Rooms – Comédia sobre Garota vivendo com Fantasma de Cachorro tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/shiba-inu-rooms-comedia-sobre-garota-vivendo-com-fantasma-de-cachorro-tem-anuncio-de-anime/",
+   "summary": "... O post Shiba Inu Rooms – Comédia sobre Garota vivendo com Fantasma de Cachorro tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793540598000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Mangás mais Vendidos (Outubro 19 – Outubro 25)",
+   "url": "https://www.intoxianime.com/2026/10/mangas-mais-vendidos-outubro-19-outubro-25/",
+   "summary": "... O post Mangás mais Vendidos (Outubro 19 – Outubro 25) apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793473217000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Enako canta abertura e entra no elenco de Isshiki-san",
+   "url": "https://animenew.com.br/isshiki-san-wants-to-know-about-love-enako/",
+   "summary": "A cosplayer Enako participará do anime Isshiki-san Wants to Know About Love (Isshiki-san wa Koi o Shiritai) como dubladora e intérprete da música de abertura. A Kadokawa divulgou…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/10/Enako-canta-abertura-e-entra-no-elenco-de-Isshiki-san.webp",
+   "at": 1793459827000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Hiiragi-san Chi – Mangá de Vampiros da Autora de Yamada-kun tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/10/hiiragi-san-chi-manga-de-vampiros-da-autora-de-yamada-kun-tem-anuncio-de-anime/",
+   "summary": "... O post Hiiragi-san Chi – Mangá de Vampiros da Autora de Yamada-kun tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793451552000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Isshiki-san wa Koi – Comédia romântica entre policiais ganha trailer com OP",
+   "url": "https://www.intoxianime.com/2026/10/isshiki-san-wa-koi-comedia-romantica-entre-policiais-ganha-trailer-com-op/",
+   "summary": "... O post Isshiki-san wa Koi – Comédia romântica entre policiais ganha trailer com OP apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793451551000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "[Rumor]Hagure Idol – Ecchi sobre Lutadora em Battle Royale de Atores de Vídeos Adultos pode ter anime",
+   "url": "https://www.intoxianime.com/2026/10/rumorhagure-idol-ecchi-sobre-lutadora-em-battle-royale-de-atores-de-videos-adultos-pode-ter-anime/",
+   "summary": "... O post [Rumor]Hagure Idol – Ecchi sobre Lutadora em Battle Royale de Atores de Vídeos Adultos pode ter anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793451550000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Mercado de Animes bateu novo recorde de crescimento em 2025",
+   "url": "https://www.intoxianime.com/2026/10/mercado-de-animes-bateu-novo-recorde-de-crescimento-em-2025/",
+   "summary": "... O post Mercado de Animes bateu novo recorde de crescimento em 2025 apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793451546000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Hiragi-san’s House of Vampires ganhará anime",
+   "url": "https://animenew.com.br/hiragi-san-house-of-vampires-anime/",
+   "summary": "O mangá Hiragi-san’s House of Vampires (Hiiragi-san no Kyūketsu Jijō), de Miki Yoshikawa, terá uma adaptação para anime. O anúncio revelou um primeiro visual da produção, que…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/10/Hiragi-sans-House-of-Vampires-ganhara-anime.webp",
+   "at": 1793411873000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Destiny Unchain Online revela elenco e estreia em 2027",
+   "url": "https://animenew.com.br/destiny-unchain-online-anime-estreia-2027/",
+   "summary": "O anime Destiny Unchain Online (Destiny Unchain Online: Kyūketsuki Shōjo to Natte) divulgou seu primeiro vídeo promocional, um visual inédito, a equipe principal e detalhes do…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/10/Destiny-Unchain-Online-revela-elenco-e-estreia-em-2027.webp",
+   "at": 1793411394000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Crítica | O 11º Tripulante | Editora JBC",
+   "url": "https://www.jbox.com.br/2026/10/30/critica-o-11o-tripulante-editora-jbc/",
+   "summary": "Clássico da ficção científica de Moto Hagio entrega não apenas uma trama de suspense, mas também discussões sobre gênero e humanidade.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/10/jbox-critica-destacada-11tripulante.jpg?ssl=1",
+   "at": 1793393627000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Death Stranding: Animê ganha primeiro trailer",
+   "url": "https://www.jbox.com.br/2026/10/30/death-stranding-anime-ganha-primeiro-trailer/",
+   "summary": "Série tem lançamento marcado para 2027 e é uma das três adaptações anunciadas para os jogos de Hideo Kojima.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/10/death-stranding-isolations-destacada.jpg?ssl=1",
+   "at": 1793392005000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Mercedes and the Waning Moon revela novos dubladores",
+   "url": "https://animenew.com.br/mercedes-waning-moon-anime-novos-dubladores/",
+   "summary": "O anime Mercedes and the Waning Moon (Kaketa Tsuki no Mercedes) divulgou seu segundo vídeo promocional nesta sexta-feira (30), apresentando quatro novos integrantes do elenco. A…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/10/Mercedes-and-the-Waning-Moon-revela-novos-dubladores.webp",
+   "at": 1793386961000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Akira Toriyama: Antiga casa e estúdio do autor entra em processo de demolição",
+   "url": "https://www.jbox.com.br/2026/10/30/akira-toriyama-antiga-casa-e-estudio-do-autor-entra-em-processo-de-demolicao/",
+   "summary": "Espaço abrigava o Bird Studio, criado como local de produção de seus mangás e outros trabalhos.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/07/akiratoriyama-destacada.jpg?ssl=1",
+   "at": 1793386711000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Lustful Domination ganhará anime pelo AnimeFesta",
+   "url": "https://animenew.com.br/lustful-domination-anime-animefesta/",
+   "summary": "A novel e o mangá Lustful Domination: My Magic and Virility Are So Strong, I Can Go At It 24/7 ganharão uma adaptação em anime pelo AnimeFesta, conforme anunciado pela editora…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/10/Lustful-Domination-ganhara-anime-pelo-AnimeFesta.webp",
+   "at": 1793386669000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "RapaduraCast 930 – Será que a gente poderia ter visto ESSES FILMES??",
+   "url": "https://cinemacomrapadura.com.br/rapaduracast-podcast/631163/rapaduracast-930-sera-que-a-gente-poderia-ter-visto-esses-filmes/",
+   "summary": "⁠Jurandir Filho⁠, ⁠Rogério Montanare⁠ e ⁠Thiago Siqueira⁠⁠ conversam sobre quando a gente era criança nos anos 80/90 e a televisão brasileira não tinha limites! Crescemos…",
+   "img": "",
+   "at": 1793373807000,
+   "cat": "geek",
+   "source": "Cinema com Rapadura"
+  },
+  {
+   "title": "Destiny Unchain – Novel sobre garoto preso em VR como Vampira OP ganha trailer, staff e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/10/destiny-unchain-novel-sobre-garoto-preso-em-vr-como-vampira-op-ganha-trailer-staff-e-janela-de-estreia/",
+   "summary": "... O post Destiny Unchain – Novel sobre garoto preso em VR como Vampira OP ganha trailer, staff e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793366808000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   }
  ]
 }
