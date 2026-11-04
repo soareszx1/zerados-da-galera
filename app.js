@@ -2769,6 +2769,15 @@ document.addEventListener("click",async e=>{
   if(a==="modok"){try{await S.db.doc("mod/resolvidas").set({map:{[el.dataset.key]:{by:S.myId,at:Date.now(),acao:"dispensada"}}},{merge:true});modLog("dispensou uma denúncia","","")}catch(err){toast(errMsg(err))}return}
 });
 
+/* ---------- v21: cenários de jogos no perfil (arte original, nada de marca registrada) ---------- */
+const SCENES={"sc-sinal": {"l": "Sinal desconhecido", "tag": "horror espacial", "r": {"lv": 4}}, "sc-fogueira": {"l": "Fogueira sombria", "tag": "fantasia sombria", "r": {"lv": 3}}, "sc-neon": {"l": "Cidade neon", "tag": "cyberpunk", "r": {"lv": 5}}, "sc-8bit": {"l": "Fliperama 8-bit", "tag": "retrô", "r": {"lv": 2}}, "sc-pista": {"l": "Pista noturna", "tag": "corrida", "r": {"lv": 6}}, "sc-ruinas": {"l": "Terra devastada", "tag": "pós-apocalipse", "r": {"lv": 7}}, "sc-oeste": {"l": "Pôr do sol no oeste", "tag": "faroeste", "r": {"lv": 8}}, "sc-reino": {"l": "Reino medieval", "tag": "medieval", "r": {"lv": 9}}, "sc-sakura": {"l": "Japão feudal", "tag": "samurai", "r": {"lv": 10}}, "sc-piratas": {"l": "Mar dos piratas", "tag": "piratas", "r": {"lv": 11}}, "sc-cosmos": {"l": "Odisseia espacial", "tag": "ficção científica", "r": {"lv": 12}}, "sc-mansao": {"l": "Mansão assombrada", "tag": "terror", "r": {"lv": 14}}};
+Object.entries(SCENES).forEach(([k,o])=>{PTHEME[k]={l:"🎮 "+o.l,r:o.r}});
+const _themeStyle0=themeStyle;
+themeStyle=function(p){const t=cz(p).theme;if(t&&SCENES[t])return ` data-th="${t}"`;return _themeStyle0(p)};
+const _viewPerfilSc=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
+  return h.replace(/(<section class="box phero" data-th="(sc-[a-z0-9]+)"[^>]*>)/,(m,a,k)=>SCENES[k]?a+`<span class="sctag">${esc(SCENES[k].tag)}</span>`:a)};
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
