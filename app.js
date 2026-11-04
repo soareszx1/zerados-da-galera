@@ -1761,7 +1761,7 @@ function viewPromocoes(){
   return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Promoções</span><h3>Ofertas da semana</h3>${upd?`<span class="hint">atualizado há ${ago(upd)}</span>`:""}</div></div>
     <div class="tierpick" role="group" aria-label="Tipo de promoção"><button data-act="promocls" data-id="" aria-pressed="${!cls}">Todas</button>${PROMO_CLS.map(([k,n])=>`<button data-act="promocls" data-id="${k}" aria-pressed="${cls===k}">${esc(n)}${cnt(k)?` <span class="tabn">${cnt(k)}</span>`:""}</button>`).join("")}</div>
     ${lojas.length>1?`<div class="pfilt"><label class="whosel${S.promoLoja?" on":""}"><span class="sr-only">Filtrar por loja</span><select id="promoloja-sel"><option value="">Todas as lojas (${lojas.length})</option>${lojas.map(l=>`<option value="${esc(l)}"${S.promoLoja===l?" selected":""}>${esc(l)}</option>`).join("")}</select></label><span class="hint">${AF.length} oferta${AF.length===1?"":"s"}</span></div>`:""}
-    ${AF.length?`<div class="pgrid">${AF.map(promoCard).join("")}</div>`:`<p class="hint">${S.mode==="demo"?"No modo exemplo as promoções não aparecem.":"Nenhuma promoção nessa categoria agora."}</p>`}
+    ${AF.length?`<div class="prgrid">${AF.map(promoCard).join("")}</div>`:`<p class="hint">${S.mode==="demo"?"No modo exemplo as promoções não aparecem.":"Nenhuma promoção nessa categoria agora."}</p>`}
     <section class="sec"><h4>Onde procurar</h4><div class="psitegrid">${sites}</div></section></div>`;
 }
 document.addEventListener("click",e=>{const el=e.target.closest('[data-act="promocls"]');if(!el)return;S.promoCls=el.dataset.id;renderView()});
@@ -1917,6 +1917,7 @@ function seasonBox(){
 const shotsOf = p => Object.values(p?.games||{}).reduce((s,g)=>s+((g.shots||[]).length),0);
 const notas10 = p => Object.values(p?.games||{}).filter(g=>g.nota===10).length;
 BADGES.push(
+  {id:"criador",ic:"ZG",col:"linear-gradient(135deg,#f5c518,#ff3b6b)",t:"Criador do site",ok:(s,o,pid)=>isCreator(pid),d:()=>"fundou o Zerados da Galera"},
   {id:"zero50",ic:"50",col:"var(--tS)",t:"Zerador nato",ok:s=>s.done>=50,d:s=>`${s.done} zerados`},
   {id:"zero100",ic:"💯",col:"var(--st-plat)",t:"Lenda viva",ok:s=>s.done>=100,d:s=>`${s.done} zerados`},
   {id:"plat5",ic:"🏆",col:"var(--st-plat)",t:"Caçador de platinas",ok:s=>s.plat>=5,d:s=>`${s.plat} platinas`},
@@ -1938,9 +1939,13 @@ function vitrineBadges(pid){const p=players()[pid];const have=badgesOf(pid);cons
   return ids.length?`<span class="bvit">${ids.map(id=>badgeMini(have.find(b=>b.id===id))).join("")}</span>`:""}
 
 /* ---------- personalização (desbloqueáveis) ---------- */
-const REQ_TXT = r => r.lv?`Nível ${r.lv}`:r.streak?`Sequência de ${r.streak} dias`:r.badge?`Conquista “${(BADGES.find(b=>b.id===r.badge)||{}).t||r.badge}”`:r.top1?"Campeão de temporada":r.top3?"Top 3 de temporada":r.miss?`${r.miss} missões`:"";
+const REQ_TXT = r => r.owner?"Exclusivo do criador do site":r.lv?`Nível ${r.lv}`:r.streak?`Sequência de ${r.streak} dias`:r.badge?`Conquista “${(BADGES.find(b=>b.id===r.badge)||{}).t||r.badge}”`:r.top1?"Campeão de temporada":r.top3?"Top 3 de temporada":r.miss?`${r.miss} missões`:"";
+const OWNER_UID = (typeof CFG!=="undefined"&&CFG.ownerUid)||"";
+const isCreator = pid => !!pid&&!!OWNER_UID&&pid===OWNER_UID;
 function unlocked(pid,r){
   if(!r)return true;const p=players()[pid];if(!p)return false;
+  if(isCreator(pid))return true;          // o criador do site tem tudo liberado
+  if(r.owner)return false;
   if(r.lv&&levelOf(xpOf(pid)).L<r.lv)return false;
   if(r.streak&&bestStreakOf(p)<r.streak)return false;
   if(r.miss&&(p.missN||0)<r.miss)return false;
@@ -1949,25 +1954,25 @@ function unlocked(pid,r){
   if(r.top3&&!seasonData().top3[pid])return false;
   return true;
 }
-const FRAMES={nenhuma:{l:"Nenhuma"},neon:{l:"Pulso neon",r:{lv:2}},arcoiris:{l:"Arco-íris",r:{lv:3}},pixel:{l:"Pixel",r:{lv:4}},ouro:{l:"Ouro",r:{lv:5}},
+const FRAMES={nenhuma:{l:"Nenhuma"},fundador:{l:"✦ Criador",r:{owner:true}},neon:{l:"Pulso neon",r:{lv:2}},arcoiris:{l:"Arco-íris",r:{lv:3}},pixel:{l:"Pixel",r:{lv:4}},ouro:{l:"Ouro",r:{lv:5}},
   gelo:{l:"Gelo",r:{lv:6}},coracao:{l:"Coração",r:{lv:7}},glitch:{l:"Glitch",r:{lv:8}},galaxia:{l:"Galáxia",r:{lv:10}},lendario:{l:"Lendário",r:{lv:20}},
   fogo:{l:"Fogo",r:{streak:7}},cometa:{l:"Cometa",r:{streak:30}},raio:{l:"Raio",r:{miss:30}},platina:{l:"Platina",r:{badge:"platina"}},
   podio:{l:"Pódio",r:{top3:true}},coroa:{l:"Coroa do campeão",r:{top1:true}}};
-const PFX={nenhum:{l:"Nenhum"},estrelas:{l:"Estrelas",r:{lv:2}},confete:{l:"Confete",r:{lv:3}},neve:{l:"Neve",r:{lv:4}},bolhas:{l:"Bolhas",r:{lv:5}},
+const PFX={nenhum:{l:"Nenhum"},fundador:{l:"✦ Poeira de ouro",r:{owner:true}},estrelas:{l:"Estrelas",r:{lv:2}},confete:{l:"Confete",r:{lv:3}},neve:{l:"Neve",r:{lv:4}},bolhas:{l:"Bolhas",r:{lv:5}},
   coracoes:{l:"Corações",r:{lv:6}},chuva:{l:"Chuva neon",r:{lv:8}},pixels:{l:"Pixels",r:{lv:10}},aurora:{l:"Aurora",r:{lv:12}},raios:{l:"Tempestade",r:{lv:15}},
   brasas:{l:"Brasas",r:{streak:14}},fogos:{l:"Fogos de artifício",r:{top3:true}}};
-const PTHEME={nenhum:{l:"Padrão"},duo:{l:"Duas cores",r:{lv:3}},animado:{l:"Gradiente animado",r:{lv:7}}};
+const PTHEME={nenhum:{l:"Padrão"},fundador:{l:"✦ Trono do criador",r:{owner:true}},duo:{l:"Duas cores",r:{lv:3}},animado:{l:"Gradiente animado",r:{lv:7}}};
 const THEMECOLORS=["#FF3B6B","#FF9F1C","#F5C518","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5","#00C9A7","#0F0F1A","#7A1F3D","#1F4E79"];
-Object.assign(NAMEMODES,{contorno:"Contorno",sombra:"Sombra 3D",arcoiris:"Arco-íris",onda:"Onda",gradanim:"Gradiente pulsante",glitch:"Glitch",fogo:"Fogo",holo:"Holográfico"});
+Object.assign(NAMEMODES,{fundador:"✦ Ouro do criador",contorno:"Contorno",sombra:"Sombra 3D",arcoiris:"Arco-íris",onda:"Onda",gradanim:"Gradiente pulsante",glitch:"Glitch",fogo:"Fogo",holo:"Holográfico"});
 Object.assign(NAMEFONTS,{pixel:"Pixel",futuro:"Futurista",marcador:"Marcador",cursiva:"Cursiva",terror:"Terror",letreiro:"Letreiro"});
-const NAMEMODE_REQ={brilho:{lv:2},contorno:{lv:2},sombra:{lv:3},arcoiris:{lv:4},onda:{lv:5},gradanim:{lv:6},glitch:{lv:9},holo:{lv:12},fogo:{streak:7}};
+const NAMEMODE_REQ={fundador:{owner:true},brilho:{lv:2},contorno:{lv:2},sombra:{lv:3},arcoiris:{lv:4},onda:{lv:5},gradanim:{lv:6},glitch:{lv:9},holo:{lv:12},fogo:{streak:7}};
 const NAMEFONT_REQ={pixel:{lv:3},futuro:{lv:4},marcador:{lv:5},cursiva:{lv:6},terror:{lv:7},letreiro:{lv:8}};
 const GIF_REQ={avatar:{lv:2},banner:{lv:4}};
 const cz = p => (p&&typeof p.cosm==="object"&&p.cosm)||{};
 function frameWrap(p,sm,html){const f=cz(p).frame;return f&&FRAMES[f]&&f!=="nenhuma"?`<span class="gfr fr-${f}${sm?" sm":""}">${html}</span>`:html}
 function fxLayer(p,small){const f=cz(p).fx;if(!f||!PFX[f]||f==="nenhum")return "";const n=small?8:16;
   return `<span class="pfx fx-${f}" aria-hidden="true">${Array.from({length:n},(_,i)=>`<i style="--i:${i};--x:${(hash(f+i)%100)}%;--d:${3+hash(i+f)%5}s;--dl:-${hash(f+"d"+i)%6}s"></i>`).join("")}</span>`}
-function themeStyle(p){const t=cz(p).theme;if(!t||!PTHEME[t]||t==="nenhum")return "";const [a,b]=(cz(p).tc||[]).filter(c=>THEMECOLORS.includes(c));
+function themeStyle(p){const t=cz(p).theme;if(!t||!PTHEME[t]||t==="nenhum")return "";if(t==="fundador")return ` data-th="fundador"`;const [a,b]=(cz(p).tc||[]).filter(c=>THEMECOLORS.includes(c));
   return a?` data-th="${t}" style="--th1:${a};--th2:${b||a}"`:""}
 
 /* ---------- avatar e banner animados (GIF/WebP sem perder a animação) ---------- */
@@ -2187,7 +2192,9 @@ missionsCard=function(){
   const extra=`<div class="mgroup"><div class="mgt"><span class="flabel">Especiais</span><span class="hint">❄️ ${m.freeze||0}/2 congelamentos · ganhe 1 completando as 4 semanais</span></div>${duoH}${metaH}${desH}</div>`;
   const i=h.lastIndexOf('<div class="mfoot2">');h=i>=0?h.slice(0,i)+extra+h.slice(i):h;
   const L=LIGAS[ligaOf(m)];
-  h=h.replace('<div class="mhead"><div>',`<div class="mhead"><div><a class="ligachip" href="#ranking" style="--lc:${L.c}">${L.ic} ${L.n}</a>`);
+  const si=h.indexOf('<div class="mstreak'),gi=h.indexOf('<div class="mgroup">',si);
+  if(si>=0&&gi>si){let seg=h.slice(si,gi);const k=seg.lastIndexOf("</div>");seg=seg.slice(0,k)+"</div></div>"+seg.slice(k+6);
+    h=h.slice(0,si)+`<div class="mside"><a class="ligachip" href="#ranking" style="--lc:${L.c}" title="Ver a liga no Ranking">${L.ic} ${L.n}</a>`+seg+h.slice(gi)}
   return h;
 };
 // depois de resgatar: dá congelamento (4 semanais completas) e guarda o selo do desafio
