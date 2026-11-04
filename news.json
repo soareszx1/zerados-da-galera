@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793777316840,
+ "atualizadoEm": 1793784444703,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -67,27 +67,25 @@
    "itens": 15
   },
   {
-   "nome": "Omelete",
-   "ok": false,
-   "itens": 0
-  },
-  {
-   "nome": "Cinema com Rapadura",
+   "nome": "Crunchyroll Notícias",
    "ok": true,
    "itens": 15
   },
   {
-   "nome": "Pipoca Moderna",
-   "ok": true,
-   "itens": 15
-  },
-  {
-   "nome": "Jovem Nerd (filmes e séries)",
+   "nome": "Crunchyroll News",
    "ok": false,
    "itens": 0
   }
  ],
  "itens": [
+  {
+   "title": "Ubisoft and at least two other companies are interested in buying Arkane, according to new report",
+   "url": "https://www.eurogamer.net/arkane-studios-ubisoft-interested-buyers",
+   "summary": "Arkane Studios, which spent the last several months in limbo following Xbox's decision to divest itself from the studio, has apparently received buyout offers from several…",
+   "img": "https://assetsio.gnwcdn.com/Marvel%E2%80%99s-Blade-_-Announcement-Trailer---The-Game-Awards-2023-1-5-screenshot.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793783871000,
+   "source": "Eurogamer"
+  },
   {
    "title": "Street Fighter 6 'Winter Pocket Present' Fighting Pass Adds Super Gem Fighter Mini Mix",
    "url": "https://www.nintendolife.com/news/2026/11/street-fighter-6-winter-pocket-present-fighting-pass-adds-super-gem-fighter-mini-mix",
@@ -105,15 +103,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Roça de A Fazenda 18 é formada com reviravolta",
-   "url": "https://pipocamoderna.com.br/2026/11/rikardo-eduarda-roca-fazenda/",
-   "summary": "Poder muda a formação da RoçaRikardo Negro mudou o resultado da 7ª formação da Roça de “A Fazenda 18” na noite de terça-feira (3/11). O peão usou o Poder da Chama Vermelha para…",
-   "img": "",
-   "at": 1793767627000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "Butt Detective TV Anime Gets New Episodes Starting Next April",
    "url": "https://www.animenewsnetwork.com/news/2026-11-03/butt-detective-tv-anime-gets-new-episodes-starting-next-april/.243508",
    "summary": "Previous batch of new episodes debuted on October 3",
@@ -126,7 +115,7 @@
    "title": "The First Review For Zelda: Ocarina Of Time Switch 2 Is In",
    "url": "https://www.nintendolife.com/news/2026/11/the-first-review-for-zelda-ocarina-of-time-switch-2-is-in",
    "summary": "Famitsu delivers its final verdict. It's a huge week in gaming with the highly anticipated launch of The Legend of Zelda: Ocarina of Time for the Switch 2. The first review from…",
-   "img": "https://images.nintendolife.com/f46b98d752c06/large.jpg",
+   "img": "https://images.nintendolife.com/e919bb247fbbc/large.jpg",
    "at": 1793764500000,
    "source": "Nintendo Life"
   },
@@ -218,15 +207,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Jorge & Mateus perdem show de réveillon em Fortaleza após apoio a Flávio Bolsonaro",
-   "url": "https://pipocamoderna.com.br/2026/11/jorge-mateus-cancelados-fortaleza/",
-   "summary": "Prefeitura confirma cancelamentoJorge & Mateus foram retirados da programação do Réveillon de Fortaleza após uma onda de protestos contra o apoio do cantor Jorge à candidatura de…",
-   "img": "",
-   "at": 1793756767000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "Sonic Racing: CrossWorlds - Year Two 2.0.0 Patch Now Live - New Additions, Changes & Improvements",
    "url": "https://www.nintendolife.com/news/2026/11/sonic-racing-crossworlds-year-two-2-0-0-patch-now-live-new-additions-changes-and-improvements",
    "summary": "Including paid and free updates. : It's another huge week in gaming, and Sonic Racing: CrossWorlds is joining in on the fun with its launch of \"Year Two\". Read the full article on…",
@@ -253,15 +233,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Marina Ruy Barbosa recebe apoios de famosos após ataques de bolsonaristas",
-   "url": "https://pipocamoderna.com.br/2026/11/marina-ruy-barbosa-apoio-malu-galli-janones/",
-   "summary": "Artistas saem em defesa de MarinaMarina Ruy Barbosa recebeu uma onda de apoio de artistas e políticos após o rompimento de amizades provocado por seu posicionamento nas eleições…",
-   "img": "",
-   "at": 1793751520000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "Kaeruno Erefante Launches Manga Diary of a Male Porn Star Sequel",
    "url": "https://www.animenewsnetwork.com/news/2026-11-03/kaeruno-erefante-launches-manga-diary-of-a-male-porn-star-sequel/.243477",
    "summary": "AV Danyū Hajimemashita Reiwa-hen sequel manga launched on October 30",
@@ -269,15 +240,6 @@
    "at": 1793750400000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Morre Eliana Rocha, atriz de Pé na Cova, aos 82 anos",
-   "url": "https://pipocamoderna.com.br/2026/11/morre-eliana-rocha-atriz-pe-na-cova/",
-   "summary": "Miguel Falabella anuncia morte da atrizA atriz Eliana Rocha, conhecida pelo papel de Luz Divina na série de comédia “Pé na Cova”, morreu aos 82 anos. A notícia foi divulgada nesta…",
-   "img": "",
-   "at": 1793749434000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "Otaku Vampire's Love Bite Manga Gets TV Anime",
@@ -298,15 +260,6 @@
    "source": "JBox"
   },
   {
-   "title": "Neve Campbell confirma retorno como Sidney Prescott em Pânico 8",
-   "url": "https://pipocamoderna.com.br/2026/11/neve-campbell-confirma-retorno-panico-8/",
-   "summary": "Sidney Prescott estará de voltaNeve Campbell confirmou que voltará a interpretar Sidney Prescott em “Pânico 8”, próximo capítulo da franquia de terror criada por Wes Craven. A…",
-   "img": "",
-   "at": 1793748353000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "Mashle: Magic and Muscles Manga Gets Live-Action Film on March 19",
    "url": "https://www.animenewsnetwork.com/news/2026-11-03/mashle-magic-and-muscles-manga-gets-live-action-film-on-march-19/.243497",
    "summary": "Warner Brothers, Fuji TV, Credeus, Toho collaborate on project",
@@ -314,24 +267,6 @@
    "at": 1793748053000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Justiça anula sentença favorável a Ana Castela por uso de cavalo em clipe",
-   "url": "https://pipocamoderna.com.br/2026/11/justica-anula-sentenca-ana-castela-cavalo-pipoco/",
-   "summary": "Tribunal determina reabertura do processoAna Castela perdeu uma decisão favorável na Justiça do Paraná em um processo sobre o uso de um cavalo no videoclipe de “Pipoco”, sucesso…",
-   "img": "",
-   "at": 1793747695000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
-   "title": "Emenda Pix de obras paga show de Jorge e Mateus no interior de SP",
-   "url": "https://pipocamoderna.com.br/2026/11/emenda-pix-obras-paga-shows-jorge-mateus/",
-   "summary": "Dinheiro para obras foi usado em showsUma emenda parlamentar de R$ 1,1 milhão destinada a obras de infraestrutura em Fartura, no interior de São Paulo, foi utilizada pela…",
-   "img": "",
-   "at": 1793746929000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "Watari Sakou's Honey Trap Method Manga Ends on December 1",
@@ -343,30 +278,12 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Marina Ruy Barbosa rompe com amigas após apoio a Lula nas eleições",
-   "url": "https://pipocamoderna.com.br/2026/11/marina-ruy-barbosa-rompe-amizades-apoio-lula/",
-   "summary": "Amizades rompidas após divergências políticasMarina Ruy Barbosa perdeu amizades de décadas depois de manifestar apoio à reeleição de Luiz Inácio Lula da Silva (PT). A atriz se…",
-   "img": "",
-   "at": 1793745931000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "\"Já assisti cinquenta vezes\": historiador militar escolhe o melhor filme sobre a Segunda Guerra Mundial",
    "url": "https://br.ign.com/cinema-tv/157293/ja-assisti-cinquenta-vezes-historiador-militar-escolhe-o-melhor-filme-sobre-a-segunda-guerra-mundial",
    "summary": "Um filme de guerra extraordinário e incomum que ganhou um Oscar em 1954 Diferentemente da ação e violência dos filmes de guerra mais comuns, esse longa da década de 50 foca na…",
    "img": "https://sm.ign.com/ign_br/screenshot/default/1366-2000_hf79.jpg",
    "at": 1793745033000,
    "source": "IGN Brasil"
-  },
-  {
-   "title": "Steve Ellis, cantor do sucesso Everlasting Love, morre aos 76 anos",
-   "url": "https://pipocamoderna.com.br/2026/11/morre-steve-ellis-love-affair-everlasting-love/",
-   "summary": "Vocalista da banda britânica Love Affair morreu em 30 de outubro, após complicações de doença crônica",
-   "img": "",
-   "at": 1793744056000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "'I'm Running for Crown Princess, but All I Want is a Steady Paycheck!' Manga Ends",
@@ -533,6 +450,15 @@
    "source": "GameSpot"
   },
   {
+   "title": "Filme em anime de Girls Band Cry ganha trailer, pôster e data de lançamento",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/3/anime-filme-girls-band-cry-trailer-poster-data-estreia",
+   "summary": "A série ganhará ainda uma adaptação para teatro prevista para março de 2027",
+   "img": "https://a.storyblok.com/f/178900/1460x821/fd866347bf/girls-band-cry-movie-2027-key.png",
+   "at": 1793733600000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "WoW: Forever Is Giving Players A Big Damage Boost For Launch",
    "url": "https://www.gamespot.com/articles/wow-forever-is-giving-players-a-big-damage-boost-for-launch/",
    "summary": "World of Warcraft: Forever is changing in some major ways for launch, with Blizzard revealing classes across the board will deal more damage as it pursues design solutions that…",
@@ -598,6 +524,15 @@
    "source": "IGN Brasil"
   },
   {
+   "title": "Norihiro Yagi, autor de Claymore, lança novo mangá",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/3/claymore-autor-norihiro-yagi-bartlet-fairy-basslet",
+   "summary": "Intitulado Bartlet Fairy Basslet, o mangá está disponível para ler no MANGA Plus",
+   "img": "https://a.storyblok.com/f/178900/960x540/cd56127c96/bartlet-fairy-basslet.jpg",
+   "at": 1793730240000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "PCs com 32GB de RAM despencam no Steam em meio à crise de memória",
    "url": "https://www.hardware.com.br/hardware/queda-32gb-ram-steam-survey/",
    "summary": "Configurações de 16GB e 8GB ganham espaço enquanto o aumento nos preços de DRAM e NAND pressiona os jogadores.",
@@ -630,39 +565,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "RuPaul volta ao Brasil após 20 anos para comandar festa em São Paulo",
-   "url": "https://pipocamoderna.com.br/2026/11/rupaul-volta-brasil-festa-dj-sao-paulo/",
-   "summary": "RuPaul retorna ao Brasil em janeiroRuPaul voltará ao Brasil após 20 anos para comandar uma festa em São Paulo. A criadora e apresentadora de “RuPaul’s Drag Race” fará seu primeiro…",
-   "img": "",
-   "at": 1793727440000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
-   "title": "A Fazenda 18 bate recorde de audiência com expulsão de Mônica",
-   "url": "https://pipocamoderna.com.br/2026/11/a-fazenda-18-recorde-audiencia-sabado-expulsao-monica/",
-   "summary": "Expulsão impulsiona audiênciaA expulsão de Mônica Fonseca deu a “A Fazenda 18” sua maior audiência aos sábados desde a estreia da temporada. A edição exibida em 31 de outubro…",
-   "img": "",
-   "at": 1793726540000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
-  },
-  {
    "title": "Call of Duty: Warzone Temporada 1 – tudo o que você precisa saber",
    "url": "https://www.callofduty.com/br/pt/blog/2026/11/call-of-duty-modern-warfare-4-warzone-season-1#new_tab",
    "summary": "The post Call of Duty: Warzone Temporada 1 – tudo o que você precisa saber appeared first on Xbox Wire em Português .",
    "img": "",
    "at": 1793725798000,
    "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Justin Timberlake prepara documentário sobre polêmicas com Janet Jackson e Britney Spears",
-   "url": "https://pipocamoderna.com.br/2026/11/justin-timberlake-documentario-janet-jackson-britney-spears/",
-   "summary": "Documentário revisitará controvérsiasJustin Timberlake prepara uma série documental sobre sua trajetória, que contará com a participação de Janet Jackson e abordará as acusações…",
-   "img": "",
-   "at": 1793725686000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "Review: Zero Parades: Director's Cut (Switch 2) - ZA/UM Returns With Another Atmospheric, Cerebral Yet Overly Familiar RPG",
@@ -679,15 +587,6 @@
    "img": "",
    "at": 1793724591000,
    "source": "PlayStation Blog BR"
-  },
-  {
-   "title": "Malévola Alves desafia MC Loma após notificação para apagar post sobre Bolsa Família",
-   "url": "https://pipocamoderna.com.br/2026/11/malevola-alves-mc-loma-bolsa-familia/",
-   "summary": "Influenciadora se recusa a retirar postagemMalévola Alves afirmou nesta terça-feira (3/11) que não pretende apagar uma publicação sobre MC Loma, mesmo após receber uma notificação…",
-   "img": "",
-   "at": 1793722803000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "25 Years Of Xbox Bundle Includes All These Games For $570",
@@ -714,13 +613,13 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Eliana amarga pior audiência na Globo, abaixo até do Auto Esporte",
-   "url": "https://pipocamoderna.com.br/2026/11/eliana-pior-audiencia-globo-auto-esporte/",
-   "summary": "Eliana registra pior audiência desde a estreiaEliana atingiu seu pior resultado de audiência desde que estreou nas tardes de domingo da Globo. O programa “Em Família com Eliana”…",
-   "img": "",
-   "at": 1793721330000,
+   "title": "Haruhi Suzumiya e as comemorações do seu 20º aniversário",
+   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/3/anime-haruhi-suzumiya-exposicao-aniversario-20-anos-cobertura-fotos",
+   "summary": "Confira fotos da exposição do aniversário de Haruhi Suzumiya que está rolando no Japão!",
+   "img": "https://a.storyblok.com/f/178900/1920x1153/36651a282d/haruhi-suzumiya-20th-anniversary-exhibit.jpg",
+   "at": 1793721600000,
    "cat": "geek",
-   "source": "Pipoca Moderna"
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Pack Resident Evil para Switch 2 em promoção: leve RE 7, Village e Requiem com 29% OFF",
@@ -829,6 +728,15 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Dublagem da 3ª temporada de [OSHI NO KO] está disponível aqui na Crunchyroll",
+   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/3/dubladores-oshi-no-ko-temporada-3",
+   "summary": "Conheça o elenco e os profissionais que trabalharam na dublagem da temporada mais recente do anime!",
+   "img": "https://a.storyblok.com/f/178900/1200x675/273441df2f/oshi-no-ko-season-3.jpg",
+   "at": 1793715120000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Helldivers 2: novos tipos de Terminídios venenosos e mais cavernas de Insetos surgem por toda a galáxia hoje mesmo",
    "url": "https://blog.br.playstation.com/2026/11/03/helldivers-2-novos-tipos-de-terminidios-venenosos-e-mais-cavernas-de-insetos-surgem-por-toda-a-galaxia-hoje-mesmo/",
    "summary": "Atenção, Helldivers, O Ministério da Verdade confirma que um novo tipo de Terminídios rasteja pelas linhas de frente. A cepa, batizada como Nociva, é veloz, venenosa e se opõe…",
@@ -843,15 +751,6 @@
    "img": "https://images.nintendolife.com/e2c10051ebc88/large.jpg",
    "at": 1793714400000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Humberto Martins desiste da política após receber 0,01% dos votos",
-   "url": "https://pipocamoderna.com.br/2026/11/humberto-martins-desiste-politica-derrota-eleitoral/",
-   "summary": "Ator abandona planos políticosHumberto Martins desistiu de seguir carreira política após receber apenas 1.124 votos nas eleições de outubro, quando concorreu a deputado federal…",
-   "img": "",
-   "at": 1793713770000,
-   "cat": "geek",
-   "source": "Pipoca Moderna"
   },
   {
    "title": "Durante o Pichau Arena 2026, AMD destaca o Sul do Brasil como mercado gamer que merece mais atenção",
@@ -876,6 +775,15 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/1-54.jpg",
    "at": 1793712637000,
    "source": "Hardware.com.br"
+  },
+  {
+   "title": "The Iceblade Sorcerer Shall Rule the World II revela novos integrantes no elenco de voz",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/3/the-iceblade-sorcerer-shall-rule-the-world-ii-anime-novos-dubladores-japoneses",
+   "summary": "O anime está sendo transmitido na Crunchyroll",
+   "img": "https://a.storyblok.com/f/178900/1460x821/14ed2d2088/the_iceblade_sorcerer_shall_rule_the_world2_abel_header.jpg",
+   "at": 1793712420000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Itch.io remove terabytes de conteúdo gerado por IA e lança filtro para jogadores evitarem a tecnologia",
@@ -1090,14 +998,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Xbox Game Pass Has A Busy November Ahead With Several Day-One Launches",
-   "url": "https://www.gamespot.com/articles/xbox-game-pass-has-a-busy-november-ahead-with-several-day-one-launches/",
-   "summary": "The start of the month is a good time to be an Xbox Game Pass subscriber, as that's when Microsoft reveals the next batch of games coming to the service. November is frontloaded…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Warhammer-Survivors.jpg?w=300",
-   "at": 1793636273000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Bocchi the Rock! recebe adaptação para novo filme",
    "url": "https://animenew.com.br/filme-bocchi-the-rock-2027/",
    "summary": "O anime Bocchi the Rock! ganhará um novo filme previsto para estrear em 2027. O anúncio veio acompanhado de um trailer teaser e confirmou que a produção adaptará uma história…",
@@ -1116,6 +1016,51 @@
    "source": "JBox"
   },
   {
+   "title": "Shiba Inu Rooms tem anime anunciado",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/2/shiba-inu-rooms-anime-anuncio-julho-2027",
+   "summary": "O anime estreia no 3º trimestre de 2027",
+   "img": "https://a.storyblok.com/f/178900/960x540/6f2ef47474/shiba-inu-rooms.jpg",
+   "at": 1793618220000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Seeker Eye ganha data de lançamento em novo trailer",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/seeker-eye-trailer-data-switch-2",
+   "summary": "O jogo também teve uma versão para Switch 2 anunciada",
+   "img": "https://a.storyblok.com/f/178900/1024x576/d2f1ec1b96/seeker-eye-akane.jpg",
+   "at": 1793562180000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime de Charisma ganha data de estreia em novo trailer",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/charisma-anime-trailer-data-7-de-janeiro",
+   "summary": "A série tem seu lançamento marcado para o dia 7 de janeiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/7bc3065438/charisma-trailer-hero.png",
+   "at": 1793560380000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime Free Fire Daybreak ganha estreia mundial na CCXP 2026",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/free-fire-daybreak-anime-estreia-mundia-ccxp-2026",
+   "summary": "Painel do anime acontece no dia 5 de dezembro.",
+   "img": "https://a.storyblok.com/f/178900/960x541/3efe685c37/free-fire-daybreak-trailer.jpg",
+   "at": 1793557020000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "BOCCHI THE ROCK! tem filme anunciado para 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/bocchi-the-rock-hoshi-no-ashiato-filme-anime-2027",
+   "summary": "História do longa se passa antes da história principal.",
+   "img": "https://a.storyblok.com/f/178900/1274x715/7796c2fe21/bocchi-the-rock-pv.jpg",
+   "at": 1793555580000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Bocchi the Rock – Anime tem anuncio de Filme Original",
    "url": "https://www.intoxianime.com/2026/11/bocchi-the-rock-anime-tem-anuncio-de-filme-original/",
    "summary": "... O post Bocchi the Rock – Anime tem anuncio de Filme Original apareceu primeiro em IntoxiAnime .",
@@ -1132,6 +1077,51 @@
    "at": 1793540598000,
    "cat": "geek",
    "source": "IntoxiAnime"
+  },
+  {
+   "title": "2ª parte do anime Romelia War Chronicle tem estreia marcada para abril de 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/romelia-war-chronicle-segunda-parte-estreia-abril-2027",
+   "summary": "O anime está sendo exibido na Crunchyroll",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/351b29fd64/romelia_war_chronicle_al_header.jpg",
+   "at": 1793494500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime Inherit the Winds anuncia mais quatro nomes para o elenco",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/inherit-the-winds-anime-anuncia-mais-quatro-nomes-elenco",
+   "summary": "A série original estreia em janeiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/1460x821/1cdb6dbc37/inherit-the-winds-four-cast.jpg",
+   "at": 1793493300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "FINAL FANTASY XIV: Evercold tem lançamento marcado para 23 de fevereiro e revela nova classe e outras novidades",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/final-fantasy-xiv-evercold-lancamento-23-fevereiro-nova-classe-novidades",
+   "summary": "Novas prévias apresentam a classe de DPS à distância e diversas áreas do jogo",
+   "img": "https://a.storyblok.com/f/178900/960x540/09b05d1170/final-fantasy-xiv-evercold.jpg",
+   "at": 1793492100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Dublador Nobuhiko Okamoto lançará livro de fotos em comemoração aos seus 40 anos em fevereiro de 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/1/nobuhiko-okamoto-livro-fotos-40-anos-fevereiro-2027",
+   "summary": "As sessões de fotos foram realizadas em Quioto, Kobe e nas proximidades da região de Kanto",
+   "img": "https://a.storyblok.com/f/178900/960x540/a5bb5501ac/nobuhiko-okamoto-header.jpg",
+   "at": 1793491500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Kagura Nana lança videoclipe da música de encerramento da 2ª temporada de The Detective Is Already Dead",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/10/31/kagura-nana-videoclipe-encerramento-segunda-temporada-the-detective-is-already-dead",
+   "summary": "A nova temporada já está disponível na Crunchyroll",
+   "img": "https://a.storyblok.com/f/178900/960x540/4105a808d8/kagura-nana-hakuchumu-mv.jpg",
+   "at": 1793490360000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Mangás mais Vendidos (Outubro 19 – Outubro 25)",
@@ -1251,20 +1241,20 @@
    "source": "AnimeNew"
   },
   {
-   "title": "RapaduraCast 930 – Será que a gente poderia ter visto ESSES FILMES??",
-   "url": "https://cinemacomrapadura.com.br/rapaduracast-podcast/631163/rapaduracast-930-sera-que-a-gente-poderia-ter-visto-esses-filmes/",
-   "summary": "⁠Jurandir Filho⁠, ⁠Rogério Montanare⁠ e ⁠Thiago Siqueira⁠⁠ conversam sobre quando a gente era criança nos anos 80/90 e a televisão brasileira não tinha limites! Crescemos…",
-   "img": "",
-   "at": 1793373807000,
-   "cat": "geek",
-   "source": "Cinema com Rapadura"
-  },
-  {
    "title": "Destiny Unchain – Novel sobre garoto preso em VR como Vampira OP ganha trailer, staff e janela de estreia",
    "url": "https://www.intoxianime.com/2026/10/destiny-unchain-novel-sobre-garoto-preso-em-vr-como-vampira-op-ganha-trailer-staff-e-janela-de-estreia/",
    "summary": "... O post Destiny Unchain – Novel sobre garoto preso em VR como Vampira OP ganha trailer, staff e janela de estreia apareceu primeiro em IntoxiAnime .",
    "img": "",
    "at": 1793366808000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha trailer",
+   "url": "https://www.intoxianime.com/2026/10/kaketa-tsuki-anime-sobre-garota-reencarnada-em-vampiro-ganha-trailer/",
+   "summary": "... O post Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha trailer apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1793366807000,
    "cat": "geek",
    "source": "IntoxiAnime"
   }
