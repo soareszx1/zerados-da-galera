@@ -1,0 +1,41 @@
+name: Backup do banco
+
+on:
+  schedule:
+    - cron: "17 7 * * *"   # todo dia, 4h17 da manhã (Brasília)
+  workflow_dispatch: {}     # botão "Run workflow" para fazer na hora
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Copiar o banco
+        run: python scripts/backup.py
+      - name: Criptografar com a senha do secret BACKUP_KEY
+        env:
+          BACKUP_KEY: ${{ secrets.BACKUP_KEY }}
+        run: |
+          if [ -z "$BACKUP_KEY" ]; then
+            echo "::error::Falta o secret BACKUP_KEY (Settings → Secrets and variables → Actions). Sem ele o backup não é guardado, porque o repositório é público."
+            exit 1
+          fi
+          for f in backup/*.json.gz; do
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in "$f" -out "$f.enc" -pass env:BACKUP_KEY
+            rm "$f"
+          done
+          ls -la backup
+      - name: Guardar (30 dias)
+        uses: actions/upload-artifact@v4
+        with:
+          name: backup-zerados-${{ github.run_id }}
+          path: backup/*.enc
+          retention-days: 30
+          if-no-files-found: error
