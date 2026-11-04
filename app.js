@@ -2775,6 +2775,8 @@ Object.entries(SCENES).forEach(([k,o])=>{PTHEME[k]={l:"🎮 "+o.l,r:o.r}});
 const _themeStyle0=themeStyle;
 themeStyle=function(p){const t=cz(p).theme;if(t&&SCENES[t])return ` data-th="${t}"`;return _themeStyle0(p)};
 const _viewPerfilSc=viewPerfil;
+const _renderViewSc=renderView;
+renderView=function(){_renderViewSc.apply(this,arguments);try{const ph=document.querySelector('.phero[data-th^="sc-"]');const r=document.documentElement;if(ph&&SCENES[ph.dataset.th])r.dataset.psc=ph.dataset.th;else delete r.dataset.psc}catch{}};
 viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
   return h.replace(/(<section class="box phero" data-th="(sc-[a-z0-9]+)"[^>]*>)/,(m,a,k)=>SCENES[k]?a+`<span class="sctag">${esc(SCENES[k].tag)}</span>`:a)};
 
