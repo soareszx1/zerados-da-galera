@@ -21,7 +21,7 @@ const ROLES = {
 const RX = {gg:{l:"GG",t:"Mandou bem"},hype:{l:"Hype",t:"Fiquei com vontade"},fila:{l:"+ Fila",t:"Quero jogar também"}};
 const GLYPHS = ["▲","●","■","✖","★","◆","♥","⚡"];
 const COLORS = ["#FF4D6D","#FF9F1C","#E9C400","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5"];
-const VIEWS = ["inicio","saves","quadro","estante","tierlist","novidades","promocoes","dicas","chat","ranking"];
+const VIEWS = ["inicio","saves","quadro","pessoas","estante","tierlist","novidades","promocoes","dicas","chat","ranking"];
 const SKINS = {padrao:{l:"Padrão",lv:1,sw:"#FF3B6B"},neon:{l:"Neon",lv:3,sw:"#00C98D"},gameboy:{l:"Game Boy",lv:5,sw:"#6E8F0B"},ouro:{l:"Ouro",lv:8,sw:"#D99A00"},vapor:{l:"Vaporwave",lv:12,sw:"#FF4FD8"}};
 const LEVEL_NAMES = [[20,"Mito"],[12,"Lenda"],[8,"Herói"],[5,"Veterano"],[3,"Aventureiro"],[1,"Novato"]];
 
@@ -246,17 +246,18 @@ function renderBanner(){
 const NAV=[
   {k:"inicio",ic:"🏠",n:"Início",v:["inicio"]},
   {k:"jogos",ic:"🎮",n:"Meus Jogos",v:["saves"],extra:["save"]},
-  {k:"galera",ic:"👥",n:"Galera",v:["estante","ranking","quadro"],extra:["perfil","jogando"]},
+  {k:"galera",ic:"👥",n:"Galera",v:["pessoas","estante","ranking","quadro"],extra:["perfil","jogando"]},
   {k:"tier",ic:"🏆",n:"Tier List",v:["tierlist"]},
-  {k:"descobrir",ic:"🔥",n:"Descobrir",v:["novidades","promocoes","dicas"],extra:["jogo"]}
+  {k:"dicas",ic:"💡",n:"Dicas",v:["dicas"],hl:true},
+  {k:"descobrir",ic:"🔥",n:"Descobrir",v:["novidades","promocoes"],extra:["jogo"]}
 ];
-const SUBN={estante:"Jogadores",ranking:"Ranking",quadro:"Quadro",novidades:"Novidades",promocoes:"Promoções",dicas:"Dicas"};
+const SUBN={pessoas:"Pessoas",estante:"Jogos da galera",ranking:"Ranking",quadro:"Quadro",novidades:"Novidades",promocoes:"Promoções",dicas:"Dicas"};
 const navOf = v => NAV.find(g=>g.v.includes(v)||(g.extra||[]).includes(v));
 function renderTabs(){
   const un=S.view==="chat"?0:chatUnread();
   const cur=navOf(S.view);S.navLast=S.navLast||{};if(cur&&cur.v.includes(S.view))S.navLast[cur.k]=S.view;
   $("#tabs").innerHTML=NAV.map(g=>{const on=cur&&cur.k===g.k;const dest=(S.navLast[g.k]&&g.v.includes(S.navLast[g.k]))?S.navLast[g.k]:g.v[0];
-    return `<a class="tab" href="#${dest}" ${on?'aria-current="page"':""}><span class="tic" aria-hidden="true">${g.ic}</span><span class="tlb">${g.n}</span></a>`}).join("");
+    return `<a class="tab${g.hl?" tab-hl":""}" href="#${dest}" ${on?'aria-current="page"':""}><span class="tic" aria-hidden="true">${g.ic}</span><span class="tlb">${g.n}</span></a>`}).join("");
   const sub=$("#subtabs");
   if(sub){const subs=cur&&cur.v.length>1?cur.v:[];
     sub.hidden=!subs.length;
@@ -279,7 +280,7 @@ function renderView(){
     V.innerHTML=`<section class="box hero-empty"><div class="big">P1<br>START</div><div><h2>Ninguém deu start ainda</h2>
       <p>Crie seu perfil, cadastre os jogos que você já zerou na vida, os que zerou em ${YEAR} e o que está jogando agora. Depois chame a galera.</p>
       <div class="actions">${S.mode==="live"&&S.canWrite?`<button class="btn primary" data-act="profile">Criar meu perfil</button>`:""}<button class="btn" data-act="demo">Ver como fica com exemplo</button></div></div></section>`;return}
-  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
+  const fn={inicio:viewHome,estante:viewEstante,tierlist:viewTier,jogando:viewJogando,dicas:viewDicas,chat:viewChat,ranking:viewRanking,perfil:viewPerfil,pessoas:viewPessoas,jogo:viewJogo,novidades:viewNovidades,promocoes:viewPromocoes,saves:viewSaves,save:viewSave,quadro:viewQuadro}[S.view]||viewHome;
   const log0=$("#chatlog");const nearBottom=!log0||log0.scrollHeight-log0.scrollTop-log0.clientHeight<80;const focused=document.activeElement?.id;
   V.innerHTML=fn();
   for(const id of ["chat-text","cmt-text"]){const el=document.getElementById(id);if(el&&S.drafts?.[id]){el.value=S.drafts[id]}}
@@ -363,7 +364,7 @@ function viewHome(){
     ${bl.length?`<div class="bstack">${bl.slice(0,3).map(b=>boardCard(b,true)).join("")}</div>${bl.length>3?`<div><a class="btn small" href="#quadro">Ver tudo (${bl.length})</a></div>`:""}`:'<span class="hint">Nada publicado ainda. Use os botões para avisar a galera, chamar para jogar ou abrir uma enquete.</span>'}</section>`;
   // direita
   const ids=Object.keys(P).sort((a,b)=>xpOf(b)-xpOf(a));
-  right+=`<section class="box card"><span class="eyebrow">A galera</span><h3>${ids.length} jogador${ids.length>1?"es":""}</h3><div class="galera">${ids.map(galeraRow).join("")}</div>${m&&S.canWrite?`<div><button class="btn small" data-act="find">Procurar e adicionar amigos</button></div>`:""}</section>`;
+  right+=`<section class="box card"><span class="eyebrow">A galera</span><h3><a href="#pessoas" style="color:inherit">${ids.length} jogador${ids.length>1?"es":""}</a></h3><div class="galera">${ids.map(galeraRow).join("")}</div>${m&&S.canWrite?`<div><button class="btn small" data-act="find">Procurar e adicionar amigos</button></div>`:""}</section>`;
   if(m){const rs=recsFor(mid);right+=`<section class="box card"><span class="eyebrow">Pra você</span><h3>A galera acha que você vai curtir</h3>
     ${rs.length?rs.map(r=>`<div class="rec-item">${coverBox(r.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(r.title))}" style="color:inherit">${esc(r.title)}</a></b>${r.by.map(b=>`${esc(b.p.nick)}${typeof b.nota==="number"?" ("+fmtNota(b.nota)+")":""}`).join(", ")} curti${r.by.length>1?"ram":"u"}</div><button class="rx" data-act="quickfila" data-t="${esc(r.title)}">+ Fila</button></div>`).join(""):'<span class="hint">Dê nota nos seus jogos para as sugestões ficarem certeiras.</span>'}</section>`}
   const wid=S.mode==="live"&&/^\d{15,22}$/.test(S.config.discordWidget||"")?S.config.discordWidget:"";
@@ -404,7 +405,9 @@ function viewJogando(){
 function viewDicas(){
   const L=filtered().filter(hasTips);
   if(!L.length)return emptyBox("?!","Nenhuma dica ainda","Ao editar um jogo, preencha “Dicas e anotações”: segredos, lugares bons de farmar, ordem de chefes e prints. Fica tudo aqui para quem for jogar depois.");
-  return `<div class="tiplist">${L.map(g=>`<article class="box tipcard">${coverBox(g)}<div class="info"><h3 class="gtitle"><a href="#jogo-${esc(slug(g.title))}">${esc(g.title)}</a></h3>
+  const autores=new Set(L.map(g=>g.pid)).size;
+  return `<div class="tierhead"><div style="flex:1"><span class="eyebrow">💡 Dicas e guias</span><h3>${L.length} jogo${L.length===1?"":"s"} com dicas da galera</h3><span class="hint">escritas por ${autores} pessoa${autores===1?"":"s"}</span></div></div>
+  <div class="tiplist">${L.map(g=>`<article class="box tipcard">${coverBox(g)}<div class="info"><h3 class="gtitle"><a href="#jogo-${esc(slug(g.title))}">${esc(g.title)}</a></h3>
     <div class="who">${glyph(g.p,true)}<span>${nk(g.p)}</span>${g.platform?`<span class="tag">${esc(g.platform)}</span>`:""}${g.spoiler?`<span class="tag">spoiler</span>`:""}</div>
     ${g.tips&&!g.spoiler?`<div class="prev">${esc(g.tips)}</div>`:""}
     <div><button class="btn small" data-act="tips" data-pid="${esc(g.pid)}" data-id="${esc(g.gid)}">Abrir guia${g.shots?.length?` · ${g.shots.length} print${g.shots.length>1?"s":""}`:""}</button></div></div></article>`).join("")}</div>`;
@@ -1763,6 +1766,38 @@ function viewPromocoes(){
 document.addEventListener("click",e=>{const el=e.target.closest('[data-act="promocls"]');if(!el)return;S.promoCls=el.dataset.id;renderView()});
 document.addEventListener("change",e=>{if(e.target.id==="promoloja-sel"){S.promoLoja=e.target.value;renderView()}});
 
+/* ---------- Galera → Pessoas ---------- */
+const PSORT=[["amigos","Amigos primeiro"],["zerados","Mais zerados"],["nivel","Maior nível"],["recentes","Ativos agora"]];
+function lastActive(p){return Math.max(0,...Object.values(p.games||{}).map(g=>Number(g.updatedAt)||0))}
+function pessoaCard(pid){
+  const P=players(),p=P[pid],s=stats(p),mid=meId();
+  const amigo=mid&&P[mid]&&friendsOf(P[mid])[pid];
+  const jog=Object.values(p.games||{}).filter(g=>g.status==="jogando").sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0)).slice(0,2);
+  const ult=lastActive(p);
+  return `<a class="box pcard2" href="#perfil-${esc(pslug(p))}" style="--pc:${esc(p.color||"#888")}">
+    <div class="pc2top">${glyph(p)}<div class="pc2nm"><b>${nk(p)}</b>${pid===mid?' <span class="you">VOCÊ</span>':amigo?' <span class="you amigo">AMIGO</span>':""}${p.title?`<span class="ptitle">${esc(p.title)}</span>`:""}</div></div>
+    <div class="pc2meta">${lvlChip(pid)}${ult>1e9?`<span class="hint">ativo há ${ago(ult)}</span>`:""}</div>
+    ${roleChips(pid)}
+    <div class="pc2stats"><span><b>${s.done}</b>zerados</span><span><b>${s.playing}</b>jogando</span><span><b>${s.plat}</b>platinas</span><span><b>${Math.round(s.hours)}</b>horas</span></div>
+    ${jog.length?`<div class="pc2now"><span class="flabel">Jogando agora</span>${jog.map(g=>`<span class="tag">${esc(g.title)}</span>`).join("")}</div>`:""}
+    ${p.mood?`<div class="mood">${esc(p.mood)}</div>`:""}</a>`;
+}
+function viewPessoas(){
+  const P=players(),mid=meId();const fr=mid&&P[mid]?friendsOf(P[mid]):{};
+  const q=norm(S.pessoasQ||"");const ord=S.pessoasOrd||"amigos";
+  let ids=Object.keys(P).filter(id=>!q||norm(P[id].nick).includes(q)||norm(P[id].title||"").includes(q));
+  const by={amigos:(a,b)=>(a===mid?-1:b===mid?1:0)||(!!fr[b]-!!fr[a])||P[a].nick.localeCompare(P[b].nick,"pt"),
+    zerados:(a,b)=>stats(P[b]).done-stats(P[a]).done,nivel:(a,b)=>xpOf(b)-xpOf(a),recentes:(a,b)=>lastActive(P[b])-lastActive(P[a])};
+  ids.sort(by[ord]||by.amigos);
+  return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Galera</span><h3>${Object.keys(P).length} jogador${Object.keys(P).length===1?"":"es"}</h3></div>
+    ${me()&&S.canWrite?`<button class="btn small primary" data-act="find">+ Adicionar amigos</button>`:""}</div>
+    <div class="pfilt"><input type="search" id="pessoas-q" placeholder="Buscar pessoa…" aria-label="Buscar pessoa" value="${esc(S.pessoasQ||"")}">
+      <div class="tierpick" role="group" aria-label="Ordenar">${PSORT.map(([k,n])=>`<button data-act="pessoasord" data-id="${k}" aria-pressed="${ord===k}">${n}</button>`).join("")}</div></div>
+    ${ids.length?`<div class="pgrid2">${ids.map(pessoaCard).join("")}</div>`:`<p class="hint">Ninguém encontrado.</p>`}</div>`;
+}
+document.addEventListener("click",e=>{const el=e.target.closest('[data-act="pessoasord"]');if(!el)return;S.pessoasOrd=el.dataset.id;renderView()});
+document.addEventListener("input",e=>{if(e.target.id!=="pessoas-q")return;S.pessoasQ=e.target.value;const pos=e.target.selectionStart;renderView();const i=document.getElementById("pessoas-q");if(i){i.focus();try{i.setSelectionRange(pos,pos)}catch{}}});
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
@@ -1853,7 +1888,7 @@ document.addEventListener("click",async e=>{
     if(name==="color"&&M.type==="profile"){const b=$("#bnprev");if(b)b.style.setProperty("--pc",v)}
     return}
   const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
-  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
+  if(["tierwho","tlpick","tladd","monthly","newsadd","tlsave","tldel","tlclose","tlreopen","vote","newssave","newsdel","newsrc","promocls","pessoasord","ftab","session","sessave","plot","ctlkey","lore","ctladd","ctldel","ctlcopy","todoadd","tododel","linkadd","linkdel","diarydel","btype","bthread","boptadd","rsvp","pvote","bnew","bedit","bpin","bdel","bsave","steam","stlink","stunlink","stselrecent","stselnone","stimport"].includes(a))return;
   if(a==="bg"){if(e.target===el)closeModal();return}
   if(a==="close"){closeModal();return}
   if(a==="tips"){openTips(el.dataset.pid,el.dataset.id);return}
