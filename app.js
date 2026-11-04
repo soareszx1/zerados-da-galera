@@ -3026,7 +3026,7 @@ function gkArrumaPerfil(h,box){
     const t=document.createElement("template");if(!("content" in t))throw 0;t.innerHTML=h;
     const page=t.content.querySelector(".page");const cols=page?page.querySelectorAll(".pgrid > .col"):[];const grid=page?.querySelector(".pgrid");
     if(!page||cols.length<2||!grid)throw 0;
-    if(box){const tmp=document.createElement("template");tmp.innerHTML=box;cols[0].appendChild(tmp.content)}
+    if(box){const tmp=document.createElement("template");tmp.innerHTML=box;cols[1].appendChild(tmp.content)}   // coluna da direita: equilibra com Atividade/Jogando à esquerda
     const sc=page.querySelector(".scbox");const tema=[...page.querySelectorAll("section.box.card")].find(x=>x.querySelector(".eyebrow")?.textContent.trim()==="Tema do site");
     if(sc||tema){
       const tab=S.persoTab==="tema"&&tema?"tema":(sc?"cen":"tema");
