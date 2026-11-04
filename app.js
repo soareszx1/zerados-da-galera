@@ -3615,10 +3615,19 @@ document.addEventListener("click",e=>{const el=e.target.closest('[data-act="bmor
 const EMO_RE=/^(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}‍️⃣]|[\u{1F1E6}-\u{1F1FF}])+\s*|\s*(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}‍️⃣])+$/gu;
 const EMO_SEL='button,a.btn,[role="tab"],option,optgroup,.eyebrow,.tierhead h3,.sec h2,.box>h2,.box>h3,.card>h3,.tag,.pill,.chip2,label,summary,#tabs a,nav a,.btype,.whosel';
 const EMO_SKIP='.glyph,.rx,.react,.reac,.emo,.emoji,.bcard h3,.btext,.msg,.bubble,.cmt,.frev,textarea,input,.gfr,[data-keepemo]';
+const TAB_IC={inicio:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',
+ saves:'<rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3"/><circle cx="16" cy="11.5" r="1"/><circle cx="18" cy="13.5" r="1"/>',
+ feed:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.8c1.7.8 2.7 2.5 3 5.2"/>',
+ tierlist:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/>',
+ dicas:'<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+ descobrir:'<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+ quadro:'<path d="M4 4h16v12H8l-4 4z"/>',chat:'<path d="M4 5h16v11H9l-5 4z"/>'};
 function emoStrip(root){try{(root||document.body).querySelectorAll(EMO_SEL).forEach(el=>{if(el.closest(EMO_SKIP))return;
   const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;const L=[];while(n=w.nextNode())L.push(n);
   for(const t of L){if(t.parentElement&&t.parentElement.closest(EMO_SKIP))continue;const v=t.nodeValue;if(!v||!/\p{Extended_Pictographic}/u.test(v))continue;
-    const nv=v.replace(EMO_RE,m=>/^\s/.test(m)?"":"");if(nv.trim()&&nv!==v)t.nodeValue=nv.replace(/^\s+/,v.match(/^\s*/)[0])}})}catch{}}
+    const nv=v.replace(EMO_RE,m=>/^\s/.test(m)?"":"");if(nv.trim()&&nv!==v)t.nodeValue=nv.replace(/^\s+/,v.match(/^\s*/)[0]);
+    else if(!nv.trim()&&/\p{L}/u.test(el.textContent.replace(v,""))&&!t.parentElement.closest(".tic"))t.nodeValue=""}});
+  document.querySelectorAll("#tabs .tab .tic:not([data-ic])").forEach(ic=>{const k=(ic.closest("a")?.getAttribute("href")||"").slice(1);const d=TAB_IC[k];if(!d)return;ic.dataset.ic=k;ic.innerHTML=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`})}catch{}}
 if(typeof MutationObserver!=="undefined"){let pend=false;const run=()=>{pend=false;emoStrip()};
   const mo=new MutationObserver(()=>{if(!pend){pend=true;requestAnimationFrame(run)}});
   const go=()=>{mo.observe(document.body,{childList:true,subtree:true});run()};
