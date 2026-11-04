@@ -1,257 +1,288 @@
 {
- "atualizadoEm": 1793756576,
+ "atualizadoEm": 1793760094,
  "jogos": {
   "absolver": {
    "appid": 473690,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
+    "Luta",
+    "Ação",
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Indie",
+    "Cooperativo"
    ],
    "nome": "Absolver",
    "slug": "absolver",
    "titulo": "Absolver",
-   "v": 5
+   "v": 6
   },
   "aionii": {
    "appid": 3393110,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Aventura"
    ],
    "nome": "AION 2",
    "slug": "aion-2",
    "titulo": "Aion 2",
-   "v": 5
+   "v": 6
   },
   "alanwakeii": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
-    "Terror"
+    "Terror",
+    "Sobrevivência"
    ],
    "nome": "Alan Wake 2",
    "slug": "alan-wake-2",
    "titulo": "Alan Wake 2",
-   "v": 5
+   "v": 6
   },
   "arksurvivalofthefittest": {
    "appid": 407530,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
-    "Estratégia",
-    "Aventura",
-    "Ação"
+    "Sobrevivência",
+    "Mundo aberto",
+    "Ação",
+    "Aventura"
    ],
    "nome": "ARK: The Survival Of The Fittest",
    "slug": "ark-survival-of-the-fittest",
    "titulo": "ARK: Survival Of The Fittest",
-   "v": 5
+   "v": 6
   },
   "armareforger": {
    "appid": 1874880,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Estratégia",
+    "Tiro",
     "Simulação",
-    "Ação"
+    "Ação",
+    "Estratégia",
+    "Mundo aberto"
    ],
    "nome": "Arma Reforger",
    "slug": "arma-reforger",
    "titulo": "Arma Reforger",
-   "v": 5
+   "v": 6
   },
   "assassinscreediiiremastered": {
    "appid": 911400,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
     "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Furtivo",
+    "Narrativo"
    ],
    "nome": "Assassin's Creed® III Remastered",
    "slug": "assassin-s-creed-iii-remastered",
    "titulo": "Assassin's Creed III Remastered",
-   "v": 5
+   "v": 6
   },
   "assassinscreedivblackflag": {
    "appid": 242050,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Ação",
+    "Furtivo",
+    "Narrativo"
    ],
    "nome": "Assassin’s Creed® IV Black Flag™",
    "slug": "assassin-s-creed-iv-black-flag",
    "titulo": "Assassin's Creed IV: Black Flag",
-   "v": 5
+   "v": 6
   },
   "assassinscreedodyssey": {
    "appid": 812140,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
+    "Mundo aberto",
+    "Ação",
     "Aventura",
-    "Ação"
+    "RPG",
+    "Furtivo"
    ],
    "nome": "Assassin's Creed® Odyssey",
    "slug": "assassin-s-creed-odyssey",
    "titulo": "Assassin's Creed Odyssey",
-   "v": 5
+   "v": 6
   },
   "assassinscreedvalhalla": {
    "appid": 2208920,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
+    "Mundo aberto",
+    "Ação",
     "Aventura",
-    "Ação"
+    "RPG",
+    "Furtivo"
    ],
    "nome": "Assassin's Creed Valhalla",
    "slug": "assassin-s-creed-valhalla",
    "titulo": "Assassin's Creed Valhalla",
-   "v": 5
+   "v": 6
   },
   "atomicheart": {
    "appid": 668580,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
-    "RPG",
     "Aventura",
-    "Ação"
+    "Tiro",
+    "Ação",
+    "Mundo aberto",
+    "Terror",
+    "Puzzle"
    ],
    "nome": "Atomic Heart",
    "slug": "atomic-heart",
    "titulo": "Atomic Heart",
-   "v": 5
+   "v": 6
   },
   "baldursgateiii": {
    "appid": 1086940,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Estratégia",
-    "Aventura"
+    "Narrativo",
+    "Aventura",
+    "Cooperativo"
    ],
    "nome": "Baldur's Gate 3",
    "slug": "baldur-s-gate-3",
    "titulo": "Baldur's Gate 3",
-   "v": 5
+   "v": 6
   },
   "batmanarkhamasylum": {
    "appid": 35020,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
+    "Ação",
+    "Furtivo",
     "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Luta",
+    "Narrativo"
    ],
    "nome": "Batman: Arkham Asylum Demo",
    "slug": "batman-arkham-asylum",
    "titulo": "Batman: Arkham Asylum",
-   "v": 5
+   "v": 6
   },
   "batmanarkhamasylumgotyedition": {
    "appid": null,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma"
+    "Metroidvania"
    ],
    "nome": "Batman: Arkham Asylum",
    "slug": "batman-arkham-asylum-goty-edition",
    "titulo": "Batman: Arkham Asylum GOTY Edition",
-   "v": 5
+   "v": 6
   },
   "batmanarkhamcity": {
    "appid": 200240,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Luta",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Furtivo",
+    "Luta"
    ],
    "nome": "Batman Arkham City Demo",
    "slug": "batman-arkham-city",
    "titulo": "Batman: Arkham City",
-   "v": 5
+   "v": 6
   },
   "batmanarkhamcitygoty": {
    "appid": null,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Luta",
+    "Furtivo",
     "Aventura",
     "Ação"
    ],
    "nome": "Batman: Arkham City",
    "slug": "batman-arkham-city-goty",
    "titulo": "Batman: Arkham City GOTY",
-   "v": 5
+   "v": 6
   },
   "batmanarkhamknight": {
    "appid": 208650,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Mundo aberto",
+    "Furtivo",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Luta"
    ],
    "nome": "Batman™: Arkham Knight",
    "slug": "batman-arkham-knight",
-   "titulo": "Batman: Arkham Knight",
-   "v": 5
+   "titulo": "Batman™: Arkham Knight",
+   "v": 6
   },
   "batmanarkhamorigins": {
    "appid": 209000,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Luta",
+    "Ação",
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Furtivo",
+    "Luta"
    ],
    "nome": "Batman™: Arkham Origins",
    "slug": "batman-arkham-origins",
    "titulo": "Batman™: Arkham Origins",
-   "v": 5
+   "v": 6
   },
   "battleblocktheater": {
    "appid": 238460,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Cooperativo",
     "Plataforma",
-    "Aventura",
-    "Ação"
+    "2D"
    ],
    "nome": "BattleBlock Theater®",
    "slug": "battleblock-theater",
    "titulo": "BattleBlock Theater",
-   "v": 5
+   "v": 6
   },
   "battlefieldvi": {
    "appid": 2807960,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -260,292 +291,340 @@
    "nome": "Battlefield™ 6",
    "slug": "battlefield-6",
    "titulo": "Battlefield™ 6",
-   "v": 5
+   "v": 6
   },
   "bioshockinfinite": {
    "appid": 8870,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
     "Tiro",
-    "Ação"
+    "Narrativo",
+    "Aventura",
+    "RPG"
    ],
    "nome": "BioShock Infinite",
    "slug": "bioshock-infinite",
    "titulo": "BioShock Infinite",
-   "v": 5
+   "v": 6
   },
   "blackdesert": {
    "appid": 582660,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
     "RPG",
-    "Estratégia",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Sobrevivência"
    ],
    "nome": "Black Desert",
    "slug": "black-desert",
    "titulo": "Black Desert",
-   "v": 5
+   "v": 6
   },
   "blackdesertsaretired": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "black-desert-sa-retired",
    "titulo": "Black Desert SA (Retired)",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "blackmythwukong": {
    "appid": 2358720,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Soulslike",
+    "Narrativo",
+    "Aventura"
    ],
    "nome": "Black Myth: Wukong",
    "slug": "black-myth-wukong",
    "titulo": "Black Myth: Wukong",
-   "v": 5
+   "v": 6
   },
   "blasphemous": {
    "appid": 774361,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
-    "Aventura",
-    "Ação"
+    "Metroidvania",
+    "Soulslike",
+    "2D",
+    "Indie",
+    "Ação",
+    "Plataforma"
    ],
    "nome": "Blasphemous",
    "slug": "blasphemous",
    "titulo": "Blasphemous",
-   "v": 5
+   "v": 6
   },
   "blasphemousii": {
    "appid": 2114740,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
+    "Metroidvania",
+    "Soulslike",
     "Aventura",
-    "Ação"
+    "2D",
+    "Plataforma",
+    "Hack and slash"
    ],
    "nome": "Blasphemous 2",
    "slug": "blasphemous-2",
    "titulo": "Blasphemous 2",
-   "v": 5
+   "v": 6
   },
   "bloodborne": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Terror",
+    "Soulslike",
     "RPG",
-    "Ação"
+    "Ação",
+    "Terror"
    ],
    "nome": "Bloodborne",
    "slug": "bloodborne",
    "titulo": "Bloodborne",
-   "v": 5
+   "v": 6
   },
   "bloodstainedritualofthenight": {
    "appid": 692850,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
     "RPG",
-    "Plataforma",
+    "Ação",
     "Aventura",
-    "Ação"
+    "2D",
+    "Plataforma"
    ],
    "nome": "Bloodstained: Ritual of the Night",
    "slug": "bloodstained-ritual-of-the-night",
    "titulo": "Bloodstained: Ritual of the Night",
-   "v": 5
+   "v": 6
   },
   "bluefire": {
    "appid": 1220150,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
     "Aventura",
+    "Plataforma",
+    "Hack and slash",
+    "Soulslike",
     "Ação"
    ],
    "nome": "Blue Fire",
    "slug": "blue-fire",
    "titulo": "Blue Fire",
-   "v": 5
+   "v": 6
   },
   "borderlandsiii": {
    "appid": 397540,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "RPG",
+    "Tiro",
+    "Cooperativo",
+    "Mundo aberto",
     "Ação"
    ],
    "nome": "Borderlands 3",
    "slug": "borderlands-3",
    "titulo": "Borderlands 3",
-   "v": 5
+   "v": 6
   },
   "brawlhalla": {
    "appid": 291550,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Luta",
+    "2D",
     "Plataforma",
+    "Cooperativo",
     "Ação"
    ],
    "nome": "Brawlhalla",
    "slug": "brawlhalla",
    "titulo": "Brawlhalla",
-   "v": 5
+   "v": 6
   },
   "callofduty": {
    "appid": 1938090,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
-    "Ação"
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "Call of Duty®",
    "slug": "call-of-duty",
    "titulo": "Call of Duty®",
-   "v": 5
+   "v": 6
   },
   "castlecrashers": {
    "appid": 204360,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "2D",
+    "Cooperativo",
     "Luta",
-    "RPG",
+    "Hack and slash",
     "Aventura",
     "Ação"
    ],
    "nome": "Castle Crashers®",
    "slug": "castle-crashers",
    "titulo": "Castle Crashers",
-   "v": 5
+   "v": 6
   },
   "celeste": {
    "appid": 504230,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Plataforma",
-    "Aventura",
-    "Ação"
+    "2D",
+    "Indie",
+    "Narrativo",
+    "Aventura"
    ],
    "nome": "Celeste",
    "slug": "celeste",
    "titulo": "Celeste",
-   "v": 5
+   "v": 6
   },
   "counterstrikeii": {
    "appid": 730,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
-    "Ação"
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "Counter-Strike 2",
    "slug": "counter-strike-2",
    "titulo": "Counter-Strike 2",
-   "v": 5
+   "v": 6
   },
   "darksouls": {
    "appid": 374320,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
     "RPG",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "DARK SOULS™ III",
    "slug": "dark-souls",
    "titulo": "Dark Souls",
-   "v": 5
+   "v": 6
   },
   "darksoulsii": {
    "appid": 236430,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
     "RPG",
-    "Ação"
+    "Ação",
+    "Aventura",
+    "Cooperativo"
    ],
    "nome": "DARK SOULS™ II",
    "slug": "dark-souls-ii",
    "titulo": "Dark Souls II",
-   "v": 5
+   "v": 6
   },
   "darksoulsiii": {
    "appid": 374320,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
     "RPG",
-    "Ação"
+    "Aventura",
+    "Narrativo",
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "DARK SOULS™ III",
    "slug": "dark-souls-iii",
    "titulo": "Dark Souls III",
-   "v": 5
+   "v": 6
   },
   "darksoulsremastered": {
    "appid": 570940,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Ação"
+    "Soulslike",
+    "RPG",
+    "Ação",
+    "Aventura"
    ],
    "nome": "DARK SOULS™: REMASTERED",
    "slug": "dark-souls-remastered",
    "titulo": "DARK SOULS™: REMASTERED",
-   "v": 5
+   "v": 6
   },
   "deadcells": {
    "appid": 588650,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
     "Aventura",
-    "Ação"
+    "Roguelike",
+    "Metroidvania",
+    "2D",
+    "Soulslike",
+    "Hack and slash"
    ],
    "nome": "Dead Cells",
    "slug": "dead-cells",
    "titulo": "Dead Cells",
-   "v": 5
+   "v": 6
   },
   "deathstranding": {
    "appid": 3280350,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Ação",
+    "Tiro",
+    "Furtivo"
    ],
    "nome": "DEATH STRANDING 2: ON THE BEACH",
    "slug": "death-stranding",
    "titulo": "DEATH STRANDING",
-   "v": 5
+   "v": 6
   },
   "defjamfightforny": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Luta"
@@ -553,111 +632,124 @@
    "nome": "Def Jam: Fight for NY",
    "slug": "def-jam-fight-for-ny",
    "titulo": "Def Jam: Fight for NY",
-   "v": 5
+   "v": 6
   },
   "devilmaycryv": {
    "appid": 601150,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Hack and slash",
+    "Narrativo",
+    "Aventura"
    ],
    "nome": "Devil May Cry 5",
    "slug": "devil-may-cry-5",
    "titulo": "Devil May Cry 5",
-   "v": 5
+   "v": 6
   },
   "dirtiii": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "dmcdevilmaycry": {
    "appid": 220440,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Hack and slash",
+    "Aventura"
    ],
    "nome": "DmC: Devil May Cry",
    "slug": "dmc-devil-may-cry",
    "titulo": "DmC: Devil May Cry",
-   "v": 5
+   "v": 6
   },
   "donkeykongbananza": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma"
+    "Plataforma",
+    "Aventura",
+    "Ação"
    ],
    "nome": "Donkey Kong Bananza",
    "slug": "donkey-kong-bananza",
    "titulo": "Donkey Kong Bananza",
-   "v": 5
+   "v": 6
   },
   "dontstarvetogether": {
    "appid": 322330,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
-    "Estratégia",
-    "Simulação",
-    "Aventura"
+    "Sobrevivência",
+    "Mundo aberto",
+    "Cooperativo",
+    "Aventura",
+    "Indie",
+    "2D"
    ],
    "nome": "Don't Starve Together",
    "slug": "don-t-starve-together",
    "titulo": "Don't Starve Together",
-   "v": 5
+   "v": 6
   },
   "dragonsdogmaii": {
    "appid": 2054970,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
     "RPG",
-    "Ação"
+    "Ação",
+    "Aventura"
    ],
    "nome": "Dragon's Dogma 2",
    "slug": "dragon-s-dogma-2",
    "titulo": "Dragon's Dogma 2",
-   "v": 5
+   "v": 6
   },
   "eldenring": {
    "appid": 1245620,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
+    "Mundo aberto",
     "RPG",
-    "Ação"
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "ELDEN RING",
    "slug": "elden-ring",
    "titulo": "Elden Ring",
-   "v": 5
+   "v": 6
   },
   "elderscrollsonline": {
    "appid": 306130,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
+    "Mundo aberto",
     "Aventura",
     "Ação"
    ],
    "nome": "The Elder Scrolls® Online",
    "slug": "the-elder-scrolls-online",
    "titulo": "The Elder Scrolls Online",
-   "v": 5
+   "v": 6
   },
   "fifastreet": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Esporte"
@@ -665,171 +757,187 @@
    "nome": "FIFA Street",
    "slug": "fifa-street",
    "titulo": "FIFA Street",
-   "v": 5
+   "v": 6
   },
   "finalfantasyviiremake": {
    "appid": 1462040,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Aventura"
    ],
    "nome": "FINAL FANTASY VII REMAKE INTERGRADE",
    "slug": "final-fantasy-vii-remake",
    "titulo": "Final Fantasy VII Remake",
-   "v": 5
+   "v": 6
   },
   "footballmanager27": {
    "appid": 4540240,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": true,
    "estilos": [
     "Esporte",
     "Estratégia",
-    "Simulação"
+    "Simulação",
+    "2D"
    ],
    "nome": "International Football Manager 27",
    "slug": "football-manager-27",
    "titulo": "Football Manager 27",
-   "v": 5
+   "v": 6
   },
   "forzahorizon": {
    "appid": 2483190,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Esporte",
-    "Simulação"
+    "Mundo aberto",
+    "Simulação",
+    "Aventura",
+    "Esporte"
    ],
    "nome": "Forza Horizon 6",
    "slug": "forza-horizon",
    "titulo": "Forza Horizon",
-   "v": 5
+   "v": 6
   },
   "forzahorizonii": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "forzahorizonv": {
    "appid": 1551360,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Esporte",
+    "Mundo aberto",
     "Simulação",
-    "Aventura"
+    "Aventura",
+    "Cooperativo"
    ],
    "nome": "Forza Horizon 5",
    "slug": "forza-horizon-5",
    "titulo": "Forza Horizon 5",
-   "v": 5
+   "v": 6
   },
   "forzahorizonvi": {
    "appid": 2483190,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Esporte",
-    "Simulação"
+    "Mundo aberto",
+    "Simulação",
+    "Aventura",
+    "Esporte"
    ],
    "nome": "Forza Horizon 6",
    "slug": "forza-horizon-6",
    "titulo": "Forza Horizon 6",
-   "v": 5
+   "v": 6
   },
   "forzamotorsportiv": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "godofwar": {
    "appid": 1593500,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
+    "Ação",
+    "Narrativo",
     "Aventura",
-    "Ação"
+    "Hack and slash",
+    "RPG",
+    "Mundo aberto"
    ],
    "nome": "God of War",
    "slug": "god-of-war",
    "titulo": "God of War",
-   "v": 5
+   "v": 6
   },
   "godofwariii": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Hack and slash",
     "Aventura",
     "Ação"
    ],
    "nome": "God of War III",
    "slug": "god-of-war-iii",
    "titulo": "God of War III",
-   "v": 5
+   "v": 6
   },
   "grandchase": {
    "appid": 985810,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "RPG",
+    "Cooperativo",
+    "Hack and slash",
     "Luta",
-    "Plataforma",
-    "Ação"
+    "2D"
    ],
    "nome": "GrandChase",
    "slug": "grandchase",
    "titulo": "GrandChase",
-   "v": 5
+   "v": 6
   },
   "grandtheftautoiv": {
    "appid": 12210,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Ação",
+    "Corrida",
     "Aventura",
-    "Ação"
+    "Tiro"
    ],
    "nome": "Grand Theft Auto IV: The Complete Edition",
    "slug": "grand-theft-auto-iv",
    "titulo": "Grand Theft Auto IV",
-   "v": 5
+   "v": 6
   },
   "grandtheftautoivthelostanddamned": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -838,25 +946,26 @@
    "nome": "Grand Theft Auto IV: The Lost and Damned",
    "slug": "grand-theft-auto-iv-the-lost-and-damned",
    "titulo": "Grand Theft Auto IV: The Lost and Damned",
-   "v": 5
+   "v": 6
   },
   "grandtheftautosanandreas": {
    "appid": 1547000,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Ação",
     "Tiro",
-    "Aventura",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Grand Theft Auto: San Andreas – The Definitive Edition",
    "slug": "grand-theft-auto-san-andreas",
    "titulo": "Grand Theft Auto: San Andreas",
-   "v": 5
+   "v": 6
   },
   "grandtheftautotheballadofgaytony": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -865,11 +974,11 @@
    "nome": "Grand Theft Auto: The Ballad of Gay Tony",
    "slug": "grand-theft-auto-the-ballad-of-gay-tony",
    "titulo": "Grand Theft Auto: The Ballad of Gay Tony",
-   "v": 5
+   "v": 6
   },
   "grandtheftautothetrilogythedefinitiveedition": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -878,26 +987,28 @@
    "nome": "Grand Theft Auto: The Trilogy – The Definitive Edition",
    "slug": "grand-theft-auto-the-trilogy-the-definitive-edit",
    "titulo": "Grand Theft Auto: The Trilogy – The Definitive Edition",
-   "v": 5
+   "v": 6
   },
   "grandtheftautov": {
    "appid": 3240220,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Corrida",
+    "Mundo aberto",
+    "Ação",
     "Tiro",
-    "Simulação",
-    "Aventura"
+    "Aventura",
+    "Corrida",
+    "Simulação"
    ],
    "nome": "Grand Theft Auto V Enhanced",
    "slug": "grand-theft-auto-v",
    "titulo": "Grand Theft Auto V",
-   "v": 5
+   "v": 6
   },
   "grandtheftautovi": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": true,
    "estilos": [
     "Tiro",
@@ -907,24 +1018,26 @@
    "nome": "Grand Theft Auto VI",
    "slug": "grand-theft-auto-vi",
    "titulo": "Grand Theft Auto VI",
-   "v": 5
+   "v": 6
   },
   "grandtheftautovicecity": {
    "appid": 1546990,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Tiro",
+    "Aventura"
    ],
    "nome": "Grand Theft Auto: Vice City – The Definitive Edition",
    "slug": "grand-theft-auto-vice-city",
    "titulo": "Grand Theft Auto: Vice City",
-   "v": 5
+   "v": 6
   },
   "granturismoiiiaspec": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -932,144 +1045,168 @@
    "nome": "Gran Turismo",
    "slug": "gran-turismo-3-a-spec",
    "titulo": "Gran Turismo 3: A-Spec",
-   "v": 5
+   "v": 6
   },
   "granturismoiv": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "gris": {
    "appid": 683320,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Indie",
+    "Aventura",
     "Plataforma",
-    "Aventura"
+    "2D",
+    "Narrativo"
    ],
    "nome": "GRIS",
    "slug": "gris",
    "titulo": "GRIS",
-   "v": 5
+   "v": 6
   },
   "hadesii": {
    "appid": 1145350,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Roguelike",
+    "Hack and slash",
     "RPG",
-    "Ação"
+    "Narrativo"
    ],
    "nome": "Hades II",
    "slug": "hades-ii",
    "titulo": "Hades II",
-   "v": 5
+   "v": 6
   },
   "haloiv": {
    "appid": 1064273,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
     "Tiro",
-    "Ação"
+    "Cooperativo",
+    "Narrativo"
    ],
    "nome": "Halo 4",
    "slug": "halo-4",
    "titulo": "Halo 4",
-   "v": 5
+   "v": 6
   },
   "halothemasterchiefcollection": {
    "appid": 976730,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
+    "Narrativo",
+    "Cooperativo",
     "Ação"
    ],
    "nome": "Halo: The Master Chief Collection",
    "slug": "halo-the-master-chief-collection",
    "titulo": "Halo: The Master Chief Collection",
-   "v": 5
+   "v": 6
   },
   "haveanicedeath": {
    "appid": 1740720,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
-    "Ação"
+    "Roguelike",
+    "Hack and slash",
+    "2D",
+    "Ação",
+    "Plataforma"
    ],
    "nome": "Have a Nice Death",
    "slug": "have-a-nice-death",
    "titulo": "Have a Nice Death",
-   "v": 5
+   "v": 6
   },
   "hifirush": {
    "appid": 1817230,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Ação"
+    "Ação",
+    "Hack and slash",
+    "Aventura",
+    "Plataforma"
    ],
    "nome": "Hi-Fi RUSH",
    "slug": "hi-fi-rush",
    "titulo": "Hi-Fi Rush",
-   "v": 5
+   "v": 6
   },
   "hollowknight": {
    "appid": 367520,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
     "Plataforma",
-    "Aventura",
-    "Ação"
+    "Soulslike",
+    "2D",
+    "Indie",
+    "Aventura"
    ],
    "nome": "Hollow Knight",
    "slug": "hollow-knight",
    "titulo": "Hollow Knight",
-   "v": 5
+   "v": 6
   },
   "hollowknightsilksong": {
    "appid": 1030300,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
+    "Indie",
+    "Soulslike",
+    "2D",
     "Plataforma",
-    "Aventura",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Hollow Knight: Silksong",
    "slug": "hollow-knight-silksong",
    "titulo": "Hollow Knight: Silksong",
-   "v": 5
+   "v": 6
   },
   "horizonforbiddenwest": {
    "appid": 2420110,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
+    "Mundo aberto",
+    "Ação",
+    "Narrativo",
     "Aventura",
-    "Ação"
+    "RPG"
    ],
    "nome": "Horizon Forbidden West™ - Edição Completa",
    "slug": "horizon-forbidden-west",
    "titulo": "Horizon Forbidden West",
-   "v": 5
+   "v": 6
   },
   "infamoussecondson": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1078,207 +1215,243 @@
    "nome": "Infamous Second Son",
    "slug": "infamous-second-son",
    "titulo": "Infamous Second Son",
-   "v": 5
+   "v": 6
   },
   "kurtzpel": {
    "appid": 844870,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Ação"
+    "Ação",
+    "Luta",
+    "Cooperativo"
    ],
    "nome": "KurtzPel",
    "slug": "kurtzpel",
    "titulo": "KurtzPel",
-   "v": 5
+   "v": 6
   },
   "lastofus": {
    "appid": 1888930,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Narrativo",
     "Terror",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Tiro",
+    "Sobrevivência"
    ],
    "nome": "The Last of Us™ Part I",
    "slug": "the-last-of-us",
    "titulo": "The Last of Us",
-   "v": 5
+   "v": 6
   },
   "legendofzeldatearsofthekingdom": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Puzzle"
    ],
    "nome": "The Legend of Zelda: Tears of the Kingdom",
    "slug": "the-legend-of-zelda-tears-of-the-kingdom",
    "titulo": "The Legend of Zelda: Tears of the Kingdom",
-   "v": 5
+   "v": 6
   },
   "liesofp": {
    "appid": 1627720,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
+    "Ação",
+    "Narrativo",
     "RPG",
-    "Aventura",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Lies of P",
    "slug": "lies-of-p",
    "titulo": "Lies of P",
-   "v": 5
+   "v": 6
   },
   "lifeisstrange": {
    "appid": 532210,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Narrativo",
     "Aventura"
    ],
    "nome": "Life is Strange 2",
    "slug": "life-is-strange",
    "titulo": "Life is Strange™",
-   "v": 5
+   "v": 6
   },
   "mafiaii": {
    "appid": 50130,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Mundo aberto",
+    "Narrativo",
     "Tiro",
-    "Aventura",
-    "Ação"
+    "Corrida",
+    "Aventura"
    ],
    "nome": "Mafia II (Classic)",
    "slug": "mafia-ii",
    "titulo": "Mafia II",
-   "v": 5
+   "v": 6
   },
   "mafiaiii": {
    "appid": 600160,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Ação",
+    "Narrativo",
     "Tiro",
-    "Aventura",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Mafia III Demo",
    "slug": "mafia-iii",
    "titulo": "Mafia III",
-   "v": 5
+   "v": 6
   },
   "mafiatheoldcountry": {
    "appid": 1941540,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Narrativo",
+    "Furtivo",
+    "Ação",
+    "Tiro",
+    "Aventura"
    ],
    "nome": "Mafia: The Old Country",
    "slug": "mafia-the-old-country",
    "titulo": "Mafia: The Old Country",
-   "v": 5
+   "v": 6
   },
   "marvelsspiderman": {
    "appid": 2651280,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Furtivo"
    ],
    "nome": "Marvel's Spider-Man 2",
    "slug": "marvel-s-spider-man",
    "titulo": "Marvel's Spider-Man",
-   "v": 5
+   "v": 6
   },
   "marvelsspidermanii": {
    "appid": 2651280,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Furtivo"
    ],
    "nome": "Marvel's Spider-Man 2",
    "slug": "marvel-s-spider-man-2",
    "titulo": "Marvel's Spider-Man 2",
-   "v": 5
+   "v": 6
   },
   "megamanxlegacycollection": {
    "appid": 743890,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Ação"
+    "Ação",
+    "Plataforma",
+    "2D"
    ],
    "nome": "Mega Man X Legacy Collection",
    "slug": "mega-man-x-legacy-collection",
    "titulo": "Mega Man X Legacy Collection",
-   "v": 5
+   "v": 6
   },
   "megamanxlegacycollectionii": {
    "appid": 743900,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Ação"
+    "Ação",
+    "Plataforma",
+    "2D"
    ],
    "nome": "Mega Man X Legacy Collection 2",
    "slug": "mega-man-x-legacy-collection-2",
    "titulo": "Mega Man X Legacy Collection 2",
-   "v": 5
+   "v": 6
   },
   "megamanzerozxlegacycollection": {
    "appid": 999020,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
     "RPG",
-    "Ação"
+    "Plataforma",
+    "2D",
+    "Metroidvania",
+    "Narrativo"
    ],
    "nome": "Mega Man Zero/ZX Legacy Collection",
    "slug": "mega-man-zero-zx-legacy-collection",
    "titulo": "Mega Man Zero/ZX Legacy Collection",
-   "v": 5
+   "v": 6
   },
   "metalgearsoliddeltasnakeeater": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Furtivo",
     "Aventura",
     "Ação"
    ],
    "nome": "Metal Gear Solid Delta: Snake Eater",
    "slug": "metal-gear-solid-delta-snake-eater",
    "titulo": "Metal Gear Solid Delta: Snake Eater",
-   "v": 5
+   "v": 6
   },
   "middleearthshadowofwar": {
    "appid": 356190,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Ação",
     "RPG",
     "Aventura",
-    "Ação"
+    "Furtivo",
+    "Narrativo"
    ],
    "nome": "Middle-earth™: Shadow of War™",
    "slug": "middle-earth-shadow-of-war",
    "titulo": "Middle-earth™: Shadow of War™",
-   "v": 5
+   "v": 6
   },
   "midnightclubiiidubedition": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -1286,94 +1459,106 @@
    "nome": "Midnight Club 3: Dub Edition",
    "slug": "midnight-club-3-dub-edition",
    "titulo": "Midnight Club 3: Dub Edition",
-   "v": 5
+   "v": 6
   },
   "monsterhunterworld": {
    "appid": 582010,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Cooperativo",
+    "Ação",
+    "Mundo aberto",
     "RPG",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Monster Hunter: World",
    "slug": "monster-hunter-world",
    "titulo": "Monster Hunter: World",
-   "v": 5
+   "v": 6
   },
   "moonlighter": {
    "appid": 606150,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Hack and slash",
+    "2D",
+    "Roguelike",
     "RPG",
     "Simulação",
-    "Aventura",
     "Ação"
    ],
    "nome": "Moonlighter",
    "slug": "moonlighter",
    "titulo": "Moonlighter",
-   "v": 5
+   "v": 6
   },
   "narutoshippudenultimateninjastormiv": {
    "appid": 349040,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Luta",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Mundo aberto"
    ],
    "nome": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
    "slug": "naruto-shippuden-ultimate-ninja-storm-4",
    "titulo": "Naruto Shippuden: Ultimate Ninja Storm 4",
-   "v": 5
+   "v": 6
   },
   "needforspeed": {
    "appid": 1262540,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Simulação",
+    "Mundo aberto",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Simulação"
    ],
    "nome": "Need for Speed™ ",
    "slug": "need-for-speed",
    "titulo": "Need for Speed",
-   "v": 5
+   "v": 6
   },
   "needforspeedhotpursuit": {
    "appid": 1328660,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Aventura"
    ],
    "nome": "Need for Speed™ Hot Pursuit Remastered",
    "slug": "need-for-speed-hot-pursuit",
    "titulo": "Need for Speed: Hot Pursuit",
-   "v": 5
+   "v": 6
   },
   "needforspeedmostwanted": {
    "appid": 1262560,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Aventura"
    ],
    "nome": "Need for Speed™ Most Wanted",
    "slug": "need-for-speed-most-wanted",
    "titulo": "Need for Speed: Most Wanted",
-   "v": 5
+   "v": 6
   },
   "needforspeedtherun": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -1381,120 +1566,136 @@
    "nome": "Need for Speed: The Run",
    "slug": "need-for-speed-the-run",
    "titulo": "Need for Speed: The Run",
-   "v": 5
+   "v": 6
   },
   "needforspeedunbound": {
    "appid": 1846380,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Cooperativo"
    ],
    "nome": "Need for Speed™ Unbound",
    "slug": "need-for-speed-unbound",
    "titulo": "Need for Speed Unbound",
-   "v": 5
+   "v": 6
   },
   "oriandtheblindforest": {
    "appid": 261570,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Plataforma",
+    "Metroidvania",
     "Aventura",
+    "Narrativo",
+    "2D",
     "Ação"
    ],
    "nome": "Ori and the Blind Forest",
    "slug": "ori-and-the-blind-forest",
    "titulo": "Ori and the Blind Forest",
-   "v": 5
+   "v": 6
   },
   "oriandtheblindforestdefinitiveedition": {
    "appid": 387290,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
     "Plataforma",
     "Aventura",
-    "Ação"
+    "Narrativo",
+    "Ação",
+    "2D"
    ],
    "nome": "Ori and the Blind Forest: Definitive Edition",
    "slug": "ori-and-the-blind-forest-definitive-edition",
    "titulo": "Ori and the Blind Forest: Definitive Edition",
-   "v": 5
+   "v": 6
   },
   "oriandthewillofthewisps": {
    "appid": 1057090,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Metroidvania",
     "Plataforma",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Narrativo"
    ],
    "nome": "Ori and the Will of the Wisps",
    "slug": "ori-and-the-will-of-the-wisps",
    "titulo": "Ori and the Will of the Wisps",
-   "v": 5
+   "v": 6
   },
   "paladins": {
    "appid": 444090,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
+    "Ação",
     "Estratégia",
-    "Aventura",
-    "Ação"
+    "Cooperativo"
    ],
    "nome": "Paladins®",
    "slug": "paladins",
    "titulo": "Paladins",
-   "v": 5
+   "v": 6
   },
   "paydayii": {
    "appid": 218620,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
-    "Ação"
+    "Cooperativo",
+    "Ação",
+    "Tiro",
+    "Furtivo"
    ],
    "nome": "PAYDAY 2",
    "slug": "payday-2",
    "titulo": "PAYDAY 2",
-   "v": 5
+   "v": 6
   },
   "phantombladezero": {
    "appid": 4115450,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Ação"
+    "Ação",
+    "Luta",
+    "Hack and slash",
+    "Soulslike"
    ],
    "nome": "Phantom Blade Zero",
    "slug": "phantom-blade-zero",
    "titulo": "Phantom Blade Zero",
-   "v": 5
+   "v": 6
   },
   "phasmophobia": {
    "appid": 739630,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Terror",
-    "Ação"
+    "Cooperativo",
+    "Sobrevivência"
    ],
    "nome": "Phasmophobia",
    "slug": "phasmophobia",
    "titulo": "Phasmophobia",
-   "v": 5
+   "v": 6
   },
   "pokemonemerald": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1502,36 +1703,39 @@
    "nome": "Pokémon Emerald",
    "slug": "pokemon-emerald",
    "titulo": "Pokémon Emerald",
-   "v": 5
+   "v": 6
   },
   "pokemonfirered": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG"
+    "RPG",
+    "2D",
+    "Aventura"
    ],
    "nome": "Pokémon FireRed and LeafGreen",
    "slug": "pokemon-firered",
    "titulo": "Pokémon FireRed",
-   "v": 5
+   "v": 6
   },
   "pokemonlegendsarceus": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG",
-    "Ação"
+    "Mundo aberto",
+    "Aventura"
    ],
    "nome": "Pokémon Legends: Arceus",
    "slug": "pokemon-legends-arceus",
    "titulo": "Pokémon Legends: Arceus",
-   "v": 5
+   "v": 6
   },
   "pokemonletsgopikachuandletsgoeevee": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1539,11 +1743,11 @@
    "nome": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
    "slug": "pokemon-let-s-go-pikachu-and-let-s-go-eevee",
    "titulo": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
-   "v": 5
+   "v": 6
   },
   "pokemonswordandshield": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1551,335 +1755,394 @@
    "nome": "Pokémon Sword and Shield",
    "slug": "pokemon-sword-and-shield",
    "titulo": "Pokémon Sword and Shield",
-   "v": 5
+   "v": 6
   },
   "portalii": {
    "appid": 620,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
+    "Plataforma",
     "Puzzle",
-    "Aventura",
-    "Ação"
+    "Narrativo",
+    "Cooperativo",
+    "Ação",
+    "Aventura"
    ],
    "nome": "Portal 2",
    "slug": "portal-2",
    "titulo": "Portal 2",
-   "v": 5
+   "v": 6
   },
   "princeofpersiathelostcrown": {
    "appid": 2751000,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma",
+    "Metroidvania",
     "Aventura",
-    "Ação"
+    "Plataforma",
+    "2D",
+    "Ação",
+    "RPG"
    ],
    "nome": "Prince of Persia The Lost Crown",
    "slug": "prince-of-persia-the-lost-crown",
    "titulo": "Prince of Persia: The Lost Crown",
-   "v": 5
+   "v": 6
   },
   "projectzomboid": {
    "appid": 108600,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Terror",
-    "RPG",
-    "Simulação"
+    "Sobrevivência",
+    "Mundo aberto",
+    "Cooperativo",
+    "Indie",
+    "Simulação",
+    "Terror"
    ],
    "nome": "Project Zomboid",
    "slug": "project-zomboid",
    "titulo": "Project Zomboid",
-   "v": 5
+   "v": 6
   },
   "realmofthemadgodexalt": {
    "appid": 200210,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "2D",
     "RPG",
-    "Aventura",
+    "Roguelike",
+    "Indie",
     "Ação"
    ],
    "nome": "Realm of the Mad God Exalt",
    "slug": "realm-of-the-mad-god-exalt",
    "titulo": "Realm of the Mad God Exalt",
-   "v": 5
+   "v": 6
   },
   "reddeadredemption": {
    "appid": 2668510,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Narrativo",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Tiro"
    ],
    "nome": "Red Dead Redemption",
    "slug": "red-dead-redemption",
    "titulo": "Red Dead Redemption",
-   "v": 5
+   "v": 6
   },
   "reddeadredemptionii": {
    "appid": 1174180,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Mundo aberto",
+    "Narrativo",
     "Aventura",
-    "Ação"
+    "Ação",
+    "Tiro"
    ],
    "nome": "Red Dead Redemption 2",
    "slug": "red-dead-redemption-2",
    "titulo": "Red Dead Redemption 2",
-   "v": 5
+   "v": 6
   },
   "residentevil": {
    "appid": 304240,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Terror",
+    "Sobrevivência",
+    "Puzzle",
     "Aventura",
     "Ação"
    ],
    "nome": "Resident Evil",
    "slug": "resident-evil",
    "titulo": "Resident Evil",
-   "v": 5
+   "v": 6
   },
   "residentevil0": {
    "appid": 339340,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Terror",
+    "Sobrevivência",
     "Aventura",
     "Ação"
    ],
    "nome": "Resident Evil 0",
    "slug": "resident-evil-0",
    "titulo": "Resident Evil 0",
-   "v": 5
+   "v": 6
   },
   "residentevilii": {
    "appid": 883710,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Terror",
-    "Ação"
+    "Sobrevivência",
+    "Ação",
+    "Puzzle",
+    "Narrativo"
    ],
    "nome": "Resident Evil 2",
    "slug": "resident-evil-2",
    "titulo": "Resident Evil 2",
-   "v": 5
+   "v": 6
   },
   "residenteviliv": {
    "appid": 2050650,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "Terror",
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Sobrevivência",
+    "Tiro",
+    "Narrativo",
+    "Aventura"
    ],
    "nome": "Resident Evil 4",
    "slug": "resident-evil-4",
    "titulo": "Resident Evil 4",
-   "v": 5
+   "v": 6
   },
   "residenteviliv2005": {
    "appid": 254700,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "Terror",
-    "Aventura",
-    "Ação"
+    "Sobrevivência",
+    "Ação",
+    "Tiro",
+    "Aventura"
    ],
    "nome": "Resident Evil 4 (2005)",
    "slug": "resident-evil-4-2005",
    "titulo": "Resident Evil 4 (2005)",
-   "v": 5
+   "v": 6
   },
   "residentevilrequiem": {
    "appid": 3764200,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Terror",
+    "Sobrevivência",
+    "Tiro",
+    "Ação",
     "Aventura",
-    "Ação"
+    "Narrativo"
    ],
    "nome": "Resident Evil Requiem",
    "slug": "resident-evil-requiem",
    "titulo": "Resident Evil Requiem",
-   "v": 5
+   "v": 6
   },
   "residentevilrevelations": {
    "appid": 222480,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "Terror",
+    "Ação",
+    "Sobrevivência",
+    "Tiro",
     "Aventura",
-    "Ação"
+    "Cooperativo"
    ],
    "nome": "Resident Evil Revelations",
    "slug": "resident-evil-revelations",
    "titulo": "Resident Evil Revelations",
-   "v": 5
+   "v": 6
   },
   "residentevilrevelationsii": {
    "appid": 287290,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Terror",
+    "Sobrevivência",
+    "Ação",
+    "Cooperativo",
     "Aventura",
-    "Ação"
+    "Tiro"
    ],
    "nome": "Resident Evil Revelations 2",
    "slug": "resident-evil-revelations-2",
    "titulo": "Resident Evil: Revelations 2",
-   "v": 5
+   "v": 6
   },
   "residentevilreverse": {
-   "em": 1793756576,
+   "em": 1793760094,
    "slug": "resident-evil-re-verse",
    "titulo": "Resident Evil Re:Verse",
-   "v": 5,
+   "v": 6,
    "vazio": true
   },
   "residentevilv": {
    "appid": 21690,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Cooperativo",
+    "Ação",
+    "Terror",
     "Tiro",
     "Aventura",
-    "Ação"
+    "Sobrevivência"
    ],
    "nome": "Resident Evil 5",
    "slug": "resident-evil-5",
    "titulo": "Resident Evil 5",
-   "v": 5
+   "v": 6
   },
   "residentevilvi": {
    "appid": 221040,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Ação",
+    "Cooperativo",
+    "Tiro",
+    "Terror",
+    "Aventura"
    ],
    "nome": "Resident Evil 6",
    "slug": "resident-evil-6",
    "titulo": "Resident Evil 6",
-   "v": 5
+   "v": 6
   },
   "residentevilviibiohazard": {
    "appid": 418370,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "Terror",
-    "Aventura",
-    "Ação"
+    "Sobrevivência",
+    "Ação",
+    "Tiro"
    ],
    "nome": "Resident Evil 7 Biohazard",
    "slug": "resident-evil-7-biohazard",
    "titulo": "Resident Evil 7: Biohazard",
-   "v": 5
+   "v": 6
   },
   "residentevilvillage": {
    "appid": 1196590,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
     "Terror",
-    "Ação"
+    "Sobrevivência",
+    "Ação",
+    "Narrativo",
+    "Tiro"
    ],
    "nome": "Resident Evil Village",
    "slug": "resident-evil-village",
    "titulo": "Resident Evil Village",
-   "v": 5
+   "v": 6
   },
   "riseofthetombraider": {
    "appid": 391220,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
-    "Ação"
+    "Ação",
+    "Mundo aberto",
+    "Narrativo",
+    "Sobrevivência",
+    "Puzzle"
    ],
    "nome": "Rise of the Tomb Raider™",
    "slug": "rise-of-the-tomb-raider",
    "titulo": "Rise of the Tomb Raider",
-   "v": 5
+   "v": 6
   },
   "saintsrowii": {
    "appid": 9480,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Tiro",
+    "Cooperativo",
+    "Aventura"
    ],
    "nome": "Saints Row 2",
    "slug": "saints-row-2",
    "titulo": "Saints Row 2",
-   "v": 5
+   "v": 6
   },
   "saintsrowthethird": {
    "appid": 55230,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Ação",
+    "Cooperativo",
+    "Tiro",
+    "Aventura"
    ],
    "nome": "Saints Row: The Third",
    "slug": "saints-row-the-third",
    "titulo": "Saints Row: The Third",
-   "v": 5
+   "v": 6
   },
   "seaofthieves": {
    "appid": 1172620,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Tiro",
+    "Mundo aberto",
     "Aventura",
-    "Ação"
+    "Cooperativo",
+    "Ação",
+    "Tiro"
    ],
    "nome": "Sea of Thieves: 2026 Edition",
    "slug": "sea-of-thieves",
    "titulo": "Sea of Thieves",
-   "v": 5
+   "v": 6
   },
   "sekiroshadowsdietwice": {
    "appid": 814380,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Soulslike",
+    "Ação",
+    "Furtivo",
     "Aventura",
-    "Ação"
+    "Mundo aberto",
+    "Narrativo"
    ],
    "nome": "Sekiro™: Shadows Die Twice - GOTY Edition",
    "slug": "sekiro-shadows-die-twice",
    "titulo": "Sekiro™: Shadows Die Twice",
-   "v": 5
+   "v": 6
   },
   "shadowofthecolossus": {
    "appid": null,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1888,162 +2151,184 @@
    "nome": "Shadow of the Colossus",
    "slug": "shadow-of-the-colossus",
    "titulo": "Shadow of the Colossus",
-   "v": 5
+   "v": 6
   },
   "shadowofthetombraider": {
    "appid": 750920,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
-    "Plataforma",
     "Aventura",
-    "Ação"
+    "Ação",
+    "Mundo aberto",
+    "Narrativo",
+    "Puzzle",
+    "Furtivo"
    ],
    "nome": "Shadow of the Tomb Raider: Definitive Edition",
    "slug": "shadow-of-the-tomb-raider",
    "titulo": "Shadow of the Tomb Raider",
-   "v": 5
+   "v": 6
   },
   "shiftiiunleashed": {
    "appid": 47920,
-   "em": 1793749256,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Corrida"
+    "Corrida",
+    "Simulação",
+    "Esporte"
    ],
    "nome": "Shift 2 Unleashed",
    "slug": "shift-2-unleashed",
    "titulo": "Shift 2: Unleashed",
-   "v": 5
+   "v": 6
   },
   "silverpines": {
    "appid": 2333000,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Aventura",
     "Terror",
-    "RPG",
-    "Plataforma",
-    "Aventura"
+    "Metroidvania",
+    "Sobrevivência",
+    "2D",
+    "Ação"
    ],
    "nome": "Silver Pines",
    "slug": "silver-pines",
    "titulo": "Silver Pines",
-   "v": 5
+   "v": 6
   },
   "sonicpicopark": {
    "appid": 4304060,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": true,
    "estilos": [
+    "Ação",
     "Puzzle",
-    "Ação"
+    "Plataforma",
+    "2D",
+    "Indie",
+    "Cooperativo"
    ],
    "nome": "SONIC PICO PARK",
    "slug": "sonic-pico-park",
    "titulo": "Sonic Pico Park",
-   "v": 5
+   "v": 6
   },
   "speedrunners": {
    "appid": 207140,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "Esporte",
+    "Indie",
     "Plataforma",
-    "Ação"
+    "Ação",
+    "2D"
    ],
    "nome": "SpeedRunners",
    "slug": "speedrunners",
    "titulo": "SpeedRunners",
-   "v": 5
+   "v": 6
   },
   "spore": {
    "appid": 17390,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "RPG",
-    "Estratégia",
+    "Mundo aberto",
     "Simulação",
-    "Aventura"
+    "Aventura",
+    "RPG",
+    "Estratégia"
    ],
    "nome": "SPORE™",
    "slug": "spore",
    "titulo": "Spore",
-   "v": 5
+   "v": 6
   },
   "sporecreepycutepartspack": {
    "appid": 17440,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Simulação"
+    "Simulação",
+    "Mundo aberto",
+    "Aventura",
+    "Estratégia"
    ],
    "nome": "SPORE™ Creepy & Cute Parts Pack",
    "slug": "spore-creepy-cute-parts-pack",
    "titulo": "Spore: Creepy & Cute Parts Pack",
-   "v": 5
+   "v": 6
   },
   "sporegalacticadventures": {
    "appid": 24720,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Estratégia",
     "Simulação",
-    "Ação"
+    "Ação",
+    "Aventura",
+    "Mundo aberto",
+    "Estratégia"
    ],
    "nome": "SPORE™ Galactic Adventures",
    "slug": "spore-galactic-adventures",
    "titulo": "Spore: Galactic Adventures",
-   "v": 5
+   "v": 6
   },
   "stellarblade": {
    "appid": 3489700,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Ação",
+    "Hack and slash",
+    "Soulslike",
     "RPG",
-    "Aventura",
-    "Ação"
+    "Aventura"
    ],
    "nome": "Stellar Blade™",
    "slug": "stellar-blade",
    "titulo": "Stellar Blade",
-   "v": 5
+   "v": 6
   },
   "streetfightervi": {
    "appid": 1364780,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Luta",
-    "Aventura",
-    "Ação"
+    "2D",
+    "Ação",
+    "Aventura"
    ],
    "nome": "Street Fighter™ 6",
    "slug": "street-fighter-6",
    "titulo": "Street Fighter 6",
-   "v": 5
+   "v": 6
   },
   "supermariobroswonder": {
    "appid": null,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma"
+    "Plataforma",
+    "2D",
+    "Cooperativo"
    ],
    "nome": "Super Mario Bros. Wonder",
    "slug": "super-mario-bros-wonder",
    "titulo": "Super Mario Bros. Wonder",
-   "v": 5
+   "v": 6
   },
   "supermarioworld": {
    "appid": null,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Plataforma"
@@ -2051,55 +2336,247 @@
    "nome": "Super Mario World",
    "slug": "super-mario-world",
    "titulo": "Super Mario World",
-   "v": 5
+   "v": 6
   },
   "supermeatboy": {
    "appid": 40800,
-   "em": 1793756576,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
-    "Plataforma"
+    "Plataforma",
+    "Indie",
+    "2D"
    ],
    "nome": "Super Meat Boy",
    "slug": "super-meat-boy",
    "titulo": "Super Meat Boy",
-   "v": 5
+   "v": 6
+  },
+  "supermomboquest": {
+   "appid": 1262040,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação",
+    "Indie",
+    "Metroidvania",
+    "Plataforma",
+    "2D"
+   ],
+   "nome": "Super Mombo Quest",
+   "slug": "super-mombo-quest",
+   "titulo": "Super Mombo Quest",
+   "v": 6
   },
   "tekkenviii": {
    "appid": 1778820,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
+    "Luta",
     "Ação"
    ],
    "nome": "TEKKEN 8",
    "slug": "tekken-8",
    "titulo": "Tekken 8",
-   "v": 5
+   "v": 6
+  },
+  "titansouls": {
+   "appid": 297130,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Soulslike",
+    "2D",
+    "Indie",
+    "Aventura",
+    "Ação"
+   ],
+   "nome": "Titan Souls",
+   "slug": "titan-souls",
+   "titulo": "Titan Souls",
+   "v": 6
   },
   "tokyoxtremeracer": {
    "appid": 2634950,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Corrida",
-    "RPG"
+    "RPG",
+    "Mundo aberto"
    ],
    "nome": "Tokyo Xtreme Racer",
    "slug": "tokyo-xtreme-racer",
    "titulo": "Tokyo Xtreme Racer",
-   "v": 5
+   "v": 6
   },
   "tokyoxtremeraceriii": {
-   "em": 1793751281,
+   "em": 1793760094,
    "slug": "tokyo-xtreme-racer-3",
    "titulo": "Tokyo Xtreme Racer 3",
-   "v": 5,
+   "v": 6,
    "vazio": true
+  },
+  "tombraider": {
+   "appid": 391220,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Aventura",
+    "Ação",
+    "Mundo aberto",
+    "Narrativo",
+    "Sobrevivência",
+    "Puzzle"
+   ],
+   "nome": "Rise of the Tomb Raider™",
+   "slug": "tomb-raider",
+   "titulo": "Tomb Raider",
+   "v": 6
+  },
+  "tomclancysrainbowsixsiege": {
+   "appid": 359550,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Tiro",
+    "Cooperativo",
+    "Ação"
+   ],
+   "nome": "Tom Clancy's Rainbow Six Siege",
+   "slug": "tom-clancy-s-rainbow-six-siege",
+   "titulo": "Tom Clancy's Rainbow Six Siege",
+   "v": 6
+  },
+  "transformice": {
+   "appid": 335240,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "2D",
+    "Plataforma",
+    "Corrida",
+    "Aventura",
+    "Cooperativo",
+    "Indie"
+   ],
+   "nome": "Transformice",
+   "slug": "transformice",
+   "titulo": "Transformice",
+   "v": 6
+  },
+  "trickytowers": {
+   "appid": 437920,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Puzzle",
+    "Cooperativo"
+   ],
+   "nome": "Tricky Towers",
+   "slug": "tricky-towers",
+   "titulo": "Tricky Towers",
+   "v": 6
+  },
+  "trine": {
+   "appid": null,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Puzzle"
+   ],
+   "nome": "Trine",
+   "slug": "trine",
+   "titulo": "Trine",
+   "v": 6
+  },
+  "trineii": {
+   "appid": 204260,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Puzzle",
+    "Ação",
+    "Aventura",
+    "2D",
+    "Cooperativo"
+   ],
+   "nome": "Trine 2 Demo",
+   "slug": "trine-2",
+   "titulo": "Trine 2",
+   "v": 6
+  },
+  "trineiiitheartifactsofpower": {
+   "appid": 319910,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Puzzle",
+    "Ação",
+    "Aventura",
+    "Cooperativo"
+   ],
+   "nome": "Trine 3: The Artifacts of Power",
+   "slug": "trine-3-the-artifacts-of-power",
+   "titulo": "Trine 3: The Artifacts of Power",
+   "v": 6
+  },
+  "trineivthenightmareprince": {
+   "appid": 690640,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "Puzzle",
+    "Cooperativo",
+    "Ação",
+    "Aventura",
+    "2D"
+   ],
+   "nome": "Trine 4: The Nightmare Prince",
+   "slug": "trine-4-the-nightmare-prince",
+   "titulo": "Trine 4: The Nightmare Prince",
+   "v": 6
+  },
+  "ultimatemarvelvscapcomiii": {
+   "appid": 357190,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Luta",
+    "2D",
+    "Ação"
+   ],
+   "nome": "ULTIMATE MARVEL VS. CAPCOM 3",
+   "slug": "ultimate-marvel-vs-capcom-3",
+   "titulo": "Ultimate Marvel vs. Capcom 3",
+   "v": 6
+  },
+  "unboundworldsapart": {
+   "appid": 814680,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Indie",
+    "Aventura",
+    "Plataforma",
+    "Metroidvania",
+    "2D",
+    "Narrativo"
+   ],
+   "nome": "Unbound: Worlds Apart",
+   "slug": "unbound-worlds-apart",
+   "titulo": "Unbound: Worlds Apart",
+   "v": 6
   },
   "unchartedivathiefsend": {
    "appid": null,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -2110,11 +2587,114 @@
    "nome": "Uncharted 4: A Thief's End",
    "slug": "uncharted-4-a-thief-s-end",
    "titulo": "Uncharted 4: A Thief's End",
-   "v": 5
+   "v": 6
+  },
+  "valheim": {
+   "appid": 892970,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Sobrevivência",
+    "Mundo aberto",
+    "Cooperativo",
+    "Aventura"
+   ],
+   "nome": "Valheim",
+   "slug": "valheim",
+   "titulo": "Valheim",
+   "v": 6
+  },
+  "valorant": {
+   "appid": null,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Tiro"
+   ],
+   "nome": "Valorant",
+   "slug": "valorant",
+   "titulo": "Valorant",
+   "v": 6
+  },
+  "wallpaperengine": {
+   "appid": 431960,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Indie",
+    "Ação"
+   ],
+   "nome": "Wallpaper Engine",
+   "slug": "wallpaper-engine",
+   "titulo": "Wallpaper Engine",
+   "v": 6
+  },
+  "webbed": {
+   "appid": 1390350,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Plataforma",
+    "2D",
+    "Puzzle",
+    "Aventura",
+    "Indie",
+    "Ação"
+   ],
+   "nome": "Webbed",
+   "slug": "webbed",
+   "titulo": "Webbed",
+   "v": 6
+  },
+  "witcheriiiwildhunt": {
+   "appid": 292030,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Mundo aberto",
+    "RPG",
+    "Narrativo",
+    "Aventura",
+    "Ação"
+   ],
+   "nome": "The Witcher 3: Wild Hunt — Remastered",
+   "slug": "the-witcher-3-wild-hunt",
+   "titulo": "The Witcher 3: Wild Hunt",
+   "v": 6
+  },
+  "witcheriiiwildhuntremastered": {
+   "appid": null,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "RPG",
+    "Ação"
+   ],
+   "nome": "The Witcher 3: Wild Hunt",
+   "slug": "the-witcher-3-wild-hunt-remastered",
+   "titulo": "The Witcher 3: Wild Hunt — Remastered",
+   "v": 6
+  },
+  "wizardoflegend": {
+   "appid": 445980,
+   "em": 1793760094,
+   "emBreve": false,
+   "estilos": [
+    "Roguelike",
+    "2D",
+    "RPG",
+    "Cooperativo",
+    "Ação",
+    "Aventura"
+   ],
+   "nome": "Wizard of Legend",
+   "slug": "wizard-of-legend",
+   "titulo": "Wizard of Legend",
+   "v": 6
   },
   "zeldaocarinaoftime": {
    "appid": null,
-   "em": 1793751281,
+   "em": 1793760094,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2123,7 +2703,7 @@
    "nome": "The Legend of Zelda: Ocarina of Time",
    "slug": "zelda-ocarina-of-time",
    "titulo": "Zelda Ocarina Of Time",
-   "v": 5
+   "v": 6
   }
  }
 }
