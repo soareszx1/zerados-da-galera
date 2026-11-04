@@ -3461,14 +3461,18 @@ async function frame(W,H,o){
   return {cv,x,y:y+20,bottom:H-220}}
 function wrapL(x,t,X,y,maxW,lh){const words=String(t).split(" ");let line="";for(const w of words){const test=line?line+" "+w:w;if(x.measureText(test).width>maxW&&line){x.fillText(line,X,y);line=w;y+=lh}else line=test}x.fillText(line,X,y);return y+lh}
 async function drawTierRows(f,W,rows,{k}){const {x}=f;const top=f.y,bot=f.bottom;const n=5;const gap=14;const rh=Math.min(300,Math.floor((bot-top-gap*(n-1))/n));
-  const lw=Math.round(rh*.55);const ratio=k==="jogos"?.75:2/3;const avail=W-160-lw-20;const maxN=Math.min(8,Math.max(1,...rows.map(r=>r.items.length)));
-  let ch=rh-16,cw=Math.round(ch*ratio);if((cw+10)*maxN>avail+10){cw=Math.max(88,Math.floor((avail+10)/maxN)-10);ch=Math.min(rh-16,Math.round(cw/ratio))}
-  const perRow=Math.max(1,Math.floor((avail+10)/(cw+10)));
-  const imgs=await Promise.all(rows.flatMap(r=>r.items.slice(0,perRow)).map(it=>it.src.then?it.src.then(cvImg):cvImg(it.src)));let ii=0;
-  rows.forEach((r,ri)=>{const Y=top+ri*(rh+gap);x.fillStyle="rgba(255,255,255,.06)";rr(x,80,Y,W-160,rh,18);x.fill();
+  const lw=Math.round(rh*.55);const ratio=k==="jogos"?.75:2/3;const avail=W-160-lw-24;
+  // cada fileira usa a maior capa em que todos os itens dela cabem (quebra em linhas se precisar)
+  const fit=N=>{let cw=Math.round((rh-16)*ratio),ch,perLine,lines;N=Math.max(1,N);
+    for(;cw>=60;cw-=4){ch=Math.round(cw/ratio);if(ch>rh-16)continue;perLine=Math.max(1,Math.floor((avail+8)/(cw+8)));lines=Math.max(1,Math.floor((rh-12+8)/(ch+8)));if(perLine*lines>=N)break}
+    ch=Math.min(rh-16,Math.round(cw/ratio));perLine=Math.max(1,Math.floor((avail+8)/(cw+8)));lines=Math.max(1,Math.floor((rh-12+8)/(ch+8)));return {cw,ch,perLine,cap:perLine*lines}};
+  const F=rows.map(r=>fit(r.items.length));
+  const imgs=await Promise.all(rows.map((r,i)=>Promise.all(r.items.slice(0,F[i].cap).map(it=>it.src&&it.src.then?it.src.then(cvImg):cvImg(it.src)))));
+  rows.forEach((r,ri)=>{const {cw,ch,perLine,cap}=F[ri];const Y=top+ri*(rh+gap);x.fillStyle="rgba(255,255,255,.06)";rr(x,80,Y,W-160,rh,18);x.fill();
     x.fillStyle=TCOL[r.t];rr(x,80,Y,lw,rh,18);x.fill();x.fillStyle="#1a1530";x.font=`400 ${Math.round(lw*.55)}px Bungee, Impact, sans-serif`;x.textAlign="center";x.fillText(r.t,80+lw/2,Y+rh/2+lw*.2);x.textAlign="left";
-    const vis=r.items.slice(0,perRow);vis.forEach((it,i)=>{const cx=80+lw+14+i*(cw+10);drawCover(x,imgs[ii++],cx,Y+(rh-ch)/2,cw,ch,it.title)});
-    if(r.items.length>perRow){x.fillStyle="rgba(0,0,0,.65)";const X=80+lw+14+(perRow-1)*(cw+10);rr(x,X,Y+(rh-ch)/2,cw,ch,10);x.fill();x.fillStyle="#fff";x.font="800 40px Rubik, sans-serif";x.textAlign="center";x.fillText("+"+(r.items.length-perRow+1),X+cw/2,Y+rh/2+14);x.textAlign="left"}
+    const usedLines=Math.max(1,Math.ceil(Math.min(r.items.length,cap)/perLine));const y0=Y+(rh-(usedLines*ch+(usedLines-1)*8))/2;
+    r.items.slice(0,cap).forEach((it,i)=>{const cx=80+lw+14+(i%perLine)*(cw+8),cy=y0+Math.floor(i/perLine)*(ch+8);drawCover(x,imgs[ri][i],cx,cy,cw,ch,it.title)});
+    if(r.items.length>cap){const i=cap-1;const X=80+lw+14+(i%perLine)*(cw+8),Yc=y0+Math.floor(i/perLine)*(ch+8);x.fillStyle="rgba(0,0,0,.7)";rr(x,X,Yc,cw,ch,10);x.fill();x.fillStyle="#fff";x.font=`800 ${Math.round(cw*.32)}px Rubik, sans-serif`;x.textAlign="center";x.fillText("+"+(r.items.length-cap+1),X+cw/2,Yc+ch/2+cw*.11);x.textAlign="left"}
     if(!r.items.length){x.fillStyle="rgba(255,255,255,.35)";x.font="500 28px Rubik, sans-serif";x.fillText("—",80+lw+30,Y+rh/2+10)}})}
 
 /* ---------- tier list (jogos, animes, séries, filmes, mangás ou votação do mês) ---------- */
