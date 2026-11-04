@@ -2179,7 +2179,7 @@ if(typeof setInterval==="function"){setTimeout(heartbeat,8000);setInterval(heart
 function onlineBox(){
   const P=players();const ids=onlineIds();if(!ids.length||S.mode!=="live")return "";
   return `<section class="box card online"><span class="eyebrow">🟢 Online agora</span><div class="onl">${ids.map(id=>{const p=P[id];const j=Object.values(p.games||{}).filter(g=>g.status==="jogando"&&(g.updatedAt||0)>Date.now()-3*864e5).sort((a,b)=>(b.updatedAt||0)-(a.updatedAt||0))[0];
-    return `<a class="onp" href="#perfil-${esc(pslug(p))}">${glyph(p)}<span><b>${nk(p)}</b>${j?`<small>🎮 na estante: ${esc(j.title)}</small>`:""}</span></a>`}).join("")}</div></section>`;
+    return `<a class="onp" href="#perfil-${esc(pslug(p))}">${glyph(p)}<span><b>${nk(p)}</b></span></a>`}).join("")}</div></section>`;
 }
 
 /* ---------- LIGAS SEMANAIS (estilo Duolingo) ---------- */
