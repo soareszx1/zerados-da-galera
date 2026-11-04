@@ -164,6 +164,17 @@ def sincronizar_cargos(estado):
         for chave, nome in CARGOS.items():
             if limpa(nome) and limpa(nome) in limpa(r.get("name", "")):
                 por_nome.setdefault(chave, r["id"])
+    nivel_ids = {}
+    for minimo, nome, cor in NIVEIS:
+        rid = next((r["id"] for r in roles_dc if r.get("name") == nome), None)
+        if not rid:
+            try:
+                rid = discord_api("POST", f"/guilds/{GUILD}/roles", {"name": nome, "color": cor, "hoist": False, "mentionable": False}).get("id")
+                print(f"Cargos: criei {nome}")
+            except Exception as e:
+                print(f"Cargos: não deu para criar {nome} ({e}).")
+        if rid:
+            nivel_ids[minimo] = rid
     dados = estado.setdefault("cargos", {})   # discord user id -> [ids de cargos dados pelo bot]
     vistos_dc = {}
     for pid, p in jogadores.items():
@@ -188,6 +199,13 @@ def sincronizar_cargos(estado):
             continue
         pid, membro = par
         quer = {por_nome[c] for c in (roles_doc.get(pid) or []) if c in por_nome}
+        try:
+            nv = int(((jogadores.get(pid) or {}).get("lvl") or {}).get("L") or 0)
+        except (TypeError, ValueError):
+            nv = 0
+        faixa = next((m for m, _, _ in NIVEIS if nv >= m and m in nivel_ids), None)
+        if faixa:
+            quer.add(nivel_ids[faixa])
         tem = set(membro.get("roles") or [])
         dei = set(dados.get(uid, []))
         for rid in quer - tem:
@@ -205,6 +223,60 @@ def sincronizar_cargos(estado):
             except Exception as e:
                 print(f"Cargos: não deu para tirar {rid} ({e}).")
         dados[uid] = sorted(dei & (quer | tem))
+
+
+CONQUISTAS = {"primeiro": "Primeiro zerado", "maratona": "Maratonista", "platina": "Platinador", "horas": "Sem vida social",
+              "malabar": "Malabarista", "guia": "Guia da galera", "colec": "Colecionador", "multi": "Multiplataforma",
+              "retro": "Saudosista", "mole": "Coração mole", "critico": "Crítico exigente", "desapego": "Desapegado",
+              "influ": "Influencer", "papo": "Resenhista", "desafio": "Desafiante", "assiduo": "Assíduo",
+              "zero50": "Zerador nato", "zero100": "Lenda viva", "plat5": "Caçador de platinas", "horas1k": "Mil horas",
+              "streak7": "Em chamas", "streak30": "Imparável", "miss10": "Missionário", "miss100": "Viciado em missões",
+              "podio": "Pódio da temporada", "campeao": "Campeão da temporada", "foto": "Fotógrafo", "nota10": "Obra-prima",
+              "popular": "Popular", "nv10": "Dois dígitos", "nv20": "Mito"}
+NIVEIS = [(20, "👑 Nível 20+", 0xF5C518), (10, "🛡️ Nível 10+", 0x9B5DE5), (5, "⚔️ Nível 5+", 0x16A3C7)]
+MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
+def mes_anterior():
+    hoje = time.gmtime(time.time() - 3 * 3600)  # horário de Brasília
+    a, m = (hoje.tm_year, hoje.tm_mon - 1) if hoje.tm_mon > 1 else (hoje.tm_year - 1, 12)
+    return f"{a}-{m:02d}"
+
+
+def eventos_gamificacao(jogadores):
+    """Subiu de nível, ganhou conquista e campeões da temporada (dados que o próprio site resume em players.lvl)."""
+    saida = []
+    for pid, p in jogadores.items():
+        lv = p.get("lvl") or {}
+        nick = p.get("nick") or "Alguém"
+        perfil = SITE + "#perfil-" + (slug(nick) or "jogador")
+        try:
+            nivel = int(lv.get("L") or 0)
+        except (TypeError, ValueError):
+            nivel = 0
+        if nivel >= 2:
+            saida.append((f"lv|{pid}|{nivel}", None, {"title": f"⬆️ {nick} subiu para o nível {nivel}!", "url": perfil, "color": 0x9B5DE5,
+                                                      "description": "Missões, zerados e dicas dão XP. Bora acompanhar?"}))
+        for b in lv.get("b") or []:
+            if b in CONQUISTAS:
+                saida.append((f"cq|{pid}|{b}", None, {"title": f"🏅 {nick} conquistou “{CONQUISTAS[b]}”", "url": perfil, "color": 0xF5C518}))
+    mes = mes_anterior()
+    placar = []
+    for pid, p in jogadores.items():
+        try:
+            pts = int(((p.get("lvl") or {}).get("s") or {}).get(mes) or 0)
+        except (TypeError, ValueError):
+            pts = 0
+        if pts > 0:
+            placar.append((pts, p.get("nick") or "Alguém"))
+    placar.sort(reverse=True)
+    if placar:
+        a, m = mes.split("-")
+        medalhas = ["🥇", "🥈", "🥉"]
+        linhas = [f"{medalhas[i]} **{n}** · {pts} pts" for i, (pts, n) in enumerate(placar[:3])]
+        saida.append((f"tp|{mes}", "aviso", {"title": f"🏆 Campeões da temporada de {MESES[int(m) - 1]} de {a}", "url": SITE + "#ranking",
+                                             "description": "\n".join(linhas) + "\n\nA nova temporada já começou: o ranking zerou!", "color": 0xF5C518}))
+    return saida
 
 
 def eventos():
@@ -276,6 +348,7 @@ def eventos():
             emb = {"title": (n.get("title") or "")[:250], "url": url, "description": (n.get("summary") or "")[:300] or None,
                    "color": 0x16A3C7, "footer": {"text": "Fonte: " + (n.get("source") or "")}}
             saida.append((f"a|{url}", "auto", emb))
+    saida.extend(eventos_gamificacao(jogadores))
     return saida
 
 
@@ -304,6 +377,15 @@ def main():
         postar(HOOK, "O bot do **Zerados da Galera** está ligado! Daqui pra frente eu aviso aqui quando alguém entrar na galera, zerar ou platinar um jogo. " + SITE)
         return
     vistos = set(estado.get("vistos", []))
+    # níveis e conquistas: na primeira vez que o bot vê cada pessoa, só memoriza (não anuncia o histórico todo)
+    conhecidos = set(estado.get("gami_p", []))
+    com_nivel = {k.split("|")[1] for k, _, _ in lista if k.split("|")[0] in ("lv", "cq")}
+    novos = com_nivel - conhecidos
+    vistos.update(k for k, _, _ in lista if k.split("|")[0] in ("lv", "cq") and k.split("|")[1] in novos)
+    if "gami" not in estado:
+        vistos.update(k for k, _, _ in lista if k.startswith("tp|"))
+        estado["gami"] = 1
+    estado["gami_p"] = sorted(conhecidos | com_nivel)
     postados, noticias = 0, 0
     for chave, tipo, emb in lista:
         if chave in vistos:
