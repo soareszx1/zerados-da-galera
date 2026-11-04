@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793749256,
+ "atualizadoEm": 1793751281,
  "jogos": {
   "aionii": {
    "appid": 3393110,
@@ -258,7 +258,7 @@
    "v": 5
   },
   "dirtiii": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
    "v": 5,
@@ -344,21 +344,21 @@
    "v": 5
   },
   "forzahorizonii": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
    "v": 5,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
    "v": 5,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
    "v": 5,
@@ -394,14 +394,14 @@
    "v": 5
   },
   "forzamotorsportiv": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
    "v": 5,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
    "v": 5,
@@ -555,14 +555,14 @@
    "v": 5
   },
   "granturismoiv": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
    "v": 5,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1793749256,
+   "em": 1793751281,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
    "v": 5,
@@ -1015,33 +1015,35 @@
   },
   "silverpines": {
    "appid": 2333000,
-   "em": 1793733903,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
+    "Terror",
     "RPG",
-    "Aventura",
-    "Ação"
+    "Plataforma",
+    "Aventura"
    ],
    "nome": "Silver Pines",
    "slug": "silver-pines",
    "titulo": "Silver Pines",
-   "v": 4
+   "v": 5
   },
   "sonicpicopark": {
    "appid": 4304060,
-   "em": 1793733903,
+   "em": 1793751281,
    "emBreve": true,
    "estilos": [
+    "Puzzle",
     "Ação"
    ],
    "nome": "SONIC PICO PARK",
    "slug": "sonic-pico-park",
    "titulo": "Sonic Pico Park",
-   "v": 4
+   "v": 5
   },
   "stellarblade": {
    "appid": 3489700,
-   "em": 1793733903,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -1051,24 +1053,25 @@
    "nome": "Stellar Blade™",
    "slug": "stellar-blade",
    "titulo": "Stellar Blade",
-   "v": 4
+   "v": 5
   },
   "streetfightervi": {
    "appid": 1364780,
-   "em": 1793748090,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
+    "Luta",
     "Aventura",
     "Ação"
    ],
    "nome": "Street Fighter™ 6",
    "slug": "street-fighter-6",
    "titulo": "Street Fighter 6",
-   "v": 4
+   "v": 5
   },
   "supermariobroswonder": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Plataforma"
@@ -1076,11 +1079,11 @@
    "nome": "Super Mario Bros. Wonder",
    "slug": "super-mario-bros-wonder",
    "titulo": "Super Mario Bros. Wonder",
-   "v": 4
+   "v": 5
   },
   "supermarioworld": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Plataforma"
@@ -1088,11 +1091,11 @@
    "nome": "Super Mario World",
    "slug": "super-mario-world",
    "titulo": "Super Mario World",
-   "v": 4
+   "v": 5
   },
   "tekkenviii": {
    "appid": 1778820,
-   "em": 1793748090,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Ação"
@@ -1100,11 +1103,11 @@
    "nome": "TEKKEN 8",
    "slug": "tekken-8",
    "titulo": "Tekken 8",
-   "v": 4
+   "v": 5
   },
   "tokyoxtremeracer": {
    "appid": 2634950,
-   "em": 1793748090,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -1113,18 +1116,18 @@
    "nome": "Tokyo Xtreme Racer",
    "slug": "tokyo-xtreme-racer",
    "titulo": "Tokyo Xtreme Racer",
-   "v": 4
+   "v": 5
   },
   "tokyoxtremeraceriii": {
-   "em": 1793748090,
+   "em": 1793751281,
    "slug": "tokyo-xtreme-racer-3",
    "titulo": "Tokyo Xtreme Racer 3",
-   "v": 4,
+   "v": 5,
    "vazio": true
   },
   "unchartedivathiefsend": {
    "appid": null,
-   "em": 1793748090,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -1135,11 +1138,11 @@
    "nome": "Uncharted 4: A Thief's End",
    "slug": "uncharted-4-a-thief-s-end",
    "titulo": "Uncharted 4: A Thief's End",
-   "v": 4
+   "v": 5
   },
   "zeldaocarinaoftime": {
    "appid": null,
-   "em": 1793733903,
+   "em": 1793751281,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1148,7 +1151,7 @@
    "nome": "The Legend of Zelda: Ocarina of Time",
    "slug": "zelda-ocarina-of-time",
    "titulo": "Zelda Ocarina Of Time",
-   "v": 4
+   "v": 5
   }
  }
 }
