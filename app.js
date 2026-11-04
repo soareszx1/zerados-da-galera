@@ -351,7 +351,7 @@ function viewHome(){
   else if(S.mode==="live"&&S.canWrite)left+=`<section class="box hello"><div class="hi"><span class="eyebrow">Novo por aqui?</span><h2>Entre na galera</h2><p style="margin:0;color:var(--muted)">Crie seu perfil e comece a registrar o que joga.</p></div><button class="btn primary" data-act="profile">Criar meu perfil</button></section>`;
   if(m){const cont=myGamesSorted().filter(g=>["jogando","pausado"].includes(g.status)).slice(0,4);
     left+=`<section class="box card"><span class="eyebrow">Continuar jogando</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Onde você parou</h3><a class="btn small" href="#saves">Meus Saves</a></div>
-      ${cont.length?`<div class="cont">${cont.map(g=>`<div class="citem">${coverBox(g,"mini")}<div class="t"><a href="#${saveHash(g.pid,g.gid)}"><b>${esc(g.title)}</b></a><span>${esc(paradoEm(g)||"sem anotação")}${g.next?` · próximo: ${esc(g.next)}`:""}</span><span class="hint">${g.updatedAt>1e9?quando(g.updatedAt):""}</span></div>${S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}</div>`).join("")}</div>`:'<span class="hint">Marque um jogo como "Jogando" para ele aparecer aqui.</span>'}</section>`}
+      ${cont.length?`<div class="cont">${cont.map(g=>`<div class="citem">${coverBox(g,"mini")}<div class="t"><a href="#${saveHash(g.pid,g.gid)}"><b>${esc(g.title)}</b></a><span>${esc(paradoEm(g)||"sem anotação")}${g.next?` · próximo: ${esc(g.next)}`:""}</span><span class="hint">${g.updatedAt>1e9?quando(g.updatedAt):""}</span></div>${S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}</div>`).join("")}</div>`:'<span class="hint">Nada sendo jogado agora.</span>'}</section>`}
   // desafio
   const ch=c.challenge;
   if(ch&&ch.title){const done=Object.entries(P).filter(([,p])=>p.challenges?.[ch.id]);const mine=m&&m.challenges?.[ch.id];const left_d=daysUntil(ch.until);
@@ -374,12 +374,12 @@ function viewHome(){
   // quadro da galera
   const bl=boardList();
   if(bl.length||isStaff())left+=`<section class="box card"><span class="eyebrow">Quadro da galera</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Avisos, convites e enquetes</h3>${isStaff()?`<button class="btn small" data-act="bnew" data-t="aviso">+ Publicar</button>`:""}</div>
-    ${bl.length?`<div class="bstack">${bl.slice(0,3).map(b=>boardCard(b,true)).join("")}</div>${bl.length>3?`<div><a class="btn small" href="#quadro">Ver tudo (${bl.length})</a></div>`:""}`:'<span class="hint">Nada publicado ainda. Use os botões para avisar a galera, chamar para jogar ou abrir uma enquete.</span>'}</section>`;
+    ${bl.length?`<div class="bstack">${bl.slice(0,3).map(b=>boardCard(b,true)).join("")}</div>${bl.length>3?`<div><a class="btn small" href="#quadro">Ver tudo (${bl.length})</a></div>`:""}`:'<span class="hint">Nada publicado ainda.</span>'}</section>`;
   // direita
   const ids=Object.keys(P).sort((a,b)=>xpOf(b)-xpOf(a));
   right+=`<section class="box card"><span class="eyebrow">A galera</span><h3><a href="#pessoas" style="color:inherit">${ids.length} jogador${ids.length>1?"es":""}</a></h3><div class="galera">${ids.map(galeraRow).join("")}</div>${m&&S.canWrite?`<div><button class="btn small" data-act="find">Procurar e adicionar amigos</button></div>`:""}</section>`;
   if(m){const rs=recsFor(mid);right+=`<section class="box card"><span class="eyebrow">Pra você</span><h3>A galera acha que você vai curtir</h3>
-    ${rs.length?rs.map(r=>`<div class="rec-item">${coverBox(r.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(r.title))}" style="color:inherit">${esc(r.title)}</a></b>${r.by.map(b=>`${esc(b.p.nick)}${typeof b.nota==="number"?" ("+fmtNota(b.nota)+")":""}`).join(", ")} curti${r.by.length>1?"ram":"u"}</div><button class="rx" data-act="quickfila" data-t="${esc(r.title)}">+ Fila</button></div>`).join(""):'<span class="hint">Dê nota nos seus jogos para as sugestões ficarem certeiras.</span>'}</section>`}
+    ${rs.length?rs.map(r=>`<div class="rec-item">${coverBox(r.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(r.title))}" style="color:inherit">${esc(r.title)}</a></b>${r.by.map(b=>`${esc(b.p.nick)}${typeof b.nota==="number"?" ("+fmtNota(b.nota)+")":""}`).join(", ")} curti${r.by.length>1?"ram":"u"}</div><button class="rx" data-act="quickfila" data-t="${esc(r.title)}">+ Fila</button></div>`).join(""):'<span class="hint">Sem sugestões por enquanto.</span>'}</section>`}
   const wid=S.mode==="live"&&/^\d{15,22}$/.test(S.config.discordWidget||"")?S.config.discordWidget:"";
   if(wid||(S.mode==="live"&&S.config.discord)){const dark=matchMedia("(prefers-color-scheme: dark)").matches;
     right+=`<section class="box card"><span class="eyebrow">Discord da galera</span><h3>Bora conversar por lá</h3>${wid?`<iframe class="dwidget" src="https://discord.com/widget?id=${wid}&theme=${dark?"dark":"light"}" title="Quem está online no Discord" loading="lazy" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>`:""}${S.config.discord?`<div><a class="btn discord small" href="${esc(S.config.discord)}" target="_blank" rel="noopener">Entrar no servidor</a></div>`:""}</section>`}
@@ -392,7 +392,7 @@ function viewHome(){
   const want={};allGames().filter(g=>g.status==="quero").forEach(g=>{const k=norm(g.title);const w=want[k]||(want[k]={title:g.title,lanc:"",ps:[],g});w.ps.push(g.p);if(g.lanc&&(!w.lanc||g.lanc<w.lanc))w.lanc=g.lanc});
   const wl=Object.values(want).sort((a,b)=>{const da=daysUntil(a.lanc),db=daysUntil(b.lanc);return (da===null?9e9:da<0?8e9:da)-(db===null?9e9:db<0?8e9:db)||b.ps.length-a.ps.length}).slice(0,6);
   right+=`<section class="box card"><span class="eyebrow">Na fila da galera</span><h3>Lançamentos e desejos</h3>
-    ${wl.length?wl.map(w=>{const d=daysUntil(w.lanc);return `<div class="rec-item">${coverBox(w.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(w.title))}" style="color:inherit">${esc(w.title)}</a></b>${w.ps.map(p=>esc(p.nick)).join(", ")}</div><div class="count">${d===null?"–":d>0?d:d===0?"Hoje":"Saiu"}<small>${d===null?"sem data":d>0?"dias":""}</small></div></div>`}).join(""):'<span class="hint">Marque jogos como “Na fila” e coloque a data de lançamento para aparecer a contagem regressiva.</span>'}</section>`;
+    ${wl.length?wl.map(w=>{const d=daysUntil(w.lanc);return `<div class="rec-item">${coverBox(w.g,"mini")}<div class="t"><b><a href="#jogo-${esc(slug(w.title))}" style="color:inherit">${esc(w.title)}</a></b>${w.ps.map(p=>esc(p.nick)).join(", ")}</div><div class="count">${d===null?"–":d>0?d:d===0?"Hoje":"Saiu"}<small>${d===null?"sem data":d>0?"dias":""}</small></div></div>`}).join(""):'<span class="hint">Nenhum lançamento na fila.</span>'}</section>`;
   right+=`<section class="box card"><span class="eyebrow">Em breve</span><h3>Vem aí</h3><ul class="soon">
     <li>🎁 <b>Sorteios da galera</b>: jogos e gift cards para quem participa</li><li>Mensagens privadas</li><li>Notificações no celular</li><li>Mande sua ideia no chat #geral</li></ul></section>`;
   const _mc=missionsCard();if(_mc){const i=left.indexOf("</section>");left=i>=0?left.slice(0,i+10)+_mc+left.slice(i+10):_mc+left}
@@ -534,7 +534,7 @@ function viewPerfil(){
       <div class="tile"><b>${fmtNota(s.avg)}</b><span>nota média</span></div>
       <div class="tile"><b>${so.ggIn}</b><span>reações recebidas</span></div>
     </div>
-    <section class="box card"><span class="eyebrow">Atividade</span><h3>${activeYear} dia${activeYear===1?"":"s"} ativo${activeYear===1?"":"s"} em ${YEAR}</h3>${heatmap(p.days)}<span class="hint">Cada quadradinho é um dia em que ${mine?"você":esc(p.nick)} atualizou algo.</span></section>
+    <section class="box card"><span class="eyebrow">Atividade</span><h3>${activeYear} dia${activeYear===1?"":"s"} ativo${activeYear===1?"":"s"} em ${YEAR}</h3>${heatmap(p.days)}</section>
     ${G.some(g=>g.tier)?`<section class="box card"><span class="eyebrow">Tier list</span><h3>Tier list de ${nk(p)}</h3><div class="tierlist compact">${tierRows(G.filter(g=>g.tier),"")}</div></section>`:""}
     ${playing.length?`<section class="box card"><span class="eyebrow">Jogando agora</span><h3>${playing.length} jogo${playing.length>1?"s":""}</h3><div class="minis">${playing.map(mini).join("")}</div></section>`:""}
     ${done.length?`<section class="box card"><span class="eyebrow">Últimos zerados</span><div class="minis">${done.map(mini).join("")}</div></section>`:""}
@@ -545,8 +545,8 @@ function viewPerfil(){
     ${platsOf(p).length||p.fav||p.discord?`<section class="box card"><span class="eyebrow">Setup</span>${platsOf(p).length?`<div class="ptags">${platsOf(p).map(x=>`<span class="tag">${esc(x)}</span>`).join("")}</div>`:""}${p.fav?`<div>Favorito da vida: <b>${esc(p.fav)}</b></div>`:""}
       ${p.discord?`<div class="copyline"><span class="hint">Discord</span><code id="dcode">${esc(p.discord)}</code><button class="btn small" data-act="copy" data-text="${esc(p.discord)}">Copiar</button></div>`:""}</section>`:""}
     ${p.coop&&daysSince(p.coop.at)<15?`<section class="box card"><span class="eyebrow">Procurando coop</span><div><b>${esc(p.coop.title)}</b>${p.coop.note?` · ${esc(p.coop.note)}`:""}</div></section>`:""}
-    ${S.mode==="live"&&S.isOwner?`<section class="box card"><span class="eyebrow">Cargos</span><div class="sub" style="margin-top:0">Só você, dono, pode mudar.</div><div class="pick">${Object.entries(ROLES).map(([k,o])=>`<button type="button" data-act="role" data-pid="${esc(pid)}" data-k="${k}" aria-pressed="${rl.includes(k)}" style="${rl.includes(k)?`background:${o.c};color:var(--on-pill)`:""}" title="${esc(o.d)}">${esc(o.l)}</button>`).join("")}</div></section>`:""}
-    ${mine?`<section class="box card"><span class="eyebrow">Tema do site</span><div class="sub" style="margin-top:0">Muda as cores do site inteiro. Libera subindo de nível, na sequência e na temporada. Vale só para você.</div><div class="skins">${Object.entries(SKINS).map(([k,o])=>`<button type="button" class="skin${skinOk(pid,o)?"":" locked"}" data-act="skin" data-k="${k}" style="--sw:${o.sw};--sw2:${o.sw2||o.sw}" aria-pressed="${skin===k}" ${skinOk(pid,o)?"":"disabled"} title="${skinOk(pid,o)?esc(o.l):"Libera com: "+esc(REQ_TXT(skinReq(o)))}"><i></i>${esc(o.l)}${skinOk(pid,o)?"":` <small>🔒 ${esc(REQ_TXT(skinReq(o)))}</small>`}</button>`).join("")}</div></section>`:""}
+    ${S.mode==="live"&&S.isOwner?`<section class="box card"><span class="eyebrow">Cargos</span><div class="pick">${Object.entries(ROLES).map(([k,o])=>`<button type="button" data-act="role" data-pid="${esc(pid)}" data-k="${k}" aria-pressed="${rl.includes(k)}" style="${rl.includes(k)?`background:${o.c};color:var(--on-pill)`:""}" title="${esc(o.d)}">${esc(o.l)}</button>`).join("")}</div></section>`:""}
+    ${mine?`<section class="box card"><span class="eyebrow">Tema do site</span><div class="skins">${Object.entries(SKINS).map(([k,o])=>`<button type="button" class="skin${skinOk(pid,o)?"":" locked"}" data-act="skin" data-k="${k}" style="--sw:${o.sw};--sw2:${o.sw2||o.sw}" aria-pressed="${skin===k}" ${skinOk(pid,o)?"":"disabled"} title="${skinOk(pid,o)?esc(o.l):"Libera com: "+esc(REQ_TXT(skinReq(o)))}"><i></i>${esc(o.l)}${skinOk(pid,o)?"":` <small>🔒 ${esc(REQ_TXT(skinReq(o)))}</small>`}</button>`).join("")}</div></section>`:""}
     ${!mine&&meId()&&S.canWrite&&S.mode==="live"?`<div class="actions"><button class="btn small ghost" data-act="block" data-id="${esc(pid)}">${blockedBy(meId()).has(pid)?"Desbloquear":"Bloquear"}</button><button class="btn small ghost" data-act="report" data-id="${esc(pid)}">Denunciar</button></div>`:""}
   </div></div></div>`;
 }
@@ -1070,7 +1070,7 @@ function voteBox(month){
   if(S.mode==="demo")return `<section class="box card"><span class="eyebrow">Seu voto</span><p class="hint" style="margin:0">No modo exemplo não dá para votar.</p></section>`;
   if(!me()||!S.canWrite)return `<section class="box card"><span class="eyebrow">Votação aberta</span><p style="margin:0">Entre e crie seu perfil para votar.</p></section>`;
   const mine=votesOf(month)[S.myId]?.v||{};const done=tl.games.filter(g=>mine[norm(g.title)]).length;
-  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Escolha o tier de cada jogo</h3><div class="sub">Pode mudar até a votação ser encerrada. Toque de novo para tirar o voto.</div>
+  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Escolha o tier de cada jogo</h3>
     <div class="vlist">${tl.games.map(g=>{const k=norm(g.title);return `<div class="mrow">${coverBox({title:g.title,coverUrl:g.coverUrl},"mini")}<span class="ct">${esc(g.title)}</span><div class="pick">${TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="vote" data-m="${esc(month)}" data-k="${esc(k)}" data-t="${t}" aria-pressed="${mine[k]===t}" aria-label="Votar ${t} em ${esc(g.title)}">${t}</button>`).join("")}</div></div>`}).join("")}</div></section>`;
 }
 function viewTierMes(){
@@ -1287,7 +1287,7 @@ function fOnde(g,d,mine){
       ${g.fase?`<div class="hint">Fase/área: <b>${esc(g.fase)}</b></div>`:""}
       ${["jogando","pausado"].includes(g.status)?`<div class="bar"><i style="width:${Math.min(100,prog)}%"></i></div><div class="pct">${prog}% · ${h} h jogadas${est!==null?` · faltam uns ${est} h no seu ritmo`:""}${media?` · a galera zerou em ~${media} h`:""}</div>`:""}
       ${mine?`<div class="actions"><button class="btn primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button></div>`:""}</section>
-    <section class="box card"><span class="eyebrow">Última sessão</span>${last?`<div class="hint">${esc(new Date(last.at).toLocaleDateString("pt-BR"))}${last.h?` · ${esc(last.h)} h`:""}</div><p style="margin:0;white-space:pre-wrap">${esc(last.txt||"")}</p>${last.shot?`<div class="shot"><div class="ph">${mimg(`players/${g.pid}/shots/${last.shot}`,1,"","Print da sessão")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${last.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}`:`<p class="hint" style="margin:0">Use "Joguei agora" ao parar de jogar: em 10 segundos você anota o que fez, o próximo passo e um print.</p>`}
+    <section class="box card"><span class="eyebrow">Última sessão</span>${last?`<div class="hint">${esc(new Date(last.at).toLocaleDateString("pt-BR"))}${last.h?` · ${esc(last.h)} h`:""}</div><p style="margin:0;white-space:pre-wrap">${esc(last.txt||"")}</p>${last.shot?`<div class="shot"><div class="ph">${mimg(`players/${g.pid}/shots/${last.shot}`,1,"","Print da sessão")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${last.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}`:`<p class="hint" style="margin:0">Nenhuma anotação ainda.</p>`}
       ${(d.todo||[]).filter(x=>!x.d).length?`<div><span class="flabel">Pendências</span><ul class="mini-todo">${d.todo.filter(x=>!x.d).slice(0,4).map(x=>`<li>${esc(x.t)}</li>`).join("")}</ul></div>`:""}</section></div>`;
 }
 function fDiario(g,d,mine){
@@ -1318,7 +1318,7 @@ async function wikiPlot(title,wtitle){
 function fHistoria(g,d,mine){
   const k=norm(g.title);const pl=plotMemo[k];
   return `<div class="fgrid2"><section class="box card"><span class="eyebrow">Relembrar a história</span><h3>Resumo do enredo</h3>
-      ${!pl?`<p class="hint" style="margin:0">Puxa o resumo da Wikipédia, em português quando existir. Ele fica escondido para não dar spoiler sem querer.</p><div><button class="btn small primary" data-act="plot" data-t="${esc(g.title)}" data-w="${esc(d.wtitle||g.wtitle||"")}">Buscar resumo</button></div>`
+      ${!pl?`<div><button class="btn small primary" data-act="plot" data-t="${esc(g.title)}" data-w="${esc(d.wtitle||g.wtitle||"")}">Buscar resumo</button></div>`
         :pl==="…"?`<div class="loading">Buscando na Wikipédia<span class="blink">_</span></div>`
         :pl==="erro"?`<p class="hint" style="margin:0">Não consegui falar com a Wikipédia agora. Verifique a internet ou se algum bloqueador está impedindo, e tente de novo.</p><div><button class="btn small" data-act="plot" data-t="${esc(g.title)}" data-w="${esc(d.wtitle||g.wtitle||"")}">Tentar de novo</button></div>`
         :pl.none?`<p class="hint" style="margin:0">A Wikipédia não tem uma seção de enredo para esse jogo.</p><a class="btn small" href="${esc(pl.url)}" target="_blank" rel="noopener">Abrir artigo</a>`
@@ -1917,7 +1917,7 @@ function missionsCard(){
       <div class="mis bau${R.bau.claimed?" ok":R.bau.done?" ready":""}"><span class="mck" aria-hidden="true">🎁</span><div class="mtx"><b>Baú diário</b><span class="hint">complete as 3 diárias</span></div>
         ${R.bau.claimed?`<span class="mxp done">+${m.miss?.[R.bau.key]||R.bau.xp}</span>`:R.bau.done?`<button class="btn small primary" data-act="mclaim" data-k="${R.bau.key}" data-xp="${R.bau.xp}">Abrir +${Math.round(R.bau.xp*mult)}</button>`:`<span class="mxp">+${R.bau.xp}</span>`}</div></div>
     <div class="mgroup"><div class="mgt"><span class="flabel">Semanais · ${fw}/${R.weekly.length}</span><span class="hint">faltam ${daysUntilWeekEnd()} dia${daysUntilWeekEnd()>1?"s":""}</span></div>${R.weekly.map(row).join("")}</div>
-    <div class="mfoot2"><span class="hint">Sequência: 3 dias = ×1,2 · 7 = ×1,5 · 14 = ×1,75 · 30 = ×2 no XP das missões</span><a class="linkbtn" href="#ranking">Temporada ↗</a></div></section>`;
+    <div class="mfoot2"><a class="linkbtn" href="#ranking">Temporada ↗</a></div></section>`;
 }
 
 /* ---------- temporadas mensais ---------- */
@@ -1946,7 +1946,7 @@ function seasonBox(){
       <div class="sprize"><b>Prêmios</b><span>🥇 Moldura e título de Campeão</span><span>🥈🥉 Moldura do Pódio</span><span>Todos: cargo no Discord</span></div></div>
     <div class="slist">${lista.map(([id,v],i)=>`<a class="srow${id===mid?" me":""}" href="#perfil-${esc(pslug(P[id]))}"><span class="spos">${medal[i]||i+1}</span>${glyph(P[id],true)}<span class="snm">${nk(P[id])}</span>${streakChip(P[id])}<span class="spts">${v} pts</span></a>`).join("")||'<span class="hint">Ninguém pontuou ainda neste mês.</span>'}</div>
     ${minha>9?`<div class="hint">Você está em ${minha+1}º com ${D.atual[minha][1]} pts.</div>`:""}
-    <div class="hint">Pontos: XP de missões + 5 por dia ativo + 50 por jogo zerado no mês.</div>
+    
     ${hof.length?`<details class="hof"><summary class="flabel">Campeões das temporadas</summary>${hof.map(([mk,sc])=>`<div class="hofrow"><b>${esc(cap1(monthName(mk)))}</b>${sc.map(([id],j)=>`<span>${medal[j]} ${nk(P[id]||{nick:"?"})}</span>`).join("")}</div>`).join("")}</details>`:""}</section>`;
 }
 
@@ -2028,12 +2028,12 @@ function optGrid(name,dict,cur,pid,prev){
 function aparenciaHTML(){
   const pid=S.myId;const m=me()||{};const c=M.cosm;const fake=k=>({...m,_id:"",avatarV:null,cosm:{frame:k}});
   const have=badgesOf(pid);const lv=levelOf(xpOf(pid)).L;
-  return `<div class="field full aparencia"><span class="flabel">✨ Aparência <span class="hint">· tudo de graça, libera jogando, cumprindo missões e na temporada (você está no nível ${lv})</span></span>
+  return `<div class="field full aparencia"><span class="flabel">✨ Aparência </span>
     <details open><summary>Moldura do avatar</summary>${optGrid("czframe",FRAMES,c.frame,pid,k=>`<span class="czprev">${frameWrap({cosm:{frame:k}},false,glyph({...m,cosm:{}}))}</span>`)}</details>
     <details><summary>Efeito no perfil</summary>${optGrid("czfx",PFX,c.fx,pid,k=>`<span class="czprev fxbox">${fxLayer({cosm:{fx:k}},true)}</span>`)}</details>
     <details><summary>Tema do perfil</summary>${optGrid("czth",PTHEME,c.theme,pid,k=>`<span class="czprev thbox" data-th="${k}" style="--th1:${c.tc[0]};--th2:${c.tc[1]}"></span>`)}
       <div class="flabel">Cores do tema</div>${pickRow("cztc1",THEMECOLORS.map(x=>({v:x,l:"",a:"cor "+x,style:`background:${x}`})),c.tc[0],"swatch")}${pickRow("cztc2",THEMECOLORS.map(x=>({v:x,l:"",a:"cor "+x,style:`background:${x}`})),c.tc[1],"swatch")}</details>
-    <details><summary>Conquistas em destaque (até 3, aparecem do lado do seu nome)</summary>${have.length?`<div class="pick czgrid" data-pick="czb">${have.map(b=>`<button type="button" class="czopt" data-v="${b.id}" aria-pressed="${c.badges.includes(b.id)}">${badgeMini(b)}<span>${esc(b.t)}</span></button>`).join("")}</div>`:'<span class="hint">Você ainda não tem conquistas. Elas aparecem no seu perfil conforme você joga.</span>'}</details>
+    <details><summary>Conquistas em destaque (até 3, aparecem do lado do seu nome)</summary>${have.length?`<div class="pick czgrid" data-pick="czb">${have.map(b=>`<button type="button" class="czopt" data-v="${b.id}" aria-pressed="${c.badges.includes(b.id)}">${badgeMini(b)}<span>${esc(b.t)}</span></button>`).join("")}</div>`:'<span class="hint">Nenhuma conquista ainda.</span>'}</details>
     <span class="hint">Foto animada (GIF/WebP até 200 KB): ${unlocked(pid,GIF_REQ.avatar)?"liberada ✓":"🔒 "+REQ_TXT(GIF_REQ.avatar)} · Banner animado: ${unlocked(pid,GIF_REQ.banner)?"liberado ✓":"🔒 "+REQ_TXT(GIF_REQ.banner)}</span></div>`;
 }
 function lockNamePickers(){
@@ -2211,7 +2211,7 @@ function ligaBox(){
       <div class="ltiers">${LIGAS.map((x,i)=>`<span class="lt${i===t?" on":""}" title="${x.n}" style="--lc:${x.c}">${x.ic}</span>`).join("")}</div></div>
     ${m?.liga?.last?`<div class="hint">Semana passada: ${m.liga.last.pos}º de ${m.liga.last.of} com ${m.liga.last.pts} pts${m.liga.last.mv>0?" · subiu! 🎉":m.liga.last.mv<0?" · caiu":""}</div>`:""}
     <div class="slist">${G.map(([id,v],i)=>`<a class="srow${id===mid?" me":""}${i<z.up?" up":""}${i>=G.length-z.down?" down":""}" href="#perfil-${esc(pslug(P[id]))}"><span class="spos">${i+1}</span>${glyph(P[id],true)}<span class="snm">${nk(P[id])}</span>${streakChip(P[id])}<span class="spts">${v} pts</span></a>`).join("")}</div>
-    <div class="hint">Pontos da semana: XP de missões + 5 por dia ativo + 50 por zerado. Todo mundo começa na Bronze.</div></section>`;
+    </section>`;
 }
 
 /* ---------- congelar sequência ---------- */
@@ -2249,7 +2249,7 @@ missionsCard=function(){
       ${cl[mkk]?`<span class="mxp done">+${cl[mkk]}</span>`:meta&&zm>=meta?`<button class="btn small primary" data-act="mclaim" data-k="${mkk}" data-xp="${mxp}">Resgatar +${Math.round(mxp*mult)}</button>`:meta?`<span class="mxp">+${mxp}</span>`:""}</div>`;
   // desafio do mês
   const D=desafioMes();const dp=desafioProg(m);const dsk=`m:${mk}:desafio`;
-  const desH=`<div class="mis desafio${cl[dsk]?" ok":dp>=1?" ready":""}"><span class="mck" aria-hidden="true">${cl[dsk]?"✓":"🏁"}</span><div class="mtx"><b>${esc(D.nome)}: zere 1 jogo de ${esc(D.est)}</b><span class="hint">desafio da comunidade · vale selo no perfil</span></div>
+  const desH=`<div class="mis desafio${cl[dsk]?" ok":dp>=1?" ready":""}"><span class="mck" aria-hidden="true">${cl[dsk]?"✓":"🏁"}</span><div class="mtx"><b>${esc(D.nome)}: zere 1 jogo de ${esc(D.est)}</b><span class="hint">desafio da comunidade</span></div>
       ${cl[dsk]?`<span class="mxp done">+${cl[dsk]}</span>`:dp>=1?`<button class="btn small primary" data-act="mclaim" data-k="${dsk}" data-xp="150" data-des="1">Resgatar +${Math.round(150*mult)}</button>`:`<span class="mxp">+150</span>`}</div>`;
   const extra=`<div class="mgroup"><div class="mgt"><span class="flabel">Especiais</span><span class="hint">❄️ ${m.freeze||0}/2 congelamentos · ganhe 1 completando as 4 semanais</span></div>${duoH}${metaH}${desH}</div>`;
   const i=h.lastIndexOf('<div class="mfoot2">');h=i>=0?h.slice(0,i)+extra+h.slice(i):h;
@@ -2298,7 +2298,7 @@ function viewListas(){
   const ord=S.listOrd||"recentes";all.sort(ord==="curtidas"?(a,b)=>likesOf(`l:${b[0]}:${b[1]}`).length-likesOf(`l:${a[0]}:${a[1]}`).length:(a,b)=>(b[2].at||0)-(a[2].at||0));
   return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Listas</span><h3>Listas da galera</h3></div>${MINE()?`<button class="btn small primary" data-act="listnew">+ Nova lista</button>`:""}</div>
     <div class="tierpick" role="group" aria-label="Ordenar">${[["recentes","Recentes"],["curtidas","Mais curtidas"]].map(([k,l])=>`<button data-act="listord" data-id="${k}" aria-pressed="${ord===k}">${l}</button>`).join("")}</div>
-    ${all.length?`<div class="lgrid">${all.map(x=>listCard(...x)).join("")}</div>`:`<p class="hint">Nenhuma lista ainda. Que tal "Top 10 da vida" ou "Jogos para zerar num fim de semana"?</p>`}</div>`;
+    ${all.length?`<div class="lgrid">${all.map(x=>listCard(...x)).join("")}</div>`:`<p class="hint">Nenhuma lista ainda.</p>`}</div>`;
 }
 function viewLista(){
   const [pid,lid]=(S.route||"").split("-");const P=players();const p=P[pid];const l=p?.lists?.[lid];
@@ -2334,7 +2334,7 @@ function viewReviews(){
       ${autores.length>1?`<label class="whosel"><span class="sr-only">Filtrar por pessoa</span><select id="revf-sel"><option value="">Todo mundo</option>${autores.map(id=>`<option value="${esc(id)}"${f===id?" selected":""}>${esc(P[id]?.nick||"")}</option>`).join("")}</select></label>`:""}</div>
     ${L.length?`<div class="rgrid">${L.map(g=>{const key=`g:${g.pid}:${g.gid}:${g.status}`;return `<article class="box rcard">${coverBox(g,"mini")}<div class="rbody"><a href="#jogo-${esc(slug(g.title))}"><b>${esc(g.title)}</b></a>
       <div class="rmeta">${starsHTML(g.nota)}<span class="hint">${glyph(g.p,true)} ${nk(g.p)} · ${ago(g.updatedAt)}</span></div><p>${esc(g.comment)}</p><div class="facts">${likeBtn(key)}</div></div></article>`}).join("")}</div>`
-      :`<p class="hint">Quando alguém zera e escreve um comentário com nota, a review aparece aqui.</p>`}</div>`;
+      :`<p class="hint">Nenhuma review ainda.</p>`}</div>`;
 }
 
 /* ---------- FÓRUM POR JOGO (Reddit) ---------- */
@@ -2356,7 +2356,7 @@ function forumBox(sl){
   const Q=forumQuestions(sl);
   return `<section class="box card forum" id="forum"><span class="eyebrow">Fórum do jogo</span><h3>${Q.length?`${Q.length} pergunta${Q.length>1?"s":""}`:"Tem alguma dúvida?"}</h3>
     ${MINE()?`<div class="qnew"><select id="qh-${esc(sl)}" aria-label="Tipo"><option value="Dúvida">Dúvida</option><option value="Dica">Dica</option><option value="Spoiler">Spoiler</option><option value="Bug">Bug</option></select><input id="qx-${esc(sl)}" maxlength="400" placeholder="Pergunte para a galera (ex.: como passo do chefe X?)" aria-label="Pergunta"><button class="btn small primary" data-act="qsend" data-sl="${esc(sl)}">Perguntar</button></div>`:""}
-    <div class="qlist">${Q.map(q=>qHTML(q)).join("")}</div><span class="hint">Quem dá a melhor resposta ganha +40 XP.</span></section>`;
+    <div class="qlist">${Q.map(q=>qHTML(q)).join("")}</div></section>`;
 }
 
 /* ---------- PÁGINA DO JOGO MAIS RICA ---------- */
@@ -2381,7 +2381,7 @@ const _viewDicas0=viewDicas;
 viewDicas=function(){
   const Q=forumQuestions("").slice(0,8);const open=Q.filter(q=>!q.best).length;
   const box=`<section class="box card forum"><span class="eyebrow">Fórum</span><h3>Perguntas da galera${open?` · ${open} sem resposta certeira`:""}</h3>
-    ${Q.length?`<div class="qlist">${Q.map(q=>qHTML(q)).join("")}</div>`:`<span class="hint">Abra a página de qualquer jogo e use o “Fórum do jogo” para perguntar.</span>`}</section>`;
+    ${Q.length?`<div class="qlist">${Q.map(q=>qHTML(q)).join("")}</div>`:`<span class="hint">Nenhuma pergunta ainda.</span>`}</section>`;
   return box+_viewDicas0();
 };
 
@@ -2790,14 +2790,14 @@ const _renderViewSc=renderView;
 renderView=function(){_renderViewSc.apply(this,arguments);try{const ph=document.querySelector('.phero[data-th^="sc-"]');const r=document.documentElement;if(ph&&SCENES[ph.dataset.th])r.dataset.psc=ph.dataset.th;else delete r.dataset.psc}catch{}};
 function cenarioBox(){const p=me()||{};const cur=cz(p).theme||"nenhum";const pid=S.myId;
   const opts=[["nenhum",{l:"Sem cenário",tag:"cores normais"}],...Object.entries(SCENES)];
-  return `<section class="box card scbox"><span class="eyebrow">🎮 Cenário do perfil</span><div class="sub" style="margin-top:0">Arte de jogo no topo do seu perfil e no fundo da página para quem te visita. Clique para trocar.</div><div class="scgrid">${opts.map(([k,o])=>{const ok=k==="nenhum"||unlocked(pid,o.r);
+  return `<section class="box card scbox"><span class="eyebrow">🎮 Cenário do perfil</span><div class="scgrid">${opts.map(([k,o])=>{const ok=k==="nenhum"||unlocked(pid,o.r);
     return `<button type="button" class="scopt${ok?"":" locked"}" data-act="scpick" data-k="${k}" aria-pressed="${k===cur}" ${ok?"":"disabled"}><span class="thbox" data-th="${k}"></span><b>${esc(o.l)}</b><small>${ok?esc(o.tag):"🔒 "+esc(REQ_TXT(o.r))}</small></button>`}).join("")}</div></section>`}
 document.addEventListener("click",e=>{const b=e.target.closest('[data-act="scpick"]');if(!b)return;e.stopImmediatePropagation();e.preventDefault();if(b.disabled||!S.canWrite)return;
   const k=b.dataset.k;saveMe(p=>{p.cosm={...(p.cosm&&typeof p.cosm==="object"?p.cosm:{}),theme:k}},{noDay:true}).then(()=>{renderAll();toast(k==="nenhum"?"Cenário removido":"Cenário aplicado 🎮")}).catch(err=>toast(errMsg(err)))},true);
 viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
   if(S.myId&&h.includes('<span class="eyebrow">Tema do site</span>')&&pidBySlug(S.route)===S.myId){
     h=h.replace('<section class="box card"><span class="eyebrow">Tema do site</span>',cenarioBox()+'<section class="box card"><span class="eyebrow">Tema do site</span>');
-    h=h.replace('Vale só para você.</div>','Vale só para você. No seu perfil, se tiver cenário, as cores do cenário aparecem no meio da página; o tema do site continua no topo e nas outras páginas.</div>')}
+    }
   return h};
 
 /* ================= v24: ANIMES, SÉRIES, FILMES E MANGÁS ================= */
@@ -2886,7 +2886,7 @@ function gkTierView(k){
   if(who==="galera"){
     const by={};for(const x of allMedia().filter(x=>x.k===k&&x.tier)){const key=gkKey(x.t);(by[key]=by[key]||{...x,sc:[],n:0}).sc.push(5-GK_TIERS.indexOf(x.tier));by[key].n++;if(!gkImg(by[key].img)&&gkImg(x.img))by[key].img=x.img}
     const items=Object.values(by).map(o=>{const m=gkAvg(o.sc);return {...o,tier:scoreTier(m),m}}).sort((a,b)=>b.m-a.m||b.n-a.n);
-    return pick+`<div class="tierhead"><div><h3>${K.pl} na visão da galera</h3><span class="hint">Média dos tiers que cada um deu no próprio perfil · ${items.length} ${items.length===1?"título":"títulos"}</span></div>${MINE()?`<button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar ${K.l.toLowerCase()}</button>`:""}</div>
+    return pick+`<div class="tierhead"><div><h3>${K.pl} na visão da galera</h3><span class="hint">${items.length} ${items.length===1?"título":"títulos"}</span></div>${MINE()?`<button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar ${K.l.toLowerCase()}</button>`:""}</div>
       <section class="box tierlist">${items.length?gkTierRows(items,{k}):gkVazio(k,"Ninguém deu tier ainda. Comece pela sua!")}</section>`;
   }
   const pid=who==="eu"?mid:who;const p=P[pid];const mine=pid===mid;
@@ -2924,7 +2924,7 @@ function gkVoteBox(id,k){
   const tl=S.tierlists?.[id];if(!tl||tl.status!=="aberta"||!Array.isArray(tl.games))return "";
   if(!me()||!S.canWrite)return `<section class="box card"><span class="eyebrow">Votação aberta</span><p style="margin:0">Entre e crie seu perfil para votar.</p></section>`;
   const mine=votesOf(id)[S.myId]?.v||{};const done=tl.games.filter(g=>mine[norm(g.title)]).length;
-  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Dê o tier de cada um</h3><div class="sub">Só vote no que você viu. Toque de novo para tirar o voto.</div>
+  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Dê o tier de cada um</h3>
     <div class="vlist">${tl.games.map(g=>{const key=norm(g.title);return `<div class="mrow">${gkPoster({img:g.coverUrl,k},"mini")}<span class="ct">${esc(g.title)}</span><div class="pick">${GK_TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="vote" data-m="${esc(id)}" data-k="${esc(key)}" data-t="${t}" aria-pressed="${mine[key]===t}" aria-label="Votar ${t} em ${esc(g.title)}">${t}</button>`).join("")}</div></div>`}).join("")}</div></section>`;
 }
 function gkOpenMonthly(id,k){
@@ -2977,7 +2977,7 @@ function viewAnimes(){
   const srcs=[...new Set(N.map(n=>n.source).filter(Boolean))];if(S.gkSrc&&!srcs.includes(S.gkSrc))S.gkSrc="";
   const NF=N.filter(n=>!S.gkSrc||n.source===S.gkSrc).slice(0,24);
   return `<div class="page animes">
-  <div class="tierhead"><div style="flex:1"><span class="eyebrow">🎌 Animes</span><h3>Lançamentos ${se?`de ${esc(SEASON_PT[se.season])} ${se.year}`:"da temporada"}</h3><span class="hint">Episódios novos da temporada, com link para assistir. Gostou? Adicione na sua tier list de animes.</span></div></div>
+  <div class="tierhead"><div style="flex:1"><span class="eyebrow">🎌 Animes</span><h3>Lançamentos ${se?`de ${esc(SEASON_PT[se.season])} ${se.year}`:"da temporada"}</h3></div></div>
   <div class="gkkinds">${[["cr","No Crunchyroll"],["semana","Próximos episódios"],["todos","Todos da temporada"]].map(([k,l])=>`<button class="chip2" data-act="anf" data-k="${k}" aria-pressed="${f===k}">${l}</button>`).join("")}</div>
   ${!se?`<section class="box card"><p class="hint" style="margin:0">Carregando a temporada…</p></section>`:se.err?`<section class="box card"><p style="margin:0">Não deu para carregar a temporada agora. Tente de novo mais tarde.</p></section>`:
    `<div class="angrid">${L.slice(0,24).map(x=>`<article class="box ancard">${gkPoster({...x,k:"anime"},"big")}<div class="aninfo"><b>${esc(x.t)}</b>${x.t2?`<span class="hint">${esc(x.t2)}</span>`:""}
@@ -3031,7 +3031,7 @@ function gkArrumaPerfil(h,box){
     if(sc||tema){
       const tab=S.persoTab==="tema"&&tema?"tema":(sc?"cen":"tema");
       const wrap=document.createElement("section");wrap.className="box card perso";
-      wrap.innerHTML=`<div class="gkph2"><span class="eyebrow">🎨 Personalizar</span><span class="hint">só você vê esta parte</span></div>
+      wrap.innerHTML=`<div class="gkph2"><span class="eyebrow">🎨 Personalizar</span></div>
         <div class="gktabs" role="tablist">${sc?`<button role="tab" data-act="gkperso" data-k="cen" aria-selected="${tab==="cen"}">🎮 Cenário do perfil</button>`:""}${tema?`<button role="tab" data-act="gkperso" data-k="tema" aria-selected="${tab==="tema"}">🎨 Tema do site</button>`:""}</div>`;
       for(const [k,el] of [["cen",sc],["tema",tema]]){if(!el)continue;el.remove();const pane=document.createElement("div");pane.className="persopane";pane.dataset.pane=k;if(k!==tab)pane.hidden=true;
         el.querySelector(".eyebrow")?.remove();while(el.firstChild)pane.appendChild(el.firstChild);wrap.appendChild(pane)}
@@ -3213,7 +3213,7 @@ function dragTile(x){return `<div class="dtile2" data-src="${x.src}" data-key="$
 function dragBoard(k){
   const L=dragItems(k).sort((a,b)=>(b.at||0)-(a.at||0));const q=(S.dragQ||"").trim().toLowerCase();
   const pool=L.filter(x=>!x.tier&&(!q||x.title.toLowerCase().includes(q)));
-  return `<div class="dragwrap"><p class="hint draghelp">Arraste as capas para o tier. No celular, segure e arraste; ou toque numa capa e depois na letra do tier. Salva sozinho.</p>
+  return `<div class="dragwrap">
     <section class="box tierlist dboard">${["S","A","B","C","D"].map(t=>`<div class="trow dzone" data-t="${t}"><button type="button" class="tlabel t-${t}" data-act="dragto" data-t="${t}" aria-label="Mover para o tier ${t}">${t}</button><div class="titems dzi">${L.filter(x=>x.tier===t).map(dragTile).join("")}</div></div>`).join("")}</section>
     <section class="box card dpoolbox"><div class="gkph2"><span class="eyebrow">Sem tier · ${L.filter(x=>!x.tier).length}</span><button type="button" class="btn small" data-act="dragto" data-t="">Tirar do tier</button></div>
       ${L.filter(x=>!x.tier).length>12?`<input id="drag-q" placeholder="Filtrar…" value="${esc(S.dragQ||"")}" aria-label="Filtrar títulos sem tier" autocomplete="off">`:""}
@@ -3324,7 +3324,7 @@ function pcBox(pid){const p=players()[pid];const pc=pcOf(p);const mine=pid===S.m
   if(!n&&!mine)return "";
   return `<section class="box card pcbox"><div class="gkph2"><span class="eyebrow">🖥️ ${mine?"Meu PC":"PC de "+esc(p.nick)}</span>${mine?`<button class="btn small${n?"":" primary"}" data-act="pcedit">${n?"Editar":"Montar meu PC"}</button>`:""}</div>
     ${n?`<div class="pcgrid">${PC_SLOTS.filter(([k])=>pc[k]||mine).map(([k,l])=>{const b=pcBrand(pc[k]);return `<div class="pcslot${pc[k]?"":" vazio"}" style="--pcc:${b?.c||"var(--accent)"}">${pcIcon(k,b?.c)}<div><span class="pcl">${l}${b?` · <b>${esc(b.n)}</b>`:""}</span><span class="pcv">${pc[k]?esc(pc[k]):"—"}</span></div></div>`}).join("")}</div>`
-      :`<p class="hint" style="margin:0">Mostre para a galera com o que você joga: processador, placa de vídeo, monitor, teclado e mouse. É só digitar que aparecem as opções.</p>`}</section>`}
+      :""}</section>`}
 const _viewPerfilPc=viewPerfil;
 viewPerfil=function(){let h=_viewPerfilPc.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;const box=pcBox(pid);if(!box)return h;
   const i=h.indexOf('<span class="eyebrow">Setup</span>');
@@ -3340,7 +3340,7 @@ function pcFind(k,q){const L=(S.pcCat||{})[k]||[];const t=pcNorm(q).split(" ").f
   return sc.sort((a,b)=>a[0]-b[0]).slice(0,8).map(x=>x[1])}
 async function pcOpen(){const pc=pcOf(me());M={type:"pc",v:{...pc},open:"",hi:0};pcDraw();await pcCat()}
 function pcDraw(){if(M?.type!=="pc")return;
-  $("#modal").innerHTML=overlay(`<h2>🖥️ Meu PC</h2><p class="hint" style="margin-top:0">Digite e escolha na lista. Não achou? Escreva do seu jeito, vale também.</p>
+  $("#modal").innerHTML=overlay(`<h2>🖥️ Meu PC</h2>
     <div class="pcform">${PC_SLOTS.map(([k,l])=>{const b=pcBrand(M.v[k]);return `<div class="pcf" data-k="${k}">${pcIcon(k,b?.c)}<label class="field"><span class="flabel">${l}</span>
       <input id="pc-${k}" data-k="${k}" autocomplete="off" maxlength="80" value="${esc(M.v[k]||"")}" placeholder="${{cpu:"Ex.: Ryzen 5 5600",mb:"Ex.: B550M",gpu:"Ex.: RTX 4060",ram:"Ex.: 16GB DDR4 3200",mon:"Ex.: 27 QHD 165Hz",kb:"Ex.: Redragon Kumara",mouse:"Ex.: G305"}[k]}" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pcl-${k}"></label>
       <div class="pclist" id="pcl-${k}" role="listbox" hidden></div></div>`}).join("")}</div>
@@ -3367,6 +3367,17 @@ document.addEventListener("click",async e=>{const el=e.target.closest("[data-act
   if(a==="pcsave"){const out={};for(const [k] of PC_SLOTS){const v=($("#pc-"+k)?.value||"").trim().slice(0,80);if(v)out[k]=v}
     el.disabled=true;try{await saveMe(p=>{if(Object.keys(out).length)p.pc=out;else delete p.pc});closeModal();renderAll();toast("PC salvo! 🖥️")}catch(err){el.disabled=false;$("#pc-err").textContent=errMsg(err)}}
 },true);
+
+/* ---------- arte dos cenários (≈200 KB) só é baixada quando algum cenário aparece na tela ---------- */
+(function(){
+  if(typeof document==="undefined"||typeof MutationObserver==="undefined")return;
+  const SEL='[data-th^="sc-"],.scbox,[data-psc]';let feito=false;
+  const carrega=()=>{if(feito)return;feito=true;const l=document.createElement("link");l.rel="stylesheet";l.href="scenes.css?v="+((document.querySelector('script[src*="app.js"]')?.src||"").split("v=")[1]||"1");document.head.appendChild(l);obs.disconnect()};
+  const olha=()=>{if(!feito&&(document.querySelector(SEL)||document.documentElement.dataset.psc))carrega()};
+  const obs=new MutationObserver(olha);
+  const go=()=>{olha();if(!feito)obs.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:["data-th","data-psc"]})};
+  if(document.body)go();else document.addEventListener("DOMContentLoaded",go);
+})();
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
