@@ -1335,3 +1335,4 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .gkinfo .frev.clamp{display:-webkit-box;-webkit-line-clamp:5}
 .gkinfo .frev.clamp.open{display:block}
 .gkinfo .bmore{margin-top:-2px}
+@keyframes nudge{0%,100%{transform:none}30%{transform:scale(1.015)}60%{transform:scale(.995)}}.nudge{animation:nudge .25s ease}@media (prefers-reduced-motion:reduce){.nudge{animation:none}}
