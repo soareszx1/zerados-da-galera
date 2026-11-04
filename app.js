@@ -3594,6 +3594,36 @@ viewPerfil=function(){let h=_viewPerfilSh.apply(this,arguments);const pid=pidByS
   if(mine&&MINE())h=h.replace(/(<button class="btn small" data-act="shareprof"[^>]*>[^<]*<\/button>)/,`$1<button class="btn small primary" data-act="shinv">🤝 Convidar</button>`);
   return h};
 
+/* ===== v30: barra da tier list em uma linha, "ler mais" nos avisos ===== */
+function tlToolbar(h){
+  const pk=h.indexOf('<div class="tierpick"');if(pk<0)return h;
+  const pe=h.indexOf("</div>",pk)+6;let pick=h.slice(pk,pe),rest=h.slice(pe),acts="";
+  for(;;){const m=rest.match(/^\s*<div class="(sharerow|dragbar)">([\s\S]*?)<\/div>/);if(!m)break;acts+=m[2];rest=rest.slice(m[0].length)}
+  acts=acts.replace(/✋ Modo arrastar (ligado|desligado)/,"✋ Arrastar").replace(/class="btn small" data-act="sh/g,'class="chip2" data-act="sh');
+  return h.slice(0,pk)+`<div class="tltool">${pick}${acts?`<div class="tlacts">${acts}</div>`:""}</div>`+rest;
+}
+const _viewTierV30=viewTier;
+viewTier=function(){return tlToolbar(_viewTierV30.apply(this,arguments)).replace(/>1 jogos</g,">1 jogo<")};
+const _boardCardV30=boardCard;
+boardCard=function(b,compact){
+  if(!compact||!b||!b.text||b.text.length<=220)return _boardCardV30(b,compact);
+  return _boardCardV30(b,false).replace(/<p class="btext">([\s\S]*?)<\/p>/,(_,t)=>`<p class="btext clamp">${t}</p><button type="button" class="linkbtn bmore" data-act="bmore" aria-expanded="false">Ler mais</button>`);
+};
+document.addEventListener("click",e=>{const el=e.target.closest('[data-act="bmore"]');if(!el)return;e.stopImmediatePropagation();
+  const p=el.previousElementSibling;if(!p)return;const open=p.classList.toggle("open");el.textContent=open?"Ler menos":"Ler mais";el.setAttribute("aria-expanded",String(open))},true);
+/* v30: interface sem emoji (mantém reações, avatares e conteúdo da galera) */
+const EMO_RE=/^(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}‍️⃣]|[\u{1F1E6}-\u{1F1FF}])+\s*|\s*(?:[\p{Extended_Pictographic}\p{Emoji_Modifier}‍️⃣])+$/gu;
+const EMO_SEL='button,a.btn,[role="tab"],option,optgroup,.eyebrow,.tierhead h3,.sec h2,.box>h2,.box>h3,.card>h3,.tag,.pill,.chip2,label,summary,#tabs a,nav a,.btype,.whosel';
+const EMO_SKIP='.glyph,.rx,.react,.reac,.emo,.emoji,.bcard h3,.btext,.msg,.bubble,.cmt,.frev,textarea,input,.gfr,[data-keepemo]';
+function emoStrip(root){try{(root||document.body).querySelectorAll(EMO_SEL).forEach(el=>{if(el.closest(EMO_SKIP))return;
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;const L=[];while(n=w.nextNode())L.push(n);
+  for(const t of L){if(t.parentElement&&t.parentElement.closest(EMO_SKIP))continue;const v=t.nodeValue;if(!v||!/\p{Extended_Pictographic}/u.test(v))continue;
+    const nv=v.replace(EMO_RE,m=>/^\s/.test(m)?"":"");if(nv.trim()&&nv!==v)t.nodeValue=nv.replace(/^\s+/,v.match(/^\s*/)[0])}})}catch{}}
+if(typeof MutationObserver!=="undefined"){let pend=false;const run=()=>{pend=false;emoStrip()};
+  const mo=new MutationObserver(()=>{if(!pend){pend=true;requestAnimationFrame(run)}});
+  const go=()=>{mo.observe(document.body,{childList:true,subtree:true});run()};
+  if(document.body)go();else document.addEventListener("DOMContentLoaded",go)}
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
