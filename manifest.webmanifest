@@ -1,0 +1,16 @@
+{
+  "name": "Zerados da Galera",
+  "short_name": "Zerados",
+  "description": "Jogos zerados, missões, tier list, dicas e promoções da galera.",
+  "start_url": "/#inicio",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#140f24",
+  "theme_color": "#140f24",
+  "lang": "pt-BR",
+  "icons": [
+    {"src": "img/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "img/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "img/icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
