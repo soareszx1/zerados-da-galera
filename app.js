@@ -2833,7 +2833,7 @@ async function gkSearch(q,k){
     }
     if(k==="serie"){
       const r=await fetch("https://api.tvmaze.com/search/shows?q="+encodeURIComponent(q)).then(r=>r.json());
-      const out=(r||[]).slice(0,8).map(({show:s})=>({t:s.name,img:(s.image?.original||s.image?.medium||"").replace(/^http:/,"https:"),y:s.premiered?Number(s.premiered.slice(0,4)):null,ref:"tvm:"+s.id,extra:(s.network?.name||s.webChannel?.name||"")}));
+      const out=(r||[]).slice(0,8).map(({show:s})=>({t:s.name,img:(s.image?.medium||s.image?.original||"").replace(/^http:/,"https:"),y:s.premiered?Number(s.premiered.slice(0,4)):null,ref:"tvm:"+s.id,extra:(s.network?.name||s.webChannel?.name||"")}));
       if(out.length)return out;
     }
     const termo=q+(k==="filme"?" filme":k==="serie"?" série":"");
