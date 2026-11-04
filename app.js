@@ -3379,6 +3379,212 @@ document.addEventListener("click",async e=>{const el=e.target.closest("[data-act
   if(document.body)go();else document.addEventListener("DOMContentLoaded",go);
 })();
 
+/* ================= v29: COMPARTILHAR (imagens prontas), CONVITE COM RECOMPENSA e REDES NO PERFIL ================= */
+const SITE_URL="https://zeradosdagalera.com.br/";
+const TCOL={S:"#FF4D6D",A:"#FF9F1C",B:"#FFD23F",C:"#3DDC97",D:"#4CC9F0"};
+const shareUrlPerfil = p => `${SITE_URL}p/${pslug(p)}.html`;      // página leve com prévia (foto/nível) que abre o perfil e já conta como convite
+
+/* ---------- janela de compartilhar (prévia + redes + baixar) ---------- */
+async function shareSheet(o){
+  M={type:"share",o,fmt:"story",blob:null,url:""};drawShare(true);
+  if(o.render)await shareRender();else drawShare();
+}
+async function shareRender(){if(M?.type!=="share")return;const o=M.o;const [W,H]=M.fmt==="post"?[1080,1350]:[1080,1920];
+  try{const cv=await o.render(W,H);const blob=await new Promise(r=>cv.toBlob(r,"image/png"));if(M?.type!=="share")return;
+    if(M.url)URL.revokeObjectURL(M.url);M.blob=blob;M.url=blob?URL.createObjectURL(blob):""}catch(e){console.warn(e);M.blob=null;M.url=""}
+  drawShare()}
+function drawShare(loading){if(M?.type!=="share")return;const o=M.o;const url=o.url||SITE_URL;const txt=o.text||"";const full=(txt+" "+url).trim();
+  const enc=encodeURIComponent;
+  $("#modal").innerHTML=overlay(`<h2>📤 ${esc(o.title||"Compartilhar")}</h2>
+    ${o.render?`<div class="shfmt"><button type="button" class="chip2" data-act="shfmt" data-k="story" aria-pressed="${M.fmt==="story"}">Story 9:16</button><button type="button" class="chip2" data-act="shfmt" data-k="post" aria-pressed="${M.fmt==="post"}">Post 4:5</button></div>
+      <div class="shprev">${M.url?`<img src="${M.url}" alt="Prévia da imagem">`:`<span class="hint">${loading||!M.blob&&M.url===""?"Gerando imagem…":"Não deu para gerar a imagem."}</span>`}</div>`:""}
+    <div class="shtxt">${esc(full)}</div>
+    <div class="shbtns">
+      ${navigator.share?`<button type="button" class="btn primary" data-act="shnative">📲 Compartilhar</button>`:""}
+      ${M.blob?`<button type="button" class="btn${navigator.share?"":" primary"}" data-act="shdl">⬇️ Baixar imagem</button>`:""}
+      <a class="btn shw" href="https://wa.me/?text=${enc(full)}" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn shx" href="https://twitter.com/intent/tweet?text=${enc(txt)}&url=${enc(url)}" target="_blank" rel="noopener">X</a>
+      <a class="btn sht" href="https://t.me/share/url?url=${enc(url)}&text=${enc(txt)}" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn shf" href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener">Facebook</a>
+      <button type="button" class="btn" data-act="shcopy">🔗 Copiar link</button>
+    </div>
+    <div class="actions"><button class="btn" data-act="close">Fechar</button></div>`,"shbox");
+}
+document.addEventListener("click",async e=>{const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(!/^sh(fmt|native|dl|copy|tier|vote|pc|inv|game|prof2)$|^redes(edit|save)$/.test(a))return;e.stopImmediatePropagation();
+  if(a==="shtier"){shareTier(el.dataset.k,el.dataset.pid);return}
+  if(a==="shvote"){shareVote(el.dataset.id);return}
+  if(a==="shpc"){sharePc(el.dataset.pid);return}
+  if(a==="shinv"){shareInvite();return}
+  if(a==="redesedit"){redesOpen();return}
+  if(a==="redessave"){redesSave(el);return}
+  if(M?.type!=="share")return;const o=M.o;const url=o.url||SITE_URL;
+  if(a==="shfmt"){if(M.fmt===el.dataset.k)return;M.fmt=el.dataset.k;M.blob=null;M.url="";drawShare(true);shareRender();return}
+  if(a==="shcopy"){const t=((o.text||"")+" "+url).trim();try{await navigator.clipboard.writeText(t);toast("Link copiado ✓")}catch{prompt("Copie:",t)}return}
+  if(a==="shdl"){if(!M.blob)return;const f=document.createElement("a");f.href=M.url;f.download=(o.file||"zerados")+"-"+M.fmt+".png";document.body.appendChild(f);f.click();f.remove();toast("Imagem baixada 📸");return}
+  if(a==="shnative"){try{const file=M.blob?new File([M.blob],(o.file||"zerados")+".png",{type:"image/png"}):null;
+      if(file&&navigator.canShare?.({files:[file]}))await navigator.share({files:[file],text:((o.text||"")+" "+url).trim()});
+      else await navigator.share({title:o.title||"Zerados da Galera",text:o.text||"",url})}catch(err){if(err?.name!=="AbortError")toast("Não deu para abrir o compartilhar do aparelho")}return}
+},true);
+
+/* ---------- desenho das imagens ---------- */
+function cvSrc(u){return String(u||"").replace(/^https:\/\/shared\.cloudflare\.steamstatic\.com/,"https://shared.fastly.steamstatic.com")}
+const cvImg = src => new Promise(r=>{if(!src)return r(null);const i=new Image();const same=/^(data:|img\/|covers\/|blob:)/.test(src);if(!same)i.crossOrigin="anonymous";
+  const t=setTimeout(()=>r(null),8000);i.onload=()=>{clearTimeout(t);r(i)};i.onerror=()=>{clearTimeout(t);r(null)};i.src=same?src:cvSrc(src)});
+async function coverDataFor(g){
+  if(g.pid&&g.gid&&g.coverV&&S.db){try{const sn=await S.db.doc(`players/${g.pid}/covers/${g.gid}`).get();const d=sn.exists&&sn.data();if(d&&typeof d.img==="string"&&d.img.startsWith("data:image/"))return d.img}catch{}}
+  const loc=typeof localCover==="function"?localCover(g.title):"";if(loc)return loc;
+  const ap=g.steamApp||(typeof infoAppid==="function"?infoAppid(g.title):null);if(ap&&typeof steamCover==="function")return steamCover(ap);
+  return typeof extImg==="function"?extImg(g.coverUrl):""}
+function rr(x,X,Y,w,h,r){x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()}
+function drawCover(x,img,X,Y,w,h,title){
+  x.save();rr(x,X,Y,w,h,Math.round(w*.08));x.clip();
+  if(img){const s=Math.max(w/img.width,h/img.height);const iw=img.width*s,ih=img.height*s;x.drawImage(img,X+(w-iw)/2,Y+(h-ih)/2,iw,ih)}
+  else{const g=x.createLinearGradient(X,Y,X+w,Y+h);g.addColorStop(0,"#2a2440");g.addColorStop(1,"#4a2a5e");x.fillStyle=g;x.fillRect(X,Y,w,h);
+    x.fillStyle="#fff";x.font=`700 ${Math.max(12,Math.round(w/7))}px Rubik, sans-serif`;x.textAlign="center";const words=String(title||"").split(" ");let line="",ly=Y+h*0.35;const lh=Math.round(w/6);
+    for(const wd of words){const t=line?line+" "+wd:wd;if(x.measureText(t).width>w-10&&line){x.fillText(line,X+w/2,ly);line=wd;ly+=lh;if(ly>Y+h-10)break}else line=t}if(ly<=Y+h-10)x.fillText(line,X+w/2,ly);x.textAlign="left"}
+  x.restore()}
+async function frame(W,H,o){
+  try{await document.fonts?.ready}catch{}
+  const cv=document.createElement("canvas");cv.width=W;cv.height=H;const x=cv.getContext("2d");
+  const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,o.c1||"#140f24");g.addColorStop(1,o.c2||"#FF3B6B");x.fillStyle=g;x.fillRect(0,0,W,H);
+  x.fillStyle="rgba(10,6,20,.55)";rr(x,40,40,W-80,H-80,36);x.fill();
+  const logo=await cvImg("img/logo-160.png");if(logo)x.drawImage(logo,80,74,96,96);
+  x.fillStyle="#fff";x.font="400 40px Bungee, Impact, sans-serif";x.fillText("ZERADOS DA GALERA",192,138);
+  let y=230;
+  if(o.title){x.font=`800 ${o.titleSize||64}px Rubik, sans-serif`;x.fillStyle="#fff";y=wrapL(x,o.title,80,y,W-160,(o.titleSize||64)+8)+10}
+  if(o.sub){x.font="600 36px Rubik, sans-serif";x.fillStyle="rgba(255,255,255,.8)";y=wrapL(x,o.sub,80,y+8,W-160,44)+10}
+  // rodapé com chamada
+  x.fillStyle="rgba(255,255,255,.1)";rr(x,80,H-190,W-160,110,24);x.fill();
+  x.fillStyle="#fff";x.font="700 34px Rubik, sans-serif";x.textAlign="center";x.fillText(o.cta||"Monte a sua também 👉",W/2,H-142);
+  x.font="400 34px Bungee, Impact, sans-serif";x.fillStyle=o.c3||"#FFD23F";x.fillText("zeradosdagalera.com.br",W/2,H-98);x.textAlign="left";
+  return {cv,x,y:y+20,bottom:H-220}}
+function wrapL(x,t,X,y,maxW,lh){const words=String(t).split(" ");let line="";for(const w of words){const test=line?line+" "+w:w;if(x.measureText(test).width>maxW&&line){x.fillText(line,X,y);line=w;y+=lh}else line=test}x.fillText(line,X,y);return y+lh}
+async function drawTierRows(f,W,rows,{k}){const {x}=f;const top=f.y,bot=f.bottom;const n=5;const gap=14;const rh=Math.min(300,Math.floor((bot-top-gap*(n-1))/n));
+  const lw=Math.round(rh*.55);const ch=rh-16,cw=k==="jogos"?Math.round(ch*.75):Math.round(ch*2/3);const avail=W-160-lw-20;const perRow=Math.max(1,Math.floor((avail+10)/(cw+10)));
+  const imgs=await Promise.all(rows.flatMap(r=>r.items.slice(0,perRow)).map(it=>it.src.then?it.src.then(cvImg):cvImg(it.src)));let ii=0;
+  rows.forEach((r,ri)=>{const Y=top+ri*(rh+gap);x.fillStyle="rgba(255,255,255,.06)";rr(x,80,Y,W-160,rh,18);x.fill();
+    x.fillStyle=TCOL[r.t];rr(x,80,Y,lw,rh,18);x.fill();x.fillStyle="#1a1530";x.font=`400 ${Math.round(lw*.55)}px Bungee, Impact, sans-serif`;x.textAlign="center";x.fillText(r.t,80+lw/2,Y+rh/2+lw*.2);x.textAlign="left";
+    const vis=r.items.slice(0,perRow);vis.forEach((it,i)=>{const cx=80+lw+14+i*(cw+10);drawCover(x,imgs[ii++],cx,Y+8,cw,ch,it.title)});
+    if(r.items.length>perRow){x.fillStyle="rgba(0,0,0,.65)";const X=80+lw+14+(perRow-1)*(cw+10);rr(x,X,Y+8,cw,ch,10);x.fill();x.fillStyle="#fff";x.font="800 40px Rubik, sans-serif";x.textAlign="center";x.fillText("+"+(r.items.length-perRow+1),X+cw/2,Y+8+ch/2+14);x.textAlign="left"}
+    if(!r.items.length){x.fillStyle="rgba(255,255,255,.35)";x.font="500 28px Rubik, sans-serif";x.fillText("—",80+lw+30,Y+rh/2+10)}})}
+
+/* ---------- tier list (jogos, animes, séries, filmes, mangás ou votação do mês) ---------- */
+const KIND_PL={jogos:"jogos",anime:"animes",serie:"séries",filme:"filmes",manga:"mangás"};
+function tierItems(k,pid){
+  if(k==="jogos"){const L=allGames().filter(g=>g.pid===pid&&g.tier);return L.map(g=>({t:g.tier,title:g.title,src:coverDataFor(g)}))}
+  if(pid==="galera"){const by={};for(const x of allMedia().filter(x=>x.k===k&&x.tier)){const key=gkKey(x.t);(by[key]=by[key]||{...x,sc:[]}).sc.push(5-GK_TIERS.indexOf(x.tier));if(!gkImg(by[key].img)&&gkImg(x.img))by[key].img=x.img}
+    return Object.values(by).map(o=>{const m=gkAvg(o.sc);return {t:scoreTier(m),m,title:o.t,src:gkImg(o.img)}}).sort((a,b)=>b.m-a.m)}
+  return mediaOf(pid).filter(x=>x.k===k&&x.tier).sort((a,b)=>(b.nota??-1)-(a.nota??-1)).map(x=>({t:x.tier,title:x.t,src:gkImg(x.img)}))}
+function shareTier(k,pid){const P=players();const p=P[pid];const nome=pid==="galera"?"da galera":`de ${p?.nick||""}`;
+  const items=tierItems(k,pid);if(!items.length){toast("Essa tier list ainda está vazia");return}
+  const rows=["S","A","B","C","D"].map(t=>({t,items:items.filter(i=>i.t===t)}));
+  const mine=pid===S.myId;const top=rows.find(r=>r.items.length)?.items[0]?.title;
+  shareSheet({title:"Tier list",file:`tierlist-${k}-${pid==="galera"?"galera":slug(p?.nick)}`,
+    text:mine?`Minha tier list de ${KIND_PL[k]} 🏆${top?` (${top} no topo!)`:""} Concorda? Monta a sua no Zerados da Galera`:`Tier list de ${KIND_PL[k]} ${nome} no Zerados da Galera 🏆`,
+    url:pid!=="galera"&&p?shareUrlPerfil(p):SITE_URL,
+    render:async(W,H)=>{const f=await frame(W,H,{title:`Tier list ${nome}`,sub:KIND_PL[k][0].toUpperCase()+KIND_PL[k].slice(1),c2:p?.color||"#FF3B6B",cta:"Concorda? Monte a sua 👉",titleSize:W>H?56:60});
+      await drawTierRows(f,W,rows,{k});return f.cv}})}
+function shareVote(id){const tl=S.tierlists?.[id];if(!tl)return;const r=tlResult(id);if(!r)return;const k=id.includes("~")?id.split("~")[1]:"jogos";
+  const rows=["S","A","B","C","D"].map(t=>({t,items:(r.tiers[t]||[]).map(x=>({title:x.title,src:k==="jogos"?coverDataFor({title:x.title,coverUrl:x.coverUrl}):gkImg(x.coverUrl)}))}));
+  shareSheet({title:"Votação do mês",file:"votacao-"+id.replace("~","-"),text:`${tl.title||"Tier list do mês"}: ${tl.status==="encerrada"?"saiu o resultado":"a votação está aberta"} no Zerados da Galera 🗳️`,url:SITE_URL,
+    render:async(W,H)=>{const f=await frame(W,H,{title:tl.title||"Tier list do mês",sub:`${monthName(id.split("~")[0])} · ${r.voters} ${r.voters===1?"voto":"votos"}`,c2:"#3D5AFE",cta:tl.status==="aberta"?"Vote também 👉":"Veja o ranking 👉"});await drawTierRows(f,W,rows,{k});return f.cv}})}
+
+/* ---------- zerado, perfil e PC ---------- */
+shareGame=function(pid,gid){const p=players()[pid];const g=p?.games?.[gid];if(!g)return;const verbo=g.status==="platinado"?"platinou":isDone(g)?"zerou":"está jogando";
+  shareSheet({title:"Compartilhar",file:"zerei-"+slug(g.title),text:`${pid===S.myId?(g.status==="platinado"?"Platinei":isDone(g)?"Zerei":"Tô jogando"):p.nick+" "+verbo} ${g.title}${typeof g.nota==="number"?` e dei nota ${fmtNota(g.nota)}`:""} 🎮 Bora registrar os seus no Zerados da Galera`,url:shareUrlPerfil(p),
+    render:async(W,H)=>{const f=await frame(W,H,{title:g.title,sub:`${p.nick} ${verbo}${g.tier?` · tier ${g.tier}`:""}`,c2:p.color||"#FF3B6B",cta:"E você, já zerou? 👉"});const {x}=f;
+      const img=await cvImg(await coverDataFor({...g,pid,gid}));const ch=Math.min(f.bottom-f.y-(H>1500?330:200),H>1500?900:600);const cw=Math.round(ch*.72);
+      drawCover(x,img,(W-cw)/2,f.y,cw,ch,g.title);let y=f.y+ch+70;x.textAlign="center";
+      if(typeof g.nota==="number"){const st=Math.round(g.nota)/2;let s="";for(let i=1;i<=5;i++)s+=st>=i?"★":st>=i-.5?"⯪":"☆";x.fillStyle="#FFD23F";x.font="700 64px sans-serif";x.fillText(s+"  "+fmtNota(g.nota),W/2,y);y+=70}
+      x.fillStyle="rgba(255,255,255,.85)";x.font="600 36px Rubik, sans-serif";x.fillText([g.hours?g.hours+" h":"",g.platform||"",g.year||""].filter(Boolean).join("  ·  "),W/2,y);y+=60;
+      if(g.comment&&H>1500){x.font="italic 500 34px Rubik, sans-serif";x.fillStyle="#fff";const t="“"+cap(g.comment,140)+"”";x.textAlign="left";wrapC(x,t,W/2,y,W-200,44)}
+      x.textAlign="left";return f.cv}})};
+function wrapC(x,t,cx,y,maxW,lh){x.textAlign="center";const words=String(t).split(" ");let line="";for(const w of words){const test=line?line+" "+w:w;if(x.measureText(test).width>maxW&&line){x.fillText(line,cx,y);line=w;y+=lh}else line=test}x.fillText(line,cx,y);x.textAlign="left";return y+lh}
+shareProfile=function(pid){const p=players()[pid];if(!p)return;const s=stats(p);const l=levelOf(xpOf(pid));const mine=pid===S.myId;
+  shareSheet({title:"Compartilhar perfil",file:"perfil-"+slug(p.nick),text:mine?`Meu perfil gamer: ${s.done} zerados, nível ${l.L} 🎮 Vem montar o seu no Zerados da Galera`:`Perfil de ${p.nick} no Zerados da Galera 🎮`,url:shareUrlPerfil(p),
+    render:async(W,H)=>{const f=await frame(W,H,{title:"",c2:p.color||"#FF3B6B",cta:"Monte o seu perfil 👉"});const {x}=f;let y=f.y+10;const R=H>1500?170:130;
+      const av=await cvImg(avatarSrc(p));x.save();x.beginPath();x.arc(W/2,y+R,R,0,Math.PI*2);x.closePath();if(av){x.clip();x.drawImage(av,W/2-R,y,R*2,R*2)}else{x.fillStyle=p.color||"#FF3B6B";x.fill();x.fillStyle="#fff";x.font=`${R}px sans-serif`;x.textAlign="center";x.fillText(p.glyph||"★",W/2,y+R*1.35)}x.restore();
+      x.strokeStyle="#FFD23F";x.lineWidth=10;x.beginPath();x.arc(W/2,y+R,R+6,0,Math.PI*2);x.stroke();y+=R*2+90;x.textAlign="center";
+      x.fillStyle="#fff";x.font="800 76px Rubik, sans-serif";x.fillText(p.nick,W/2,y);y+=60;x.font="600 38px Rubik, sans-serif";x.fillStyle="rgba(255,255,255,.85)";x.fillText(`Nível ${l.L} · ${l.name}`,W/2,y);y+=60;x.textAlign="left";
+      const st=[["zerados",s.done],[`em ${YEAR}`,s.year],["horas",Math.round(s.hours)],["platinas",s.plat]];const bw=(W-160-30)/2,bh=H>1500?170:130;
+      st.forEach(([k,v],i)=>{const X=80+(i%2)*(bw+30),Y=y+Math.floor(i/2)*(bh+24);x.fillStyle="rgba(255,255,255,.1)";rr(x,X,Y,bw,bh,22);x.fill();x.fillStyle="#fff";x.font=`800 ${H>1500?72:58}px Rubik, sans-serif`;x.fillText(String(v),X+30,Y+bh*.55);x.font="500 32px Rubik, sans-serif";x.fillStyle="rgba(255,255,255,.75)";x.fillText(k,X+30,Y+bh*.85)});
+      y+=2*(bh+24)+20;
+      if(H>1500){const tops=allGames().filter(g=>g.pid===pid&&g.tier==="S").slice(0,4);if(tops.length){x.fillStyle="rgba(255,255,255,.8)";x.font="700 34px Rubik, sans-serif";x.fillText("Tier S",80,y+10);y+=30;const cw=Math.min(200,(W-160-30)/4),ch=Math.round(cw*1.33);
+        const imgs=await Promise.all(tops.map(g=>coverDataFor(g).then(cvImg)));tops.forEach((g,i)=>drawCover(x,imgs[i],80+i*(cw+10),y,cw,ch,g.title))}}
+      return f.cv}})};
+function sharePc(pid){const p=players()[pid];const pc=pcOf(p);if(!Object.keys(pc).length)return;
+  shareSheet({title:"Compartilhar setup",file:"setup-"+slug(p.nick),text:`${pid===S.myId?"Meu setup":"Setup de "+p.nick}: ${[pc.cpu,pc.gpu].filter(Boolean).join(" + ")} 🖥️ Mostra o seu no Zerados da Galera`,url:shareUrlPerfil(p),
+    render:async(W,H)=>{const f=await frame(W,H,{title:pid===S.myId?"Meu setup":`Setup de ${p.nick}`,c2:p.color||"#16A3C7",cta:"Mostre o seu setup 👉"});const {x}=f;
+      const L=PC_SLOTS.filter(([k])=>pc[k]);const rh=Math.min(170,Math.floor((f.bottom-f.y)/L.length)-14);let y=f.y;
+      for(const [k,l] of L){const b=pcBrand(pc[k]);const svg=pcIcon(k,b?.c||"#FF3B6B").replace('class="pcico"','xmlns="http://www.w3.org/2000/svg" width="128" height="128"').replace(/currentColor/g,"#ffffff").replace(/var\(--accent\)/g,"#FF3B6B");
+        const ic=await cvImg("data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg));
+        x.fillStyle="rgba(255,255,255,.07)";rr(x,80,y,W-160,rh,22);x.fill();x.fillStyle=b?.c||"#FF3B6B";rr(x,80,y,10,rh,5);x.fill();
+        if(ic)x.drawImage(ic,110,y+(rh-rh*.7)/2,rh*.7,rh*.7);const tx=110+rh*.7+28;
+        x.fillStyle="rgba(255,255,255,.65)";x.font="700 26px JetBrains Mono, monospace";x.fillText((l+(b?" · "+b.n:"")).toUpperCase(),tx,y+rh*.4);
+        x.fillStyle="#fff";x.font=`800 ${Math.round(rh*.24)}px Rubik, sans-serif`;x.fillText(cap(pc[k],34),tx,y+rh*.75);y+=rh+14}
+      return f.cv}})}
+
+/* ---------- botões nas telas ---------- */
+const _viewTierSh=viewTier;
+viewTier=function(){let h=_viewTierSh.apply(this,arguments);const mid=meId();let btn="";
+  if(S.tierCat==="jogos"||!S.tierCat){if(S.tierWho==="mes"){const k=Object.keys(tierlists()).filter(x=>!x.includes("~")).sort().reverse();const id=S.tlMonth&&tierlists()[S.tlMonth]?S.tlMonth:k[0];if(id)btn=`<button class="btn small" data-act="shvote" data-id="${esc(id)}">📤 Compartilhar resultado</button>`}
+    else if(players()[S.tierWho])btn=`<button class="btn small" data-act="shtier" data-k="jogos" data-pid="${esc(S.tierWho)}">📤 Compartilhar tier list</button>`}
+  else{const k=S.tierCat,w=S.gkWho?.[k];if(w==="mes"){const id=S.gkMesSel?.[k];if(id&&S.tierlists?.[id])btn=`<button class="btn small" data-act="shvote" data-id="${esc(id)}">📤 Compartilhar resultado</button>`}
+    else if(w){const pid=w==="eu"?mid:w;btn=`<button class="btn small" data-act="shtier" data-k="${esc(k)}" data-pid="${esc(pid)}">📤 Compartilhar tier list</button>`}}
+  if(!btn)return h;const pk=h.indexOf('<div class="tierpick"');if(pk<0)return h;const end=h.indexOf("</div>",pk)+6;return h.slice(0,end)+`<div class="sharerow">${btn}</div>`+h.slice(end)};
+const _pcBoxSh=pcBox;
+pcBox=function(pid){const h=_pcBoxSh(pid);if(!h||!Object.keys(pcOf(players()[pid])).length)return h;
+  return h.replace(/<\/div>(\s*<div class="pcgrid">)/,`<button class="btn small" data-act="shpc" data-pid="${esc(pid)}" aria-label="Compartilhar setup">📤</button></div>$1`)};
+
+/* ================= CONVITE COM RECOMPENSA ================= */
+const CONV_XP=200;
+(function(){try{const c=new URLSearchParams(location.search).get("convite");if(c&&/^[a-z0-9-]{1,48}$/.test(c)){localStorage.setItem("zg-conv",c);history.replaceState(null,"",location.pathname+location.hash)}}catch{}})();
+function convidadosDe(pid){return Object.entries(players()).filter(([id,p])=>id!==pid&&p.invitedBy===pid)}
+function shareInvite(){const m=me();if(!m)return;const url=`${SITE_URL}?convite=${pslug(m)}`;
+  shareSheet({title:"Convidar a galera",file:"convite",text:`Bora registrar nossos jogos zerados, tier lists, animes e setup juntos? Entra pelo meu convite que nós dois ganhamos +${CONV_XP} XP 🎮`,url,
+    render:async(W,H)=>{const f=await frame(W,H,{title:`${m.nick} te chamou pro Zerados da Galera`,sub:"Jogos zerados, tier lists, animes, setup, missões e ranking da galera",c2:m.color||"#FF3B6B",cta:`Entra pelo convite: +${CONV_XP} XP 👉`,titleSize:70});const {x}=f;
+      let y=f.y+30;const items=["🎮 Sua estante de jogos","🏆 Tier lists de jogos e animes","🔥 Missões, níveis e temporadas","🖥️ Seu setup no perfil","💬 Chat e fórum da galera"];
+      x.font=`700 ${H>1500?48:40}px Rubik, sans-serif`;x.fillStyle="#fff";for(const t of items){if(y>f.bottom-40)break;x.fillText(t,100,y);y+=H>1500?96:72}return f.cv}})}
+// quem entrou pelo link: marca "convidado por" uma vez, só em conta nova
+let _convTry=false;
+function convCheck(){if(_convTry||!MINE())return;let c=null;try{c=localStorage.getItem("zg-conv")}catch{}if(!c)return;const m=me();if(!m)return;
+  _convTry=true;const inv=pidBySlug(c);try{localStorage.removeItem("zg-conv")}catch{}
+  if(!inv||inv===S.myId||m.invitedBy||Object.keys(m.games||{}).length>5||m.onb)return;
+  saveMe(p=>{if(!p.invitedBy)p.invitedBy=inv},{noDay:true}).then(()=>toast(`Você entrou pelo convite de ${players()[inv]?.nick||"um amigo"}! Complete os primeiros passos e vocês dois ganham +${CONV_XP} XP 🎉`)).catch(()=>{})}
+if(typeof setInterval==="function")setInterval(convCheck,4000);
+const _xpOfConv=xpOf;
+xpOf=function(pid){const p=players()[pid];if(!p)return 0;let b=0;if(p.invitedBy&&p.onb&&players()[p.invitedBy])b+=CONV_XP;
+  b+=Math.min(10,convidadosDe(pid).filter(([,q])=>q.onb).length)*CONV_XP;return _xpOfConv(pid)+b};
+BADGES.push({id:"recrutador",ic:"🤝",col:"#2EC27E",t:"Recrutador",ok:(s,o,pid)=>convidadosDe(pid).filter(([,q])=>q.onb).length>=3,d:(s,o,pid)=>`${convidadosDe(pid).filter(([,q])=>q.onb).length} amigos convidados`});
+
+/* ================= REDES NO PERFIL ================= */
+const REDES=[["ig","Instagram",/^[A-Za-z0-9._]{1,30}$/,h=>`https://instagram.com/${h}`,"#E1306C"],["tt","TikTok",/^[A-Za-z0-9._]{2,24}$/,h=>`https://www.tiktok.com/@${h}`,"#25F4EE"],
+  ["yt","YouTube",/^[A-Za-z0-9._-]{3,30}$/,h=>`https://www.youtube.com/@${h}`,"#FF0000"],["tw","Twitch",/^[A-Za-z0-9_]{3,25}$/,h=>`https://www.twitch.tv/${h}`,"#9146FF"],
+  ["x","X",/^[A-Za-z0-9_]{1,15}$/,h=>`https://x.com/${h}`,"#E7E9EA"],["psn","PSN",/^[A-Za-z0-9_-]{3,16}$/,null,"#2E8BFF"],["xbox","Xbox",/^[A-Za-z0-9 ]{1,16}$/,null,"#3FD13F"],
+  ["nsw","Nintendo",/^SW-\d{4}-\d{4}-\d{4}$/,null,"#FF3B3B"]];
+const redesOf = p => {const r=p&&typeof p.redes==="object"&&p.redes?p.redes:{};const o={};for(const [k,,re] of REDES)if(typeof r[k]==="string"&&re.test(r[k]))o[k]=r[k];return o};
+function redesRow(p,mine){const r=redesOf(p);const ks=REDES.filter(([k])=>r[k]);if(!ks.length&&!mine)return "";
+  return `<div class="redes">${ks.map(([k,n,,u,c])=>u?`<a class="rede" style="--rc:${c}" href="${esc(u(r[k]))}" target="_blank" rel="noopener noreferrer"><b>${n}</b> ${k==="yt"||k==="tt"?"@":""}${esc(r[k])}</a>`:`<button type="button" class="rede" style="--rc:${c}" data-act="redecopy" data-v="${esc(r[k])}" title="Copiar"><b>${n}</b> ${esc(r[k])}</button>`).join("")}
+    ${mine&&MINE()?`<button type="button" class="rede add" data-act="redesedit">${ks.length?"✎ Redes":"+ Redes e IDs de jogo"}</button>`:""}</div>`}
+document.addEventListener("click",async e=>{const el=e.target.closest('[data-act="redecopy"]');if(!el)return;e.stopImmediatePropagation();try{await navigator.clipboard.writeText(el.dataset.v);toast("Copiado ✓")}catch{}},true);
+function redesOpen(){const r=redesOf(me());M={type:"redes"};
+  $("#modal").innerHTML=overlay(`<h2>🔗 Redes e IDs de jogo</h2><div class="redform">${REDES.map(([k,n])=>`<label class="field"><span class="flabel">${n}</span><input id="rd-${k}" value="${esc(r[k]||"")}" maxlength="40" autocomplete="off" placeholder="${{ig:"seu_usuario",tt:"seu_usuario",yt:"seucanal",tw:"seucanal",x:"seu_usuario",psn:"ID da PSN",xbox:"Gamertag",nsw:"SW-1234-5678-9012"}[k]}"></label>`).join("")}</div>
+    <p class="err" id="rd-err" role="alert"></p><div class="actions"><button class="btn" data-act="close">Cancelar</button><button class="btn primary" data-act="redessave">Salvar</button></div>`,"redbox")}
+async function redesSave(el){const out={};for(const [k,n,re] of REDES){let v=($("#rd-"+k)?.value||"").trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?(instagram\.com|tiktok\.com\/@?|youtube\.com\/@?|twitch\.tv|x\.com|twitter\.com)\//i,"").replace(/\/.*$/,"");
+    if(k==="nsw")v=v.toUpperCase().replace(/^(SW)?[- ]?(\d{4})[- ]?(\d{4})[- ]?(\d{4})$/,"SW-$2-$3-$4");
+    if(!v)continue;if(!re.test(v)){$("#rd-err").textContent=`${n}: formato não reconhecido.`;return}out[k]=v}
+  el.disabled=true;try{await saveMe(p=>{if(Object.keys(out).length)p.redes=out;else delete p.redes},{noDay:true});closeModal();renderAll();toast("Redes salvas ✓")}catch(err){el.disabled=false;$("#rd-err").textContent=errMsg(err)}}
+
+/* ---------- perfil: redes no topo, botão Convidar, "convidado por" ---------- */
+const _viewPerfilSh=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilSh.apply(this,arguments);const pid=pidBySlug(S.route);const p=players()[pid];if(!p)return h;const mine=pid===S.myId;
+  const row=redesRow(p,mine);const inv=p.invitedBy&&players()[p.invitedBy]?`<a class="convby" href="#perfil-${esc(pslug(players()[p.invitedBy]))}">🤝 convidado por ${esc(players()[p.invitedBy].nick)}</a>`:"";
+  const i=h.indexOf('<div style="padding:0 18px 18px"><div class="xpbar">');
+  if(i>=0&&(row||inv))h=h.slice(0,i)+`<div class="redeswrap">${row}${inv}</div>`+h.slice(i);
+  if(mine&&MINE())h=h.replace(/(<button class="btn small" data-act="shareprof"[^>]*>[^<]*<\/button>)/,`$1<button class="btn small primary" data-act="shinv">🤝 Convidar</button>`);
+  return h};
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
