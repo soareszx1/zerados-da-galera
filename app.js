@@ -3627,7 +3627,7 @@ function emoStrip(root){try{(root||document.body).querySelectorAll(EMO_SEL).forE
   for(const t of L){if(t.parentElement&&t.parentElement.closest(EMO_SKIP))continue;const v=t.nodeValue;if(!v||!/\p{Extended_Pictographic}/u.test(v))continue;
     const nv=v.replace(EMO_RE,m=>/^\s/.test(m)?"":"");if(nv.trim()&&nv!==v)t.nodeValue=nv.replace(/^\s+/,v.match(/^\s*/)[0]);
     else if(!nv.trim()&&/\p{L}/u.test(el.textContent.replace(v,""))&&!t.parentElement.closest(".tic"))t.nodeValue=""}});
-  document.querySelectorAll("#tabs .tab .tic:not([data-ic])").forEach(ic=>{const k=(ic.closest("a")?.getAttribute("href")||"").slice(1);const d=TAB_IC[k];if(!d)return;ic.dataset.ic=k;ic.innerHTML=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`})}catch{}}
+  document.querySelectorAll("#tabs .tab .tic:not([data-ic])").forEach(ic=>{const a=ic.closest("a");const lb=(a?.querySelector(".tlb")?.textContent||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();const k={"inicio":"inicio","meus jogos":"saves","galera":"feed","tier list":"tierlist","dicas":"dicas","descobrir":"descobrir"}[lb]||(a?.getAttribute("href")||"").slice(1);const d=TAB_IC[k];if(!d)return;ic.dataset.ic=k;ic.innerHTML=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`})}catch{}}
 if(typeof MutationObserver!=="undefined"){let pend=false;const run=()=>{pend=false;emoStrip()};
   const mo=new MutationObserver(()=>{if(!pend){pend=true;requestAnimationFrame(run)}});
   const go=()=>{mo.observe(document.body,{childList:true,subtree:true});run()};
