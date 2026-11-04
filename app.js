@@ -3640,6 +3640,14 @@ gkCard=function(x,mine){const h=_gkCardV30(x,mine);if(!x||!x.c)return h;
 document.addEventListener("click",e=>{const el=e.target;if(!el||!el.matches||!el.matches('[data-act="bg"]'))return;
   if(!el.querySelector('input:not([type=hidden]),textarea,select'))return;e.stopImmediatePropagation();
   const d=el.firstElementChild;if(d){d.classList.remove("nudge");void d.offsetWidth;d.classList.add("nudge")}},true);
+/* v30: busca de jogo aceita palavra pela metade (Ragnar → Ragnarök) */
+const _wikiSearchV30=wikiSearch;
+wikiSearch=async function(q,signal){q=String(q||"").trim();
+  const last=q.split(/\s+/).pop()||"";const pre=/^[\p{L}\p{N}]{2,}$/u.test(last)?q+"*":null;
+  const [a,b]=await Promise.all([pre?_wikiSearchV30(pre,signal).catch(()=>[]):Promise.resolve([]),_wikiSearchV30(q,signal).catch(e=>{if(!pre)throw e;return []})]);
+  const seen=new Set(),out=[];for(const x of [...a,...b]){const k=x.wtitle||x.title;if(seen.has(k))continue;seen.add(k);out.push(x)}
+  const n=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();const qq=n(q);
+  out.sort((x,y)=>(n(y.title).startsWith(qq)-n(x.title).startsWith(qq)));return out.slice(0,8)};
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
