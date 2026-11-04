@@ -3632,6 +3632,10 @@ if(typeof MutationObserver!=="undefined"){let pend=false;const run=()=>{pend=fal
   const mo=new MutationObserver(()=>{if(!pend){pend=true;requestAnimationFrame(run)}});
   const go=()=>{mo.observe(document.body,{childList:true,subtree:true});run()};
   if(document.body)go();else document.addEventListener("DOMContentLoaded",go)}
+const _gkCardV30=gkCard;
+gkCard=function(x,mine){const h=_gkCardV30(x,mine);if(!x||!x.c)return h;
+  const full=`<p class="frev clamp">“${esc(x.c)}”</p>${x.c.length>150?`<button type="button" class="linkbtn bmore" data-act="bmore" aria-expanded="false">Ler mais</button>`:""}`;
+  return h.replace(/<p class="frev">[\s\S]*?<\/p>/,()=>full)};
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
