@@ -2800,6 +2800,233 @@ viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
     h=h.replace('Vale só para você.</div>','Vale só para você. No seu perfil, se tiver cenário, as cores do cenário aparecem no meio da página; o tema do site continua no topo e nas outras páginas.</div>')}
   return h};
 
+/* ================= v23: ÁREA GEEK — animes, mangás, filmes e séries ================= */
+// Dados: players/{uid}.media = {id:{t,k,st,nota,tier,c,img,ref,y,at}}  (cada um escreve só no próprio perfil)
+// Capas: AniList (animes e mangás), TVMaze (séries), Wikipédia (filmes e o que faltar).
+const GK_KINDS={anime:{l:"Anime",ic:"🎌",pl:"Animes"},manga:{l:"Mangá",ic:"📖",pl:"Mangás"},serie:{l:"Série",ic:"📺",pl:"Séries"},filme:{l:"Filme",ic:"🎬",pl:"Filmes"}};
+const GK_ST={assistindo:{l:"Assistindo",lm:"Lendo",v:"está assistindo",vm:"está lendo"},visto:{l:"Terminei",v:"terminou",vm:"terminou"},quero:{l:"Na fila",v:"colocou na fila",vm:"colocou na fila"},pausado:{l:"Pausado",v:"pausou",vm:"pausou"},dropado:{l:"Dropado",v:"dropou",vm:"dropou"}};
+const GK_TIERS=["S","A","B","C","D"];
+const GK_IMG_OK=/^https:\/\/(s4\.anilist\.co|img\.anili\.st|static\.tvmaze\.com|upload\.wikimedia\.org)\//;
+const gkImg = u => typeof u==="string"&&GK_IMG_OK.test(u)?u:"";
+const gkStL = (st,k) => (k==="manga"&&st==="assistindo")?GK_ST.assistindo.lm:(GK_ST[st]?.l||st);
+const gkKey = t => slug(String(t||""));
+if(!VIEWS.includes("geek"))VIEWS.push("geek");
+S.geekTab=S.geekTab||"tier";S.geekKind=S.geekKind||"";S.geekWho=S.geekWho||"";
+
+function mediaOf(pid){const p=players()[pid];const m=p&&typeof p.media==="object"&&p.media?p.media:{};
+  return Object.entries(m).filter(([,x])=>x&&x.t&&GK_KINDS[x.k]).map(([mid,x])=>({...x,mid,pid}))}
+function allMedia(){return Object.keys(players()).flatMap(mediaOf)}
+const gkPass = x => !S.geekKind||x.k===S.geekKind;
+
+/* ---------- capa ---------- */
+function gkPoster(x,cls=""){const u=gkImg(x.img);const ic=GK_KINDS[x.k]?.ic||"🎞️";
+  return `<span class="gkpost ${cls}">${u?`<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<span class="gkph" aria-hidden="true">${ic}</span></span>`}
+
+/* ---------- busca de capas ---------- */
+async function gkSearch(q,k){
+  q=String(q||"").trim();if(q.length<2)return [];
+  try{
+    if(k==="anime"||k==="manga"){
+      const r=await fetch("https://graphql.anilist.co",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+        body:JSON.stringify({query:"query($s:String,$t:MediaType){Page(perPage:8){media(search:$s,type:$t,isAdult:false){id title{romaji english} coverImage{large} seasonYear startDate{year} format}}}",variables:{s:q,t:k==="anime"?"ANIME":"MANGA"}})}).then(r=>r.json());
+      return (r?.data?.Page?.media||[]).map(m=>({t:m.title.english||m.title.romaji,t2:m.title.english&&m.title.romaji!==m.title.english?m.title.romaji:"",img:m.coverImage?.large||"",y:m.seasonYear||m.startDate?.year||null,ref:"al:"+m.id,extra:m.format||""}));
+    }
+    if(k==="serie"){
+      const r=await fetch("https://api.tvmaze.com/search/shows?q="+encodeURIComponent(q)).then(r=>r.json());
+      const out=(r||[]).slice(0,8).map(({show:s})=>({t:s.name,img:(s.image?.original||s.image?.medium||"").replace(/^http:/,"https:"),y:s.premiered?Number(s.premiered.slice(0,4)):null,ref:"tvm:"+s.id,extra:(s.network?.name||s.webChannel?.name||"")}));
+      if(out.length)return out;
+    }
+    const termo=q+(k==="filme"?" filme":k==="serie"?" série":"");
+    const u="https://pt.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(termo)+"&gsrlimit=8&prop=pageimages|description&piprop=thumbnail&pithumbsize=500&pilicense=any&format=json&origin=*";
+    const j=await fetch(u).then(r=>r.json());
+    let L=Object.values(j?.query?.pages||{}).sort((a,b)=>a.index-b.index).map(p=>({t:p.title.replace(/\s*\((filme|série|série de televisão)[^)]*\)\s*$/i,"").trim(),img:p.thumbnail?.source||"",y:Number((p.description||"").match(/\b(19|20)\d{2}\b/)?.[0])||null,ref:"wp:"+p.pageid,extra:p.description||""}));
+    if(k==="filme")L=L.filter(x=>/filme|longa|anima/i.test(x.extra)).concat(L.filter(x=>!/filme|longa|anima/i.test(x.extra)));
+    return L.slice(0,8);
+  }catch(e){return []}
+}
+
+/* ---------- página Geek ---------- */
+function geekTabs(){
+  const T=[["tier","🏆 Tier list"],["minha","⭐ Minha lista"],["galera","👥 Da galera"],["noticias","📰 Notícias"]];
+  const K=[["","Tudo"],...Object.entries(GK_KINDS).map(([k,o])=>[k,o.ic+" "+o.pl])];
+  return `<div class="gktabs" role="tablist">${T.map(([k,l])=>`<button role="tab" data-act="gktab" data-k="${k}" aria-selected="${S.geekTab===k}">${l}</button>`).join("")}</div>
+  ${S.geekTab!=="noticias"?`<div class="gkkinds">${K.map(([k,l])=>`<button class="chip2" data-act="gkkind" data-k="${k}" aria-pressed="${S.geekKind===k}">${l}</button>`).join("")}</div>`:""}`;
+}
+function viewGeek(){
+  const head=`<div class="tierhead gkhead"><div style="flex:1"><span class="eyebrow">Área geek</span><h3>Animes, mangás, filmes e séries</h3></div>${MINE()?`<button class="btn primary" data-act="gkadd">+ Adicionar</button>`:""}</div>`;
+  const body={tier:gkTier,minha:gkMinha,galera:gkGalera,noticias:gkNoticias}[S.geekTab]||gkTier;
+  return `<div class="page geek">${head}${geekTabs()}${body()}</div>`;
+}
+function gkTierRows(items,agg){
+  return GK_TIERS.map(t=>{const I=items.filter(x=>x.tier===t);
+    return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems gkrow">${I.length?I.map(x=>`<a class="gkchip" href="#midia-${esc(gkKey(x.t))}" title="${esc(x.t)}${agg?` · ${x.n} ${x.n===1?"voto":"votos"}`:""}">${gkPoster(x)}<span class="ct">${esc(x.t)}</span></a>`).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
+}
+function gkTier(){
+  const P=players();const mid=meId();
+  const ids=Object.keys(P).filter(id=>mediaOf(id).some(x=>x.tier));
+  if(!S.geekWho)S.geekWho=mid&&P[mid]?mid:"galera";
+  const others=ids.filter(id=>id!==mid);
+  const who=S.geekWho;
+  const pick=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
+    <button data-act="gkwho" data-id="galera" aria-pressed="${who==="galera"}">👥 Galera</button>
+    ${mid&&P[mid]?`<button data-act="gkwho" data-id="${esc(mid)}" aria-pressed="${who===mid}">${glyph(P[mid],true)} Minha</button>`:""}
+    ${others.length?`<label class="whosel${who!=="galera"&&who!==mid?" on":""}"><span class="sr-only">Tier list de outra pessoa</span><select id="gkwho-sel"><option value="">De outra pessoa (${others.length})…</option>${others.map(id=>`<option value="${esc(id)}" ${who===id?"selected":""}>${esc(P[id].nick)}</option>`).join("")}</select></label>`:""}</div>`;
+  let items,title,agg=false;
+  if(who==="galera"){agg=true;title="Tier list da galera";
+    const by={};for(const x of allMedia().filter(x=>x.tier&&gkPass(x))){const k=x.k+":"+gkKey(x.t);(by[k]=by[k]||{...x,sc:[],n:0}).sc.push(5-GK_TIERS.indexOf(x.tier));by[k].n++;if(!gkImg(by[k].img)&&gkImg(x.img))by[k].img=x.img}
+    items=Object.values(by).map(o=>{const m=o.sc.reduce((a,b)=>a+b,0)/o.sc.length;return {...o,tier:scoreTier(m),m}}).sort((a,b)=>b.m-a.m||b.n-a.n);
+  }else{const p=P[who];title=p?`Tier list de ${nk(p)}`:"Tier list";items=p?mediaOf(who).filter(x=>x.tier&&gkPass(x)).sort((a,b)=>(b.nota??-1)-(a.nota??-1)):[]}
+  const n=items.length;
+  return pick+`<div class="tierhead"><div><h3>${title}</h3><span class="hint">${n} ${n===1?"título":"títulos"}${S.geekKind?" · "+GK_KINDS[S.geekKind].pl.toLowerCase():""}${agg?" · média das notas de tier de todo mundo":""}</span></div></div>
+    <section class="box tierlist" aria-label="Tier list geek">${n?gkTierRows(items,agg):`<div class="trow"><div class="titems"><span class="empty-row">${who===mid?"Você ainda não deu tier para nenhum título. Toque em <b>+ Adicionar</b> e escolha o tier.":"Nada por aqui ainda."}</span></div></div>`}</section>`;
+}
+function gkCard(x,mine){
+  const st=GK_ST[x.st]?`<span class="pill gkst-${esc(x.st)}">${esc(gkStL(x.st,x.k))}</span>`:"";
+  return `<article class="gkcard">${gkPoster(x,"big")}<div class="gkinfo"><a href="#midia-${esc(gkKey(x.t))}"><b>${esc(x.t)}</b></a>
+    <div class="gkmeta"><span class="tag">${GK_KINDS[x.k].ic} ${GK_KINDS[x.k].l}</span>${x.y?`<span class="tag">${esc(x.y)}</span>`:""}${st}${x.tier?`<span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}</div>
+    ${typeof x.nota==="number"?`<div class="fstars">${starsHTML(x.nota)}</div>`:""}${x.c?`<p class="frev">“${esc(cap(x.c,160))}”</p>`:""}
+    ${mine?`<button class="btn small" data-act="gkedit" data-id="${esc(x.mid)}">Editar</button>`:""}</div></article>`;
+}
+function gkMinha(){
+  if(!MINE())return `<section class="box card"><p>Entre na sua conta para montar sua lista de animes, mangás, filmes e séries.</p></section>`;
+  const L=mediaOf(S.myId).filter(gkPass).sort((a,b)=>(b.at||0)-(a.at||0));
+  const grupos=["assistindo","visto","quero","pausado","dropado"].map(st=>[st,L.filter(x=>x.st===st)]).filter(([,a])=>a.length);
+  if(!L.length)return `<section class="box card gkempty"><span class="big">🍿</span><h3>Sua lista está vazia</h3><p>Adicione o anime que você está vendo, o último filme que assistiu ou a série que quer começar. A capa vem sozinha.</p><button class="btn primary" data-act="gkadd">+ Adicionar o primeiro</button></section>`;
+  return grupos.map(([st,a])=>`<section class="box card"><span class="eyebrow">${esc(GK_ST[st].l)} · ${a.length}</span><div class="gkgrid">${a.map(x=>gkCard(x,true)).join("")}</div></section>`).join("");
+}
+function gkGalera(){
+  const A=allMedia().filter(gkPass);const P=players();
+  if(!A.length)return `<section class="box card gkempty"><span class="big">🎌</span><h3>Ninguém adicionou nada ainda</h3><p>Seja o primeiro: adicione o que você está assistindo ou lendo.</p>${MINE()?'<button class="btn primary" data-act="gkadd">+ Adicionar</button>':""}</section>`;
+  const by={};for(const x of A){const k=x.k+":"+gkKey(x.t);const o=(by[k]=by[k]||{t:x.t,k:x.k,img:"",y:x.y,ps:[],notas:[]});o.ps.push(x.pid);if(typeof x.nota==="number")o.notas.push(x.nota);if(!gkImg(o.img)&&gkImg(x.img))o.img=x.img}
+  const top=Object.values(by).sort((a,b)=>b.ps.length-a.ps.length||(avg(b.notas)-avg(a.notas))).slice(0,12);
+  const recent=A.filter(x=>x.at).sort((a,b)=>b.at-a.at).slice(0,25);
+  return `<section class="box card"><span class="eyebrow">Mais vistos pela galera</span><div class="gktop">${top.map(o=>`<a class="gktopi" href="#midia-${esc(gkKey(o.t))}">${gkPoster(o)}<b>${esc(o.t)}</b><span class="hint">${o.ps.length} ${o.ps.length===1?"pessoa":"pessoas"}${o.notas.length?` · ★ ${fmtNota(avg(o.notas))}`:""}</span></a>`).join("")}</div></section>
+  <section class="box card"><span class="eyebrow">Atividade recente</span><div class="gkfeed">${recent.map(x=>{const p=P[x.pid];if(!p)return "";const v=x.k==="manga"?GK_ST[x.st]?.vm:GK_ST[x.st]?.v;
+    return `<div class="gkfi">${glyph(p,true)}<div><b>${nk(p)}</b> ${esc(v||"adicionou")} <a href="#midia-${esc(gkKey(x.t))}"><b>${esc(x.t)}</b></a> <span class="tag">${GK_KINDS[x.k].ic} ${GK_KINDS[x.k].l}</span>${typeof x.nota==="number"?` ${starsHTML(x.nota)}`:""}${x.c?`<p class="frev">“${esc(cap(x.c,200))}”</p>`:""}<span class="hint">${ago(x.at)}</span></div></div>`}).join("")}</div></section>`;
+}
+const avg = a => a.length?a.reduce((s,b)=>s+b,0)/a.length:0;
+function gkNews(){return (S.autoNews?.itens||[]).filter(n=>n.cat==="geek"&&safeUrl(n.url)&&n.title)}
+function gkNoticias(){
+  const L=gkNews();const srcs=[...new Set(L.map(n=>n.source).filter(Boolean))];if(S.gkSrc&&!srcs.includes(S.gkSrc))S.gkSrc="";
+  const F=L.filter(n=>!S.gkSrc||n.source===S.gkSrc).slice(0,40);
+  if(!L.length)return `<section class="box card"><p>As notícias geek chegam com o próximo giro do robô de notícias (a cada 3 horas).</p></section>`;
+  return `<div class="gkkinds">${["",...srcs].map(s=>`<button class="chip2" data-act="gksrc" data-k="${esc(s)}" aria-pressed="${(S.gkSrc||"")===s}">${esc(s||"Todas")}</button>`).join("")}</div>
+  <div class="gknews">${F.map(n=>`<a class="box gknw" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer">${n.img&&/^https:\/\//.test(n.img)?`<img src="${esc(n.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><span class="hint">${esc(n.source||"")} · ${ago(n.at)}</span><b>${esc(n.title)}</b>${n.summary?`<p>${esc(cap(n.summary,180))}</p>`:""}</div></a>`).join("")}</div>`;
+}
+
+/* ---------- página de um título ---------- */
+function viewMidia(){
+  const key=S.route;const L=allMedia().filter(x=>gkKey(x.t)===key);const P=players();
+  if(!L.length)return `<div class="page"><a class="btn small back" href="#geek">← Geek</a><section class="box card"><p>Título não encontrado.</p></section></div>`;
+  const base=L.find(x=>gkImg(x.img))||L[0];const notas=L.filter(x=>typeof x.nota==="number").map(x=>x.nota);
+  const mineHas=L.find(x=>x.pid===S.myId);
+  return `<div class="page"><a class="btn small back" href="#geek">← Geek</a>
+  <section class="box gkhero">${gkPoster(base,"huge")}<div><span class="eyebrow">${GK_KINDS[base.k].ic} ${GK_KINDS[base.k].l}${base.y?" · "+esc(base.y):""}</span><h2>${esc(base.t)}</h2>
+    <div class="gkmeta">${notas.length?`<span class="tag">★ ${fmtNota(avg(notas))} média da galera</span>`:""}<span class="tag">${L.length} ${L.length===1?"pessoa":"pessoas"}</span></div>
+    ${MINE()?(mineHas?`<button class="btn small" data-act="gkedit" data-id="${esc(mineHas.mid)}">Editar o meu</button>`:`<button class="btn small primary" data-act="gkaddthis" data-t="${esc(base.t)}" data-k="${esc(base.k)}" data-img="${esc(gkImg(base.img))}" data-y="${esc(base.y||"")}" data-ref="${esc(base.ref||"")}">+ Adicionar na minha lista</button>`):""}</div></section>
+  <section class="box card"><span class="eyebrow">Quem viu</span><div class="gkwho">${L.map(x=>{const p=P[x.pid];if(!p)return "";
+    return `<div class="gkfi">${glyph(p,true)}<div><b>${nk(p)}</b> <span class="pill gkst-${esc(x.st)}">${esc(gkStL(x.st,x.k))}</span>${x.tier?` <span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}${typeof x.nota==="number"?` ${starsHTML(x.nota)}`:""}${x.c?`<p class="frev">“${esc(x.c)}”</p>`:""}</div></div>`}).join("")}</div></section>
+  <section class="box card"><span class="eyebrow">Conversa</span>${miniThread("m~"+key,"O que você achou? (sem spoiler, hein)")}</section></div>`;
+}
+
+/* ---------- adicionar / editar ---------- */
+function gkOpen(mid,pre){
+  const x=mid?mediaOf(S.myId).find(m=>m.mid===mid):null;
+  M={type:"geek",mid:mid||null,k:x?.k||pre?.k||(S.geekKind||"anime"),t:x?.t||pre?.t||"",img:x?.img||pre?.img||"",y:x?.y||pre?.y||null,ref:x?.ref||pre?.ref||"",
+    st:x?.st||"assistindo",nota:typeof x?.nota==="number"?x.nota:null,tier:x?.tier||"",c:x?.c||"",res:[]};
+  gkDraw();setTimeout(()=>{const i=$("#gk-q");if(i&&!M.t)i.focus()},50);
+}
+function gkDraw(){
+  if(M?.type!=="geek")return;
+  const sel=M.t?`<div class="gksel">${gkPoster(M,"big")}<div><b>${esc(M.t)}</b>${M.y?`<span class="hint"> · ${esc(M.y)}</span>`:""}<br><button class="linkbtn" data-act="gkclear">trocar título</button></div></div>`:
+    `<label class="field full"><span class="flabel">Buscar título</span><input id="gk-q" placeholder="${M.k==="anime"?"Ex.: Frieren, One Piece":M.k==="manga"?"Ex.: Berserk, Chainsaw Man":M.k==="serie"?"Ex.: The Last of Us, Arcane":"Ex.: Duna, Interestelar"}" autocomplete="off" maxlength="80"></label>
+     <div class="gkres" id="gk-res">${(M.res||[]).map((r,i)=>`<button type="button" class="gkopt" data-act="gkpick" data-i="${i}">${gkPoster({...r,k:M.k})}<span><b>${esc(r.t)}</b>${r.t2?`<small>${esc(r.t2)}</small>`:""}<small>${[r.y,r.extra].filter(Boolean).map(esc).join(" · ")}</small></span></button>`).join("")}
+     ${M.busy?'<span class="hint">Buscando…</span>':""}${M.q&&!M.busy&&!M.res.length?`<button type="button" class="btn small" data-act="gkmanual">Usar “${esc(M.q)}” sem capa</button>`:""}</div>`;
+  $("#modal").innerHTML=overlay(`<h2>${M.mid?"Editar":"Adicionar"} na área geek</h2>
+    <div class="gkkinds">${Object.entries(GK_KINDS).map(([k,o])=>`<button type="button" class="chip2" data-act="gkk" data-k="${k}" aria-pressed="${M.k===k}">${o.ic} ${o.l}</button>`).join("")}</div>
+    ${sel}
+    <div class="gkform">
+      <label class="field"><span class="flabel">Status</span><select id="gk-st">${Object.entries(GK_ST).map(([k,o])=>`<option value="${k}"${M.st===k?" selected":""}>${esc(gkStL(k,M.k))}</option>`).join("")}</select></label>
+      <label class="field"><span class="flabel">Tier</span><select id="gk-tier"><option value="">Sem tier</option>${GK_TIERS.map(t=>`<option${M.tier===t?" selected":""}>${t}</option>`).join("")}</select></label>
+      <label class="field"><span class="flabel">Nota (0 a 10)</span><input id="gk-nota" type="number" min="0" max="10" step="0.5" inputmode="decimal" value="${M.nota??""}"></label>
+      <label class="field full"><span class="flabel">Comentário <span class="hint">(opcional, sem spoiler)</span></span><textarea id="gk-c" maxlength="400" rows="3">${esc(M.c)}</textarea></label>
+    </div>
+    <p class="err" id="gk-err" role="alert"></p>
+    <div class="actions">${M.mid?`<button class="btn danger" data-act="gkdel">Remover</button>`:""}<button class="btn" data-act="close">Cancelar</button><button class="btn primary" data-act="gksave"${M.t?"":" disabled"}>Salvar</button></div>`,"gkbox");
+  const q=$("#gk-q");if(q&&M.q){q.value=M.q}
+}
+function gkReadForm(){const st=$("#gk-st"),ti=$("#gk-tier"),no=$("#gk-nota"),c=$("#gk-c");
+  if(st)M.st=st.value;if(ti)M.tier=ti.value;if(no){const v=no.value.trim();M.nota=v===""?null:Math.max(0,Math.min(10,Math.round(Number(v)*2)/2))}if(c)M.c=c.value}
+let _gkT=null;
+document.addEventListener("input",e=>{if(e.target.id!=="gk-q"||M?.type!=="geek")return;const q=e.target.value;M.q=q;clearTimeout(_gkT);
+  _gkT=setTimeout(async()=>{if(M?.type!=="geek"||M.q!==q)return;gkReadForm();M.busy=true;const r0=$("#gk-res");if(r0)r0.innerHTML='<span class="hint">Buscando…</span>';
+    const res=await gkSearch(q,M.k);if(M?.type!=="geek"||M.q!==q)return;M.busy=false;M.res=res;
+    const box=$("#gk-res");if(box){gkDraw();const i=$("#gk-q");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}}},450)});
+document.addEventListener("click",async e=>{
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;if(!a.startsWith("gk"))return;
+  e.stopImmediatePropagation();
+  if(a==="gktab"){S.geekTab=el.dataset.k;renderView();return}
+  if(a==="gkkind"){S.geekKind=el.dataset.k;renderView();return}
+  if(a==="gkwho"){S.geekWho=el.dataset.id;if(el.closest(".gkprof")){S.geekTab="tier";return}renderView();return}
+  if(a==="gksrc"){S.gkSrc=el.dataset.k;renderView();return}
+  if(a==="gkadd"){if(!MINE()){toast("Entre na sua conta para adicionar");return}gkOpen(null);return}
+  if(a==="gkaddthis"){gkOpen(null,{t:el.dataset.t,k:el.dataset.k,img:el.dataset.img,y:Number(el.dataset.y)||null,ref:el.dataset.ref});return}
+  if(a==="gkedit"){gkOpen(el.dataset.id);return}
+  if(M?.type!=="geek")return;
+  if(a==="gkk"){gkReadForm();M.k=el.dataset.k;if(!M.mid){M.t="";M.img="";M.res=[];M.y=null;M.ref=""}gkDraw();const q=$("#gk-q");if(q&&M.q){q.dispatchEvent(new Event("input",{bubbles:true}))}return}
+  if(a==="gkpick"){gkReadForm();const r=M.res[Number(el.dataset.i)];if(!r)return;Object.assign(M,{t:r.t,img:gkImg(r.img),y:r.y||null,ref:r.ref||""});gkDraw();return}
+  if(a==="gkmanual"){gkReadForm();M.t=String(M.q||"").trim().slice(0,90);M.img="";gkDraw();return}
+  if(a==="gkclear"){gkReadForm();M.t="";M.img="";M.res=[];gkDraw();return}
+  if(a==="gkdel"){const mid=M.mid;try{await saveMe(p=>{if(p.media)delete p.media[mid]},{noDay:true});closeModal();renderAll();toast("Removido da sua lista")}catch(err){$("#gk-err").textContent=errMsg(err)}return}
+  if(a==="gksave"){gkReadForm();if(!M.t){$("#gk-err").textContent="Escolha um título.";return}
+    const L=mediaOf(S.myId);const dup=L.find(x=>x.mid!==M.mid&&x.k===M.k&&gkKey(x.t)===gkKey(M.t));if(dup){$("#gk-err").textContent="Esse título já está na sua lista. Edite o que já existe.";return}
+    if(!M.mid&&L.length>=400){$("#gk-err").textContent="Limite de 400 títulos na lista.";return}
+    const mid=M.mid||newId("m");const it={t:M.t.slice(0,90),k:M.k,st:M.st,at:Date.now()};
+    if(gkImg(M.img))it.img=M.img;if(M.y)it.y=Number(M.y)||null;if(M.ref)it.ref=String(M.ref).slice(0,30);if(typeof M.nota==="number"&&!isNaN(M.nota))it.nota=M.nota;if(M.tier)it.tier=M.tier;if(M.c.trim())it.c=M.c.trim().slice(0,400);
+    el.disabled=true;
+    const editando=!!M.mid;try{await saveMe(p=>{p.media=(p.media&&typeof p.media==="object")?p.media:{};p.media[mid]=it});closeModal();renderAll();toast(editando?"Atualizado":"Adicionado à sua lista 🍿")}
+    catch(err){el.disabled=false;const E=$("#gk-err");if(E)E.textContent=errMsg(err)}
+    return}
+},true);
+document.addEventListener("change",e=>{if(e.target.id==="gkwho-sel"&&e.target.value){S.geekWho=e.target.value;renderView()}});
+
+/* ---------- rotas e navegação ---------- */
+{const g=NAV.find(n=>n.k==="descobrir");if(g){if(!g.v.includes("geek"))g.v.splice(1,0,"geek");g.extra=[...(g.extra||[]),"midia"]}}
+SUBN.geek="🎌 Geek";
+const _routeGk=route;
+route=function(h){
+  h=(h??location.hash.slice(1))||"";try{h=decodeURIComponent(h)}catch{}
+  if(h.startsWith("midia-")){S.view="midia";S.route=h.slice(6);if(M)closeModal();renderAll();try{window.scrollTo({top:0})}catch{};return}
+  return _routeGk(h);
+};
+const _renderViewGk=renderView;
+renderView=function(){
+  if(S.view==="geek"||S.view==="midia"){const V=$("#view");if(S.mode==="loading"||!Object.keys(players()).length)return _renderViewGk.apply(this,arguments);
+    const focused=document.activeElement?.id;const keep={};V.querySelectorAll("input[id],textarea[id]").forEach(el=>{if(el.value)keep[el.id]=el.value});
+    V.innerHTML=S.view==="geek"?viewGeek():viewMidia();
+    for(const [id,v] of Object.entries(keep)){const el=document.getElementById(id);if(el&&!el.value)el.value=v}
+    if(focused){const el=document.getElementById(focused);if(el)el.focus({preventScroll:true})}
+    try{document.documentElement.removeAttribute("data-psc")}catch{}
+    try{addEditButtons()}catch{}
+    return}
+  return _renderViewGk.apply(this,arguments);
+};
+// notícias geek ficam fora da página de novidades de games
+const _autoNewsGk=autoNews;
+autoNews=function(){return _autoNewsGk().filter(n=>n.cat!=="geek")};
+
+/* ---------- XP: um pouco, sem desequilibrar (no máximo 400) ---------- */
+const _xpOfGk=xpOf;
+xpOf=function(pid){let g=0;for(const x of mediaOf(pid)){g+=3;if(x.st==="visto")g+=5;if(x.c)g+=5;if(x.tier)g+=2}return _xpOfGk(pid)+Math.min(400,g)};
+
+/* ---------- perfil: vitrine geek ---------- */
+const _viewPerfilGk=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilGk.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;
+  const L=mediaOf(pid).sort((a,b)=>(b.at||0)-(a.at||0));if(!L.length&&pid!==S.myId)return h;
+  const box=`<section class="box card gkprof"><div class="gkph2"><span class="eyebrow">🎌 Área geek</span><a class="linkbtn" href="#geek" data-act="gkwho" data-id="${esc(pid)}">ver tier list</a></div>
+    ${L.length?`<div class="gktop">${L.slice(0,8).map(x=>`<a class="gktopi" href="#midia-${esc(gkKey(x.t))}">${gkPoster(x)}<b>${esc(x.t)}</b><span class="hint">${esc(gkStL(x.st,x.k))}${x.tier?" · "+esc(x.tier):""}</span></a>`).join("")}</div>`:`<p class="hint">Você ainda não adicionou animes, filmes ou séries. <a href="#geek">Abrir a área geek</a></p>`}</section>`;
+  const i=h.lastIndexOf("</div>");return i>0?h.slice(0,i)+box+h.slice(i):h+box};
+
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
 function queue(fn){const p=chain.then(fn,fn);chain=p.catch(()=>{});return p}
