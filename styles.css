@@ -1374,3 +1374,24 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .gktp .tb{width:46px;height:40px;font-family:var(--f-display);font-size:20px;border-radius:10px;border:2px solid var(--line);color:var(--on-pill);cursor:pointer;opacity:.55}
 .gktp .tb[aria-pressed="true"]{opacity:1;transform:translateY(-2px);box-shadow:0 4px 0 var(--shade);outline:2px solid var(--ink)}
 .gktp .t-S{background:var(--tS)}.gktp .t-A{background:var(--tA)}.gktp .t-B{background:var(--tB)}.gktp .t-C{background:var(--tC)}.gktp .t-D{background:var(--tD)}
+
+/* v27 — Meu PC */
+.pcico{width:54px;height:54px;flex:none;color:var(--ink);padding:6px;border-radius:12px;background:color-mix(in srgb,var(--pcc,var(--accent)) 16%,var(--surface2));border:1.5px solid color-mix(in srgb,var(--pcc,var(--accent)) 55%,var(--line))}
+.pcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-top:10px}
+.pcslot{display:flex;gap:10px;align-items:center;padding:8px;border-radius:12px;background:var(--surface2);border:1.5px solid var(--line);min-width:0;border-left:4px solid var(--pcc,var(--accent))}
+.pcslot>div{display:flex;flex-direction:column;min-width:0}
+.pcslot.vazio{opacity:.55}
+.pcl{font:600 10.5px/1.2 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.pcl b{color:var(--pcc);font-weight:800}
+.pcv{font-weight:700;font-size:14px;line-height:1.25;overflow-wrap:anywhere}
+.pcmodal{max-width:640px}
+.pcform{display:flex;flex-direction:column;gap:10px}
+.pcf{position:relative;display:flex;gap:10px;align-items:flex-end}
+.pcf .field{flex:1;min-width:0;margin:0}
+.pcf input{width:100%}
+.pclist{position:absolute;left:54px;right:0;top:100%;z-index:30;margin-top:4px;max-height:280px;overflow:auto;background:var(--surface);border:2px solid var(--line);border-radius:12px;box-shadow:4px 6px 0 var(--shade);padding:4px}
+.pco{display:flex;gap:8px;align-items:center;width:100%;text-align:left;font:inherit;font-size:14px;padding:8px 10px;border:0;border-radius:8px;background:transparent;color:var(--ink);cursor:pointer}
+.pco:hover,.pco.hi{background:color-mix(in srgb,var(--accent) 16%,var(--surface2))}
+.pcb{flex:none;font:700 10px/1 var(--f-mono);padding:3px 6px;border-radius:999px;color:#fff;background:var(--pcc);text-transform:uppercase;letter-spacing:.04em}
+.pcown{font-size:12px;color:var(--muted);padding:6px 10px}
+@media (max-width:560px){.pcgrid{grid-template-columns:1fr}.pcf .pcico{width:36px;height:36px}.pclist{left:0}}
