@@ -1328,3 +1328,10 @@ html:root[data-psc="sc-campeao"] body{background-color:#120e04;background-image:
 .gkprof .chip2 b{margin-left:4px;opacity:.75}
 .gkprof .gktop{margin:0 0 10px}
 @media (max-width:560px){.angrid{grid-template-columns:1fr}.tlcats button{padding:9px 13px;font-size:13px}}
+
+/* v25 — perfil organizado: personalização num quadro largo com abas */
+.perso .gktabs{margin:8px 0 12px}
+.perso .persopane>.sub{margin-top:0}
+.perso .scgrid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.perso .skins{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+.gkprof .gktop{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}
