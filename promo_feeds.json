@@ -1,12 +1,4 @@
 {
-  "_ajuda": "Sites de promoção (RSS) que o robô lê. Ele separa sozinho em PC, console, grátis e hardware e ignora o que não for de games ou PC. Para tirar um site, apague o bloco dele.",
-  "fontes": [
-    {"nome": "Hardmob", "url": "https://www.hardmob.com.br/external.php?type=RSS2&forumids=407"},
-    {"nome": "Pelando", "url": "https://www.pelando.com.br/api/feeds/deals?type=hot"},
-    {"nome": "Promobit", "url": "https://www.promobit.com.br/blog/feed/"},
-    {"nome": "Oferta Esperta", "url": "https://www.ofertaesperta.com/feed/"},
-    {"nome": "Deku Deals", "url": "https://www.dekudeals.com/hottest.rss?country=br", "classe": "console"},
-    {"nome": "Xbox Wire · ofertas", "url": "https://news.xbox.com/pt-br/tag/deals-with-gold/feed/", "classe": "console"},
-    {"nome": "PlayStation Blog · ofertas", "url": "https://blog.br.playstation.com/tag/playstation-store/feed/", "classe": "console"}
-  ]
+  "_ajuda": "Sites extras de promoção em RSS (opcional). As lojas principais (Steam, Nuuvem, PlayStation, Nintendo, Xbox, Epic, KaBuM! e Promobit) já estão no robô scripts/promos.py. Para pôr um site aqui: {\"nome\": \"Site\", \"url\": \"https://.../feed\", \"classe\": \"pc|console|gratis|hardware\" (opcional)}.",
+  "fontes": []
 }

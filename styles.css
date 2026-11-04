@@ -741,3 +741,4 @@ button.key{cursor:pointer}
 .pcard .pimg.noimg{display:none}
 .pcard .poff{position:static;align-self:center;font-size:14px}
 .pcard{align-items:stretch}.pcard .pbody{align-self:stretch;width:auto;text-align:left}
+.pfilt{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}

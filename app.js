@@ -1719,27 +1719,32 @@ const PROMO_SITES={
   pc:[["Steam · ofertas","https://store.steampowered.com/specials"],["Epic Games","https://store.epicgames.com/pt-BR/"],["GOG · promoções","https://www.gog.com/pt/games?discounted=true"],["Nuuvem","https://www.nuuvem.com/br-pt/"],["GG.deals","https://gg.deals/br/deals/"],["IsThereAnyDeal","https://isthereanydeal.com/"]],
   console:[["PlayStation Store","https://store.playstation.com/pt-br/pages/deals"],["Xbox · ofertas","https://www.xbox.com/pt-BR/promotions/sales/sales-and-specials"],["Nintendo eShop","https://www.nintendo.com/pt-br/store/sales-and-deals/"],["PSPrices","https://psprices.com/region-br/"],["Deku Deals","https://www.dekudeals.com/?country=br"]],
   gratis:[["Epic · grátis da semana","https://store.epicgames.com/pt-BR/free-games"],["GamerPower","https://www.gamerpower.com/"],["Prime Gaming","https://gaming.amazon.com/"],["Steam · grátis","https://store.steampowered.com/genre/Free%20to%20Play/"]],
-  hardware:[["Pelando","https://www.pelando.com.br/"],["Promobit","https://www.promobit.com.br/"],["Hardmob · promoções","https://www.hardmob.com.br/forums/407-Promocoes"],["KaBuM! · ofertas","https://www.kabum.com.br/ofertas"],["Terabyte","https://www.terabyteshop.com.br/promocoes"],["Pichau","https://www.pichau.com.br/"],["Zoom · histórico de preço","https://www.zoom.com.br/"]]
+  hardware:[["Amazon · ofertas","https://www.amazon.com.br/deals"],["Mercado Livre · ofertas","https://www.mercadolivre.com.br/ofertas"],["Pichau","https://www.pichau.com.br/"],["Terabyte","https://www.terabyteshop.com.br/promocoes"],["KaBuM! · ofertas","https://www.kabum.com.br/ofertas"],["Pelando","https://www.pelando.com.br/"],["Promobit","https://www.promobit.com.br/"],["Hardmob · promoções","https://www.hardmob.com.br/forums/407-Promocoes"],["Zoom · histórico de preço","https://www.zoom.com.br/"]]
 };
 function promoList(){return S.mode==="demo"?[]:(S.promos?.itens||[]).filter(p=>safeUrl(p.u)&&p.t&&PROMO_CLS.some(c=>c[0]===p.cls))}
 function promoCard(p){const url=safeUrl(p.u),img=safeUrl(p.img||"");
   const fim=p.ate?Math.ceil((p.ate-Date.now())/86400000):null;
   return `<article class="box pcard">${img?`<a class="pimg" href="${esc(url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('noimg');this.remove()"></a>`:""}
-    <div class="pbody"><span class="eyebrow">${esc(p.src||hostOf(url))}${p.plat?` · ${esc(p.plat)}`:""}</span><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(p.t)}</a></h3>
+    <div class="pbody"><span class="eyebrow">${esc(p.src||hostOf(url))}${p.plat?` · ${esc(p.plat)}`:""}${p.via?` · via ${esc(p.via)}`:""}</span><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(p.t)}</a></h3>
       <div class="pprice">${p.pct&&p.pct<100?`<span class="poff">-${esc(p.pct)}%</span>`:""}${p.preco?`<b>${esc(p.preco)}</b>`:""}${p.de&&p.de!==p.preco?`<s>${esc(p.de)}</s>`:""}</div>
       <div class="nmeta"><span class="hint">${fim!==null&&fim>=0?(fim<=1?"acaba hoje":`até ${fim} dias`):ago(p.at)}</span><a class="linkbtn" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Ver oferta ↗</a></div></div></article>`}
 function viewPromocoes(){
   const A=promoList();const cls=S.promoCls||"";
-  const AF=A.filter(p=>!cls||p.cls===cls);
+  const AC=A.filter(p=>!cls||p.cls===cls);
+  const lojas=[...new Set(AC.map(p=>p.src).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt"));
+  if(S.promoLoja&&!lojas.includes(S.promoLoja))S.promoLoja="";
+  const AF=AC.filter(p=>!S.promoLoja||p.src===S.promoLoja);
   const cnt=k=>A.filter(p=>p.cls===k).length;
   const upd=S.promos?.atualizadoEm;
   const sites=(cls?[PROMO_CLS.find(c=>c[0]===cls)]:PROMO_CLS).map(([k,n])=>`<div class="psites"><h4>${esc(n)}</h4><div class="ptags">${PROMO_SITES[k].map(([nm,u])=>`<a class="tag" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(nm)} ↗</a>`).join("")}</div></div>`).join("");
   return `<div class="page"><div class="tierhead"><div style="flex:1"><span class="eyebrow">Promoções</span><h3>Ofertas da semana</h3>${upd?`<span class="hint">atualizado há ${ago(upd)}</span>`:""}</div></div>
     <div class="tierpick" role="group" aria-label="Tipo de promoção"><button data-act="promocls" data-id="" aria-pressed="${!cls}">Todas</button>${PROMO_CLS.map(([k,n])=>`<button data-act="promocls" data-id="${k}" aria-pressed="${cls===k}">${esc(n)}${cnt(k)?` <span class="tabn">${cnt(k)}</span>`:""}</button>`).join("")}</div>
+    ${lojas.length>1?`<div class="pfilt"><label class="whosel${S.promoLoja?" on":""}"><span class="sr-only">Filtrar por loja</span><select id="promoloja-sel"><option value="">Todas as lojas (${lojas.length})</option>${lojas.map(l=>`<option value="${esc(l)}"${S.promoLoja===l?" selected":""}>${esc(l)}</option>`).join("")}</select></label><span class="hint">${AF.length} oferta${AF.length===1?"":"s"}</span></div>`:""}
     ${AF.length?`<div class="pgrid">${AF.map(promoCard).join("")}</div>`:`<p class="hint">${S.mode==="demo"?"No modo exemplo as promoções não aparecem.":"Nenhuma promoção nessa categoria agora."}</p>`}
     <section class="sec"><h4>Onde procurar</h4><div class="psitegrid">${sites}</div></section></div>`;
 }
 document.addEventListener("click",e=>{const el=e.target.closest('[data-act="promocls"]');if(!el)return;S.promoCls=el.dataset.id;renderView()});
+document.addEventListener("change",e=>{if(e.target.id==="promoloja-sel"){S.promoLoja=e.target.value;renderView()}});
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
