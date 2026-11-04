@@ -17,6 +17,11 @@ UA = "ZeradosDaGalera-NewsBot/1.0 (+https://zeradosdagalera.com.br/)"
 MAX_ITENS = 80
 POR_FONTE = 15
 TRECHO = 180
+PALAVRAS_GEEK = re.compile(
+    r"\b(anime|animes|mang[aá]s?|crunchyroll|otaku|cosplay|filmes?|s[ée]ries?|cinema|bilheteria|trailer|netflix|prime video|disney\+?|hbo|max|marvel|dc|star wars|pixar|ghibli|temporada|epis[óo]dio|estreia|streaming|quadrinhos|hq)\b",
+    re.IGNORECASE)
+MAX_GEEK = 60
+
 PALAVRAS_GAMES = re.compile(
     r"\b(game|games|jogo|jogos|gamer|playstation|ps5|ps4|xbox|nintendo|switch|steam|"
     r"console|consoles|rpg|fps|dlc|trailer|lançamento|esports?|zelda|mario|pokémon|pokemon)\b",
@@ -109,8 +114,12 @@ def ler_fonte(fonte):
     for i in itens:
         if not i["title"] or not i["url"]:
             continue
-        if fonte.get("filtrar") and not PALAVRAS_GAMES.search(i["title"] + " " + i["summary"]):
+        texto = i["title"] + " " + i["summary"]
+        geek = fonte.get("cat") == "geek"
+        if fonte.get("filtrar") and not (PALAVRAS_GEEK if geek else PALAVRAS_GAMES).search(texto):
             continue
+        if geek:
+            i["cat"] = "geek"
         i["source"] = fonte["nome"][:40]
         i["title"] = i["title"][:160]
         bons.append(i)
@@ -137,7 +146,9 @@ def main():
         vistos.add(i["url"])
         i["at"] = i["at"] or agora
         unicos.append(i)
-    saida = {"atualizadoEm": agora, "fontes": relatorio, "itens": unicos[:MAX_ITENS]}
+    games = [i for i in unicos if i.get("cat") != "geek"][:MAX_ITENS]
+    geek = [i for i in unicos if i.get("cat") == "geek"][:MAX_GEEK]
+    saida = {"atualizadoEm": agora, "fontes": relatorio, "itens": sorted(games + geek, key=lambda x: x["at"] or 0, reverse=True)}
     if not unicos:
         print("Nenhuma notícia lida; mantendo o news.json anterior.")
         return
