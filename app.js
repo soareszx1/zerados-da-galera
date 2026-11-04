@@ -3061,7 +3061,7 @@ function gkDraw(){
       <label class="field"><span class="flabel">Status</span><select id="gk-st">${Object.keys(GK_ST).map(k=>`<option value="${k}"${M.st===k?" selected":""}>${esc(gkStL(k,M.k))}</option>`).join("")}</select></label>
       <div class="field gktierf"><span class="flabel">Tier</span><input type="hidden" id="gk-tier" value="${esc(M.tier)}"><div class="pick gktp">${GK_TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="gktp" data-t="${t}" aria-pressed="${M.tier===t}" aria-label="Tier ${t}">${t}</button>`).join("")}</div></div>
       <label class="field"><span class="flabel">Nota (0 a 10)</span><input id="gk-nota" type="number" min="0" max="10" step="0.5" inputmode="decimal" value="${M.nota??""}"></label>
-      <label class="field full"><span class="flabel">Comentário <span class="hint">(opcional, sem spoiler)</span></span><textarea id="gk-c" maxlength="400" rows="3">${esc(M.c)}</textarea></label>
+      <label class="field full"><span class="flabel">Comentário <span class="hint">(opcional, sem spoiler)</span></span><textarea id="gk-c" maxlength="1200" rows="5">${esc(M.c)}</textarea></label>
     </div>
     <p class="err" id="gk-err" role="alert"></p>
     <div class="actions">${M.mid?`<button class="btn danger" data-act="gkdel">Remover</button>`:""}<button class="btn" data-act="close">Cancelar</button><button class="btn primary" data-act="gksave"${M.t?"":" disabled"}>Salvar</button></div>`,"gkbox");
@@ -3115,7 +3115,7 @@ document.addEventListener("click",async e=>{
     const L=mediaOf(S.myId);const dup=L.find(x=>x.mid!==M.mid&&x.k===M.k&&gkKey(x.t)===gkKey(M.t));if(dup){$("#gk-err").textContent="Esse título já está na sua lista. Edite o que já existe.";return}
     if(!M.mid&&L.length>=400){$("#gk-err").textContent="Limite de 400 títulos.";return}
     const mid=M.mid||newId("m");const it={t:M.t.slice(0,90),k:M.k,st:M.st,at:Date.now()};
-    if(gkImg(M.img))it.img=M.img;if(M.y)it.y=Number(M.y)||null;if(M.ref)it.ref=String(M.ref).slice(0,30);if(typeof M.nota==="number"&&!isNaN(M.nota))it.nota=M.nota;if(M.tier)it.tier=M.tier;if(M.c.trim())it.c=M.c.trim().slice(0,400);
+    if(gkImg(M.img))it.img=M.img;if(M.y)it.y=Number(M.y)||null;if(M.ref)it.ref=String(M.ref).slice(0,30);if(typeof M.nota==="number"&&!isNaN(M.nota))it.nota=M.nota;if(M.tier)it.tier=M.tier;if(M.c.trim())it.c=M.c.trim().slice(0,1200);
     const editando=!!M.mid,kind=M.k;el.disabled=true;
     try{await saveMe(p=>{p.media=(p.media&&typeof p.media==="object")?p.media:{};p.media[mid]=it});closeModal();S.profKind[S.myId]=kind;renderAll();toast(editando?"Atualizado":`Adicionado! Já está no seu perfil e na sua tier list de ${GK_KINDS[kind].pl.toLowerCase()} 🍿`)}
     catch(err){el.disabled=false;const E=$("#gk-err");if(E)E.textContent=errMsg(err)}
