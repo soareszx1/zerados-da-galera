@@ -3550,8 +3550,11 @@ function convidadosDe(pid){return Object.entries(players()).filter(([id,p])=>id!
 function shareInvite(){const m=me();if(!m)return;const url=`${SITE_URL}?convite=${pslug(m)}`;
   shareSheet({title:"Convidar a galera",file:"convite",text:`Bora registrar nossos jogos zerados, tier lists, animes e setup juntos? Entra pelo meu convite que nós dois ganhamos +${CONV_XP} XP 🎮`,url,
     render:async(W,H)=>{const f=await frame(W,H,{title:`${m.nick} te chamou pro Zerados da Galera`,sub:"Jogos zerados, tier lists, animes, setup, missões e ranking da galera",c2:m.color||"#FF3B6B",cta:`Entra pelo convite: +${CONV_XP} XP 👉`,titleSize:70});const {x}=f;
-      let y=f.y+30;const items=["🎮 Sua estante de jogos","🏆 Tier lists de jogos e animes","🔥 Missões, níveis e temporadas","🖥️ Seu setup no perfil","💬 Chat e fórum da galera"];
-      x.font=`700 ${H>1500?48:40}px Rubik, sans-serif`;x.fillStyle="#fff";for(const t of items){if(y>f.bottom-40)break;x.fillText(t,100,y);y+=H>1500?96:72}return f.cv}})}
+      let y=f.y+20;const big=H>1500;
+      if(big){const R=130;const av=await cvImg(avatarSrc(m));x.save();x.beginPath();x.arc(W/2,y+R,R,0,Math.PI*2);x.closePath();if(av){x.clip();x.drawImage(av,W/2-R,y,R*2,R*2)}else{x.fillStyle=m.color||"#FF3B6B";x.fill()}x.restore();
+        x.strokeStyle="#FFD23F";x.lineWidth=8;x.beginPath();x.arc(W/2,y+R,R+5,0,Math.PI*2);x.stroke();y+=R*2+70}
+      const items=["🎮 Sua estante de jogos","🏆 Tier lists de jogos e animes","🔥 Missões, níveis e temporadas","🖥️ Seu setup no perfil","💬 Chat e fórum da galera"];
+      const bh=big?96:70;for(const t of items){if(y+bh>f.bottom)break;x.fillStyle="rgba(255,255,255,.08)";rr(x,80,y,W-160,bh-16,18);x.fill();x.fillStyle="#fff";x.font=`700 ${big?46:38}px Rubik, sans-serif`;x.fillText(t,110,y+(bh-16)/2+15);y+=bh}return f.cv}})}
 // quem entrou pelo link: marca "convidado por" uma vez, só em conta nova
 let _convTry=false;
 function convCheck(){if(_convTry||!MINE())return;let c=null;try{c=localStorage.getItem("zg-conv")}catch{}if(!c)return;const m=me();if(!m)return;
