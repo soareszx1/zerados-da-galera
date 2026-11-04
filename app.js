@@ -3636,6 +3636,10 @@ const _gkCardV30=gkCard;
 gkCard=function(x,mine){const h=_gkCardV30(x,mine);if(!x||!x.c)return h;
   const full=`<p class="frev clamp">“${esc(x.c)}”</p>${x.c.length>150?`<button type="button" class="linkbtn bmore" data-act="bmore" aria-expanded="false">Ler mais</button>`:""}`;
   return h.replace(/<p class="frev">[\s\S]*?<\/p>/,()=>full)};
+/* v30: formulário não fecha ao clicar fora */
+document.addEventListener("click",e=>{const el=e.target;if(!el||!el.matches||!el.matches('[data-act="bg"]'))return;
+  if(!el.querySelector('input:not([type=hidden]),textarea,select'))return;e.stopImmediatePropagation();
+  const d=el.firstElementChild;if(d){d.classList.remove("nudge");void d.offsetWidth;d.classList.add("nudge")}},true);
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
