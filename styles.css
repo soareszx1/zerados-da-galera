@@ -1330,3 +1330,8 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .gkchip .ct{font-size:12px;font-weight:600}
 .tierhead>.btn{margin-left:auto}
 @media (max-width:560px){.gkchip,.gkchip .gkpost{width:76px}.gkcard .gkpost{width:84px}}
+.tab .tic svg{display:block}
+.gkinfo .frev{-webkit-line-clamp:unset;display:block}
+.gkinfo .frev.clamp{display:-webkit-box;-webkit-line-clamp:5}
+.gkinfo .frev.clamp.open{display:block}
+.gkinfo .bmore{margin-top:-2px}
