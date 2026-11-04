@@ -1045,3 +1045,65 @@ h2 .bmini{min-width:26px;height:26px;font-size:13px}
 .daysep::before,.daysep::after{content:"";flex:1;height:1px;background:var(--line)}
 @media (hover:none){.msg .mtools{opacity:1;position:static;background:none;border:0;padding:0;margin-left:auto}.msg .mtime{opacity:1}}
 .mnick{color:var(--ink)}
+
+/* v19: temas do site completos (escuro com cores próprias; no claro muda só o destaque) */
+html:root[data-skin="meianoite"]{--accent:#4CC9F0;--accent2:#7B8CFF}
+@media (prefers-color-scheme:dark){html:root[data-skin="meianoite"]:not([data-theme="light"]){--bg:#0d1220;--surface:#151d33;--surface2:#1c2642;--line:#2e3c66;--accent:#4CC9F0;--accent2:#7B8CFF;color-scheme:dark}}
+html:root[data-skin="meianoite"][data-theme="dark"]{--bg:#0d1220;--surface:#151d33;--surface2:#1c2642;--line:#2e3c66;--accent:#4CC9F0;--accent2:#7B8CFF;color-scheme:dark}
+html:root[data-skin="sakura"]{--accent:#FF8FB1;--accent2:#FFC2D1}
+@media (prefers-color-scheme:dark){html:root[data-skin="sakura"]:not([data-theme="light"]){--bg:#1a0f15;--surface:#2a1822;--surface2:#33202b;--line:#5c3a4c;--accent:#FF8FB1;--accent2:#FFC2D1;color-scheme:dark}}
+html:root[data-skin="sakura"][data-theme="dark"]{--bg:#1a0f15;--surface:#2a1822;--surface2:#33202b;--line:#5c3a4c;--accent:#FF8FB1;--accent2:#FFC2D1;color-scheme:dark}
+html:root[data-skin="floresta"]{--accent:#3DDC97;--accent2:#E9B400}
+@media (prefers-color-scheme:dark){html:root[data-skin="floresta"]:not([data-theme="light"]){--bg:#0f1712;--surface:#17231b;--surface2:#1e2e23;--line:#2f4a37;--accent:#3DDC97;--accent2:#E9B400;color-scheme:dark}}
+html:root[data-skin="floresta"][data-theme="dark"]{--bg:#0f1712;--surface:#17231b;--surface2:#1e2e23;--line:#2f4a37;--accent:#3DDC97;--accent2:#E9B400;color-scheme:dark}
+html:root[data-skin="oceano"]{--accent:#00B4D8;--accent2:#90E0EF}
+@media (prefers-color-scheme:dark){html:root[data-skin="oceano"]:not([data-theme="light"]){--bg:#08161c;--surface:#0f2430;--surface2:#14303f;--line:#21485c;--accent:#00B4D8;--accent2:#90E0EF;color-scheme:dark}}
+html:root[data-skin="oceano"][data-theme="dark"]{--bg:#08161c;--surface:#0f2430;--surface2:#14303f;--line:#21485c;--accent:#00B4D8;--accent2:#90E0EF;color-scheme:dark}
+html:root[data-skin="souls"]{--accent:#E5383B;--accent2:#FFB703}
+@media (prefers-color-scheme:dark){html:root[data-skin="souls"]:not([data-theme="light"]){--bg:#140b0e;--surface:#22121a;--surface2:#2b1820;--line:#4a2a33;--accent:#E5383B;--accent2:#FFB703;color-scheme:dark}}
+html:root[data-skin="souls"][data-theme="dark"]{--bg:#140b0e;--surface:#22121a;--surface2:#2b1820;--line:#4a2a33;--accent:#E5383B;--accent2:#FFB703;color-scheme:dark}
+html:root[data-skin="dracula"]{--accent:#BD93F9;--accent2:#FF79C6}
+@media (prefers-color-scheme:dark){html:root[data-skin="dracula"]:not([data-theme="light"]){--bg:#191a21;--surface:#282a36;--surface2:#303241;--line:#44475a;--accent:#BD93F9;--accent2:#FF79C6;color-scheme:dark}}
+html:root[data-skin="dracula"][data-theme="dark"]{--bg:#191a21;--surface:#282a36;--surface2:#303241;--line:#44475a;--accent:#BD93F9;--accent2:#FF79C6;color-scheme:dark}
+html:root[data-skin="playstation"]{--accent:#2E8BFF;--accent2:#8AB4F8}
+@media (prefers-color-scheme:dark){html:root[data-skin="playstation"]:not([data-theme="light"]){--bg:#020b18;--surface:#071a33;--surface2:#0b2447;--line:#1d3f73;--accent:#2E8BFF;--accent2:#8AB4F8;color-scheme:dark}}
+html:root[data-skin="playstation"][data-theme="dark"]{--bg:#020b18;--surface:#071a33;--surface2:#0b2447;--line:#1d3f73;--accent:#2E8BFF;--accent2:#8AB4F8;color-scheme:dark}
+html:root[data-skin="xbox"]{--accent:#3FD13F;--accent2:#9BF00B}
+@media (prefers-color-scheme:dark){html:root[data-skin="xbox"]:not([data-theme="light"]){--bg:#0a0f0a;--surface:#111a11;--surface2:#172417;--line:#2a4a2a;--accent:#3FD13F;--accent2:#9BF00B;color-scheme:dark}}
+html:root[data-skin="xbox"][data-theme="dark"]{--bg:#0a0f0a;--surface:#111a11;--surface2:#172417;--line:#2a4a2a;--accent:#3FD13F;--accent2:#9BF00B;color-scheme:dark}
+html:root[data-skin="nintendo"]{--accent:#FF3B3B;--accent2:#00C3E3}
+@media (prefers-color-scheme:dark){html:root[data-skin="nintendo"]:not([data-theme="light"]){--bg:#170a10;--surface:#26111a;--surface2:#301722;--line:#552a3a;--accent:#FF3B3B;--accent2:#00C3E3;color-scheme:dark}}
+html:root[data-skin="nintendo"][data-theme="dark"]{--bg:#170a10;--surface:#26111a;--surface2:#301722;--line:#552a3a;--accent:#FF3B3B;--accent2:#00C3E3;color-scheme:dark}
+html:root[data-skin="nord"]{--accent:#88C0D0;--accent2:#A3BE8C}
+@media (prefers-color-scheme:dark){html:root[data-skin="nord"]:not([data-theme="light"]){--bg:#1f2430;--surface:#2e3440;--surface2:#3b4252;--line:#4c566a;--accent:#88C0D0;--accent2:#A3BE8C;color-scheme:dark}}
+html:root[data-skin="nord"][data-theme="dark"]{--bg:#1f2430;--surface:#2e3440;--surface2:#3b4252;--line:#4c566a;--accent:#88C0D0;--accent2:#A3BE8C;color-scheme:dark}
+html:root[data-skin="cyberpunk"]{--accent:#FCEE0A;--accent2:#00F0FF}
+@media (prefers-color-scheme:dark){html:root[data-skin="cyberpunk"]:not([data-theme="light"]){--bg:#0d0b14;--surface:#1a1626;--surface2:#221d33;--line:#3d3359;--accent:#FCEE0A;--accent2:#00F0FF;color-scheme:dark}}
+html:root[data-skin="cyberpunk"][data-theme="dark"]{--bg:#0d0b14;--surface:#1a1626;--surface2:#221d33;--line:#3d3359;--accent:#FCEE0A;--accent2:#00F0FF;color-scheme:dark}
+html:root[data-skin="synthwave"]{--accent:#FF2A6D;--accent2:#05D9E8}
+@media (prefers-color-scheme:dark){html:root[data-skin="synthwave"]:not([data-theme="light"]){--bg:#1a0b2e;--surface:#2b1146;--surface2:#36175a;--line:#5a2a8a;--accent:#FF2A6D;--accent2:#05D9E8;color-scheme:dark}}
+html:root[data-skin="synthwave"][data-theme="dark"]{--bg:#1a0b2e;--surface:#2b1146;--surface2:#36175a;--line:#5a2a8a;--accent:#FF2A6D;--accent2:#05D9E8;color-scheme:dark}
+html:root[data-skin="matrix"]{--accent:#00FF41;--accent2:#39FF14}
+@media (prefers-color-scheme:dark){html:root[data-skin="matrix"]:not([data-theme="light"]){--bg:#040904;--surface:#0a140a;--surface2:#0f1f0f;--line:#1a3a1a;--accent:#00FF41;--accent2:#39FF14;color-scheme:dark}}
+html:root[data-skin="matrix"][data-theme="dark"]{--bg:#040904;--surface:#0a140a;--surface2:#0f1f0f;--line:#1a3a1a;--accent:#00FF41;--accent2:#39FF14;color-scheme:dark}
+html:root[data-skin="lava"]{--accent:#FF6B35;--accent2:#FFD23F}
+@media (prefers-color-scheme:dark){html:root[data-skin="lava"]:not([data-theme="light"]){--bg:#140804;--surface:#24100a;--surface2:#30160e;--line:#5a2414;--accent:#FF6B35;--accent2:#FFD23F;color-scheme:dark}}
+html:root[data-skin="lava"][data-theme="dark"]{--bg:#140804;--surface:#24100a;--surface2:#30160e;--line:#5a2414;--accent:#FF6B35;--accent2:#FFD23F;color-scheme:dark}
+html:root[data-skin="galaxia"]{--accent:#B388FF;--accent2:#4CC9F0}
+@media (prefers-color-scheme:dark){html:root[data-skin="galaxia"]:not([data-theme="light"]){--bg:#0b0a1f;--surface:#16133a;--surface2:#1e1a4d;--line:#352f7a;--accent:#B388FF;--accent2:#4CC9F0;color-scheme:dark}}
+html:root[data-skin="galaxia"][data-theme="dark"]{--bg:#0b0a1f;--surface:#16133a;--surface2:#1e1a4d;--line:#352f7a;--accent:#B388FF;--accent2:#4CC9F0;color-scheme:dark}
+html:root[data-skin="brasa"]{--accent:#FF7A18;--accent2:#FFD23F}
+@media (prefers-color-scheme:dark){html:root[data-skin="brasa"]:not([data-theme="light"]){--bg:#140804;--surface:#241008;--surface2:#2e160c;--line:#5a2a10;--accent:#FF7A18;--accent2:#FFD23F;color-scheme:dark}}
+html:root[data-skin="brasa"][data-theme="dark"]{--bg:#140804;--surface:#241008;--surface2:#2e160c;--line:#5a2a10;--accent:#FF7A18;--accent2:#FFD23F;color-scheme:dark}
+html:root[data-skin="campeao"]{--accent:#F5C518;--accent2:#FF9F1C}
+@media (prefers-color-scheme:dark){html:root[data-skin="campeao"]:not([data-theme="light"]){--bg:#12100a;--surface:#1f1a08;--surface2:#2a230c;--line:#5a4a14;--accent:#F5C518;--accent2:#FF9F1C;color-scheme:dark}}
+html:root[data-skin="campeao"][data-theme="dark"]{--bg:#12100a;--surface:#1f1a08;--surface2:#2a230c;--line:#5a4a14;--accent:#F5C518;--accent2:#FF9F1C;color-scheme:dark}
+html:root[data-skin="criador"]{--accent:#F5C518;--accent2:#FF3B6B}
+@media (prefers-color-scheme:dark){html:root[data-skin="criador"]:not([data-theme="light"]){--bg:#120c18;--surface:#22121f;--surface2:#2c1827;--line:#5a3a1c;--accent:#F5C518;--accent2:#FF3B6B;color-scheme:dark}}
+html:root[data-skin="criador"][data-theme="dark"]{--bg:#120c18;--surface:#22121f;--surface2:#2c1827;--line:#5a3a1c;--accent:#F5C518;--accent2:#FF3B6B;color-scheme:dark}
+html:root[data-skin="matrix"]:not([data-theme="light"]){--ink:#d6ffd6;--muted:#7fbf8a}
+html:root[data-skin="criador"] body{background-image:radial-gradient(circle at 15% 0%,rgba(245,197,24,.12),transparent 40%),radial-gradient(circle at 90% 20%,rgba(255,59,107,.12),transparent 40%)}
+.skins{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.skin{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-height:56px;text-align:left}
+.skin i{width:100%!important;height:18px!important;border-radius:6px!important;background:linear-gradient(90deg,var(--sw) 0 45%,var(--sw2) 45%)!important}
+.skin.locked{opacity:.5}.skin small{font-size:10px;color:var(--muted)}

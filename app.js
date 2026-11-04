@@ -537,11 +537,11 @@ function viewPerfil(){
       ${p.discord?`<div class="copyline"><span class="hint">Discord</span><code id="dcode">${esc(p.discord)}</code><button class="btn small" data-act="copy" data-text="${esc(p.discord)}">Copiar</button></div>`:""}</section>`:""}
     ${p.coop&&daysSince(p.coop.at)<15?`<section class="box card"><span class="eyebrow">Procurando coop</span><div><b>${esc(p.coop.title)}</b>${p.coop.note?` · ${esc(p.coop.note)}`:""}</div></section>`:""}
     ${S.mode==="live"&&S.isOwner?`<section class="box card"><span class="eyebrow">Cargos</span><div class="sub" style="margin-top:0">Só você, dono, pode mudar.</div><div class="pick">${Object.entries(ROLES).map(([k,o])=>`<button type="button" data-act="role" data-pid="${esc(pid)}" data-k="${k}" aria-pressed="${rl.includes(k)}" style="${rl.includes(k)?`background:${o.c};color:var(--on-pill)`:""}" title="${esc(o.d)}">${esc(o.l)}</button>`).join("")}</div></section>`:""}
-    ${mine?`<section class="box card"><span class="eyebrow">Tema do site</span><div class="sub" style="margin-top:0">Desbloqueie cores novas subindo de nível. Vale só para você.</div><div class="skins">${Object.entries(SKINS).map(([k,o])=>`<button type="button" class="skin" data-act="skin" data-k="${k}" style="--sw:${o.sw}" aria-pressed="${skin===k}" ${myL<o.lv?"disabled":""}><i></i>${esc(o.l)}${myL<o.lv?` · Nv ${o.lv}`:""}</button>`).join("")}</div></section>`:""}
+    ${mine?`<section class="box card"><span class="eyebrow">Tema do site</span><div class="sub" style="margin-top:0">Muda as cores do site inteiro. Libera subindo de nível, na sequência e na temporada. Vale só para você.</div><div class="skins">${Object.entries(SKINS).map(([k,o])=>`<button type="button" class="skin${skinOk(pid,o)?"":" locked"}" data-act="skin" data-k="${k}" style="--sw:${o.sw};--sw2:${o.sw2||o.sw}" aria-pressed="${skin===k}" ${skinOk(pid,o)?"":"disabled"} title="${skinOk(pid,o)?esc(o.l):"Libera com: "+esc(REQ_TXT(skinReq(o)))}"><i></i>${esc(o.l)}${skinOk(pid,o)?"":` <small>🔒 ${esc(REQ_TXT(skinReq(o)))}</small>`}</button>`).join("")}</div></section>`:""}
     ${!mine&&meId()&&S.canWrite&&S.mode==="live"?`<div class="actions"><button class="btn small ghost" data-act="block" data-id="${esc(pid)}">${blockedBy(meId()).has(pid)?"Desbloquear":"Bloquear"}</button><button class="btn small ghost" data-act="report" data-id="${esc(pid)}">Denunciar</button></div>`:""}
   </div></div></div>`;
 }
-function applySkin(){let k="padrao";try{k=localStorage.getItem("zg-skin")||"padrao"}catch{}const lv=meId()?levelOf(xpOf(meId())).L:1;if(!SKINS[k]||SKINS[k].lv>lv)k="padrao";if(k==="padrao")document.documentElement.removeAttribute("data-skin");else document.documentElement.setAttribute("data-skin",k)}
+function applySkin(){let k="padrao";try{k=localStorage.getItem("zg-skin")||"padrao"}catch{}if(!SKINS[k]||!skinOk(meId(),SKINS[k]))k="padrao";if(k==="padrao")document.documentElement.removeAttribute("data-skin");else document.documentElement.setAttribute("data-skin",k)}
 
 /* ---------- nome estilizado (estilo Nitro, de graça) ---------- */
 const NAMECOLORS=["#FF4D6D","#FF9F1C","#E9B400","#2EC27E","#16A3C7","#3D5AFE","#9B5DE5","#F15BB5","#00C9A7","#FF6B35","#8AC926","#C0C0C0"];
@@ -2051,6 +2051,30 @@ if(typeof setInterval==="function")setInterval(()=>{
   const s=lvlSnap(S.myId);if(snapKey(s)===snapKey(S.players[S.myId].lvl))return;
   _snapBusy=true;saveMe(()=>{},{noDay:true}).catch(()=>{}).finally(()=>{_snapBusy=false});
 },45000);
+
+/* ---------- temas do site (mais opções; o criador tem todos) ---------- */
+Object.assign(SKINS,{
+  meianoite:{l:"Meia-noite",lv:2,sw:"#4CC9F0",sw2:"#151d33"},
+  sakura:{l:"Sakura",lv:2,sw:"#FF8FB1",sw2:"#2a1822"},
+  floresta:{l:"Floresta",lv:3,sw:"#3DDC97",sw2:"#17231b"},
+  oceano:{l:"Oceano",lv:4,sw:"#00B4D8",sw2:"#0f2430"},
+  souls:{l:"Souls",lv:4,sw:"#E5383B",sw2:"#22121a"},
+  dracula:{l:"Drácula",lv:5,sw:"#BD93F9",sw2:"#282a36"},
+  playstation:{l:"PlayStation",lv:5,sw:"#2E8BFF",sw2:"#071a33"},
+  xbox:{l:"Xbox",lv:5,sw:"#3FD13F",sw2:"#111a11"},
+  nintendo:{l:"Nintendo",lv:5,sw:"#FF3B3B",sw2:"#26111a"},
+  nord:{l:"Nórdico",lv:6,sw:"#88C0D0",sw2:"#2e3440"},
+  cyberpunk:{l:"Cyberpunk",lv:6,sw:"#FCEE0A",sw2:"#1a1626"},
+  synthwave:{l:"Synthwave",lv:7,sw:"#FF2A6D",sw2:"#2b1146"},
+  matrix:{l:"Matrix",lv:9,sw:"#00FF41",sw2:"#0a140a"},
+  lava:{l:"Lava",lv:10,sw:"#FF6B35",sw2:"#24100a"},
+  galaxia:{l:"Galáxia",lv:11,sw:"#B388FF",sw2:"#16133a"},
+  brasa:{l:"Brasa eterna",lv:1,r:{streak:14},sw:"#FF7A18",sw2:"#241008"},
+  campeao:{l:"Campeão",lv:1,r:{top1:true},sw:"#F5C518",sw2:"#1f1a08"},
+  criador:{l:"✦ Criador",lv:1,r:{owner:true},sw:"#F5C518",sw2:"#3a1430"}
+});
+const skinReq = o => o.r||{lv:o.lv||1};
+function skinOk(pid,o){if(!o)return false;if(isCreator(pid))return true;if(!pid)return (o.lv||1)<=1&&!o.r;return unlocked(pid,skinReq(o))}
 
 /* =====================================================================
    COMUNIDADE (inspirado em Steam, Duolingo, Letterboxd, Reddit, Strava, Spotify, Twitch)
