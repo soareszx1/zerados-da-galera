@@ -1304,3 +1304,29 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .convby{font-size:12.5px;color:var(--muted);text-decoration:none}
 .redbox{max-width:560px}.redform{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}.redform input{width:100%}
 @media (max-width:560px){.redform{grid-template-columns:1fr}}
+/* v30 — barra da tier list, ler mais */
+.tltool{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:4px 0 18px}
+.tltool .tierpick{margin:0;padding:0;flex:0 1 auto;min-width:0;flex-wrap:wrap;overflow:visible;align-items:center}
+.tltool .tierpick button,.tltool .whosel,.tltool .whosel select,.tltool .tierpick select{font-size:14px}
+.tltool .tierpick button{padding:8px 14px;min-height:40px}
+.tltool .whosel{min-height:40px}
+.tltool .tierpick button[aria-pressed="true"],.tltool .whosel.on{background:color-mix(in srgb,var(--accent) 20%,var(--surface));border-color:var(--accent);color:var(--ink);box-shadow:none}
+.tltool .gfr.sm{padding:1px}.tltool .gfr::before{animation:none}
+.tltool .glyph.sm{width:22px;height:22px}
+.tlacts{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
+.tlacts .chip2{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;min-height:40px;padding:8px 14px;border-width:2px}
+.tlacts .hint{font-size:13px}
+.btext.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.btext.clamp.open{display:block;-webkit-line-clamp:unset}
+.bmore{align-self:flex-start;font-weight:700;margin-top:-4px}
+@media (max-width:700px){.tltool .tierpick{flex-wrap:nowrap;overflow-x:auto;width:100%}.tlacts{margin-left:0}}
+.gkgrid{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.gkcard{align-items:flex-start;padding:12px;gap:14px}
+.gkcard .gkpost{flex:none;align-self:flex-start;width:104px}
+.gkinfo{flex:1}
+.gkinfo .frev{margin:0;font-size:13.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.gkrow{gap:12px;padding-block:4px}
+.gkchip{width:92px}.gkchip .gkpost{width:92px}
+.gkchip .ct{font-size:12px;font-weight:600}
+.tierhead>.btn{margin-left:auto}
+@media (max-width:560px){.gkchip,.gkchip .gkpost{width:76px}.gkcard .gkpost{width:84px}}
