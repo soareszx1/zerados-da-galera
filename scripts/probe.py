@@ -1,5 +1,5 @@
-"""Teste temporário 2: formato dos dados das lojas que responderam."""
-import json, re, urllib.request, urllib.parse
+"""Teste temporário 3: campos exatos."""
+import html, json, re, urllib.request, urllib.parse
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 def get(url, corpo=None, hdr=None):
     h = {"User-Agent": UA, "Accept": "application/json, text/html, */*", "Accept-Language": "pt-BR,pt;q=0.9"}
@@ -7,73 +7,75 @@ def get(url, corpo=None, hdr=None):
     req = urllib.request.Request(url, data=corpo, headers=h, method="POST" if corpo else "GET")
     with urllib.request.urlopen(req, timeout=25) as r:
         return r.read().decode("utf-8", "replace")
-def show(nome, txt, n=1500):
-    txt = re.sub(r"https?://", "h__", txt)
-    txt = re.sub(r"[?&]", " ", txt)
-    print(f"\n######## {nome}\n{txt[:n]}")
-def around(txt, pat, n=1500):
-    m = re.search(pat, txt)
-    return txt[max(0, m.start() - 200): m.start() + n] if m else f"(sem {pat})"
-T = {}
+def show(nome, obj, n=3000):
+    t = obj if isinstance(obj, str) else json.dumps(obj, ensure_ascii=False)
+    print(f"\n######## {nome}\n{t[:n]}")
 def tenta(nome, fn):
     try: fn()
     except Exception as e: print(f"\n######## {nome} ERRO {e}")
-def steam():
-    j = json.loads(get("https://store.steampowered.com/search/results/?query&start=0&count=50&specials=1&infinite=1&cc=BR&l=brazilian"))
-    show("steam keys", str(list(j.keys())) + " total=" + str(j.get("total_count")), 300)
-    show("steam row", around(j["results_html"], r"search_result_row"), 2500)
-tenta("steam", steam)
+def promobit():
+    j = json.loads(get("https://api.promobit.com.br/offers?page=1&limit=2"))
+    o = j["offers"][0]
+    show("promobit offer", {k: v for k, v in o.items() if k != "authors"})
+    show("promobit top keys", list(j.keys()))
+    for q in ("category_id=5", "category_slug=games", "category=games", "where=category&value=games"):
+        try:
+            jj = json.loads(get("https://api.promobit.com.br/offers?page=1&limit=5&" + q))
+            show("promobit " + q, [(x.get("category_id"), x.get("category_slug"), x.get("store_name") or x.get("offer_store_name"), x.get("offer_title", "")[:40]) for x in jj.get("offers", [])], 800)
+        except Exception as e: print("promobit", q, e)
+    jj = json.loads(get("https://api.promobit.com.br/offers?page=1&limit=100"))
+    cats = {}
+    for x in jj.get("offers", []):
+        cats[(x.get("category_id"), x.get("category_slug"))] = cats.get((x.get("category_id"), x.get("category_slug")), 0) + 1
+    show("promobit cats(100)", str(cats) + " n=" + str(len(jj.get("offers", []))), 1500)
+    for u in ("https://api.promobit.com.br/categories", "https://api.promobit.com.br/offers/categories"):
+        try: show("promobit " + u[-20:], get(u), 1500)
+        except Exception as e: print(u, e)
+tenta("promobit", promobit)
+def kabum():
+    j = json.loads(get("https://servicespub.prod.api.aws.grupokabum.com.br/catalog/v2/products-by-category/hardware?page_number=1&page_size=2&facet_filters=&sort=-offer_price&include=gift"))
+    show("kabum keys", list(j.keys()))
+    d = j.get("data") or []
+    show("kabum item", d[0] if d else j, 2500)
+tenta("kabum", kabum)
+ALG = "https://u3b6gr4ua3-dsn.algolia.net/1/indexes/*/queries"
+AH = {"x-algolia-application-id":"U3B6GR4UA3","x-algolia-api-key":"a29c6927638bfd8cee23993e51e721c9","Content-Type":"application/json"}
+def nin():
+    j = json.loads(get(ALG, json.dumps({"requests":[{"indexName":"store_game_pt_br","params":"query=&hitsPerPage=1&facets=%5B%22topLevelFilters%22%2C%22availability%22%5D"}]}).encode(), AH))
+    r = j["results"][0]
+    show("nin facets", r.get("facets"), 1500)
+    h = r["hits"][0]
+    show("nin hit", {k: v for k, v in h.items() if k not in ("description", "contentDescriptors", "_highlightResult")}, 2500)
+tenta("nin", nin)
 def nuuvem():
     t = get("https://www.nuuvem.com/br-pt/catalog/price/promo/sort/bestselling/sort-mode/desc")
-    show("nuuvem card", around(t, r"product-card|product__|data-track-product"), 2500)
+    m = re.search(r'<a([^>]{0,3000})href="https://www\.nuuvem\.com/br-pt/item/', t)
+    show("nuuvem a-attrs", html.unescape(m.group(1)) if m else "(nada)", 2500)
+    i = t.find('data-component="product-card"')
+    show("nuuvem card tail", re.sub(r"\s+", " ", t[i:i + 6000])[1500:4500], 3000)
 tenta("nuuvem", nuuvem)
-def ps():
-    v = {"id":"3f772501-f6f8-49b7-abac-874a88ca4897","pageArgs":{"size":3,"offset":0},"sortBy":None,"filterBy":[],"facetOptions":[]}
-    e = {"persistedQuery":{"version":1,"sha256Hash":"4ce7d410a4db2c8b635a48c1dcec375906ff63b19dadd87e073f8fd0c0481d35"}}
-    t = get("https://web.np.playstation.com/api/graphql/v1/op?operationName=categoryGridRetrieve&variables=" + urllib.parse.quote(json.dumps(v)) + "&extensions=" + urllib.parse.quote(json.dumps(e)), hdr={"x-psn-store-locale-override": "pt-BR", "Content-Type": "application/json"})
-    show("ps graphql", t, 2500)
-    h = get("https://store.playstation.com/pt-br/pages/deals")
-    ids = re.findall(r"/pt-br/category/([0-9a-f-]{36})", h)
-    show("ps deals categories", str(list(dict.fromkeys(ids))[:15]), 1500)
-    show("ps deals text", around(h, r"category/"), 1200)
-tenta("ps", ps)
-def nin():
-    h = get("https://www.nintendo.com/pt-br/store/sales-and-deals/")
-    show("nin next", around(h, r"__NEXT_DATA__"), 600)
-    show("nin price", around(h, r"salePrice|regPrice|finalPrice|\"discount"), 1800)
-    for idx in ("store_game_pt_br", "store_all_products_pt_br", "store_all_products_en_us", "ncom_game_pt_br"):
-        try:
-            t = get("https://u3b6gr4ua3-dsn.algolia.net/1/indexes/*/queries", json.dumps({"requests":[{"indexName":idx,"params":"query=&hitsPerPage=1"}]}).encode(), {"x-algolia-application-id":"U3B6GR4UA3","x-algolia-api-key":"a29c6927638bfd8cee23993e51e721c9","Content-Type":"application/json"})
-            show("algolia " + idx, t, 700)
-        except Exception as e: print("algolia", idx, e)
-tenta("nin", nin)
-def epic():
-    v = {"country":"BR","locale":"pt-BR","onSale":True,"count":3,"category":"games/edition/base","sortBy":"currentPrice","sortDir":"ASC"}
-    e = {"persistedQuery":{"version":1,"sha256Hash":"7d58e12d9dd8cb14c84a3ff18d360bf9f0caa96bf218f2c5fda68ba88d68a437"}}
-    show("epic", get("https://store.epicgames.com/graphql?operationName=searchStoreQuery&variables=" + urllib.parse.quote(json.dumps(v)) + "&extensions=" + urllib.parse.quote(json.dumps(e))), 1500)
-tenta("epic", epic)
 def xbox():
     h = get("https://www.xbox.com/pt-BR/promotions/sales/sales-and-specials")
-    show("xbox sales ids", str(list(dict.fromkeys(re.findall(r"\b9[A-Z0-9]{11}\b", h)))[:30]) + " len=" + str(len(h)), 900)
-    show("xbox sales text", around(h, r"9[A-Z0-9]{11}"), 800)
-    try:
-        show("xbox emerald", get("https://emerald.xboxservices.com/xboxcomfd/browse?locale=pt-BR", json.dumps({"Filters":"e30=","ReturnFilters":False,"ChannelKeyToBeUsedInResponse":"BROWSE","ChannelId":""}).encode(), {"Content-Type":"application/json","x-ms-api-version":"1.1"}), 1200)
-    except Exception as e: print("emerald", e)
+    ids = list(dict.fromkeys(re.findall(r"\b9[A-Z0-9]{11}\b", h)))
+    show("xbox n ids", len(ids))
+    j = json.loads(get("https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds=" + ",".join(ids[:2]) + "&market=BR&languages=pt-br"))
+    p = j["Products"][0]
+    lp = p["LocalizedProperties"][0]
+    show("xbox title", lp.get("ProductTitle"))
+    show("xbox images", [(i.get("ImagePurpose"), i.get("Width"), i.get("Uri")) for i in lp.get("Images", [])][:8], 1200)
+    av = [a for s in p.get("DisplaySkuAvailabilities", []) for a in s.get("Availabilities", [])]
+    show("xbox prices", [((a.get("OrderManagementData") or {}).get("Price"), a.get("Actions"), (a.get("Conditions") or {}).get("EndDate")) for a in av][:6], 2000)
 tenta("xbox", xbox)
-def kabum():
-    show("kabum api", get("https://servicespub.prod.api.aws.grupokabum.com.br/catalog/v2/products-by-category/hardware?page_number=1&page_size=2&facet_filters=&sort=-offer_price&include=gift"), 2500)
-    h = get("https://www.kabum.com.br/ofertas/ofertadodia")
-    show("kabum ofertas", around(h, r"__NEXT_DATA__|productCard|offer"), 1500)
-tenta("kabum", kabum)
 def ml():
-    h = get("https://www.mercadolivre.com.br/ofertas?category=MLB1648")
-    show("ml", around(h, r"poly-card|promotion-item"), 2000)
+    t = get("https://www.mercadolivre.com.br/ofertas?category=MLB1648")
+    i = t.find("poly-card")
+    show("ml card", re.sub(r"\s+", " ", t[i:i + 5000]), 3000)
+    show("ml preloaded", re.sub(r"\s+", " ", t[t.find("__PRELOADED_STATE__"):t.find("__PRELOADED_STATE__") + 1500]), 1500)
 tenta("ml", ml)
-def amz():
-    h = get("https://www.amazon.com.br/deals")
-    show("amazon", ("CAPTCHA " if "captcha" in h.lower() else "") + around(h, r"dealPrice|DealCard|deal-price|savingsPercentage"), 1200)
-tenta("amz", amz)
-def promobit():
-    t = get("https://api.promobit.com.br/offers?page=1&limit=3")
-    show("promobit", t, 3500)
-tenta("promobit", promobit)
+def epic():
+    v = {"country":"BR","locale":"pt-BR","onSale":True,"count":2,"category":"games/edition/base","sortBy":"currentPrice","sortDir":"ASC"}
+    e = {"persistedQuery":{"version":1,"sha256Hash":"7d58e12d9dd8cb14c84a3ff18d360bf9f0caa96bf218f2c5fda68ba88d68a437"}}
+    j = json.loads(get("https://store.epicgames.com/graphql?operationName=searchStoreQuery&variables=" + urllib.parse.quote(json.dumps(v)) + "&extensions=" + urllib.parse.quote(json.dumps(e))))
+    el = j["data"]["Catalog"]["searchStore"]["elements"][0]
+    show("epic el", {k: el.get(k) for k in ("title", "productSlug", "urlSlug", "catalogNs", "offerMappings", "price", "keyImages")}, 2500)
+tenta("epic", epic)
