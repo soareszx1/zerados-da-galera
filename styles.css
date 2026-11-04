@@ -1272,3 +1272,15 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .pcb{flex:none;font:700 10px/1 var(--f-mono);padding:3px 6px;border-radius:999px;color:#fff;background:var(--pcc);text-transform:uppercase;letter-spacing:.04em}
 .pcown{font-size:12px;color:var(--muted);padding:6px 10px}
 @media (max-width:560px){.pcgrid{grid-template-columns:1fr}.pcf .pcico{width:36px;height:36px}.pclist{left:0}}
+
+/* v28 — celular: nada passa da largura da tela */
+@media (max-width:760px){.tiplist{grid-template-columns:minmax(0,1fr)}}
+.tipcard,.tipcard>*{min-width:0}.tipcard .gtitle{overflow-wrap:anywhere}
+.heat{width:auto;max-width:100%;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+@media (max-width:560px){
+  header.top{gap:10px}
+  #actions{flex-wrap:nowrap!important;overflow-x:auto;width:100%;gap:6px!important;padding-bottom:4px;scrollbar-width:none;justify-content:flex-start!important}
+  #actions::-webkit-scrollbar{display:none}
+  #actions .btn{flex:none;padding:6px 11px;font-size:13px;min-height:34px}
+  #actions .btn .gly,#actions .btn img{width:22px;height:22px}
+}
