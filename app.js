@@ -3008,7 +3008,7 @@ function viewMidia(){
 /* ---------- perfil: animes, séries, filmes e mangás da pessoa ---------- */
 const _viewPerfilGk=viewPerfil;
 viewPerfil=function(){let h=_viewPerfilGk.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;
-  const L=mediaOf(pid);const mine=pid===S.myId;if(!L.length&&!mine)return h;
+  const L=mediaOf(pid);const mine=pid===S.myId;if(!L.length&&!mine)return gkArrumaPerfil(h,"");
   const cnt=k=>L.filter(x=>x.k===k).length;
   let k=S.profKind[pid];if(!k||!GK_KINDS[k])k=Object.keys(GK_KINDS).find(x=>cnt(x))||"anime";
   const I=L.filter(x=>x.k===k).sort((a,b)=>(GK_TIERS.indexOf(a.tier)+1||9)-(GK_TIERS.indexOf(b.tier)+1||9)||(b.at||0)-(a.at||0));
@@ -3017,7 +3017,29 @@ viewPerfil=function(){let h=_viewPerfilGk.apply(this,arguments);const pid=pidByS
     ${I.length?`<div class="gktop">${I.slice(0,12).map(x=>`<a class="gktopi" href="#midia-${esc(gkKey(x.t))}">${gkPoster(x)}${x.tier?`<span class="tlabel mini t-${esc(x.tier)} gkbadge">${esc(x.tier)}</span>`:""}<b>${esc(x.t)}</b><span class="hint">${esc(gkStL(x.st,x.k))}</span></a>`).join("")}</div>
       <a class="linkbtn" href="#tierlist" data-act="gkseeall" data-pid="${esc(pid)}" data-k="${k}">Ver tier list de ${esc(GK_KINDS[k].pl.toLowerCase())}${I.length>12?` (${I.length})`:""} →</a>`
       :`<p class="hint" style="margin:0">${mine?`Nenhum ${esc(GK_KINDS[k].l.toLowerCase())} ainda. Toque em “+ Adicionar”: a capa vem sozinha e ele entra na sua tier list.`:"Nada nessa categoria."}</p>`}</section>`;
-  const i=h.lastIndexOf("</div>");return i>0?h.slice(0,i)+box+h.slice(i):h+box};
+  return gkArrumaPerfil(h,box)};
+// Organiza o perfil: animes na coluna da esquerda (equilibra as colunas) e personalização num quadro só, largo, com abas
+S.persoTab=S.persoTab||"cen";
+function gkArrumaPerfil(h,box){
+  try{
+    if(typeof document==="undefined"||!document.createElement)throw 0;
+    const t=document.createElement("template");if(!("content" in t))throw 0;t.innerHTML=h;
+    const page=t.content.querySelector(".page");const cols=page?page.querySelectorAll(".pgrid > .col"):[];const grid=page?.querySelector(".pgrid");
+    if(!page||cols.length<2||!grid)throw 0;
+    if(box){const tmp=document.createElement("template");tmp.innerHTML=box;cols[0].appendChild(tmp.content)}
+    const sc=page.querySelector(".scbox");const tema=[...page.querySelectorAll("section.box.card")].find(x=>x.querySelector(".eyebrow")?.textContent.trim()==="Tema do site");
+    if(sc||tema){
+      const tab=S.persoTab==="tema"&&tema?"tema":(sc?"cen":"tema");
+      const wrap=document.createElement("section");wrap.className="box card perso";
+      wrap.innerHTML=`<div class="gkph2"><span class="eyebrow">🎨 Personalizar</span><span class="hint">só você vê esta parte</span></div>
+        <div class="gktabs" role="tablist">${sc?`<button role="tab" data-act="gkperso" data-k="cen" aria-selected="${tab==="cen"}">🎮 Cenário do perfil</button>`:""}${tema?`<button role="tab" data-act="gkperso" data-k="tema" aria-selected="${tab==="tema"}">🎨 Tema do site</button>`:""}</div>`;
+      for(const [k,el] of [["cen",sc],["tema",tema]]){if(!el)continue;el.remove();const pane=document.createElement("div");pane.className="persopane";pane.dataset.pane=k;if(k!==tab)pane.hidden=true;
+        el.querySelector(".eyebrow")?.remove();while(el.firstChild)pane.appendChild(el.firstChild);wrap.appendChild(pane)}
+      grid.after(wrap);
+    }
+    const div=document.createElement("div");div.appendChild(t.content.cloneNode(true));return div.innerHTML;
+  }catch(e){if(!box)return h;const i=h.lastIndexOf("</div>");return i>0?h.slice(0,i)+box+h.slice(i):h+box}
+}
 
 /* ---------- adicionar / editar (modal) ---------- */
 function gkOpen(mid,pre){
@@ -3062,6 +3084,7 @@ document.addEventListener("click",async e=>{
   if(a==="gkwho"){S.gkWho[el.dataset.k]=el.dataset.id;renderView();return}
   if(a==="gksrc"){S.gkSrc=el.dataset.k;renderView();return}
   if(a==="anf"){S.anFilter=el.dataset.k;renderView();return}
+  if(a==="gkperso"){S.persoTab=el.dataset.k;const w=el.closest(".perso");if(w){w.querySelectorAll("[data-act=gkperso]").forEach(b=>b.setAttribute("aria-selected",b===el));w.querySelectorAll(".persopane").forEach(p=>p.hidden=p.dataset.pane!==el.dataset.k)}return}
   if(a==="gkprofk"){S.profKind[el.dataset.pid]=el.dataset.k;renderView();return}
   if(a==="gkseeall"){S.tierCat=el.dataset.k;S.gkWho[el.dataset.k]=el.dataset.pid===S.myId?"eu":el.dataset.pid;return}
   if(a==="gkadd"){if(!MINE()){toast("Entre na sua conta para adicionar");return}gkOpen(null,{k:el.dataset.k||"anime"});return}
