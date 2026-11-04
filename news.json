@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793784444703,
+ "atualizadoEm": 1793787309953,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,31 @@
   }
  ],
  "itens": [
+  {
+   "title": "Dragon's Dogma 2 gets a timed collaboration with beloved anime and manga series Delicious in Dungeon, and it's out right now on PC, PlayStation and Xbox",
+   "url": "https://www.eurogamer.net/dragons-dogma-2-dungeon-meshi-collaboration-out-now",
+   "summary": "Have you ever seen - or read - the wonderful Dungeon Meshi (known in English as 'Delicious in Dungeon')? It's a phenomenal manga series written and illustrated by Ryoko Kui, which…",
+   "img": "https://assetsio.gnwcdn.com/dungeon-meshi-dd2.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793786626000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Reincarnation in the Game World Dan-Katsu Anime's Teaser Reveals More Cast, Theme Songs",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-04/reincarnation-in-the-game-world-dan-katsu-anime-teaser-reveals-more-cast-theme-songs/.243515",
+   "summary": "Ayaka Nanase, Kotone Izumi, Hikaru Iida, Chihaya Asakura join cast of January anime",
+   "img": "",
+   "at": 1793786396000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Guild Wars gets its first major gameplay update in almost 20 years",
+   "url": "https://www.eurogamer.net/guild-wars-1-afterlife-announced-20-years",
+   "summary": "ArenaNet and co-dev studio 2Weeks have announced Guild Wars Afterlife - the first major update for the game in nearly 20 years. Read more",
+   "img": "https://assetsio.gnwcdn.com/guild-wars-1-afterlife-screenshot.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793786357000,
+   "source": "Eurogamer"
+  },
   {
    "title": "Ubisoft and at least two other companies are interested in buying Arkane, according to new report",
    "url": "https://www.eurogamer.net/arkane-studios-ubisoft-interested-buyers",
@@ -481,15 +506,6 @@
    "img": "https://images.nintendolife.com/e8212f2f983eb/large.jpg",
    "at": 1793732400000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Hollywood Reporter: Sony to Co-Finance, Distribute Live-Action Naruto Film, Begin Production in Spring 2027",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-03/hollywood-reporter-sony-to-co-finance-distribute-live-action-naruto-film-begin-production-in-spring-/.243485",
-   "summary": "Sony to handle international distribution for Lionsgate's film adaptation following multi-studio bidding",
-   "img": "",
-   "at": 1793732400000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "The Elder Scrolls 6: Sentinel pode ter revelado seu nome oficial, mas a Bethesda diz que ainda vai \"levar um tempo até estarmos prontos para compartilhar mais\"",
@@ -973,14 +989,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Microsoft e Epic Games criticam uso de IA para copiar seus jogos, mas são acusadas de hipocrisia",
-   "url": "https://www.hardware.com.br/noticias/microsoft-e-epic-games-criticam-uso-de-ia-para-copiar-seus-jogos/",
-   "summary": "Empresas usam notificações de direitos autorais para derrubar projetos não oficiais.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/09/Microsoft-avanca-com-reset-do-Xbox-e-prepara-centenas-de-novas-demissoes.jpg",
-   "at": 1793639360000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "Head Phones President e Exist Trace se reúnem em show no Brasil em abril",
    "url": "https://www.jbox.com.br/2026/11/02/head-phones-president-e-exist-trace-se-reunem-em-show-no-brasil-em-abril/",
    "summary": "Fusão de vozes femininas do metal japonês, evento POWER ROCK VOICES já tem ingressos à venda.",
@@ -988,14 +996,6 @@
    "at": 1793637298000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "COD Modern Warfare 4 has seemingly answered DMZ players' PvE calls with new Story Mission changes - but there are major caveats",
-   "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-story-missions-pve",
-   "summary": "For as long as Call of Duty: Modern Warfare 4's DMZ extraction mode has been available, there've been calls for PvE-only servers . Developer Infinity Ward , for its part, has…",
-   "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(1).webp?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793636380000,
-   "source": "Eurogamer"
   },
   {
    "title": "Bocchi the Rock! recebe adaptação para novo filme",
