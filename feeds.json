@@ -1,5 +1,5 @@
 {
-  "_ajuda": "Lista de sites de onde o robô puxa notícias. Para tirar um site, apague o bloco dele. Para adicionar, copie um bloco e troque nome e url do feed. filtrar=true guarda só notícias que falam de games. cat=\"geek\" manda a notícia para a área geek (animes, filmes e séries) em vez da página de novidades de games.",
+  "_ajuda": "Lista de sites de onde o robô puxa notícias. Para tirar um site, apague o bloco dele. Para adicionar, copie um bloco e troque nome e url do feed. filtrar=true guarda só notícias que falam de games. cat=\"geek\" manda a notícia para a área geek (notícias de anime) em vez da página de novidades de games.",
   "fontes": [
     {"nome": "PlayStation Blog BR", "url": "https://blog.br.playstation.com/feed/", "filtrar": false},
     {"nome": "Xbox Wire Brasil", "url": "https://news.xbox.com/pt-br/feed/", "filtrar": false},
@@ -14,9 +14,7 @@
     {"nome": "AnimeNew", "url": "https://animenew.com.br/feed/", "filtrar": false, "cat": "geek"},
     {"nome": "IntoxiAnime", "url": "https://www.intoxianime.com/feed/", "filtrar": false, "cat": "geek"},
     {"nome": "Anime News Network", "url": "https://www.animenewsnetwork.com/all/rss.xml?ann-edition=w", "filtrar": false, "cat": "geek"},
-    {"nome": "Omelete", "url": "https://www.omelete.com.br/rss", "filtrar": false, "cat": "geek"},
-    {"nome": "Cinema com Rapadura", "url": "https://cinemacomrapadura.com.br/feed/", "filtrar": false, "cat": "geek"},
-    {"nome": "Pipoca Moderna", "url": "https://pipocamoderna.com.br/feed/", "filtrar": false, "cat": "geek"},
-    {"nome": "Jovem Nerd (filmes e séries)", "url": "https://jovemnerd.com.br/feed/", "filtrar": true, "cat": "geek"}
+    {"nome": "Crunchyroll Notícias", "url": "https://cr-news-api-service.prd.crunchyrollsvc.com/v1/pt-BR/rss", "filtrar": false, "cat": "geek"},
+    {"nome": "Crunchyroll News", "url": "https://www.crunchyroll.com/newsrss?lang=ptBR", "filtrar": false, "cat": "geek"}
   ]
 }

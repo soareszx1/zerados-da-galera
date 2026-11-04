@@ -368,7 +368,7 @@ function viewHome(){
       ${parts.length?parts.map(g=>`<div class="prow"><div class="nm">${glyph(g.p,true)}<span>${nk(g.p)}</span></div><div class="bar"><i style="width:${isDone(g)?100:Math.min(100,Number(g.progress)||0)}%"></i></div><div class="v">${isDone(g)?"zerou":(Number(g.progress)||0)+"%"}</div></div>`).join(""):'<span class="hint">Ninguém entrou ainda.</span>'}
       ${m&&S.canWrite&&!inMine?`<div><button class="btn small primary" data-act="joinclub">Entrar no clube</button></div>`:""}</section>`}
   // tier list do mês
-  const tlk=Object.keys(tierlists()).sort().reverse()[0];
+  const tlk=Object.keys(tierlists()).filter(k=>!k.includes("~")).sort().reverse()[0];
   if(tlk){const tl=tierlists()[tlk];left+=`<section class="box card"><span class="eyebrow">Tier list do mês</span><h3>${esc(tl.title||"Os melhores do mês")}</h3><div class="sub">${esc(monthName(tlk))}${tl.note?` · ${esc(tl.note)}`:""}</div><div class="tierlist compact">${monthlyRows(tlk)}</div><div class="actions"><a class="btn small ${tl.status==="aberta"?"primary":""}" href="#tierlist" data-act="tierwho" data-id="mes">${tl.status==="aberta"?"Votar agora":"Ver todas as tier lists"}</a>${tl.status==="aberta"?`<span class="hint">Votação aberta</span>`:""}</div></section>`}
   else if(isStaff())left+=`<section class="box card"><span class="eyebrow">Tier list do mês</span><p style="margin:0">Lance a primeira votação da tier list do mês. <button class="linkbtn" data-act="monthly" data-m="${monthKey()}">Lançar votação</button></p></section>`;
   // quadro da galera
@@ -1024,7 +1024,7 @@ function viewTier(){
   const other=S.tierWho!=="mes"&&S.tierWho!==mid?P[S.tierWho]:null;
   const opt=id=>`<option value="${esc(id)}" ${S.tierWho===id?"selected":""}>${esc(P[id].nick)}</option>`;
   let titles;
-  if(S.tierWho==="mes"){const tl=tierlists()[S.tlMonth]||tierlists()[Object.keys(tierlists()).sort().reverse()[0]];titles=(tl&&Array.isArray(tl.games)?tl.games:[]).map(g=>g.title)}
+  if(S.tierWho==="mes"){const tl=tierlists()[S.tlMonth]||tierlists()[Object.keys(tierlists()).filter(k=>!k.includes("~")).sort().reverse()[0]];titles=(tl&&Array.isArray(tl.games)?tl.games:[]).map(g=>g.title)}
   const L=S.tierWho==="mes"?[]:filtered().filter(g=>g.pid===S.tierWho);
   if(S.tierWho!=="mes")titles=L.filter(g=>g.tier).map(g=>g.title);
   const tabs=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
@@ -1074,7 +1074,7 @@ function voteBox(month){
     <div class="vlist">${tl.games.map(g=>{const k=norm(g.title);return `<div class="mrow">${coverBox({title:g.title,coverUrl:g.coverUrl},"mini")}<span class="ct">${esc(g.title)}</span><div class="pick">${TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="vote" data-m="${esc(month)}" data-k="${esc(k)}" data-t="${t}" aria-pressed="${mine[k]===t}" aria-label="Votar ${t} em ${esc(g.title)}">${t}</button>`).join("")}</div></div>`}).join("")}</div></section>`;
 }
 function viewTierMes(){
-  const all=tierlists();const keys=Object.keys(all).sort().reverse();
+  const all=tierlists();const keys=Object.keys(all).filter(k=>!k.includes("~")).sort().reverse();
   if(!S.tlMonth||!all[S.tlMonth])S.tlMonth=keys[0]||"";
   const tl=all[S.tlMonth];const staff=isStaff();const r=tl?tlResult(S.tlMonth):null;
   const st=tl?(tl.status==="aberta"?`<span class="pill s-jogando">Votação aberta</span>`:tl.status==="encerrada"?`<span class="pill s-zerado">Resultado final</span>`:""):"";
@@ -2800,26 +2800,30 @@ viewPerfil=function(){let h=_viewPerfilSc.apply(this,arguments);
     h=h.replace('Vale só para você.</div>','Vale só para você. No seu perfil, se tiver cenário, as cores do cenário aparecem no meio da página; o tema do site continua no topo e nas outras páginas.</div>')}
   return h};
 
-/* ================= v23: ÁREA GEEK — animes, mangás, filmes e séries ================= */
-// Dados: players/{uid}.media = {id:{t,k,st,nota,tier,c,img,ref,y,at}}  (cada um escreve só no próprio perfil)
-// Capas: AniList (animes e mangás), TVMaze (séries), Wikipédia (filmes e o que faltar).
-const GK_KINDS={anime:{l:"Anime",ic:"🎌",pl:"Animes"},manga:{l:"Mangá",ic:"📖",pl:"Mangás"},serie:{l:"Série",ic:"📺",pl:"Séries"},filme:{l:"Filme",ic:"🎬",pl:"Filmes"}};
-const GK_ST={assistindo:{l:"Assistindo",lm:"Lendo",v:"está assistindo",vm:"está lendo"},visto:{l:"Terminei",v:"terminou",vm:"terminou"},quero:{l:"Na fila",v:"colocou na fila",vm:"colocou na fila"},pausado:{l:"Pausado",v:"pausou",vm:"pausou"},dropado:{l:"Dropado",v:"dropou",vm:"dropou"}};
+/* ================= v24: ANIMES, SÉRIES, FILMES E MANGÁS ================= */
+// Organização:
+//  • Tier List (aba principal) ganhou categorias: Jogos · Animes · Séries · Filmes · Mangás. Cada categoria tem
+//    Do mês (votação lançada pela staff), Galera (média de todo mundo), Minha e De outra pessoa.
+//  • Cada um adiciona os seus títulos (capa automática) e eles aparecem no próprio perfil.
+//  • Descobrir → 🎌 Animes: lançamentos da temporada (AniList, com link do Crunchyroll) e notícias de anime.
+// Dados: players/{uid}.media = {id:{t,k,st,nota,tier,c,img,ref,y,at}} · votação: tierlists/{AAAA-MM~tipo} (+ votes/{uid})
+const GK_KINDS={anime:{l:"Anime",ic:"🎌",pl:"Animes",art:"o anime"},serie:{l:"Série",ic:"📺",pl:"Séries",art:"a série"},filme:{l:"Filme",ic:"🎬",pl:"Filmes",art:"o filme"},manga:{l:"Mangá",ic:"📖",pl:"Mangás",art:"o mangá"}};
+const GK_ST={assistindo:{l:"Assistindo",lm:"Lendo"},visto:{l:"Terminei"},quero:{l:"Na fila"},pausado:{l:"Pausado"},dropado:{l:"Dropado"}};
 const GK_TIERS=["S","A","B","C","D"];
 const GK_IMG_OK=/^https:\/\/(s4\.anilist\.co|img\.anili\.st|static\.tvmaze\.com|upload\.wikimedia\.org)\//;
 const gkImg = u => typeof u==="string"&&GK_IMG_OK.test(u)?u:"";
 const gkStL = (st,k) => (k==="manga"&&st==="assistindo")?GK_ST.assistindo.lm:(GK_ST[st]?.l||st);
 const gkKey = t => slug(String(t||""));
-if(!VIEWS.includes("geek"))VIEWS.push("geek");
-S.geekTab=S.geekTab||"tier";S.geekKind=S.geekKind||"";S.geekWho=S.geekWho||"";
+const gkAvg = a => a.length?a.reduce((s,b)=>s+b,0)/a.length:0;
+["animes"].forEach(v=>{if(!VIEWS.includes(v))VIEWS.push(v)});
+S.tierCat=S.tierCat||"jogos";S.gkWho=S.gkWho||{};S.profKind=S.profKind||{};
 
 function mediaOf(pid){const p=players()[pid];const m=p&&typeof p.media==="object"&&p.media?p.media:{};
   return Object.entries(m).filter(([,x])=>x&&x.t&&GK_KINDS[x.k]).map(([mid,x])=>({...x,mid,pid}))}
 function allMedia(){return Object.keys(players()).flatMap(mediaOf)}
-const gkPass = x => !S.geekKind||x.k===S.geekKind;
 
 /* ---------- capa ---------- */
-function gkPoster(x,cls=""){const u=gkImg(x.img);const ic=GK_KINDS[x.k]?.ic||"🎞️";
+function gkPoster(x,cls=""){const u=gkImg(x.img||x.coverUrl);const ic=GK_KINDS[x.k]?.ic||"🎞️";
   return `<span class="gkpost ${cls}">${u?`<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<span class="gkph" aria-hidden="true">${ic}</span></span>`}
 
 /* ---------- busca de capas ---------- */
@@ -2845,108 +2849,193 @@ async function gkSearch(q,k){
   }catch(e){return []}
 }
 
-/* ---------- página Geek ---------- */
-function geekTabs(){
-  const T=[["tier","🏆 Tier list"],["minha","⭐ Minha lista"],["galera","👥 Da galera"],["noticias","📰 Notícias"]];
-  const K=[["","Tudo"],...Object.entries(GK_KINDS).map(([k,o])=>[k,o.ic+" "+o.pl])];
-  return `<div class="gktabs" role="tablist">${T.map(([k,l])=>`<button role="tab" data-act="gktab" data-k="${k}" aria-selected="${S.geekTab===k}">${l}</button>`).join("")}</div>
-  ${S.geekTab!=="noticias"?`<div class="gkkinds">${K.map(([k,l])=>`<button class="chip2" data-act="gkkind" data-k="${k}" aria-pressed="${S.geekKind===k}">${l}</button>`).join("")}</div>`:""}`;
+/* ================= TIER LIST com categorias ================= */
+const TL_CATS=[["jogos","🎮","Jogos"],...Object.entries(GK_KINDS).map(([k,o])=>[k,o.ic,o.pl])];
+const gkMonthId = (mk,k) => `${mk}~${k}`;
+const gkMonths = k => Object.keys(S.tierlists||{}).filter(id=>id.endsWith("~"+k)).sort().reverse();
+function catBar(){return `<div class="tlcats" role="tablist" aria-label="Categoria da tier list">${TL_CATS.map(([k,ic,l])=>`<button role="tab" data-act="gkcat" data-k="${k}" aria-selected="${S.tierCat===k}">${ic} ${l}</button>`).join("")}</div>`}
+const _viewTierGk=viewTier;
+viewTier=function(){
+  if(!GK_KINDS[S.tierCat])return catBar()+_viewTierGk.apply(this,arguments);
+  return catBar()+gkTierView(S.tierCat);
+};
+function gkTierRows(items,opt={}){
+  const rows=GK_TIERS.map(t=>{const I=items.filter(x=>x.tier===t);
+    return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems gkrow">${I.length?I.map(x=>gkChip(x,opt)).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
+  const pend=opt.pending||[];
+  return rows+(pend.length?`<div class="trow"><div class="tlabel t-N">?</div><div class="titems gkrow">${pend.map(x=>gkChip(x,opt)).join("")}<span class="empty-row">sem votos ainda</span></div></div>`:"");
 }
-function viewGeek(){
-  const head=`<div class="tierhead gkhead"><div style="flex:1"><span class="eyebrow">Área geek</span><h3>Animes, mangás, filmes e séries</h3></div>${MINE()?`<button class="btn primary" data-act="gkadd">+ Adicionar</button>`:""}</div>`;
-  const body={tier:gkTier,minha:gkMinha,galera:gkGalera,noticias:gkNoticias}[S.geekTab]||gkTier;
-  return `<div class="page geek">${head}${geekTabs()}${body()}</div>`;
-}
-function gkTierRows(items,agg){
-  return GK_TIERS.map(t=>{const I=items.filter(x=>x.tier===t);
-    return `<div class="trow"><div class="tlabel t-${t}">${t}</div><div class="titems gkrow">${I.length?I.map(x=>`<a class="gkchip" href="#midia-${esc(gkKey(x.t))}" title="${esc(x.t)}${agg?` · ${x.n} ${x.n===1?"voto":"votos"}`:""}">${gkPoster(x)}<span class="ct">${esc(x.t)}</span></a>`).join(""):'<span class="empty-row">vazio</span>'}</div></div>`}).join("");
-}
-function gkTier(){
-  const P=players();const mid=meId();
-  const ids=Object.keys(P).filter(id=>mediaOf(id).some(x=>x.tier));
-  if(!S.geekWho)S.geekWho=mid&&P[mid]?mid:"galera";
-  const others=ids.filter(id=>id!==mid);
-  const who=S.geekWho;
+function gkChip(x,opt={}){const t=x.t||x.title;
+  return `<a class="gkchip" href="#midia-${esc(gkKey(t))}" title="${esc(t)}${x.n?` · ${x.n} ${x.n===1?"voto":"votos"}`:""}">${gkPoster({...x,k:x.k||opt.k})}<span class="ct">${esc(t)}</span>${x.n&&opt.votes?`<span class="vn">${x.n}</span>`:""}</a>`}
+function gkTierView(k){
+  const P=players();const mid=meId();const K=GK_KINDS[k];
+  const cur=gkMonthId(monthKey(),k);const meses=gkMonths(k);
+  const temGente=Object.keys(P).filter(id=>mediaOf(id).some(x=>x.k===k&&x.tier));
+  let who=S.gkWho[k];
+  if(!who)who=S.tierlists?.[cur]?.status==="aberta"?"mes":(mid&&P[mid]?"eu":(meses.length?"mes":"galera"));
+  if(who!=="mes"&&who!=="galera"&&who!=="eu"&&!P[who])who="galera";
+  S.gkWho[k]=who;
+  const others=temGente.filter(id=>id!==mid);const other=who!=="mes"&&who!=="galera"&&who!=="eu"?P[who]:null;
   const pick=`<div class="tierpick" role="group" aria-label="De quem é a tier list">
-    <button data-act="gkwho" data-id="galera" aria-pressed="${who==="galera"}">👥 Galera</button>
-    ${mid&&P[mid]?`<button data-act="gkwho" data-id="${esc(mid)}" aria-pressed="${who===mid}">${glyph(P[mid],true)} Minha</button>`:""}
-    ${others.length?`<label class="whosel${who!=="galera"&&who!==mid?" on":""}"><span class="sr-only">Tier list de outra pessoa</span><select id="gkwho-sel"><option value="">De outra pessoa (${others.length})…</option>${others.map(id=>`<option value="${esc(id)}" ${who===id?"selected":""}>${esc(P[id].nick)}</option>`).join("")}</select></label>`:""}</div>`;
-  let items,title,agg=false;
-  if(who==="galera"){agg=true;title="Tier list da galera";
-    const by={};for(const x of allMedia().filter(x=>x.tier&&gkPass(x))){const k=x.k+":"+gkKey(x.t);(by[k]=by[k]||{...x,sc:[],n:0}).sc.push(5-GK_TIERS.indexOf(x.tier));by[k].n++;if(!gkImg(by[k].img)&&gkImg(x.img))by[k].img=x.img}
-    items=Object.values(by).map(o=>{const m=o.sc.reduce((a,b)=>a+b,0)/o.sc.length;return {...o,tier:scoreTier(m),m}}).sort((a,b)=>b.m-a.m||b.n-a.n);
-  }else{const p=P[who];title=p?`Tier list de ${nk(p)}`:"Tier list";items=p?mediaOf(who).filter(x=>x.tier&&gkPass(x)).sort((a,b)=>(b.nota??-1)-(a.nota??-1)):[]}
-  const n=items.length;
-  return pick+`<div class="tierhead"><div><h3>${title}</h3><span class="hint">${n} ${n===1?"título":"títulos"}${S.geekKind?" · "+GK_KINDS[S.geekKind].pl.toLowerCase():""}${agg?" · média das notas de tier de todo mundo":""}</span></div></div>
-    <section class="box tierlist" aria-label="Tier list geek">${n?gkTierRows(items,agg):`<div class="trow"><div class="titems"><span class="empty-row">${who===mid?"Você ainda não deu tier para nenhum título. Toque em <b>+ Adicionar</b> e escolha o tier.":"Nada por aqui ainda."}</span></div></div>`}</section>`;
+    <button data-act="gkwho" data-k="${k}" data-id="mes" aria-pressed="${who==="mes"}">🗳️ Do mês</button>
+    <button data-act="gkwho" data-k="${k}" data-id="galera" aria-pressed="${who==="galera"}">👥 Galera</button>
+    ${mid&&P[mid]?`<button data-act="gkwho" data-k="${k}" data-id="eu" aria-pressed="${who==="eu"}">${glyph(P[mid],true)} Minha</button>`:""}
+    ${others.length?`<label class="whosel${other?" on":""}">${other?glyph(other,true):""}<span class="sr-only">Tier list de outra pessoa</span><select id="gkwho-sel" data-k="${k}"><option value="">${other?"Trocar pessoa…":`De outra pessoa (${others.length})…`}</option>${others.map(id=>`<option value="${esc(id)}" ${who===id?"selected":""}>${esc(P[id].nick)}</option>`).join("")}</select></label>`:""}</div>`;
+  if(who==="mes")return pick+gkMes(k);
+  if(who==="galera"){
+    const by={};for(const x of allMedia().filter(x=>x.k===k&&x.tier)){const key=gkKey(x.t);(by[key]=by[key]||{...x,sc:[],n:0}).sc.push(5-GK_TIERS.indexOf(x.tier));by[key].n++;if(!gkImg(by[key].img)&&gkImg(x.img))by[key].img=x.img}
+    const items=Object.values(by).map(o=>{const m=gkAvg(o.sc);return {...o,tier:scoreTier(m),m}}).sort((a,b)=>b.m-a.m||b.n-a.n);
+    return pick+`<div class="tierhead"><div><h3>${K.pl} na visão da galera</h3><span class="hint">Média dos tiers que cada um deu no próprio perfil · ${items.length} ${items.length===1?"título":"títulos"}</span></div>${MINE()?`<button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar ${K.l.toLowerCase()}</button>`:""}</div>
+      <section class="box tierlist">${items.length?gkTierRows(items,{k}):gkVazio(k,"Ninguém deu tier ainda. Comece pela sua!")}</section>`;
+  }
+  const pid=who==="eu"?mid:who;const p=P[pid];const mine=pid===mid;
+  const L=mediaOf(pid).filter(x=>x.k===k).sort((a,b)=>(b.nota??-1)-(a.nota??-1)||(b.at||0)-(a.at||0));
+  const T=L.filter(x=>x.tier),semTier=L.filter(x=>!x.tier);
+  return pick+`<div class="tierhead">${glyph(p)}<div><h3>${K.pl} de ${nk(p)}</h3><span class="hint">${L.length} ${L.length===1?"título":"títulos"} · ${T.length} com tier</span></div>${mine&&MINE()?`<button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar ${K.l.toLowerCase()}</button>`:""}</div>
+    <section class="box tierlist">${T.length?gkTierRows(T,{k}):gkVazio(k,mine?`Adicione ${K.art} que você está vendo e escolha o tier.`:"Nenhum título com tier ainda.",mine)}</section>
+    ${L.length?`<section class="box card"><span class="eyebrow">Lista completa${semTier.length?` · ${semTier.length} sem tier`:""}</span><div class="gkgrid">${L.map(x=>gkCard(x,mine)).join("")}</div></section>`:""}`;
 }
+function gkVazio(k,txt,botao){return `<div class="trow"><div class="titems"><span class="empty-row">${txt}${botao&&MINE()?` <button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar</button>`:""}</span></div></div>`}
 function gkCard(x,mine){
   const st=GK_ST[x.st]?`<span class="pill gkst-${esc(x.st)}">${esc(gkStL(x.st,x.k))}</span>`:"";
   return `<article class="gkcard">${gkPoster(x,"big")}<div class="gkinfo"><a href="#midia-${esc(gkKey(x.t))}"><b>${esc(x.t)}</b></a>
-    <div class="gkmeta"><span class="tag">${GK_KINDS[x.k].ic} ${GK_KINDS[x.k].l}</span>${x.y?`<span class="tag">${esc(x.y)}</span>`:""}${st}${x.tier?`<span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}</div>
+    <div class="gkmeta">${x.y?`<span class="tag">${esc(x.y)}</span>`:""}${st}${x.tier?`<span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}</div>
     ${typeof x.nota==="number"?`<div class="fstars">${starsHTML(x.nota)}</div>`:""}${x.c?`<p class="frev">“${esc(cap(x.c,160))}”</p>`:""}
-    ${mine?`<button class="btn small" data-act="gkedit" data-id="${esc(x.mid)}">Editar</button>`:""}</div></article>`;
+    ${mine&&MINE()?`<button class="btn small" data-act="gkedit" data-id="${esc(x.mid)}">Editar</button>`:""}</div></article>`;
 }
-function gkMinha(){
-  if(!MINE())return `<section class="box card"><p>Entre na sua conta para montar sua lista de animes, mangás, filmes e séries.</p></section>`;
-  const L=mediaOf(S.myId).filter(gkPass).sort((a,b)=>(b.at||0)-(a.at||0));
-  const grupos=["assistindo","visto","quero","pausado","dropado"].map(st=>[st,L.filter(x=>x.st===st)]).filter(([,a])=>a.length);
-  if(!L.length)return `<section class="box card gkempty"><span class="big">🍿</span><h3>Sua lista está vazia</h3><p>Adicione o anime que você está vendo, o último filme que assistiu ou a série que quer começar. A capa vem sozinha.</p><button class="btn primary" data-act="gkadd">+ Adicionar o primeiro</button></section>`;
-  return grupos.map(([st,a])=>`<section class="box card"><span class="eyebrow">${esc(GK_ST[st].l)} · ${a.length}</span><div class="gkgrid">${a.map(x=>gkCard(x,true)).join("")}</div></section>`).join("");
+
+/* ---------- votação do mês (anime/série/filme/mangá) ---------- */
+function gkMes(k){
+  const K=GK_KINDS[k];const meses=gkMonths(k);const staff=isStaff();const cur=gkMonthId(monthKey(),k);
+  if(!S.gkMesSel?.[k]||!S.tierlists?.[S.gkMesSel[k]])S.gkMesSel={...(S.gkMesSel||{}),[k]:meses[0]||""};
+  const id=S.gkMesSel[k];const tl=id?S.tierlists[id]:null;const r=tl?tlResult(id):null;
+  const st=tl?(tl.status==="aberta"?`<span class="pill s-jogando">Votação aberta</span>`:tl.status==="encerrada"?`<span class="pill s-zerado">Resultado final</span>`:""):"";
+  const top=`<div class="tierhead"><div style="flex:1;min-width:0"><span class="eyebrow">${K.ic} ${K.pl} do mês</span><h3>${tl?esc(tl.title||`Os melhores ${K.pl.toLowerCase()} do mês`):"Nenhuma votação ainda"}</h3>
+      ${tl?`<span class="hint">${st} ${esc(monthName(id.split("~")[0]))}${r?` · ${r.voters} ${r.voters===1?"pessoa votou":"pessoas votaram"}`:""}${tl.note?` · ${esc(tl.note)}`:""}</span>`:`<span class="hint">${staff?`Lance a votação escolhendo ${K.pl.toLowerCase()} da temporada; a galera dá o tier e sai o ranking do mês.`:"A staff lança uma votação por mês. Enquanto isso, monte a sua em “Minha”."}</span>`}</div>
+    <div class="actions">${meses.length>1?`<select id="gkmes-sel" data-k="${k}" aria-label="Mês">${meses.map(m=>`<option value="${m}"${m===id?" selected":""}>${esc(monthName(m.split("~")[0]))}</option>`).join("")}</select>`:""}
+      ${staff&&!S.tierlists?.[cur]?`<button class="btn small primary" data-act="gkmonthly" data-id="${cur}" data-k="${k}">Lançar votação do mês</button>`:""}
+      ${staff&&tl?`<button class="btn small" data-act="gkmonthly" data-id="${id}" data-k="${k}">Gerenciar</button>`:""}</div></div>`;
+  if(!tl)return top;
+  const res=r||{tiers:{},pending:[]};const items=[];GK_TIERS.forEach(t=>(res.tiers[t]||[]).forEach(x=>items.push({...x,t:x.title,img:x.coverUrl,k,tier:t})));
+  return top+`<div class="tlgrid"><section class="box tierlist">${gkTierRows(items,{k,votes:true,pending:(res.pending||[]).map(x=>({...x,t:x.title,img:x.coverUrl,k}))})}</section>${gkVoteBox(id,k)}</div>`;
 }
-function gkGalera(){
-  const A=allMedia().filter(gkPass);const P=players();
-  if(!A.length)return `<section class="box card gkempty"><span class="big">🎌</span><h3>Ninguém adicionou nada ainda</h3><p>Seja o primeiro: adicione o que você está assistindo ou lendo.</p>${MINE()?'<button class="btn primary" data-act="gkadd">+ Adicionar</button>':""}</section>`;
-  const by={};for(const x of A){const k=x.k+":"+gkKey(x.t);const o=(by[k]=by[k]||{t:x.t,k:x.k,img:"",y:x.y,ps:[],notas:[]});o.ps.push(x.pid);if(typeof x.nota==="number")o.notas.push(x.nota);if(!gkImg(o.img)&&gkImg(x.img))o.img=x.img}
-  const top=Object.values(by).sort((a,b)=>b.ps.length-a.ps.length||(avg(b.notas)-avg(a.notas))).slice(0,12);
-  const recent=A.filter(x=>x.at).sort((a,b)=>b.at-a.at).slice(0,25);
-  return `<section class="box card"><span class="eyebrow">Mais vistos pela galera</span><div class="gktop">${top.map(o=>`<a class="gktopi" href="#midia-${esc(gkKey(o.t))}">${gkPoster(o)}<b>${esc(o.t)}</b><span class="hint">${o.ps.length} ${o.ps.length===1?"pessoa":"pessoas"}${o.notas.length?` · ★ ${fmtNota(avg(o.notas))}`:""}</span></a>`).join("")}</div></section>
-  <section class="box card"><span class="eyebrow">Atividade recente</span><div class="gkfeed">${recent.map(x=>{const p=P[x.pid];if(!p)return "";const v=x.k==="manga"?GK_ST[x.st]?.vm:GK_ST[x.st]?.v;
-    return `<div class="gkfi">${glyph(p,true)}<div><b>${nk(p)}</b> ${esc(v||"adicionou")} <a href="#midia-${esc(gkKey(x.t))}"><b>${esc(x.t)}</b></a> <span class="tag">${GK_KINDS[x.k].ic} ${GK_KINDS[x.k].l}</span>${typeof x.nota==="number"?` ${starsHTML(x.nota)}`:""}${x.c?`<p class="frev">“${esc(cap(x.c,200))}”</p>`:""}<span class="hint">${ago(x.at)}</span></div></div>`}).join("")}</div></section>`;
+function gkVoteBox(id,k){
+  const tl=S.tierlists?.[id];if(!tl||tl.status!=="aberta"||!Array.isArray(tl.games))return "";
+  if(!me()||!S.canWrite)return `<section class="box card"><span class="eyebrow">Votação aberta</span><p style="margin:0">Entre e crie seu perfil para votar.</p></section>`;
+  const mine=votesOf(id)[S.myId]?.v||{};const done=tl.games.filter(g=>mine[norm(g.title)]).length;
+  return `<section class="box card"><span class="eyebrow">Seu voto · ${done} de ${tl.games.length}</span><h3>Dê o tier de cada um</h3><div class="sub">Só vote no que você viu. Toque de novo para tirar o voto.</div>
+    <div class="vlist">${tl.games.map(g=>{const key=norm(g.title);return `<div class="mrow">${gkPoster({img:g.coverUrl,k},"mini")}<span class="ct">${esc(g.title)}</span><div class="pick">${GK_TIERS.map(t=>`<button type="button" class="tb t-${t}" data-act="vote" data-m="${esc(id)}" data-k="${esc(key)}" data-t="${t}" aria-pressed="${mine[key]===t}" aria-label="Votar ${t} em ${esc(g.title)}">${t}</button>`).join("")}</div></div>`}).join("")}</div></section>`;
 }
-const avg = a => a.length?a.reduce((s,b)=>s+b,0)/a.length:0;
-function gkNews(){return (S.autoNews?.itens||[]).filter(n=>n.cat==="geek"&&safeUrl(n.url)&&n.title)}
-function gkNoticias(){
-  const L=gkNews();const srcs=[...new Set(L.map(n=>n.source).filter(Boolean))];if(S.gkSrc&&!srcs.includes(S.gkSrc))S.gkSrc="";
-  const F=L.filter(n=>!S.gkSrc||n.source===S.gkSrc).slice(0,40);
-  if(!L.length)return `<section class="box card"><p>As notícias geek chegam com o próximo giro do robô de notícias (a cada 3 horas).</p></section>`;
-  return `<div class="gkkinds">${["",...srcs].map(s=>`<button class="chip2" data-act="gksrc" data-k="${esc(s)}" aria-pressed="${(S.gkSrc||"")===s}">${esc(s||"Todas")}</button>`).join("")}</div>
-  <div class="gknews">${F.map(n=>`<a class="box gknw" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer">${n.img&&/^https:\/\//.test(n.img)?`<img src="${esc(n.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><span class="hint">${esc(n.source||"")} · ${ago(n.at)}</span><b>${esc(n.title)}</b>${n.summary?`<p>${esc(cap(n.summary,180))}</p>`:""}</div></a>`).join("")}</div>`;
+function gkOpenMonthly(id,k){
+  const tl=S.tierlists?.[id];
+  M={type:"gkmonthly",id,k,title:tl?.title||`${GK_KINDS[k].pl} do mês`,note:tl?.note||"",games:clone(tl?.games||[]),status:tl?.status||"",res:[],q:""};gkDrawMonthly();
+}
+function gkDrawMonthly(){
+  if(M?.type!=="gkmonthly")return;const K=GK_KINDS[M.k];
+  $("#modal").innerHTML=overlay(`<h2>${K.ic} Votação do mês · ${esc(K.pl)}</h2><span class="hint">${esc(monthName(M.id.split("~")[0]))}${M.status?` · ${M.status==="aberta"?"aberta":"encerrada"}`:""}</span>
+    <label class="field full"><span class="flabel">Título da votação</span><input id="gkm-title" maxlength="80" value="${esc(M.title)}"></label>
+    <label class="field full"><span class="flabel">Recado (opcional)</span><input id="gkm-note" maxlength="120" value="${esc(M.note)}" placeholder="Ex.: os animes da temporada de outono"></label>
+    <div class="flabel">Títulos na votação (${M.games.length}/20)</div>
+    <div class="gkmsel">${M.games.map((g,i)=>`<span class="gkmi">${gkPoster({img:g.coverUrl,k:M.k},"mini")}<span>${esc(g.title)}</span><button type="button" class="linkbtn" data-act="gkmrm" data-i="${i}" aria-label="Tirar ${esc(g.title)}">✕</button></span>`).join("")||'<span class="hint">Nenhum ainda. Busque abaixo.</span>'}</div>
+    ${M.k==="anime"?`<button type="button" class="btn small" data-act="gkmseason">+ Sugerir os 12 mais populares da temporada</button>`:""}
+    <label class="field full"><span class="flabel">Buscar ${esc(K.l.toLowerCase())}</span><input id="gkm-q" autocomplete="off" maxlength="80" value="${esc(M.q)}"></label>
+    <div class="gkres">${(M.res||[]).map((r,i)=>`<button type="button" class="gkopt" data-act="gkmadd" data-i="${i}">${gkPoster({...r,k:M.k})}<span><b>${esc(r.t)}</b><small>${[r.y,r.extra].filter(Boolean).map(esc).join(" · ")}</small></span></button>`).join("")}</div>
+    <p class="err" id="gkm-err" role="alert"></p>
+    <div class="actions">${M.status?`<button class="btn danger" data-act="gkmdel">Apagar</button>`:""}${M.status==="aberta"?`<button class="btn" data-act="gkmclose">Encerrar votação</button>`:M.status==="encerrada"?`<button class="btn" data-act="gkmreopen">Reabrir</button>`:""}
+      <button class="btn" data-act="close">Cancelar</button><button class="btn primary" data-act="gkmsave">${M.status?"Salvar":"Abrir votação"}</button></div>`,"gkbox");
+}
+const gkmRead = () => {const t=$("#gkm-title"),n=$("#gkm-note");if(t)M.title=t.value;if(n)M.note=n.value};
+async function gkmWrite(status){
+  gkmRead();if(!M.games.length){$("#gkm-err").textContent="Escolha pelo menos um título.";return}
+  const prev=S.tierlists?.[M.id]||{};const doc={title:M.title.trim().slice(0,80)||`${GK_KINDS[M.k].pl} do mês`,note:M.note.trim().slice(0,120),games:M.games.slice(0,20),status,kind:M.k,at:prev.at||Date.now()};
+  if(status==="encerrada"){const r=tlResult(M.id);if(r)doc.final={tiers:r.tiers,pending:r.pending,voters:r.voters}}
+  try{await S.db.doc(`tierlists/${M.id}`).set(doc);S.tierlists={...(S.tierlists||{}),[M.id]:doc};S.gkMesSel={...(S.gkMesSel||{}),[M.k]:M.id};S.gkWho[M.k]="mes";closeModal();renderAll();toast(status==="aberta"?"Votação aberta! 🗳️":"Votação encerrada")}
+  catch(err){$("#gkm-err").textContent=errMsg(err)}
+}
+async function gkSeasonList(){
+  if(S.gkSeason)return S.gkSeason;
+  const d=new Date();const m=d.getMonth();const season=m<3?"WINTER":m<6?"SPRING":m<9?"SUMMER":"FALL";const year=d.getFullYear();
+  const q=`query($s:MediaSeason,$y:Int){Page(perPage:30){media(season:$s,seasonYear:$y,type:ANIME,isAdult:false,sort:POPULARITY_DESC,format_in:[TV,ONA,TV_SHORT]){id title{romaji english} coverImage{large} episodes nextAiringEpisode{episode airingAt} externalLinks{site url} genres averageScore}}}`;
+  try{const r=await fetch("https://graphql.anilist.co",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({query:q,variables:{s:season,y:year}})}).then(r=>r.json());
+    S.gkSeason={season,year,list:(r?.data?.Page?.media||[]).map(m=>({id:m.id,t:m.title.english||m.title.romaji,t2:m.title.english&&m.title.romaji!==m.title.english?m.title.romaji:"",img:m.coverImage?.large||"",ep:m.episodes,next:m.nextAiringEpisode,
+      cr:(m.externalLinks||[]).find(l=>/crunchyroll/i.test(l.site))?.url||"",links:(m.externalLinks||[]).filter(l=>/netflix|prime|disney|hidive|max/i.test(l.site)).map(l=>({s:l.site,u:l.url})).slice(0,2),gen:(m.genres||[]).slice(0,3),score:m.averageScore}))};
+  }catch(e){S.gkSeason={season,year,list:[],err:true}}
+  return S.gkSeason;
+}
+
+/* ================= DESCOBRIR → 🎌 Animes (lançamentos + notícias) ================= */
+const SEASON_PT={WINTER:"Inverno",SPRING:"Primavera",SUMMER:"Verão",FALL:"Outono"};
+function quandoEp(ts){const d=new Date(ts*1000);const dias=Math.round((gkDay(d)-gkDay(new Date()))/864e5);const h=d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+  return dias<=0?`hoje ${h}`:dias===1?`amanhã ${h}`:dias<7?`${d.toLocaleDateString("pt-BR",{weekday:"short"}).replace(".","")} ${h}`:d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})}
+function gkDay(d){d=new Date(d);d.setHours(0,0,0,0);return d.getTime()}
+function viewAnimes(){
+  if(!S.gkSeason&&!S.gkSeasonBusy){S.gkSeasonBusy=true;gkSeasonList().then(()=>{S.gkSeasonBusy=false;if(S.view==="animes")renderView()})}
+  const se=S.gkSeason;const f=S.anFilter||"cr";
+  let L=se?.list||[];if(f==="cr")L=L.filter(x=>x.cr);if(f==="semana")L=L.filter(x=>x.next).sort((a,b)=>a.next.airingAt-b.next.airingAt);
+  const N=(S.autoNews?.itens||[]).filter(n=>n.cat==="geek"&&safeUrl(n.url)&&n.title);
+  const srcs=[...new Set(N.map(n=>n.source).filter(Boolean))];if(S.gkSrc&&!srcs.includes(S.gkSrc))S.gkSrc="";
+  const NF=N.filter(n=>!S.gkSrc||n.source===S.gkSrc).slice(0,24);
+  return `<div class="page animes">
+  <div class="tierhead"><div style="flex:1"><span class="eyebrow">🎌 Animes</span><h3>Lançamentos ${se?`de ${esc(SEASON_PT[se.season])} ${se.year}`:"da temporada"}</h3><span class="hint">Episódios novos da temporada, com link para assistir. Gostou? Adicione na sua tier list de animes.</span></div></div>
+  <div class="gkkinds">${[["cr","No Crunchyroll"],["semana","Próximos episódios"],["todos","Todos da temporada"]].map(([k,l])=>`<button class="chip2" data-act="anf" data-k="${k}" aria-pressed="${f===k}">${l}</button>`).join("")}</div>
+  ${!se?`<section class="box card"><p class="hint" style="margin:0">Carregando a temporada…</p></section>`:se.err?`<section class="box card"><p style="margin:0">Não deu para carregar a temporada agora. Tente de novo mais tarde.</p></section>`:
+   `<div class="angrid">${L.slice(0,24).map(x=>`<article class="box ancard">${gkPoster({...x,k:"anime"},"big")}<div class="aninfo"><b>${esc(x.t)}</b>${x.t2?`<span class="hint">${esc(x.t2)}</span>`:""}
+      <div class="gkmeta">${x.next?`<span class="tag anext">Ep ${x.next.episode} · ${esc(quandoEp(x.next.airingAt))}</span>`:x.ep?`<span class="tag">${x.ep} eps</span>`:""}${x.score?`<span class="tag">★ ${(x.score/10).toFixed(1).replace(".",",")}</span>`:""}</div>
+      ${x.gen.length?`<span class="hint">${x.gen.map(esc).join(" · ")}</span>`:""}
+      <div class="anlinks">${x.cr?`<a class="btn small cr" href="${esc(x.cr)}" target="_blank" rel="noopener noreferrer">▶ Crunchyroll</a>`:""}${x.links.map(l=>`<a class="btn small" href="${esc(l.u)}" target="_blank" rel="noopener noreferrer">${esc(l.s)}</a>`).join("")}
+      ${MINE()?`<button class="btn small" data-act="gkaddthis" data-t="${esc(x.t)}" data-k="anime" data-img="${esc(gkImg(x.img))}" data-ref="al:${x.id}">+ Minha lista</button>`:""}</div></div></article>`).join("")||'<p class="hint">Nada nesse filtro.</p>'}</div>`}
+  <div class="tierhead" style="margin-top:18px"><div><span class="eyebrow">📰 Notícias de anime</span><h3>O que está rolando</h3></div></div>
+  ${N.length?`<div class="gkkinds">${["",...srcs].map(s=>`<button class="chip2" data-act="gksrc" data-k="${esc(s)}" aria-pressed="${(S.gkSrc||"")===s}">${esc(s||"Todas")}</button>`).join("")}</div>
+  <div class="gknews">${NF.map(n=>`<a class="box gknw" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer">${n.img&&/^https:\/\//.test(n.img)?`<img src="${esc(n.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<div><span class="hint">${esc(n.source||"")} · ${ago(n.at)}</span><b>${esc(n.title)}</b>${n.summary?`<p>${esc(cap(n.summary,160))}</p>`:""}</div></a>`).join("")}</div>`:`<section class="box card"><p class="hint" style="margin:0">As notícias chegam com o próximo giro do robô (a cada 3 horas).</p></section>`}
+  </div>`;
 }
 
 /* ---------- página de um título ---------- */
 function viewMidia(){
   const key=S.route;const L=allMedia().filter(x=>gkKey(x.t)===key);const P=players();
-  if(!L.length)return `<div class="page"><a class="btn small back" href="#geek">← Geek</a><section class="box card"><p>Título não encontrado.</p></section></div>`;
-  const base=L.find(x=>gkImg(x.img))||L[0];const notas=L.filter(x=>typeof x.nota==="number").map(x=>x.nota);
-  const mineHas=L.find(x=>x.pid===S.myId);
-  return `<div class="page"><a class="btn small back" href="#geek">← Geek</a>
+  if(!L.length)return `<div class="page"><a class="btn small back" href="#tierlist">← Tier List</a><section class="box card"><p>Ninguém da galera adicionou esse título ainda.</p></section></div>`;
+  const base=L.find(x=>gkImg(x.img))||L[0];const notas=L.filter(x=>typeof x.nota==="number").map(x=>x.nota);const mineHas=L.find(x=>x.pid===S.myId);
+  return `<div class="page"><a class="btn small back" href="#tierlist" data-act="gkcat" data-k="${esc(base.k)}">← ${esc(GK_KINDS[base.k].pl)}</a>
   <section class="box gkhero">${gkPoster(base,"huge")}<div><span class="eyebrow">${GK_KINDS[base.k].ic} ${GK_KINDS[base.k].l}${base.y?" · "+esc(base.y):""}</span><h2>${esc(base.t)}</h2>
-    <div class="gkmeta">${notas.length?`<span class="tag">★ ${fmtNota(avg(notas))} média da galera</span>`:""}<span class="tag">${L.length} ${L.length===1?"pessoa":"pessoas"}</span></div>
+    <div class="gkmeta">${notas.length?`<span class="tag">★ ${fmtNota(gkAvg(notas))} média da galera</span>`:""}<span class="tag">${L.length} ${L.length===1?"pessoa":"pessoas"}</span></div>
     ${MINE()?(mineHas?`<button class="btn small" data-act="gkedit" data-id="${esc(mineHas.mid)}">Editar o meu</button>`:`<button class="btn small primary" data-act="gkaddthis" data-t="${esc(base.t)}" data-k="${esc(base.k)}" data-img="${esc(gkImg(base.img))}" data-y="${esc(base.y||"")}" data-ref="${esc(base.ref||"")}">+ Adicionar na minha lista</button>`):""}</div></section>
   <section class="box card"><span class="eyebrow">Quem viu</span><div class="gkwho">${L.map(x=>{const p=P[x.pid];if(!p)return "";
-    return `<div class="gkfi">${glyph(p,true)}<div><b>${nk(p)}</b> <span class="pill gkst-${esc(x.st)}">${esc(gkStL(x.st,x.k))}</span>${x.tier?` <span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}${typeof x.nota==="number"?` ${starsHTML(x.nota)}`:""}${x.c?`<p class="frev">“${esc(x.c)}”</p>`:""}</div></div>`}).join("")}</div></section>
+    return `<div class="gkfi">${glyph(p,true)}<div><a href="#perfil-${esc(pslug(p))}"><b>${nk(p)}</b></a> <span class="pill gkst-${esc(x.st)}">${esc(gkStL(x.st,x.k))}</span>${x.tier?` <span class="tlabel mini t-${esc(x.tier)}">${esc(x.tier)}</span>`:""}${typeof x.nota==="number"?` ${starsHTML(x.nota)}`:""}${x.c?`<p class="frev">“${esc(x.c)}”</p>`:""}</div></div>`}).join("")}</div></section>
   <section class="box card"><span class="eyebrow">Conversa</span>${miniThread("m~"+key,"O que você achou? (sem spoiler, hein)")}</section></div>`;
 }
 
-/* ---------- adicionar / editar ---------- */
+/* ---------- perfil: animes, séries, filmes e mangás da pessoa ---------- */
+const _viewPerfilGk=viewPerfil;
+viewPerfil=function(){let h=_viewPerfilGk.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;
+  const L=mediaOf(pid);const mine=pid===S.myId;if(!L.length&&!mine)return h;
+  const cnt=k=>L.filter(x=>x.k===k).length;
+  let k=S.profKind[pid];if(!k||!GK_KINDS[k])k=Object.keys(GK_KINDS).find(x=>cnt(x))||"anime";
+  const I=L.filter(x=>x.k===k).sort((a,b)=>(GK_TIERS.indexOf(a.tier)+1||9)-(GK_TIERS.indexOf(b.tier)+1||9)||(b.at||0)-(a.at||0));
+  const box=`<section class="box card gkprof"><div class="gkph2"><span class="eyebrow">🍿 Animes, séries, filmes e mangás</span>${mine&&MINE()?`<button class="btn small primary" data-act="gkadd" data-k="${k}">+ Adicionar</button>`:""}</div>
+    <div class="gkkinds">${Object.entries(GK_KINDS).map(([kk,o])=>`<button class="chip2" data-act="gkprofk" data-pid="${esc(pid)}" data-k="${kk}" aria-pressed="${kk===k}">${o.ic} ${o.pl} <b>${cnt(kk)}</b></button>`).join("")}</div>
+    ${I.length?`<div class="gktop">${I.slice(0,12).map(x=>`<a class="gktopi" href="#midia-${esc(gkKey(x.t))}">${gkPoster(x)}${x.tier?`<span class="tlabel mini t-${esc(x.tier)} gkbadge">${esc(x.tier)}</span>`:""}<b>${esc(x.t)}</b><span class="hint">${esc(gkStL(x.st,x.k))}</span></a>`).join("")}</div>
+      <a class="linkbtn" href="#tierlist" data-act="gkseeall" data-pid="${esc(pid)}" data-k="${k}">Ver tier list de ${esc(GK_KINDS[k].pl.toLowerCase())}${I.length>12?` (${I.length})`:""} →</a>`
+      :`<p class="hint" style="margin:0">${mine?`Nenhum ${esc(GK_KINDS[k].l.toLowerCase())} ainda. Toque em “+ Adicionar”: a capa vem sozinha e ele entra na sua tier list.`:"Nada nessa categoria."}</p>`}</section>`;
+  const i=h.lastIndexOf("</div>");return i>0?h.slice(0,i)+box+h.slice(i):h+box};
+
+/* ---------- adicionar / editar (modal) ---------- */
 function gkOpen(mid,pre){
   const x=mid?mediaOf(S.myId).find(m=>m.mid===mid):null;
-  M={type:"geek",mid:mid||null,k:x?.k||pre?.k||(S.geekKind||"anime"),t:x?.t||pre?.t||"",img:x?.img||pre?.img||"",y:x?.y||pre?.y||null,ref:x?.ref||pre?.ref||"",
-    st:x?.st||"assistindo",nota:typeof x?.nota==="number"?x.nota:null,tier:x?.tier||"",c:x?.c||"",res:[]};
+  M={type:"geek",mid:mid||null,k:x?.k||pre?.k||"anime",t:x?.t||pre?.t||"",img:x?.img||pre?.img||"",y:x?.y||pre?.y||null,ref:x?.ref||pre?.ref||"",
+    st:x?.st||"assistindo",nota:typeof x?.nota==="number"?x.nota:null,tier:x?.tier||"",c:x?.c||"",res:[],q:""};
   gkDraw();setTimeout(()=>{const i=$("#gk-q");if(i&&!M.t)i.focus()},50);
 }
 function gkDraw(){
   if(M?.type!=="geek")return;
-  const sel=M.t?`<div class="gksel">${gkPoster(M,"big")}<div><b>${esc(M.t)}</b>${M.y?`<span class="hint"> · ${esc(M.y)}</span>`:""}<br><button class="linkbtn" data-act="gkclear">trocar título</button></div></div>`:
+  const sel=M.t?`<div class="gksel">${gkPoster(M,"big")}<div><b>${esc(M.t)}</b>${M.y?`<span class="hint"> · ${esc(M.y)}</span>`:""}<br>${M.mid?"":'<button class="linkbtn" data-act="gkclear">trocar título</button>'}</div></div>`:
     `<label class="field full"><span class="flabel">Buscar título</span><input id="gk-q" placeholder="${M.k==="anime"?"Ex.: Frieren, One Piece":M.k==="manga"?"Ex.: Berserk, Chainsaw Man":M.k==="serie"?"Ex.: The Last of Us, Arcane":"Ex.: Duna, Interestelar"}" autocomplete="off" maxlength="80"></label>
      <div class="gkres" id="gk-res">${(M.res||[]).map((r,i)=>`<button type="button" class="gkopt" data-act="gkpick" data-i="${i}">${gkPoster({...r,k:M.k})}<span><b>${esc(r.t)}</b>${r.t2?`<small>${esc(r.t2)}</small>`:""}<small>${[r.y,r.extra].filter(Boolean).map(esc).join(" · ")}</small></span></button>`).join("")}
      ${M.busy?'<span class="hint">Buscando…</span>':""}${M.q&&!M.busy&&!M.res.length?`<button type="button" class="btn small" data-act="gkmanual">Usar “${esc(M.q)}” sem capa</button>`:""}</div>`;
-  $("#modal").innerHTML=overlay(`<h2>${M.mid?"Editar":"Adicionar"} na área geek</h2>
-    <div class="gkkinds">${Object.entries(GK_KINDS).map(([k,o])=>`<button type="button" class="chip2" data-act="gkk" data-k="${k}" aria-pressed="${M.k===k}">${o.ic} ${o.l}</button>`).join("")}</div>
+  $("#modal").innerHTML=overlay(`<h2>${M.mid?"Editar":"Adicionar"}</h2>
+    ${M.mid?"":`<div class="gkkinds">${Object.entries(GK_KINDS).map(([k,o])=>`<button type="button" class="chip2" data-act="gkk" data-k="${k}" aria-pressed="${M.k===k}">${o.ic} ${o.l}</button>`).join("")}</div>`}
     ${sel}
     <div class="gkform">
-      <label class="field"><span class="flabel">Status</span><select id="gk-st">${Object.entries(GK_ST).map(([k,o])=>`<option value="${k}"${M.st===k?" selected":""}>${esc(gkStL(k,M.k))}</option>`).join("")}</select></label>
+      <label class="field"><span class="flabel">Status</span><select id="gk-st">${Object.keys(GK_ST).map(k=>`<option value="${k}"${M.st===k?" selected":""}>${esc(gkStL(k,M.k))}</option>`).join("")}</select></label>
       <label class="field"><span class="flabel">Tier</span><select id="gk-tier"><option value="">Sem tier</option>${GK_TIERS.map(t=>`<option${M.tier===t?" selected":""}>${t}</option>`).join("")}</select></label>
       <label class="field"><span class="flabel">Nota (0 a 10)</span><input id="gk-nota" type="number" min="0" max="10" step="0.5" inputmode="decimal" value="${M.nota??""}"></label>
       <label class="field full"><span class="flabel">Comentário <span class="hint">(opcional, sem spoiler)</span></span><textarea id="gk-c" maxlength="400" rows="3">${esc(M.c)}</textarea></label>
@@ -2958,52 +3047,76 @@ function gkDraw(){
 function gkReadForm(){const st=$("#gk-st"),ti=$("#gk-tier"),no=$("#gk-nota"),c=$("#gk-c");
   if(st)M.st=st.value;if(ti)M.tier=ti.value;if(no){const v=no.value.trim();M.nota=v===""?null:Math.max(0,Math.min(10,Math.round(Number(v)*2)/2))}if(c)M.c=c.value}
 let _gkT=null;
-document.addEventListener("input",e=>{if(e.target.id!=="gk-q"||M?.type!=="geek")return;const q=e.target.value;M.q=q;clearTimeout(_gkT);
-  _gkT=setTimeout(async()=>{if(M?.type!=="geek"||M.q!==q)return;gkReadForm();M.busy=true;const r0=$("#gk-res");if(r0)r0.innerHTML='<span class="hint">Buscando…</span>';
-    const res=await gkSearch(q,M.k);if(M?.type!=="geek"||M.q!==q)return;M.busy=false;M.res=res;
-    const box=$("#gk-res");if(box){gkDraw();const i=$("#gk-q");if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}}},450)});
+document.addEventListener("input",e=>{
+  const id=e.target.id;if(!((id==="gk-q"&&M?.type==="geek")||(id==="gkm-q"&&M?.type==="gkmonthly")))return;
+  const q=e.target.value;M.q=q;clearTimeout(_gkT);
+  _gkT=setTimeout(async()=>{if(!M||M.q!==q)return;if(M.type==="geek")gkReadForm();else gkmRead();
+    const res=await gkSearch(q,M.k);if(!M||M.q!==q)return;M.res=res;
+    if(M.type==="geek")gkDraw();else gkDrawMonthly();const i=$("#"+id);if(i){i.focus();i.setSelectionRange(i.value.length,i.value.length)}},450)});
 document.addEventListener("click",async e=>{
-  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;if(!a.startsWith("gk"))return;
+  const el=e.target.closest("[data-act]");if(!el)return;const a=el.dataset.act;
+  if(!(a.startsWith("gk")||a==="anf"))return;
   e.stopImmediatePropagation();
-  if(a==="gktab"){S.geekTab=el.dataset.k;renderView();return}
-  if(a==="gkkind"){S.geekKind=el.dataset.k;renderView();return}
-  if(a==="gkwho"){S.geekWho=el.dataset.id;if(el.closest(".gkprof")){S.geekTab="tier";return}renderView();return}
+  if(a==="gkcat"){S.tierCat=el.dataset.k;if(el.tagName!=="A")renderView();return}
+  if(a==="gkwho"){S.gkWho[el.dataset.k]=el.dataset.id;renderView();return}
   if(a==="gksrc"){S.gkSrc=el.dataset.k;renderView();return}
-  if(a==="gkadd"){if(!MINE()){toast("Entre na sua conta para adicionar");return}gkOpen(null);return}
-  if(a==="gkaddthis"){gkOpen(null,{t:el.dataset.t,k:el.dataset.k,img:el.dataset.img,y:Number(el.dataset.y)||null,ref:el.dataset.ref});return}
+  if(a==="anf"){S.anFilter=el.dataset.k;renderView();return}
+  if(a==="gkprofk"){S.profKind[el.dataset.pid]=el.dataset.k;renderView();return}
+  if(a==="gkseeall"){S.tierCat=el.dataset.k;S.gkWho[el.dataset.k]=el.dataset.pid===S.myId?"eu":el.dataset.pid;return}
+  if(a==="gkadd"){if(!MINE()){toast("Entre na sua conta para adicionar");return}gkOpen(null,{k:el.dataset.k||"anime"});return}
+  if(a==="gkaddthis"){if(!MINE()){toast("Entre na sua conta para adicionar");return}
+    const ja=mediaOf(S.myId).find(x=>x.k===el.dataset.k&&gkKey(x.t)===gkKey(el.dataset.t));if(ja){gkOpen(ja.mid);return}
+    gkOpen(null,{t:el.dataset.t,k:el.dataset.k,img:el.dataset.img,y:Number(el.dataset.y)||null,ref:el.dataset.ref});return}
   if(a==="gkedit"){gkOpen(el.dataset.id);return}
+  if(a==="gkmonthly"){if(isStaff())gkOpenMonthly(el.dataset.id,el.dataset.k);return}
+  if(M?.type==="gkmonthly"){
+    if(a==="gkmadd"){gkmRead();const r=M.res[Number(el.dataset.i)];if(!r)return;if(M.games.length>=20){toast("Máximo de 20");return}
+      if(!M.games.some(g=>norm(g.title)===norm(r.t)))M.games.push({title:r.t.slice(0,90),coverUrl:gkImg(r.img)});gkDrawMonthly();return}
+    if(a==="gkmrm"){gkmRead();M.games.splice(Number(el.dataset.i),1);gkDrawMonthly();return}
+    if(a==="gkmseason"){gkmRead();const se=await gkSeasonList();for(const x of se.list.slice(0,12)){if(M.games.length>=20)break;if(!M.games.some(g=>norm(g.title)===norm(x.t)))M.games.push({title:x.t.slice(0,90),coverUrl:gkImg(x.img)})}gkDrawMonthly();return}
+    if(a==="gkmsave"){await gkmWrite(M.status==="encerrada"?"encerrada":"aberta");return}
+    if(a==="gkmclose"){await gkmWrite("encerrada");return}
+    if(a==="gkmreopen"){await gkmWrite("aberta");return}
+    if(a==="gkmdel"){if(el.dataset.ok!=="1"){el.dataset.ok="1";el.textContent="Confirmar: apagar votação";return}
+      try{await S.db.doc(`tierlists/${M.id}`).delete();const o={...(S.tierlists||{})};delete o[M.id];S.tierlists=o;closeModal();renderAll();toast("Votação apagada")}catch(err){$("#gkm-err").textContent=errMsg(err)}return}
+    return}
   if(M?.type!=="geek")return;
-  if(a==="gkk"){gkReadForm();M.k=el.dataset.k;if(!M.mid){M.t="";M.img="";M.res=[];M.y=null;M.ref=""}gkDraw();const q=$("#gk-q");if(q&&M.q){q.dispatchEvent(new Event("input",{bubbles:true}))}return}
+  if(a==="gkk"){gkReadForm();M.k=el.dataset.k;M.t="";M.img="";M.res=[];M.y=null;M.ref="";gkDraw();const q=$("#gk-q");if(q&&M.q)q.dispatchEvent(new Event("input",{bubbles:true}));return}
   if(a==="gkpick"){gkReadForm();const r=M.res[Number(el.dataset.i)];if(!r)return;Object.assign(M,{t:r.t,img:gkImg(r.img),y:r.y||null,ref:r.ref||""});gkDraw();return}
   if(a==="gkmanual"){gkReadForm();M.t=String(M.q||"").trim().slice(0,90);M.img="";gkDraw();return}
   if(a==="gkclear"){gkReadForm();M.t="";M.img="";M.res=[];gkDraw();return}
-  if(a==="gkdel"){const mid=M.mid;try{await saveMe(p=>{if(p.media)delete p.media[mid]},{noDay:true});closeModal();renderAll();toast("Removido da sua lista")}catch(err){$("#gk-err").textContent=errMsg(err)}return}
+  if(a==="gkdel"){const mid=M.mid;try{await saveMe(p=>{if(p.media)delete p.media[mid]},{noDay:true});closeModal();renderAll();toast("Removido")}catch(err){$("#gk-err").textContent=errMsg(err)}return}
   if(a==="gksave"){gkReadForm();if(!M.t){$("#gk-err").textContent="Escolha um título.";return}
     const L=mediaOf(S.myId);const dup=L.find(x=>x.mid!==M.mid&&x.k===M.k&&gkKey(x.t)===gkKey(M.t));if(dup){$("#gk-err").textContent="Esse título já está na sua lista. Edite o que já existe.";return}
-    if(!M.mid&&L.length>=400){$("#gk-err").textContent="Limite de 400 títulos na lista.";return}
+    if(!M.mid&&L.length>=400){$("#gk-err").textContent="Limite de 400 títulos.";return}
     const mid=M.mid||newId("m");const it={t:M.t.slice(0,90),k:M.k,st:M.st,at:Date.now()};
     if(gkImg(M.img))it.img=M.img;if(M.y)it.y=Number(M.y)||null;if(M.ref)it.ref=String(M.ref).slice(0,30);if(typeof M.nota==="number"&&!isNaN(M.nota))it.nota=M.nota;if(M.tier)it.tier=M.tier;if(M.c.trim())it.c=M.c.trim().slice(0,400);
-    el.disabled=true;
-    const editando=!!M.mid;try{await saveMe(p=>{p.media=(p.media&&typeof p.media==="object")?p.media:{};p.media[mid]=it});closeModal();renderAll();toast(editando?"Atualizado":"Adicionado à sua lista 🍿")}
+    const editando=!!M.mid,kind=M.k;el.disabled=true;
+    try{await saveMe(p=>{p.media=(p.media&&typeof p.media==="object")?p.media:{};p.media[mid]=it});closeModal();S.profKind[S.myId]=kind;renderAll();toast(editando?"Atualizado":`Adicionado! Já está no seu perfil e na sua tier list de ${GK_KINDS[kind].pl.toLowerCase()} 🍿`)}
     catch(err){el.disabled=false;const E=$("#gk-err");if(E)E.textContent=errMsg(err)}
     return}
 },true);
-document.addEventListener("change",e=>{if(e.target.id==="gkwho-sel"&&e.target.value){S.geekWho=e.target.value;renderView()}});
+document.addEventListener("change",e=>{
+  if(e.target.id==="gkwho-sel"&&e.target.value){S.gkWho[e.target.dataset.k]=e.target.value;renderView()}
+  if(e.target.id==="gkmes-sel"){S.gkMesSel={...(S.gkMesSel||{}),[e.target.dataset.k]:e.target.value};renderView()}
+});
 
-/* ---------- rotas e navegação ---------- */
-{const g=NAV.find(n=>n.k==="descobrir");if(g){if(!g.v.includes("geek"))g.v.splice(1,0,"geek");g.extra=[...(g.extra||[]),"midia"]}}
-SUBN.geek="🎌 Geek";
+/* ---------- navegação e rotas ---------- */
+{const g=NAV.find(n=>n.k==="descobrir");if(g){g.v=g.v.filter(v=>v!=="geek");if(!g.v.includes("animes"))g.v.splice(1,0,"animes")}
+ const t=NAV.find(n=>n.k==="tier");if(t)t.extra=[...(t.extra||[]),"midia"]}
+SUBN.animes="🎌 Animes";
 const _routeGk=route;
 route=function(h){
   h=(h??location.hash.slice(1))||"";try{h=decodeURIComponent(h)}catch{}
   if(h.startsWith("midia-")){S.view="midia";S.route=h.slice(6);if(M)closeModal();renderAll();try{window.scrollTo({top:0})}catch{};return}
+  if(h==="geek"){S.tierCat="anime";location.replace("#tierlist");return}
   return _routeGk(h);
 };
 const _renderViewGk=renderView;
 renderView=function(){
-  if(S.view==="geek"||S.view==="midia"){const V=$("#view");if(S.mode==="loading"||!Object.keys(players()).length)return _renderViewGk.apply(this,arguments);
+  if(S.view==="animes"||S.view==="midia"){const V=$("#view");if(S.mode==="loading"||!Object.keys(players()).length)return _renderViewGk.apply(this,arguments);
     const focused=document.activeElement?.id;const keep={};V.querySelectorAll("input[id],textarea[id]").forEach(el=>{if(el.value)keep[el.id]=el.value});
-    V.innerHTML=S.view==="geek"?viewGeek():viewMidia();
+    V.innerHTML=S.view==="animes"?viewAnimes():viewMidia();
     for(const [id,v] of Object.entries(keep)){const el=document.getElementById(id);if(el&&!el.value)el.value=v}
     if(focused){const el=document.getElementById(focused);if(el)el.focus({preventScroll:true})}
     try{document.documentElement.removeAttribute("data-psc")}catch{}
@@ -3011,21 +3124,15 @@ renderView=function(){
     return}
   return _renderViewGk.apply(this,arguments);
 };
-// notícias geek ficam fora da página de novidades de games
+// notícias de anime não entram na página de novidades de games
 const _autoNewsGk=autoNews;
 autoNews=function(){return _autoNewsGk().filter(n=>n.cat!=="geek")};
+// votação de anime/série/filme vota com os mesmos votos; precisa assinar os votos do mês aberto
+{const _ens=typeof ensureVotes==="function"?ensureVotes:null;if(_ens&&typeof setInterval==="function")setInterval(()=>{if(S.mode==="live")Object.keys(S.tierlists||{}).filter(id=>id.includes("~")&&S.tierlists[id]?.status==="aberta").forEach(id=>_ens(id))},5000)}
 
 /* ---------- XP: um pouco, sem desequilibrar (no máximo 400) ---------- */
 const _xpOfGk=xpOf;
 xpOf=function(pid){let g=0;for(const x of mediaOf(pid)){g+=3;if(x.st==="visto")g+=5;if(x.c)g+=5;if(x.tier)g+=2}return _xpOfGk(pid)+Math.min(400,g)};
-
-/* ---------- perfil: vitrine geek ---------- */
-const _viewPerfilGk=viewPerfil;
-viewPerfil=function(){let h=_viewPerfilGk.apply(this,arguments);const pid=pidBySlug(S.route);if(!pid)return h;
-  const L=mediaOf(pid).sort((a,b)=>(b.at||0)-(a.at||0));if(!L.length&&pid!==S.myId)return h;
-  const box=`<section class="box card gkprof"><div class="gkph2"><span class="eyebrow">🎌 Área geek</span><a class="linkbtn" href="#geek" data-act="gkwho" data-id="${esc(pid)}">ver tier list</a></div>
-    ${L.length?`<div class="gktop">${L.slice(0,8).map(x=>`<a class="gktopi" href="#midia-${esc(gkKey(x.t))}">${gkPoster(x)}<b>${esc(x.t)}</b><span class="hint">${esc(gkStL(x.st,x.k))}${x.tier?" · "+esc(x.tier):""}</span></a>`).join("")}</div>`:`<p class="hint">Você ainda não adicionou animes, filmes ou séries. <a href="#geek">Abrir a área geek</a></p>`}</section>`;
-  const i=h.lastIndexOf("</div>");return i>0?h.slice(0,i)+box+h.slice(i):h+box};
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();

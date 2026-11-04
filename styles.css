@@ -1302,3 +1302,29 @@ html:root[data-psc="sc-campeao"] body{background-color:#120e04;background-image:
 .gkform .full{grid-column:1/-1}
 .gkform select,.gkform input,.gkform textarea,#gk-q{width:100%}
 @media (max-width:560px){.gkform{grid-template-columns:1fr 1fr}.gkgrid{grid-template-columns:1fr}}
+
+/* v24 — categorias na tier list, animes da temporada, vitrine no perfil */
+.tlcats{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;margin-bottom:10px;scrollbar-width:thin}
+.tlcats button{flex:none;font:inherit;font-weight:800;font-size:14px;padding:10px 16px;border-radius:12px;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;box-shadow:3px 3px 0 var(--shade)}
+.tlcats button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff;transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--shade)}
+.gkpost.mini{width:34px;border-radius:5px}.gkpost.mini .gkph{font-size:14px}
+.gkchip{position:relative}
+.gkchip .vn{position:absolute;top:4px;right:4px;z-index:2;font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.gktopi{position:relative}
+.gkbadge{position:absolute;top:6px;left:6px;z-index:2}
+.gkmsel{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.gkmi{display:inline-flex;align-items:center;gap:6px;padding:3px 8px 3px 3px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface2);font-size:13px;max-width:100%}
+.gkmi span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}
+.angrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.ancard{display:flex;gap:12px;padding:10px;min-width:0}
+.ancard .gkpost.big{width:100px}
+.aninfo{display:flex;flex-direction:column;gap:5px;min-width:0;align-items:flex-start}
+.aninfo>b{font-size:15px;line-height:1.25}
+.aninfo .hint{font-size:12px}
+.anext{background:color-mix(in srgb,var(--accent) 22%,var(--surface2));font-weight:700}
+.anlinks{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.btn.cr{background:#f47521;border-color:#f47521;color:#fff}
+.gkprof .gkkinds{margin:8px 0 10px}
+.gkprof .chip2 b{margin-left:4px;opacity:.75}
+.gkprof .gktop{margin:0 0 10px}
+@media (max-width:560px){.angrid{grid-template-columns:1fr}.tlcats button{padding:9px 13px;font-size:13px}}
