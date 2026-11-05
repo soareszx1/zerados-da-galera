@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793905644546,
+ "atualizadoEm": 1793915776165,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -68,8 +68,8 @@
   },
   {
    "nome": "Crunchyroll Notícias",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 15
   },
   {
    "nome": "Crunchyroll News",
@@ -78,6 +78,106 @@
   }
  ],
  "itens": [
+  {
+   "title": "Esquenta Black Friday: TV AOC de 43 polegadas tem preço reduzido na Amazon",
+   "url": "https://br.ign.com/descontos/157372/esquenta-black-friday-tv-aoc-de-43-polegadas-tem-preco-reduzido-na-amazon",
+   "summary": "Modelo com resolução Full HD, sistema Roku TV e três entradas HDMI também é opção para jogar nos consoles",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/aoc-43s5135_9j1h.jpg",
+   "at": 1793912434000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Nintendo Switch 2 Sells Over 26 Million Units",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-05/nintendo-switch-2-sells-over-26-million-units/.243567",
+   "summary": "Mario Kart World , Donkey Kong Bananza , Pokémon Legends: Z-A , Pokémon Pokopia top Switch 2 sales",
+   "img": "",
+   "at": 1793912400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Microsoft reformula app Xbox para PC e promete ser até 60% mais rápido",
+   "url": "https://www.hardware.com.br/noticias/xbox-pc-app-fica-ate-60-mais-rapida/",
+   "summary": "Nova interface melhora a navegação e acelera o carregamento das páginas.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Xbox-new-PC-app-featured-image-1350x759.webp",
+   "at": 1793911090000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "EA Killed Mass Effect But Is Still Trying To Make Money On It",
+   "url": "https://www.gamespot.com/articles/ea-killed-mass-effect-but-is-still-trying-to-make-money-on-it/",
+   "summary": "Electronic Arts recently killed off Mass Effect and closed developer BioWare entirely, but the publisher is still trying to make money from the franchise's fanbase. Ahead of the…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/N7Day-Large.jpeg?w=300",
+   "at": 1793910346000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Major Osaka de Rainbow Six Siege começa e conta com 5 representantes brasileiros",
+   "url": "https://br.ign.com/rainbow-six-siege/157375/major-osaka-de-rainbow-six-siege-comeca-e-conta-com-5-representantes-brasileiros",
+   "summary": "Mais um mundial para o Brasil?",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/unnamed-4_tq2x.jpg",
+   "at": 1793910345000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Buy Games On Prime? Your Membership Now Gets You Free Uber Eats Delivery, Too",
+   "url": "https://www.gamespot.com/articles/buy-games-on-prime-your-membership-now-gets-you-free-uber-eats-delivery-too/",
+   "summary": "If you're among the millions of Amazon Prime subscribers--maybe you use the platform to buy games--you're getting a new perk in the form of free delivery with Uber Eats. Amazon…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_and_Lucia_14.jpg?w=300",
+   "at": 1793909012000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Stellar Blade On Switch 2 Has One Fatal Flaw",
+   "url": "https://www.gamespot.com/videos/stellar-blade-on-switch-2-has-one-fatal-flaw/",
+   "summary": "While on the surface, Stellar Blade on Switch 2 seems like another successful port to Nintendo’s latest handheld, it has a few important tradeoffs that ultimately make it…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Analysis_StellarBladeSwitch2_20201105V2.png?w=300",
+   "at": 1793908800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Diversão em dose dupla: Nintendo Switch 2 com Mario Kart World ganha desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157368/diversao-em-dose-dupla-nintendo-switch-2-com-mario-kart-world-ganha-desconto-na-amazon",
+   "summary": "Pacote inclui console com tela Full HD de 7,9 polegadas, 256 GB de armazenamento e versão digital do tradicional jogo de corrida",
+   "img": "https://sm.ign.com/ign_br/photo/default/nintendo-switch-2-mario-kart-world-bundle-1743674730909_ac8m.jpg",
+   "at": 1793907031000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The World's Strongest Witch ‒ Episode 5",
+   "url": "https://www.animenewsnetwork.com/review/the-world-strongest-witch/episode-5/.243553",
+   "summary": "This episode reminds audiences that the internet can be good if you bring the right attitude, and I think everyone could use that reminder every so often.",
+   "img": "",
+   "at": 1793907000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "I'm Kodama Kawashiri Manga Gets Live-Action Short Series",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-05/im-kodama-kawashiri-manga-gets-live-action-short-series/.243570",
+   "summary": "Kanna Hashimoto stars in series starting on January 11",
+   "img": "",
+   "at": 1793907000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Aconchegue-se com dois clássicos adorados que agora estão no EA Play",
+   "url": "https://news.xbox.com/pt-br/2026/11/05/aconchegue-se-com-dois-classicos-adorados-que-agora-estao-no-ea-play/",
+   "summary": "The post Aconchegue-se com dois clássicos adorados que agora estão no EA Play appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1793906298000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Anime de Fool Night ganha trailer com prévia do tema de abertura",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/fool-night-anime-trailer-abertura-encerramento",
+   "summary": "Todos os episódios da série estreiam no próximo dia 26 de novembro.",
+   "img": "https://a.storyblok.com/f/178900/1460x821/21a08e1a11/fool-night.jpg",
+   "at": 1793906220000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
   {
    "title": "‘Dragon’s Dogma 2: Dark Arisen’ ganha colaboração com ‘Dungeon Meshi’",
    "url": "https://www.jbox.com.br/2026/11/05/dragons-dogma-2-dark-arisen-ganha-colaboracao-com-dungeon-meshi/",
@@ -164,8 +264,8 @@
    "source": "JBox"
   },
   {
-   "title": "Crunchyhroll to Stream Dragon Ball Super: Beerus Anime's English Dub on November 12",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-05/crunchyhroll-to-stream-dragon-ball-super-beerus-anime-english-dub-on-november-12/.243565",
+   "title": "Crunchyroll to Stream Dragon Ball Super: Beerus Anime's English Dub on November 12",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-05/crunchyroll-to-stream-dragon-ball-super-beerus-anime-english-dub-on-november-12/.243565",
    "summary": "English trailer previews returning dub cast",
    "img": "",
    "at": 1793900017000,
@@ -187,6 +287,15 @@
    "img": "https://sm.ign.com/ign_br/screenshot/default/impressora-3d_g6pz.jpg",
    "at": 1793899724000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Godzilla Minus Zero bate recorde de bilheteria no primeiro dia de exibição no Japão",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/godzilla-minus-zero-japao-bilheteria-recorde-live-action-filme",
+   "summary": "O filme faturou 910 milhões de ienes em sua estreia",
+   "img": "https://a.storyblok.com/f/178900/960x540/f7a573f6d9/godzilla-minus-zero.jpg",
+   "at": 1793899140000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Rockstar divulga 39 novas imagens de GTA 6; veja todas",
@@ -231,12 +340,30 @@
    "source": "Anime News Network"
   },
   {
+   "title": "Dublagem brasileira de Dragon Ball Super: Beerus chega à Crunchyroll em breve",
+   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/5/dragon-ball-super-beerus-dublagem-brasileira",
+   "summary": "A dublagem chega à Crunchyroll no dia 12 de novembro",
+   "img": "https://a.storyblok.com/f/178900/960x540/fc579646d2/dragon-ball-beerus.png",
+   "at": 1793898000000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "GTA 6 Looks Pretty Realistic, Until It Comes To Gym Etiquette",
    "url": "https://www.gamespot.com/articles/gta-6-looks-pretty-realistic-until-it-comes-to-gym-etiquette/",
    "summary": "Compared to previous games in the series, Grand Theft Auto 6 looks like it'll only be a few steps removed from reality when it launches this month. Actions have consequences ,…",
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-22.jpg?w=300",
    "at": 1793897261000,
    "source": "GameSpot"
+  },
+  {
+   "title": "Anime Fall in Love, You False Angels revela novas artes de personagem",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/fall-in-love-you-false-angels-anime-otogi-toki-novas-artes",
+   "summary": "O anime estreia em algum momento de 2027",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/8a5128ab5c/fall-in-love-you-false-angels-hero.png",
+   "at": 1793896500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Adam Driver afirma que não vai mais interpretar Kylo Ren, mas que retornaria sob uma condição",
@@ -304,6 +431,15 @@
    "source": "Anime News Network"
   },
   {
+   "title": "Spirit Circle tem anime anunciado para dezembro deste ano",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/spirit-circle-anime-anuncio-trailer-dezembro-2026",
+   "summary": "Produção do estúdio NAGOMI and EOTA.",
+   "img": "https://a.storyblok.com/f/178900/960x540/92e9e12f3e/spirit-circle.jpg",
+   "at": 1793895180000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Museu dos Mil Monstros no remake de The Legend of Zelda: Ocarina of Time",
    "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157364/museu-dos-mil-monstros-no-remake-de-the-legend-of-zelda-ocarina-of-time",
    "summary": "",
@@ -359,6 +495,15 @@
    "at": 1793894400000,
    "cat": "geek",
    "source": "Anime News Network"
+  },
+  {
+   "title": "10 animes parecidos com The Legend of Zelda para comemorar o remake de Ocarina of Time",
+   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/5/animes-parecidos-com-the-legend-of-zelda",
+   "summary": "É perigoso ir sozinho, então leve um desses!",
+   "img": "https://a.storyblok.com/f/178900/960x540/c26567223b/ocarina-of-time-remake.jpg",
+   "at": 1793894400000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "GTA 6: Lots Of New Images Have Been Released",
@@ -418,20 +563,13 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "GTA 6 ganha novas imagens duas semanas antes do lançamento",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157360/gta-6-ganha-novas-imagens-duas-semanas-antes-do-lancamento",
-   "summary": "Jogo chega em 19 de novembro Há duas semanas do lançamento, a Rockstar divulgou novas imagens de GTA 6 . Chegando em 19 de novembro aos consoles PS5 e Xbox Series X|S, GTA 6…",
-   "img": "https://sm.ign.com/ign_br/gallery/g/gta-6-laun/gta-6-launch-screenshots_xwxm.jpg",
-   "at": 1793892816000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Novas imagens de GTA 6",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157359/novas-imagens-de-gta-6",
-   "summary": "",
-   "img": "https://sm.ign.com/ign_br/gallery/g/gta-6-laun/gta-6-launch-screenshots_xwxm.jpg",
-   "at": 1793892138000,
-   "source": "IGN Brasil"
+   "title": "Filme live-action de MASHLE: MAGIA E MÚSCULOS escala Mackenyu Maeda no papel de Mash Burnedead",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/filme-live-action-mashle-magia-e-musculos-trailer-mackenyu",
+   "summary": "Yuichi Fukuda (filmes live-action de Gintama) cuidará da direção do longa-metragem",
+   "img": "https://a.storyblok.com/f/178900/960x540/8b93bb11de/mashle-live-action-teaser-visual.jpg",
+   "at": 1793892720000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "'Pikmin 4 - Switch 2 Edition' Overview Trailer Showcases More Dandori Academy Exams",
@@ -440,14 +578,6 @@
    "img": "https://images.nintendolife.com/89dc001fc28b0/large.jpg",
    "at": 1793891700000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "A grande entrevista com os produtores do remake de The Legend of Zelda: Ocarina of Time, Eiji Aonuma e Hidemaro Fujibayashi",
-   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157346/a-grande-entrevista-com-os-produtores-do-remake-de-the-legend-of-zelda-ocarina-of-time-eiji-aonuma-e",
-   "summary": "Os líderes de Zelda refletem sobre a série enquanto orientam uma nova geração de desenvolvedores O remake de The Legend of Zelda: Ocarina of Time é apresentado como uma lenda…",
-   "img": "https://sm.ign.com/ign_br/interview/o/our-big-in/our-big-interview-with-ocarina-of-time-producers-eiji-aonuma_mppp.jpg",
-   "at": 1793891658000,
-   "source": "IGN Brasil"
   },
   {
    "title": "OceanVeil Streams English Dub of Even the Student Council Has It's Holes! Anime",
@@ -580,22 +710,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "The Legend of Zelda: Ocarina Of Time’s 2026 Remake Looks Stunning Next To The Original N64 Game",
-   "url": "https://www.gamespot.com/articles/the-legend-of-zelda-ocarina-of-time-2026-remake-looks-stunning-next-to-the-original-n64-game/",
-   "summary": "Since its launch last year, the Switch 2 has proven itself to be a portable powerhouse, and The Legend of Zelda: Ocarina of Time remake may just be the best game to show off its…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Zelda-comparison.jpg?w=300",
-   "at": 1793884892000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "This Handheld Gaming Hub Has A Lot More Going On Than You’d Expect",
-   "url": "https://www.gamespot.com/articles/this-handheld-gaming-hub-has-a-lot-more-going-on-than-youd-expect/",
-   "summary": "There's no shortage of dedicated video capture devices on the market, but if you're looking for something that cuts down on cable clutter and adds some cyberpunk vibes to your…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Pro-2-dock.jpg?w=300",
-   "at": 1793884823000,
-   "source": "GameSpot"
-  },
-  {
    "title": "MAGES. Works on New Girls und Panzer Console Game",
    "url": "https://www.animenewsnetwork.com/news/2026-11-05/mages-works-on-new-girls-und-panzer-console-game/.243557",
    "summary": "Franchise announces new game on November 14 at Oarai",
@@ -706,15 +820,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Fool Night Anime's Trailer Reveals Theme Songs, Additional Cast",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-05/fool-night-anime-trailer-reveals-theme-songs-additional-cast/.243524",
-   "summary": "Tempalay, Nowlu perform theme songs for November 26 anime",
-   "img": "",
-   "at": 1793876400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Nintendo's Inventory Levels At A Record High As RAM Crisis Continues",
    "url": "https://www.nintendolife.com/news/2026/11/nintendos-inventory-levels-at-a-record-high-as-ram-crisis-continues",
    "summary": "Accumulate to mitigate. As part of its latest financial report, Nintendo has published the yen value of its inventory for the second quarter of FY2026/27, showing a record high as…",
@@ -731,15 +836,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Senren * Banka Anime Reveals TV Format",
-   "url": "https://www.animenewsnetwork.com/daily-briefs/2026-11-05/senren-banka-anime-reveals-tv-format/.243554",
-   "summary": "The official X (formerly Twitter) account for the anime adaptation of Yuzu Soft's Senren * Banka visual novel opened on Thursday and revealed...",
-   "img": "",
-   "at": 1793873431000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "World of Warcraft: Forever is off to a great start with Blizzard's smoothest launch in memory",
    "url": "https://www.eurogamer.net/world-of-warcraft-forever-launch-smooth",
    "summary": "World of Warcraft: Forever came out last night. Those who stayed up were prepared for the usual from major WoW releases: long queues, disconnects, and server lag. However, save…",
@@ -754,15 +850,6 @@
    "img": "https://assetsio.gnwcdn.com/ps6-games-calendar.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793871750000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Satoshi Mizukami's Spirit Circle Manga Gets TV Anime in December",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-05/satoshi-mizukami-spirit-circle-manga-gets-tv-anime-in-december/.243555",
-   "summary": "Late director Tatsuo Satō helmed his final work at studios NAGOMI x EOTA",
-   "img": "",
-   "at": 1793871109000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Here Are The Best-Selling Switch 1 & 2 Games As Of September 2026",
@@ -858,6 +945,24 @@
    "source": "JBox"
   },
   {
+   "title": "Dragon's Dogma 2: Dark Arisen ganha colaboração com Delicious in Dungeon",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/dragons-dogma-2-dark-arisen-delicious-in-dungeon-anime-colaboracao",
+   "summary": "Peões de Laios e Marcille, além de trajes vindos da série, já estão disponíveis dentro do jogo",
+   "img": "https://a.storyblok.com/f/178900/1280x720/58cda1978d/dragons-dogma-2-delicious-in-dungeon-collaboration.jpg",
+   "at": 1793832300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "MASHLE: MAGIA E MÚSCULOS ganhará filme em live-action, com estreia marcada para 19 de março de 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/filme-live-action-mashle-magia-e-musculos-marco-2027",
+   "summary": "A pessoa que irá interpretar Mash Burndead será revelada amanhã, dia 5 de novembro",
+   "img": "https://a.storyblok.com/f/178900/960x539/477cf86af1/mashle-movie-super-teaser-header.jpg",
+   "at": 1793829300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Primeira edição do Nippon Anime Awards é anunciada",
    "url": "https://www.jbox.com.br/2026/11/04/primeira-edicao-do-nippon-anime-awards-e-anunciada/",
    "summary": "Premiação da Associação de Animações Japonesas ocorrerá em novembro de 2027.",
@@ -900,6 +1005,15 @@
    "source": "Eurogamer"
   },
   {
+   "title": "Bomba!, mangá de Osamu Tezuka, é anunciado pela Veneta",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/bomba-manga-anuncio-veneta",
+   "summary": "Obra chega ao Brasil em 2027.",
+   "img": "https://a.storyblok.com/f/178900/1024x731/0fd384192b/bomba.jpg",
+   "at": 1793809620000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Filme live-action de ‘Mashle: Magia e Músculos’ é anunciado (AT)",
    "url": "https://www.jbox.com.br/2026/11/04/filme-live-action-de-mashle-magia-e-musculos-e-anunciado/",
    "summary": "Prevista para março de 2027, produção revelou a primeira prévia visual.",
@@ -925,6 +1039,15 @@
    "source": "Eurogamer"
   },
   {
+   "title": "Otaku Vampire's Love Bite tem anime anunciado",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/otaku-vampires-love-bite-anime-anuncio",
+   "summary": "Obra da mesma autora de Kamisama Hajimemashita.",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/f92f8043a5/otaku-vampires-love-bite-teaser-hero.png",
+   "at": 1793804820000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Eight years ago the idea of The Elder Scrolls 6: Sentinel had me captivated, but can Bethesda recapture the magic?",
    "url": "https://www.eurogamer.net/elder-scrolls-6-sentinel-bethesda-recapture-the-magic",
    "summary": "Eight years ago, I sat at my desk enthralled. Bethesda had just released the first trailer for The Elder Scrolls 6 , a then mysteriously nameless, locationless sequel to one of…",
@@ -940,14 +1063,6 @@
    "at": 1793801336000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "GTA 6 já rendeu US$ 751 milhões em pré-vendas e 74% são no PS5",
-   "url": "https://www.hardware.com.br/games/gta-6-pre-vendas-ps5-74/",
-   "summary": "GTA 6 já acumulou cerca de US$ 751 milhões em pré-vendas, com 74% das compras vindo do PS5",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/GTA-6-podera-concorrer-ao-GOTY-2026-antes-mesmo-de-ser-lancado.jpg",
-   "at": 1793796665000,
-   "source": "Hardware.com.br"
   },
   {
    "title": "Game Sekai Tensei – Anime sobre jovem reencarnando em jogo ganha trailer com OP e ED",
@@ -1030,6 +1145,24 @@
    "source": "Xbox Wire Brasil"
   },
   {
+   "title": "Filme em anime de Girls Band Cry ganha trailer, pôster e data de lançamento",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/3/anime-filme-girls-band-cry-trailer-poster-data-estreia",
+   "summary": "A série ganhará ainda uma adaptação para teatro prevista para março de 2027",
+   "img": "https://a.storyblok.com/f/178900/1460x821/fd866347bf/girls-band-cry-movie-2027-key.png",
+   "at": 1793733600000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Norihiro Yagi, autor de Claymore, lança novo mangá",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/3/claymore-autor-norihiro-yagi-bartlet-fairy-basslet",
+   "summary": "Intitulado Bartlet Fairy Basslet, o mangá está disponível para ler no MANGA Plus",
+   "img": "https://a.storyblok.com/f/178900/960x540/cd56127c96/bartlet-fairy-basslet.jpg",
+   "at": 1793730240000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais",
    "url": "https://news.xbox.com/pt-br/2026/11/03/xbox-game-pass-novembro-2026-wave-1/",
    "summary": "The post Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais appeared first on Xbox Wire em Português .",
@@ -1054,20 +1187,22 @@
    "source": "PlayStation Blog BR"
   },
   {
-   "title": "Comemorando 40 anos de Bethesda Game Studios",
-   "url": "https://bethesda.net/pt-BR/bethesdagamestudios40#new_tab",
-   "summary": "The post Comemorando 40 anos de Bethesda Game Studios appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793720015000,
-   "source": "Xbox Wire Brasil"
+   "title": "Haruhi Suzumiya e as comemorações do seu 20º aniversário",
+   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/3/anime-haruhi-suzumiya-exposicao-aniversario-20-anos-cobertura-fotos",
+   "summary": "Confira fotos da exposição do aniversário de Haruhi Suzumiya que está rolando no Japão!",
+   "img": "https://a.storyblok.com/f/178900/1920x1153/36651a282d/haruhi-suzumiya-20th-anniversary-exhibit.jpg",
+   "at": 1793721600000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
-   "title": "The Elder Scrolls VI: revelação do nome oficial",
-   "url": "https://www.youtube.com/watch?v=mFu8t9735IY#new_tab",
-   "summary": "The post The Elder Scrolls VI: revelação do nome oficial appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793719275000,
-   "source": "Xbox Wire Brasil"
+   "title": "Dublagem da 3ª temporada de [OSHI NO KO] está disponível aqui na Crunchyroll",
+   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/3/dubladores-oshi-no-ko-temporada-3",
+   "summary": "Conheça o elenco e os profissionais que trabalharam na dublagem da temporada mais recente do anime!",
+   "img": "https://a.storyblok.com/f/178900/1200x675/273441df2f/oshi-no-ko-season-3.jpg",
+   "at": 1793715120000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Bloodthirsty Bride – Romance entre Vampira e Rei tem anuncio de anime",
