@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793851456942,
+ "atualizadoEm": 1793863791886,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,9 +79,107 @@
  ],
  "itens": [
   {
+   "title": "Guide: Zelda: Ocarina Of Time Walkthrough (Switch 2 Remake): Guide To The Main Quest, Side Quests & Collectables",
+   "url": "https://www.nintendolife.com/guides/zelda-ocarina-of-time-walkthrough-switch-2-remake",
+   "summary": "Your companion to a huge adventure. Zelda: Ocarina of Time is a dense adventure with many secrets to find, and while the critical path is fairly linear, it's rarely…",
+   "img": "https://images.nintendolife.com/9fa3a2c73d8a6/large.jpg",
+   "at": 1793854800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Guide: How To Unlock The Hall Of Fallen Foes In Zelda: Ocarina Of Time",
+   "url": "https://www.nintendolife.com/guides/zelda-ocarina-of-time-hall-of-fallen-foes-heroes-location-switch-2",
+   "summary": "Where to find the Switch 2 remake's big new feature. The Hall of Fallen Foes is a new addition to Zelda: Ocarina of Time's Switch 2 remake. The feature is both a museum…",
+   "img": "https://images.nintendolife.com/57c1664a902e4/large.jpg",
+   "at": 1793854800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Zelda: Ocarina Of Time’s NPCs Stay Busy All Night, And Sounds Like That Was A Pain",
+   "url": "https://www.gamespot.com/articles/zelda-ocarina-of-times-npcs-stay-busy-all-night-and-sounds-like-that-was-a-pain/",
+   "summary": "The Legend of Zelda: Ocarina of Time for Switch 2 is a mostly faithful remake, but it does introduce some new features and bells and whistles that modernize the experience. Some…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Switch2_ZeldaOoT_MedaiBroll_SCRN_16.png?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Zelda: Ocarina Of Time Remake Accidentally Made ReDeads Too Scary At One Point",
+   "url": "https://www.gamespot.com/articles/zelda-ocarina-of-time-remake-accidentally-made-redeads-too-scary-at-one-point/",
+   "summary": "Every The Legend of Zelda: Ocarina of Time player remembers their first encounter with the ReDeads. The shambling zombie-like enemies occupy Hyrule Castle Town when you emerge…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Switch2_ZeldaOoT_MedaiBroll_SCRN_21.png?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Nintendo Explains How It Made The Zelda: Ocarina Of Time Remake Only It Could Create",
+   "url": "https://www.gamespot.com/articles/nintendo-explains-how-it-made-the-zelda-ocarina-of-time-remake-only-it-could-create/",
+   "summary": "The Legend of Zelda: Ocarina of Time is one of Nintendo's most revered games of all time, even by the lofty standards of a company known for making influential, groundbreaking…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/125697-125698-nintendo-the-legend-of-zelda-ocarina-of-time-ss-5-1280x720-1.jpeg?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Ocarina of Time – Original vs Remake Comparison",
+   "url": "https://www.gamespot.com/videos/ocarina-of-time-original-vs-remake-comparison/",
+   "summary": "Enjoy this graphics comparison of the original N64 version of The Legend of Zelda: Ocarina of Time and the brand new Switch 2 remake. This video will cover from the beginning of…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GraphicsComp_OcarinaOfTime_V4.jpg?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How Zelda: Ocarina Of Time Benefits From A Glaringly Obvious Tactic That Few Game Devs Follow",
+   "url": "https://www.gamespot.com/articles/how-zelda-ocarina-of-time-benefits-from-a-glaringly-obvious-tactic-that-few-game-devs-follow/",
+   "summary": "The Legend of Zelda: Ocarina of Time has been regarded as one of the best games ever made for nearly 30 years, and its new Switch 2 remake is seeing similar levels of acclaim.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/125697-125698-nintendo-the-legend-of-zelda-ocarina-of-time-ss-5-1280x720-1.jpeg?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Nintendo Wanted Ocarina Of Time To Feel Better In The Remake, Not Just Different",
+   "url": "https://www.gamespot.com/articles/nintendo-wanted-ocarina-of-time-to-feel-better-in-the-remake-not-just-different/",
+   "summary": "Remaking a game like The Legend of Zelda: The Ocarina of Time required Nintendo to nail a fine balance between staying faithful to the original and updating it where it mattered.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Oot-2026.jpg?w=300",
+   "at": 1793854800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Xenoblade Chronicles Studio Monolith Soft Helped Out With The Zelda: Ocarina Of Time Remake",
+   "url": "https://www.nintendolife.com/news/2026/11/xenoblade-chronicles-studio-monolith-soft-helped-out-with-the-zelda-ocarina-of-time-remake",
+   "summary": "Nintendo confirmed the main devs earlier this week. Earlier this week, Nintendo confirmed Ocarina of Time for the Switch 2 was developed internally by Nintendo's Entertainment…",
+   "img": "https://images.nintendolife.com/ea62040739695/large.jpg",
+   "at": 1793854500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "The Seven Knights of the Marronnier Kingdom Anime Casts Ryōta Takeuchi",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-04/the-seven-knights-of-the-marronnier-kingdom-anime-casts-ryota-takeuchi/.243538",
+   "summary": "Takeuchi plays character Saturno in episode 6 on Saturday",
+   "img": "",
+   "at": 1793852745000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Live-Action Wandance Film's Trailer Previews Theme Song, Dance Scenes",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-04/live-action-wandance-film-trailer-previews-theme-song-dance-scenes/.243536",
+   "summary": "Film opens in Japan on November 27",
+   "img": "",
+   "at": 1793852478000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Reminder: Zelda: Ocarina Of Time - Playable Ocarina Available Now On The Nintendo Store",
+   "url": "https://www.nintendolife.com/news/2026/11/reminder-zelda-ocarina-of-time-playable-ocarina-available-now-on-the-nintendo-store",
+   "summary": "Check your local store for stock. When Nintendo lifted the lid on the Ocarina of Time remake, it also announced the release of electronic and playable ocarinas. Read the full…",
+   "img": "https://images.nintendolife.com/c4a53c946fc3f/large.jpg",
+   "at": 1793850300000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "Kirby Air Riders For Switch 2 Receives Another Small Update",
    "url": "https://www.nintendolife.com/news/2026/11/kirby-air-riders-for-switch-2-receives-another-small-update",
-   "summary": "Resolving some bugs. Alongside the latest event for Kirby Air Riders , Nintendo has this week rolled out a new update for the racing title. This bumps the game up to Version 1.3.4…",
+   "summary": "Resolving some bugs. Alongside the latest event for Kirby Air Riders , Nintendo has this week rolled out a new update for the racing title. This bumps the Switch 2 release up to…",
    "img": "https://images.nintendolife.com/8ad3e9d43bd5c/large.jpg",
    "at": 1793847600000,
    "source": "Nintendo Life"
@@ -466,14 +564,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Nexus Mods Won’t Ban AI Mods, But It Won’t Let Them Hide Either",
-   "url": "https://www.gamespot.com/articles/nexus-mods-wont-ban-ai-mods-but-it-wont-let-them-hide-either/",
-   "summary": "Nexus Mods owner Victor \"Foledinho\" Folmann has outlined plans to make AI disclosures mandatory for PC mods uploaded to the site. While content built with AI tools won't be…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Requiem-Thomas.jpg?w=300",
-   "at": 1793810352000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Bomba!, mangá de Osamu Tezuka, é anunciado pela Veneta",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/bomba-manga-anuncio-veneta",
    "summary": "Obra chega ao Brasil em 2027.",
@@ -549,14 +639,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "The Elder Scrolls 6: Sentinel Is Still 2+ Years Away From Release – Report",
-   "url": "https://www.gamespot.com/articles/the-elder-scrolls-6-sentinel-is-still-2-years-away-from-release-report/",
-   "summary": "Bethesda just recently lifted the lid on the next Elder Scrolls game, revealing its title to be \"Sentinel\" and telling fans it will be \"some time\" before more is shared. But just…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/sentinel-Large.jpeg?w=300",
-   "at": 1793806565000,
-   "source": "GameSpot"
-  },
-  {
    "title": "\"Estou chorando como nunca chorei na vida\": The Walking Dead The Telltale Definitive Series está por menos de R$ 15 no Steam — mas por tempo limitado",
    "url": "https://br.ign.com/the-walking-dead-the-telltale-definitive-series/157312/estou-chorando-como-nunca-chorei-na-vida-the-walking-dead-the-telltale-definitive-series-esta-por-me",
    "summary": "Corre!",
@@ -571,22 +653,6 @@
    "img": "https://images.nintendolife.com/0a96007f379cc/large.jpg",
    "at": 1793806200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Is The Gears Of War Movie Actually Going To Happen? Director Weighs In",
-   "url": "https://www.gamespot.com/articles/is-the-gears-of-war-movie-actually-going-to-happen-director-weighs-in/",
-   "summary": "A Gears of War movie is in development at Netflix, but is it ever going to happen? That remains to be seen, but director David Leitch of John Wick fame recently said the movie…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GearsEDay.jpg?w=300",
-   "at": 1793806103000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Former Halo Composer Marty O’Donnell Loses Congressional Race In Nevada",
-   "url": "https://www.gamespot.com/articles/former-halo-composer-marty-odonnell-loses-congressional-race-in-nevada/",
-   "summary": "One of the minds behind the legendary music of Halo fell short in his mission to pivot to politics. Marty O'Donnell, formerly a composer and audio director for Bungie, lost his…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/marty-odonell-composer-headshot-2048x1365-1.jpg?w=300",
-   "at": 1793805521000,
-   "source": "GameSpot"
   },
   {
    "title": "Black Friday Amazon: box de O Senhor dos Anéis com desenhos originais de Tolkien ganha superdesconto",
@@ -604,14 +670,6 @@
    "at": 1793804820000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Nintendo Could Have A New Cartridge Problem On Its Hands",
-   "url": "https://www.gamespot.com/articles/nintendo-could-have-a-new-cartridge-problem-on-its-hands/",
-   "summary": "As PlayStation prepares to embrace an all-digital future starting in 2028, Nintendo is seen as one of the last bastions of physical games with its Switch cartridges. A new…",
-   "img": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4542593-switch-2-cart.jpg?w=300",
-   "at": 1793804646000,
-   "source": "GameSpot"
   },
   {
    "title": "Eight years ago the idea of The Elder Scrolls 6: Sentinel had me captivated, but can Bethesda recapture the magic?",
@@ -639,14 +697,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "This Underloved RPG From The Fallout New Vegas Developer Is Now Cheaper Than Ever, And I’ve Taken An Avowed Interest",
-   "url": "https://www.gamespot.com/articles/this-underloved-rpg-from-the-fallout-new-vegas-developer-is-now-cheaper-than-ever-and-ive-taken-an-avowed-interest/",
-   "summary": "As somewhat of an RPG connoisseur, Avowed may be the biggest example of a solid, triple-A option going under the radar. Obsidian Entertainment’s adventure, set in the same…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-avowed-lowest-price.jpg?w=300",
-   "at": 1793803638000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Overgeared ‒ Episode 6",
    "url": "https://www.animenewsnetwork.com/review/overgeared/episode-6/.243516",
    "summary": "If the show is determined to on the unenviable task of crafting Grid into a more likeable person, it sure has a lot it needs to prove.",
@@ -671,24 +721,6 @@
    "at": 1793801336000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Interview: All Things Rakugo with Akane-banashi Lead Voice Actor Anna Nagase",
-   "url": "https://www.animenewsnetwork.com/convention/2026/all-the-news-and-reviews-from-anime-expo/interview-all-things-rakugo-with-akane-banashi-lead-voice-actor-anna-nagase/.239696",
-   "summary": "Rising star Anna Nagase has rapidly established herself as one of modern anime's most compelling voice talents",
-   "img": "",
-   "at": 1793800800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Sakamoto Holidays Manga Heads Towards Climax",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-04/sakamoto-holidays-manga-heads-towards-climax/.243496",
-   "summary": "Sakamoto Days spinoff series debuted in July 2024",
-   "img": "",
-   "at": 1793799996000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "One of Nintendo's Switch and Switch 2 cartridge manufacturers is exiting the business, which could make physical games more expensive",
@@ -729,14 +761,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/GTA-6-podera-concorrer-ao-GOTY-2026-antes-mesmo-de-ser-lancado.jpg",
    "at": 1793796665000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Round Up: The Reviews Are In For The Legend Of Zelda: Ocarina Of Time On Switch 2",
-   "url": "https://www.nintendolife.com/news/2026/11/round-up-the-reviews-are-in-for-the-legend-of-zelda-ocarina-of-time-on-switch-2",
-   "summary": "HYAAAH or lower? The week is finally upon us, folks! We are less than 24 hours away from the launch of Ocarina of Time on Switch 2, and to say that we're all excited would be an…",
-   "img": "https://images.nintendolife.com/f66b12865e978/large.jpg",
-   "at": 1793796300000,
-   "source": "Nintendo Life"
   },
   {
    "title": "DLSS 5 ganha mais jogos: Hogwarts Legacy ganha suporte oficial nesta semana",
@@ -782,28 +806,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Switch Cartridges Under Threat As Key ROM Manufacturer Exits Business",
-   "url": "https://www.nintendolife.com/news/2026/11/switch-cartridges-under-threat-as-key-rom-manufacturer-exits-business",
-   "summary": "Move may accelerate transition to digital. Macronix, one of Nintendo's key ROM manufacturers for physical game cartridges, is ceasing the production of ROM altogether. This comes…",
-   "img": "https://images.nintendolife.com/adc8a2883031b/large.jpg",
-   "at": 1793794500000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Radeon RX 9070 XT salta de 1,7 para 91 FPS com nova tecnologia do DirectX",
    "url": "https://www.hardware.com.br/tecnologia/radeon-rx-9070-xt-de-17-91-fps/",
    "summary": "Testes com o Clustered Geometry também apontam uma redução de quase 90% no consumo de memória, mas os ganhos em jogos reais devem ser menores",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Radeon-RX-9070-XT-salta-de-17-para-91-FPS-com-nova-tecnologia-do-DirectX.jpg",
    "at": 1793793331000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Nintendo Joins The Accessible Games Initiative, Adopting A Bunch Of New eShop Game Tags",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-joins-the-accessible-games-initiative-adopting-a-bunch-of-new-eshop-game-tags",
-   "summary": "Tag, you're it! Nintendo has joined the Accessible Games Initiative and, in the process, has added a collection of new accessibility tags to the eShop. The new tags — which…",
-   "img": "https://images.nintendolife.com/c8587b9426358/large.jpg",
-   "at": 1793792700000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Zelda: Ocarina of Time conquista nota 95 no Metacritic e 100% de aprovação",
@@ -820,14 +828,6 @@
    "img": "https://assetsio.gnwcdn.com/zelda-ocarina-remake-10.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793790000000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Review: The Legend Of Zelda: Ocarina Of Time (Switch 2) - A Stunning Remake, But Not Quite Definitive",
-   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/the-legend-of-zelda-ocarina-of-time",
-   "summary": "A link between eras. You’re not ready for this. No matter how many trailers you’ve watched or how much pre-release footage you’ve pored over, walking out into Hyrule Field for the…",
-   "img": "https://images.nintendolife.com/89f2fe272afb6/large.jpg",
-   "at": 1793790000000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Dragon's Dogma 2 gets a timed collaboration with beloved anime and manga series Delicious in Dungeon, and it's out right now on PC, PlayStation and Xbox",
