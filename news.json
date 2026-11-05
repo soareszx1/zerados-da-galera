@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1793863791886,
+ "atualizadoEm": 1793873736914,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,80 @@
   }
  ],
  "itens": [
+  {
+   "title": "GTA 6 arrecada mais de US$ 750 milhões em pré-vendas duas semanas antes da data de lançamento",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157337/gta-6-arrecada-mais-de-us-750-milhoes-em-pre-vendas-duas-semanas-antes-da-data-de-lancamento",
+   "summary": "É provável que isso se deva ao fato de os fãs estarem comprando a Edição Ultimate do jogo",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-rake/gta-6-rakes-in-over-750-million-in-preorders-2-weeks-ahead-o_bxvc.jpg",
+   "at": 1793872889000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "World of Warcraft: Forever is off to a great start with Blizzard's smoothest launch in memory",
+   "url": "https://www.eurogamer.net/world-of-warcraft-forever-launch-smooth",
+   "summary": "World of Warcraft: Forever came out last night. Those who stayed up were prepared for the usual from major WoW releases: long queues, disconnects, and server lag. However, save…",
+   "img": "https://assetsio.gnwcdn.com/WoW-forever_SDQ5Y6p.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793872350000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Despite hardware worries and rising costs, Sony says PlayStation 6 development is on track and \"progressing as scheduled\"",
+   "url": "https://www.eurogamer.net/playstation-6-sony-financials-2026-hardware",
+   "summary": "Today, Thursday 5th November, 2026, Sony shared its latest financial results, reporting on the second quarter of financial year 2026 for the company. In a wide-ranging set of…",
+   "img": "https://assetsio.gnwcdn.com/ps6-games-calendar.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793871750000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Satoshi Mizukami's Spirit Circle Manga Gets TV Anime in December",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-05/satoshi-mizukami-spirit-circle-manga-gets-tv-anime-in-december/.243555",
+   "summary": "Late director Tatsuo Satō helmed his final work at studios NAGOMI x EOTA",
+   "img": "",
+   "at": 1793871109000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Here Are The Best-Selling Switch 1 & 2 Games As Of September 2026",
+   "url": "https://www.nintendolife.com/news/2026/11/here-are-the-best-selling-switch-1-and-2-games-as-of-september-2026",
+   "summary": "Good on you, Star Fox! Nintendo's released its latest financial data, so it's time for an updated look at the best-selling first-party games on Switch 1 and 2. Starting with the…",
+   "img": "https://images.nintendolife.com/81c392a842a7e/large.jpg",
+   "at": 1793871000000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Valve explains why it's running behind on Steam game approvals, asks developers to perform basic release checks to prevent re-reviews",
+   "url": "https://www.eurogamer.net/steam-games-approvals-delayed-valve-response",
+   "summary": "In the wake of witnessing an unprecedented number of game submissions to Steam over the last few months, Valve has been forced to delay approvals in order to deal with the…",
+   "img": "https://assetsio.gnwcdn.com/steam-as-a-memorial.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1793870560000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "New Code Geass Star Chaser Aspal Anime Unveils Cast, More Staff",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-05/new-code-geass-star-chaser-aspal-anime-unveils-cast-more-staff/.243547",
+   "summary": "Ivan Shibata, Hibiku Yamamura star in Sunrise anime",
+   "img": "",
+   "at": 1793869500000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nintendo Reconfirms Release Windows For Upcoming Switch 2 Games",
+   "url": "https://www.nintendolife.com/news/2026/11/nintendo-reconfirms-release-windows-for-upcoming-switch-2-games",
+   "summary": "Feeling ravenous. Nintendo has released its latest financial data , and as per tradition, it's also reconfirmed the release windows for its upcoming software. There are zero…",
+   "img": "https://images.nintendolife.com/eca52a004d1dd/large.jpg",
+   "at": 1793869200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Switch 2 Surpasses 26 Million Units Sold, Hardware Sales Down By 37.4%",
+   "url": "https://www.nintendolife.com/news/2026/11/switch-2-surpasses-26-million-units-sold-hardware-sales-down-by-37-4percent",
+   "summary": "This is really no surprise, though. Nintendo has released its latest financial report , confirming that the Switch 2 has now sold over 26 million units since its launch last year.…",
+   "img": "https://images.nintendolife.com/f973b0a777507/large.jpg",
+   "at": 1793868300000,
+   "source": "Nintendo Life"
+  },
   {
    "title": "Guide: Zelda: Ocarina Of Time Walkthrough (Switch 2 Remake): Guide To The Main Quest, Side Quests & Collectables",
    "url": "https://www.nintendolife.com/guides/zelda-ocarina-of-time-walkthrough-switch-2-remake",
@@ -655,14 +729,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Black Friday Amazon: box de O Senhor dos Anéis com desenhos originais de Tolkien ganha superdesconto",
-   "url": "https://br.ign.com/descontos/157310/black-friday-amazon-box-de-o-senhor-dos-aneis-com-desenhos-originais-de-tolkien-ganha-superdesconto",
-   "summary": "Edição reúne os três volumes, mapas coloridos da Terra-média e reproduções do Livro de Mazarbul",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/box-capa_74z3.jpg",
-   "at": 1793805274000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Otaku Vampire's Love Bite tem anime anunciado",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/4/otaku-vampires-love-bite-anime-anuncio",
    "summary": "Obra da mesma autora de Kamisama Hajimemashita.",
@@ -680,40 +746,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Pokémon Pokopia's Second DLC Wave Launches Next Month",
-   "url": "https://www.nintendolife.com/news/2026/11/pokemon-pokopias-second-dlc-wave-launches-next-month",
-   "summary": "Dazzling! Those after even more Pokémon Pokopia content need not wait too much longer, as The Pokémon Company has announced that the game's second wave of DLC will launch next…",
-   "img": "https://images.nintendolife.com/6dfdc179346d0/large.jpg",
-   "at": 1793804400000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Sugar Apple Fairy Tale's Miri Mikawa, Brave10's Kairi Shimotsuki Launch New Manga on November 24",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-04/sugar-apple-fairy-tale-miri-mikawa-brave10-kairi-shimotsuki-launch-new-manga-on-november-24/.243510",
-   "summary": "Mikawa writes, Shimotsuki draws Ryū no Kuni Gensō fantasy manga",
-   "img": "",
-   "at": 1793804400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Overgeared ‒ Episode 6",
-   "url": "https://www.animenewsnetwork.com/review/overgeared/episode-6/.243516",
-   "summary": "If the show is determined to on the unenviable task of crafting Grid into a more likeable person, it sure has a lot it needs to prove.",
-   "img": "",
-   "at": 1793802600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Ocarina Of Time Remake Tops Metacritic's GOTY List, And It's High On The All-Time Ranking",
-   "url": "https://www.nintendolife.com/news/2026/11/ocarina-of-time-remake-tops-metacritics-goty-list-and-its-high-on-the-all-time-ranking",
-   "summary": "Your move, GTA. Just in case you missed it, the Ocarina of Time remake reviews are in , and they are really rather positive. They are so positive, in fact, that the game has shot…",
-   "img": "https://images.nintendolife.com/930bc0c306da1/large.jpg",
-   "at": 1793801700000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Animê ‘Free Fire: Daybreak’ terá estreia mundial na CCXP 2026",
    "url": "https://www.jbox.com.br/2026/11/04/anime-free-fire-daybreak-tera-estreia-mundial-na-ccxp-2026/",
    "summary": "Novidade chega após a Angelotti Licensing anunciar que adquiriu os direitos de licenciamento da produção no Brasil.",
@@ -729,14 +761,6 @@
    "img": "https://assetsio.gnwcdn.com/switch-2-cartridge-macronix-1.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793799297000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "\"Worth Your Time\" - Digital Foundry Delivers Its Tech Review For Zelda: Ocarina Of Time",
-   "url": "https://www.nintendolife.com/news/2026/11/worth-your-time-digital-foundry-delivers-its-tech-review-for-zelda-ocarina-of-time",
-   "summary": "Another Switch 2 stunner. Reviews for The Legend of Zelda: Ocarina of Time are live, and that includes a tech-focused assessment from John Linneman over at Digital Foundry.…",
-   "img": "https://images.nintendolife.com/0cb9986d52b2e/large.jpg",
-   "at": 1793799000000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Halo and Destiny composer Marty O'Donnell loses his race for a seat in the US House of Representatives",
@@ -990,14 +1014,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Arc Raiders devs say that using generative AI voice acting was necessary as actors \"would just go crazy if they had to read all of that\"",
-   "url": "https://www.eurogamer.net/arc-raiders-ai-voice-acting-would-go-crazy",
-   "summary": "Developers at Embark Studios, the company behind Arc Raiders , have spoken on the use of generative AI voice acting in the extraction shooter. It's argued that the initial use of…",
-   "img": "https://assetsio.gnwcdn.com/Arc-Raiders-Escalation-story.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793720043000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Comemorando 40 anos de Bethesda Game Studios",
    "url": "https://bethesda.net/pt-BR/bethesdagamestudios40#new_tab",
    "summary": "The post Comemorando 40 anos de Bethesda Game Studios appeared first on Xbox Wire em Português .",
@@ -1023,14 +1039,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Grand Theft Auto 6 pre-load begins on 10th November, file size and regional timings released",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-pre-load-date",
-   "summary": "Rockstar Games have revealed the pre-load date and time for Grand Theft Auto 6 . You better be prepared to clear out some storage space, and burn the midnight oil. Read more",
-   "img": "https://assetsio.gnwcdn.com/gta-6-pre-load.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793719562000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "The Elder Scrolls VI: revelação do nome oficial",
    "url": "https://www.youtube.com/watch?v=mFu8t9735IY#new_tab",
    "summary": "The post The Elder Scrolls VI: revelação do nome oficial appeared first on Xbox Wire em Português .",
@@ -1046,14 +1054,6 @@
    "at": 1793718854000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "The Elder Scrolls 6: Sentinel is confirmed, finally getting new trailer and full name, 8 years, 4 months, and 23 days after its reveal",
-   "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-revealed-bethesda-xbox",
-   "summary": "Today, Xbox and Bethesda have finally revealed the name and more information about The Elder Scrolls 6. The game, which we now know carries the subtitle Sentinel, was revealed in…",
-   "img": "https://assetsio.gnwcdn.com/ES-6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793718487000,
-   "source": "Eurogamer"
   },
   {
    "title": "Crise da memória faz preço do Raspberry Pi 5 de 16 GB disparar de US$ 120 para US$ 385",
