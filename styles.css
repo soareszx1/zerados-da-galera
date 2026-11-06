@@ -1344,3 +1344,5 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 .ansearch{display:flex;gap:10px;align-items:center;margin:0 0 14px;flex-wrap:wrap}
 .ansearch input{flex:1 1 280px;min-width:0;max-width:520px;font-size:15px;padding:11px 14px;border-radius:12px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
 .ansearch input:focus{border-color:var(--accent);outline:none}
+.sswhen{align-items:center;gap:8px;flex-wrap:wrap}.sswhen input[type=date]{min-height:38px;padding:6px 10px;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
+.tipsonly .fgrid{grid-template-columns:1fr}
