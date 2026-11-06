@@ -351,7 +351,7 @@ function viewHome(){
   else if(S.mode==="live"&&S.canWrite)left+=`<section class="box hello"><div class="hi"><span class="eyebrow">Novo por aqui?</span><h2>Entre na galera</h2><p style="margin:0;color:var(--muted)">Crie seu perfil e comece a registrar o que joga.</p></div><button class="btn primary" data-act="profile">Criar meu perfil</button></section>`;
   if(m){const cont=myGamesSorted().filter(g=>["jogando","pausado"].includes(g.status)).slice(0,4);
     left+=`<section class="box card"><span class="eyebrow">Continuar jogando</span><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Onde você parou</h3><a class="btn small" href="#saves">Meus Saves</a></div>
-      ${cont.length?`<div class="cont">${cont.map(g=>`<div class="citem">${coverBox(g,"mini")}<div class="t"><a href="#${saveHash(g.pid,g.gid)}"><b>${esc(g.title)}</b></a><span>${esc(paradoEm(g)||"sem anotação")}${g.next?` · próximo: ${esc(g.next)}`:""}</span><span class="hint">${g.updatedAt>1e9?quando(g.updatedAt):""}</span></div>${S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}</div>`).join("")}</div>`:'<span class="hint">Nada sendo jogado agora.</span>'}</section>`}
+      ${cont.length?`<div class="cont">${cont.map(g=>`<div class="citem">${coverBox(g,"mini")}<div class="t"><a href="#${saveHash(g.pid,g.gid)}"><b>${esc(g.title)}</b></a><span>${esc(paradoEm(g)||"sem anotação")}${g.next?` · próximo: ${esc(g.next)}`:""}</span><span class="hint">${g.updatedAt>1e9?quando(g.updatedAt):""}</span></div>${S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Registrar sessão</button>`:""}</div>`).join("")}</div>`:'<span class="hint">Nada sendo jogado agora.</span>'}</section>`}
   // desafio
   const ch=c.challenge;
   if(ch&&ch.title){const done=Object.entries(P).filter(([,p])=>p.challenges?.[ch.id]);const mine=m&&m.challenges?.[ch.id];const left_d=daysUntil(ch.until);
@@ -1248,7 +1248,7 @@ function saveCard(g){
       ${paradoEm(g)?`<div class="fase"><span class="flabel">Parei em</span><br>${esc(paradoEm(g))}</div>`:`<div class="hint">Ainda sem anotação de onde parou.</div>`}
       ${g.next?`<div class="fase"><span class="flabel">Próximo objetivo</span><br><b>${esc(g.next)}</b></div>`:""}
       ${["jogando","pausado"].includes(g.status)?`<div class="bar"><i style="width:${prog}%"></i></div>`:""}
-      <div class="actions" style="margin-top:auto">${g.pid===meId()&&S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button>`:""}<a class="btn small" href="#${saveHash(g.pid,g.gid)}">Abrir ficha</a></div></div></article>`;
+      <div class="actions" style="margin-top:auto">${g.pid===meId()&&S.canWrite?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">Registrar sessão</button>`:""}<a class="btn small" href="#${saveHash(g.pid,g.gid)}">Abrir ficha</a></div></div></article>`;
 }
 function viewSaves(){
   const m=me();
@@ -1270,7 +1270,7 @@ function viewSave(){
   const tabs=`<div class="tierpick ftabs" role="tablist">${Object.entries(FTABS).map(([k,l])=>`<button role="tab" data-act="ftab" data-id="${k}" aria-pressed="${S.saveTab===k}">${l}${k==="pend"&&d.todo?.length?` ${d.todo.filter(x=>!x.d).length}`:""}${k==="diario"&&d.diary?.length?` ${d.diary.length}`:""}</button>`).join("")}</div>`;
   const head=`<section class="box fhero">${coverBox(G)}<div class="fh"><span class="eyebrow">${mine?"Seu save":"Save de "+esc(p.nick)}</span><h2>${esc(g.title)}</h2>
     <div class="meta"><span class="pill s-${esc(g.status)}">${esc(STATUS[g.status]?.l||g.status)}</span>${g.platform?`<span class="tag">${esc(g.platform)}</span>`:""}${g.hours?`<span class="tag">${esc(g.hours)} h</span>`:""}${g.updatedAt>1e9?`<span class="tag">última vez ${quando(g.updatedAt)}</span>`:""}</div>
-    <div class="actions">${mine?`<button class="btn primary small" data-act="session" data-id="${esc(gid)}">Joguei agora</button><button class="btn small" data-act="edit" data-id="${esc(gid)}">Editar jogo</button>`:""}<a class="btn small ghost" href="#jogo-${esc(slug(g.title))}">Página do jogo</a></div></div></section>`;
+    <div class="actions">${mine?`<button class="btn primary small" data-act="session" data-id="${esc(gid)}">Registrar sessão</button><button class="btn small" data-act="edit" data-id="${esc(gid)}">Editar jogo</button>`:""}<a class="btn small ghost" href="#jogo-${esc(slug(g.title))}">Página do jogo</a></div></div></section>`;
   let body="";
   if(f.loading)body=`<div class="loading">Carregando o save<span class="blink">_</span></div>`;
   else body={onde:fOnde,diario:fDiario,historia:fHistoria,controles:fControles,pend:fPend,dicas:fDicas,guias:fGuias}[S.saveTab](G,d,mine);
@@ -1286,13 +1286,13 @@ function fOnde(g,d,mine){
       ${g.next||d.next?`<div><span class="flabel">Próximo objetivo</span><p class="next">${esc(d.next||g.next)}</p></div>`:""}
       ${g.fase?`<div class="hint">Fase/área: <b>${esc(g.fase)}</b></div>`:""}
       ${["jogando","pausado"].includes(g.status)?`<div class="bar"><i style="width:${Math.min(100,prog)}%"></i></div><div class="pct">${prog}% · ${h} h jogadas${est!==null?` · faltam uns ${est} h no seu ritmo`:""}${media?` · a galera zerou em ~${media} h`:""}</div>`:""}
-      ${mine?`<div class="actions"><button class="btn primary" data-act="session" data-id="${esc(g.gid)}">Joguei agora</button></div>`:""}</section>
+      ${mine?`<div class="actions"><button class="btn primary" data-act="session" data-id="${esc(g.gid)}">Registrar sessão</button></div>`:""}</section>
     <section class="box card"><span class="eyebrow">Última sessão</span>${last?`<div class="hint">${esc(new Date(last.at).toLocaleDateString("pt-BR"))}${last.h?` · ${esc(last.h)} h`:""}</div><p style="margin:0;white-space:pre-wrap">${esc(last.txt||"")}</p>${last.shot?`<div class="shot"><div class="ph">${mimg(`players/${g.pid}/shots/${last.shot}`,1,"","Print da sessão")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${last.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}`:`<p class="hint" style="margin:0">Nenhuma anotação ainda.</p>`}
       ${(d.todo||[]).filter(x=>!x.d).length?`<div><span class="flabel">Pendências</span><ul class="mini-todo">${d.todo.filter(x=>!x.d).slice(0,4).map(x=>`<li>${esc(x.t)}</li>`).join("")}</ul></div>`:""}</section></div>`;
 }
 function fDiario(g,d,mine){
   const L=(d.diary||[]).slice().reverse();
-  return `<section class="box card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Diário de sessões</h3>${mine?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">+ Joguei agora</button>`:""}</div>
+  return `<section class="box card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3>Diário de sessões</h3>${mine?`<button class="btn small primary" data-act="session" data-id="${esc(g.gid)}">+ Registrar sessão</button>`:""}</div>
     ${L.length?`<ol class="diary">${L.map(e=>`<li><div class="dd">${esc(new Date(e.at).toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"}))}</div><div class="dt">${e.fase?`<span class="tag">${esc(e.fase)}</span> `:""}${e.h?`<span class="tag">${esc(e.h)} h</span>`:""}<p>${esc(e.txt||"")}</p>${e.next?`<p class="hint">Próximo: ${esc(e.next)}</p>`:""}
       ${e.shot?`<div class="shot" style="max-width:260px"><div class="ph">${mimg(`players/${g.pid}/shots/${e.shot}`,1,"","Print")}<button class="zoom" data-act="zoom" data-k="${esc(mkey(`players/${g.pid}/shots/${e.shot}`,1))}" data-cap="" aria-label="Ampliar print"></button></div></div>`:""}
       ${mine?`<button class="linkbtn" data-act="diarydel" data-id="${esc(e.id)}">apagar</button>`:""}</div></li>`).join("")}</ol>`:'<span class="hint">Nenhuma sessão registrada ainda.</span>'}</section>`;
@@ -1374,11 +1374,13 @@ function fGuias(g,d,mine){
       ${others.length?`<div class="sec" style="margin-top:8px"><h4>Links da galera</h4>${others.map(l=>`<div class="lrow">${glyph(l.p,true)}<a href="${esc(safeUrl(l.u))}" target="_blank" rel="noopener noreferrer">${esc(l.t)} ↗</a><span class="hint">${esc(hostOf(l.u))}</span></div>`).join("")}</div>`:""}</section></div>`;
 }
 
-/* ---------- "Joguei agora": registrar sessão ---------- */
+/* ---------- registrar sessão (hoje, ontem ou outra data) ---------- */
+function ssIso(back){const d=new Date();d.setDate(d.getDate()-back);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function openSession(gid){
   const m=me();const g=m?.games?.[gid];if(!g)return;
   M={type:"session",gid,status:g.status==="quero"?"jogando":g.status,shot:null};
-  $("#modal").innerHTML=overlay(`<h2>Joguei agora · ${esc(g.title)}</h2>
+  $("#modal").innerHTML=overlay(`<h2>Registrar sessão · ${esc(g.title)}</h2>
+    <div class="field"><span class="flabel">Quando jogou</span><div class="actions sswhen"><button type="button" class="chip2" data-act="ssday" data-d="0" aria-pressed="true">Hoje</button><button type="button" class="chip2" data-act="ssday" data-d="1" aria-pressed="false">Ontem</button><input id="ss-date" type="date" aria-label="Data da sessão" value="${ssIso(0)}" max="${ssIso(0)}"></div></div>
     <div class="field"><label for="ss-txt">O que você fez / onde parou</label><textarea id="ss-txt" maxlength="1000" placeholder="Ex.: derrotei o chefe da ponte, parei no acampamento antes da caverna">${""}</textarea></div>
     <div class="field"><label for="ss-next">Próximo objetivo</label><input id="ss-next" maxlength="120" value="${esc(g.next||"")}" placeholder="Ex.: pegar a chave azul no norte do mapa"></div>
     <div class="fgrid"><div class="field"><label for="ss-fase">Fase / área / capítulo</label><input id="ss-fase" maxlength="80" value="${esc(g.fase||"")}"></div>
@@ -1396,13 +1398,14 @@ async function saveSession(){
   let prog=Number($("#ss-prog").value)||0;const h=Math.max(0,Math.min(24,Number($("#ss-h").value)||0));const st=M.status;
   if(!txt&&!next&&!M.shot&&!h){$("#sserr").textContent="Escreva ao menos o que fez ou o próximo objetivo.";return}
   if(st==="zerado"||st==="platinado")prog=100;
-  const entry={id:newId("e"),at:Date.now(),txt:txt.slice(0,1000),next:next.slice(0,120),fase:fase.slice(0,80),h};
+  const dv=$("#ss-date")?.value||ssIso(0);const at=dv>=ssIso(0)?Date.now():new Date(dv+"T20:00:00").getTime();
+  const entry={id:newId("e"),at,txt:txt.slice(0,1000),next:next.slice(0,120),fase:fase.slice(0,80),h};
   try{
     if(M.shot){const sid=newId("s");const sp=`players/${S.myId}/shots/${sid}`;await S.db.doc(sp).set({img:M.shot,gid});media[mkey(sp,1)]=M.shot;entry.shot=sid}
     const fp=fichaPath(S.myId,gid);const sn=await S.db.doc(fp).get();const cur=(sn.exists&&sn.data())||{};
-    cur.diary=[...(cur.diary||[]),entry].slice(-300);if(txt)cur.note=txt.slice(0,1000);cur.next=next;cur.updatedAt=Date.now();
+    const newest=!(cur.diary||[]).some(x=>(x.at||0)>at);cur.diary=[...(cur.diary||[]),entry].sort((a,b)=>(a.at||0)-(b.at||0)).slice(-300);if(newest){if(txt)cur.note=txt.slice(0,1000);cur.next=next}cur.updatedAt=Date.now();
     await S.db.doc(fp).set(cur);if(S.ficha?.key===S.myId+"/"+gid)S.ficha.data=cur;
-    await saveMe(p=>{const x=p.games[gid];if(!x)return;x.fase=fase;x.next=next.slice(0,120);if(txt)x.lastNote=txt.slice(0,160);x.progress=prog;x.hours=Math.round(((Number(x.hours)||0)+h)*10)/10;
+    await saveMe(p=>{const x=p.games[gid];if(!x)return;if(newest){x.fase=fase;x.next=next.slice(0,120);if(txt)x.lastNote=txt.slice(0,160)}x.progress=prog;x.hours=Math.round(((Number(x.hours)||0)+h)*10)/10;
       if(x.status!==st){x.status=st;if(st==="zerado"||st==="platinado")x.year=x.year||YEAR}x.updatedAt=Date.now()});
     closeModal();toast(st==="zerado"?"Zerou! Que tal dar nota e escrever o que achou?":st==="platinado"?"Platinou! Parabéns!":"Sessão salva");
     if(st==="zerado"||st==="platinado")setTimeout(()=>openGame(gid),400);
@@ -1445,7 +1448,7 @@ document.addEventListener("input",e=>{if(e.target.id==="ss-prog"){const v=$("#ss
 /* ================== v3: Quadro da galera (avisos, convites, enquetes) ================== */
 const BTYPES={aviso:"Aviso",evento:"Convite para jogar",enquete:"Enquete"};
 const DEMO_BOARD=[
-  {id:"b1",type:"aviso",title:"Bem-vindos ao Zerados da Galera!",text:"Criem o perfil, cadastrem o que estão jogando e usem o \"Joguei agora\" sempre que pararem de jogar.",pinned:true,by:"d1",at:T(2)},
+  {id:"b1",type:"aviso",title:"Bem-vindos ao Zerados da Galera!",text:"Criem o perfil, cadastrem o que estão jogando e usem o \"Registrar sessão\" sempre que pararem de jogar.",pinned:true,by:"d1",at:T(2)},
   {id:"b2",type:"evento",title:"Noite de Hades II",text:"Bora trocar build e ver quem chega mais longe.",ev:{game:"Hades II",when:new Date(Date.now()+2*864e5).toISOString().slice(0,16),where:"Discord · Jogatina 1",slots:6},by:"d1",at:T(10)},
   {id:"b3",type:"enquete",title:"Qual o jogo do clube de dezembro?",poll:{opts:["Silksong","Balatro","Astro Bot"],multi:false},by:"d1",at:T(12)}];
 const DEMO_RESP={b2:{d2:{rsvp:"vou"},d3:{rsvp:"talvez"}},b3:{d2:{vote:[0]},d3:{vote:[1]},d1:{vote:[0]}}};
@@ -3672,6 +3675,18 @@ viewAnimes=function(){const q=S.anQ||"";let h;
 document.addEventListener("input",e=>{if(e.target.id!=="an-q")return;clearTimeout(anT);const v=e.target.value;anT=setTimeout(()=>anBusca(v),450)});
 document.addEventListener("keydown",e=>{if(e.target.id==="an-q"&&e.key==="Enter"){clearTimeout(anT);anBusca(e.target.value)}});
 document.addEventListener("click",e=>{if(!e.target.closest('[data-act="anclr"]'))return;e.stopImmediatePropagation();anSeq++;S.anQ="";S.anRes=null;S.anBusy=false;renderView();document.getElementById("an-q")?.focus()},true);
+/* v31: data da sessão e dicas separadas da avaliação */
+function ssSync(){const v=$("#ss-date")?.value;document.querySelectorAll('[data-act="ssday"]').forEach(b=>b.setAttribute("aria-pressed",String(v===ssIso(Number(b.dataset.d)))))}
+document.addEventListener("click",e=>{const b=e.target.closest('[data-act="ssday"]');if(!b)return;e.stopImmediatePropagation();const i=$("#ss-date");if(i){i.value=ssIso(Number(b.dataset.d));ssSync()}},true);
+document.addEventListener("change",e=>{if(e.target.id==="ss-date"){if(e.target.value>ssIso(0))e.target.value=ssIso(0);ssSync()}});
+const _fDicasV31=fDicas;
+fDicas=function(g,d,mine){return _fDicasV31(g,d,mine).replace('data-act="edit"','data-act="edittips"').replace(">Editar dicas e prints<",">Adicionar dicas e prints<")};
+document.addEventListener("click",e=>{const b=e.target.closest('[data-act="edittips"]');if(!b)return;e.stopImmediatePropagation();
+  if(!(S.mode==="live"&&me()&&S.canWrite))return;openGame(b.dataset.id);
+  const box=document.querySelector("#modal .modal");if(!box)return;box.classList.add("tipsonly");
+  const g=me()?.games?.[b.dataset.id];const h=box.querySelector("h2");if(h)h.textContent="Dicas e prints"+(g?" · "+g.title:"");
+  box.querySelectorAll(".fgrid>.field").forEach(f=>{if(!f.querySelector("#g-tips,#shotgrid"))f.hidden=true});
+  box.querySelector('[data-act="del"]')?.setAttribute("hidden","");setTimeout(()=>$("#g-tips")?.focus(),50)},true);
 
 /* ---------- escrita ---------- */
 let chain=Promise.resolve();
