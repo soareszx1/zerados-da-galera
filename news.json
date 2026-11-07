@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794023949187,
+ "atualizadoEm": 1794035514165,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -53,8 +53,8 @@
   },
   {
    "nome": "AnimeNew",
-   "ok": true,
-   "itens": 10
+   "ok": false,
+   "itens": 0
   },
   {
    "nome": "IntoxiAnime",
@@ -78,6 +78,14 @@
   }
  ],
  "itens": [
+  {
+   "title": "Sudden Illness Sees Miyamoto Miss Nintendo's Financial Briefing, But He's Expected To Make A Quick Recovery",
+   "url": "https://www.nintendolife.com/news/2026/11/sudden-illness-sees-miyamoto-miss-nintendos-financial-briefing-but-hes-expected-to-make-a-quick-recovery",
+   "summary": "He'll be back at it very soon. Nintendo legend and creative mastermind Shigeru Miyamoto is almost 74, and while he has taken a step back in recent years, he's still quite active…",
+   "img": "https://images.nintendolife.com/dc139ad057bb9/large.jpg",
+   "at": 1794027600000,
+   "source": "Nintendo Life"
+  },
   {
    "title": "Dragon's Dogma 2: Dark Arisen Game Collaborates With Delicious in Dungeon",
    "url": "https://www.animenewsnetwork.com/interest/2026-11-06/dragon-dogma-2-dark-arisen-game-collaborates-with-delicious-in-dungeon/.243563",
@@ -899,66 +907,12 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Naruto: Shadow Rising é destaque na Weekly Shonen Jump",
-   "url": "https://animenew.com.br/naruto-shadow-rising-novo-manga-kishimoto-2/",
-   "summary": "Um novo mangá de Naruto, intitulado Naruto: Shadow Rising, com autoria de Masashi Kishimoto, ganhou destaque na revista Weekly Shonen Jump. Mais informações serão reveladas em…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Naruto-Shadow-Rising-e-destaque-na-Weekly-Shonen-Jump.webp",
-   "at": 1793928977000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "The Dangers in My Heart anuncia 3ª temporada para abril de 2027",
-   "url": "https://animenew.com.br/the-dangers-in-my-heart-3-temporada-2027-2/",
-   "summary": "A franquia The Dangers in My Heart (Boku no Kokoro no Yabai Yatsu) divulgou um novo teaser, além de uma imagem promocional, confirmando a estreia da terceira temporada do anime…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/The-Dangers-in-My-Heart-anuncia-3a-temporada-para-abril-de-2027.webp",
-   "at": 1793928333000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
    "title": "\"You Don't Want To Interrupt The Player's Experience\" - Here's Why Zelda's Switch 2 Remake Cut Some Mario References",
    "url": "https://www.nintendolife.com/news/2026/11/you-dont-want-to-interrupt-the-players-experience-heres-why-zeldas-switch-2-remake-cut-some-mario-references",
    "summary": "Some but not all. Nintendo is known in recent times for dropping Star Fox (and even Pikmin ) into the Super Mario universe, but with the Zelda: Ocarina of Time remake on the…",
    "img": "https://images.nintendolife.com/18983c0ce6cc6/large.jpg",
    "at": 1793928300000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Fool Night revela músicas e novos dubladores em trailer",
-   "url": "https://animenew.com.br/fool-night-anime-trailer-elenco-musicas/",
-   "summary": "O anime Fool Night divulgou um novo trailer, imagem promocional e detalhes de seu elenco adicional nesta quinta-feira (5). A prévia também apresenta as músicas-tema da série, que…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Fool-Night-revela-musicas-e-novos-dubladores-em-trailer.webp",
-   "at": 1793927747000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Spirit Circle: Mangá tem adaptação para anime anunciada",
-   "url": "https://animenew.com.br/anime-spirit-circle-adaptacao-anunciada/",
-   "summary": "O mangá Spirit Circle, de Satoshi Mizukami, ganhará uma adaptação em anime para TV em dezembro de 2026. Portanto a produção terá 18 episódios e estreia com exibição no Japão e…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Spirit-Circle-Manga-tem-adaptacao-para-anime-anunciada.webp",
-   "at": 1793927065000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Dragon Ball Super: Beerus ganha dublagem em português no Brasil",
-   "url": "https://animenew.com.br/dragon-ball-super-beerus-dublado-portugues/",
-   "summary": "A Crunchyroll anunciou que Dragon Ball Super Beerus receberá dublagem em português brasileiro a partir de 12 de novembro de 2026, com episódios inéditos dublados lançados…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Dragon-Ball-Super-Beerus-ganha-dublagem-em-portugues.webp",
-   "at": 1793926162000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Code Geass: Star Chaser Aspal revela elenco e equipe",
-   "url": "https://animenew.com.br/code-geass-star-chaser-aspal-elenco/",
-   "summary": "O novo anime Code Geass: Star Chaser Aspal (Code Geass Hoshi Oi no Aspal) revelou seus primeiros dubladores, novos integrantes da equipe de produção e um visual inédito. A estreia…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Code-Geass-Star-Chaser-Aspal-elenco-e-equipe.webp",
-   "at": 1793925588000,
-   "cat": "geek",
-   "source": "AnimeNew"
   },
   {
    "title": "Facção de Lil' Ronnie é destaque em trailer de Fate/EXTRA Record",
@@ -1089,14 +1043,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Japanese Charts: Switch 2 Sales Get A Nice Bump Ahead Of Zelda: Ocarina Of Time",
-   "url": "https://www.nintendolife.com/news/2026/11/japanese-charts-switch-2-sales-get-a-nice-bump-ahead-of-zelda-ocarina-of-time",
-   "summary": "Link will see you now. We are back with another look at the Japanese charts, courtesy of Famitsu , and it has been another big week for Nintendo. On the software side of things,…",
-   "img": "https://images.nintendolife.com/794969a20e4ec/large.jpg",
-   "at": 1793896200000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Rockstar shares 38 new screenshots of Grand Theft Auto 6, showing off Vice City, Jason and Lucia, and much more",
    "url": "https://www.eurogamer.net/grand-theft-auto-6-38-new-screenshots",
    "summary": "Rockstar Games have released 38 new screenshots of Grand Theft Auto 6 , ahead of its release later this month. Read more",
@@ -1190,33 +1136,6 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Reincarnated as a Sword 2 revela trailer e novos dubladores",
-   "url": "https://animenew.com.br/reincarnated-as-a-sword-2-trailer-elenco/",
-   "summary": "O anime Reincarnated as a Sword (Tensei Shitara Ken Deshita) divulgou um novo trailer, visual e cinco integrantes do elenco para o arco Seedrun da segunda temporada, que começa a…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Reincarnated-as-a-Sword-2-revela-trailer-e-novos-dubladores.webp",
-   "at": 1793836276000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Dan-Katsu revela novo trailer, elenco e músicas do anime",
-   "url": "https://animenew.com.br/reincarnation-game-world-dan-katsu-trailer-elenco/",
-   "summary": "O anime Reincarnation in the Game World Dan-Katsu (Game Sekai Tensei -Gamer wa [Dungeon Shūkatsu no Susume] o Play Suru-) divulgou um novo vídeo promocional nesta quarta-feira…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Dan-Katsu-revela-novo-trailer-elenco-e-musicas-do-anime.webp",
-   "at": 1793835860000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Promise Me the Spotlight revela trailer e elenco do anime",
-   "url": "https://animenew.com.br/promise-me-the-spotlight-anime-trailer-elenco/",
-   "summary": "O anime Promise Me the Spotlight (Watashi o Center ni Suru to Chikaimasuka?) divulgou seu primeiro trailer, visual promocional, elenco principal e equipe de produção nesta…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Promise-Me-the-Spotlight-revela-trailer-e-elenco-do-anime.webp",
-   "at": 1793835456000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
    "title": "‘Seraph of the End’ chega ao fim em dezembro",
    "url": "https://www.jbox.com.br/2026/11/04/seraph-of-the-end-chega-ao-fim-em-dezembro/",
    "summary": "Mangá está em publicação desde 2012 e já tinha entrado na reta final em 2022.",
@@ -1224,15 +1143,6 @@
    "at": 1793834368000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Otaku Vampire’s Love Bite ganha adaptação para anime",
-   "url": "https://animenew.com.br/otaku-vampires-love-bite-anime/",
-   "summary": "O mangá Otaku Vampire’s Love Bite (Oshi ni Amagami), de Julietta Suzuki, criadora de Kamisama Kiss, receberá uma adaptação em anime. O anúncio chegou acompanhado de um vídeo…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Otaku-Vampires-Love-Bite-ganha-adaptacao-para-anime.webp",
-   "at": 1793758206000,
-   "cat": "geek",
-   "source": "AnimeNew"
   },
   {
    "title": "Grand Theft Auto VI: pré-download inicia em 10 de novembro",
