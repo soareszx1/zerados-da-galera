@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794035514165,
+ "atualizadoEm": 1794045354744,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -53,8 +53,8 @@
   },
   {
    "nome": "AnimeNew",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 10
   },
   {
    "nome": "IntoxiAnime",
@@ -78,6 +78,58 @@
   }
  ],
  "itens": [
+  {
+   "title": "Há 26 anos, um dos melhores jogos da época foi lançado para Dreamcast e revolucionou o mundo dos games",
+   "url": "https://br.ign.com/shenmue/157369/ha-26-anos-um-dos-melhores-jogos-da-epoca-foi-lancado-para-dreamcast-e-revolucionou-o-mundo-dos-game",
+   "summary": "Se você é do time contra quick time event (QTE), aqui está o \"responsável\" pela mecânica Em 29 de dezembro de 1999, a Sega e Yu Suzuki lançaram para o Dreamcast um jogo que…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_zedg.jpg",
+   "at": 1794042039000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Bless TV Anime's 1st Full Promo Video Announces January 8 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-07/bless-tv-anime-1st-full-promo-video-announces-january-8-debut/.243605",
+   "summary": "Hikka's ending theme song \"New Page\" also previewed",
+   "img": "",
+   "at": 1794041965000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "'There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her' Anime Gets 2nd Season",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-07/there-was-a-cute-girl-in-the-hero-party-so-i-tried-confessing-to-her-anime-gets-2nd-season/.243604",
+   "summary": "Main cast to reprise roles",
+   "img": "",
+   "at": 1794041171000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Everyone's Darling Has a Secret Anime's New Teaser Unveils More Cast, Ending Song",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-07/everyone-darling-has-a-secret-anime-new-teaser-unveils-more-cast-ending-song/.243603",
+   "summary": "≒JOY idols Aimi Ozawa, Renon Esumi, Aoi Ōnishi join cast",
+   "img": "",
+   "at": 1794040726000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Abema Selects Project PRISMation's 1st Open Call Finalists to Make 3 Pilot Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-07/abema-selects-project-prismation-1st-open-call-finalists-to-make-3-pilot-anime/.243602",
+   "summary": "\"OXY-HEAVEN,\" \"Amneka,\" \"Kandy-Killers for Hire\" pilots slated for 2027 or later",
+   "img": "",
+   "at": 1794039574000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "What we've been playing - \"Sniffing out the warehouses on Prawn Island\"",
+   "url": "https://www.eurogamer.net/what-weve-been-playing-vice-city-zelda-world-of-warcraft-forever",
+   "summary": "Well, hello! I am once again wearing the Bertie hat in your usual host's absence, so joyous welcomes to our regular feature in which we talk about what we've been playing in…",
+   "img": "https://assetsio.gnwcdn.com/gtavc_header.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794038520000,
+   "source": "Eurogamer"
+  },
   {
    "title": "Sudden Illness Sees Miyamoto Miss Nintendo's Financial Briefing, But He's Expected To Make A Quick Recovery",
    "url": "https://www.nintendolife.com/news/2026/11/sudden-illness-sees-miyamoto-miss-nintendos-financial-briefing-but-hes-expected-to-make-a-quick-recovery",
@@ -594,29 +646,12 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Adultos que anotam tarefas no papel em vez de no celular não estão desatualizados, muito pelo contrário",
-   "url": "https://br.ign.com/tech/157371/adultos-que-anotam-tarefas-no-papel-em-vez-de-no-celular-nao-estao-desatualizados-muito-pelo-contrar",
-   "summary": "A escrita manual exercita melhor o cérebro do que a digital Existe uma grande vantagem no planejamento em papel em relação aos calendários digitais, algo que o Google Agenda não…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/samuel-cruz-gjwbbhppvos-unsplash_6vgj.jpg",
-   "at": 1793973634000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Teclado Mecânico Gamer Redragon Valheim: 35% de desconto e qualidade reconhecida pelos usuários",
    "url": "https://www.hardware.com.br/hardware-indica/teclado-mecanico-gamer-redragon-valheim-35-de-desconto-e-qualidade-reconhecida-pelos-usuarios/",
    "summary": "Teclado Redragon Valheim com 35% off e cupom: switch Brown, iluminação Rainbow e ótimas avaliações.",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/az-1201x676.jpg",
    "at": 1793973609000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "EXCLUSIVE: Dr. Poro, the Manga Writer Behind The Vermilion Mask",
-   "url": "https://www.animenewsnetwork.com/interview/2026-11-06/exclusive-dr-poro-the-manga-writer-behind-the-vermilion-mask/.243221",
-   "summary": "Dr. Poro and ANN discuss The Vermilion Mask's origins, how the characters reflect their creator, and why Dr. Poro always chooses the healer in RPGs.",
-   "img": "",
-   "at": 1793973600000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "NVIDIA lança jogo gratuito no Steam para homenagear placa de vídeo de 20 anos, mas recomenda uma RTX 5080",
@@ -732,15 +767,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Paradox Live The Animation's Film Announces Title, 2027 Opening",
-   "url": "https://www.animenewsnetwork.com/daily-briefs/2026-11-06/paradox-live-the-animation-film-announces-title-2027-opening/.243590",
-   "summary": "The official website for the hip-hop-themed multimedia franchise presented the early teaser visual for its upcoming film project on Friday. The visual...",
-   "img": "",
-   "at": 1793968350000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "In Charting the Unknown, Crimson Desert doubles down on its maximalism in audacious, faintly sinister style",
    "url": "https://www.eurogamer.net/crimson-desert-charting-the-unknown-now-playing",
    "summary": "And so we are back in Pywel: the super-sized and often super-pretty realm where the deserts are blood-red, the grass is a lurid shade of green, and Kliff and his merry gang of…",
@@ -805,24 +831,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Remake-de-Zelda-Ocarina-of-Time-ja-roda-no-PS5-desbloqueado.jpg",
    "at": 1793964294000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Rainy Day Serenade Anime's Teaser Reveals Cast, Staff, April 2027 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-06/rainy-day-serenade-anime-teaser-reveals-cast-staff-april-2027-debut/.243586",
-   "summary": "Yume Miyamoto, Takeo Ōtsuka star in anime",
-   "img": "",
-   "at": 1793962800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Wound & Bandage Anime's New Video Reveals More Cast & Staff, Opening Song",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-06/wound-and-bandage-anime-new-video-reveals-more-cast-and-staff-opening-song/.243587",
-   "summary": "Kō Bonkobara, Kengo Takanashi join cast",
-   "img": "",
-   "at": 1793961094000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "\"Is there any accountability left in this world?\" Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down",
@@ -907,12 +915,66 @@
    "source": "Crunchyroll Notícias"
   },
   {
+   "title": "Naruto: Shadow Rising é destaque na Weekly Shonen Jump",
+   "url": "https://animenew.com.br/naruto-shadow-rising-novo-manga-kishimoto-2/",
+   "summary": "Um novo mangá de Naruto, intitulado Naruto: Shadow Rising, com autoria de Masashi Kishimoto, ganhou destaque na revista Weekly Shonen Jump. Mais informações serão reveladas em…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Naruto-Shadow-Rising-e-destaque-na-Weekly-Shonen-Jump.webp",
+   "at": 1793928977000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "The Dangers in My Heart anuncia 3ª temporada para abril de 2027",
+   "url": "https://animenew.com.br/the-dangers-in-my-heart-3-temporada-2027-2/",
+   "summary": "A franquia The Dangers in My Heart (Boku no Kokoro no Yabai Yatsu) divulgou um novo teaser, além de uma imagem promocional, confirmando a estreia da terceira temporada do anime…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/The-Dangers-in-My-Heart-anuncia-3a-temporada-para-abril-de-2027.webp",
+   "at": 1793928333000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
    "title": "\"You Don't Want To Interrupt The Player's Experience\" - Here's Why Zelda's Switch 2 Remake Cut Some Mario References",
    "url": "https://www.nintendolife.com/news/2026/11/you-dont-want-to-interrupt-the-players-experience-heres-why-zeldas-switch-2-remake-cut-some-mario-references",
    "summary": "Some but not all. Nintendo is known in recent times for dropping Star Fox (and even Pikmin ) into the Super Mario universe, but with the Zelda: Ocarina of Time remake on the…",
    "img": "https://images.nintendolife.com/18983c0ce6cc6/large.jpg",
    "at": 1793928300000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "Fool Night revela músicas e novos dubladores em trailer",
+   "url": "https://animenew.com.br/fool-night-anime-trailer-elenco-musicas/",
+   "summary": "O anime Fool Night divulgou um novo trailer, imagem promocional e detalhes de seu elenco adicional nesta quinta-feira (5). A prévia também apresenta as músicas-tema da série, que…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Fool-Night-revela-musicas-e-novos-dubladores-em-trailer.webp",
+   "at": 1793927747000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Spirit Circle: Mangá tem adaptação para anime anunciada",
+   "url": "https://animenew.com.br/anime-spirit-circle-adaptacao-anunciada/",
+   "summary": "O mangá Spirit Circle, de Satoshi Mizukami, ganhará uma adaptação em anime para TV em dezembro de 2026. Portanto a produção terá 18 episódios e estreia com exibição no Japão e…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Spirit-Circle-Manga-tem-adaptacao-para-anime-anunciada.webp",
+   "at": 1793927065000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Dragon Ball Super: Beerus ganha dublagem em português no Brasil",
+   "url": "https://animenew.com.br/dragon-ball-super-beerus-dublado-portugues/",
+   "summary": "A Crunchyroll anunciou que Dragon Ball Super Beerus receberá dublagem em português brasileiro a partir de 12 de novembro de 2026, com episódios inéditos dublados lançados…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Dragon-Ball-Super-Beerus-ganha-dublagem-em-portugues.webp",
+   "at": 1793926162000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Code Geass: Star Chaser Aspal revela elenco e equipe",
+   "url": "https://animenew.com.br/code-geass-star-chaser-aspal-elenco/",
+   "summary": "O novo anime Code Geass: Star Chaser Aspal (Code Geass Hoshi Oi no Aspal) revelou seus primeiros dubladores, novos integrantes da equipe de produção e um visual inédito. A estreia…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Code-Geass-Star-Chaser-Aspal-elenco-e-equipe.webp",
+   "at": 1793925588000,
+   "cat": "geek",
+   "source": "AnimeNew"
   },
   {
    "title": "Facção de Lil' Ronnie é destaque em trailer de Fate/EXTRA Record",
@@ -1110,14 +1172,6 @@
    "source": "Xbox Wire Brasil"
   },
   {
-   "title": "Before Dark Souls there was King's Field, and five hours into brilliant homage Queen's Domain, it's already one of my favourite games this year",
-   "url": "https://www.eurogamer.net/queens-domain-now-playing",
-   "summary": "The clue, of course, is right there in the title. Developer Freshly Baked Games' Queen's Domain isn't just a retro-fantasy action RPG played in first-person; it's an explicit…",
-   "img": "https://assetsio.gnwcdn.com/queens-domain-header.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793885060000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Spirit Circle – Mangá do autor de Lúcifer e o Martelo tem anuncio de anime",
    "url": "https://www.intoxianime.com/2026/11/spirit-circle-manga-do-autor-de-lucifer-e-o-martelo-tem-anuncio-de-anime/",
    "summary": "... O post Spirit Circle – Mangá do autor de Lúcifer e o Martelo tem anuncio de anime apareceu primeiro em IntoxiAnime .",
@@ -1136,6 +1190,33 @@
    "source": "IntoxiAnime"
   },
   {
+   "title": "Reincarnated as a Sword 2 revela trailer e novos dubladores",
+   "url": "https://animenew.com.br/reincarnated-as-a-sword-2-trailer-elenco/",
+   "summary": "O anime Reincarnated as a Sword (Tensei Shitara Ken Deshita) divulgou um novo trailer, visual e cinco integrantes do elenco para o arco Seedrun da segunda temporada, que começa a…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Reincarnated-as-a-Sword-2-revela-trailer-e-novos-dubladores.webp",
+   "at": 1793836276000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Dan-Katsu revela novo trailer, elenco e músicas do anime",
+   "url": "https://animenew.com.br/reincarnation-game-world-dan-katsu-trailer-elenco/",
+   "summary": "O anime Reincarnation in the Game World Dan-Katsu (Game Sekai Tensei -Gamer wa [Dungeon Shūkatsu no Susume] o Play Suru-) divulgou um novo vídeo promocional nesta quarta-feira…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Dan-Katsu-revela-novo-trailer-elenco-e-musicas-do-anime.webp",
+   "at": 1793835860000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Promise Me the Spotlight revela trailer e elenco do anime",
+   "url": "https://animenew.com.br/promise-me-the-spotlight-anime-trailer-elenco/",
+   "summary": "O anime Promise Me the Spotlight (Watashi o Center ni Suru to Chikaimasuka?) divulgou seu primeiro trailer, visual promocional, elenco principal e equipe de produção nesta…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Promise-Me-the-Spotlight-revela-trailer-e-elenco-do-anime.webp",
+   "at": 1793835456000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
    "title": "‘Seraph of the End’ chega ao fim em dezembro",
    "url": "https://www.jbox.com.br/2026/11/04/seraph-of-the-end-chega-ao-fim-em-dezembro/",
    "summary": "Mangá está em publicação desde 2012 e já tinha entrado na reta final em 2022.",
@@ -1143,6 +1224,15 @@
    "at": 1793834368000,
    "cat": "geek",
    "source": "JBox"
+  },
+  {
+   "title": "Otaku Vampire’s Love Bite ganha adaptação para anime",
+   "url": "https://animenew.com.br/otaku-vampires-love-bite-anime/",
+   "summary": "O mangá Otaku Vampire’s Love Bite (Oshi ni Amagami), de Julietta Suzuki, criadora de Kamisama Kiss, receberá uma adaptação em anime. O anúncio chegou acompanhado de um vídeo…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Otaku-Vampires-Love-Bite-ganha-adaptacao-para-anime.webp",
+   "at": 1793758206000,
+   "cat": "geek",
+   "source": "AnimeNew"
   },
   {
    "title": "Grand Theft Auto VI: pré-download inicia em 10 de novembro",
