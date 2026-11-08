@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794100650676,
+ "atualizadoEm": 1794110512998,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,24 @@
   }
  ],
  "itens": [
+  {
+   "title": "Harajuku Himegoto House Multimedia Project Announced",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-07/harajuku-himegoto-house-multimedia-project-announced/.243612",
+   "summary": "Project about cafe staffed by assassins includes TV anime",
+   "img": "",
+   "at": 1794102710000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Filme Rascal Does Not Dream of a Dear Friend divulga novo clipe com Kaede",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/8/rascal-does-not-dream-of-a-dear-friend-filme-novo-clipe-kaede",
+   "summary": "A Crunchyroll e a Sony Pictures lançarão o filme nos Estados Unidos, no Canadá e na Austrália em fevereiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/2b51642344/rascal-does-not-dream-of-a-dear-friend-kaede-hero.png",
+   "at": 1794101700000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
   {
    "title": "Anime Everyone's Darling Has a Secret revela mais nomes para o elenco e intérpretes da música de encerramento",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/8/everyones-darling-has-a-secret-anime-elenco-interpretes-encerramento",
@@ -603,15 +621,6 @@
    "img": "https://assetsio.gnwcdn.com/Forza-Horizon-6-i.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1793995100000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "The Fall 2026 Anime Preview Guide - Devils' Crest",
-   "url": "https://www.animenewsnetwork.com/preview-guide/2026/fall/devils-crest/.243578",
-   "summary": "The creative mind behind Sword Art Online has a brand-new anime series. Read our reviews of Reki Kawahara's latest deadly VRMMORPG story!",
-   "img": "",
-   "at": 1793994724000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Mouse gamer sem fio Pulsefire Haste 2 Core, da HyperX, está por menos de R$ 250 na Amazon e no Mercado Livre",
@@ -1153,15 +1162,6 @@
    "img": "",
    "at": 1793906298000,
    "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Anime de Fool Night ganha trailer com prévia do tema de abertura",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/fool-night-anime-trailer-abertura-encerramento",
-   "summary": "Todos os episódios da série estreiam no dia 26 de novembro",
-   "img": "https://a.storyblok.com/f/178900/1460x821/21a08e1a11/fool-night.jpg",
-   "at": 1793906220000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
   },
   {
    "title": "‘Dragon’s Dogma 2: Dark Arisen’ ganha colaboração com ‘Dungeon Meshi’",
