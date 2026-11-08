@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794142939704,
+ "atualizadoEm": 1794152812447,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,131 @@
   }
  ],
  "itens": [
+  {
+   "title": "Jogar pela TV sem console? Entenda como isso é possível e os modelos compatíveis",
+   "url": "https://www.hardware.com.br/hardware-indica/jogar-pela-tv-sem-console-entenda-como-isso-e-possivel-e-os-modelos-compativeis/",
+   "summary": "Sabia que dá para jogar Xbox e GeForce NOW direto na TV, sem console? Veja quais Smart TVs permitem isso e como configurar tudo.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/jogartv.jpg",
+   "at": 1794151855000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Edição de luxo do livro que abriu as portas de Nárnia está por quase metade do preço na Amazon",
+   "url": "https://br.ign.com/descontos/157427/edicao-de-luxo-do-livro-que-abriu-as-portas-de-narnia-esta-por-quase-metade-do-preco-na-amazon",
+   "summary": "O Leão, a Feiticeira e o Guarda-roupa está com 46% de desconto na Black da Amazon",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/narnia-edicao-de-luxo-produto-1280x720_9frc.jpg",
+   "at": 1794149376000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Saving Mass Effect would take $200m+, says BioWare co-founder",
+   "url": "https://www.eurogamer.net/mass-effect-5-save-cost-200m-bioware-co-founder-trent-oster",
+   "summary": "Anyone hoping to buy Mass Effect from EA and finish what BioWare started needs to get saving now, as it could cost over $200 million (£150m). Read more",
+   "img": "https://assetsio.gnwcdn.com/mass-effect-shepard-sad.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794148260000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Jogar o original ou esperar pelo remake? Discussão entre jogadores divide opiniões",
+   "url": "https://www.hardware.com.br/games/jogar-o-original-ou-esperar-pelo-remake/",
+   "summary": "Discussão no Reddit divide opiniões sobre jogos clássicos, mecânicas datadas e remakes que mudam tanto a experiência que nem sempre substituem as versões originais.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/thumb-1920-672723.jpg",
+   "at": 1794147942000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Últimas unidades! Box com a trilogia de Jogos Vorazes está com 39% de desconto na Black Friday da Amazon",
+   "url": "https://br.ign.com/descontos/157426/ultimas-unidades-box-com-a-trilogia-de-jogos-vorazes-esta-com-39-de-desconto-na-black-friday-da-amaz",
+   "summary": "Edição da Rocco reúne os três livros que inspiraram os filmes com Jennifer Lawrence e acompanha um pôster",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/jogos-vorazes-produto-1280x720_pvyh.jpg",
+   "at": 1794147188000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Bride of the Barrier Master revela vídeos dos protagonistas",
+   "url": "https://animenew.com.br/bride-of-the-barrier-master-videos-protagonistas/",
+   "summary": "O anime Bride of the Barrier Master (Kekkaishi no Ichirinka) divulgou novos vídeos promocionais de Hana Ichise e Saku Ichinomiya. A série estreia em janeiro de 2027 e terá Akari…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Bride-of-the-Barrier-Master-revela-videos-dos-protagonistas.webp",
+   "at": 1794146766000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "2026’s Games You Should Play Before The Game Awards, Described In One Sentence",
+   "url": "https://www.gamespot.com/articles/2026s-games-you-should-play-before-the-game-awards-described-in-one-sentence/",
+   "summary": "As is always the case, there is no shortage of great games to play. That can make picking your favorites--or voting for categories in something like The Game Awards--a challenge.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/TGA-Must-play-games.jpg?w=300",
+   "at": 1794146400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Minami-ke: Korekara revela elenco e estreia em abril",
+   "url": "https://animenew.com.br/minami-ke-korekara-anime-elenco-estreia/",
+   "summary": "O anime Minami-ke: Korekara (Minami-ke: Going Forward), nova sequência da franquia Minami-ke, revelou seu primeiro trailer, visual promocional, elenco de voz e equipe de produção.…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Minami-ke-Korekara-revela-elenco-e-estreia-em-abril.webp",
+   "at": 1794146288000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "One Punch Man 3 revela música de encerramento da parte 2",
+   "url": "https://animenew.com.br/one-punch-man-3-parte-2-musica-encerramento/",
+   "summary": "A segunda parte da terceira temporada de One-Punch Man revelou detalhes de sua música de encerramento. O dublador Makoto Furukawa será responsável pelos vocais e pela composição…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/One-Punch-Man-3-revela-musica-de-encerramento-da-parte-2.webp",
+   "at": 1794145863000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "There Was a Cute Girl in the Hero’s Party terá 2ª temporada",
+   "url": "https://animenew.com.br/there-was-a-cute-girl-hero-party-2-temporada/",
+   "summary": "O anime There Was a Cute Girl in the Hero’s Party, So I Tried Confessing to Her (Yūsha Party ni Kawaii Ko ga Itanode, Kokuhaku Shite Mita) teve sua segunda temporada confirmada. O…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/There-Was-a-Cute-Girl-in-the-Heros-Party-tera-2a-temporada.webp",
+   "at": 1794145374000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Booty Royale ganhará anime em janeiro de 2027",
+   "url": "https://animenew.com.br/booty-royale-anime-estreia-janeiro-2027/",
+   "summary": "O mangá Booty Royale: Never Go Down Without a Fight (Hagure Idol Jigokuhen), de Rui Takatō, ganhará uma adaptação em anime para TV com estreia prevista para janeiro de 2027. O…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Booty-Royale-ganhara-anime-em-janeiro-de-2027.webp",
+   "at": 1794144765000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Missing teenager rescued after reaching out to another player in Among Us",
+   "url": "https://www.eurogamer.net/among-us-missing-teen-rescued-utah-oregon",
+   "summary": "A teenager who went missing in Utah more than 17 months ago has been rescued from a home in Oregon after she got in touch with another young player in Among Us . Read more",
+   "img": "https://assetsio.gnwcdn.com/among-us-is-coming-to-xbox-next-year-1608287434062.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794144500000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Take-Two defende adiamentos de GTA 6 e cita desastre semelhante ao de Cyberpunk 2077",
+   "url": "https://www.hardware.com.br/games/gta-6-evitar-cyberpunk-2077/",
+   "summary": "Strauss Zelnick diz que atrasos de GTA 6 foram necessários para evitar um lançamento problemático ao estilo Cyberpunk 2077",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/Falta-1-mes-para-GTA-6-tudo-o-que-voce-precisa-saber-antes-do-lancamento.jpg",
+   "at": 1794143575000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "WoW: Forever is the biggest launch in World of Warcraft history, says Blizzard",
+   "url": "https://www.eurogamer.net/wow-forever-biggest-launch-world-of-warcraft-history-concurrent-players",
+   "summary": "World of Warcraft: Forever is the biggest launch in the MMO's history, pulling in more concurrent players than any previous WoW launch. Read more",
+   "img": "https://assetsio.gnwcdn.com/wow-forever.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794143350000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Esta série de zumbis com apenas 16 episódios recebeu críticas melhores que The Walking Dead e foi elogiada por Stephen King",
+   "url": "https://br.ign.com/the-walking-dead-1/157389/esta-serie-de-zumbis-com-apenas-16-episodios-recebeu-criticas-melhores-que-the-walking-dead-e-foi-el",
+   "summary": "“É divertido ver uma série estrangeira que não foi americanizada”",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_p2d2.png",
+   "at": 1794142834000,
+   "source": "IGN Brasil"
+  },
   {
    "title": "Xbox Cloud Gaming agora permite usar celular como controle na TV",
    "url": "https://www.hardware.com.br/games/xbox-cloud-gaming-celular-controle-tv/",
@@ -164,8 +289,8 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Nintendo's Bill Trinen Explains Why Ocarina Of Time Is The Perfect Entry Point Into The Zelda Universe",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendos-bill-trinen-explains-why-ocarina-of-time-is-the-perfect-entry-point-into-the-zelda-universe",
+   "title": "Nintendo's Bill Trinen Explains Why Ocarina Of Time Is The Perfect Place To Start In The Zelda Universe",
+   "url": "https://www.nintendolife.com/news/2026/11/nintendos-bill-trinen-explains-why-ocarina-of-time-is-the-perfect-place-to-start-in-the-zelda-universe",
    "summary": "Gather round, Kokiri. If you're in a position where you've never actually played a Zelda game before, Nintendo's Bill Trinen just wants to let you know Ocarina of Time is the…",
    "img": "https://images.nintendolife.com/81067a9c2a4fc/large.jpg",
    "at": 1794131100000,
@@ -535,14 +660,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Há 26 anos, um dos melhores jogos da época foi lançado para Dreamcast e revolucionou o mundo dos games",
-   "url": "https://br.ign.com/shenmue/157369/ha-26-anos-um-dos-melhores-jogos-da-epoca-foi-lancado-para-dreamcast-e-revolucionou-o-mundo-dos-game",
-   "summary": "Se você é do time contra quick time event (QTE), aqui está o \"responsável\" pela mecânica Em 29 de dezembro de 1999, a Sega e Yu Suzuki lançaram para o Dreamcast um jogo que…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_zedg.jpg",
-   "at": 1794042039000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Bless TV Anime's 1st Full Promo Video Announces January 8 Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-07/bless-tv-anime-1st-full-promo-video-announces-january-8-debut/.243605",
    "summary": "Hikka's ending theme song \"New Page\" also previewed",
@@ -666,14 +783,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Retorno da raid Ludra em AION 2: data, requisitos e recompensas",
-   "url": "https://br.ign.com/descontos/157401/retorno-da-raid-ludra-em-aion-2-data-requisitos-e-recompensas",
-   "summary": "Retorno da raid Ludra em AION 2: confira requisitos dos modos Normal e Difícil, chefes, recompensas e dicas para participar",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/sgf2026-key-art_keac.png",
-   "at": 1793998689000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "We Bet You Didn’t Know All 25 Of These Things About Ocarina Of Time",
    "url": "https://www.gamespot.com/articles/we-bet-you-didnt-know-all-25-of-these-things-about-ocarina-of-time/",
    "summary": "The Legend of Zelda: Ocarina of Time is a faithful remake, but that doesn't mean it can't pack a few surprises. Between updates and modernizations, and just the way some new…",
@@ -704,14 +813,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Lucia_Caminos_13.jpg?w=300",
    "at": 1793996619000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Para fãs de Star Wars: LEGO com Grogu e nave de 701 peças ganha 30% de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/157422/para-fas-de-star-wars-lego-com-grogu-e-nave-de-701-pecas-ganha-30-de-desconto-na-amazon",
-   "summary": "Conjunto inspirado em The Mandalorian and Grogu traz três personagens e nave com 25 cm de comprimento",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/lego-star-wars_aggn.jpg",
-   "at": 1793995232000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Updated Xbox PC app promises 60% faster loading and easier access to games, but CEO Asha Sharma says there's \"plenty more to do\"",
@@ -985,14 +1086,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "AMD agora prioriza data centers, afirma Lisa Su, enquanto receita com jogos despenca 40%",
-   "url": "https://www.hardware.com.br/tecnologia/amd-agora-prioriza-data-centers/",
-   "summary": "CEO da AMD destaca crescimento acelerado da IA e projeta forte expansão para 2027, levantando dúvidas sobre o espaço dos processadores Ryzen e das placas Radeon nas prioridades da…",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/AMD-agora-prioriza-data-centers-afirma-Lisa-Su-enquanto-receita-com-jogos-despenca-40.jpg",
-   "at": 1793968876000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "In Charting the Unknown, Crimson Desert doubles down on its maximalism in audacious, faintly sinister style",
    "url": "https://www.eurogamer.net/crimson-desert-charting-the-unknown-now-playing",
    "summary": "And so we are back in Pywel: the super-sized and often super-pretty realm where the deserts are blood-red, the grass is a lurid shade of green, and Kliff and his merry gang of…",
@@ -1018,14 +1111,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Following BioWare's shock closure, a new documentary capturing its final moments is coming next year",
-   "url": "https://www.eurogamer.net/bioware-closure-documentary-release",
-   "summary": "A documentary detailing the history of beloved Mass Effect studio BioWare is releasing next year, and will cover last month's shock closure of the studio, following the private…",
-   "img": "https://assetsio.gnwcdn.com/mass-effect-legendary-edition_AmSQYAn.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793967860000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Crítica | Godzilla Minus Zero",
    "url": "https://www.jbox.com.br/2026/11/06/critica-godzilla-minus-zero/",
    "summary": "Brilhante continuação da saga do monstro japonês é um espetáculo para todos os nossos sentidos.",
@@ -1033,38 +1118,6 @@
    "at": 1793967010000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Former Rockstar Games tech director thinks GTA 6 could be coming to PC sooner than you'd expect to curb AI clones",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-pc-sooner-than-you-expect-curb-ai-clone",
-   "summary": "Former Rockstar Games North technical director Obbe Vermeij believes that the possibility of AI vibe coded ports of Grand Theft Auto 6 could push Rockstar to create an official PC…",
-   "img": "https://assetsio.gnwcdn.com/ai-gta.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793966560000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Pirataria de GTA 6 é “um fato da vida”, diz CEO da Take-Two, que promete tomar medidas se necessário",
-   "url": "https://www.hardware.com.br/games/pirataria-de-gta-6-e-um-fato-da-vida/",
-   "summary": "Strauss Zelnick reconhece os riscos da distribuição ilegal de GTA 6, enquanto atualizações do PS5 podem dificultar o funcionamento em consoles desbloqueados",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA4-scaled.jpg",
-   "at": 1793965475000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Remake de Zelda: Ocarina of Time já roda no PS5 desbloqueado",
-   "url": "https://www.hardware.com.br/games/zelda-ocarina-of-time-ja-roda-no-ps5/",
-   "summary": "Um dia após seu lançamento no Nintendo Switch 2, o remake de Zelda: Ocarina of Time foi executado no console da Sony por meio de um emulador experimental",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Remake-de-Zelda-Ocarina-of-Time-ja-roda-no-PS5-desbloqueado.jpg",
-   "at": 1793964294000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "\"Is there any accountability left in this world?\" Warren Spector pops off at EA executives and their massive payouts as BioWare shuts down",
-   "url": "https://www.eurogamer.net/bioware-closure-warren-spector-comments-accountability",
-   "summary": "It's only been two weeks since we last heard Warren Spector sound off about EA's sudden decision to close BioWare , following the publisher's acquisition by Saudi Arabia's PIF and…",
-   "img": "https://assetsio.gnwcdn.com/Thane-SHODAN.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793960120000,
-   "source": "Eurogamer"
   },
   {
    "title": "Scalpers Already Want Insane Sums For The Ocarina Remake With Exclusive Bits",
@@ -1138,15 +1191,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Code Geass: Star Chaser Aspal revela elenco e equipe",
-   "url": "https://animenew.com.br/code-geass-star-chaser-aspal-elenco/",
-   "summary": "O novo anime Code Geass: Star Chaser Aspal (Code Geass Hoshi Oi no Aspal) revelou seus primeiros dubladores, novos integrantes da equipe de produção e um visual inédito. A estreia…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Code-Geass-Star-Chaser-Aspal-elenco-e-equipe.webp",
-   "at": 1793925588000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
    "title": "Facção de Lil' Ronnie é destaque em trailer de Fate/EXTRA Record",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/5/fate-extra-record-lil-ronnie-run-ru-trailer",
    "summary": "O jogo tem lançamento marcado para janeiro de 2027.",
@@ -1207,55 +1251,11 @@
    "source": "Xbox Wire Brasil"
   },
   {
-   "title": "Reincarnated as a Sword 2 revela trailer e novos dubladores",
-   "url": "https://animenew.com.br/reincarnated-as-a-sword-2-trailer-elenco/",
-   "summary": "O anime Reincarnated as a Sword (Tensei Shitara Ken Deshita) divulgou um novo trailer, visual e cinco integrantes do elenco para o arco Seedrun da segunda temporada, que começa a…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Reincarnated-as-a-Sword-2-revela-trailer-e-novos-dubladores.webp",
-   "at": 1793836276000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Dan-Katsu revela novo trailer, elenco e músicas do anime",
-   "url": "https://animenew.com.br/reincarnation-game-world-dan-katsu-trailer-elenco/",
-   "summary": "O anime Reincarnation in the Game World Dan-Katsu (Game Sekai Tensei -Gamer wa [Dungeon Shūkatsu no Susume] o Play Suru-) divulgou um novo vídeo promocional nesta quarta-feira…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Dan-Katsu-revela-novo-trailer-elenco-e-musicas-do-anime.webp",
-   "at": 1793835860000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Promise Me the Spotlight revela trailer e elenco do anime",
-   "url": "https://animenew.com.br/promise-me-the-spotlight-anime-trailer-elenco/",
-   "summary": "O anime Promise Me the Spotlight (Watashi o Center ni Suru to Chikaimasuka?) divulgou seu primeiro trailer, visual promocional, elenco principal e equipe de produção nesta…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Promise-Me-the-Spotlight-revela-trailer-e-elenco-do-anime.webp",
-   "at": 1793835456000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Otaku Vampire’s Love Bite ganha adaptação para anime",
-   "url": "https://animenew.com.br/otaku-vampires-love-bite-anime/",
-   "summary": "O mangá Otaku Vampire’s Love Bite (Oshi ni Amagami), de Julietta Suzuki, criadora de Kamisama Kiss, receberá uma adaptação em anime. O anúncio chegou acompanhado de um vídeo…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Otaku-Vampires-Love-Bite-ganha-adaptacao-para-anime.webp",
-   "at": 1793758206000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
    "title": "Grand Theft Auto VI: pré-download inicia em 10 de novembro",
    "url": "https://www.rockstargames.com/br/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10#new_tab",
    "summary": "The post Grand Theft Auto VI: pré-download inicia em 10 de novembro appeared first on Xbox Wire em Português .",
    "img": "",
    "at": 1793738594000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais",
-   "url": "https://news.xbox.com/pt-br/2026/11/03/xbox-game-pass-novembro-2026-wave-1/",
-   "summary": "The post Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793728809000,
    "source": "Xbox Wire Brasil"
   }
  ]
