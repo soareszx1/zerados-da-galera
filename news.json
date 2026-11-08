@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794122000104,
+ "atualizadoEm": 1794131767048,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,10 +79,26 @@
  ],
  "itens": [
   {
+   "title": "81 anos, 102 filmes, 8 indicações ao Oscar: uma das maiores estrelas de todos os tempos estabeleceu um recorde",
+   "url": "https://br.ign.com/cinema-tv/157383/81-anos-102-filmes-8-indicacoes-ao-oscar-uma-das-maiores-estrelas-de-todos-os-tempos-estabeleceu-um",
+   "summary": "Ele foi indicado oito vezes ao Oscar, mas saiu de mãos vazias todas as vezes",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_v55q.png",
+   "at": 1794128608000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Digital Foundry Delivers Its Tech Verdict On Stellar Blade's Switch 2 Port",
+   "url": "https://www.nintendolife.com/news/2026/11/digital-foundry-delivers-its-tech-verdict-on-stellar-blades-switch-2-port",
+   "summary": "\"Better than expected\". Stellar Blade also arrived on the Switch 2 this week, and it's been positively received so far. Here on Nintendo Life, we gave it a score of seven out of…",
+   "img": "https://images.nintendolife.com/d391a48c81f62/large.jpg",
+   "at": 1794124800000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "Video: Zelda: Ocarina Of Time Side-By-Side Graphics Comparison (Switch 2, 3DS, N64)",
    "url": "https://www.nintendolife.com/news/2026/11/video-zelda-ocarina-of-time-side-by-side-graphics-comparison-switch-2-3ds-n64",
    "summary": "Take a look. Zelda: Ocarina of Time returned this week on the Switch 2 and it looks better than ever. If you are wondering just much of a facelift it's had since the 2011 outing,…",
-   "img": "https://images.nintendolife.com/a10364492c43f/large.jpg",
+   "img": "https://images.nintendolife.com/d14351f36451a/large.jpg",
    "at": 1794117600000,
    "source": "Nintendo Life"
   },
@@ -754,14 +770,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Livro que inspirou House of the Dragon ganha 40% de desconto na Amazon e no Mercado Livre",
-   "url": "https://br.ign.com/descontos/157409/livro-que-inspirou-house-of-the-dragon-ganha-40-de-desconto-na-amazon-e-no-mercado-livre",
-   "summary": "Fogo & Sangue acompanha gerações da dinastia Targaryen",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/fogo-sangue-capa-house-of-the-dragon-1280x720_ge2u.jpg",
-   "at": 1793984468000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "RTX 5070 Ti dispara de preço e já custa quase o dobro do valor de lançamento",
    "url": "https://www.hardware.com.br/tecnologia/rtx-5070-ti-dispara-de-preco/",
    "summary": "RTX 5070 Ti já ultrapassa US$ 1.300 nos Estados Unidos, enquanto restrições no fornecimento de memória continuam afetando o mercado de GPUs",
@@ -1056,14 +1064,6 @@
    "summary": "Final Fantasy, Resident Evil and more. The third-party support for the Switch 2 has been mostly outstanding so far, with releases such as Cyberpunk 2077 and Call of Duty: Modern…",
    "img": "https://images.nintendolife.com/b415f25ed2494/large.jpg",
    "at": 1793940300000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Nintendo Reiterates Plans For Zelda's 40th Anniversary",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-reiterates-plans-for-zeldas-40th-anniversary",
-   "summary": "\"We will pursue a variety of initiatives\". You can't really avoid it in the gaming space right now, but if you did somehow miss it, Nintendo is currently celebrating the 40th…",
-   "img": "https://images.nintendolife.com/e302ae1549597/large.jpg",
-   "at": 1793936700000,
    "source": "Nintendo Life"
   },
   {
