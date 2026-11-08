@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794164115400,
+ "atualizadoEm": 1794174394456,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,15 @@
   }
  ],
  "itens": [
+  {
+   "title": "The Legend of Zelda: Ocarina of Time 2026 Game Review",
+   "url": "https://www.animenewsnetwork.com/review/game/nintendo-switch-2/the-legend-of-zelda/ocarina-of-time-2026/.243568",
+   "summary": "The big holiday release from Nintendo, brave enough to challenge the looming release of Grand Theft Auto VI , is finally here—and we have plenty to gush about!",
+   "img": "",
+   "at": 1794171600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Usuário comprou um Steam Deck OLED para fugir das pessoas e acabou encontrando uma namorada",
    "url": "https://www.hardware.com.br/noticias/steam-deck-oled-ajudou-gamer-encontrar-namorada/",
@@ -779,15 +788,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Dragon's Dogma 2: Dark Arisen Game Collaborates With Delicious in Dungeon",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-06/dragon-dogma-2-dark-arisen-game-collaborates-with-delicious-in-dungeon/.243563",
-   "summary": "What sort of wild new recipes will Laios come up with?",
-   "img": "",
-   "at": 1794016800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Zelda Producer Eiji Aonuma Talks About The Benefits Of \"Long-Term-Tenured Staff\" At Nintendo",
    "url": "https://www.nintendolife.com/news/2026/11/zelda-producer-eiji-aonuma-talks-about-the-benefits-of-long-term-tenured-staff-at-nintendo",
    "summary": "\"It contributes to some of the sense of continuity\". One morsel from Nintendo's latest Ask the Developer interview revealed how the team behind the Zelda: Ocarina of Time remake…",
@@ -961,14 +961,6 @@
    "img": "https://images.nintendolife.com/a889a45162978/large.jpg",
    "at": 1793986200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "The Best Warzone Perks May Surprise You After The MW4 Overhaul",
-   "url": "https://www.gamespot.com/articles/the-best-warzone-perks-may-surprise-you-after-the-mw4-overhaul/",
-   "summary": "Modern Warfare 4 integrates with Warzone for Season 1 , adding MW4's full weapon pool, attachments, and other new gear into battle royale. The big update also overhauls Warzone's…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MW4-SEASON-1-WARZONE-013.jpg?w=300",
-   "at": 1793985127000,
-   "source": "GameSpot"
   },
   {
    "title": "RTX 5070 Ti dispara de preço e já custa quase o dobro do valor de lançamento",
@@ -1256,6 +1248,14 @@
    "summary": "The post Grand Theft Auto VI: pré-download inicia em 10 de novembro appeared first on Xbox Wire em Português .",
    "img": "",
    "at": 1793738594000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais",
+   "url": "https://news.xbox.com/pt-br/2026/11/03/xbox-game-pass-novembro-2026-wave-1/",
+   "summary": "The post Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1793728809000,
    "source": "Xbox Wire Brasil"
   }
  ]
