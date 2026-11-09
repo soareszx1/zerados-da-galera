@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794219017259,
+ "atualizadoEm": 1794230763776,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -23,8 +23,8 @@
   },
   {
    "nome": "Adrenaline",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 15
   },
   {
    "nome": "Hardware.com.br",
@@ -79,6 +79,187 @@
  ],
  "itens": [
   {
+   "title": "Anime My Crush's Crush confirma mês de lançamento",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/9/my-crushs-crush-anime-abril-2027-imagem",
+   "summary": "Um teaser trailer e mais detalhes foram divulgados",
+   "img": "https://a.storyblok.com/f/178900/1000x563/87607e8fab/my_crushs_crush_header.jpg",
+   "at": 1794230220000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Sony anuncia novo PlayStation Portal com armazenamento interno para “recursos misteriosos”",
+   "url": "https://www.hardware.com.br/noticias/sony-anuncia-novo-playstation-portal/",
+   "summary": "Nova versão do PlayStation Portal chega em dezembro e poderá receber funcionalidades inéditas no futuro, mas Sony ainda não revelou quais serão",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Sony-anuncia-novo-PlayStation-Portal-com-armazenamento-interno-para-recursos-misteriosos.jpg",
+   "at": 1794229781000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Review: Queen's Domain (Switch 2) - An Incredible Tribute To FromSoft, And One Of 2026's Best Surprises",
+   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/queens-domain",
+   "summary": "We heard you liked King's Field, now get ready for... Way back in the mid-'90s, a business software developer called FromSoftware decided to take a crack at making video games and…",
+   "img": "https://images.nintendolife.com/97893168d66e3/large.jpg",
+   "at": 1794229200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Mortal Kombat 2 Is Winning The Race To Become Mortal Kombat 2",
+   "url": "https://www.gamespot.com/articles/mortal-kombat-2-is-winning-the-race-to-become-mortal-kombat-2/",
+   "summary": "What's in a name? That's the question that Mortal Kombat studio CCO Ed Boon is asking, as he recently set up a few polls asking for opinions on what the next Mortal Kombat game…",
+   "img": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4460326-mk-2-poster.jpg?w=300",
+   "at": 1794229136000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Nvidia CEO Jensen Huang Under Investigation Following Affair With Suspected Chinese Spy",
+   "url": "https://www.gamespot.com/articles/nvidia-ceo-jensen-huang-under-investigation-following-affair-with-suspected-chinese-spy/",
+   "summary": "Nvidia has announced that it has opened an official investigation into its CEO, Jensen Huang, after he admitted that he was involved in an affair with a business executive who is…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jensen-Huang-GTC-Berlin-2026.jpg?w=300",
+   "at": 1794229074000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Spy X Family tem 4ª temporada confirmada e novo filme para 2027",
+   "url": "https://br.ign.com/spy-x-family/157443/spy-x-family-tem-4a-temporada-confirmada-e-novo-filme-para-2027",
+   "summary": "Datas exatas de cada estreia não foram anunciadas A Toho confirmou ontem que Spy X Family ganhará não só uma 4ª temporada, mas também mais um filme para 2027. Enquanto datas…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/s1-1_gd2p.jpg",
+   "at": 1794228941000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "God of War Ragnarok lidera lista dos 10 jogos da PlayStation Studios com maior faturamento da geração PS5",
+   "url": "https://br.ign.com/god-of-war-ragnarok/157437/god-of-war-ragnarok-lidera-lista-dos-10-jogos-da-playstation-studios-com-maior-faturamento-da-geraca",
+   "summary": "Essa atualização vem na sequência de informações oficiais divulgadas pela PlayStation no início da semana passada",
+   "img": "https://sm.ign.com/ign_br/news/g/god-of-war/god-of-war-ragnarok-tops-list-of-10-highest-grossing-playsta_1jmh.jpg",
+   "at": 1794228847000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Skyrim lead designer hopes Sentinel will finally solve The Elder Scrolls' ladder problem",
+   "url": "https://www.eurogamer.net/the-elder-scrolls-6-sentinel-ladders-skyrim-bethesda-designer",
+   "summary": "For such a simple, straightforward real-world object, ladders have been the bane of game developers' existence since the early days of the industry . And Bethesda's The Elder…",
+   "img": "https://assetsio.gnwcdn.com/The-Elder-Scrolls-6-Sentinel---Title-Card.jpeg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794228380000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "\"Art, including characters, terrain, animations, cutscenes and UI\" Bandai Namco and Monolith Soft helped out with Ocarina of Time on Switch 2",
+   "url": "https://www.eurogamer.net/ocarina-of-time-support-studios-confirmed-switch-2",
+   "summary": "Xenoblade series developer Monolith Soft and Bandai Namco Studios have been listed as support studios for the Switch 2 version of Ocarina of Time, working on elements of the title…",
+   "img": "https://assetsio.gnwcdn.com/Link-credits.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794228350000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Speedrunners já acharam um modo de “quebrar” o remake de The Legend of Zelda: Ocarina of Time",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157434/speedrunners-ja-acharam-um-modo-de-quebrar-o-remake-de-the-legend-of-zelda-ocarina-of-time",
+   "summary": "Avante! Speedrunners de The Legend of Zelda: Ocarina of Time já encontraram algumas maneiras de quebrar o remake. Uma das melhores coisas em um novo jogo da série Zelda é ver a…",
+   "img": "https://sm.ign.com/ign_br/photo/default/the-legend-of-zelda-40th-anniversary-direct-9-8-2026-01-02-3_cfuv.jpg",
+   "at": 1794228277000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "SEGA Confirms Leak of 2.2 Million Newsletter Recipients' Email Addresses",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-09/sega-confirms-leak-of-2.2-million-newsletter-recipients-email-addresses/.243646",
+   "summary": "SEGA: No indications that other personal info was also leaked",
+   "img": "",
+   "at": 1794227640000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jogadores de GTA 6 na Alemanha podem, legalmente, tirar uma folga do trabalho para jogar no dia do lançamento, mas há um porém",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157435/jogadores-de-gta-6-na-alemanha-podem-legalmente-tirar-uma-folga-do-trabalho-para-jogar-no-dia-do-lan",
+   "summary": "Este curso de capacitação certificado permite que os funcionários se ausentem do trabalho por três dias sem colocar em risco seu sustento",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-play/gta-6-players-in-germany-can-legally-take-time-off-work-to-p_uvv3.jpg",
+   "at": 1794227562000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Suikoden: The Anime ‒ Episode 5",
+   "url": "https://www.animenewsnetwork.com/review/suikoden-the-anime/episode-5/.243583",
+   "summary": "What an effective bit of television.",
+   "img": "",
+   "at": 1794227400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "My Crush’s Crush – Comédia Romântica sobre Triangulo amoroso ganha 1º trailer, staff e data",
+   "url": "https://www.intoxianime.com/2026/11/my-crushs-crush-comedia-romantica-sobre-triangulo-amoroso-ganha-1o-trailer-staff-e-data/",
+   "summary": "... O post My Crush’s Crush – Comédia Romântica sobre Triangulo amoroso ganha 1º trailer, staff e data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794226850000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "London department store Selfridges launches sizeable GTA 6 takeover, featuring a varsity jacket that costs an eye-watering £2,500",
+   "url": "https://www.eurogamer.net/selfridges-gta-6-collab-takeover",
+   "summary": "Expensive British department store Selfridges has launched a sizeable Grand Theft Auto 6 takeover, completely making-over its Oxford Street London Corner Shop store and offering a…",
+   "img": "https://assetsio.gnwcdn.com/shop-image.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794226730000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Dragon Quest Teases New RPG for iOS, Android",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-09/dragon-quest-teases-new-rpg-for-ios-android/.243644",
+   "summary": "Dragon Quest RPG Makai Ju to Michibikareshi Shima game's trailer debuts tomorrow",
+   "img": "",
+   "at": 1794226241000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Speedrunners Didn't Take Long To Find New Ways To Break Ocarina Of Time",
+   "url": "https://www.nintendolife.com/news/2026/11/speedrunners-didnt-take-long-to-find-new-ways-to-break-ocarina-of-time",
+   "summary": "Fly me to the moon. Ocarina of Time has only been out on Switch 2 for a matter of days, but that has proven more than enough time for the speedrunning community to find a bunch of…",
+   "img": "https://images.nintendolife.com/481fe03a6672b/large.jpg",
+   "at": 1794224700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "GTA 6 Online pode chegar antes do esperado após descoberta na PlayStation",
+   "url": "https://www.hardware.com.br/games/gta-6-online-antes-do-esperado/",
+   "summary": "Registros encontrados nos sistemas da Sony mencionam funcionalidades online, mas Rockstar ainda não anunciou quando o GTA 6 Online será lançado",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-6-Online-pode-chegar-antes-do-esperado-apos-descoberta-na-PlayStation.jpg",
+   "at": 1794224637000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Dungeons in World of Warcraft: Forever get a huge XP buff, but power-levellers shouldn't celebrate just yet",
+   "url": "https://www.eurogamer.net/world-of-warcraft-forever-dungeon-mob-xp-rate-buff",
+   "summary": "World of Warcraft: Forever has received a massive buff to the XP drop-rates of dungeon mobs (enemies), which should make running these instances multiple times feel more rewarding…",
+   "img": "https://assetsio.gnwcdn.com/world-of-warcraft-forever-dwarf-shaman-jpg.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794224480000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Father Arrested For Leaving 6-Year-Old Daughter Sleeping In Line For Pokémon Cards",
+   "url": "https://www.nintendolife.com/news/2026/11/father-arrested-for-leaving-6-year-old-daughter-sleeping-in-line-for-pokemon-cards",
+   "summary": "NL used Rage. A 35-year-old South Carolina man has been arrested and accused of leaving his 6-year-old daughter asleep while waiting in line for Pokémon cards. As reported by The…",
+   "img": "https://images.nintendolife.com/4eafa770df3cb/large.jpg",
+   "at": 1794222000000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Mario's Next 'Adults Welcome' LEGO Set Is \"Hatching Soon\"",
+   "url": "https://www.nintendolife.com/news/2026/11/marios-next-adults-welcome-lego-set-is-hatching-soon",
+   "summary": "It's dino time. Nintendo and LEGO have teased the next entry in their 'Adults Welcome' Mario range, which will see Yoshi step into the limelight. While we haven't seen the full…",
+   "img": "https://images.nintendolife.com/3909970c6713d/large.jpg",
+   "at": 1794219300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Em toda a história, apenas este game conseguiu ser eleito jogo do ano tanto pela crítica quanto pelos jogadores",
+   "url": "https://br.ign.com/baldurs-gate-3/157433/em-toda-a-historia-apenas-este-game-conseguiu-ser-eleito-jogo-do-ano-tanto-pela-critica-quanto-pelos",
+   "summary": "Premiado máximo em todas as cerimônias, incluindo o voto do público Este foi o único game até agora a vencer as cinco premiações da crítica especializada e também vencer o júri…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_px43.jpg",
+   "at": 1794218609000,
+   "source": "IGN Brasil"
+  },
+  {
    "title": "GTA 6 reportedly has 55 Achievements/Trophies, more than both GTA 5 and Red Dead Redemption 2 had at launch",
    "url": "https://www.eurogamer.net/gta-6-achievements-trophies-55",
    "summary": "GTA 6 is due to release on the 19th November on PS5, and Xbox Series X/S, and ahead of the highly-anticipated launch of Rockstar's latest sandbox adventure, people just can't get…",
@@ -101,6 +282,15 @@
    "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(5).jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794216250000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Late Tetsuya Chiba's Autobiographical Manga to End in 8th Volume",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-09/late-tetsuya-chiba-autobiographical-manga-to-end-in-8th-volume/.243624",
+   "summary": "Tomorrow's Joe's creator launched Hinemosu Notari Nikki in 2015, went on hiatus on September 25 before his October 22 death",
+   "img": "",
+   "at": 1794215868000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Heisei Haizan-hei ☆ Sumire-chan Manga Resumes on November 16",
@@ -218,15 +408,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Godzilla Minus Zero Earns Record $32 Million in N. American Opening Weekend",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-08/godzilla-minus-zero-earns-record-32-million-in-n-american-opening-weekend/.243628",
-   "summary": "Highest-ever U.S. opening for live-action foreign film adds to global total of US$63 million",
-   "img": "",
-   "at": 1794184907000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Spy x Family terá 4ª temporada e novo filme em 2027",
    "url": "https://animenew.com.br/spy-x-family-4-temporada-filme-2027/",
    "summary": "O anime Spy x Family teve sua quarta temporada oficialmente anunciada neste domingo (8). Além da continuação, a franquia também ganhará um novo filme para os cinemas japoneses em…",
@@ -236,13 +417,12 @@
    "source": "AnimeNew"
   },
   {
-   "title": "The Legend of Zelda: Ocarina of Time 2026 Game Review",
-   "url": "https://www.animenewsnetwork.com/review/game/nintendo-switch-2/the-legend-of-zelda/ocarina-of-time-2026/.243568",
-   "summary": "The big holiday release from Nintendo, brave enough to challenge the looming release of Grand Theft Auto VI , is finally here—and we have plenty to gush about!",
-   "img": "",
-   "at": 1794171600000,
-   "cat": "geek",
-   "source": "Anime News Network"
+   "title": "Jogos baratos de PC em nova promoção com até 95% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-baratos-de-pc-em-nova-promocao-com-ate-95-de-desconto/",
+   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/10/Indiana-Jones-Grande-Circulo-New-Game-Machine-Games-640x400.jpg",
+   "at": 1794168000000,
+   "source": "Adrenaline"
   },
   {
    "title": "Usuário comprou um Steam Deck OLED para fugir das pessoas e acabou encontrando uma namorada",
@@ -251,6 +431,14 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/steam-deck-coracao-1600x900.jpg",
    "at": 1794161904000,
    "source": "Hardware.com.br"
+  },
+  {
+   "title": "Sony adia speakers Pulse Elevate do PlayStation, que ficam sem data de estreia",
+   "url": "https://www.adrenaline.com.br/perifericos/sony-adia-speakers-pulse-elevate-do-playstation-que-ficam-sem-data-de-estreia/",
+   "summary": "Faltando poucos dias para o lançamento Sony adia as caixas de som sem fio Pulse Elevate",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/sony-adia-pulse-elevate-som-playstation-640x400.jpg",
+   "at": 1794161207000,
+   "source": "Adrenaline"
   },
   {
    "title": "Ocarina of Time remake datamine suggests Master Quest is on the way",
@@ -269,13 +457,12 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "The Makeup Remover Volume 2 K-Comic Review",
-   "url": "https://www.animenewsnetwork.com/review/the-makeup-remover/volume-2/.243068",
-   "summary": "If you’re not Barbie-perfect, you’ve lost.",
-   "img": "",
-   "at": 1794157200000,
-   "cat": "geek",
-   "source": "Anime News Network"
+   "title": "Assassin’s Creed vai para a Roma Antiga com novo jogo codinome Mars, diz insider",
+   "url": "https://www.adrenaline.com.br/games/assassins-creed-vai-para-a-roma-antiga-com-novo-jogo-codinome-mars-diz-insider/",
+   "summary": "Novo vazamento sobre Assassin's Creed aponta para dois novos jogos, de codinome Mars e Pocket",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/assassins-creed-mars-roma-rumor-640x400.jpg",
+   "at": 1794157400000,
+   "source": "Adrenaline"
   },
   {
    "title": "Controle premium em oferta! DualSense Edge Midnight Black por quase metade do preço na Amazon",
@@ -308,15 +495,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Ex-diretor-de-South-of-Midnight-diz-que-nao-teria-financiado-o-proprio-jogo-se-comandasse-o-Xbox.jpg",
    "at": 1794155073000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "My Crush's Crush Anime's Teaser Unveils Cast, Staff, April Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-08/my-crush-crush-anime-teaser-unveils-cast-staff-april-debut/.243627",
-   "summary": "Gakuto Kajiwara, Haruna Mikawa, Nene Hieda star in 2027 anime",
-   "img": "",
-   "at": 1794154727000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "SPY x FAMILY tem 4ª temporada e novo filme anunciados para 2027",
@@ -368,12 +546,28 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "Jogos de PlayStation por menos de R$ 25 em oferta de Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-por-menos-de-r-25-em-oferta-de-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/09/mortal-kombat-x-640x400.jpg",
+   "at": 1794147720000,
+   "source": "Adrenaline"
+  },
+  {
    "title": "Últimas unidades! Box com a trilogia de Jogos Vorazes está com 39% de desconto na Black Friday da Amazon",
    "url": "https://br.ign.com/descontos/157426/ultimas-unidades-box-com-a-trilogia-de-jogos-vorazes-esta-com-39-de-desconto-na-black-friday-da-amaz",
    "summary": "Edição da Rocco reúne os três livros que inspiraram os filmes com Jennifer Lawrence e acompanha um pôster",
    "img": "https://sm.ign.com/ign_br/screenshot/default/jogos-vorazes-produto-1280x720_pvyh.jpg",
    "at": 1794147188000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Launcher da Epic Games terá versão oficial para o SteamOS",
+   "url": "https://www.adrenaline.com.br/games/pc-games/launcher-da-epic-games-tera-versao-oficial-para-o-steamos/",
+   "summary": "Epic Games confirma versão do seu Launcher para Linux com foco no SteamOS, mas não oferece janela de lançamento",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/epic-games-linux-confirmado-steamos-640x400.jpg",
+   "at": 1794146897000,
+   "source": "Adrenaline"
   },
   {
    "title": "Bride of the Barrier Master revela vídeos dos protagonistas",
@@ -461,6 +655,14 @@
    "source": "IGN Brasil"
   },
   {
+   "title": "CPUs Intel Razor Lake-S para desktop podem chegar em 2028 e compatíveis com LGA-1954",
+   "url": "https://www.adrenaline.com.br/intel/cpus-intel-razor-lake-s-para-desktop-podem-chegar-em-2028-e-compativeis-com-lga-1954/",
+   "summary": "Famoso insider de assuntos Intel coloca o lançamento dos Razor Lake para desktop mais de um ano depois de Nova Lake",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/intel-razor-lake-2028-lga-1954-640x400.jpg",
+   "at": 1794142683000,
+   "source": "Adrenaline"
+  },
+  {
    "title": "Xbox Cloud Gaming agora permite usar celular como controle na TV",
    "url": "https://www.hardware.com.br/games/xbox-cloud-gaming-celular-controle-tv/",
    "summary": "Xbox Cloud Gaming agora deixa seu celular virar controle via navegador; escaneie o QR e jogue na TV sem precisar de joystick",
@@ -512,14 +714,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Após 13 anos, o filme de zumbis de maior sucesso ganhará uma sequência que poderá rivalizar com obras de Christopher Nolan e Denis Villeneuve",
-   "url": "https://br.ign.com/cinema-tv/157384/apos-13-anos-o-filme-de-zumbis-de-maior-sucesso-ganhara-uma-sequencia-que-podera-rivalizar-com-obras",
-   "summary": "Durante muitos anos, houve tentativas de criar uma sequência para o mega sucesso de terror e suspense Guerra Mundial Z",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_7q36.png",
-   "at": 1794132036000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Feature: Box Art Brawl: The Legend Of Zelda: Ocarina Of Time Ultimate Showdown",
    "url": "https://www.nintendolife.com/features/box-art-brawl-the-legend-of-zelda-ocarina-of-time-ultimate-showdown",
    "summary": "Battle for the ages. Welcome all, to a very special edition of Box Art Brawl ! Looking back at last week , we checked out Revenge of the 'Gator to celebrate its addition to…",
@@ -534,14 +728,6 @@
    "img": "https://images.nintendolife.com/81067a9c2a4fc/large.jpg",
    "at": 1794131100000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "81 anos, 102 filmes, 8 indicações ao Oscar: uma das maiores estrelas de todos os tempos estabeleceu um recorde",
-   "url": "https://br.ign.com/cinema-tv/157383/81-anos-102-filmes-8-indicacoes-ao-oscar-uma-das-maiores-estrelas-de-todos-os-tempos-estabeleceu-um",
-   "summary": "Ele foi indicado oito vezes ao Oscar, mas saiu de mãos vazias todas as vezes",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_v55q.png",
-   "at": 1794128608000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Digital Foundry Delivers Its Tech Verdict On Stellar Blade's Switch 2 Port",
@@ -655,6 +841,14 @@
    "source": "IntoxiAnime"
   },
   {
+   "title": "Jogos de PC em oferta limitada com até 95% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-limitada-com-ate-95-de-desconto-8/",
+   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/11/kingdom-come-deliverance-2-640x400.webp",
+   "at": 1794074400000,
+   "source": "Adrenaline"
+  },
+  {
    "title": "The Best GTA Alternatives For Kids And Families",
    "url": "https://www.gamespot.com/articles/the-best-gta-alternatives-for-kids-and-families/",
    "summary": "Grand Theft Auto VI is going to be the biggest video game launch of all time, and it's not particularly close. Millions and millions of people are eagerly awaiting their chance to…",
@@ -697,28 +891,20 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Por que Godzilla é muito mais do que um monstro gigante? - IGN Pop",
-   "url": "https://br.ign.com/godzilla-minus-zero/157425/por-que-godzilla-e-muito-mais-do-que-um-monstro-gigante-ign-pop",
-   "summary": "Godzilla é muito mais do que um monstro gigante destruindo cidades. Por trás do Rei dos Monstros existe uma história marcada por guerras, armas nucleares, desastres ambientais e…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/pop-0511-glodzilla-2_1tn2.jpg",
-   "at": 1794063638000,
-   "source": "IGN Brasil"
+   "title": "Demos de jogos poderão incluir vozes de atores do sindicato SAG-AFTRA em novo acordo",
+   "url": "https://www.adrenaline.com.br/games/demos-de-jogos-poderao-incluir-vozes-de-atores-do-sindicato-sag-aftra-em-novo-acordo/",
+   "summary": "Devs esperam conseguir atrair mais investidores conseguindo talentos famosos nas demos de seus jogos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/demos-atores-sag-aftra-640x400.jpg",
+   "at": 1794064187000,
+   "source": "Adrenaline"
   },
   {
-   "title": "O filme de terror mais assustador de todos os tempos segundo a ciência está disponível no Prime Video",
-   "url": "https://br.ign.com/cinema-tv/157404/o-filme-de-terror-mais-assustador-de-todos-os-tempos-segundo-a-ciencia-esta-disponivel-no-prime-vide",
-   "summary": "Com pontuação quase perfeita em estudo com monitores cardíacos Se você busca uma experiência que vá muito além de um simples arrepio na espinha, a ciência tem uma recomendação…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/s1_8z44.jpg",
-   "at": 1794063635000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "De mangás a K-pop: como criar sua conta no Skeelo e descobrir se você tem resgate liberado?",
-   "url": "https://br.ign.com/descontos/157410/de-mangas-a-k-pop-como-criar-sua-conta-no-skeelo-e-descobrir-se-voce-tem-resgate-liberado",
-   "summary": "Se você é daqueles leitores que gostam de ler várias coisas ao mesmo tempo, o Skeelo pode otimizar suas leituras ao reunir tudo em um só lugar: e-books de vários gêneros para ler…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/capa-skeelo_24pz.jpg",
-   "at": 1794061240000,
-   "source": "IGN Brasil"
+   "title": "Jogos de PlayStation por menos de R$ 20 em oferta de Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-por-menos-de-r-20-em-oferta-de-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/09/control-ultimate-edition-640x400.webp",
+   "at": 1794060000000,
+   "source": "Adrenaline"
   },
   {
    "title": "Poll: What Review Score Would You Give The Zelda: Ocarina Of Time Remake?",
@@ -789,28 +975,12 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Xbox is testing a way to use your phone as a controller on smart TVs",
-   "url": "https://www.eurogamer.net/xbox-cloud-gaming-phone-controller-smart-tv-nano-cloud-connect",
-   "summary": "Xbox is testing two new ways to play its cloud games, and one of them doesn't require a controller at all. Read more",
-   "img": "https://assetsio.gnwcdn.com/XBOX-Wire-DtC-Phone-Controller-110426-5428ff0def107f49971d.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794054610000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Talking Point: What Are You Playing This Weekend? (7th November)",
    "url": "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-7th-november",
    "summary": "Epona friend. HYAAH, HUHH, HUP, HYAAH * coughing and splutting * Sorry about that, everyone. Welcome to another edition of What Are You Playing! Just in case you somehow missed…",
    "img": "https://images.nintendolife.com/c84e6ce8ff536/large.jpg",
    "at": 1794045600000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "What we've been playing - \"Sniffing out the warehouses on Prawn Island\"",
-   "url": "https://www.eurogamer.net/what-weve-been-playing-vice-city-zelda-world-of-warcraft-forever",
-   "summary": "Well, hello! I am once again wearing the Bertie hat in your usual host's absence, so joyous welcomes to our regular feature in which we talk about what we've been playing in…",
-   "img": "https://assetsio.gnwcdn.com/gtavc_header.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794038520000,
-   "source": "Eurogamer"
   },
   {
    "title": "Sudden Illness Sees Miyamoto Miss Nintendo's Financial Briefing, But He's Expected To Make A Quick Recovery",
@@ -821,14 +991,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Zelda Producer Eiji Aonuma Talks About The Benefits Of \"Long-Term-Tenured Staff\" At Nintendo",
-   "url": "https://www.nintendolife.com/news/2026/11/zelda-producer-eiji-aonuma-talks-about-the-benefits-of-long-term-tenured-staff-at-nintendo",
-   "summary": "\"It contributes to some of the sense of continuity\". One morsel from Nintendo's latest Ask the Developer interview revealed how the team behind the Zelda: Ocarina of Time remake…",
-   "img": "https://images.nintendolife.com/4a6a8cabc193f/large.jpg",
-   "at": 1794011400000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "The Dangers in My Heart: 3ª temporada ganha previsão de estreia em novo trailer",
    "url": "https://www.jbox.com.br/2026/11/06/the-dangers-in-my-heart-3a-temporada-ganha-previsao-de-estreia-em-novo-trailer/",
    "summary": "Animê teve retorno marcado para abril do ano que vem, dando continuidade para a temporada lançada em 2024.",
@@ -836,6 +998,22 @@
    "at": 1794008278000,
    "cat": "geek",
    "source": "JBox"
+  },
+  {
+   "title": "Path of Exile 2 anuncia o Sombra como nova classe para o lançamento na versão 1.0 em 11 de dezembro",
+   "url": "https://www.adrenaline.com.br/games/path-of-exile-2-anuncia-o-sombra-como-nova-classe-para-o-lancamento-na-versao-1-0-em-11-de-dezembro/",
+   "summary": "Grinding Gear Games também anunciou que trará muitas reformulações e batalhas com exércitos na nova liga",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/12-conquistadores-de-path-of-exile-2-640x400.jpg",
+   "at": 1794006813000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Jogos de PC em oferta limitada com até 90% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-limitada-com-ate-90-de-desconto-6/",
+   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/12/batman-arkham-knight-640x400.webp",
+   "at": 1794006000000,
+   "source": "Adrenaline"
   },
   {
    "title": "Yuru Camp: 4ª temporada ganha previsão de estreia em novo trailer",
@@ -863,6 +1041,22 @@
    "at": 1794002700000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "LANÇAMENTOS DA SEMANA | Shrek 2, Warhammer Survivors e mais jogos",
+   "url": "https://www.adrenaline.com.br/games/lancamentos-da-semana-shrek-2-warhammer-survivors-e-mais-jogos/",
+   "summary": "Confira a lista de jogos lançamentos desta semana, que também conta com Football Manager 27, Barbie Rewind, Sonic Pico Park e mais",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/shrek-2-remastered-640x400.webp",
+   "at": 1793999580000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Jogos de PlayStation por menos de R$ 15 em oferta de Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-por-menos-de-r-15-em-oferta-de-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/08/Fatal-Fury-City-of-the-Wolves-revela-Mai-e-sua-data-de-estreia-oficial-640x400.jpg",
+   "at": 1793999100000,
+   "source": "Adrenaline"
   },
   {
    "title": "We Bet You Didn’t Know All 25 Of These Things About Ocarina Of Time",
@@ -897,12 +1091,12 @@
    "source": "GameSpot"
   },
   {
-   "title": "Updated Xbox PC app promises 60% faster loading and easier access to games, but CEO Asha Sharma says there's \"plenty more to do\"",
-   "url": "https://www.eurogamer.net/updated-xbox-pc-app-faster-asha-sharma",
-   "summary": "The Xbox PC app hasn't had the best track record in recent years, but Microsoft is promising that it's now much faster and easier to use than before. Read more",
-   "img": "https://assetsio.gnwcdn.com/Forza-Horizon-6-i.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793995100000,
-   "source": "Eurogamer"
+   "title": "Square Enix vai focar em jogos originais após Final Fantasy VII Revelation",
+   "url": "https://www.adrenaline.com.br/games/square-enix-vai-focar-em-jogos-originais-apos-final-fantasy-vii-revelation/",
+   "summary": "Final Fantasy VII Revelation vai marcar o fim de uma década de trabalho em um remake",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Square-Enix-Final-Fantasy-Revelation-01-640x400.jpeg",
+   "at": 1793996404000,
+   "source": "Adrenaline"
   },
   {
    "title": "Expelled from Paradise: Resonance of the Heart e Girls Band Cry the Movie gaham arte e video colaborativos",
@@ -948,86 +1142,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "You Can Finally Drive A Dreamcast, Thanks To Sonic",
-   "url": "https://www.gamespot.com/articles/you-can-finally-drive-a-dreamcast-thanks-to-sonic/",
-   "summary": "Sonic Racing: CrossWorlds is gearing up for a second year of action, and while you can expect new courses, modes, and characters to join the game, the real headline act here is…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/CrossWorlds-6.jpg?w=300",
-   "at": 1793990561000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Mass Effect-like RPG The Expanse: Osiris Reborn ropes in David Gaider, the original lead writer of Bioware's Dragon Age series",
-   "url": "https://www.eurogamer.net/mass-effect-expanse-rpg-david-gaider",
-   "summary": "The Expanse: Osiris Reborn looks like it's carrying the best bits of Mass Effect forward, and in an encouraging move, the developers have been collaborating with David Gaider.…",
-   "img": "https://assetsio.gnwcdn.com/expanse-osiris-reborn-1.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1793990440000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "There’s A New DMZ Map Hidden In MW4, And Here’s How To Find It",
-   "url": "https://www.gamespot.com/articles/theres-a-new-dmz-map-hidden-in-mw4-and-heres-how-to-find-it/",
-   "summary": "Season 1 of Modern Warfare 4 adds a brand-new DMZ map, but it isn't accessible from the menus. In this DMZ guide, we'll show you how to find the entrance to X01 on Hajin, and…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MW4-SEASON-1-ANNOUNCEMENT-016.jpg?w=300",
-   "at": 1793989200000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Mass Effect Is Getting A New Art Collection At A Difficult Time For Its Fans",
-   "url": "https://www.gamespot.com/articles/mass-effect-is-getting-a-new-art-collection-at-a-difficult-time-for-its-fans/",
-   "summary": "This year's annual Mass Effect Day looks to be somber in light of the studio behind the games, BioWare, being shut down last month. But while no new Mass Effect games are…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Mass-Effect-Art.jpg?w=300",
-   "at": 1793988000000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Here's A Closer Look At Marvel Cosmic Invasion's New DLC Game Mode",
-   "url": "https://www.nintendolife.com/news/2026/11/heres-a-closer-look-at-marvel-cosmic-invasions-new-dlc-game-mode",
-   "summary": "Victor-y. Marvel Cosmic Invasion 's Doom-themed DLC launches next week on 10th November , and ahead of its release, Dotemu has given us an extended look at what we can expect from…",
-   "img": "https://images.nintendolife.com/a889a45162978/large.jpg",
-   "at": 1793986200000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "RTX 5070 Ti dispara de preço e já custa quase o dobro do valor de lançamento",
-   "url": "https://www.hardware.com.br/tecnologia/rtx-5070-ti-dispara-de-preco/",
-   "summary": "RTX 5070 Ti já ultrapassa US$ 1.300 nos Estados Unidos, enquanto restrições no fornecimento de memória continuam afetando o mercado de GPUs",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/RTX-5070-Ti-dispara-de-preco-e-ja-custa-quase-o-dobro-do-valor-de-lancamento.jpg",
-   "at": 1793983902000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "20 anos de Gears",
-   "url": "https://news.xbox.com/pt-br/2026/11/06/20-anos-de-gears/",
-   "summary": "The post 20 anos de Gears appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793983848000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "PSA: Want To Learn Link's Ocarina Tunes? Nintendo's Got The Sheet Music For All Of Them",
-   "url": "https://www.nintendolife.com/news/2026/11/psa-want-to-learn-links-ocarina-tunes-nintendos-got-the-sheet-music-for-all-of-them",
-   "summary": "Hylian how-to. Whether you have been playing Ocarina of Time on Switch 2, watching the trailers, or just been in the ether of its release, you almost certainly have an ocarina…",
-   "img": "https://images.nintendolife.com/ec92cd7148c0c/large.jpg",
-   "at": 1793983500000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "GOG Galaxy chegará ao Linux em 2027 e facilitará acesso aos jogos no Steam Deck",
-   "url": "https://www.hardware.com.br/games/gog-galaxy-chegara-linux-steam-deck/",
-   "summary": "Launcher oficial da GOG ganhará versão nativa para Linux, interface reformulada e melhorias de desempenho, reduzindo a dependência de aplicativos de terceiros",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GOG-Galaxy-chegara-ao-Linux-em-2027-e-facilitara-acesso-aos-jogos-no-Steam-Deck.jpg",
-   "at": 1793982758000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Próxima semana em XBOX: novos jogos de 9 a 13 de novembro",
-   "url": "https://news.xbox.com/pt-br/2026/11/06/proxima-semana-em-xbox-novos-jogos-de-9-a-13-de-novembro/",
-   "summary": "The post Próxima semana em XBOX: novos jogos de 9 a 13 de novembro appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793981470000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
    "title": "Anime Wound & Bandage revela detalhes sobre música de abertura e mais membros no elenco de voz",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/6/wound-bandage-anime-trailer-reveals-miyavi-opening-theme-song-more-cast",
    "summary": "Uma nova imagem promocional também foi divulgada",
@@ -1035,62 +1149,6 @@
    "at": 1793981460000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Jogada da Semana: Mira",
-   "url": "https://blog.br.playstation.com/2026/11/06/jogada-da-semana-mira/",
-   "summary": "Uma boa mira pode ajudar muito nos games, tanto vindo de você quanto do seu personagem em alguns casos! Vamos conhecer algumas das imagens mais certeiras enviadas pela comunidade:…",
-   "img": "",
-   "at": 1793981322000,
-   "source": "PlayStation Blog BR"
-  },
-  {
-   "title": "GameSir X4 Aileron sem drift e com 33% de desconto! O controle ideal para quem joga no celular",
-   "url": "https://www.hardware.com.br/hardware-indica/gamesir-x4-aileron-sem-drift-e-com-promocao-o-controle-ideal-para-quem-joga-no-celular/",
-   "summary": "GameSir X4 Aileron com 33% de desconto: controle anti-drift, portátil e ideal para jogos no Android. Confira!",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/21-8-1464x824.jpg",
-   "at": 1793980825000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Review: Titanium Court (Switch 2) - The Freakiest Dream You've Ever Had",
-   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/titanium-court",
-   "summary": "Court in the act. It sounds like the stuff of dreams. Fever dreams. The theatre audience is waiting, and you’re in the wings. Without warning, an MC announces that the lead…",
-   "img": "https://images.nintendolife.com/c394b170fd13d/large.jpg",
-   "at": 1793980800000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "GTA 6 pode chegar ao PC antes do esperado por causa da inteligência artificial",
-   "url": "https://www.hardware.com.br/games/gta-6-pc-antes-do-esperado/",
-   "summary": "Obbe Vermeij acredita que versões não oficiais produzidas com auxílio de IA podem pressionar a Rockstar a reduzir o intervalo entre os lançamentos para consoles e computadores",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA8-scaled.jpg",
-   "at": 1793975824000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "EA resgata 25 clássicos no PC: de Road Rash a Wing Commander são relançados",
-   "url": "https://www.hardware.com.br/games/ea-classics-chegam-ao-steam/",
-   "summary": "Coleção EA Classics reúne 25 jogos com versões comemorativas que incorporam mods da comunidade.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-06-110147-1312x738.jpg",
-   "at": 1793974174000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Teclado Mecânico Gamer Redragon Valheim: 35% de desconto e qualidade reconhecida pelos usuários",
-   "url": "https://www.hardware.com.br/hardware-indica/teclado-mecanico-gamer-redragon-valheim-35-de-desconto-e-qualidade-reconhecida-pelos-usuarios/",
-   "summary": "Teclado Redragon Valheim com 35% off e cupom: switch Brown, iluminação Rainbow e ótimas avaliações.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/az-1201x676.jpg",
-   "at": 1793973609000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "NVIDIA lança jogo gratuito no Steam para homenagear placa de vídeo de 20 anos, mas recomenda uma RTX 5080",
-   "url": "https://www.hardware.com.br/tecnologia/nvidia-lanca-jogo-gratuito-no-steam/",
-   "summary": "Experiência da NVIDIA permite desempacotar e instalar uma GeForce 8800 GTX em um PC de 2006, utilizando tecnologias gráficas modernas para recriar a época",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/NVIDIA-lanca-jogo-gratuito-no-Steam-para-homenagear-placa-de-video-de-20-anos-mas-recomenda-uma-RTX-5080.jpg",
-   "at": 1793972872000,
-   "source": "Hardware.com.br"
   },
   {
    "title": "4ª temporada de Laid-Back Camp confirma mês de lançamento em novo trailer",
@@ -1105,15 +1163,6 @@
    "title": "Boku no Kokoro no Yabai – 3º temporada ganha trailer e data",
    "url": "https://www.intoxianime.com/2026/11/boku-no-kokoro-no-yabai-3o-temporada-ganha-trailer-e-data/",
    "summary": "... O post Boku no Kokoro no Yabai – 3º temporada ganha trailer e data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1793972359000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Yuru Camp – 4º temporada ganha trailer com música tema e data",
-   "url": "https://www.intoxianime.com/2026/11/yuru-camp-4o-temporada-ganha-trailer-com-musica-tema-e-data/",
-   "summary": "... O post Yuru Camp – 4º temporada ganha trailer com música tema e data apareceu primeiro em IntoxiAnime .",
    "img": "",
    "at": 1793972359000,
    "cat": "geek",
@@ -1143,15 +1192,6 @@
    "summary": "A adaptação do mangá de Shiro Kuroi estreia nos cinemas em 11 de fevereiro de 2027",
    "img": "https://a.storyblok.com/f/178900/960x540/36ad06c45f/leviathan-film-student-cast.jpg",
    "at": 1793933820000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime The Seven Knights of the Marronnier Kingdom anuncia Ryota Takeuchi como Saturno",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/6/the-seven-knights-of-the-marronnier-kingdom-ryota-takeuchi-saturno",
-   "summary": "Takeuchi fará sua estreia como o personagem no episódio 6",
-   "img": "https://a.storyblok.com/f/178900/1460x821/035ffca69f/the_seven_knights_of_the_marronnier_kingdom_saturno_header.jpg",
-   "at": 1793932500000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1192,14 +1232,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Aconchegue-se com dois clássicos adorados que agora estão no EA Play",
-   "url": "https://news.xbox.com/pt-br/2026/11/05/aconchegue-se-com-dois-classicos-adorados-que-agora-estao-no-ea-play/",
-   "summary": "The post Aconchegue-se com dois clássicos adorados que agora estão no EA Play appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793906298000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
    "title": "‘Dragon’s Dogma 2: Dark Arisen’ ganha colaboração com ‘Dungeon Meshi’",
    "url": "https://www.jbox.com.br/2026/11/05/dragons-dogma-2-dark-arisen-ganha-colaboracao-com-dungeon-meshi/",
    "summary": "DLC permite recrutar Laios e Marcille, adicionar trajes inspirados na dupla, e ficará disponível até o fim de janeiro.",
@@ -1225,38 +1257,6 @@
    "at": 1793900396000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Dias para Jogar de Graça: PAYDAY 3, Ball x Pit, Crime Boss: Rockay City e mais",
-   "url": "https://news.xbox.com/pt-br/2026/11/05/dias-para-jogar-de-graca-payday-3-ball-x-pit-crime-boss-rockay-city-e-mais/",
-   "summary": "The post Dias para Jogar de Graça: PAYDAY 3, Ball x Pit, Crime Boss: Rockay City e mais appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793894421000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Assassin’s Creed Valhalla: a atualização com novo jogo+, novo recurso e muito mais",
-   "url": "https://news.xbox.com/pt-br/2026/11/05/assassins-creed-valhalla-a-atualizacao-com-novo-jogo-novo-recurso-e-muito-mais/",
-   "summary": "The post Assassin’s Creed Valhalla: a atualização com novo jogo+, novo recurso e muito mais appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793887762000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Grand Theft Auto VI: pré-download inicia em 10 de novembro",
-   "url": "https://www.rockstargames.com/br/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10#new_tab",
-   "summary": "The post Grand Theft Auto VI: pré-download inicia em 10 de novembro appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793738594000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais",
-   "url": "https://news.xbox.com/pt-br/2026/11/03/xbox-game-pass-novembro-2026-wave-1/",
-   "summary": "The post Chegando ao XBOX Game Pass: Warhammer Survivors, Escape Academy 2: Back 2 School, Thronefall e mais appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1793728809000,
-   "source": "Xbox Wire Brasil"
   }
  ]
 }
