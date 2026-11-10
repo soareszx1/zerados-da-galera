@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794337585850,
+ "atualizadoEm": 1794347484687,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 12
+   "itens": 13
   },
   {
    "nome": "Eurogamer",
@@ -79,12 +79,176 @@
  ],
  "itens": [
   {
+   "title": "Madoka Magica: Konnichiwa promete novidades sobre o novo filme no Brasil",
+   "url": "https://www.jbox.com.br/2026/11/10/madoka-magica-konnichiwa-promete-novidades-sobre-o-novo-filme-no-brasil/",
+   "summary": "Empresa foi responsável pela distribuição de 'Walpurgisnacht Rising' em outros países da América Latina.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/07/Madoka-Magica-destacada.jpg?ssl=1",
+   "at": 1794346361000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "De Diários de uma Apotecária a romances marcantes: 3 histórias de sucesso para resgatar no Skeelo",
+   "url": "https://br.ign.com/descontos/157513/de-diarios-de-uma-apotecaria-a-romances-marcantes-3-historias-de-sucesso-para-resgatar-no-skeelo",
+   "summary": "Poucas franquias mostram tão bem como uma história pode atravessar formatos quanto Diários de uma Apotecária. Começou como light novel de Natsu Hyuuga, virou mangá, ganhou anime e…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/capa-skeelo-2_a673.jpg",
+   "at": 1794346208000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos de PlayStation por menos de R$ 35 em oferta de Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-por-menos-de-r-35-em-oferta-de-black-friday-2/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/zombie-army-4-1-640x400.webp",
+   "at": 1794344400000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "WEBTOON Reports US$9.23 Million in 3rd Quarter of 2026",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/webtoon-reports-usd9.23-million-in-3rd-quarter-of-2026/.243674",
+   "summary": "Japan, WEBTOON's largest market by revenue, struggled",
+   "img": "",
+   "at": 1794344400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Comparação mostra semelhanças entre Zelda: Ocarina of Time e Breath of the Wild",
+   "url": "https://www.adrenaline.com.br/games/comparacao-mostra-semelhancas-entre-zelda-ocarina-of-time-e-breath-of-the-wild/",
+   "summary": "Os dois jogos da série Zelda guardam diversas semelhanças na maneira como retratam suas construções",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Zelda-Comparacao-Breath-Wild-Ocarina-Time-640x400.jpg",
+   "at": 1794344283000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Sony cancela Fairgames, seu shooter multiplayer exclusivo de PlayStation",
+   "url": "https://www.hardware.com.br/games/sony-cancela-fairgames-shooter-multiplayer-exclusivo-de-playstation/",
+   "summary": "Projeto da Haven Studios foi encerrado após testes com milhares de jogadores apresentarem resultados abaixo das expectativas; funcionários serão realocados, sem demissões.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/jade-raymond-leaves-haven-studios-playstation-fairgames-leadership-3.webp",
+   "at": 1794344229000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "GTA 6: What Will Review Scores Be? You Can Win A $500 Gift Card For Getting It Right",
+   "url": "https://www.gamespot.com/articles/gta-6-what-will-review-scores-be-you-can-win-a-500-gift-card-for-getting-it-right/",
+   "summary": "Rockstar's long-awaited open-world action game Grand Theft Auto 6 finally releases on November 19, and among the many things people are excited to find out is how the game will…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Lucia_Caminos_13_84120d.jpg?w=300",
+   "at": 1794344132000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Popular jogo indie gera polêmica ao revelar uso de IA e é desqualificado de premiação",
+   "url": "https://www.hardware.com.br/games/popular-jogo-indie-gera-polemica-ao-revelar-uso-de-ia/",
+   "summary": "House House afirma que menos de 0,1% do código teve auxílio de inteligência artificial.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/big_walk_multiplayer_guide_how_to_play_with_friends_hero_316d041362.webp",
+   "at": 1794343865000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Queen’s Domain Has The Most Terrifying Mimic Design I’ve Ever Seen",
+   "url": "https://www.gamespot.com/articles/queens-domain-has-the-most-terrifying-mimic-design-ive-ever-seen/",
+   "summary": "I thought I was holding my own in Queen’s Domain . It took a while to figure out the basics of movement and combat as I danced around carnivorous ladybugs and hid from fish that…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/20261105155124_1.jpg?w=300",
+   "at": 1794343414000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Sony Cancels Live-Service PS5 Game Fairgames, But No Layoffs",
+   "url": "https://www.gamespot.com/articles/sony-cancels-live-service-ps5-game-fairgames-but-no-layoffs/",
+   "summary": "Sony has canceled the upcoming live-service shooter Fairgame$, but there will be no job cuts connected to the game's closure. This is according to a report from Bloomberg today.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fairgames.png?w=300",
+   "at": 1794343380000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA 6 Backflips Look Good Now, But There Could Be More To The Story",
+   "url": "https://www.gamespot.com/articles/gta-6-backflips-look-good-now-but-there-could-be-more-to-the-story/",
+   "summary": "A new Grand Theft Auto 6 trailer debuted today, November 10, and the video showed off a race car driver doing a backflip. The animation looks smoooth . That's notable because the…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/backflip.png?w=300",
+   "at": 1794342378000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Amid Higher Gas And Grocery Prices, GTA 6 Is A “Bargain” At $80, Take-Two CEO Says",
+   "url": "https://www.gamespot.com/articles/amid-higher-gas-and-grocery-prices-gta-6-is-a-bargain-at-80-take-two-ceo-says/",
+   "summary": "It's no secret that life is expensive. Gas and grocery prices are up, in particular, and against that backdrop, Take-Two CEO Strauss Zelnick believes GTA 6 at $80 is a \"bargain\"…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Lucia_Caminos_07.jpg?w=300",
+   "at": 1794341695000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Novo capítulo de Dandadan revela passado trágico de Okarun antes de conhecer Momo Ayase",
+   "url": "https://br.ign.com/dandadan/157521/novo-capitulo-de-dandadan-revela-passado-tragico-de-okarun-antes-de-conhecer-momo-ayase",
+   "summary": "Okarun continua passando por poucas e boas no capítulo 252 O capítulo 252 de Dandadan acaba de chegar e finalmente revela o passado trágico de um de seus protagonistas: Ken…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem-2024-12-19-154225689_1wqz.jpg",
+   "at": 1794341681000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "HIDIVE to Release Made in Abyss: Awakening Mystery Film in 2027 With N. American Premiere Screening at Anime Frontier on December 5",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/hidive-to-release-made-in-abyss-awakening-mystery-film-in-2027-with-n-american-premiere-screening-/.243696",
+   "summary": "English-subbed trailer streamed for 1st film in new Made in Abyss anime film series",
+   "img": "",
+   "at": 1794340835000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nova geração de consoles não vai substituir a atual, afirmam analistas",
+   "url": "https://www.adrenaline.com.br/games/nova-geracao-de-consoles-nao-vai-substituir-a-atual-afirmam-analistas/",
+   "summary": "Com aumentos constantes em preços, a próxima geração de consoles vai ter grande dificuldade em se estabelecer",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/PS5-Vendas-Declinio-PS6-640x400.jpeg",
+   "at": 1794339542000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Steam revela jogos mais vendidos da semana com Call of Duty na liderança",
+   "url": "https://www.adrenaline.com.br/games/pc-games/steam-revela-jogos-mais-vendidos-da-semana-com-call-of-duty-na-lideranca/",
+   "summary": "Crimson Desert Enhanced, EA SPORTS FC 27 e Resident Evil 4 são alguns jogos entre os mais vendidos da semana na Steam",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/call-of-duty-modern-warfare-4-640x400.webp",
+   "at": 1794337739000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Valve Is Giving You More Ways To Know If A Game Runs Well On Steam Deck",
+   "url": "https://www.gamespot.com/articles/valve-is-giving-you-more-ways-to-know-if-a-game-runs-well-on-steam-deck/",
+   "summary": "Valve's Steam Deck verification program has been a helpful, if somewhat flawed, method of determining if a game is a good fit for the company's handheld PC. But while many games…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/2e7f9079b6be9a3c99c5014fc1ee0eaede8d5edb.jpg?w=300",
+   "at": 1794337667000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "WoW: Forever Just Received Its First Big Post-Launch Changes",
+   "url": "https://www.gamespot.com/articles/wow-forever-just-received-its-first-big-post-launch-changes/",
+   "summary": "World of Warcraft: Forever received its first post-launch updates over the weekend, giving players a good reason to run each dungeon more than once alongside upcoming class…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/WoW-Forever-First-Post-Launch-Changes.jpg?w=300",
+   "at": 1794337424000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Rock Band FLOW Announce U.S. Dates for New 2027 World Tour",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/rock-band-flow-announce-u.s-dates-for-new-2027-world-tour/.243689",
+   "summary": "Band perform in U.S. in February 2027 starting in Boston",
+   "img": "",
+   "at": 1794337222000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Talking Point: With Big Walk, The AI-In-Game-Dev Debate Just Got A Lot Murkier",
    "url": "https://www.nintendolife.com/features/talking-point-with-big-walk-the-ai-in-game-dev-debate-just-got-a-lot-murkier",
    "summary": "Big talk. \"The line must be drawn here! This far, no further!\" Please forgive the Captain Picard First Contact quote (it's been a couple of weeks since Patrick Stewart's death and…",
    "img": "https://images.nintendolife.com/35bdc8dc74477/large.jpg",
    "at": 1794337200000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "Jogos de PC em oferta no Esquenta Black Friday Nuuvem; até 91% de desconto + cupom limitado",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-no-esquenta-black-friday-nuuvem-ate-91-de-desconto-cupom-limitado/",
+   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/06/dragon-ball-sparking-zero-640x400.jpg",
+   "at": 1794336910000,
+   "source": "Adrenaline"
   },
   {
    "title": "Monitor gamer Samsung de 27\", 240 Hz e 1 ms cai para menos de R$ 1.000 na Black Friday do Mercado Livre",
@@ -101,6 +265,14 @@
    "img": "https://sm.ign.com/ign_br/screenshot/default/ign-38_z9fy.png",
    "at": 1794336683000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "PlayStation Plus Extra e Deluxe de novembro tem Death Stranding 2 e mais 9 jogos – veja lista!",
+   "url": "https://www.adrenaline.com.br/games/playstation/playstation-plus-extra-e-deluxe-de-novembro-tem-death-stranding-2-e-mais-9-jogos-veja-lista/",
+   "summary": "Confira todos os jogos chegando em novembro ao catálogo da PlayStation Plus Extra e da Deluxe, que também recebe jogos clássicos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/playsation-plus-extra-deluxe-novembro-640x400.webp",
+   "at": 1794336516000,
+   "source": "Adrenaline"
   },
   {
    "title": "My Death Flags Show No Sign of Ending tem anime confirmado para 2027",
@@ -176,14 +348,6 @@
    "at": 1794332580000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "PlayStation Plus Extra e Deluxe de novembro tem Death Stranding 2 e mais 9 jogos – veja lista!",
-   "url": "https://www.adrenaline.com.br/games/playstation/playstation-plus-extra-e-deluxe-de-novembro-tem-death-stranding-2-e-mais-9-jogos-veja-lista/",
-   "summary": "Confira todos os jogos chegando em novembro ao catálogo da PlayStation Plus Extra e da Deluxe, que também recebe jogos clássicos",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/playsation-plus-extra-deluxe-novembro-640x400.webp",
-   "at": 1794332016000,
-   "source": "Adrenaline"
   },
   {
    "title": "“Já participei de muitos filmes”: Daniel Radcliffe não tem certeza se vai assistir à série de Harry Potter da HBO",
@@ -432,14 +596,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Here’s How Your Xbox One Can Play GTA 6",
-   "url": "https://www.gamespot.com/articles/heres-how-your-xbox-one-can-play-gta-6/",
-   "summary": "Grand Theft Auto 6 is out next week, and the game is launching on both Xbox Series X|S and PS5. If you don't have an expensive current-generation system , it previously appeared…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/08/gta-6-subpoena.webp?w=300",
-   "at": 1794322978000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Rockstar details Grand Theft Auto 6 PS5 Pro enhancements, but it'll still only run at 30FPS",
    "url": "https://www.eurogamer.net/gta-6-30-fps-platforms-absolute-limit",
    "summary": "As Grand Theft Auto 6 preloads go live, developer Rockstar has detailed the enhancements coming to the PS5 Pro version of the game, confirming these won't include framerates above…",
@@ -464,14 +620,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "The Alters Made Me Question My Own Existence, And Now It’s At A Record-Low Price",
-   "url": "https://www.gamespot.com/articles/the-alters-made-me-question-my-own-existence-and-now-its-at-a-record-low-price/",
-   "summary": "I often think about whether I'd be better at certain skills if I'd taken different courses or met other people. \"'What if?\" is the question that everyone, at some point in their…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-the-alters-lowest-price.jpg?w=300",
-   "at": 1794322800000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Exploring the MAPPA EXPO 15th Anniversary Exhibition",
    "url": "https://www.animenewsnetwork.com/feature/2026-11-10/exploring-the-mappa-expo-15th-anniversary-exhibition/.243486",
    "summary": "Celebrating its 15th anniversary, MAPPA is looking back on its history with the MAPPA EXPO 15th Anniversary exhibition at the Yurakucho Museum in Tokyo.",
@@ -488,14 +636,6 @@
    "at": 1794322800000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Segundo relatos, James Gunn tinha grandes planos para vários filmes de Superman e uma possível franquia da Liga da Justiça antes de deixar a DC Studios",
-   "url": "https://br.ign.com/superman-james-gunn/157491/segundo-relatos-james-gunn-tinha-grandes-planos-para-varios-filmes-de-superman-e-uma-possivel-franqu",
-   "summary": "A mudança lança dúvidas sobre o futuro do Universo DC",
-   "img": "https://sm.ign.com/ign_br/news/j/james-gunn/james-gunn-reportedly-had-big-plans-for-multiple-superman-mo_nu48.png",
-   "at": 1794322501000,
-   "source": "IGN Brasil"
   },
   {
    "title": "STEEL BALL RUN JoJo's Bizarre Adventure ganha vídeo especial",
@@ -515,36 +655,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "GTA 6 rodará a 30 fps em todos os consoles e contará com melhorias de ray tracing no PS5 Pro",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157497/gta-6-rodara-a-30-fps-em-todos-os-consoles-e-contara-com-melhorias-de-ray-tracing-no-ps5-pro",
-   "summary": "Melhorias detalhadas A Rockstar finalmente anunciou o desempenho de GTA 6 . O jogo rodará a 30 fps em todos os consoles, mas melhorias no PS5 Pro aprimoram o ray tracing. “Grand…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-will/gta-6-will-run-at-30fps-on-all-consoles-features-ray-tracing_3zjp.jpg",
-   "at": 1794321693000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Rockstar kills any hopes of streaming GTA 6 from Xbox to PC, but you can stream it to your old Xbox One if you like",
    "url": "https://www.eurogamer.net/gta-6-xbox-cloud-streaming-pc-xbox-one",
    "summary": "Rockstar Games has today clarified a few remaining details about Grand Theft Auto 6's framerate target and visual settings on PlayStation 5, PS5 Pro and Xbox Series X/S . And as…",
    "img": "https://assetsio.gnwcdn.com/xbox-one-gta-6.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794321610000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 PS5 Pro Features, Frame Rates, And Xbox Cloud Gaming Details Confirmed By Rockstar",
-   "url": "https://www.gamespot.com/articles/gta-6-ps5-pro-features-frame-rates-and-xbox-cloud-gaming-details-confirmed-by-rockstar/",
-   "summary": "Rockstar has finally shared details on what PlayStation 5 Pro owners can expect from Grand Theft Auto 6 on their expensive consoles, but has also confirmed that all platforms will…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-PC-sooner-than-expected-scaled-1.jpg?w=300",
-   "at": 1794321436000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Big Walk’s AI Usage Was Tiny, But Its Disclosure Has Sparked A Bigger Debate",
-   "url": "https://www.gamespot.com/articles/big-walks-ai-usage-was-tiny-but-its-disclosure-has-sparked-a-bigger-debate/",
-   "summary": "Big Walk developer House House has confirmed that it used AI during the \"final stretch\" of its development. The studio recently updated its FAQs page to confirm its use of the…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/08/Big-Walk-2.jpg?w=300",
-   "at": 1794321313000,
-   "source": "GameSpot"
   },
   {
    "title": "A atualização Simbiose de Marathon chega dia 8 de dezembro, trazendo novos modos de PvE e PvP, novas armas e mais",
@@ -564,36 +680,12 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Nintendo’s New Gift-Giving Feature Comes With Some Very Nintendo Restrictions",
-   "url": "https://www.gamespot.com/articles/nintendo-new-gift-giving-feature-comes-with-some-very-nintendo-restrictions/",
-   "summary": "A new update is available for all Nintendo Switch 2 and Switch consoles, and if you're on a Nintendo Account family plan, version 23.5.0 will allow you to once again gift games to…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Nintendo-Gift-4.jpg?w=300",
-   "at": 1794320866000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 5 Simply Refuses To Stop Selling, Even With GTA 6 On The Way",
-   "url": "https://www.gamespot.com/articles/gta-5-simply-refuses-to-stop-selling-even-with-gta-6-on-the-way/",
-   "summary": "As Grand Theft Auto 6 gets ready to launch, GTA 5 is still selling impressively. The GTA series has sold more than 480 million copies, with GTA 5 making up 235 million of those.…",
-   "img": "https://www.gamespot.com/wp-content/uploads/original/1595/15950357/4064252-gta5.jpeg?w=300",
-   "at": 1794320712000,
-   "source": "GameSpot"
-  },
-  {
    "title": "GTA 6 terá 30 FPS no PS5 e Xbox Series S|X, confirma Rockstar",
    "url": "https://www.hardware.com.br/games/gta-6-tera-30-fps-ps5-e-xbox-series/",
    "summary": "Pré-download de GTA 6 está disponível, enquanto a Rockstar detalha melhorias gráficas exclusivas do PS5 Pro e suporte ao Xbox Cloud Gaming",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-6-tera-30-FPS-no-PS5-e-Xbox-Series-confirma-Rockstar.jpg",
    "at": 1794320617000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "GTA 6 Preorder Numbers Are So Good, Even Take-Two Is Struggling To Believe Them",
-   "url": "https://www.gamespot.com/articles/gta-6-preorder-numbers-are-so-good-even-take-two-is-struggling-to-believe-them/",
-   "summary": "Grand Theft Auto 6 looks set to be the best-selling game of 2026, and even publisher Take-Two Interactive is surprised at just how big the demand for it has been ahead of launch.…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-7.jpg?w=300",
-   "at": 1794320175000,
-   "source": "GameSpot"
   },
   {
    "title": "Novo firmware do Switch 2 quebra o jailbreak do console",
@@ -790,14 +882,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Estreia de GTA 6 pode render até R$ 19 bilhões para a Take-Two Interactive",
-   "url": "https://www.adrenaline.com.br/games/estreia-de-gta-6-pode-render-ate-r-19-bilhoes-para-a-take-two-interactive/",
-   "summary": "A Take-Two Interactive acredita que a antecipação para GTA 6 prejudicou um pouco as vendas de outros de seus games",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-19-Bilhoes-Take-Two-640x400.jpeg",
-   "at": 1794308683000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "World of Warcraft: Forever might live officially on PC, but people are playing it on phones and handhelds already",
    "url": "https://www.eurogamer.net/world-of-warcraft-forever-ipad-handheld",
    "summary": "If you're a World of Warcraft: Forever player you're almost certainly having your free time drained as you chain yourself to your desktop PC to play the game, or maybe a laptop.…",
@@ -830,15 +914,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Devils' Crest Anime Confirms Half-Year Run",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/devils-crest-anime-confirms-half-year-run/.243678",
-   "summary": "Anime debuted worldwide on Prime Video on November 6",
-   "img": "",
-   "at": 1794303889000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Switch 2 US sales soar again thanks to The Legend of Zelda effect, as it enjoys its best week of the year so far",
    "url": "https://www.eurogamer.net/the-legend-of-zelda-ocarina-of-time-switch-2-best-week-sales",
    "summary": "Could a remade Legend of Zelda: Ocarina of Time be exciting enough to revitalise Switch 2 hardware sales? That was the big question. And early sales figures suggest the answer is…",
@@ -855,30 +930,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Millennium Family TV Anime Casts Mutsumi Tamura",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/millennium-family-tv-anime-casts-mutsumi-tamura/.243639",
-   "summary": "Tamura voices Benfield family's youngest child Arthur",
-   "img": "",
-   "at": 1794301200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Big Walk Devs Issue Statement Over AI Usage",
    "url": "https://www.nintendolife.com/news/2026/11/big-walk-devs-issue-statement-over-ai-usage",
    "summary": "\"This is not an endorsement\". House House, the Australian development team behind indie hit Big Walk , has issued a statement via its FAQ page detailing a previously undisclosed…",
    "img": "https://images.nintendolife.com/8a6c58a96d6b8/large.jpg",
    "at": 1794300900000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Japan's Video Game Rankings, October 26-November 1",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/japan-video-game-rankings-october-26-november-1/.243620",
-   "summary": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
-   "img": "",
-   "at": 1794297234000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Rayman Legends Retold Reveals Rabbids Outfit Exclusive To Switch 2",
@@ -905,46 +962,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Switch 2 Supposedly Jailbroken Via Software-Only Exploit",
-   "url": "https://www.nintendolife.com/news/2026/11/switch-2-supposedly-jailbroken-via-software-only-exploit",
-   "summary": "Update: It's apparently been patched in the latest update. : Nintendo appears to have removed the programming software SmileBASIC 4 from the eShop following the supposed discovery…",
-   "img": "https://images.nintendolife.com/6888cfa4ddfb2/large.jpg",
-   "at": 1794276000000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Nintendo Switch 2 System Update 23.5.0 Is Now Live, Here Are The Full Patch Notes",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-switch-2-system-update-23-5-0-is-now-live-here-are-the-full-patch-notes",
-   "summary": "Adds eShop gifting feature support and more. Nintendo has released a new firmware update for the Switch 2 this week, bumping it up to Version 23.5.0 . Read the full article on…",
-   "img": "https://images.nintendolife.com/89e6339a8ca1d/large.jpg",
-   "at": 1794274200000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Reviver clássicos é a melhor estratégia para manter grandes jogos relevantes?",
-   "url": "https://www.adrenaline.com.br/artigos/reviver-classicos-e-a-melhor-estrategia-para-manter-grandes-jogos-relevantes/",
-   "summary": "Saiba quais fatores indicam que uma franquia merece voltar aos videogames e como a nostalgia, o interesse do público e a identidade dos jogos influenciam essa decisão.",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Reviver-classicos-e-a-melhor-estrategia-para-manter-grandes-jogos-relevantes-640x400.jpg",
-   "at": 1794272400000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "DroidDeck leva emulação de jogos de PC para celulares Samsung com Exynos",
-   "url": "https://www.adrenaline.com.br/games/droiddeck-leva-emulacao-de-jogos-de-pc-para-celulares-samsung-com-exynos/",
-   "summary": "DroidDeck 0.70 amplia a emulação de PC no Android para mais chips, como MediaTek e Exynos, e melhora o modo de duas telas!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/droiddeck-leva-emulacao-de-jogos-de-pc-para-celulares-samsung-com-exynos-cover-640x400.jpg",
-   "at": 1794272182000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "As investors ask about GTA 6 and AI, Take-Two CEO once again puts faith in dev creativity, states making hit games \"remains the purview of human beings\"",
-   "url": "https://www.eurogamer.net/gta-6-ai-strauss-zelnick-earnings-call-purview",
-   "summary": "Today, as part of Take-Two Interactive Software's Q2 2027 earnings call, Strauss Zelnick fielded questions from investors after presenting the financial results of the company.…",
-   "img": "https://assetsio.gnwcdn.com/Lucia-ai-background.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794264460000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "AiNA THE END revela videoclipe colaborativo do tema de abertura do Arco de Elbaph de ONE PIECE",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/9/anime-one-piece-arco-de-elbaph-abertura-videoclipe-colaborativo-aina-the-end",
    "summary": "O single ficou entre as 25 músicas mais escutadas das paradas semanais",
@@ -952,14 +969,6 @@
    "at": 1794262800000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "GTA 6 pre-orders are tracking \"well above expectations\" and the game will \"set a new baseline\" for Take-Two, says CEO Strauss Zelnick",
-   "url": "https://www.eurogamer.net/gta-6-preorders-tracking-take-two-earnings-call",
-   "summary": "Today, as part of Take-Two Interactive Software's Q2 2027 earnings call, Strauss Zelnick noted that pre-orders for Grand Theft Auto 6 are tracking \"far above expectations\", and is…",
-   "img": "https://assetsio.gnwcdn.com/gta-earnings.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794261770000,
-   "source": "Eurogamer"
   },
   {
    "title": "Puella Magi Madoka Magica: The Movie Trilogy está disponível na Crunchyroll",
@@ -1219,15 +1228,6 @@
    "summary": "Novo vídeo conta com prévia de três músicas-tema para o animê, que retorna em abril do ano que vem.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/yuru-camp-4a-temporada-destacada.jpg?ssl=1",
    "at": 1794004232000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Hard Rock Cafe do Japão anuncia colaboração com ‘Neon Genesis Evangelion’",
-   "url": "https://www.jbox.com.br/2026/11/06/hard-rock-cafe-do-japao-anuncia-colaboracao-com-neon-genesis-evangelion/",
-   "summary": "Parceria inclui itens de merchandising, como camisetas, jaquetas e mais.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Hard-Rock-Cafe-Evangelion-destacada.jpg?ssl=1",
-   "at": 1794003452000,
    "cat": "geek",
    "source": "JBox"
   },
