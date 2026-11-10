@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794295394605,
+ "atualizadoEm": 1794305049667,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,91 @@
   }
  ],
  "itens": [
+  {
+   "title": "Devils' Crest Anime Confirms Half-Year Run",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/devils-crest-anime-confirms-half-year-run/.243678",
+   "summary": "Anime debuted worldwide on Prime Video on November 6",
+   "img": "",
+   "at": 1794303889000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Switch 2 US sales soar again thanks to The Legend of Zelda effect, as it enjoys its best week of the year so far",
+   "url": "https://www.eurogamer.net/the-legend-of-zelda-ocarina-of-time-switch-2-best-week-sales",
+   "summary": "Could a remade Legend of Zelda: Ocarina of Time be exciting enough to revitalise Switch 2 hardware sales? That was the big question. And early sales figures suggest the answer is…",
+   "img": "https://assetsio.gnwcdn.com/switch-2-the-legend-of-zelda--40th-anniversary-edition-grab-1.jpeg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794302720000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Switch 2 and Switch consoles updated to version 23.5.0 as Nintendo quietly re-introduces eShop gifting",
+   "url": "https://www.eurogamer.net/switch-2-and-switch-consoles-updated-to-version-2350-as-nintendo-quietly-re-introduces-eshop-gifting",
+   "summary": "Nintendo has just pushed out a new update to all Switch and Switch 2 consoles, bringing the firmware on both up to version 23.5.0. The headline change with the new update is…",
+   "img": "https://assetsio.gnwcdn.com/switch-2-gifting.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794302570000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Fragmentos de Coração para coletar logo no início de The Legend of Zelda: Ocarina of Time",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157480/fragmentos-de-coracao-para-coletar-logo-no-inicio-de-the-legend-of-zelda-ocarina-of-time",
+   "summary": "Confira a localização de cinco heart pieces que podem ser coletados bem cedo no remake O novo Ocarina of Time traz 36 pedaços de coração de volta, mas cinco deles podem ser…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_8fh9.jpg",
+   "at": 1794301409000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Millennium Family TV Anime Casts Mutsumi Tamura",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/millennium-family-tv-anime-casts-mutsumi-tamura/.243639",
+   "summary": "Tamura voices Benfield family's youngest child Arthur",
+   "img": "",
+   "at": 1794301200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Big Walk Devs Issue Statement Over AI Usage",
+   "url": "https://www.nintendolife.com/news/2026/11/big-walk-devs-issue-statement-over-ai-usage",
+   "summary": "\"This is not an endorsement\". House House, the Australian development team behind indie hit Big Walk , has issued a statement via its FAQ page detailing a previously undisclosed…",
+   "img": "https://images.nintendolife.com/8a6c58a96d6b8/large.jpg",
+   "at": 1794300900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "15 Minutes of Attack on Titan 3 Gameplay",
+   "url": "https://www.gamespot.com/videos/15-minutes-of-attack-on-titan-3-gameplay/",
+   "summary": "We have to protect, defend, and escort Eren Yeager in Titan form to stop the outbreak of Titans entering the city. Check out 15 minutes of gameplay from the upcoming Attack on…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gp_aot3_v5.jpg?w=300",
+   "at": 1794297660000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Japan's Video Game Rankings, October 26-November 1",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/japan-video-game-rankings-october-26-november-1/.243620",
+   "summary": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
+   "img": "",
+   "at": 1794297234000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Japanese Animation TV Ranking, October 26-November 1",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/japanese-animation-tv-ranking-october-26-november-1/.243621",
+   "summary": "The Apothecary Diaries up to 4.1% rating from 3.5% last week",
+   "img": "",
+   "at": 1794297174000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Kyūgō's Monster in Sheep's Clothing BL Manga Gets Live-Action Film",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/kyugo-monster-in-sheep-clothing-bl-manga-gets-live-action-film/.243671",
+   "summary": "Nobuyuki Suzuki, Bullet Train boy group's Haru Kashiwagi star in film opening on December 11",
+   "img": "",
+   "at": 1794293324000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Vinland Saga Creator Makoto Yukimura Addresses Comments on AI Imagery",
    "url": "https://www.animenewsnetwork.com/interest/2026-11-09/vinland-saga-creator-makoto-yukimura-addresses-comments-on-ai-imagery/.243647",
@@ -167,7 +252,7 @@
   {
    "title": "Nintendo Switch 2 System Update 23.5.0 Is Now Live, Here Are The Full Patch Notes",
    "url": "https://www.nintendolife.com/news/2026/11/nintendo-switch-2-system-update-23-5-0-is-now-live-here-are-the-full-patch-notes",
-   "summary": "Adds eShop gifting feature support and more. Nintendo has released a new firmware update for the Switch 2 this week, and it includes some new features. Read the full article on…",
+   "summary": "Adds eShop gifting feature support and more. Nintendo has released a new firmware update for the Switch 2 this week, bumping it up to Version 23.5.0 . Read the full article on…",
    "img": "https://images.nintendolife.com/89e6339a8ca1d/large.jpg",
    "at": 1794274200000,
    "source": "Nintendo Life"
@@ -341,15 +426,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Assassin's Creed Shadows: Tales of Iga Manga Ends",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-09/assassin-creed-shadows-tales-of-iga-manga-ends/.243657",
-   "summary": "Final volume ships on November 19",
-   "img": "",
-   "at": 1794256200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "AMDLSS5 2.0 promete levar DLSS 5 para Radeon com até 64% mais FPS que outros mods",
    "url": "https://www.adrenaline.com.br/amd/amdlss5-2-0-promete-levar-dlss-5-para-radeon-com-ate-64-mais-fps-que-outros-mods/",
    "summary": "Modder demonstra diferença do DLSS 5 em vídeo, com comparativo de frames no Resident Evil Requiem",
@@ -413,24 +489,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/trevor.jpg?w=300",
    "at": 1794252617000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Hello, I Am a Witch and My Crush Wants Me to Make a Love Potion! ‒ Episode 6",
-   "url": "https://www.animenewsnetwork.com/review/hello-i-am-a-witch-and-my-crush-wants-me-to-make-a-love-potion/episode-6/.243655",
-   "summary": "This is such an “almost” episode that it risked being intensely frustrating. The truth is that it is frustrating, but in a good way.",
-   "img": "",
-   "at": 1794252600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "SaGa Game Series' Localization Director Neil Broadley Dies",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-09/saga-game-series-localization-director-neil-broadley-dies/.243656",
-   "summary": "Broadley worked on SaGa , Final Fantasy games",
-   "img": "",
-   "at": 1794252600000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Público brasileiro de animês prefere os gêneros de comédia e drama, aponta levantamento",
@@ -512,24 +570,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Censurado-Rockstar-640x400.jpeg",
    "at": 1794249013000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "From Far Away ‒ Episode 6",
-   "url": "https://www.animenewsnetwork.com/review/from-far-away/episode-6/.243652",
-   "summary": "Whatever else they may be, Izark and Noriko are good for each other, making both feel less alone.",
-   "img": "",
-   "at": 1794249000000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "K Manga Adds nyalra's Strayboy Overkill Manga",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-09/k-manga-adds-nyalra-strayboy-overkill-manga/.243653",
-   "summary": "Needy Girl Overdose writer nyalra debuted Strayboy Overkill on April 7",
-   "img": "",
-   "at": 1794249000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Anime Minami-ke: Korekara ganha trailer, arte e previsão de estreia para abril de 2027",
@@ -758,14 +798,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Rockstar anuncia festival de música ao vivo de GTA 6 com Travis Scott, Cardi B, Justice e outros artistas",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157456/rockstar-anuncia-festival-de-musica-ao-vivo-de-gta-6-com-travis-scott-cardi-b-justice-e-outros-artis",
-   "summary": "O evento acontecerá em Miami",
-   "img": "https://sm.ign.com/ign_br/news/r/rockstar-a/rockstar-announces-live-gta-6-music-event-with-travis-scott_3jvt.jpg",
-   "at": 1794237189000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Jogos de PC em nova promoção com até 95% de desconto – veja lista!",
    "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-nova-promocao-com-ate-95-de-desconto-veja-lista/",
    "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
@@ -788,14 +820,6 @@
    "img": "https://assetsio.gnwcdn.com/Kirby-Air-Riders-Direct-8.19.2025-27-3-screenshot.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794234920000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 Music Festival Announced For Miami With A Stacked Lineup Of Artists",
-   "url": "https://www.gamespot.com/articles/gta-6-music-festival-announced-for-miami-with-a-stacked-lineup-of-artists/",
-   "summary": "Rockstar Games has announced Grand Theft Auto 6: The Festival, a concert coming to the Mana Wynwood in Miami on November 21. The festival features a lineup of artists from the…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_13.jpg?w=300",
-   "at": 1794234737000,
-   "source": "GameSpot"
   },
   {
    "title": "\"Mario Is My Life\" - Beloved Blogger 'Supper Mario Broth' Reveals Health Issues",
@@ -948,36 +972,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Dungeons in World of Warcraft: Forever get a huge XP buff, but power-levellers shouldn't celebrate just yet",
-   "url": "https://www.eurogamer.net/world-of-warcraft-forever-dungeon-mob-xp-rate-buff",
-   "summary": "World of Warcraft: Forever has received a massive buff to the XP drop-rates of dungeon mobs (enemies), which should make running these instances multiple times feel more rewarding…",
-   "img": "https://assetsio.gnwcdn.com/world-of-warcraft-forever-dwarf-shaman-jpg.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794224480000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Father Arrested For Leaving 6-Year-Old Daughter Sleeping In Line For Pokémon Cards",
    "url": "https://www.nintendolife.com/news/2026/11/father-arrested-for-leaving-6-year-old-daughter-sleeping-in-line-for-pokemon-cards",
    "summary": "NL used Rage. A 35-year-old South Carolina man has been arrested and accused of leaving his 6-year-old daughter asleep while waiting in line for Pokémon cards. As reported by The…",
    "img": "https://images.nintendolife.com/4eafa770df3cb/large.jpg",
    "at": 1794222000000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Mario's Next 'Adults Welcome' LEGO Set Is \"Hatching Soon\"",
-   "url": "https://www.nintendolife.com/news/2026/11/marios-next-adults-welcome-lego-set-is-hatching-soon",
-   "summary": "It's dino time. Nintendo and LEGO have teased the next entry in their 'Adults Welcome' Mario range, which will see Yoshi step into the limelight. While we haven't seen the full…",
-   "img": "https://images.nintendolife.com/064c110d4c76a/large.jpg",
-   "at": 1794219300000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "GTA 6 reportedly has 55 Achievements/Trophies, more than both GTA 5 and Red Dead Redemption 2 had at launch",
-   "url": "https://www.eurogamer.net/gta-6-achievements-trophies-55",
-   "summary": "GTA 6 is due to release on the 19th November on PS5, and Xbox Series X/S, and ahead of the highly-anticipated launch of Rockstar's latest sandbox adventure, people just can't get…",
-   "img": "https://assetsio.gnwcdn.com/Lucia-trophies-achievements.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794217300000,
-   "source": "Eurogamer"
   },
   {
    "title": "Spy x Family terá 4ª temporada e novo filme em 2027",
