@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794261392007,
+ "atualizadoEm": 1794273229707,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,56 @@
  ],
  "itens": [
   {
+   "title": "As investors ask about GTA 6 and AI, Take-Two CEO once again puts faith in dev creativity, states making hit games \"remains the purview of human beings\"",
+   "url": "https://www.eurogamer.net/gta-6-ai-strauss-zelnick-earnings-call-purview",
+   "summary": "Today, as part of Take-Two Interactive Software's Q2 2027 earnings call, Strauss Zelnick fielded questions from investors after presenting the financial results of the company.…",
+   "img": "https://assetsio.gnwcdn.com/Lucia-ai-background.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794264460000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Muito antes de O Senhor dos Anéis: livro de Tolkien que explora as origens da Terra-média está em oferta",
+   "url": "https://br.ign.com/descontos/157475/muito-antes-de-o-senhor-dos-aneis-livro-de-tolkien-que-explora-as-origens-da-terra-media-esta-em-ofe",
+   "summary": "O Silmarillion reúne histórias sobre a criação do mundo, as primeiras guerras e personagens que marcaram o universo de Tolkien",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/o-silmarillion-reune-historias-sobre-a-criacao-do-mundo-as-p_n5ps.jpg",
+   "at": 1794263431000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Atelier Karia Game's Video Previews Story",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-09/atelier-karia-game-video-previews-story/.243659",
+   "summary": "Game launches on February 25 for Switch 2, PS5, Xbox X|S, PC via Steam",
+   "img": "",
+   "at": 1794263400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "AiNA THE END revela videoclipe colaborativo do tema de abertura do Arco de Elbaph de ONE PIECE",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/9/anime-one-piece-arco-de-elbaph-abertura-videoclipe-colaborativo-aina-the-end",
+   "summary": "O single ficou entre as 25 músicas mais escutadas das paradas semanais",
+   "img": "https://a.storyblok.com/f/178900/960x540/81b9047ff9/one-piece-luminous-collab-mv.jpg",
+   "at": 1794262800000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "GTA 6 pre-orders are tracking \"well above expectations\" and the game will \"set a new baseline\" for Take-Two, says CEO Strauss Zelnick",
+   "url": "https://www.eurogamer.net/gta-6-preorders-tracking-take-two-earnings-call",
+   "summary": "Today, as part of Take-Two Interactive Software's Q2 2027 earnings call, Strauss Zelnick noted that pre-orders for Grand Theft Auto 6 are tracking \"far above expectations\", and is…",
+   "img": "https://assetsio.gnwcdn.com/gta-earnings.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794261770000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Setup gamer gastando pouco: monitor AOC de 24 polegadas sai por menos de R$ 600 na Amazon",
+   "url": "https://br.ign.com/descontos/157474/setup-gamer-gastando-pouco-monitor-aoc-de-24-polegadas-sai-por-menos-de-r-600-na-amazon",
+   "summary": "Modelo com painel IPS, resolução Full HD e taxa de atualização de 144 Hz pode chegar a 180 Hz por overclock",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/monitor-aoc_cmcz.jpg",
+   "at": 1794261634000,
+   "source": "IGN Brasil"
+  },
+  {
    "title": "Puella Magi Madoka Magica: The Movie Trilogy está disponível na Crunchyroll",
    "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/9/puella-magi-madoka-magica-the-movie-trilogy-disponivel-na-crunchyroll",
    "summary": "Os filmes foram lançados originalmente em 2012 e 2013",
@@ -86,6 +136,14 @@
    "at": 1794261300000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Switch 2 Just Had Its Best Sales Week Of 2026, And It’s All Because Of Zelda",
+   "url": "https://www.gamespot.com/articles/switch-2-just-had-its-best-sales-week-of-2026-and-its-all-because-of-zelda/",
+   "summary": "Nintendo just released The Legend of Zelda: Ocarina of Time's remake for Switch 2, and the themed console that Nintendo debuted with the game has, perhaps unsurprisingly, sold…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/ocarina-Large.jpeg?w=300",
+   "at": 1794260869000,
+   "source": "GameSpot"
   },
   {
    "title": "Kodansha Announces Winners of Mangaka Discovery Global Manga Award",
@@ -651,28 +709,12 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Dê uma cara nova ao PS5: tampas personalizadas entram em oferta na Amazon",
-   "url": "https://br.ign.com/descontos/157455/de-uma-cara-nova-ao-ps5-tampas-personalizadas-entram-em-oferta-na-amazon",
-   "summary": "Coleção Hyperpop reúne tampas em cores vibrantes para personalizar o PS5, enquanto a versão preta também aparece com desconto na Amazon",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_mqfe.jpg",
-   "at": 1794236162000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Exterminauts Is Like Helldivers 2 Starring Home Depot Dads",
    "url": "https://www.gamespot.com/articles/exterminauts-is-like-helldivers-2-starring-home-depot-dads/",
    "summary": "I'm not sure Exterminauts is different enough from Helldivers 2. Behaviour Interactive, the team most famous for Dead by Daylight, told me during a roundtable discussion with the…",
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Exterminauts-Screenshot-1.png?w=300",
    "at": 1794235334000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Adolescente desaparecida foi resgatada de suposto sequestrador após pedir ajuda no jogo Among Us",
-   "url": "https://br.ign.com/among-us/157452/adolescente-desaparecida-foi-resgatada-de-suposto-sequestrador-apos-pedir-ajuda-no-jogo-among-us",
-   "summary": "A jovem de 17 anos teria passado mais de 500 dias mantida em cativeiro",
-   "img": "https://sm.ign.com/ign_br/news/m/missing-te/missing-teen-saved-from-alleged-kidnapper-after-seeking-help_k73m.jpg",
-   "at": 1794235090000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Nintendo's legendary Kirby designer Masahiro Sakurai weighs in on gen-AI, saying \"it has yet to gain my trust\" but not to reject it completely",
@@ -688,14 +730,6 @@
    "summary": "Rockstar Games has announced Grand Theft Auto 6: The Festival, a concert coming to the Mana Wynwood in Miami on November 21. The festival features a lineup of artists from the…",
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_13.jpg?w=300",
    "at": 1794234737000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Zelda: Ocarina Of Time Breaks Sales Records (For Real-Life Ocarinas)",
-   "url": "https://www.gamespot.com/articles/zelda-ocarina-of-time-breaks-sales-records-for-real-life-ocarinas/",
-   "summary": "The Legend of Zelda: Ocarina of Time is a stellar remake of a beloved classic , so it only makes sense that it would have somewhat of a halo effect. And given that it's how a lot…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/NS2_TheLegendofZeldaOcarinaofTime_scrn_16.jpeg?w=300",
-   "at": 1794234607000,
    "source": "GameSpot"
   },
   {
@@ -742,15 +776,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Comikey Licenses The Emperor's Treasure, Gakuen Babysitters, 4 More Titles",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-09/comikey-licenses-the-emperor-treasure-gakuen-babysitters-4-more-titles/.243629",
-   "summary": "Also added: The Plebeian: Beyond the Bloodline Elite , The Oppressed Saint and Her Loyal Duke , Mr. Kusakabe's Gentle Love , more",
-   "img": "",
-   "at": 1794233011000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "RG DDS, portátil estilo 3DS da Anbernic, permite criar jogos por IA diretamente no aparelho",
    "url": "https://www.adrenaline.com.br/mobile/rg-dds-portatil-estilo-3ds-da-anbernic-permite-criar-jogos-por-ia-diretamente-no-aparelho/",
    "summary": "Anbernic explica porque o RG DDS tem um botão inteiramente dedicado para IA em um novo vídeo",
@@ -774,14 +799,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/21-9-1500x844.jpg",
    "at": 1794232833000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Former PlayStation Boss Thinks Sony Is Solving The Wrong Problem With PS6",
-   "url": "https://www.gamespot.com/articles/former-playstation-boss-thinks-sony-is-solving-the-wrong-problem-with-ps6/",
-   "summary": "Sony confirmed last week that development on its \"next-generation\" PlayStation platform will pick up speed in 2027 , but not everyone is convinced the world needs a PS6 right now.…",
-   "img": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4675089-ps5pro.jpg?w=300",
-   "at": 1794232547000,
-   "source": "GameSpot"
   },
   {
    "title": "Delightful Tidying Up Indie Gets A Surprise Switch 2 Edition Today, Complete With 120fps",
@@ -923,14 +940,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "COD: Modern Warfare 4 gets a surprisingly sudden free trial, so you can see what the game's extraction mode DMZ is like",
-   "url": "https://www.eurogamer.net/call-of-duty-modern-warfare-4-dmz-free-trial-november",
-   "summary": "Activision has released the first trial for Call of Duty: Modern Warfare 4's extraction mode DMZ. The trial is available across PC (Steam / Battlenet), PlayStation 5 and Xbox…",
-   "img": "https://assetsio.gnwcdn.com/DMZ-COD-MW4-(5).jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794216250000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Spy x Family terá 4ª temporada e novo filme em 2027",
    "url": "https://animenew.com.br/spy-x-family-4-temporada-filme-2027/",
    "summary": "O anime Spy x Family teve sua quarta temporada oficialmente anunciada neste domingo (8). Além da continuação, a franquia também ganhará um novo filme para os cinemas japoneses em…",
@@ -956,14 +965,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Ocarina of Time remake datamine suggests Master Quest is on the way",
-   "url": "https://www.eurogamer.net/zelda-ocarina-of-time-remake-master-quest-dlc-datamine",
-   "summary": "Ocarina of Time 's notoriously tricky Master Quest mode could be making a comeback in the new remake. Read more",
-   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-08-at-17.31.26.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794159550000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Ex-diretor de South of Midnight diz que não teria financiado o próprio jogo se comandasse o Xbox",
    "url": "https://www.hardware.com.br/games/south-of-midnight-nao-financiado-jogo/",
    "summary": "David Sears considera que os investimentos da Microsoft eram insustentáveis e afirma que os cortes de financiamento teriam consequências inevitáveis",
@@ -987,6 +988,14 @@
    "img": "https://images.nintendolife.com/487bfe794da72/large.jpg",
    "at": 1794153600000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "Jogar pela TV sem console? Entenda como isso é possível e os modelos compatíveis",
+   "url": "https://www.hardware.com.br/hardware-indica/jogar-pela-tv-sem-console-entenda-como-isso-e-possivel-e-os-modelos-compativeis/",
+   "summary": "Sabia que dá para jogar Xbox e GeForce NOW direto na TV, sem console? Veja quais Smart TVs permitem isso e como configurar tudo.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/jogartv.jpg",
+   "at": 1794151855000,
+   "source": "Hardware.com.br"
   },
   {
    "title": "Bride of the Barrier Master revela vídeos dos protagonistas",
@@ -1203,15 +1212,6 @@
    "at": 1794003452000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "33-sai Dokushin Onna Kishi Taicho. tem anime anunciado",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/6/33-sai-dokushin-onna-kishi-taicho-anime-anuncio",
-   "summary": "O mangá original é desenhado por Amahara (The Idaten Deities Know Only Peace)",
-   "img": "https://a.storyblok.com/f/178900/960x540/5326efbcbc/33-sai-dokushin-onna-kishi-taicho.jpg",
-   "at": 1794002700000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Norihiro Yagi, autor de ‘Claymore’, começa a publicar novo mangá",
