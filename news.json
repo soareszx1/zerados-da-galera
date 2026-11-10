@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794283199504,
+ "atualizadoEm": 1794295394605,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,9 +79,35 @@
  ],
  "itens": [
   {
-   "title": "Mouse Work Is Finally On Its Way To The Switch 2",
-   "url": "https://www.nintendolife.com/news/2026/11/mouse-work-is-finally-on-its-way-to-the-switch-2",
-   "summary": "It's all about Joy-Con 2 mouse controls. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and requires you…",
+   "title": "Vinland Saga Creator Makoto Yukimura Addresses Comments on AI Imagery",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-09/vinland-saga-creator-makoto-yukimura-addresses-comments-on-ai-imagery/.243647",
+   "summary": "Yukimura: “AI steals art, and I'm in trouble if AI develops too much. The reason why we are in trouble is because AI does a good job to some extent. It's just a fact. It is not an…",
+   "img": "",
+   "at": 1794286740000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Rayman Legends Retold Reveals Rabbids Outfit Exclusive To Switch 2",
+   "url": "https://www.nintendolife.com/news/2026/11/rayman-legends-retold-reveals-rabbids-outfit-exclusive-to-switch-2",
+   "summary": "Grab it from the costume shop. Rayman Legends Retold arrives this December and you'll be able to dress him up in all sorts of costumes. We've already got a look at the Assassin's…",
+   "img": "https://images.nintendolife.com/cd1f67d9b817a/large.jpg",
+   "at": 1794285900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure Anime's 'Special Video' Highlights Stands",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-09/steel-ball-run-jojo-bizarre-adventure-anime-special-video-highlights-stands/.243670",
+   "summary": "Weekly episodes now debuting as part of \"2nd & 3rd stages\" that started on September 25",
+   "img": "",
+   "at": 1794281691000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Mouse Work, The Switch 2 Game Using Joy-Con Mouse Controls, Is Finally Releasing",
+   "url": "https://www.nintendolife.com/news/2026/11/mouse-work-the-switch-2-game-using-joy-con-mouse-controls-is-finally-releasing",
+   "summary": "Put in a shift this December. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and requires you to use…",
    "img": "https://images.nintendolife.com/bdb998fc09606/large.jpg",
    "at": 1794279900000,
    "source": "Nintendo Life"
@@ -107,9 +133,17 @@
   {
    "title": "Super Mario Party Jamboree Updated For Switch 2 And Switch (Version 2.4.0)",
    "url": "https://www.nintendolife.com/news/2026/11/super-mario-party-jamboree-updated-for-switch-2-and-switch-version-2-4-0",
-   "summary": "Download it today. Nintendo has released a new update for Super Mario Party Jamboree today and GameShare using GameChat is now available in the Switch 2 version. There's also some…",
+   "summary": "The party doesn't stop! If you're a fan of Mario Party, you might be interested to hear, Nintendo has released a new update for Super Mario Party Jamboree today. The main part of…",
    "img": "https://images.nintendolife.com/bc559475fd236/large.jpg",
    "at": 1794276300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Switch 2 Supposedly Jailbroken Via Software-Only Exploit",
+   "url": "https://www.nintendolife.com/news/2026/11/switch-2-supposedly-jailbroken-via-software-only-exploit",
+   "summary": "Update: It's apparently been patched in the latest update. : Nintendo appears to have removed the programming software SmileBASIC 4 from the eShop following the supposed discovery…",
+   "img": "https://images.nintendolife.com/6888cfa4ddfb2/large.jpg",
+   "at": 1794276000000,
    "source": "Nintendo Life"
   },
   {
@@ -133,9 +167,9 @@
   {
    "title": "Nintendo Switch 2 System Update 23.5.0 Is Now Live, Here Are The Full Patch Notes",
    "url": "https://www.nintendolife.com/news/2026/11/nintendo-switch-2-system-update-23-5-0-is-now-live-here-are-the-full-patch-notes",
-   "summary": "Adds gifting feature support and more. Nintendo has today released a new firmware update for the Switch 2 and this one comes with multiple features. It's added support for gifting…",
+   "summary": "Adds eShop gifting feature support and more. Nintendo has released a new firmware update for the Switch 2 this week, and it includes some new features. Read the full article on…",
    "img": "https://images.nintendolife.com/89e6339a8ca1d/large.jpg",
-   "at": 1794274560000,
+   "at": 1794274200000,
    "source": "Nintendo Life"
   },
   {
@@ -556,24 +590,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Deadline: Noah Of The Blood Sea Manga Gets Hollywood Live-Action Film Adaptation",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-09/deadline-noah-of-the-blood-sea-manga-gets-hollywood-live-action-film-adaptation/.243654",
-   "summary": "Los Angeles-based Tyrus Pictures plans to start production in 2027",
-   "img": "",
-   "at": 1794245452000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Overgeared ‒ Episode 7",
-   "url": "https://www.animenewsnetwork.com/review/overgeared/episode-7/.243651",
-   "summary": "If this episode thought it was saying something with its PSA about revenge, I don't think it succeeded.",
-   "img": "",
-   "at": 1794245400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Spider-Noir #1 Exclusive Preview Gallery",
    "url": "https://br.ign.com/gallery/157459/spider-noir-1-exclusive-preview-gallery",
    "summary": "",
@@ -964,14 +980,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "UK Charts: Zelda: Ocarina Of Time Is The Second Biggest UK Launch In Franchise History",
-   "url": "https://www.nintendolife.com/news/2026/11/uk-charts-zelda-ocarina-of-time-is-the-second-biggest-uk-launch-in-franchise-history",
-   "summary": "In terms of physical sales, at least. The latest charts data from the UK is in, and as expected, The Legend of Zelda: Ocarina of Time has debuted at the top spot, beating out the…",
-   "img": "https://images.nintendolife.com/97f027a9921ee/large.jpg",
-   "at": 1794216600000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Spy x Family terá 4ª temporada e novo filme em 2027",
    "url": "https://animenew.com.br/spy-x-family-4-temporada-filme-2027/",
    "summary": "O anime Spy x Family teve sua quarta temporada oficialmente anunciada neste domingo (8). Além da continuação, a franquia também ganhará um novo filme para os cinemas japoneses em…",
@@ -979,14 +987,6 @@
    "at": 1794182343000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "Usuário comprou um Steam Deck OLED para fugir das pessoas e acabou encontrando uma namorada",
-   "url": "https://www.hardware.com.br/noticias/steam-deck-oled-ajudou-gamer-encontrar-namorada/",
-   "summary": "O plano de ficar em casa jogando Fallout deu errado quando o portátil da Valve virou assunto em uma cafeteria com uma mulher.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/steam-deck-coracao-1600x900.jpg",
-   "at": 1794161904000,
-   "source": "Hardware.com.br"
   },
   {
    "title": "SPY x FAMILY tem 4ª temporada e novo filme anunciados para 2027",
