@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794400551,
+ "atualizadoEm": 1794405108,
  "jogos": {
   "absolver": {
    "appid": 473690,
@@ -63,7 +63,7 @@
   },
   "armaiii": {
    "appid": 107410,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -159,7 +159,7 @@
   },
   "assettocorsacompetizione": {
    "appid": 805550,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -357,7 +357,7 @@
    "v": 6
   },
   "blackdesertsaretired": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "black-desert-sa-retired",
    "titulo": "Black Desert SA (Retired)",
    "v": 6,
@@ -510,7 +510,7 @@
   },
   "callofdutyblackopsii": {
    "appid": 202970,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -557,7 +557,7 @@
   },
   "companyofheroesii": {
    "appid": 231430,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Estratégia",
@@ -709,7 +709,7 @@
    "v": 6
   },
   "dirtiii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "dirt-3",
    "titulo": "Dirt 3",
    "v": 6,
@@ -717,7 +717,7 @@
   },
   "dirtrallyii0": {
    "appid": 690790,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -791,7 +791,7 @@
   },
   "dyinglight": {
    "appid": 239140,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -839,7 +839,7 @@
   },
   "farcryvi": {
    "appid": 2369390,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -855,14 +855,14 @@
    "v": 6
   },
   "fearstofathomepisode1": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "fears-to-fathom-episode-1",
    "titulo": "Fears to Fathom - Episode 1",
    "v": 6,
    "vazio": true
   },
   "fearstofathomepisodeiii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "fears-to-fathom-episode-3",
    "titulo": "Fears to Fathom - Episode 3",
    "v": 6,
@@ -926,21 +926,21 @@
    "v": 6
   },
   "forzahorizonii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
    "v": 6,
@@ -979,14 +979,14 @@
    "v": 6
   },
   "forzamotorsportiv": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
    "v": 6,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
    "v": 6,
@@ -1129,7 +1129,7 @@
   },
   "grandtheftautovenhanced": {
    "appid": 3240220,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1186,14 +1186,14 @@
    "v": 6
   },
   "granturismoiv": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
    "v": 6,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
    "v": 6,
@@ -1357,7 +1357,7 @@
   },
   "insurgencysandstorm": {
    "appid": 581320,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -1803,7 +1803,7 @@
   },
   "outlast": {
    "appid": 238320,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2171,7 +2171,7 @@
    "v": 6
   },
   "residentevilreverse": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "resident-evil-re-verse",
    "titulo": "Resident Evil Re:Verse",
    "v": 6,
@@ -2243,7 +2243,7 @@
   },
   "rideiv": {
    "appid": 1259980,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -2307,7 +2307,7 @@
   },
   "satisfactory": {
    "appid": 526870,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Simulação",
@@ -2418,7 +2418,7 @@
   },
   "smiteii": {
    "appid": 2437170,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Estratégia",
@@ -2513,7 +2513,7 @@
   },
   "squad": {
    "appid": 393380,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -2526,7 +2526,7 @@
   },
   "squad44": {
    "appid": 736220,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -2671,7 +2671,7 @@
    "v": 6
   },
   "tokyoxtremeraceriii": {
-   "em": 1794400551,
+   "em": 1794405108,
    "slug": "tokyo-xtreme-racer-3",
    "titulo": "Tokyo Xtreme Racer 3",
    "v": 6,
@@ -2696,7 +2696,7 @@
   },
   "tomclancysghostreconwildlands": {
    "appid": 460930,
-   "em": 1793800146,
+   "em": 1794405108,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
