@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794412805892,
+ "atualizadoEm": 1794424190980,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,271 @@
  ],
  "itens": [
   {
+   "title": "2ª temporada de O Berserker da Gula confirma mês de lançamento",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/11/berserk-of-gluttony-temporada-2-anime-abril-2027",
+   "summary": "Uma nova imagem promocional também foi divulgada",
+   "img": "https://a.storyblok.com/f/178900/960x539/a16738fe14/berserk-of-gluttony-s2-april-2027.jpg",
+   "at": 1794424020000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Director Yuta Shimotsu Stirs Up Scares in Strange: Junji Ito's Tales for Sleepless Nights",
+   "url": "https://www.animenewsnetwork.com/interview/2026-11-11/director-yuta-shimotsu-stirs-up-scares-in-strange-junji-ito-tales-for-sleepless-nights/.243599",
+   "summary": "Yūta Shimotsu, the man behind the live-action anthology Strange: Junji Ito's Tales for Sleepless Nights , sat down with ANN to discuss his influences, favorite Ito stories, and…",
+   "img": "",
+   "at": 1794423490000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Orkut pode voltar? Criador da rede social aposta em IA para acelerar retorno e afirma que a internet vive uma “epidemia de solidão”",
+   "url": "https://br.ign.com/orkut/157563/orkut-pode-voltar-criador-da-rede-social-aposta-em-ia-para-acelerar-retorno-e-afirma-que-a-internet",
+   "summary": "“A volta do Orkut tem tudo a ver com construir conexões com pessoas reais”",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_25rs.jpg",
+   "at": 1794423372000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Mass Effect 5 pode ser salvo se conseguir aprender uma das maiores lições passadas por Clair Obscur: Expedition 33",
+   "url": "https://br.ign.com/mass-effect-next-chapter/157550/mass-effect-5-pode-ser-salvo-se-conseguir-aprender-uma-das-maiores-licoes-passadas-por-clair-obscur",
+   "summary": "\"Pequenas equipes inteligentes dão conta do recado\" O futuro de Mass Effect pode ser garantido a partir de um aprendizado fundamental extraído do aclamado Clair Obscur: Expedition…",
+   "img": "https://sm.ign.com/ign_br/news/m/mass-effec/mass-effect-could-still-be-saved-ex-bioware-developer-sugges_7uqz.jpg",
+   "at": 1794421787000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 might be censored in Japan, if the game's smaller install size and lack of \"strong sexual content\" warning is anything to go by",
+   "url": "https://www.eurogamer.net/gta-6-censored-japan-smaller-install-size",
+   "summary": "GTA 6 is finally coming out worldwide next week, putting an end to a 13-year wait and at least one popular meme format, but the highly-anticipated game might look a bit different…",
+   "img": "https://assetsio.gnwcdn.com/gta-6-sex-scene.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794421030000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Sea of Remnants terá beta fechado em todas as plataformas no início de dezembro",
+   "url": "https://www.adrenaline.com.br/games/sea-of-remnants-tera-beta-fechado-em-todas-as-plataformas-no-inicio-de-dezembro/",
+   "summary": "Sea of Remnants, RPG free-to-play de piratas da NetEase, retorna com beta fechado bem maior",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/sea-of-remnants-beta-dezembro-640x400.jpg",
+   "at": 1794420741000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "PS5 atinge a marca de 100 milhões de unidades vendidas 6 anos após o lançamento — veja como se compara a outros consoles PlayStation",
+   "url": "https://br.ign.com/playstation-5-2/157561/ps5-atinge-a-marca-de-100-milhoes-de-unidades-vendidas-6-anos-apos-o-lancamento-veja-como-se-compara",
+   "summary": "Talvez a questão mais importante para a Sony seja como as vendas do PS5 estão se comportando no período de lançamento em comparação com as do PS4",
+   "img": "https://sm.ign.com/ign_br/news/p/ps5-hits-1/ps5-hits-100-million-units-sold-mark-6-years-after-launch-he_d137.jpg",
+   "at": 1794420146000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "O Senhor dos Anéis: elenco revela os SEGREDOS da 3ª temporada de Os Anéis de Poder - IGN Entrevista",
+   "url": "https://br.ign.com/cinema-tv/157560/o-senhor-dos-aneis-elenco-revela-os-segredos-da-3a-temporada-de-os-aneis-de-poder-ign-entrevista",
+   "summary": "Conversamos com o elenco e os criadores de O Senhor dos Anéis: Os Anéis de Poder sobre a 3ª temporada da série, a ascensão de Sauron, a forja do Um Anel e os destinos dos…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/thumb-ign-id-entrevista-senhor-aneis_zm5h.jpg",
+   "at": 1794418675000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Após 12 anos, competição de desenvolvimento de jogos para estudantes chega ao fim por causa da IA",
+   "url": "https://www.hardware.com.br/games/competicao-desenvolvimento-jogos-estudantes-chega-fim-ia/",
+   "summary": "Competição australiana realizará sua última edição em 2026 pois uso crescente da IA dificultou a avaliação dos projetos.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/1600x900_filters_quality85_focal450253_https___media.globalcitizen.org_f2_51_f251f1f6-2067-47ec-822f-a44edaea19d2_hour_of_code_hp_image_1.webp",
+   "at": 1794418391000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Crunchyroll to Stream Medaka Kuroiwa is Impervious to My Charms 2nd Season Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-11/crunchyroll-to-stream-medaka-kuroiwa-is-impervious-to-my-charms-2nd-season-anime/.243730",
+   "summary": "Anime Frontier to host premiere screening on December 6 alongside Shangri-La Frontier , Fate Rewinder",
+   "img": "",
+   "at": 1794418200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "The World's Strongest Witch ‒ Episode 6",
+   "url": "https://www.animenewsnetwork.com/review/the-world-strongest-witch/episode-6/.243731",
+   "summary": "This was a breezy romp that, ironically, improved my Wednesday and that’s about all I need from a show like The World’s Strongest Witch .",
+   "img": "",
+   "at": 1794418200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Só hoje no 11.11: Star Fox para Nintendo Switch 2 sai por menos de R$ 250 com cupom no Mercado Livre",
+   "url": "https://br.ign.com/descontos/157559/so-hoje-no-1111-star-fox-para-nintendo-switch-2-sai-por-menos-de-r-250-com-cupom",
+   "summary": "Releitura de Star Fox 64 traz visual renovado e batalhas multiplayer",
+   "img": "https://sm.ign.com/ign_br/photo/default/nintendo-confirms-switch-2-star-fox-pricing-h5hj-17785907952_3v7y.jpg",
+   "at": 1794418062000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The European Commission's new Digital Fairness Act could change monetisation in games forever - and not just in Europe",
+   "url": "https://www.eurogamer.net/eu-digital-fairness-act-what-is-it-video-games",
+   "summary": "The European Commission has published its proposed Digital Fairness Act, which has the potential to change how video games are monetised - worldwide - forever. A draft of the Act…",
+   "img": "https://assetsio.gnwcdn.com/mei-overwatch-loot-box-cs-go.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794417950000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Donkey Kong Bananza fica mais barato no 11.11 da Amazon com cupom Prime",
+   "url": "https://br.ign.com/descontos/157558/donkey-kong-bananza-fica-mais-barato-no-1111-da-amazon-com-cupom-prime",
+   "summary": "Um dos grandes lançamentos do Nintendo Switch 2 fica ainda mais barato com cupom exclusivo para assinantes Amazon Prime durante o 11.11",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_cjfa.jpg",
+   "at": 1794417512000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "2ª temporada de Medaka Kuroiwa is Impervious to My Charms tem transmissão confirmada na Crunchyroll",
+   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/11/medaka-kuroiwa-is-impervious-to-my-charms-temporada-2-anime-crunchyroll",
+   "summary": "A nova temporada estreia em janeiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/2048x1152/5ab9879bf6/medaka-kuroiwa-season-2.jpg",
+   "at": 1794417000000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Steam’s Growing Review Backlog Has Cost Another Game Its Launch Date",
+   "url": "https://www.gamespot.com/articles/steam-growing-review-backlog-has-cost-another-game-its-launch-date/",
+   "summary": "Steam's growing backlog for approving game builds appears to be getting worse, as yet another studio's game is stuck in the purgatory of the platform's review program. Australia…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Australia-Did-It.jpg?w=300",
+   "at": 1794416954000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Falcom Reveals Sequel for The Legend of Heroes: Trails beyond the Horizon Game",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-11/falcom-reveals-sequel-for-the-legend-of-heroes-trails-beyond-the-horizon-game/.243725",
+   "summary": "Sequel slated for release by September 2027",
+   "img": "",
+   "at": 1794416782000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "“Nunca mais lancem outro Xbox Series S”: Veterano de Tekken critica console da Microsoft",
+   "url": "https://www.hardware.com.br/games/katsuhiro-harada-critica-xbox-series-s/",
+   "summary": "Katsuhiro Harada criticou as limitações do Xbox Series S diante de um executivo do Xbox e demonstrou preocupação com a próxima geração da Microsoft",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Veterano-de-Tekken-critica-console-da-Microsoft.jpg",
+   "at": 1794416661000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Bethesda frustra fãs que esperavam por novidades de The Elder Scrolls 6: Sentinel",
+   "url": "https://br.ign.com/the-elder-scrolls-vi/157557/bethesda-frustra-fas-que-esperavam-por-novidades-de-the-elder-scrolls-6-sentinel",
+   "summary": "“Estamos felizes com o entusiasmo de vocês, mas não vamos compartilhar nada de novo sobre Sentinel por um tempo”",
+   "img": "https://sm.ign.com/ign_br/news/b/bethesda-s/bethesda-sets-expectations-as-fans-hope-for-the-elder-scroll_9dqs.jpg",
+   "at": 1794416582000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Akane-banashi Volumes 7-9 Manga Review",
+   "url": "https://www.animenewsnetwork.com/review/akane-banashi-volumes-7-9-manga/.242538",
+   "summary": "As her professional debut continues, Akane tries to clinch a win at the Four Person Selection Event held by Ikken Arakawa, but can Akane move past her father’s shadow?",
+   "img": "",
+   "at": 1794416400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "EU 'Digital Fairness Act' Could Have A Huge Impact On Loot Boxes And Virtual Currency",
+   "url": "https://www.nintendolife.com/news/2026/11/eu-digital-fairness-act-could-have-a-huge-impact-on-loot-boxes-and-virtual-currency",
+   "summary": "A step in the right direction? After being leaked earlier this week, the European Commission has today presented its proposal for the ' Digital Fairness Act ' — a rule update that…",
+   "img": "https://images.nintendolife.com/7a289d18e4b55/large.jpg",
+   "at": 1794415500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Galaxy Fit3 custa menos de R$ 160 em oferta relâmpago do 11.11 no Mercado Livre",
+   "url": "https://br.ign.com/descontos/157556/galaxy-fit3-custa-menos-de-r-160-em-oferta-relampago-do-1111-no-mercado-livre",
+   "summary": "Tela AMOLED, bateria de até 13 dias e monitoramento de atividades físicas estão entre os recursos da smartband da Samsung, que ganha desconto no 11.11",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_b8cn.jpg",
+   "at": 1794415406000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 no Xbox One: Veja como jogar pela nuvem e quais são as limitações",
+   "url": "https://www.hardware.com.br/games/gta-6-no-xbox-one-como-jogar/",
+   "summary": "Microsoft confirma que GTA 6 funcionará no Xbox One sem precisar de um console de nova geração, mas jogadores terão que lidar com restrições de tempo e conexão à internet",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-6-no-Xbox-One-Veja-como-jogar-pela-nuvem-e-quais-sao-as-limitacoes.jpg",
+   "at": 1794415065000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Jogos na Steam em oferta por menos de R$ 10; até 95% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-na-steam-em-oferta-por-menos-de-r-10-ate-95-de-desconto-5/",
+   "summary": "A Steam renovou as ofertas baratinhas em sua plataforma com diversos jogos para PC com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/jogos-em-oferta-640x400.webp",
+   "at": 1794414899000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Emulador de PlayStation 5 adiciona DLSS da NVIDIA no lugar do PSSR",
+   "url": "https://www.adrenaline.com.br/games/emulador-de-playstation-5-adiciona-dlss-da-nvidia-no-lugar-do-pssr/",
+   "summary": "Infelizmente, não foram divulgadas comparações de desempenho com o recurso ativado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/18-jogos-dlss-nvidia-ps5-640x400.jpg",
+   "at": 1794414794000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Even the Student Council Has Its Holes! ‒ Episode 6",
+   "url": "https://www.animenewsnetwork.com/review/even-the-student-council-has-its-holes/episode-6/.243721",
+   "summary": "I think it's hilarious that Hisako, Komaro, and Arisu all go to the bathroom at the same time and each find themselves stuck in their stalls for uniquely embarrassing reasons.",
+   "img": "",
+   "at": 1794414600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Steam vai considerar data de criação de contas para fazer verificação de idade",
+   "url": "https://www.adrenaline.com.br/games/steam-vai-considerar-data-de-criacao-de-contas-para-fazer-verificacao-de-idade/",
+   "summary": "O Steam busca por novas alternativas para liberar o acesso a conteúdos restritos sem violar a privacidade dos usuários",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/10/Steam-Recorde-Arrecadao-2026-01-640x400.jpeg",
+   "at": 1794414460000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Honkai Star Rail’s First Playable Aeon Isn’t A Damage God, And That’s A Good Thing",
+   "url": "https://www.gamespot.com/articles/honkai-star-rails-first-playable-aeon-isnt-a-damage-god-and-thats-a-good-thing/",
+   "summary": "The Aeons of Honkai Star Rail have always been far beyond ordinary mortals. They are conceptual deities whose actions have the potential to reshape entire galaxies--so putting one…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/honkai-event.jpg?w=300",
+   "at": 1794414080000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Best Loadouts In Call Of Duty: Warzone For MW4 Season 1",
+   "url": "https://www.gamespot.com/articles/best-loadouts-in-call-of-duty-warzone-for-mw4-season-1/",
+   "summary": "Modern Warfare 4 has integrated with Warzone for Season 1, adding MW4’s full weapon pool, attachments, and other new gear into battle royale. This means you'll want to update your…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MW4-SEASON-1-WARZONE-001.jpg?w=300",
+   "at": 1794413665000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How Honkai Star Rail Took Inspiration From Sports Cars For Something Unexpected",
+   "url": "https://www.gamespot.com/articles/how-honkai-star-rail-took-inspiration-from-sports-cars-for-something-unexpected/",
+   "summary": "Turn-based RPGs can face difficulties during the design process when figuring out how to convey physical momentum. In an environment where actions are decided by button taps and…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/maxresdefault.jpg?w=300",
+   "at": 1794413435000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Black Friday antecipada da PlayStation traz Marvel’s Wolverine e lançamentos de 2026 com mais de R$ 100 off",
+   "url": "https://br.ign.com/playstation-5/157555/black-friday-antecipada-da-playstation-traz-marvels-wolverine-e-lancamentos-de-2026-com-mais-de-r-10",
+   "summary": "A temporada de ofertas de fim de ano começou mais cedo para os donos de PlayStation 5 A Sony deu a largada na campanha antecipada de Black Friday na PlayStation Store , trazendo…",
+   "img": "https://sm.ign.com/ign_br/news/p/playstatio/playstation-blackout-boycott-had-no-significant-change-on-pl_qq4m.jpg",
+   "at": 1794412942000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "PlayStation 5 Reaches Over 100 Million Shipments",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-11/playstation-5-reaches-over-100-million-shipments/.243724",
+   "summary": "PS5 had shipped over 97.9 million units as of September 30",
+   "img": "",
+   "at": 1794412800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Godzilla Minus Zero e como lidar com a Síndrome do Sobrevivente",
    "url": "https://crunchyroll.com/pt-br/news/features/2026/11/11/godzilla-minus-zero-lidando-com-a-sindrome-do-sobrevivente",
    "summary": "Você conseguiria viver em lugar com um Godzilla?",
@@ -95,6 +360,14 @@
    "at": 1794412380000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Desenvolvedor de Tekken diz que “gostaria que hardwares como o Series S não fossem lançados\"",
+   "url": "https://br.ign.com/tekken-8/157549/desenvolvedor-de-tekken-diz-que-hardwares-como-o-series-s-nao-fossem-lancados-para-executivo-do-xbox",
+   "summary": "Rapaz... Katsuhiro Harada, lenda por trás do desenvolvimento de Tekken , fez comentários contundentes sobre o Xbox Series S — console da Microsoft com menor poder de processamento…",
+   "img": "https://sm.ign.com/ign_br/news/t/tekken-leg/tekken-legend-katsuhiro-harada-says-he-wishes-hardware-like_erac.jpg",
+   "at": 1794412272000,
+   "source": "IGN Brasil"
   },
   {
    "title": "Jogos de PC em oferta limitada; até 95% de desconto nesta semana",
@@ -119,6 +392,24 @@
    "img": "https://sm.ign.com/ign_br/news/d/dcs-new-le/dcs-new-leader-will-reportedly-prioritize-more-well-known-ch_hjc3.jpg",
    "at": 1794411491000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "The Legend of Zelda: Ocarina of Time Remake Sells Over 5.2 Million Units to Become Nintendo's Fastest-Selling Switch 2 Game",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-11/the-legend-of-zelda-ocarina-of-time-remake-sells-over-5.2-million-units-to-become-nintendo-fastest-/.243722",
+   "summary": "Remake surpasses previously reported lifetime sales of 2nd bestselling Switch 2 title Donkey Kong Bananza",
+   "img": "",
+   "at": 1794411220000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nia Liston: The Merciless Maiden ‒ Episode 6",
+   "url": "https://www.animenewsnetwork.com/review/nia-liston-the-merciless-maiden/episode-6/.243720",
+   "summary": "Nia Liston ’s extremely specific charm still manages to shine through in even a quieter episode, and I’m confident what this episode sets up will be a return to form for the show.",
+   "img": "",
+   "at": 1794411095000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Crunchyroll confirma participação na CCXP26",
@@ -262,14 +553,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "O que os comentários e filmes anteriores de Jeremy Latcham, novo executivo da DC Studios, sugerem sobre o futuro do DCU",
-   "url": "https://br.ign.com/man-of-tomorrow/157542/o-que-os-comentarios-e-filmes-anteriores-de-jeremy-latcham-novo-executivo-da-dc-studios-sugerem-sobr",
-   "summary": "“Para mim, o que importa é sempre: coração, humor e espetáculo — nessa ordem.” Este texto foi escrito por Jim Vejvoda em 1ª pessoa e mantivemos em tom pessoal. Assim que assimilei…",
-   "img": "https://sm.ign.com/ign_br/feature/w/what-new-d/what-new-dc-studios-boss-jeremy-latchams-past-comments-and-f_pdum.jpg",
-   "at": 1794406030000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "This Game is Stealing All My Free Time",
    "url": "https://www.gamespot.com/videos/this-game-is-stealing-all-my-free-time/",
    "summary": "Frostpunk's Nintendo Switch version gets a Yes from Kurt.",
@@ -364,44 +647,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "O remake de The Legend of Zelda: Ocarina of Time é um grande sucesso para a Nintendo — jogo já vendeu 5,2 milhões de cópias e quebrou outros recordes da empresa",
-   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157540/o-remake-de-the-legend-of-zelda-ocarina-of-time-e-um-grande-sucesso-para-a-nintendo-jogo-ja-vendeu-5",
-   "summary": "Da-da-da-daaa! O remake de The Legend of Zelda: Ocarina of Time quebrou recordes de vendas para a Nintendo e tornou-se o jogo que mais rapidamente vendeu no Switch 2 durante seus…",
-   "img": "https://sm.ign.com/ign_br/news/t/the-legend/the-legend-of-zelda-ocarina-of-time-is-a-huge-success-for-ni_j5ny.jpg",
-   "at": 1794403268000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "“Encaramos a questão de um jeito um pouco diferente”: Nintendo defende retirada do famoso easter egg do Super Mario 64 no remake de The Legend of Zelda: Ocarina",
-   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157539/encaramos-a-questao-de-um-jeito-um-pouco-diferente-nintendo-defende-retirada-do-famoso-easter-egg-do",
-   "summary": "Adeus, quadros A Nintendo defendeu a decisão de remover a aparição secreta de personagens de Mario do remake de The Legend of Zelda: Ocarina of Time . Escondida dentro do Castelo…",
-   "img": "https://sm.ign.com/ign_br/news/n/nintendo-d/nintendo-defends-decision-to-cut-mario-and-yoshi-easter-eggs_s7zt.jpg",
-   "at": 1794402719000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "NVIDIA teria cancelado RTX 5080 de 24 GB devido ao alto custo das memórias GDDR7",
    "url": "https://www.hardware.com.br/tecnologia/nvidia-cancelado-rtx-5080-24-gb2/",
    "summary": "Nova informação aponta que a fabricante desistiu do lançamento previsto para janeiro de 2027 e manterá a RTX 5080 de 16 GB em produção",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/NVIDIA-teria-cancelado-RTX-5080-de-24-GB-devido-ao-alto-custo-das-memorias-GDDR7.jpg",
    "at": 1794402652000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "De jovem em uma obra-prima de Spielberg há 39 anos a astro de Hollywood: você reconhece este ator?",
-   "url": "https://br.ign.com/ben-stiller/157532/de-jovem-em-uma-obra-prima-de-spielberg-ha-39-anos-a-astro-de-hollywood-voce-reconhece-este-ator",
-   "summary": "Além do futuro Batman, filme de 1987 também contou com um futuro ícone da comédia Império do Sol foi um dos primeiros trabalhos de Christian Bale, mas ele não foi o único ator…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_fg8r.jpg",
-   "at": 1794402039000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Títulos do PlayStation Hero Project estarão na gamescom latam 2027; evento anuncia pré-venda de ingressos B2B",
-   "url": "https://br.ign.com/gamescom-latam/157515/titulos-do-playstation-hero-project-estarao-na-gamescom-latam-2027-evento-anuncia-pre-venda-de-ingre",
-   "summary": "Jogos do India Hero Project e MENA Hero Project destacam talentos criativos de todo o mundo",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_2jsc.png",
-   "at": 1794402037000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Opinion: A Pokémon Rave Just Might Have Been The Strangest Night Of My Life",
@@ -506,14 +757,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "\"É ótimo, mas é uma loucura\": filme live-action de Naruto enfrenta um grande desafio antes mesmo do início das filmagens",
-   "url": "https://br.ign.com/naruto-live-action-movie/157531/e-otimo-mas-e-uma-loucura-filme-live-action-de-naruto-enfrenta-um-grande-desafio-antes-mesmo-do-inic",
-   "summary": "A intenção é preservar o caráter espetacular das lutas e o núcleo emocional da história Tasha Huo, roteirista do filme, fala sobre os desafios de adaptar um universo de anime tão…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_6eau.jpg",
-   "at": 1794398608000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Remake de The Legend of Zelda: Ocarina of Time já vendeu 5,2 milhões de cópias",
    "url": "https://www.adrenaline.com.br/games/remake-de-the-legend-of-zelda-ocarina-of-time-ja-vendeu-52-milhoes-de-copias/",
    "summary": "The Legend of Zelda: Ocarina of Time já superou Donkey Kong Bananza como o segundo jogo mais vendido do Switch 2",
@@ -554,15 +797,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "SSS-Class Revival Hunter Anime's New Video Reveals Ending Song",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-11/sss-class-revival-hunter-anime-new-video-reveals-ending-song/.243716",
-   "summary": "THE SPELLBOUND × BOOM BOOM SATELLITES perform \"Fading\" ending theme",
-   "img": "",
-   "at": 1794395657000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "World of Warcraft: Forever's magical opening week reminds us all about the power of the MMO, and the threat it poses to your free time",
    "url": "https://www.eurogamer.net/world-of-warcraft-forever-now-playing",
    "summary": "World of Warcraft: Forever is a time vampire. Since its release last Wednesday, I have spent 78 hours in Azeroth. Some of that I was AFK, sure. But for many of those hours, I was…",
@@ -571,37 +805,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Enquanto Death Stranding 2 e mais 9 jogos chegam ao PS Plus, o aplicativo para PC será descontinuado; veja a lista completa dos jogos de novembro",
-   "url": "https://br.ign.com/playstation-plus/157530/enquanto-death-stranding-2-e-mais-9-jogos-chegam-ao-ps-plus-o-aplicativo-para-pc-sera-descontinuado",
-   "summary": "O app PlayStation Plus será removido do PC em 10 de dezembro Like a Dragon: Pirate Yakuza in Hawaii, Atomfall e Dragon Quest III HD-2D Remake são alguns outros destaques dos jogos…",
-   "img": "https://sm.ign.com/ign_br/photo/default/master-00-01-58-30-still012-1750343168746_uxas.jpg",
-   "at": 1794394836000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Apenas 10 linhas de código gerado por IA fizeram os criadores de Big Walk se desculparem pela controvérsia causada",
-   "url": "https://br.ign.com/big-walk/157523/apenas-10-linhas-de-codigo-gerado-por-ia-fizeram-os-criadores-de-big-walk-se-desculparem-pela-contro",
-   "summary": "A House House explicou como a IA que salvou o desempenho do jogo foi usada A equipe enfatizou que não deseja normalizar a IA generativa na indústria: \"apoiamos os esforços…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_5ere.jpg",
-   "at": 1794391241000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "The Legend of Zelda: Ocarina of Time remake sells in huge numbers, becoming the fastest-selling Switch 2 game",
    "url": "https://www.eurogamer.net/zelda-ocarina-of-time-switch-2-sales-nintendo",
    "summary": "The Legend of Zelda: Ocarina of Time remake has been a huge success for Nintendo, becoming the fastest-selling Switch 2 game ever, shifting more than 5.2 million copies in four…",
    "img": "https://assetsio.gnwcdn.com/Zelda_Ocarina_Of_Time_Songs_Header.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794390970000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Tomoko Ninomiya's Nanatsu-ya: Shinobu and Her Jewelry Box Manga Gets TV Anime in 2027",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-11/tomoko-ninomiya-nanatsu-ya-shinobu-and-her-jewelry-box-manga-gets-tv-anime-in-2027/.243715",
-   "summary": "Nodame Cantabile: Finale director Chiaki Kon helms anime at J.C.STAFF",
-   "img": "",
-   "at": 1794390536000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "It's Official, Zelda: Ocarina Of Time Has Sold Over 5 Million Copies In 4 Days",
@@ -620,32 +829,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Dublê de longa data de Liam Neeson estreia como diretor e seu primeiro filme está em alta no Prime Video com o próprio Neeson de protagonista",
-   "url": "https://br.ign.com/the-mongoose/157522/duble-de-longa-data-de-liam-neeson-estreia-como-diretor-e-seu-primeiro-filme-esta-em-alta-no-prime-v",
-   "summary": "Apesar das notas ruins no Rotten Tomatoes, o longa de ação alcançou o topo das paradas no Brasil e no mundo Depois de anos atuando como dublê de Liam Neeson, Mark Vanselow…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_6zzb.jpg",
-   "at": 1794387636000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Berserk of Gluttony Season 2 Premieres Next April",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-11/berserk-of-gluttony-season-2-premieres-next-april/.243681",
-   "summary": "New teaser visual also revealed",
-   "img": "",
-   "at": 1794387600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "≠ME Idol Momo Sakurai Voice-Acts, Sings in Gacha Girls Corps Anime",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-11/me-idol-momo-sakurai-voice-acts-sings-in-gacha-girls-corps-anime/.243711",
-   "summary": "Sakurai voices rabbit Mofutto, sings Mofutto's version of ending song \"Mofu-kyun Heart♡\"",
-   "img": "",
-   "at": 1794384440000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Deltarune Chapter 6 Sneak Peek Video Vote Announced, Pick A Candidate",
    "url": "https://www.nintendolife.com/news/2026/11/deltarune-chapter-6-sneak-peek-video-vote-announced-pick-a-candidate",
    "summary": "\"It's time to vote\". It's been a while since we got an update about Deltarune , but the creator Toby Fox has stepped away from development for a brief moment to announce a Chapter…",
@@ -662,38 +845,12 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "R$150 OFF! PS5 do Wolverine de edição limitada com controle e jogo aparece em oferta exclusiva no 11.11 da Amazon",
-   "url": "https://br.ign.com/descontos/157538/r150-off-ps5-do-wolverine-de-edicao-limitada-com-controle-e-jogo-aparece-em-oferta-exclusiva-no-1111",
-   "summary": "Console amarelo inspirado em Logan vem com DualSense exclusivo e o jogo completo. Veja o que acompanha o pacote e garanta o seu na Amazon! PS5 do Wolverine no 11.11 da Amazon!",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/ign-42_6ukr.png",
-   "at": 1794375031000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "S. Carolina Man Arrested for Leaving Daughter Unattended in Overnight Pokémon Card Line",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-10/s-carolina-man-arrested-for-leaving-daughter-unattended-in-overnight-pokemon-card-line/.243669",
-   "summary": "The Charleston Police Department arrested a South Carolina man outside of the West Ashley Target store on Friday for leaving his six-year-old daughter...",
-   "img": "",
-   "at": 1794373140000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Round Up: The Reviews Are In For Pikmin 4 - Switch 2 Edition + Dandori Academy",
    "url": "https://www.nintendolife.com/news/2026/11/round-up-the-reviews-are-in-for-pikmin-4-switch-2-edition-plus-dandori-academy",
    "summary": "Here's what the critics had to say. Following the anticipated return of Zelda: Ocarina of Time last week, Nintendo has now released Pikmin 4 - Switch 2 Edition + Dandori Academy .…",
    "img": "https://images.nintendolife.com/2f51ac2b3a96e/large.jpg",
    "at": 1794372300000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Aoharu Once More Light Anime's Teaser Reveals Cast, More Staff, January 2027 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/aoharu-once-more-light-anime-teaser-reveals-cast-more-staff-january-2027-debut/.243708",
-   "summary": "Tasuku Kaito, Kazuki Ura star in BL story",
-   "img": "",
-   "at": 1794369982000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Black Clover confirma Asta como uma entidade divina",
@@ -705,30 +862,12 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Kodansha Launches 1999Tokoyo Building Horror Game on Steam",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/kodansha-launches-1999tokoyo-building-horror-game-on-steam/.243702",
-   "summary": "Visual novel/adventure game launched on Monday for PC",
-   "img": "",
-   "at": 1794366042000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Unknown 'Mega Man Legends' Project Surfaces Online",
    "url": "https://www.nintendolife.com/news/2026/11/unknown-mega-man-legends-project-surfaces-online",
    "summary": "What could it be for? As Capcom gears up for Mega Man 's 40th anniversary next year, more findings related to the long-running IP are surfacing online. Read the full article on…",
    "img": "https://images.nintendolife.com/25df7a5723fbe/large.jpg",
    "at": 1794365700000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Mameshiba Characters Get Oyatsushiba Spinoff Short Net Anime",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/mameshiba-characters-get-oyatsushiba-spinoff-short-net-anime/.243704",
-   "summary": "Anime about characters inspired by sweet rice cakes debuts on Friday",
-   "img": "",
-   "at": 1794364980000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "GTA 6 bate recorde de pré-vendas na PlayStation Store",
@@ -756,15 +895,6 @@
    "at": 1794362645000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "Detective Conan Saves Man From Drowning in Car",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-10/detective-conan-saves-man-from-drowning-in-car/.243683",
-   "summary": "Man: \"In the first 20 seconds I was prepared to die, but then this scene popped into my head, and I escaped with my life.\"",
-   "img": "",
-   "at": 1794362400000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "My Hero Ultra Rumble ganhará versão mobile",
@@ -890,14 +1020,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Amid Higher Gas And Grocery Prices, GTA 6 Is A “Bargain” At $80, Take-Two CEO Says",
-   "url": "https://www.gamespot.com/articles/amid-higher-gas-and-grocery-prices-gta-6-is-a-bargain-at-80-take-two-ceo-says/",
-   "summary": "It's no secret that life is expensive. Gas and grocery prices are up, in particular, and against that backdrop, Take-Two CEO Strauss Zelnick believes GTA 6 at $80 is a \"bargain\"…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Lucia_Caminos_07.jpg?w=300",
-   "at": 1794341695000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Nova geração de consoles não vai substituir a atual, afirmam analistas",
    "url": "https://www.adrenaline.com.br/games/nova-geracao-de-consoles-nao-vai-substituir-a-atual-afirmam-analistas/",
    "summary": "Com aumentos constantes em preços, a próxima geração de consoles vai ter grande dificuldade em se estabelecer",
@@ -906,52 +1028,12 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Steam revela jogos mais vendidos da semana com Call of Duty na liderança",
-   "url": "https://www.adrenaline.com.br/games/pc-games/steam-revela-jogos-mais-vendidos-da-semana-com-call-of-duty-na-lideranca/",
-   "summary": "Crimson Desert Enhanced, EA SPORTS FC 27 e Resident Evil 4 são alguns jogos entre os mais vendidos da semana na Steam",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/call-of-duty-modern-warfare-4-640x400.webp",
-   "at": 1794337739000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Valve Is Giving You More Ways To Know If A Game Runs Well On Steam Deck",
-   "url": "https://www.gamespot.com/articles/valve-is-giving-you-more-ways-to-know-if-a-game-runs-well-on-steam-deck/",
-   "summary": "Valve's Steam Deck verification program has been a helpful, if somewhat flawed, method of determining if a game is a good fit for the company's handheld PC. But while many games…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/2e7f9079b6be9a3c99c5014fc1ee0eaede8d5edb.jpg?w=300",
-   "at": 1794337667000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "WoW: Forever Just Received Its First Big Post-Launch Changes",
-   "url": "https://www.gamespot.com/articles/wow-forever-just-received-its-first-big-post-launch-changes/",
-   "summary": "World of Warcraft: Forever received its first post-launch updates over the weekend, giving players a good reason to run each dungeon more than once alongside upcoming class…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/WoW-Forever-First-Post-Launch-Changes.jpg?w=300",
-   "at": 1794337424000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Talking Point: With Big Walk, The AI-In-Game-Dev Debate Just Got A Lot Murkier",
    "url": "https://www.nintendolife.com/features/talking-point-with-big-walk-the-ai-in-game-dev-debate-just-got-a-lot-murkier",
    "summary": "Big talk. \"The line must be drawn here! This far, no further!\" Please forgive the Captain Picard First Contact quote (it's been a couple of weeks since Patrick Stewart's death and…",
    "img": "https://images.nintendolife.com/35bdc8dc74477/large.jpg",
    "at": 1794337200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Jogos de PC em oferta no Esquenta Black Friday Nuuvem; até 91% de desconto + cupom limitado",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-no-esquenta-black-friday-nuuvem-ate-91-de-desconto-cupom-limitado/",
-   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/06/dragon-ball-sparking-zero-640x400.jpg",
-   "at": 1794336910000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "PlayStation Plus Extra e Deluxe de novembro tem Death Stranding 2 e mais 9 jogos – veja lista!",
-   "url": "https://www.adrenaline.com.br/games/playstation/playstation-plus-extra-e-deluxe-de-novembro-tem-death-stranding-2-e-mais-9-jogos-veja-lista/",
-   "summary": "Confira todos os jogos chegando em novembro ao catálogo da PlayStation Plus Extra e da Deluxe, que também recebe jogos clássicos",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/playsation-plus-extra-deluxe-novembro-640x400.webp",
-   "at": 1794336516000,
-   "source": "Adrenaline"
   },
   {
    "title": "My Death Flags Show No Sign of Ending tem anime confirmado para 2027",
@@ -971,14 +1053,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Jogos em oferta na Steam por menos de R$ 5; até 90% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-em-oferta-na-steam-por-menos-de-r-5-ate-90-de-desconto/",
-   "summary": "A Steam renovou as ofertas baratinhas em sua plataforma com diversos jogos para PC com desconto por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/borderlands-2-640x400.webp",
-   "at": 1794334521000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Shueisha Games anuncia distribuição do jogo NIGHTMARE OPERATOR",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/10/nightmare-operator-shueisha-games",
    "summary": "Jogo de tiro e terror vai ser lançado para PC via Steam.",
@@ -996,22 +1070,6 @@
    "source": "Xbox Wire Brasil"
   },
   {
-   "title": "Gallery: Hollow Knight & Silksong's Switch 2 Physicals Are A Delight For Map Fans",
-   "url": "https://www.nintendolife.com/news/2026/11/gallery-hollow-knight-and-silksongs-switch-2-physicals-are-a-delight-for-map-fans",
-   "summary": "Pharloom Physical. Fangamer announced earlier this year that it had two swanky new Switch 2 physical releases in the works for both Hollow Knight and Silksong , each complete with…",
-   "img": "https://images.nintendolife.com/38186fe111ae5/large.jpg",
-   "at": 1794333600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Evolution of Marvel Rivals",
-   "url": "https://www.gamespot.com/videos/evolution-of-marvel-rivals/",
-   "summary": "Were you there for Marvel Rivals Season Zero? The original 33 heroes laid the groundwork and hints for one of the most epic roadmaps for a multiplayer game we've seen so far.",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/evolution_of_marvel_rivals_site.jpg?w=300",
-   "at": 1794333600000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Kore Yamazaki, autora de The Ancient Magus' Bride, participa da Virada Cultural 2026",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/10/kore-yamazaki-the-ancient-magus-bride-virada-cultural-2026",
    "summary": "Evento acontece já nesta semana, nos dias 14 e 15 de novembro.",
@@ -1021,14 +1079,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Here's our second wave of PS Plus games for November 2026 - and Sony's scrapping its barely used PC app",
-   "url": "https://www.eurogamer.net/ps-plus-games-november-2026-pc-app",
-   "summary": "Sony's revealed the second wave of games coming to PlayStation Plus Premium and Extra this month, and there are some genuine big-name attractions, led by Hideo Kojima 's…",
-   "img": "https://assetsio.gnwcdn.com/Death-Stranding-2-trailer-screenshot-showing-a-masked-figure-in-red-pointing-to-themself-with-their-thumb.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794330600000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Trailer principal do filme ghost – end of night é divulgado",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/10/ghost-end-of-night-anime-filme-trailer-principal",
    "summary": "Produção estreia em fevereiro de 2027 nos cinemas japoneses.",
@@ -1036,38 +1086,6 @@
    "at": 1794330420000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "GTA 6 quebra recordes de pré-vendas no PlayStation e Xbox e se aproxima de US$ 1 bilhão antes do lançamento",
-   "url": "https://www.hardware.com.br/games/gta-6-quebra-recordes-de-pre-vendas/",
-   "summary": "Sony e Microsoft confirmam marcas históricas em suas lojas digitais, enquanto estimativas apontam quase 10 milhões de cópias reservadas de GTA 6",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/8-scaled.jpg",
-   "at": 1794329333000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Video: We Join IGN's 'Review Crew' To Discuss Zelda: Ocarina Of Time",
-   "url": "https://www.nintendolife.com/news/2026/11/video-we-join-igns-review-crew-to-discuss-zelda-ocarina-of-time",
-   "summary": "Give it a watch, Goro. By now, you've hopefully caught up with our review of Zelda: Ocarina of Time . We gave the remake a score of 9/10 and reckon it's a bloomin' great game,…",
-   "img": "https://images.nintendolife.com/c1449884984cb/large.jpg",
-   "at": 1794329100000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Grand Theft Auto 6 becomes the most pre-ordered game in PlayStation Store history",
-   "url": "https://www.eurogamer.net/gta-6-most-preordered-game-playstation-store-history",
-   "summary": "UPDATE 11TH NOVEMBER: Grand Theft Auto 6 has also become the most pre-ordered game \"of all time\" on the Xbox Store, Microsoft has announced. And on that platform, again, the…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-pool-of-money.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794328290000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Novidades de novembro para o Catálogo de Jogos PlayStation Plus: Death Stranding 2: On the Beach, Like a Dragon: Pirate Yakuza in Hawaii, Atomfall, Dragon Quest",
-   "url": "https://blog.br.playstation.com/2026/11/10/novidades-de-novembro-para-o-catalogo-de-jogos-playstation-plus-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-e-muito-mais/",
-   "summary": "Neste mês, embarque em uma missão inspiradora de conexão humana em Death Stranding 2: On the Beach, reúna uma tripulação única enquanto navega o alto-mar em Like a Dragon: Pirate…",
-   "img": "",
-   "at": 1794328286000,
-   "source": "PlayStation Blog BR"
   },
   {
    "title": "Personagem Kuromi, da Sanrio, vai ganhar primeiro filme em 2027",
@@ -1131,24 +1149,6 @@
    "at": 1794314294000,
    "cat": "geek",
    "source": "IntoxiAnime"
-  },
-  {
-   "title": "AiNA THE END revela videoclipe colaborativo do tema de abertura do Arco de Elbaph de ONE PIECE",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/9/anime-one-piece-arco-de-elbaph-abertura-videoclipe-colaborativo-aina-the-end",
-   "summary": "O single ficou entre as 25 músicas mais escutadas das paradas semanais",
-   "img": "https://a.storyblok.com/f/178900/960x540/81b9047ff9/one-piece-luminous-collab-mv.jpg",
-   "at": 1794262800000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Puella Magi Madoka Magica: The Movie Trilogy está disponível na Crunchyroll",
-   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/9/puella-magi-madoka-magica-the-movie-trilogy-disponivel-na-crunchyroll",
-   "summary": "Os filmes foram lançados originalmente em 2012 e 2013",
-   "img": "https://a.storyblok.com/f/178900/1920x1080/64d15cc9ac/puella-magi-madoka-magica-the-movie-rebellion.jpeg",
-   "at": 1794261300000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
   },
   {
    "title": "Spy x Family: Novo filme e 4ª temporada serão lançados em 2027",
