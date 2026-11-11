@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794347484687,
+ "atualizadoEm": 1794359831395,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 13
+   "itens": 14
   },
   {
    "nome": "Eurogamer",
@@ -78,6 +78,97 @@
   }
  ],
  "itens": [
+  {
+   "title": "Meet The Bike-Riding, Mail-Delivering Raccoon Who Dares To Challenge GTA 6",
+   "url": "https://www.gamespot.com/articles/meet-the-bike-riding-mail-delivering-raccoon-who-dares-to-challenge-gta-6/",
+   "summary": "This November doesn't look like other Novembers, not on the game release calendar anyway. Typically, this month is reserved for the release of a few of the biggest games of the…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/TANUKI_4K_KEY_EN.jpg?w=300",
+   "at": 1794357306000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA VI de graça: na compra de uma TV Hisense na Amazon, os membros Primes ganham o jogo. Entenda!",
+   "url": "https://www.hardware.com.br/hardware-indica/gta-vi-de-graca-na-compra-de-uma-tv-hisense-na-amazon-os-membros-primes-ganham-o-jogo-entenda/",
+   "summary": "Membros Prime ganham GTA VI grátis na compra das TVs Hisense 65U7ESG e 65QD68SG de 65″. Veja como resgatar.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/tvhisense23.jpg",
+   "at": 1794356108000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Mouse gamer Logitech G203 está por menos da metade do preço no Esquenta 11.11 da Amazon",
+   "url": "https://br.ign.com/descontos/157527/mouse-gamer-logitech-g203-esta-por-menos-da-metade-do-preco-no-esquenta-1111-da-amazon",
+   "summary": "Modelo com fio tem sensor de até 8.000 DPI, seis botões programáveis e iluminação RGB personalizável",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/mouse-gamer-logitech-g203-u5j5_299360_2exa.jpg",
+   "at": 1794355236000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Tekken 8 Game Streams Roger Jr. Starter Guide",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/tekken-8-game-streams-roger-jr-starter-guide/.243701",
+   "summary": "Season 3 character launches in early access on November 11",
+   "img": "",
+   "at": 1794355200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Mouse Work, The Switch 2 Game Using Joy-Con Mouse Controls, Arrives This December",
+   "url": "https://www.nintendolife.com/news/2026/11/mouse-work-the-switch-2-game-using-joy-con-mouse-controls-arrives-this-december",
+   "summary": "Put in a shift. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and requires you to use mouse controls to…",
+   "img": "https://images.nintendolife.com/1ba1d7f577b4d/large.jpg",
+   "at": 1794353700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Presente de Natal! Nintendo Switch OLED está com 30% de desconto no Esquenta 11.11 da Amazon",
+   "url": "https://br.ign.com/descontos/157526/presente-de-natal-nintendo-switch-oled-esta-com-30-de-desconto-no-esquenta-1111-da-amazon",
+   "summary": "Console híbrido tem tela OLED de 7 polegadas, 64 GB de armazenamento e bateria de até 9 horas",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/nintendo-switch-oled-branco-thumb_233x.jpg",
+   "at": 1794351810000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The Iceblade Sorcerer Shall Rule the World Author Nana Mikoshiba's Original Novel Gets Manga Adaptation on November 17",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/the-iceblade-sorcerer-shall-rule-the-world-author-nana-mikoshiba-original-novel-gets-manga-/.243677",
+   "summary": "Artist Meguru Kanadome draws manga of Mikoshiba's novel",
+   "img": "",
+   "at": 1794351600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "3 anos depois de ser anunciado, PlayStation cancela Fairgames",
+   "url": "https://br.ign.com/fairgame/157528/3-anos-depois-de-ser-anunciado-playstation-cancela-fairgames",
+   "summary": "Game over Fairgames , um jogo de assalto do tipo \"serviço ao vivo\" (live-service) desenvolvido pela Haven Studios, da PlayStation, foi cancelado pela Sony. Um novo relatório da…",
+   "img": "https://sm.ign.com/ign_br/news/p/playstatio/playstation-cancels-live-service-heist-shooter-fairgames_ax52.jpg",
+   "at": 1794348179000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Esquenta 11.11! Bundle de PS5 Slim com GTA VI está com desconto exclusivo para Prime",
+   "url": "https://br.ign.com/descontos/157525/esquenta-1111-bundle-de-ps5-slim-com-gta-vi-esta-com-desconto-exclusivo-para-prime",
+   "summary": "Oferta exclusiva para membros Prime reúne o console, dois jogos da PlayStation e o código de GTA VI, que chega em 19 de novembro",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/bundle-gta-vi-playstation-5-slim-digital-825-gb-pacote-astro_366327_exm4.png",
+   "at": 1794348035000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Yu-Gi-Oh! Tag Force GX Game Previews Duels, Partners, Multiplayer, Exploration in New Trailer",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-10/yu-gi-oh-tag-force-gx-game-previews-duels-partners-multiplayer-exploration-in-new-trailer/.243697",
+   "summary": "Updated version of Yu-Gi-Oh! GX Tag Force 3 , previously unreleased in N. America, launches on February 16",
+   "img": "",
+   "at": 1794348000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Prepare-se para a 3ª temporada de Os Anéis de Poder: tudo o que você precisa lembrar e como garantir 30 dias de teste grátis",
+   "url": "https://br.ign.com/descontos/157524/prepare-se-para-a-3a-temporada-de-os-aneis-de-poder-tudo-o-que-voce-precisa-lembrar-e-como-garantir",
+   "summary": "Novos episódios chegam ao streaming nesta quarta-feira (11), mas alguns acontecimentos da temporada anterior merecem ser relembrados antes de voltar à Terra-média.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/lotr-6vbm_tjn9.jpg",
+   "at": 1794347017000,
+   "source": "IGN Brasil"
+  },
   {
    "title": "Madoka Magica: Konnichiwa promete novidades sobre o novo filme no Brasil",
    "url": "https://www.jbox.com.br/2026/11/10/madoka-magica-konnichiwa-promete-novidades-sobre-o-novo-filme-no-brasil/",
@@ -457,14 +548,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Novo Metroid 2D para Nintedo Switch 2 entra em pré-venda na Amazon",
-   "url": "https://br.ign.com/metroid-ravenous/157505/novo-metroid-2d-para-nintedo-switch-2-entra-em-pre-venda-na-amazon",
-   "summary": "Metroid Ravenous chega em 28 de janeiro de 2027",
-   "img": "https://sm.ign.com/ign_br/photo/default/metroid-ravenous-uk-preorders-2-1789040876992_w6h5.jpg",
-   "at": 1794328815000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Death Stranding 2 Headlines PlayStation Plus Game Catalog For November",
    "url": "https://www.gamespot.com/articles/death-stranding-2-headlines-playstation-plus-game-catalog-for-november/",
    "summary": "The next batch of games for the PlayStation Plus Game Catalog has been revealed. PS Plus Essential and Premium subscribers can grab 10 games in total this month, starting November…",
@@ -555,22 +638,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Carro de GTA 6 da vida real está sendo vendido por US$ 1,3 milhão",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157499/carro-de-gta-6-da-vida-real-esta-sendo-vendido-por-us-13-milhao",
-   "summary": "O veículo foi projetado pela Rockstar e pela West Coast Customs e é baseado no Ferrari Testarossa",
-   "img": "https://sm.ign.com/ign_br/news/a/a-real-lif/a-real-life-gta-6-car-is-being-sold-for-13-million_6d1x.jpg",
-   "at": 1794324903000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Rockstar Games confirma que GTA 6 será jogável no Xbox One de um jeito diferenciado",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157504/rockstar-games-confirma-que-gta-6-sera-jogavel-no-xbox-one-de-um-jeito-diferenciado",
-   "summary": "Isso se você não se importar com os melhores gráficos Após meses de especulação, a Rockstar finalmente revelou que o GTA 6 terá como meta 30 fps em todos os consoles da geração…",
-   "img": "https://sm.ign.com/ign_br/news/y/you-dont-n/you-dont-need-a-current-gen-console-if-youre-happy-to-play-g_kqr5.jpg",
-   "at": 1794324718000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Psyren ‒ Episode 5",
    "url": "https://www.animenewsnetwork.com/review/psyren/episode-5/.243687",
    "summary": "I wish I could still muster some lingering enthusiasm for seeing how the rest of this adaptation pans out, but right now, all I can feel towards it is apathy.",
@@ -578,22 +645,6 @@
    "at": 1794324600000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Esquenta 11.11: Mouse gamer Logitech G305 LIGHTSPEED fica mais barato na Amazon",
-   "url": "https://br.ign.com/descontos/157502/esquenta-1111-mouse-gamer-logitech-g305-lightspeed-fica-mais-barato-na-amazon",
-   "summary": "O mouse gamer sem fio da Logitech aparece com desconto especial durante o Esquenta 11.11 da Amazon, oferecendo tecnologia LIGHTSPEED e sensor HERO para jogos",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_bvtm.jpg",
-   "at": 1794324270000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6 fez com que alguns jogadores adiassem a compra de novos jogos — incluindo NBA 2K27 da Take-Two, afirma Strauss Zelnick",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157500/gta-6-fez-com-que-alguns-jogadores-adiassem-a-compra-de-novos-jogos-incluindo-nba-2k27-da-take-two-a",
-   "summary": "“Acreditamos que o lançamento de GTA 6 tenha influenciado o consumidor”",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-caus/gta-6-caused-some-gamers-to-hold-off-on-buying-new-games-inc_u1zj.jpg",
-   "at": 1794324039000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Rockstar details Grand Theft Auto 6 PS5 Pro enhancements, but it'll still only run at 30FPS",
@@ -615,7 +666,7 @@
    "title": "Review: Metaphor: ReFantazio (Switch 2) - An Extraordinary JRPG That Could Use Another Optimisation Pass",
    "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/metaphor-refantazio",
    "summary": "Atlus shrugged. A game with the name 'Metaphor' that tackles issues such as culture diversity, democracy, and classism isn't exactly subtle in its delivery, but is just as…",
-   "img": "https://images.nintendolife.com/reviews/nintendo-switch-2/metaphor-refantazio/large.jpg",
+   "img": "https://images.nintendolife.com/5d2aa699b5ff6/large.jpg",
    "at": 1794322800000,
    "source": "Nintendo Life"
   },
@@ -815,15 +866,6 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "A Certain Dark Item ‒ Episode 5",
-   "url": "https://www.animenewsnetwork.com/review/a-certain-dark-item/episode-5/.243666",
-   "summary": "Choubi is a master of disguise. But more than that, she has turned her body into a blank canvas to paint upon.",
-   "img": "",
-   "at": 1794313800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "As Arc Raiders celebrates its first birthday, publisher Nexon reveals the extraction shooter has topped 17 million sales, but revenue is set to decline",
    "url": "https://www.eurogamer.net/arc-raiders-17-million-sales-nexon-decline",
    "summary": "Arc Raiders , Embark Studios' popular extraction shooter, has exceeded 17m copies sold, according to publisher Nexon. Read more",
@@ -846,24 +888,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Nintendo-Switch-eShop-Presente-640x400.jpeg",
    "at": 1794313197000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Hollywood Reporter, Variety: Apple TV in Talks for Monarch: Legacy of Monsters Season 3",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/hollywood-reporter-variety-apple-tv-in-talks-for-monarch-legacy-of-monsters-season-3/.243668",
-   "summary": "Magazines: New season would have new showrunner, writers, Titan monsters",
-   "img": "",
-   "at": 1794311742000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Shueisha Games to Publish Nightmare Operator Action Horror Game",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-10/shueisha-games-to-publish-nightmare-operator-action-horror-game/.243679",
-   "summary": "Miyuki Sawashiro to voice lead in DDDistortion's game on Steam",
-   "img": "",
-   "at": 1794310993000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Nintendo's Analysis Indicates You Might Want To Watch The Zelda Movie With Others",
@@ -935,30 +959,6 @@
    "summary": "\"This is not an endorsement\". House House, the Australian development team behind indie hit Big Walk , has issued a statement via its FAQ page detailing a previously undisclosed…",
    "img": "https://images.nintendolife.com/8a6c58a96d6b8/large.jpg",
    "at": 1794300900000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Rayman Legends Retold Reveals Rabbids Outfit Exclusive To Switch 2",
-   "url": "https://www.nintendolife.com/news/2026/11/rayman-legends-retold-reveals-rabbids-outfit-exclusive-to-switch-2",
-   "summary": "Grab it from the costume shop. Rayman Legends Retold arrives this December and you'll be able to dress him up in all sorts of costumes. We've already got a look at the Assassin's…",
-   "img": "https://images.nintendolife.com/cd1f67d9b817a/large.jpg",
-   "at": 1794285900000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Mouse Work, The Switch 2 Game Using Joy-Con Mouse Controls, Is Finally Releasing",
-   "url": "https://www.nintendolife.com/news/2026/11/mouse-work-the-switch-2-game-using-joy-con-mouse-controls-is-finally-releasing",
-   "summary": "Put in a shift this December. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and requires you to use…",
-   "img": "https://images.nintendolife.com/bdb998fc09606/large.jpg",
-   "at": 1794279900000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Super Mario Party Jamboree Updated For Switch 2 And Switch (Version 2.4.0)",
-   "url": "https://www.nintendolife.com/news/2026/11/super-mario-party-jamboree-updated-for-switch-2-and-switch-version-2-4-0",
-   "summary": "The party doesn't stop! If you're a fan of Mario Party, you might be interested to hear, Nintendo has released a new update for Super Mario Party Jamboree today. The main part of…",
-   "img": "https://images.nintendolife.com/bc559475fd236/large.jpg",
-   "at": 1794276300000,
    "source": "Nintendo Life"
   },
   {
