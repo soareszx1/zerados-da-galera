@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794435297989,
+ "atualizadoEm": 1794446713818,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,75 @@
   }
  ],
  "itens": [
+  {
+   "title": "Zelda: Ocarina of Time vende 5,2 milhões em 4 dias",
+   "url": "https://animenew.com.br/zelda-ocarina-of-time-remake-vendas-switch-2/",
+   "summary": "O remake de The Legend of Zelda: Ocarina of Time para Nintendo Switch 2 ultrapassou 5,2 milhões de unidades vendidas em apenas quatro dias, estabelecendo um novo recorde para a…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Zelda-Ocarina-of-Time-vende-52-milhoes-em-4-dias.webp",
+   "at": 1794445053000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Berserk of Gluttony anuncia estreia da 2ª temporada",
+   "url": "https://animenew.com.br/berserk-of-gluttony-2-temporada-estreia/",
+   "summary": "O anime Berserk of Gluttony (Bōshoku no Berserk: Ore Dake Level to Iu Gainen wo Toppa Suru) confirmou que sua segunda temporada estreará em abril de 2027. O anúncio também revelou…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Berserk-of-Gluttony-anuncia-estreia-da-2a-temporada.webp",
+   "at": 1794444418000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Lara's New Tomb Raider Game Is Apparently On Its Way To Switch 2",
+   "url": "https://www.nintendolife.com/news/2026/11/laras-new-tomb-raider-game-is-apparently-on-its-way-to-switch-2",
+   "summary": "Amazon might have just confirmed it. Tomb Raider: Legacy of Atlantis (a reimagining of Lara's original 1996 game) was confirmed for the Switch 2 earlier this year, and will be…",
+   "img": "https://images.nintendolife.com/ee254b49147e5/large.jpg",
+   "at": 1794444300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Volante Logitech G29 leva a sensação da pista para casa e está com 20% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157571/volante-logitech-g29-leva-a-sensacao-da-pista-para-casa-e-esta-com-20-de-desconto-na-amazon",
+   "summary": "Modelo compatível com PS5, PS4 e PC traz rotação de 900 graus, pedaleira separada e aro revestido em couro",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/g29-capa_p4g9.jpg",
+   "at": 1794441810000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "McDonald’s confirma nova coleção de ‘Pokémon’ no Brasil com miniaturas e cards",
+   "url": "https://www.jbox.com.br/2026/11/11/mcdonalds-confirma-nova-colecao-de-pokemon-no-brasil-com-miniaturas-e-cards/",
+   "summary": "Colaboração já está disponível em outros territórios e chegará ao país em janeiro de 2027.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Pokemon-McDonalds-2027-destacada.jpg?ssl=1",
+   "at": 1794439520000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Crítica | O Sentido da Vida (2026)",
+   "url": "https://www.jbox.com.br/2026/11/11/critica-o-sentido-da-vida-2026/",
+   "summary": "Em seu novo filme, Ryusuke Hamaguchi transforma o caos da vida em uma obra encantadora, ainda que agridoce, sobre cumplicidade e esperança.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/jbox-critica-destacada-osentidodavida.jpg?ssl=1",
+   "at": 1794438327000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Terror em oferta! Resident Evil Requiem para PS5 está com 28% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157529/terror-em-oferta-resident-evil-requiem-para-ps5-esta-com-28-de-desconto-no-esquenta-1111-da-amazon",
+   "summary": "Nono jogo da série principal está no precinho com legendas em português e permite alternar entre primeira e terceira pessoa",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/resident-evil-requiem-ps5-dqy2_348361_x8a9.jpg",
+   "at": 1794438037000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Kamen Rider MY-TH lança crossover oficial com Tom e Jerry",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/11/kamen-rider-myth-tom-e-jerry-crossover",
+   "summary": "Ride X-Eggs, Seed X-Eggs e mais produtos serão lançados como parte dessa colaboração",
+   "img": "https://a.storyblok.com/f/178900/990x564/d131ca6079/kamen-rider-myth-tom-jerry.jpg",
+   "at": 1794437100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
   {
    "title": "Remake de The Legend of Zelda: Ocarina of Time se torna o jogo com as vendas mais rápidas do Switch 2",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/11/the-legend-of-zelda-ocarina-of-time-remake-jogo-vendas-mais-rapidas-switch-2",
@@ -522,14 +591,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Segundo relatos, novo líder da DC dará prioridade a personagens mais conhecidos, como Batman e Mulher-Maravilha",
-   "url": "https://br.ign.com/dc-universe/157552/segundo-relatos-novo-lider-da-dc-dara-prioridade-a-personagens-mais-conhecidos-como-batman-e-mulher",
-   "summary": "Uma nova era",
-   "img": "https://sm.ign.com/ign_br/news/d/dcs-new-le/dcs-new-leader-will-reportedly-prioritize-more-well-known-ch_hjc3.jpg",
-   "at": 1794411491000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "The Legend of Zelda: Ocarina of Time Remake Sells Over 5.2 Million Units to Become Nintendo's Fastest-Selling Switch 2 Game",
    "url": "https://www.animenewsnetwork.com/news/2026-11-11/the-legend-of-zelda-ocarina-of-time-remake-sells-over-5.2-million-units-to-become-nintendo-fastest-/.243722",
    "summary": "Remake surpasses previously reported lifetime sales of 2nd bestselling Switch 2 title Donkey Kong Bananza",
@@ -555,14 +616,6 @@
    "at": 1794411000000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "De olho no Nintendo Switch 2? Bundle com EA Sports FC 27 sai por menos de R$ 4 mil no 11.11 do Mercado Livre",
-   "url": "https://br.ign.com/descontos/157546/de-olho-no-nintendo-switch-2-bundle-com-ea-sports-fc-27-sai-por-menos-de-r-4-mil-no-1111-do-mercado",
-   "summary": "Pacote inclui console e versão digital do jogo de futebol da EA",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/switch-2-fc-27-produto-1280x720_9r2r.jpg",
-   "at": 1794410876000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Yu-Gi-Oh! TAG FORCE GX ganha trailer com detalhes de gameplay",
@@ -1008,7 +1061,7 @@
   {
    "title": "Mouse Work, The Switch 2 Game Using Joy-Con Mouse Controls, Arrives This December",
    "url": "https://www.nintendolife.com/news/2026/11/mouse-work-the-switch-2-game-using-joy-con-mouse-controls-arrives-this-december",
-   "summary": "Put in a shift. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and requires you to use mouse controls to…",
+   "summary": "Prepare for your shift by pre-ordering today. Remember Mouse Work ? It was announced by developer Nitrome for the Switch 2 just a few months before the system's launch and…",
    "img": "https://images.nintendolife.com/1ba1d7f577b4d/large.jpg",
    "at": 1794353700000,
    "source": "Nintendo Life"
@@ -1071,14 +1124,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Talking Point: With Big Walk, The AI-In-Game-Dev Debate Just Got A Lot Murkier",
-   "url": "https://www.nintendolife.com/features/talking-point-with-big-walk-the-ai-in-game-dev-debate-just-got-a-lot-murkier",
-   "summary": "Big talk. \"The line must be drawn here! This far, no further!\" Please forgive the Captain Picard First Contact quote (it's been a couple of weeks since Patrick Stewart's death and…",
-   "img": "https://images.nintendolife.com/35bdc8dc74477/large.jpg",
-   "at": 1794337200000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "My Death Flags Show No Sign of Ending tem anime confirmado para 2027",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/10/my-death-flags-show-no-sign-of-ending-anime-anunciado-2027",
    "summary": "Nessa adaptação da série de novels, acompanhamos um estudante que reencarna como o vilão do seu jogo favorito",
@@ -1102,15 +1147,6 @@
    "summary": "Evento acontece já nesta semana, nos dias 14 e 15 de novembro.",
    "img": "https://a.storyblok.com/f/178900/2880x1620/d18970f85d/the-ancient-magus-bride-season-2-part-2-opening.jpg",
    "at": 1794332580000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Trailer principal do filme ghost – end of night é divulgado",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/10/ghost-end-of-night-anime-filme-trailer-principal",
-   "summary": "Produção estreia em fevereiro de 2027 nos cinemas japoneses.",
-   "img": "https://a.storyblok.com/f/178900/1509x850/df3eee2bf6/ghost-end-of-night.png",
-   "at": 1794330420000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1221,42 +1257,6 @@
    "at": 1794182343000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "Bride of the Barrier Master revela vídeos dos protagonistas",
-   "url": "https://animenew.com.br/bride-of-the-barrier-master-videos-protagonistas/",
-   "summary": "O anime Bride of the Barrier Master (Kekkaishi no Ichirinka) divulgou novos vídeos promocionais de Hana Ichise e Saku Ichinomiya. A série estreia em janeiro de 2027 e terá Akari…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Bride-of-the-Barrier-Master-revela-videos-dos-protagonistas.webp",
-   "at": 1794146766000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Minami-ke: Korekara revela elenco e estreia em abril",
-   "url": "https://animenew.com.br/minami-ke-korekara-anime-elenco-estreia/",
-   "summary": "O anime Minami-ke: Korekara (Minami-ke: Going Forward), nova sequência da franquia Minami-ke, revelou seu primeiro trailer, visual promocional, elenco de voz e equipe de produção.…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Minami-ke-Korekara-revela-elenco-e-estreia-em-abril.webp",
-   "at": 1794146288000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Bomba!: Veneta anuncia publicação de mais um mangá de Osamu Tezuka",
-   "url": "https://www.jbox.com.br/2026/11/07/bomba-veneta-anuncia-publicacao-de-mais-um-manga-de-osamu-tezuka/",
-   "summary": "Suspense do início dos anos 1970 tem previsão de lançamento nacional para 2027.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/bomba-osamutezuka-destacada.jpg?ssl=1",
-   "at": 1794089755000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "The Dangers in My Heart: 3ª temporada ganha previsão de estreia em novo trailer",
-   "url": "https://www.jbox.com.br/2026/11/06/the-dangers-in-my-heart-3a-temporada-ganha-previsao-de-estreia-em-novo-trailer/",
-   "summary": "Animê teve retorno marcado para abril do ano que vem, dando continuidade para a temporada lançada em 2024.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/the-dangers-in-my-heart-3a-temporada-destacada.jpg?ssl=1",
-   "at": 1794008278000,
-   "cat": "geek",
-   "source": "JBox"
   }
  ]
 }
