@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794446713818,
+ "atualizadoEm": 1794456360089,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,56 @@
   }
  ],
  "itens": [
+  {
+   "title": "Skyrim Celebrates 15 Years Of Adventure With Switch eShop Sale, Get 60% Off",
+   "url": "https://www.nintendolife.com/news/2026/11/skyrim-celebrates-15-years-of-adventure-with-switch-eshop-sale-get-60percent-off",
+   "summary": "Play it again, for Todd. Forget Zelda and GTA for just a moment, as Bethesda needs to remind us about its epic fantasy RPG, The Elder Scrolls V: Skyrim . Read the full article on…",
+   "img": "https://images.nintendolife.com/38c74dd85fa63/large.jpg",
+   "at": 1794455100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Kirby Rides the Dragoon in New Chogokin Figure",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-11/kirby-rides-the-dragoon-in-new-chogokin-figure/.243742",
+   "summary": "Figure arrives next May",
+   "img": "",
+   "at": 1794452613000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Witcher 3's New Expansion Pairs Geralt's Polish Voice Actor With AI, But It's A \"Special Case\"",
+   "url": "https://www.nintendolife.com/news/2026/11/witcher-3s-new-expansion-pairs-geralts-polish-voice-actor-with-ai-but-its-a-special-case",
+   "summary": "CDPR got the actor's blessing, after he suffered a stroke. The Witcher 3 is getting a brand new expansion next year titled ' Songs of the Past ' and it's been revealed CD Projekt…",
+   "img": "https://images.nintendolife.com/5adc33a15e682/large.jpg",
+   "at": 1794452100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Resident Evil Requiem vence prêmio de “Jogo do Ano” no Golden Joystick Awards; veja todos os premiados",
+   "url": "https://www.adrenaline.com.br/games/resident-evil-requiem-vence-premio-de-jogo-do-ano-no-golden-joystick-awards-veja-todos-os-premiados/",
+   "summary": "Resident Evil Requiem vence o Jogo Supremo do Ano no Golden Joystick Awards 2026; confira a lista completa de vencedores por categoria!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/resident-evil-requiem-vence-premio-de-jogo-do-ano-no-golden-joystick-awards-veja-todos-os-premaidos-cover-640x400.jpg",
+   "at": 1794451968000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Gundam Seed Freedom Zero ganhará novel em janeiro",
+   "url": "https://animenew.com.br/gundam-seed-freedom-zero-novel/",
+   "summary": "A franquia Gundam Seed ganhará uma nova adaptação em formato de novel. Sendo assim a obra será baseada em Mobile Suit Gundam Seed FREEDOM ZERO, prelúdio do filme lançado em 2024.…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Gundam-Seed-Freedom-Zero-ganhara-novel-em-janeiro.webp",
+   "at": 1794451840000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Feito para jogos competitivos, monitor Alienware de 320 Hz e 0,5 ms está com 24% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157573/feito-para-jogos-competitivos-monitor-alienware-de-320-hz-e-05-ms-esta-com-24-de-desconto-na-amazon",
+   "summary": "AW2525HM tem tela Fast IPS de 24,5 polegadas, resolução Full HD e três anos de garantia",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/alienware-capa_wc1g.jpg",
+   "at": 1794447031000,
+   "source": "IGN Brasil"
+  },
   {
    "title": "Zelda: Ocarina of Time vende 5,2 milhões em 4 dias",
    "url": "https://animenew.com.br/zelda-ocarina-of-time-remake-vendas-switch-2/",
@@ -567,14 +617,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Desenvolvedor de Tekken diz que “gostaria que hardwares como o Series S não fossem lançados\"",
-   "url": "https://br.ign.com/tekken-8/157549/desenvolvedor-de-tekken-diz-que-hardwares-como-o-series-s-nao-fossem-lancados-para-executivo-do-xbox",
-   "summary": "Rapaz... Katsuhiro Harada, lenda por trás do desenvolvimento de Tekken , fez comentários contundentes sobre o Xbox Series S — console da Microsoft com menor poder de processamento…",
-   "img": "https://sm.ign.com/ign_br/news/t/tekken-leg/tekken-legend-katsuhiro-harada-says-he-wishes-hardware-like_erac.jpg",
-   "at": 1794412272000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Jogos de PC em oferta limitada; até 95% de desconto nesta semana",
    "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-limitada-ate-95-de-desconto-nesta-semana/",
    "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
@@ -633,15 +675,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-mouse-pi-for-hire-lowest-price.jpg?w=300",
    "at": 1794409200000,
    "source": "GameSpot"
-  },
-  {
-   "title": "CyberAgent Announces Business Alliance With Animation Studio MAPPA",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-11/cyberagent-announces-business-alliance-with-animation-studio-mappa/.243717",
-   "summary": "CyberAgent has acquired stake in MAPPA's parent company MHD Co.",
-   "img": "",
-   "at": 1794409200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Square Enix's Big Reset Is Working As It Increases Its Full-Year Forecast",
@@ -1076,14 +1109,6 @@
    "source": "JBox"
   },
   {
-   "title": "Jogos de PlayStation por menos de R$ 35 em oferta de Black Friday",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-por-menos-de-r-35-em-oferta-de-black-friday-2/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/zombie-army-4-1-640x400.webp",
-   "at": 1794344400000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Sony cancela Fairgames, seu shooter multiplayer exclusivo de PlayStation",
    "url": "https://www.hardware.com.br/games/sony-cancela-fairgames-shooter-multiplayer-exclusivo-de-playstation/",
    "summary": "Projeto da Haven Studios foi encerrado após testes com milhares de jogadores apresentarem resultados abaixo das expectativas; funcionários serão realocados, sem demissões.",
@@ -1106,22 +1131,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/big_walk_multiplayer_guide_how_to_play_with_friends_hero_316d041362.webp",
    "at": 1794343865000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Queen’s Domain Has The Most Terrifying Mimic Design I’ve Ever Seen",
-   "url": "https://www.gamespot.com/articles/queens-domain-has-the-most-terrifying-mimic-design-ive-ever-seen/",
-   "summary": "I thought I was holding my own in Queen’s Domain . It took a while to figure out the basics of movement and combat as I danced around carnivorous ladybugs and hid from fish that…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/20261105155124_1.jpg?w=300",
-   "at": 1794343414000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Sony Cancels Live-Service PS5 Game Fairgames, But No Layoffs",
-   "url": "https://www.gamespot.com/articles/sony-cancels-live-service-ps5-game-fairgames-but-no-layoffs/",
-   "summary": "Sony has canceled the upcoming live-service shooter Fairgame$, but there will be no job cuts connected to the game's closure. This is according to a report from Bloomberg today.…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fairgames.png?w=300",
-   "at": 1794343380000,
-   "source": "GameSpot"
   },
   {
    "title": "My Death Flags Show No Sign of Ending tem anime confirmado para 2027",
@@ -1248,15 +1257,6 @@
    "at": 1794231175000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Spy x Family terá 4ª temporada e novo filme em 2027",
-   "url": "https://animenew.com.br/spy-x-family-4-temporada-filme-2027/",
-   "summary": "O anime Spy x Family teve sua quarta temporada oficialmente anunciada neste domingo (8). Além da continuação, a franquia também ganhará um novo filme para os cinemas japoneses em…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Spy-x-Family-tera-4a-temporada-e-novo-filme-em-2027.webp",
-   "at": 1794182343000,
-   "cat": "geek",
-   "source": "AnimeNew"
   }
  ]
 }
