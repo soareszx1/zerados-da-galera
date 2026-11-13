@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794532907435,
+ "atualizadoEm": 1794542636680,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,65 @@
  ],
  "itens": [
   {
+   "title": "Teto Kasane Comes to Fortnite Festival",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-12/teto-kasane-comes-to-fortnite-festival/.243754",
+   "summary": "And will appear in Fortnite Battle Royale with Vocaloid idol Hatsune Miku",
+   "img": "",
+   "at": 1794538800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Round Up: The Reviews Are In For Metaphor: ReFantazio's Switch 2 Port",
+   "url": "https://www.nintendolife.com/news/2026/11/round-up-the-reviews-are-in-for-metaphor-refantazios-switch-2-port",
+   "summary": "Here's what the critics think. Metaphor: ReFantazio brings more JRPG action to the Switch 2 this week, and the reviews are now rolling in. Starting with our own here on Nintendo…",
+   "img": "https://images.nintendolife.com/7bb185c8284db/large.jpg",
+   "at": 1794538500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Agradecemos aos jogadores de XBOX pelos 25 anos: veja todos os anúncios",
+   "url": "https://news.xbox.com/pt-br/2026/11/13/agradecemos-aos-jogadores-de-xbox-pelos-25-anos-veja-todos-os-anuncios/",
+   "summary": "The post Agradecemos aos jogadores de XBOX pelos 25 anos: veja todos os anúncios appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1794536117000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "2ª temporada do anime HOTEL INHUMANS revela dois novos nomes para o elenco",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/13/hotel-inhumans-2-temporada-revela-dois-novos-nomes-elenco",
+   "summary": "A Crunchyroll transmite a adaptação em anime do mangá de drama de Ao Tajima",
+   "img": "https://a.storyblok.com/f/178900/1460x821/9cc5b7c306/hotel_inhumans_hikaru_matsuki_header.jpg",
+   "at": 1794536100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "DOOM Developer id Software Confirms It's Working On A New Game",
+   "url": "https://www.nintendolife.com/news/2026/11/doom-developer-id-software-confirms-its-working-on-a-new-game",
+   "summary": "It's reportedly another DOOM game. id Software, the developer known for FPS hits such as DOOM and Quake , has confirmed it's got a new game in the pipeline. Alongside the news…",
+   "img": "https://images.nintendolife.com/23b2030833a6b/large.jpg",
+   "at": 1794534900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Anime Aoharu Once More anuncia estreia para janeiro de 2027 e revela elenco principal em teaser",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/13/aoharu-once-more-anime-estreia-janeiro-2027-elenco-teaser",
+   "summary": "Tasuku Kaito e Kazuki Ura dão voz aos dois protagonistas",
+   "img": "https://a.storyblok.com/f/178900/960x540/f6f849baf7/aoharu-once-more-teaser-trailer.png",
+   "at": 1794534300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Antes de O Senhor dos Anéis: kit Grandes Contos de Tolkien sai por menos de R$ 110 na Amazon",
+   "url": "https://br.ign.com/descontos/157604/antes-de-o-senhor-dos-aneis-kit-grandes-contos-de-tolkien-sai-por-menos-de-r-110-na-amazon",
+   "summary": "Edição da HarperCollins reúne O Silmarillion, Beren e Lúthien e A Queda de Gondolin em capa dura",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/design-sem-nome-28_e23h.png",
+   "at": 1794533431000,
+   "source": "IGN Brasil"
+  },
+  {
    "title": "Blue Rights Company Unveils Pilot Film for Orochi -Seventh Echoes- Original Animated Feature",
    "url": "https://www.animenewsnetwork.com/news/2026-11-12/blue-rights-company-unveils-pilot-film-for-orochi-seventh-echoes-original-animated-feature/.243748",
    "summary": "Akira film animation director Takashi Nakamura helms film, credited for original concept",
@@ -86,6 +145,14 @@
    "at": 1794531600000,
    "cat": "geek",
    "source": "Anime News Network"
+  },
+  {
+   "title": "Wolfenstein 3 Is Now \"Officially In Production\" At MachineGames",
+   "url": "https://www.nintendolife.com/news/2026/11/wolfenstein-3-is-now-officially-in-production-at-machinegames",
+   "summary": "Want to see the script? Earlier this year in January, we heard how a third major Wolfenstein game was reportedly in the works, and it's now been confirmed. Read the full article…",
+   "img": "https://images.nintendolife.com/6bb69f0d3e9a0/large.jpg",
+   "at": 1794531300000,
+   "source": "Nintendo Life"
   },
   {
    "title": "Xbox anuncia Wolfenstein 3 após quase uma década sem novos jogos da franquia",
@@ -864,14 +931,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Suporte para dois monitores libera espaço na mesa e está com 45% de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/157575/suporte-para-dois-monitores-libera-espaco-na-mesa-e-esta-com-45-de-desconto-na-amazon",
-   "summary": "Modelo da ELG tem braços com pistão a gás, aceita telas de 17 a 35 polegadas e permite usar os monitores na vertical",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/elg-f160n-1_3xv2.jpg",
-   "at": 1794490230000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "União Europeia quer proibir loot boxes e práticas manipulativas em jogos e redes sociais",
    "url": "https://www.hardware.com.br/games/digital-fairness-act-loot-boxes-influenciadores/",
    "summary": "Proposta também mira em moedas virtuais, autoplay, publicidade direcionada a menores e influenciadores, com multas de até 6% do faturamento.",
@@ -912,14 +971,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Romancing SaGa 3: Destinies United Will Launch Earlier Than Expected On Switch 2",
-   "url": "https://www.nintendolife.com/news/2026/11/romancing-saga-3-destinies-united-will-launch-earlier-than-expected-on-switch-2",
-   "summary": "Result! Square Enix popped up at the September Nintendo Direct to reveal Romancing SaGa 3: Destinies United for Switch and Switch 2. It came with a 16th February 2027 release…",
-   "img": "https://images.nintendolife.com/1e2871705ef9d/large.jpg",
-   "at": 1794486600000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Reincarnated as a Sword Season 2 ‒ Episode 7",
    "url": "https://www.animenewsnetwork.com/review/reincarnated-as-a-sword-season-2/episode-7/.243745",
    "summary": "Hopefully this black-clad wielder of a massive sword isn't stuck on the ship for as long as Guts was in Berserk .",
@@ -956,30 +1007,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Nintendo declara guerra ao desbloqueio do Switch 2 e passa a bloquear jogos",
-   "url": "https://www.hardware.com.br/games/nintendo-desbloqueio-switch-2-guerra/",
-   "summary": "Usuários relatam que SmileBASIC 4 e Civilization VII passaram a exigir a atualização 23.5.0, dificultando ainda mais a utilização do primeiro jailbreak do Switch 2",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Nintendo-declara-guerra-ao-desbloqueio-do-Switch-2-e-passa-a-bloquear-jogos.jpg",
-   "at": 1794484655000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Resident Evil Requiem Crowned 'Ultimate Game Of The Year' At The Golden Joysticks Awards",
-   "url": "https://www.nintendolife.com/news/2026/11/resident-evil-requiem-crowned-ultimate-game-of-the-year-at-the-golden-joysticks-awards",
-   "summary": "Capcom cleans up. Resident Evil Requiem has been crowned 'Ultimate Game of the Year' at this year's Golden Joystick Awards. In fact, Capcom did remarkably well, scooping a total…",
-   "img": "https://images.nintendolife.com/7a0d8553bf471/large.jpg",
-   "at": 1794483900000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "“Seria uma idiotice do nível da Apple demitir Steve Jobs”: Tim Sweeney defende Jensen Huang, enquanto Elon Musk diz que seria “uma honra” contratá-lo",
-   "url": "https://www.hardware.com.br/tecnologia/tim-sweeney-defende-jensen-huang/",
-   "summary": "CEO da Epic Games critica possível saída de Jensen Huang, que enfrenta uma investigação interna; Elon Musk demonstra interesse em contar com o executivo",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Seria-uma-idiotice-do-nivel-da-Apple-demitir-Steve-Jobs-Tim-Sweeney-defende-Jensen-Huang-enquanto-Elon-Musk-diz-que-seria-uma-honra-contrata-lo.jpg",
-   "at": 1794483552000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "Nabe ni Tama wo Ukenagara TV Anime Reveals Main Cast, Staff, January Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-12/nabe-ni-tama-wo-ukenagara-tv-anime-reveals-main-cast-staff-january-debut/.243753",
    "summary": "Shū Uchida, Masaaki Mizunaka both voice Juntarō in J.C.STAFF anime",
@@ -994,15 +1021,6 @@
    "summary": "mabanua performs \"Step by Step feat. Sagiri Sól, Kenya Fujita\" for film opening on November 27",
    "img": "",
    "at": 1794476178000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Chained Soldier Manga Resumes on December 12",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-12/chained-soldier-manga-resumes-on-december-12/.243752",
-   "summary": "Manga went on hiatus in October after artist Yōhei Takemura's wrist injury",
-   "img": "",
-   "at": 1794474650000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -1102,24 +1120,6 @@
    "summary": "A nova temporada estreia em janeiro de 2027",
    "img": "https://a.storyblok.com/f/178900/2048x1152/5ab9879bf6/medaka-kuroiwa-season-2.jpg",
    "at": 1794417000000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Godzilla Minus Zero e como lidar com a Síndrome do Sobrevivente",
-   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/11/godzilla-minus-zero-lidando-com-a-sindrome-do-sobrevivente",
-   "summary": "Você conseguiria viver em lugar com um Godzilla?",
-   "img": "https://a.storyblok.com/f/178900/960x540/94f1adceea/godzilla-minus-zero.png",
-   "at": 1794412800000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "SUI, cantor de visual kei, anuncia show no Brasil para 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/11/sui-show-brasil-marco-2027",
-   "summary": "Apresentação acontece no dia 6 de março, em São Paulo.",
-   "img": "https://a.storyblok.com/f/178900/1024x683/e827217cef/sui.jpg",
-   "at": 1794412380000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
