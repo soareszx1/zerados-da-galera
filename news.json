@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794520597851,
+ "atualizadoEm": 1794532907435,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,20 +79,154 @@
  ],
  "itens": [
   {
-   "title": "New Doom Game Seemingly Announced In The Weirdest Way After Half The Studio Was Laid Off",
-   "url": "https://www.gamespot.com/articles/new-doom-game-seemingly-announced-in-the-weirdest-way-after-half-the-studio-was-laid-off/",
-   "summary": "Xbox CEO Asha Sharma has announced that id Software is officially working on a new game, believed to be another Doom title. This is happening after Sharma oversaw id Software…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/DoomGame.jpg?w=300",
-   "at": 1794517648000,
+   "title": "Blue Rights Company Unveils Pilot Film for Orochi -Seventh Echoes- Original Animated Feature",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-12/blue-rights-company-unveils-pilot-film-for-orochi-seventh-echoes-original-animated-feature/.243748",
+   "summary": "Akira film animation director Takashi Nakamura helms film, credited for original concept",
+   "img": "",
+   "at": 1794531600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Xbox anuncia Wolfenstein 3 após quase uma década sem novos jogos da franquia",
+   "url": "https://www.adrenaline.com.br/games/xbox-anuncia-wolfenstein-3-apos-quase-uma-decada-sem-novos-jogos-da-franquia/",
+   "summary": "Xbox anuncia Wolfenstein 3 quase uma década após The New Colossus e confirma retorno de Brian Bloom e Debra Wilson!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/xbox-anuncia-wolfenstein-3-apos-quase-uma-decada-sem-novos-jogos-da-franquia-cover-640x400.jpg",
+   "at": 1794531276000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Metaphor: ReFantazio chega ao Nintendo Switch 2",
+   "url": "https://animenew.com.br/metaphor-refantazio-nintendo-switch-2/",
+   "summary": "O jogo RPG Metaphor: ReFantazio já está disponível para Nintendo Switch 2. O lançamento aconteceu nesta quinta-feira, 12 de novembro de 2026, com melhorias gráficas e diferentes…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Metaphor-ReFantazio-chega-ao-Nintendo-Switch-2.webp",
+   "at": 1794530783000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Tsugumi Project ganha data de estreia para janeiro de 2027",
+   "url": "https://animenew.com.br/anime-tsugumi-project-estreia-janeiro-2027/",
+   "summary": "O anime Tsugumi Project (Tora Tsugumi) confirmou sua estreia para janeiro de 2027, contudo o anúncio também apresentou um novo visual da adaptação, baseada no mangá de ippatu. A…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Tsugumi-Project-ganha-data-de-estreia-para-janeiro-de-2027.webp",
+   "at": 1794528492000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Box premium de Harry Potter com os sete livros em capa dura está com 43% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157603/box-premium-de-harry-potter-com-os-sete-livros-em-capa-dura-esta-com-43-de-desconto-na-amazon",
+   "summary": "Os livros passam de 450 milhões de exemplares vendidos e foram traduzidos para 78 idiomas",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/design-sem-nome-26_7rr6.png",
+   "at": 1794528036000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Mega Man Legends: Vazamento indica novo lançamento para a série",
+   "url": "https://www.jbox.com.br/2026/11/12/mega-man-legends-vazamento-indica-novo-lancamento-para-a-serie/",
+   "summary": "Listagem do site do sindicato de artistas de Toronto, no Canadá, mostra a possível nova produção.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/mega-man-legends-destacada.jpg?ssl=1",
+   "at": 1794527645000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Nabe ni Tama wo Ukenagara revela elenco e estreia em janeiro",
+   "url": "https://animenew.com.br/nabe-ni-tama-wo-ukenagara-anime-estreia/",
+   "summary": "O anime Nabe ni Tama wo Ukenagara (Getting Shots on a Frying Pan or Nabetama for short) divulgou seu primeiro vídeo promocional, elenco principal e equipe de produção. A série…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Nabe-ni-Tama-wo-Ukenagara-revela-elenco-e-estreia-em-janeiro.webp",
+   "at": 1794527604000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "GALNERYUS fará turnê pela América Latina em 2027 com dois shows no Brasil",
+   "url": "https://www.jbox.com.br/2026/11/12/galneryus-fara-turne-pela-america-latina-em-2027-com-dois-shows-no-brasil/",
+   "summary": "Apresentações estão marcadas para fevereiro, passando por São Paulo e Brasília.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/03/galnaryus-destacada.jpg?ssl=1",
+   "at": 1794526531000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Black Friday: monitor BenQ ZOWIE de 400 Hz feito para CS2 e VALORANT está com quase R$ 2.600 de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157602/black-friday-monitor-benq-zowie-de-400-hz-feito-para-cs2-e-valorant-esta-com-quase-r-2600-de-descont",
+   "summary": "Modelo XL2566X+ tem tecnologia DyAc 2, abas laterais contra distrações e ajuste de altura e inclinação",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/novo-projeto-16_e9fk.jpg",
+   "at": 1794522634000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos na Steam em oferta por menos de R$ 15; até 95% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-na-steam-em-oferta-por-menos-de-r-15-ate-95-de-desconto/",
+   "summary": "A Steam renovou as ofertas baratinhas em sua plataforma com diversos jogos para PC com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/08/Fatal-Fury-City-of-the-Wolves-revela-Mai-e-sua-data-de-estreia-oficial-640x400.jpg",
+   "at": 1794522300000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "25 jogos do XBOX original estão disponíveis no PC via retrocompatibilidade",
+   "url": "https://news.xbox.com/pt-br/2026/11/12/25-jogos-do-xbox-original-estao-disponiveis-no-pc-por-meio-da-retrocompatibilidade/",
+   "summary": "The post 25 jogos do XBOX original estão disponíveis no PC via retrocompatibilidade appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1794520851000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Grand Theft Auto VI (GTA 6) Everything To Know",
+   "url": "https://www.gamespot.com/videos/grand-theft-auto-vi-gta-6-everything-to-know/",
+   "summary": "From its dizzying development history to its extensive gameplay mechanics, here’s everything to know about Grand Theft Auto VI.",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/ETK_GTAVI_20201112V3.jpg?w=300",
+   "at": 1794520800000,
    "source": "GameSpot"
+  },
+  {
+   "title": "Candy Crush Is Celebrating Xbox’s 25th Anniversary With Halo, Fallout, And Doom Crossovers, Including Remixed Music",
+   "url": "https://www.gamespot.com/articles/candy-crush-is-celebrating-xboxs-25th-anniversary-with-halo-fallout-and-doom-crossovers-including-remixed-music/",
+   "summary": "2026 is the 25th anniversary of Xbox, and it's been a tough year for the brand with mass layoffs, studio closures/divestitures, and game cancellations. But the celebrations are…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/doom.png?w=300",
+   "at": 1794520800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "XBOX libera 4 jogos para jogar de graça neste fim de semana – veja lista!",
+   "url": "https://www.adrenaline.com.br/games/xbox/xbox-libera-4-jogos-para-jogar-de-graca-neste-fim-de-semana-veja-lista-10/",
+   "summary": "Assinantes XBOX Game Pass Essential, Premium e Ultimate podem aproveitar esses jogos grátis para jogar durante os próximos dias",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/sunderfolk-640x400.webp",
+   "at": 1794520764000,
+   "source": "Adrenaline"
   },
   {
    "title": "Amazon Luna (Prime Gaming) de novembro traz 7 jogos; veja lista completa!",
    "url": "https://www.adrenaline.com.br/games/pc-games/amazon-luna-prime-gaming-de-novembro-traz-7-jogos-veja-lista-completa/",
    "summary": "Jurassic World Evolution 2 e Squirrel with a Gun são alguns dos jogos de novembro do Amazon Luna para assinantes Prime",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/amazon-luna-prime-gaming-novembro-640x400.webp",
-   "at": 1794517623000,
+   "at": 1794520683000,
    "source": "Adrenaline"
+  },
+  {
+   "title": "Jogos de Corrida para PlayStation em oferta de Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-corrida-para-playstation-em-oferta-de-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 21 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/07/The-Crew-Motorfest-sera-o-melhor-jogo-da-franquia-640x400.jpg",
+   "at": 1794519900000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "21 jogos do Xbox original chegam ao PC via retrocompatibilidade",
+   "url": "https://www.adrenaline.com.br/games/21-jogos-do-xbox-original-chegam-ao-pc-via-retrocompatibilidade/",
+   "summary": "A Microsoft decidiu celebrar os 25 anos do Xbox trazendo diversos títulos de seu primeiro console ao PC",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Jogos-Xbox-Retrocompatibilidade-PC-640x400.jpeg",
+   "at": 1794519534000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "New Doom Game Seemingly Announced In The Weirdest Way After Half The Studio Was Laid Off",
+   "url": "https://www.gamespot.com/articles/new-doom-game-seemingly-announced-in-the-weirdest-way-after-half-the-studio-was-laid-off/",
+   "summary": "Xbox CEO Asha Sharma has announced that id Software is officially working on a new game, believed to be another Doom title. This is happening after Sharma oversaw id Software…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/DoomGame.jpg?w=300",
+   "at": 1794517648000,
+   "source": "GameSpot"
   },
   {
    "title": "‘Zelda: Ocarina of Time’ vende mais de 5 milhões de cópias nos primeiros dias de lançamento",
@@ -333,14 +467,6 @@
    "img": "https://sm.ign.com/ign_br/screenshot/default/ps5-prism-capa-tres-cores-1280x720_5ca2.jpg",
    "at": 1794505617000,
    "source": "IGN Brasil"
-  },
-  {
-   "title": "XBOX libera 4 jogos para jogar de graça neste fim de semana – veja lista!",
-   "url": "https://www.adrenaline.com.br/games/xbox/xbox-libera-4-jogos-para-jogar-de-graca-neste-fim-de-semana-veja-lista-10/",
-   "summary": "Assinantes XBOX Game Pass Essential, Premium e Ultimate podem aproveitar esses jogos grátis para jogar durante os próximos dias",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/sunderfolk-640x400.webp",
-   "at": 1794505344000,
-   "source": "Adrenaline"
   },
   {
    "title": "Anime Millennium Family revela quem dará voz a Arthur",
@@ -607,14 +733,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Mario Kart World Switch 2 Bundle Black Friday Deal Brings The Price Back To 2025 Levels",
-   "url": "https://www.gamespot.com/articles/mario-kart-world-switch-2-bundle-black-friday-deal-brings-the-price-back-to-2025-levels/",
-   "summary": "Nintendo has announced its 2026 Black Friday deals, with a Mario Kart World Switch 2 hardware bundle as the centerpiece for $500. The Switch 2 launched in 2025 with a similar…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Switch-2-Mario-Kart-bundle.jpg?w=300",
-   "at": 1794495306000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Japanese Charts: Zelda: Ocarina Of Time Physical Takes The Lion's Share Of Its Japanese Sales",
    "url": "https://www.nintendolife.com/news/2026/11/japanese-charts-zelda-ocarina-of-time-physical-takes-the-lions-share-of-its-japanese-sales",
    "summary": "Physical is dead, eh? After Nintendo's reveal this week that The Legend of Zelda: Ocarina of Time had shifted 5.2 million units in its first four days, it will come as no surprise…",
@@ -762,14 +880,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Não é o jogo da Sega: chefe da Yakuza processa proprietários de via expressa por discriminação contra criminosos",
-   "url": "https://br.ign.com/yakuza-kiwami-xbox-one/157590/nao-e-o-jogo-da-sega-chefe-da-yakuza-processa-proprietarios-de-via-expressa-por-discriminacao-contra",
-   "summary": "Nem criminosos podem dirigir seus carros em paz... A franquia Like a Dragon tem diversos momentos icônicos que não condizem com a imagem popular de quem faz parte da Yakuza, mas…",
-   "img": "https://sm.ign.com/ign_br/news/y/yakuza-kiw/yakuza-kiwami-3-seemingly-on-the-way-after-fans-spot-alleged_dqpa.jpg",
-   "at": 1794489837000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Paradox boss Frederik Wester stepping down after several tumultuous years for the Cities Skylines and Stellaris publisher",
    "url": "https://www.eurogamer.net/paradox-ceo-frederik-wester-stepping-down",
    "summary": "Paradox Interactive's Frederik Wester has announced he's stepping down from the role of CEO after a combined decade and a half leading the company. The news follows several…",
@@ -786,14 +896,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Más notícias para quem comprou a mídia física de GTA 6: ela não inclui uma versão impressa do mapa do jogo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157577/mas-noticias-para-quem-comprou-a-midia-fisica-de-gta-6-ela-nao-inclui-uma-versao-impressa-do-mapa-do",
-   "summary": "\"Sabooor\" mídia física, já que também não conta com disco Sem disco e sem mapa! A edição física de GTA 6 para PS5 e Xbox Series rompe com uma tradição de 25 anos.",
-   "img": "https://sm.ign.com/ign_br/photo/default/vice-city-16-1793891731331_bx1m.jpg",
-   "at": 1794488436000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Marvel 1943 segue vivo, mas não deve ter muitos elementos de gameplay",
    "url": "https://www.adrenaline.com.br/games/marvel-1943-segue-vivo-mas-nao-deve-ter-muitos-elementos-de-gameplay/",
    "summary": "Marvel 1943: Rise of Hydra é descrito como um jogo feito para a Netflix que não tem muitos elementos interativos",
@@ -808,14 +910,6 @@
    "img": "https://assetsio.gnwcdn.com/GTA6_5nov-(2).jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794487160000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "AMD prepara Siren Halo no lugar de Medusa Halo, baseadas em Zen 6 e compatíveis com GDDR7 [RUMOR]",
-   "url": "https://www.adrenaline.com.br/amd/amd-prepara-siren-halo-no-lugar-de-medusa-halo-baseadas-em-zen-6-e-compativeis-com-gddr7-rumor/",
-   "summary": "Siren Halo, APUs de alta performance da AMD, podem chegar só em 2028 com design próximo ao processador do Xbox Magnus",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/amd-siren-halo-apu-gddr7-640x400.jpg",
-   "at": 1794487084000,
-   "source": "Adrenaline"
   },
   {
    "title": "Romancing SaGa 3: Destinies United Will Launch Earlier Than Expected On Switch 2",
@@ -886,30 +980,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Nvidia board considering ousting CEO Jensen Huang, report claims, as news of a second affair comes to light",
-   "url": "https://www.eurogamer.net/nvidia-ceo-jensen-huang-affair-share-price",
-   "summary": "Nvidia's board of directors has reportedly met to decide whether to remove the company's embattled CEO Jensen Huang, as news of a second extramarital affair has come to light.…",
-   "img": "https://assetsio.gnwcdn.com/NVIDIA-CEO-Jensen-Huang-Keynote-at-CES-2025-20-19-screenshot.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794483450000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Amy Hennig's Marvel 1943: Rise of Hydra hasn't been cancelled, Skydance reportedly says, as rumours swirl to the contrary",
-   "url": "https://www.eurogamer.net/marvel-1943-rise-of-hydra-not-cancelled-skydance-says",
-   "summary": "You'd be forgiven for forgetting that Amy Hennig's superhero game Marvel 1943: Rise of Hydra exists, but apparently it's still in development despite its many troubles and rumours…",
-   "img": "https://assetsio.gnwcdn.com/Marvel-1943_-Rise-of-Hydra-_-Story-Trailer-0-25-screenshot-(1).png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794482000000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Danganronpa Creator Says Physical Game Production Is Reliant On Day-One Patches",
-   "url": "https://www.nintendolife.com/news/2026/11/danganronpa-creator-says-physical-game-production-is-reliant-on-day-one-patches",
-   "summary": "\"We barely pass platform certification requirements\". Kazutaka Kodaka, creator of Danganronpa and The Hundred Line , has made a pretty incredible admission regarding the…",
-   "img": "https://images.nintendolife.com/9f928764de56e/large.jpg",
-   "at": 1794481200000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Nabe ni Tama wo Ukenagara TV Anime Reveals Main Cast, Staff, January Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-12/nabe-ni-tama-wo-ukenagara-tv-anime-reveals-main-cast-staff-january-debut/.243753",
    "summary": "Shū Uchida, Masaaki Mizunaka both voice Juntarō in J.C.STAFF anime",
@@ -917,14 +987,6 @@
    "at": 1794478654000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "New Limited-Time Pokémon Champions Distribution Is Now Available",
-   "url": "https://www.nintendolife.com/news/2026/11/new-limited-time-pokemon-champions-distribution-is-now-available",
-   "summary": "Get training. Just in time for the Latin America International Championships, The Pokémon Company has released a new limited-time distribution event for Pokémon Champions (thanks,…",
-   "img": "https://images.nintendolife.com/d187f71a1fd35/large.jpg",
-   "at": 1794478500000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Live-Action Wandance Film's New Video Previews Insert Song by mabanua",
@@ -943,23 +1005,6 @@
    "at": 1794474650000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Resident Evil Requiem Wins Golden Joystick Awards' Ultimate Game of the Year, Console Game of the Year",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-12/resident-evil-requiem-wins-golden-joystick-awards-ultimate-game-of-the-year-console-game-of-the-year/.243739",
-   "summary": "Onimusha: Way of the Sword , Pragmata , Capcom also take home awards",
-   "img": "",
-   "at": 1794472230000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Resident Evil Requiem vence prêmio de “Jogo do Ano” no Golden Joystick Awards; veja todos os premiados",
-   "url": "https://www.adrenaline.com.br/games/resident-evil-requiem-vence-premio-de-jogo-do-ano-no-golden-joystick-awards-veja-todos-os-premiados/",
-   "summary": "Resident Evil Requiem vence o Jogo Supremo do Ano no Golden Joystick Awards 2026; confira a lista completa de vencedores por categoria!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/resident-evil-requiem-vence-premio-de-jogo-do-ano-no-golden-joystick-awards-veja-todos-os-premaidos-cover-640x400.jpg",
-   "at": 1794451968000,
-   "source": "Adrenaline"
   },
   {
    "title": "Gundam Seed Freedom Zero ganhará novel em janeiro",
@@ -1169,24 +1214,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "My Hero Ultra Rumble ganhará versão mobile",
-   "url": "https://animenew.com.br/my-hero-ultra-rumble-versao-mobile/",
-   "summary": "O jogo My Hero Ultra Rumble (My Hero Academia Ultra Rumble in Japan), baseado no universo de My Hero Academia, ganhará uma versão para dispositivos móveis. Contudo a empresa…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/My-Hero-Ultra-Rumble-ganhara-versao-mobile.webp",
-   "at": 1794362171000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "My Crush’s Crush revela elenco e estreia em abril de 2027",
-   "url": "https://animenew.com.br/my-crushs-crush-anime-elenco-estreia-2027/",
-   "summary": "O anime My Crush’s Crush (Boku no Suki na Hito ga Suki na Hito) divulgou seu primeiro teaser, apresentando os dubladores principais, a equipe de produção e a previsão de estreia…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/My-Crushs-Crush-revela-elenco-e-estreia-em-abril-de-2027.webp",
-   "at": 1794361614000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
    "title": "Madoka Magica: Konnichiwa promete novidades sobre o novo filme no Brasil",
    "url": "https://www.jbox.com.br/2026/11/10/madoka-magica-konnichiwa-promete-novidades-sobre-o-novo-filme-no-brasil/",
    "summary": "Empresa foi responsável pela distribuição de 'Walpurgisnacht Rising' em outros países da América Latina.",
@@ -1230,33 +1257,6 @@
    "at": 1794258867000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Zelda 40 Anos: Livro feito por ex-editores da ‘Nintendo World’ e da ‘Herói’ abre campanha",
-   "url": "https://www.jbox.com.br/2026/11/09/zelda-40-anos-livro-feito-por-ex-editores-da-nintendo-world-e-da-heroi-abre-campanha/",
-   "summary": "Quem garantir os exemplares até 14 de novembro tem frete grátis; campanha no Catarse vai até 3 de janeiro.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/zelda40anoscover.png?ssl=1",
-   "at": 1794257330000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Público brasileiro de animês prefere os gêneros de comédia e drama, aponta levantamento",
-   "url": "https://www.jbox.com.br/2026/11/09/publico-brasileiro-de-animes-prefere-os-generos-de-comedia-e-drama-aponta-levantamento/",
-   "summary": "Dados da plataforma ANIQuim mostram que ação, fantasia e aventura também estão entre as preferências.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Aniquim-humor-destacada.jpg?ssl=1",
-   "at": 1794252546000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Crunchyroll e outras plataformas de anime enfrentam novas questões sobre a privacidade dos usuários",
-   "url": "https://animenew.com.br/crunchyroll-plataformas-de-anime-novas-questoes-privacidade-usuarios/",
-   "summary": "Assistir a animes por streaming envolve muito mais do que escolher uma série e acompanhar seus episódios. Plataformas como Crunchyroll registram informações sobre contas,…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Crunchyroll-e-outras-plataformas-de-anime-enfrentam-novas-questoes-sobre-a-privacidade-dos-usuarios.webp",
-   "at": 1794233397000,
-   "cat": "geek",
-   "source": "AnimeNew"
   }
  ]
 }
