@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794661403942,
+ "atualizadoEm": 1794671406011,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 15
+   "itens": 14
   },
   {
    "nome": "Eurogamer",
@@ -79,6 +79,106 @@
  ],
  "itens": [
   {
+   "title": "GTA 6 teria rodado a 60 FPS no PS5 Pro, mas com um grande sacrifício",
+   "url": "https://www.hardware.com.br/games/gta-6-rodado-60-fps-no-ps5-pro/",
+   "summary": "GTA 6 a 60 FPS no PS5 Pro? Suposta declaração da Rockstar surpreende jogadores",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA2-1-scaled.jpg",
+   "at": 1794670792000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Um dia nos bastidores de O Senhor dos Anéis: Os Anéis de Poder! - IGN Visita",
+   "url": "https://br.ign.com/senhor-dos-aneis-serie/157638/um-dia-nos-bastidores-de-o-senhor-dos-aneis-os-aneis-de-poder-ign-visita",
+   "summary": "Passeamos um dia no universo de O Senhor dos Anéis na Inglaterra! Para a chegada da 3ª temporada de O Senhor dos Anéis: Os Anéis do Poder, viajamos até o Reino Unido para viver…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/controle-visita-senhor-dos-aneis-v2_u8qm.jpg",
+   "at": 1794668439000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Uma das melhores séries do ano acabou de estrear na Netflix e ninguém está vendo",
+   "url": "https://br.ign.com/cinema-tv/157562/uma-das-melhores-series-do-ano-acabou-de-estrear-na-netflix-e-ninguem-esta-vendo",
+   "summary": "Novos episódios estreiam todos os sábados Dentre meu rodízio de séries, k-dramas, doramas e c-dramas já viraram rotina, mas meus olhos foram chamados a atenção quando uma série…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/n1-20261111-153347-0000_1zkv.png",
+   "at": 1794668437000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos para XBOX em oferta com até 85% de desconto – veja lista!",
+   "url": "https://www.adrenaline.com.br/games/xbox/jogos-para-xbox-em-oferta-com-ate-85-de-desconto-veja-lista/",
+   "summary": "Os interessados já podem aproveitar as ofertas na loja do Xbox por tempo limitado e adquirir os jogos da lista de desejos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/01/forza-horizon-6-veja-requisitos-minimos-para-rodar-o-game-no-pc-cover-640x400.jpg",
+   "at": 1794668400000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Vilões Icônicos: Tomura Shigaraki é o herói dos vilões",
+   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/14/viloes-anime-tomura-shigaraki",
+   "summary": "Shigaraki adiciona uma camada de complexidade à ideia do que é um vilão e do que é um herói",
+   "img": "https://a.storyblok.com/f/178900/960x540/c7c62514d0/my-hero-academia.jpg",
+   "at": 1794668400000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Cinco dias em Vice City: estúdio de Palworld libera funcionários para jogar GTA 6",
+   "url": "https://www.hardware.com.br/games/palworld-libera-funcionarios-gta-6/",
+   "summary": "Pocketpair anuncia uma “viagem de negócios” a Vice City durante o lançamento de GTA 6; outras empresas também estão adotando medidas semelhantes",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA3-scaled.jpg",
+   "at": 1794666987000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Love Live! Hasu no Sora Jogakuin School Idol Club Anime's Special Video Previews TV Footage",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-14/love-live-hasu-no-sora-jogakuin-school-idol-club-anime-special-video-previews-tv-footage/.243814",
+   "summary": "Video also previews \"Dream Believers (106th Class Start Ver.)\" song",
+   "img": "",
+   "at": 1794665764000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "World Trigger Tops Oricon's Comic Ranking for October",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-14/world-trigger-tops-oricon-comic-ranking-for-october/.243760",
+   "summary": "That Time I Got Reincarnated as a Slime volume 33 ranks at #2, Case Closed volume 109 ranks at #3",
+   "img": "",
+   "at": 1794665700000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Opinion: Nintendo Made Ocarina Of Time's Best Moment Even Better",
+   "url": "https://www.nintendolife.com/features/opinion-nintendo-made-ocarina-of-times-best-moment-even-better",
+   "summary": "Masterful. Before launch, I didn't think it would be possible for anyone to spoil Ocarina of Time on Switch 2 for me. I've played through the N64 original more times than I care…",
+   "img": "https://images.nintendolife.com/ce0522aa2d841/large.jpg",
+   "at": 1794664800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "CRYMELIGHT Game Review",
+   "url": "https://www.animenewsnetwork.com/review/game/playstation-5-nintendo-switch-2-and-pc/crymelight/.243634",
+   "summary": "Three years after CRYMACHINA , the newest entry in the CRY Series, FURYU's CRYMELIGHT , has been released, and we’ll tell you whether it was worth the wait.",
+   "img": "",
+   "at": 1794664800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Versão física de GTA 6 traz erro que revela código do jogo sem ela ser aberta",
+   "url": "https://www.adrenaline.com.br/games/versao-fisica-de-gta-6-traz-erro-que-revela-codigo-do-jogo-sem-ela-ser-aberta/",
+   "summary": "Alguns consumidores afirmam que suas cópias físicas de GTA 6 vieram com erros e sem nenhum código impresso",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Versao-Fisica-Codigo-Resgate-640x400.jpeg",
+   "at": 1794663373000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "\"Foi uma completa idiotice\": 10 anos antes da CD Projekt fazer história com The Witcher, outro estúdio tentou trazer Geralt para os games",
+   "url": "https://br.ign.com/the-witcher-2/157650/foi-uma-completa-idiotice-10-anos-antes-da-cd-projekt-fazer-historia-com-the-witcher-outro-estudio-t",
+   "summary": "A ambição dos devs acabou atrapalhando os planos na década de 90 A Metropolis Software chegou a um acordo com Andrzej Sapkowski para adaptar a aventura de Geralt para um jogo bem…",
+   "img": "https://sm.ign.com/ign_br/news/t/the-witche/the-witcher-remake-is-on-hold-until-the-witcher-4s-developme_8x8t.jpg",
+   "at": 1794661234000,
+   "source": "IGN Brasil"
+  },
+  {
    "title": "Semana de estreia da JUMP – Mangás mais Vendidos (Novembro 02 – Novembro 08)",
    "url": "https://www.intoxianime.com/2026/11/semana-de-estreia-da-jump-mangas-mais-vendidos-novembro-02-novembro-08/",
    "summary": "... O post Semana de estreia da JUMP – Mangás mais Vendidos (Novembro 02 – Novembro 08) apareceu primeiro em IntoxiAnime .",
@@ -86,6 +186,14 @@
    "at": 1794661108000,
    "cat": "geek",
    "source": "IntoxiAnime"
+  },
+  {
+   "title": "The Blood of Dawnwalker vai ganhar New Game Plus em próximo update",
+   "url": "https://www.adrenaline.com.br/games/the-blood-of-dawnwalker-vai-ganhar-new-game-plus-em-proximo-update/",
+   "summary": "The Blood of Dawnwalker finalmente vai ganhar uma opção que os fãs pedem desde o momento de sua estreia",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Blood-Dawnwalker-New-Game-Plus-640x400.jpg",
+   "at": 1794659868000,
+   "source": "Adrenaline"
   },
   {
    "title": "Isekai Douraku – Novel sobre homem OP vivendo despreocupado tem anuncio de anime",
@@ -192,7 +300,7 @@
   {
    "title": "Re:ZERO -Starting Life in Another World- TV Anime Gets 5th Season",
    "url": "https://www.animenewsnetwork.com/news/2026-11-14/re-zero-starting-life-in-another-world-tv-anime-gets-5th-season/.243813",
-   "summary": "\"Ultra teaser visual\" revealed",
+   "summary": "\"Early teaser visual\" revealed",
    "img": "",
    "at": 1794657600000,
    "cat": "geek",
@@ -622,15 +730,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Titan Holds Distribution of Five Star Stories Manga's 1st English Volume to Review Translation Situation (Updated)",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-13/titan-holds-distribution-of-five-star-stories-manga-1st-english-volume-to-review-translation-/.243800",
-   "summary": "Titan Manga: \"We take the quality and integrity of our translations extremely seriously and fully recognize the gravity of this situation.\"",
-   "img": "",
-   "at": 1794596400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Star Citizen fica de graça pelas próximas duas semanas para promover o evento IAE 2956",
    "url": "https://www.adrenaline.com.br/games/pc-games/star-citizen-fica-de-graca-pelas-proximas-duas-semanas-para-promover-o-evento-iae-2956/",
    "summary": "Exposição virtual de espaçonaves em Star Citizen vai permitir que qualquer jogador interessado experimente mais de 200 veículos do game",
@@ -655,15 +754,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "STEEL BALL RUN JoJo's Bizarre Adventure ‒ Episode 9",
-   "url": "https://www.animenewsnetwork.com/review/steel-ball-run-jojo-bizarre-adventure/episode-9/.243801",
-   "summary": "This episode captures every part of what I love about the original manga and somehow, almost miraculously, manages to improve upon one of the most celebrated works in all of…",
-   "img": "",
-   "at": 1794594600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Crimson Desert studio is implementing AI \"throughout our entire development pipeline,\" and expects DokeV to launch in 2028",
    "url": "https://www.eurogamer.net/crimson-desert-ai-pipeline-dokev-2028",
    "summary": "Crimson Desert and DokeV developer Pearl Abyss is planning to further integrate generative AI into its workflow. Read more",
@@ -680,22 +770,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Mapa final de Crazy Taxi: World Tour é revelado, com a Índia sendo o 5º destino do jogo",
-   "url": "https://br.ign.com/crazy-taxi-world-tour/157630/mapa-final-de-crazy-taxi-world-tour-e-revelado-com-a-india-sendo-o-5o-destino-do-jogo",
-   "summary": "Sim, teremos Bollywood O próximo mapa confirmado para Crazy Taxi: World Tour é a Índia, que conta com três zonas distintas que celebram as diversas culturas e marcas registradas…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/1000081360_dfzx.jpg",
-   "at": 1794592836000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "LG UltraGear 34G600: como um monitor UltraWide pode transformar a experiência de jogar e trabalhar",
-   "url": "https://www.adrenaline.com.br/artigos/lg-ultragear-34g600-como-um-monitor-ultrawide-pode-transformar-a-experiencia-de-jogar-e-trabalhar/",
-   "summary": "Monitores UltraWide ampliam o campo de visão e oferecem mais imersão e fluidez para quem busca uma experiência gamer diferenciada",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/LG-UltraGear-34G600-chamada-640x400.jpg",
-   "at": 1794592800000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "After A Week With WoW: Forever, Classic WoW Feels New Again",
    "url": "https://www.gamespot.com/articles/after-a-week-with-wow-forever-classic-wow-feels-new-again/",
    "summary": "It's been just over a week since the record-breaking launch of World of Warcraft: Forever . In that time a handful of players have raced to level 60, but the overwhelming majority…",
@@ -710,14 +784,6 @@
    "img": "https://images.nintendolife.com/7c6639207b0e3/large.jpg",
    "at": 1794591900000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "\"O combate por turnos é uma mecânica atemporal que já provou profundamente sua jogabilidade\": designer-chefe de Honkai Star Rail fala sobre o gênero e celebra c",
-   "url": "https://br.ign.com/honkai-star-rail/157643/o-combate-por-turnos-e-uma-mecanica-atemporal-que-ja-provou-profundamente-sua-jogabilidade-designer",
-   "summary": "“Esperamos que todos se divirtam muito na nova versão” Honkai Star Rail é um dos pilares da HoYoverse e, assim como muitos títulos da desenvolvedora, explora o gênero de RPG, mas…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/honkai-star-rail-4-7-drip-marketing-speculation-cover_5cym.png",
-   "at": 1794591788000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Samsung Smart TV 55″ Crystal UHD 4K U8000H sai por R$2.500: Vision AI Companion, Modo Estádio, Xbox Cloud Gaming e mais",
@@ -760,29 +826,12 @@
    "source": "PlayStation Blog BR"
   },
   {
-   "title": "This Week in Games - SaGa's End",
-   "url": "https://www.animenewsnetwork.com/this-week-in-games/2026-11-13/saga-end/.243645",
-   "summary": "We bid farewell to a beloved translator this week before exploring a new mystery visual novel.",
-   "img": "",
-   "at": 1794589200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "id Software anuncia novo jogo em meio ao “banho de sangue” no Xbox",
    "url": "https://www.hardware.com.br/games/id-software-anuncia-novo-jogo-xbox/",
    "summary": "Estúdio responsável por DOOM e Quake confirmou que seu próximo projeto está em desenvolvimento, mas ainda não revelou qual franquia será utilizada",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/id-Software-anuncia-novo-jogo-em-meio-ao-banho-de-sangue-no-Xbox.jpg",
    "at": 1794588183000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Amazon dá GTA 6 de graça na compra de Smart TVs Hisense selecionadas",
-   "url": "https://br.ign.com/descontos/157642/amazon-da-gta-6-de-graca-na-compra-de-smart-tvs-hisense-selecionadas",
-   "summary": "Oportunidade para garantir o próximo grande lançamento da franquia GTA junto com uma nova Smart TV Hisense, sem pagar a mais pelo jogo",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_t8dc.jpg",
-   "at": 1794587857000,
-   "source": "IGN Brasil"
   },
   {
    "title": "GTA 6 And These Other Games Can Justify An $80 Price, Expert Says",
@@ -799,14 +848,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/original/1579/15795667/3350505-friday-the-13th-the-game_0.jpg?w=300",
    "at": 1794587561000,
    "source": "GameSpot"
-  },
-  {
-   "title": "PS5 anuncia QSSR em Marvel’s Spider-Man 2 e revela lista dos próximos jogos",
-   "url": "https://www.adrenaline.com.br/games/playstation/ps5-anuncia-qssr-em-marvels-spider-man-2-e-revela-lista-dos-proximos-jogos/",
-   "summary": "Control Resonant, Arc Raiders e No Man's Sky estão entre os próximos jogos a receberem QSSR no PS5",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/ps5-qssr-spider-man-2-mais-jogos-640x400.jpg",
-   "at": 1794587502000,
-   "source": "Adrenaline"
   },
   {
    "title": "Como Dragon Ball Super: Beerus reestrutura suas batalhas",
@@ -841,14 +882,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/04/2-18.jpg",
    "at": 1794586526000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Jogos da CAPCOM em oferta na Nuuvem com até 85% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-capcom-em-oferta-na-nuuvem-com-ate-85-de-desconto/",
-   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/resident-evil-requiem-5-640x400.webp",
-   "at": 1794585900000,
-   "source": "Adrenaline"
   },
   {
    "title": "Mini Review: Sonic Pico Park (Switch) - Charming Puzzle-Platformer Returns With A Nostalgic Co-Op Collab",
@@ -992,30 +1025,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "These 30+ Games Are Coming To Nintendo Switch eShop This Week (November 12)",
-   "url": "https://www.nintendolife.com/news/2026/11/these-30plus-games-are-coming-to-nintendo-switch-eshop-this-week-november-12",
-   "summary": "Including three tasty discounts! It's time for North America's Nintendo Download update, and our Switch eShop round-up for November 12th (yes, it came in late yesterday so we're…",
-   "img": "https://images.nintendolife.com/b3d44cb872233/large.jpg",
-   "at": 1794567600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Will GTA 6 break the internet? UK broadband operator braces for impact, saying \"GTA 6 has been on our radar for a long time\"",
-   "url": "https://www.eurogamer.net/gta-6-internet-uk-broadband-ofcom-openreach",
-   "summary": "As Grand Theft Auto 6 breaks pre-order records on the PlayStation and Xbox stores , and looks poised to break many more sales records once it launches next week, questions of…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-no-internet.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794562960000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Video: Sonic's 'Memories And Beyond' 35th Anniversary Animation Released",
-   "url": "https://www.nintendolife.com/news/2026/11/video-sonics-memories-and-beyond-35th-anniversary-animation-released",
-   "summary": "Can Sonic and friends defeat Metal Sonic? Earlier this year, Sega announced a new Sonic the Hedgehog 35th anniversary animation short, titled ' Memories and Beyond '. Now, months…",
-   "img": "https://images.nintendolife.com/a0185025c78db/large.jpg",
-   "at": 1794552900000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "DLC de Laocorn para Fatal Fury: City of the Wolves ganha trailer e data",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/13/fatal-fury-city-of-the-wolves-laocorn-gaudeamus-trailer-data",
    "summary": "O personagem será lançado no dia 19 de novembro",
@@ -1156,15 +1165,6 @@
    "summary": "As vozes de Juntaro também foram reveladas no novo trailer",
    "img": "https://a.storyblok.com/f/178900/1920x1080/cd43d25951/nabe-ni-tama-o-ukenagara-getting-shots-on-a-frying-pan-anime-teaser-trailer-video.png",
    "at": 1794496560000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Sakuna Chronicles: Kokorowa and the Gears of Creation tem novo trailer divulgado",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/12/sakuna-chronicles-kokorowa-and-the-gears-of-creation-trailer",
-   "summary": "O jogo é um spin-off de Sakuna: Of Rice and Ruin.",
-   "img": "https://a.storyblok.com/f/178900/1024x576/c030b480d2/sakuna-chronicles-kokorowa-and-the-gears-of-creation.jpg",
-   "at": 1794494580000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
