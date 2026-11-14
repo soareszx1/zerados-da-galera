@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794671406011,
+ "atualizadoEm": 1794682529564,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 14
+   "itens": 15
   },
   {
    "nome": "Eurogamer",
@@ -78,6 +78,89 @@
   }
  ],
  "itens": [
+  {
+   "title": "Kakao, OpenAI Collaborate on AI-Generated Short Animation Based on Ryan Begins Webtoon",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-14/kakao-openai-collaborate-on-ai-generated-short-animation-based-on-ryan-begins-webtoon/.243712",
+   "summary": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
+   "img": "",
+   "at": 1794680100000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Sony perde na Justiça após brasileiro comprar jogos de PS4 e não receber acesso às versões para PS Vita",
+   "url": "https://www.hardware.com.br/noticias/brasileiro-processa-sony-jogos-ps-vita/",
+   "summary": "Brasileiro consegue decisão favorável contra a Sony após comprar três jogos de PS4 que também prometiam acesso às versões para PS Vita.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/vita-processo.jpg",
+   "at": 1794676760000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Golden Joystick Awards 2026: Resident Evil Requiem é Ultimate Game of the Year",
+   "url": "https://www.hardware.com.br/games/golden-joystick-awards-2026/",
+   "summary": "Veja os vencedores do Golden Joystick Awards 2026, de Resident Evil Requiem a indies como MECCHA CHAMELEON",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Golden-Joystick-Awards-2026-Resident-Evil-Requiem-e-Ultimate-Game-of-the-Year.jpg",
+   "at": 1794675897000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Jogos de PC em oferta com até 90% de desconto por tempo limitado",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-com-ate-90-de-desconto-por-tempo-limitado-2/",
+   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/10/Tomb-Raider-Definitive-Survivor-Trilogy-640x400.webp",
+   "at": 1794675600000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Detective Conan: The Clash of the Red and Black Anime Series Review",
+   "url": "https://www.animenewsnetwork.com/review/detective-conan/the-clash-of-the-red-and-black/anime-series/.243437",
+   "summary": "Conan Edogawa’s fight to uncover the one truth continues as a new possible ally reveals his connections to the devious Black Organization, and the FBI seems to begin making moves!",
+   "img": "",
+   "at": 1794675600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nintendo 3DS no Switch? Site de Zelda dá esperanças de que isso vai acontecer",
+   "url": "https://www.adrenaline.com.br/games/nintendo-3ds-no-switch-site-de-zelda-da-esperancas-de-que-isso-vai-acontecer/",
+   "summary": "No site oficial da série, The Legend of Zelda: A Link Between Worlds do 3DS aparece entre os jogos do Nintendo Classics",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Nintendo-3DS-Switch-Zelda-01-640x400.jpeg",
+   "at": 1794673799000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Classroom of the Elite: Year 3 Tops Oricon's Light Novel Ranking for October",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-14/classroom-of-the-elite-year-3-tops-oricon-light-novel-ranking-for-october/.243810",
+   "summary": "Witch on the Holy Night , Alya Sometimes Hides Her Feelings in Russian rank at #2, #3",
+   "img": "",
+   "at": 1794672900000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Casualties: Unknown Is A Brutal 97%-Rated Survival Game That Will Make You Realize Your Mortality, And At A Cheap Price, Too",
+   "url": "https://www.gamespot.com/articles/casualties-unknown-is-a-brutal-97-rated-survival-game-that-will-make-you-realize-your-mortality-and-at-a-cheap-price-too/",
+   "summary": "There’s no light. The shuttle that brought me into the depths is fitted with just a shower, and the darkness swallows everything around me. Each step is as painful as the last,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-casualties-unknown-deal.jpg?w=300",
+   "at": 1794672324000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Black Friday da Amazon traz GameSir Nova Lite por menos de R$153: o controle sem drift que funciona em tudo",
+   "url": "https://www.hardware.com.br/hardware-indica/gamesir-nova-lite-por-r170-com-37-de-desconto-o-controle-sem-drift-que-funciona-em-tudo/",
+   "summary": "GameSir Nova Lite por R$ 153 com desconto: Hall Effect sem drift, compatível com PC, Switch, Android e iOS.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/21-6.jpg",
+   "at": 1794672025000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Mini Review: Tape To Tape (Switch) - A Great Roguelite For Underserved Hockey Lovers",
+   "url": "https://www.nintendolife.com/reviews/switch-eshop/tape-to-tape",
+   "summary": "Accept Fight! (L+R). If you are a hockey fan with a Switch, you have been poorly served by the system’s library. Odd really, considering how well hockey itself translates into…",
+   "img": "https://images.nintendolife.com/272d3544fec23/large.jpg",
+   "at": 1794672000000,
+   "source": "Nintendo Life"
+  },
   {
    "title": "GTA 6 teria rodado a 60 FPS no PS5 Pro, mas com um grande sacrifício",
    "url": "https://www.hardware.com.br/games/gta-6-rodado-60-fps-no-ps5-pro/",
@@ -623,15 +706,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "J-Novel Club Licenses Putting a Price on World Peace Novels, I'm Dating a Dark Summoner Manga, More Titles",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-13/j-novel-club-licenses-putting-a-price-on-world-peace-novels-im-dating-a-dark-summoner-manga-more-/.243781",
-   "summary": "Company to also release Rebuild World novels, A Royal Rebound manga in print next year",
-   "img": "",
-   "at": 1794600000000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Mapa de GTA 6 presente na edição de colecionador vaza na internet",
    "url": "https://www.adrenaline.com.br/games/mapa-de-gta-6-presente-na-edicao-de-colecionador-vaza-na-internet/",
    "summary": "A Rockstar Games preparou um mapa estilizado de GTA 6 que mostra a densidade de seu mapa",
@@ -648,15 +722,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "The Fall 2026 Anime Preview Guide - One-Room TA",
-   "url": "https://www.animenewsnetwork.com/preview-guide/2026/fall/one-room-ta/.243805",
-   "summary": "Streaming service OceanVeil's new boys-love series premiered today! We checked out One-Room TA to see what the fuss is about.",
-   "img": "",
-   "at": 1794599359000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "\"É nossa intenção fazer com que isso dure 10 ou 20, se não 50 a 100 anos\": Sony não quer encerrar a história de Demon Slayer com a última parte de Castelo Infin",
    "url": "https://br.ign.com/demon-slayer/157647/e-nossa-intencao-fazer-com-que-isso-dure-10-ou-20-se-nao-50-a-100-anos-sony-nao-quer-encerrar-a-hist",
    "summary": "Ainda teremos muito de Tanjiro no futuro A Sony não pretende encerrar Demon Slayer após o lançamento da úlitma parte de Castelo Infinito . Em uma recente entrevista, o presidente…",
@@ -671,15 +736,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Ambrosia_06_6fdec7.jpg?w=300",
    "at": 1794598564000,
    "source": "GameSpot"
-  },
-  {
-   "title": "The Apothecary Diaries Season 3 ‒ Episode 55",
-   "url": "https://www.animenewsnetwork.com/review/the-apothecary-diaries-season-3/episode-55/.243799",
-   "summary": "If Basen comes through this plotline with his sanity intact, I will be very impressed.",
-   "img": "",
-   "at": 1794598200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "God of War: Sons of Sparta recebe novo conteúdo e port para o PS4 em 16 de novembro",
@@ -730,28 +786,12 @@
    "source": "GameSpot"
   },
   {
-   "title": "Star Citizen fica de graça pelas próximas duas semanas para promover o evento IAE 2956",
-   "url": "https://www.adrenaline.com.br/games/pc-games/star-citizen-fica-de-graca-pelas-proximas-duas-semanas-para-promover-o-evento-iae-2956/",
-   "summary": "Exposição virtual de espaçonaves em Star Citizen vai permitir que qualquer jogador interessado experimente mais de 200 veículos do game",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/star-citizen-periodo-gratis-iae-640x400.jpg",
-   "at": 1794596162000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Erro ou anúncio antes da hora? Nintendo lista jogo de 3DS de The Legend of Zelda como jogável no Switch Online, mesmo que serviço não tenha suporte da família d",
    "url": "https://br.ign.com/the-legend-of-zelda-a-link-between-worlds/157645/erro-ou-anuncio-antes-da-hora-nintendo-lista-jogo-de-3ds-de-the-legend-of-zelda-como-jogavel-no-swit",
    "summary": "A Link Between Worlds foi lançado em 2013 e continua preso na família 3DS The Legend of Zelda: A Link Between Worlds aparece como um título jogável pelo Nintendo Switch Online,…",
    "img": "https://sm.ign.com/ign_br/screenshot/default/albw-20261113-152956-0000_k2t1.jpg",
    "at": 1794596016000,
    "source": "IGN Brasil"
-  },
-  {
-   "title": "Jogos de PC em oferta com até 95% de desconto por tempo limitado",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-com-ate-95-de-desconto-por-tempo-limitado-4/",
-   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/04/clair-obscur-expedition-33-vendas-1-milhao-640x400.jpg",
-   "at": 1794594660000,
-   "source": "Adrenaline"
   },
   {
    "title": "Crimson Desert studio is implementing AI \"throughout our entire development pipeline,\" and expects DokeV to launch in 2028",
@@ -940,22 +980,6 @@
    "source": "Xbox Wire Brasil"
   },
   {
-   "title": "Slay the Spire 2 gets its first new character since its massively successful launch in March as part of \"biggest\" beta patch yet",
-   "url": "https://www.eurogamer.net/slay-the-spire-2-biggest-update-new-character-the-fool",
-   "summary": "Slay the Spire 2, which released into early access earlier this year, is expanding once more with a major new beta update. This introduces the deckbuilder's first new character…",
-   "img": "https://assetsio.gnwcdn.com/slay-the-spire-2-fool-header.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794582130000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "“Apenas compre GTA 6”: Desenvolvedor de jailbreak do PS5 faz alerta aos jogadores",
-   "url": "https://www.hardware.com.br/games/compre-gta-6-jailbreak-ps5-alerta/",
-   "summary": "Mesmo com os recentes avanços no desbloqueio do console, proteções presentes nas versões mais novas do sistema dificultam a extração de jogos",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA9-1-scaled.jpg",
-   "at": 1794581472000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "Sonic enfrenta Metal Sonic em curta-animado para o 35º aniversário da franquia",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/13/sonic-aniversario-35-anos-animacao",
    "summary": "A animação dirigida por Kevin Molina-Ortiz e roteirizada por Ian Flynn teve produção da GXS Productions",
@@ -974,14 +998,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Review: CRKD Ult Pro Controller For Switch 1 & 2 - A Decent Pad Let Down By Awful Shoulder & Bumper Buttons",
-   "url": "https://www.nintendolife.com/reviews/crkd-ult-pro-controller-for-switch-1-and-2-a-decent-pad-let-down-by-awful-shoulder-and-bumper-buttons",
-   "summary": "Feels like it's gonna CRK. CRKD is the latest accessory manufacturer to produce a premium alternative to Nintendo’s own Pro Controller on Switch 2, but it’s one that needs a lot…",
-   "img": "https://images.nintendolife.com/33b8dacd135a0/large.jpg",
-   "at": 1794578400000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Anime de Living It Up in Another World Until I Get Bored é oficialmente anunciado",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/13/living-it-up-in-another-world-until-i-get-bored-anime-anunciado",
    "summary": "O anime está previsto para estrear no Japão em janeiro de 2027",
@@ -989,14 +1005,6 @@
    "at": 1794578160000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "\"The Series Was In Dire Straits\" - Kit & Krysta Recall Zelda's Pre-BOTW Dark Times",
-   "url": "https://www.nintendolife.com/news/2026/11/the-series-was-in-dire-straits-kit-and-krysta-recall-zeldas-pre-botw-dark-times",
-   "summary": "\"We are losing this\". While many of us can now look back on the Skyward Sword s of the Zelda series with fondness, those who were in the trenches at the time might recall that…",
-   "img": "https://images.nintendolife.com/b8f3289d60a92/large.jpg",
-   "at": 1794576600000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Isekai Tensei Soudouki – Anime sobre garoto com 3 almas no mesmo corpo ganha trailer com OP e ED e Data",
@@ -1015,14 +1023,6 @@
    "at": 1794573210000,
    "cat": "geek",
    "source": "IntoxiAnime"
-  },
-  {
-   "title": "Xbox boss announces Wolfenstein 3 and confirms new game in development at idSoftware despite reported job cut \"bloodbath\"",
-   "url": "https://www.eurogamer.net/wolfenstein-3-new-id-software-game-announced-xbox",
-   "summary": "Xbox boss Asha Sharma has confirmed Wolfenstein 3 is in development at MachineGames, the Swedish studio behind the acclaimed Wolfenstein: The New Order , Wolfenstein 2: The New…",
-   "img": "https://assetsio.gnwcdn.com/wolfenstein-header_gmu0BH3.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794572390000,
-   "source": "Eurogamer"
   },
   {
    "title": "DLC de Laocorn para Fatal Fury: City of the Wolves ganha trailer e data",
