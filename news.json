@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794640530123,
+ "atualizadoEm": 1794650166173,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,22 @@
   }
  ],
  "itens": [
+  {
+   "title": "Ele comprou uma cabana antiga por 3 mil euros e achou uma moeda de 1740 com um detector de metal",
+   "url": "https://br.ign.com/tech/157516/ele-comprou-uma-cabana-antiga-por-3-mil-euros-e-achou-uma-moeda-de-1740-com-um-detector-de-metal",
+   "summary": "Virgilio começou a restaurar uma casa abandonada nas montanhas das Astúrias sem ter a mínima ideia de construção O tempo do confinamento da Covid-19 fez com que muitas pessoas…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_fc42.jpg",
+   "at": 1794646836000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "What we've been playing - \"Whether he means to or not, he serves sass all over town\"",
+   "url": "https://www.eurogamer.net/what-weve-been-playing-sass-all-over-town-link-ocarina",
+   "summary": "Another week has climaxed and I'm so sorry you had to read that on a Saturday morning. But here we are again, with our regular feature, where we talk about what we've been playing…",
+   "img": "https://assetsio.gnwcdn.com/link-ocarina-remake-adult.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794643200000,
+   "source": "Eurogamer"
+  },
   {
    "title": "Pikmin's Mobile Soundtrack Has Been Added To Nintendo Music, Here's Every Song Included",
    "url": "https://www.nintendolife.com/news/2026/11/pikmins-mobile-soundtrack-has-been-added-to-nintendo-music-heres-every-song-included",
@@ -781,14 +797,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "39 filmes e mais de 70 anos de franquia: guia oficial do Godzilla chega ao Brasil em edição histórica",
-   "url": "https://br.ign.com/godzilla-minus-zero/157635/39-filmes-e-mais-de-70-anos-de-franquia-guia-oficial-do-godzilla-chega-ao-brasil-em-edicao-historica",
-   "summary": "Godzilla: O Guia Oficial do Rei dos Monstros já está em pré-venda O Rei dos Monstros vai desembarcar no Brasil com a chegada do guia oficial do Godzilla intitulado \"Godzilla: O…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/g1-20261113-113206-0000_vzmn.jpg",
-   "at": 1794581607000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Xbox Playback traz uma retrospectiva completa de sua história com a marca",
    "url": "https://www.adrenaline.com.br/games/xbox-playback-traz-uma-retrospectiva-completa-de-sua-historia-com-a-marca/",
    "summary": "O Xbox Playback promete um registro completo dos principais momentos de suas jogatinas nos consoles e no PC",
@@ -1024,14 +1032,6 @@
    "at": 1794526531000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "25 jogos do XBOX original estão disponíveis no PC via retrocompatibilidade",
-   "url": "https://news.xbox.com/pt-br/2026/11/12/25-jogos-do-xbox-original-estao-disponiveis-no-pc-por-meio-da-retrocompatibilidade/",
-   "summary": "The post 25 jogos do XBOX original estão disponíveis no PC via retrocompatibilidade appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1794520851000,
-   "source": "Xbox Wire Brasil"
   },
   {
    "title": "‘Zelda: Ocarina of Time’ vende mais de 5 milhões de cópias nos primeiros dias de lançamento",
