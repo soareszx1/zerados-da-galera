@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794866283421,
+ "atualizadoEm": 1794878702086,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,77 @@
   }
  ],
  "itens": [
+  {
+   "title": "‘Re:ZERO’ tem 5ª temporada anunciada",
+   "url": "https://www.jbox.com.br/2026/11/16/rezero-tem-5a-temporada-anunciada/",
+   "summary": "Fase mais recente foi exibida entre abril e setembro deste ano, adaptando o arco 6 da série de light novels.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/re-zero-subaru-destacada.jpg?ssl=1",
+   "at": 1794877520000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Jogos da CAPCOM em oferta no Nintendo Switch 1 & 2; até 83% de desconto",
+   "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-capcom-em-oferta-no-nintendo-switch-1-2-ate-83-de-desconto-2/",
+   "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/pragmata-gameplay-chamada-640x400.jpg",
+   "at": 1794875760000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "2ª temporada de WITCH WATCH tem estreia confirmada para 2027 e ganha nova ilustração promocional",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/witch-watch-2-temporada-estreia-2027-ilustracao-promocional",
+   "summary": "A Crunchyroll transmite a 1ª temporada da adaptação repleta de magia do mangá da Shonen Jump",
+   "img": "https://a.storyblok.com/f/178900/960x540/0bbebca0d8/witch-watch.jpg",
+   "at": 1794874500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Trailer de Love Live! Hasunosora Jyogakuin School Idol Club revela novas cenas do anime",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/love-live-hasunosora-jyogakuin-school-idol-club-trailer-novas-cenas-anime",
+   "summary": "A versão em anime para TV estreia no Japão em 10 de janeiro",
+   "img": "https://a.storyblok.com/f/178900/960x539/e8582ed6a5/love-live-hasunosora-tv-anime-pv.jpg",
+   "at": 1794873900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Os Cavaleiros do Zodíaco: Almanaque Científico do Japão anuncia colaboração com o mangá ‘Next Dimension’",
+   "url": "https://www.jbox.com.br/2026/11/16/os-cavaleiros-do-zodiaco-almanaque-cientifico-do-japao-anuncia-colaboracao-com-o-manga-next-dimension/",
+   "summary": "Parceria é uma celebração ao lançamento da 100ª edição da publicação.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Os-Cavaleiros-do-Zodiaco-next-dimension-destacada.jpg?ssl=1",
+   "at": 1794870900000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Tetsuya Tsutsui Launches New Ortrans Manga",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-16/tetsuya-tsutsui-launches-new-ortrans-manga/.243867",
+   "summary": "Ortrans debuts on January 21",
+   "img": "",
+   "at": 1794870000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "WITCH WATCH: Mangá chega ao fim e animê tem retorno marcado para 2027",
+   "url": "https://www.jbox.com.br/2026/11/16/witch-watch-manga-chega-ao-fim-e-anime-tem-retorno-marcado-para-2027/",
+   "summary": "1ª temporada foi exibida no ano passado, estando disponível na Netflix e na Crunchyroll.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/witch-watch-destacada.jpg?ssl=1",
+   "at": 1794868335000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "D.I.C.E. Awards Honors Nintendo Game Creator Shigeru Miyamoto With Inaugural Legend Award",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-16/d.i.c.e-awards-honors-nintendo-game-creator-shigeru-miyamoto-with-inaugural-legend-award/.243870",
+   "summary": "Super Mario Bros. , Legend of Zelda creator earns award presented only once per decade",
+   "img": "",
+   "at": 1794866400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Procurando um notebook para presentear? Veja as melhores opções",
    "url": "https://br.ign.com/descontos/157596/procurando-um-notebook-para-presentear-veja-as-melhores-opcoes",
@@ -689,15 +760,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "34% of Developers in 2026 GDC Survey Were Laid Off in Last 2 Years",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-16/34-percent-of-developers-in-2026-gdc-survey-were-laid-off-in-last-2-years/.243840",
-   "summary": "40% of game developers use generative AI, though 55% comment it has negative impact",
-   "img": "",
-   "at": 1794838500000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Xbox confirma que Project Helix é “um console capaz de rodar jogos do seu PC”",
    "url": "https://br.ign.com/xbox-next-generation/157665/xbox-confirma-que-project-helix-e-um-console-capaz-de-rodar-jogos-do-seu-pc",
    "summary": "A próxima geração",
@@ -712,15 +774,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-6-bloqueio-regiao-ps5.jpg",
    "at": 1794837654000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Nia Liston: The Merciless Maiden Volumes 1-4 Light Novel Series Review",
-   "url": "https://www.animenewsnetwork.com/review/nia-liston/the-merciless-maiden-volumes-1-4/light-novel-series/.243172",
-   "summary": "An ancient warrior’s soul inhabits a small girl's dying body and brings her back to health. Now this four-year-old has a plan for power, and the world will tremble.",
-   "img": "",
-   "at": 1794837600000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "2ª temporada de Skip and Loafer ganha novo trailer e imagem promocional",
@@ -963,14 +1016,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Jogos de PC em oferta no Esquenta Black Friday Nuuvem; até 91% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-no-esquenta-black-friday-nuuvem-ate-91-de-desconto/",
-   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/Final-Fantasy-VII-Remake-DLCs-Square-Enix-640x400.jpeg",
-   "at": 1794775042000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Anime Bride of the Barrier Master divulga trailer dedicado a Hazuki Ichise",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/15/bride-of-the-barrier-master-anime-trailer-hazuki-ichise",
    "summary": "A estreia da série está prevista para janeiro de 2027",
@@ -1066,24 +1111,6 @@
    "summary": "A adaptação do mangá de comédia estreia em janeiro de 2027",
    "img": "https://a.storyblok.com/f/178900/960x540/483b439b3b/giant-ojosama-stella.jpeg",
    "at": 1794690900000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Re:ZERO -Starting Life in Another World- tem sua 5ª temporada anunciada",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/14/anime-re-zero-starting-life-in-another-world-temporada-5-anuncio-arte",
-   "summary": "O anúncio veio com uma arte teaser para a vindoura temporada",
-   "img": "https://a.storyblok.com/f/178900/960x540/fef7981b04/re-zero-starting-life-in-another-world-season-4.jpg",
-   "at": 1794687300000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Vilões Icônicos: Tomura Shigaraki é o herói dos vilões",
-   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/14/viloes-anime-tomura-shigaraki",
-   "summary": "Shigaraki adiciona uma camada de complexidade à ideia do que é um vilão e do que é um herói",
-   "img": "https://a.storyblok.com/f/178900/960x540/c7c62514d0/my-hero-academia.jpg",
-   "at": 1794668400000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1205,24 +1232,6 @@
    "source": "JBox"
   },
   {
-   "title": "‘Zelda: Ocarina of Time’ vende mais de 5 milhões de cópias nos primeiros dias de lançamento",
-   "url": "https://www.jbox.com.br/2026/11/12/zelda-ocarina-of-time-vende-mais-de-5-milhoes-de-copias-nos-primeiros-dias-de-lancamento/",
-   "summary": "Remake já conquistou a marca de jogo com a maior quantidade de vendas no Switch 2 no mesmo período.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/the-legend-of-zelda-ocarina-of-time-remake-destacada.jpg?ssl=1",
-   "at": 1794517462000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Kaqreal: Editora Kodansha lança selo de mangás jornalísticos",
-   "url": "https://www.jbox.com.br/2026/11/12/kaqreal-editora-kodansha-lanca-selo-de-mangas-jornalisticos/",
-   "summary": "A iniciativa, que busca aproximar o jornalismo da linguagem dos quadrinhos, transforma reportagens, investigações e acontecimentos históricos em mangás.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/kaqreal-destacada.jpg?ssl=1",
-   "at": 1794509712000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
    "title": "Gundam Seed Freedom Zero ganhará novel em janeiro",
    "url": "https://animenew.com.br/gundam-seed-freedom-zero-novel/",
    "summary": "A franquia Gundam Seed ganhará uma nova adaptação em formato de novel. Sendo assim a obra será baseada em Mobile Suit Gundam Seed FREEDOM ZERO, prelúdio do filme lançado em 2024.…",
@@ -1248,15 +1257,6 @@
    "at": 1794444418000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "McDonald’s confirma nova coleção de ‘Pokémon’ no Brasil com miniaturas e cards",
-   "url": "https://www.jbox.com.br/2026/11/11/mcdonalds-confirma-nova-colecao-de-pokemon-no-brasil-com-miniaturas-e-cards/",
-   "summary": "Colaboração já está disponível em outros territórios e chegará ao país em janeiro de 2027.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Pokemon-McDonalds-2027-destacada.jpg?ssl=1",
-   "at": 1794439520000,
-   "cat": "geek",
-   "source": "JBox"
   }
  ]
 }
