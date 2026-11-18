@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794986994938,
+ "atualizadoEm": 1794996982086,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,56 @@
   }
  ],
  "itens": [
+  {
+   "title": "Uma empresa comprou 125 aviões de LEGO por US$ 13 mil para os funcionários, mas alguém terá que montar tudo",
+   "url": "https://br.ign.com/lego/157721/uma-empresa-comprou-125-avioes-de-lego-por-us-13-mil-para-os-funcionarios-mas-alguem-tera-que-montar",
+   "summary": "Um belo (e trabalhoso) presente de Natal As peças individuais foram compradas diretamente da Lego através do Pick a Brick, o que rendeu uma bela quantidade de pontos no programa…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_ujtx.jpg",
+   "at": 1794996016000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Blizzard suspends World of Warcraft: Forever gold exploit abusers, puts trading blocks on their accounts and removes ill-gotten funds for good measure",
+   "url": "https://www.eurogamer.net/world-of-warcraft-forever-gold-exploit-abusers-suspended-trade-blocked",
+   "summary": "Players who abused World of Warcraft: Forever's Blackmaw Hold unintended gold farm, which allowed a small minority of players to hoard thousands of gold in a few days , have drawn…",
+   "img": "https://assetsio.gnwcdn.com/goblin-gold.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794995420000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Former GTA 4 and Red Dead boss thinks \"we are one Toy Story moment away\" from people accepting gen-AI in game development in the West",
+   "url": "https://www.eurogamer.net/gta-4-red-dead-redemption-take-two-ben-feder-ai-toy-story",
+   "summary": "Ben Feder, the former Take-Two CEO who oversaw the launch of massive hits like Grand Theft Auto 4, Red Dead Redemption, Borderlands, and BioShock during his tenure, believes the…",
+   "img": "https://assetsio.gnwcdn.com/digitalfoundry-2017-kingdom-hearts-3-vs-toy-story-face-off-1500711980973.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1794993210000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "New Votoms Anime Films Stream 1st 9 Minutes",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/new-votoms-anime-films-stream-1st-9-minutes/.243938",
+   "summary": "1st film opens in Japan on Friday",
+   "img": "",
+   "at": 1794992558000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Depois de Steve Jobs tirar um notebook de um envelope, chegou a vez da Huawei “fazer mágica”: colocou um e tirou outro",
+   "url": "https://br.ign.com/tech/157719/depois-de-steve-jobs-tirar-um-notebook-de-um-envelope-chegou-a-vez-da-huawei-fazer-magica-colocou-um",
+   "summary": "Anúncio do MateBook Fold S faz referência à apresentação do MacBook Air em 2008 A Huawei se inspirou em Steve Jobs para apresentar seu novo notebook.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_gx5d.jpg",
+   "at": 1794992435000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Identity V Game's Oha Suta Daigo Gakuen Short Anime Unveils More Cast, Staff, November 24 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/identity-v-game-oha-suta-daigo-gakuen-short-anime-unveils-more-cast-staff-november-24-debut/.243933",
+   "summary": "Takehito Koyasu, Nobunaga Shimazaki, Yūichirō Umehara, Makoto Furukawa co-star",
+   "img": "",
+   "at": 1794986406000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Spyro's New Adventure Seemingly Teased For The Game Awards 2026",
    "url": "https://www.nintendolife.com/news/2026/11/spyros-new-adventure-seemingly-teased-for-the-game-awards-2026",
@@ -410,15 +460,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "HIDIVE Streams Giant Ojosama TV Anime This Winter; Screens N. American Premiere at Anime Frontier on December 4",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-17/hidive-streams-giant-ojosama-tv-anime-this-winter-screens-n-american-premiere-at-anime-frontier-on-/.243917",
-   "summary": "English-subbed trailer streams for anime premiering in January 2027",
-   "img": "",
-   "at": 1794943052000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "GTA 6 a 120 FPS? Ferramenta gratuita promete mais fluidez, mas tem uma limitação",
    "url": "https://www.hardware.com.br/games/gta-6-a-120-fps-smoovplay/",
    "summary": "SmoovPlay utiliza inteligência artificial para gerar quadros adicionais e melhorar a fluidez visual de GTA 6, mas não elimina o atraso nos comandos",
@@ -473,15 +514,6 @@
    "img": "https://images.nintendolife.com/ac259145e3bf1/large.jpg",
    "at": 1794940200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Magical Girl Raising Project restart ‒ Episode 7",
-   "url": "https://www.animenewsnetwork.com/review/magical-girl-raising-project-restart/episode-7/.243887",
-   "summary": "With this conversation between Keek and Snow White, we finally have all the pieces to see what is actually going on in this series.",
-   "img": "",
-   "at": 1794940200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "GTA 6 Leads TGA Nominations, And Reviews Aren’t Even Live Yet",
@@ -773,28 +805,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Mortal Kombat em promoção: MK 11 Ultimate e MK 1 para PS5 entram em oferta na Black da Amazon",
-   "url": "https://br.ign.com/descontos/157705/mortal-kombat-em-promocao-mk-11-ultimate-e-mk-1-para-ps5-entram-em-oferta-na-black-da-amazon",
-   "summary": "Edições físicas para PlayStation 5 estão com desconto",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/mk1_3z7p.jpg",
-   "at": 1794926469000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Recorde absoluto! GTA 6 já vendeu mais de 15 milhões de unidades na pré-venda",
    "url": "https://www.adrenaline.com.br/games/recorde-absoluto-gta-6-ja-vendeu-mais-de-15-milhoes-de-unidades-na-pre-venda/",
    "summary": "Números são recorde, mas verdadeiro teste virá com o lançamento para PC.",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/25-gta-vi-recorde-absoluto-640x400.jpg",
    "at": 1794926084000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Advertências, incentivo e gift cards: como escolas estão se preparando para ausências em massa no dia do lançamento de GTA 6",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157707/advertencias-incentivo-e-gift-cards-como-escolas-estao-se-preparando-para-ausencias-em-massa-no-dia",
-   "summary": "“Por favor, fiquem atentos e vigilantes a isso caso tenham um filho que seja um jogador ávido”",
-   "img": "https://sm.ign.com/ign_br/news/w/warnings-e/warnings-encouragement-and-gift-cards-how-schools-are-prepar_s4bd.jpg",
-   "at": 1794925736000,
-   "source": "IGN Brasil"
   },
   {
    "title": "The Legend of Zelda: Ocarina of Time on Switch 2 is the US' best-selling physical game so far this year",
@@ -934,22 +950,6 @@
    "summary": "Final Fantasy 14 is between expansions at the moment, with Evercold preparing for release in February. So, in order to keep the game populated for the next few months, Square Enix…",
    "img": "https://assetsio.gnwcdn.com/Final-Fantasy-XIV-Evercold.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1794916130000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 será liberado 16 horas antes na Nova Zelândia; veja quando chega ao Brasil",
-   "url": "https://www.hardware.com.br/games/gta-6-nova-zelandia-brasil/",
-   "summary": "Rockstar confirma lançamento escalonado para 19 de novembro, enquanto jogadores discutem a possibilidade de antecipar o acesso usando o chamado “truque da Nova Zelândia”",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/GTA-6-pode-chegar-ao-PC-em-apenas-6-ou-7-meses-preve-analista.jpg",
-   "at": 1794914505000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "After GTA 6's original soundtrack, Justice probably won't work on any other video game ever again",
-   "url": "https://www.eurogamer.net/gta-6-justice-ost-only-game",
-   "summary": "You've probably heard at least a little bit of the Grand Theft Auto 6 soundtrack from French electronic duo, Justice: a single taken from the act's original soundtrack has been…",
-   "img": "https://assetsio.gnwcdn.com/Justice-GTA6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794913070000,
    "source": "Eurogamer"
   },
   {
