@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1794965339270,
+ "atualizadoEm": 1794974814067,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,40 @@
   }
  ],
  "itens": [
+  {
+   "title": "PlayStation 5 precisa de atualização obrigatória para rodar GTA 6",
+   "url": "https://www.adrenaline.com.br/games/playstation/playstation-5-precisa-de-atualizacao-obrigatoria-para-jogar-gta-6/",
+   "summary": "Os interessados em jogar GTA 6 precisam atualizar o PlayStation 5 para a versão mais recente para obter acesso ao jogo em seu lançamento",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/policia-gta-6-sistema-procurado-640x400.jpg",
+   "at": 1794973068000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Archive of Our Own Site Reopens Following 'Security Incident'",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-17/archive-of-our-own-site-reopens-following-security-incident/.243907",
+   "summary": "Staff: “Some features have been temporarily disabled to allow us to bring the site back earlier”",
+   "img": "",
+   "at": 1794969900000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Pokémon Champions Is Getting A Balance Patch Update Next Month",
+   "url": "https://www.nintendolife.com/news/2026/11/pokemon-champions-is-getting-a-balance-patch-update-next-month",
+   "summary": "Here are the full details. The Pokémon Company has announced the free-to-play mobile and Switch game Pokémon Champions is getting a balance update next month on 2nd December 2026…",
+   "img": "https://images.nintendolife.com/d7e0180525626/large.jpg",
+   "at": 1794968100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Sakamoto Days Season 2's Trailer Unveils More Cast, Opening Song, January 18 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-17/sakamoto-days-season-2-trailer-unveils-more-cast-opening-song-january-18-debut/.243925",
+   "summary": "Kenyū Horiuchi, Kishō Taniyama join cast with Creepy Nuts performing opening song",
+   "img": "",
+   "at": 1794967208000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Sonic Racing: CrossWorlds Free McLaren Racing Update Adds New Sonic Skin And Machine",
    "url": "https://www.nintendolife.com/news/2026/11/sonic-racing-crossworlds-free-mclaren-racing-update-adds-new-sonic-skin-and-machine",
@@ -554,15 +588,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "MAO Episodes 15-26 Anime Series Review",
-   "url": "https://www.animenewsnetwork.com/review/mao-episodes-15-26-anime-series/.243310",
-   "summary": "For better or worse, this anime is nothing but setup, which makes it hard to recommend to anyone not interested in using it as a springboard into the manga.",
-   "img": "",
-   "at": 1794934800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "AMD amplia suporte do FSR 4 para placas Radeon RX 6000 e consoles portáteis Ryzen",
    "url": "https://www.adrenaline.com.br/amd/amd-fsr-4-1-2-plugin-unreal-engine-5-radeon-rx-6000-ryzen-z2-portateis/",
    "summary": "Plugin da Unreal Engine 5 leva upscaling por aprendizado de máquina a GPUs RDNA 2 em jogos novos. Veja os chips compatíveis.",
@@ -593,15 +618,6 @@
    "img": "https://images.nintendolife.com/34e8421044f97/large.jpg",
    "at": 1794933000000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Firefly Wedding ‒ Episodes 5-6",
-   "url": "https://www.animenewsnetwork.com/review/firefly-wedding/episodes-5-6/.243894",
-   "summary": "If the characters were transplanted into modern-day, Satoko would be the new girl and Shinpei the handsome, untouchable popular boy.",
-   "img": "",
-   "at": 1794933000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "PlayStation defeats £2 billion UK lawsuit that alleged Sony forced consumers into \"excessive and unfair prices\"",
@@ -935,22 +951,6 @@
    "img": "https://images.nintendolife.com/8f20ff0218a85/large.jpg",
    "at": 1794912300000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Grand Theft Auto: San Andreas is GTA 5 without the finesse - so why is the 2004 classic such a strange delight to return to?",
-   "url": "https://www.eurogamer.net/returning-to-gta-san-andreas-grand-theft-auto-5-6",
-   "summary": "There is a place in Whitewood Estates where a promising stretch of blacktop suddenly gives way to the desert. It feels like the road has been erased, a sentence left unfinished.…",
-   "img": "https://assetsio.gnwcdn.com/gta-san-andreas-art.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794910260000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "World of Warcraft: Forever's in-game economy has been ravaged by an exploit that allowed players to farm thousands of gold",
-   "url": "https://www.eurogamer.net/world-of-warcraft-forever-gold-farm-exploit",
-   "summary": "World of Warcraft: Forever has suffered its first economic nightmare, as a dungeon farm exploit has left some players with thousands of gold in their bags while the vast majority…",
-   "img": "https://assetsio.gnwcdn.com/Wow-gold-2.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794909090000,
-   "source": "Eurogamer"
   },
   {
    "title": "‘Re:ZERO’ tem 5ª temporada anunciada",
