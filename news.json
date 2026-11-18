@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795028931074,
+ "atualizadoEm": 1795039201489,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": true,
-   "itens": 10
+   "ok": false,
+   "itens": 0
   },
   {
    "nome": "Anime News Network",
@@ -79,12 +79,216 @@
  ],
  "itens": [
   {
+   "title": "Rockstar já havia dado prévia de local de GTA 6 lá em 2021 — e o que havia lá dentro valeu a pena a espera",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157762/rockstar-ja-havia-dado-previa-de-local-de-gta-6-la-em-2021-e-o-que-havia-la-dentro-valeu-a-pena-a-es",
+   "summary": "Não dá para saber ao certo se essa casa sempre foi planejada para ser assim ou se alguém do estúdio decidiu se divertir um pouco",
+   "img": "https://sm.ign.com/ign_br/news/a/a-gta-6-lo/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in_ya2x.jpg",
+   "at": 1795037762000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Even the Student Council Has Its Holes! ‒ Episode 7",
+   "url": "https://www.animenewsnetwork.com/review/even-the-student-council-has-its-holes/episode-7/.243946",
+   "summary": "The saga of Komaro's rice balls is the closest that this anime has gotten to a unified and holistic episode—and I'm here for it.",
+   "img": "",
+   "at": 1795037400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Anitta em GTA 6? Cantora brasileira comanda podcast sobre sexo no novo jogo da Rockstar",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157761/anitta-em-gta-6-cantora-brasileira-comanda-podcast-sobre-sexo-no-novo-jogo-da-rockstar",
+   "summary": "A participação da artista em GTA 6 não se limita ao podcast",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-how-/gta-6-how-the-ultimate-edition-content-works_mw7b.jpg",
+   "at": 1795036155000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos de PlayStation em oferta por menos de R$ 20 na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-em-oferta-por-menos-de-r-20-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/09/mortal-kombat-11-640x400.jpg",
+   "at": 1795035600000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "'You're So Sloppy, Hotta-Sensei' Manga Ends in 2 Chapters",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/youre-so-sloppy-hotta-sensei-manga-ends-in-2-chapters/.243956",
+   "summary": "Series debuted in March 2022",
+   "img": "",
+   "at": 1795035600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Como o Xbox Series S consegue rodar GTA VI? Rockstar explica",
+   "url": "https://www.adrenaline.com.br/games/como-xbox-series-s-roda-gta-vi-720p-amd-fsr-4-1080p-ray-tracing-rockstar/",
+   "summary": "Estúdio parte de 720p, usa upscaling FSR 4 da AMD até 1080p, mantém iluminação por Ray Tracing a 30 fps. Veja os números.",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/como-xbox-series-s-roda-gta-vi-720p-amd-fsr-4-1080p-ray-tracing-rockstar-1-640x400.jpg",
+   "at": 1795035585000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "GTA 6’s Best Song Is A Nelly Furtado Cover From Azerbaijan",
+   "url": "https://www.gamespot.com/articles/gta-6s-best-song-is-a-nelly-furtado-cover-from-azerbaijan/",
+   "summary": "One of the mainstay features in Rockstar's Grand Theft Auto series is radio stations that can be listened to while driving in cars or, as in GTA 6, on the go if you acquire…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/New-Project.jpg?w=300",
+   "at": 1795035529000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "PSN Went Down Sorta On GTA 6 Eve",
+   "url": "https://www.gamespot.com/articles/psn-went-down-sorta-on-gta-6-eve/",
+   "summary": "On the eve of GTA 6' s official launch on November 19, Sony's PlayStation Network appears to be facing some issues, at least for some people, at some point, today. Reports have…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261031155532_.jpg?w=300",
+   "at": 1795035337000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Não espere prostitutas em GTA 6: Rockstar retira mecânica para focar exclusivamente no relacionamento de Jason e Lucia",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157760/nao-espere-prostitutas-em-gta-6-rockstar-retira-mecanica-para-focar-exclusivamente-no-relacionamento",
+   "summary": "Mecânica estava presente na franquia desde GTA 3 A franquia de Grand Theft Auto nunca teve pudor com seus conteúdos, principalmente os sexuais. Desde o terceiro jogo da franquia,…",
+   "img": "https://sm.ign.com/ign_br/photo/default/port-gellhorn-07-1793891731328_yuft.jpg",
+   "at": 1795034896000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 Easter Eggs Are Everywhere, But These Are The Best Ones",
+   "url": "https://www.gamespot.com/articles/gta-6-easter-eggs-list-and-locations/",
+   "summary": "GTA 6 Easter eggs are everywhere, it feels like. We've only just begun gathering them in this roundup, and it feels like there are so many more. From books and store items to…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/2026111415085853.mp4.00_17_10_02.Still001_655c1d.jpg?w=300",
+   "at": 1795034519000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA 6's Japanese version only partially obscures male nudity by putting Jason in a thong, seemingly due to regional censorship",
+   "url": "https://www.eurogamer.net/gta-6-japanese-jason-thong-regional-censorship",
+   "summary": "GTA 6 is slowly rolling out across the globe. The crime epic's already available to play in countries such as South Korea and New Zealand , but Japanese players are finding out…",
+   "img": "https://assetsio.gnwcdn.com/gta-6-jason-and-lucia.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795034420000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "GTA 6 pode reverter queda nas vendas de consoles, afirma Newzoo",
+   "url": "https://www.adrenaline.com.br/games/gta-6-pode-reverter-queda-nas-vendas-de-consoles-afirma-newzoo/",
+   "summary": "Segundo a empresa, GTA 6 vai ser responsável sozinho por aumentar as receitas do mercado após anos de estabilidade",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-PC-Inteligencia-Artificial-Rockstar-640x400.jpeg",
+   "at": 1795034202000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Veja comparativo gráfico de GTA 6 no PS5 e PS5 Pro",
+   "url": "https://www.adrenaline.com.br/games/playstation/veja-comparativo-grafico-de-gta-6-no-ps5-e-ps5-pro/",
+   "summary": "O canal ElAnalistaDeBits preparou um comparativo de GTA 6 rodando no PS5 Base/Slim e no PS5 e mostra as diferenças entre as versões",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/comparativo-gta-6-ps5-ps5-pro-640x400.webp",
+   "at": 1795034060000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Jogos na Steam em oferta por menos de R$ 5; até 90% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-na-steam-em-oferta-por-menos-de-r-5-ate-90-de-desconto/",
+   "summary": "A Steam renovou as ofertas baratinhas em sua plataforma com diversos jogos para PC com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/THE-KING-OF-FIGHTERS-97-GLOBAL-MATCH-640x400.webp",
+   "at": 1795034058000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Mistress Kanan ganha trailer e estreia em 2027",
+   "url": "https://animenew.com.br/mistress-kanan-temporada-2-trailer-2027/",
+   "summary": "A segunda temporada de Mistress Kanan is Devilishly Easy (Kanan-sama wa Akumade Choroi) ganhou seu primeiro trailer completo, novo visual promocional e detalhes do elenco e da…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Mistress-Kanan-ganha-trailer-e-estreia-em-2027.webp",
+   "at": 1795033953000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "KFC Announces GTA 6 Promo Where You Get A Disc-Shaped Piece Of Chicken",
+   "url": "https://www.gamespot.com/articles/kfc-announces-gta-6-promo-where-you-get-a-disc-shaped-piece-of-chicken/",
+   "summary": "A lot of people are upset that they can't get GTA 6 on a physical disc, and KFC is now stepping up to do what Rockstar isn't. KFC Spain has announced a \"Replace the Disc\" campaign…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/chickendisc.png?w=300",
+   "at": 1795033350000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "The New Game That Will Be Pulling Me Away From GTA 6",
+   "url": "https://www.gamespot.com/articles/the-new-game-that-will-be-pulling-me-away-from-gta-6/",
+   "summary": "The hype around GTA 6 is enormous, but as we've been spotlighting, it's not the only new game worthy of your attention this month . Case in point: Australia Did It, which recently…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/australia-did-it.jpeg?w=300",
+   "at": 1795033326000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "The Legend of Zelda: Ocarina of Time tem recorde de vendas de jogos físicos nos EUA",
+   "url": "https://www.adrenaline.com.br/games/the-legend-of-zelda-ocarina-of-time-tem-recorde-de-vendas-de-jogos-fisicos-nos-eua/",
+   "summary": "The Legend of Zelda: Ocarina of Time registrou um desempenho nos EUA que não era visto desde a estreia de Breath of the Wild",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Zelda-Ocarina-Time-Viagens-Rapidas-Nintendo-640x400.jpg",
+   "at": 1795032777000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Online Retailer CDJapan Confirms Potential Customer Information Leaks Caused by Unauthorized Access",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/online-retailer-cdjapan-confirms-potential-customer-information-leaks-caused-by-unauthorized-access/.243951",
+   "summary": "Third-party exploited website vulnerability to access CDJapan, Neowing online stores on November 5",
+   "img": "",
+   "at": 1795032060000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "How Xbox’s Streaming Deal For GTA 6 Could Expand Its Marketshare By 30%",
+   "url": "https://www.gamespot.com/articles/how-xboxs-streaming-deal-for-gta-6-could-expand-its-marketshare-by-30/",
+   "summary": "Microsoft and Take-Two recently announced a deal to allow people to stream Rockstar's GTA 6 , and that significantly increases the game's addressable market on Xbox and means…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261103112343.jpg?w=300",
+   "at": 1795031638000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "“Procuramos criar uma experiência que supere suas expectativas”: presidente da Rockstar, Sam Houser faz rara declaração para comemorar lançamento de GTA 6",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157754/procuramos-criar-uma-experiencia-que-supere-suas-expectativas-presidente-da-rockstar-sam-houser-faz",
+   "summary": "“Somos imensamente gratos a vocês e por tudo o que fazem para celebrar os jogos”",
+   "img": "https://sm.ign.com/ign_br/news/r/rockstar-p/rockstar-president-sam-houser-issues-rare-statement-to-celeb_1xyt.jpg",
+   "at": 1795031397000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 quebra recordes de streaming antes mesmo de ser lançado mundialmente",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157751/gta-6-quebra-recordes-de-streaming-antes-mesmo-de-ser-lancado-mundialmente",
+   "summary": "Sucesso",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-shat/gta-6-shatters-streaming-records-before-it-even-launches-glo_dqqj.jpg",
+   "at": 1795030464000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 leva fãs a faltar ao trabalho: 39% dos jogadores já pediram folga para jogar",
+   "url": "https://www.hardware.com.br/games/gta-6-leva-fas-a-faltar-ao-trabalho/",
+   "summary": "Além disso, pesquisa aponta que quase 36% dos jogadores pretendem alegar doença no dia do lançamento.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA4-1-scaled.jpg",
+   "at": 1795029360000,
+   "source": "Hardware.com.br"
+  },
+  {
    "title": "Delete GTA 6 from your hard drive and indie publisher Devolver Digital might give you a free game",
    "url": "https://www.eurogamer.net/delete-gta-6-free-game-devolver-digital",
    "summary": "GTA 6 is out at midnight everywhere (19th November), but it's far from the only game in town. Indie publisher Devolver Digital is taking on the open-world behemoth with its very…",
    "img": "https://assetsio.gnwcdn.com/Volvy-Adventure.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795028900000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Onde comprar GTA 6 mais barato em edição física para PS5 (com cupom!)",
+   "url": "https://www.adrenaline.com.br/games/playstation/onde-comprar-gta-6-mais-barato-em-edicao-fisica-para-ps5/",
+   "summary": "A mídia física de Grand Theft Auto 6 (GTA 6) para PlayStation 5 está em pré-venda com desconto no pagamento à vista",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/06/edicao-fisica-grand-theft-auto-vi-640x400.webp",
+   "at": 1795028539000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Jogos da KONAMI em oferta no Nintendo Switch 1 & 2; até 50% de desconto",
+   "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-konami-em-oferta-no-nintendo-switch-1-2-ate-50-de-desconto/",
+   "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/02/Metal-Gear-Solid-Master-Collection-Vol-2-Requisitos-640x400.jpg",
+   "at": 1795028400000,
+   "source": "Adrenaline"
   },
   {
    "title": "Singer/Songwriter Hiromi Ōta Dies at 71",
@@ -259,36 +463,12 @@
    "source": "Anime News Network"
   },
   {
-   "title": "How Long Does It Take To Fly Across The Entire GTA 6 Map?",
-   "url": "https://www.gamespot.com/articles/how-long-does-it-take-to-fly-across-the-entire-gta-6-map/",
-   "summary": "The Grand Theft Auto 6 map is absolutely massive , gigantic, and at least one more synonym to encapsulate its size accurately. Whether it's land, sea, or air, covering it is going…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-8.jpg?w=300",
-   "at": 1795021034000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Jogos da CAPCOM em oferta na Nuuvem com até 87% de desconto + cupom limitado de 15%",
    "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-capcom-em-oferta-na-nuuvem-com-ate-87-de-desconto-cupom-limitado-de-15/",
    "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/resident-evil-requiem-5-640x400.webp",
    "at": 1795020842000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "How To Get A Parachute In GTA 6 (And Best Places To Use It)",
-   "url": "https://www.gamespot.com/articles/how-to-get-a-parachute-in-gta-6-and-best-places-to-use-it/",
-   "summary": "When you choose to add items to your character's loadout in Grand Theft Auto 6 , you likely prioritize weapons and body armor over anything else. After all, these are what protect…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Parachute.jpg?w=300",
-   "at": 1795019739000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Rockstar Founder Issues Rare Statement As GTA 6 Launches To Superb Reviews And Huge Sales",
-   "url": "https://www.gamespot.com/articles/rockstar-founder-issues-rare-statement-as-gta-6-launches-to-superb-reviews-and-huge-sales/",
-   "summary": "We might not hear from him much, but Rockstar co-founder Sam Houser remains highly involved with the studio and its games, and that includes GTA 6 , which is available now in New…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA6NewImage-1.png?w=300",
-   "at": 1795019727000,
-   "source": "GameSpot"
   },
   {
    "title": "The Classroom of a Black Cat and a Witch Anime Gets English Dub",
@@ -340,14 +520,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "You Could Grab A Steam Deck OLED For As Low As $1",
-   "url": "https://www.gamespot.com/articles/you-could-grab-a-steam-deck-oled-for-as-low-as-1/",
-   "summary": "Despite owning a pretty decent gaming PC, a PlayStation Portal with my PS5, and a Nintendo Switch 2, my most-used device is still a Steam Deck. Playing on a handheld PC is no…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-steam-deck-birthday-bundle.jpg?w=300",
-   "at": 1795017600000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Conheça os dubladores brasileiros da 1ª temporada de A Returner's Magic Should Be Special",
    "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/18/dubladores-a-returner-s-magic-should-be-special-temporada-1",
    "summary": "Desir tem uma segunda chance de salvar o mundo e seus companheiros!",
@@ -373,14 +545,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Here Are The Most Nominated Games And Publishers At The Game Awards This Year",
-   "url": "https://www.gamespot.com/articles/here-are-the-most-nominated-games-and-publishers-at-the-game-awards-this-year/",
-   "summary": "The nominees for 2026's The Game Awards have been announced, but which games and publishers scored the most total nominations? The most-nominated game this year Grand Theft Auto…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_and_Lucia_02_ce9fd2.jpg?w=300",
-   "at": 1795016897000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Pero Pero★Sparkles Anime's Promo Video Reveals January 10 Premiere",
    "url": "https://www.animenewsnetwork.com/news/2026-11-18/pero-pero-sparkles-anime-promo-video-reveals-january-10-premiere/.243947",
    "summary": "Yuki Sakakihara, Mai Kanno, Ai Fairouz, Yōhei Azakami star in anime of Yurie Sekiya's characters",
@@ -396,14 +560,6 @@
    "img": "https://assetsio.gnwcdn.com/grand-theft-auto-6-man-holding-phone-near-lucia.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795016570000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6: Here’s What Happens If You Try To Leave Leonida Entirely",
-   "url": "https://www.gamespot.com/articles/gta-6-heres-what-happens-if-you-try-to-leave-leonida-entirely/",
-   "summary": "Grand Theft Auto 6 is absolutely massive in scope , with a dense and sprawling Vice City and a diverse surrounding area of swamps and dusty little towns. The simulation of…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/ULTIMATE_EDITION_STOCK_305_01.0vuq0m5_1j-17.webp?w=300",
-   "at": 1795016253000,
-   "source": "GameSpot"
   },
   {
    "title": "GTA 6 retorna com os códigos e trapaças; saiba como elas funcionam",
@@ -586,6 +742,14 @@
    "source": "IGN Brasil"
   },
   {
+   "title": "GTA 6 Owner Take-Two’s Stock Adds Billions After Rave Reviews, But It’s Not All Good News",
+   "url": "https://www.gamespot.com/articles/gta-6-owner-take-twos-stock-explodes-after-high-review-scores-but-its-still-down-massively-this-year/",
+   "summary": "After more than 10 years of waiting, Rockstar's GTA 6 is finally available now (at least in New Zealand and Australia ). The anticipation has been sky-high for both consumers and…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_and_Lucia_19.jpg?w=300",
+   "at": 1795007815000,
+   "source": "GameSpot"
+  },
+  {
    "title": "The Days of Diamond terá adaptação para anime",
    "url": "https://animenew.com.br/the-days-of-diamond-anime/",
    "summary": "O mangá The Days of Diamond, de Ōhashi Hirai, ganhará uma adaptação em anime para TV. O anúncio revelou a primeira imagem promocional e os principais nomes da equipe de produção.…",
@@ -619,33 +783,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia",
-   "url": "https://www.intoxianime.com/2026/11/sakamoto-days-2o-temporada-ganha-trailer-com-op-e-data-de-estreia/",
-   "summary": "... O post Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795005635000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual",
-   "url": "https://www.intoxianime.com/2026/11/soara-to-mamono-anime-sobre-guerreira-vivendo-com-monstros-ganha-visual/",
-   "summary": "... O post Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795005631000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia",
-   "url": "https://www.intoxianime.com/2026/11/spice-wolf-2o-temporada-do-remake-ganha-visual-e-previsao-de-estreia/",
-   "summary": "... O post Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795005629000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
    "title": "GTA 6 impressiona Digital Foundry com gráficos de nova geração, mas PS5 apresenta quedas de FPS",
    "url": "https://www.hardware.com.br/games/gta-6-impressiona-digital-foundry/",
    "summary": "Análise técnica de GTA 6 destaca iluminação com ray tracing, clima dinâmico e qualidade visual próxima do 4K nativo no PS5 Pro, enquanto o PS5 padrão enfrenta oscilações de…",
@@ -654,52 +791,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Quanto tempo leva para terminar GTA 6?",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157741/quanto-tempo-leva-para-terminar-gta-6",
-   "summary": "Espere boas horas de jogatina Falta pouco para que milhares de jogadores ao redor do mundo possam andar pelas ruas de Vice City e o condado de Leonida, mas quanto tempo exatamente…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_3tk3.png",
-   "at": 1795004705000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Clair Obscur's narrative lead has left developer Sandfall Interactive after \"wrapping up some final stuff for Expedition\"",
    "url": "https://www.eurogamer.net/clair-obscur-jennifer-svedberg-yen-bafta-fund-new-talent",
    "summary": "Last night, it was revealed that Clair Obscur: Expedition 33 's lead narrative designer, Jennifer Svedberg-Yen, won a BAFTA Breakthrough US award for her contribution to the hit…",
    "img": "https://assetsio.gnwcdn.com/clair-obscur-svedberg-yen.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795004290000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 não deixará você rejogar missões de história do jogo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157734/gta-6-nao-deixara-voce-rejogar-missoes-de-historia-do-jogo",
-   "summary": "Faça boas escolhas Você acha que vai querer repetir algumas das missões mais emocionantes do GTA 6 ? Bem, você não poderá simplesmente fazer isso em nenhum de seus menus. Agora,…",
-   "img": "https://sm.ign.com/ign_br/feature/g/gta-6-does/gta-6-doesnt-let-you-replay-story-missions-heres-why_855g.jpg",
-   "at": 1795003743000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6 confirma Modo Foto no lançamento do jogo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157739/gta-6-confirma-modo-foto-no-lancamento-do-jogo",
-   "summary": "Faça vários cliques em Leonida GTA 6 é um jogo lindo, então, naturalmente, você sentirá vontade de fazer uma pausa regularmente para ver tudo. Felizmente, a Rockstar sabe disso e…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-phot/gta-6-photo-mode-confirmed-at-launch_731m.jpg",
-   "at": 1795003237000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6: Photo Mode Gallery",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157737/gta-6-photo-mode-gallery",
-   "summary": "",
-   "img": "https://sm.ign.com/ign_br/gallery/g/gta-6-phot/gta-6-photo-mode-gallery_1sww.jpg",
-   "at": 1795003237000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Ator que interpretou Zoro na série de One Piece ganha um novo papel em filme live-action de outro popular anime, mas desta vez ele é o protagonista",
-   "url": "https://br.ign.com/mashle-muscles-and-magic/157729/ator-que-interpretou-zoro-na-serie-de-one-piece-ganha-um-novo-papel-em-filme-live-action-de-outro-po",
-   "summary": "Mackenyu Maeda será Mash Burnedead, do mangá e anime Mashle Nesse novo papel, o ator vai ter que deixar as espadas em casa e só precisa demonstrar sua pura força muscular.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/op1_ehst.jpg",
-   "at": 1795003233000,
-   "source": "IGN Brasil"
   },
   {
    "title": "KuKu-Loop: The 100th Time's the Charm Anime Reveals Main Cast, Staff, 2027 TV Debut",
@@ -750,22 +847,6 @@
    "at": 1794999997000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Grand Theft Auto 6 review",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-review",
-   "summary": "My best attempt at summing up Grand Theft Auto 6 came from a conversation with a friend about something else entirely. This friend was telling me about a theory they'd recently…",
-   "img": "https://assetsio.gnwcdn.com/GTA-6-review-15.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1794999600000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Devolver Digital vai sortear jogo de graça para quem deletar GTA 6",
-   "url": "https://www.adrenaline.com.br/games/devolver-digital-vai-sortear-jogo-de-graca-para-quem-deletar-gta-6/",
-   "summary": "A Devolver Digital cumpriu sua promessa e vai lançar um novo game na mesma data que GTA 6 chega às lojas",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Devolver-Digital-Sorteio-GTA-6-02-640x400.jpg",
-   "at": 1794999253000,
-   "source": "Adrenaline"
   },
   {
    "title": "Guide: 42 Switch 1 & 2 Games You Should Check Out In Nintendo's Black Friday eShop Sale (Europe)",
@@ -827,57 +908,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "PlayStation 5 precisa de atualização obrigatória para rodar GTA 6",
-   "url": "https://www.adrenaline.com.br/games/playstation/playstation-5-precisa-de-atualizacao-obrigatoria-para-jogar-gta-6/",
-   "summary": "Os interessados em jogar GTA 6 precisam atualizar o PlayStation 5 para a versão mais recente para obter acesso ao jogo em seu lançamento",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/policia-gta-6-sistema-procurado-640x400.jpg",
-   "at": 1794973068000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Yaiba: Samurai Legend Season 2 Reveals Cast Member Yūma Uchida, Opening Song Artists",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-17/yaiba-samurai-legend-season-2-reveals-cast-member-yuma-uchida-opening-song-artists/.243924",
-   "summary": "Uchida plays Gekkō, CHiCO with HoneyWorks performs opening song \"CHASE!\"",
-   "img": "",
-   "at": 1794971470000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Otherworldly Munchkin Anime's New Video Reveals More Cast, Staff, Theme Songs, January 7 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-17/otherworldly-munchkin-anime-new-video-reveals-more-cast-staff-theme-songs-january-7-debut/.243921",
-   "summary": "Yūichirō Umehara joins cast with some staff changes after delay of more than a year",
-   "img": "",
-   "at": 1794970800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Archive of Our Own Site Reopens Following 'Security Incident'",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-17/archive-of-our-own-site-reopens-following-security-incident/.243907",
-   "summary": "Staff: “Some features have been temporarily disabled to allow us to bring the site back earlier”",
-   "img": "",
-   "at": 1794969900000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Pokémon Champions Is Getting A Balance Patch Next Month",
-   "url": "https://www.nintendolife.com/news/2026/11/pokemon-champions-is-getting-a-balance-patch-next-month",
-   "summary": "Here's what you can expect... The Pokémon Company has announced the free-to-play Switch and mobile game Pokémon Champions is getting a balance update next month on 2nd December…",
-   "img": "https://images.nintendolife.com/d7e0180525626/large.jpg",
-   "at": 1794968100000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Sonic Racing: CrossWorlds Free McLaren Racing Update Adds New Sonic Skin And Machine",
-   "url": "https://www.nintendolife.com/news/2026/11/sonic-racing-crossworlds-free-mclaren-racing-update-adds-new-sonic-skin-and-machine",
-   "summary": "\"Beyond fast\". Sega's all-star racing game Sonic Racing: CrossWorlds has this week received a new McLaren Racing-themed update. It includes Sonic in a McLaren Racing suit and the…",
-   "img": "https://images.nintendolife.com/b63b44158edcd/large.jpg",
-   "at": 1794963900000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Mangá Märchen Crown será encerrado em novembro",
    "url": "https://animenew.com.br/marchen-crown-manga-chega-ao-fim/",
    "summary": "O mangá Märchen Crown, escrito por Aka Akasaka, Aoi Kujira e ilustrado por Ajichika, chegará ao fim em 19 de novembro, conforme anúncio da revista Young Jump. A informação…",
@@ -887,14 +917,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "Splatoon 3 Version 12.0.0 Update Out Now, Here Are The Full Patch Notes",
-   "url": "https://www.nintendolife.com/news/2026/11/splatoon-3-version-12-0-0-update-out-now-here-are-the-full-patch-notes",
-   "summary": "The dev team also has another update on the way. Nintendo's team-based squid-shooter Splatoon 3 is still going strong, and this week the title is getting updated to Version 12.0.0…",
-   "img": "https://images.nintendolife.com/596b7cafcbe55/large.jpg",
-   "at": 1794960300000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Divulgada nova prévia da 2ª temporada de ‘Skip & Loafer’",
    "url": "https://www.jbox.com.br/2026/11/17/divulgada-nova-previa-da-2a-temporada-de-skip-loafer/",
    "summary": "Vídeo revela intérpretes dos personagens Chieri Yasaka e Kiyohiko Ujiie.",
@@ -902,22 +924,6 @@
    "at": 1794957922000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Jogos de PlayStation em oferta por menos de R$ 15 na Black Friday",
-   "url": "https://www.adrenaline.com.br/noticias/jogos-de-playstation-em-oferta-por-menos-de-r-15-na-black-friday/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/xiii-640x400.webp",
-   "at": 1794949200000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "XBOX Game Pass recebe 9 jogos em novembro — veja lista!",
-   "url": "https://www.adrenaline.com.br/games/xbox/xbox-game-pass-recebe-9-jogos-em-novembro-veja-lista/",
-   "summary": "Confira todos os jogos que estão chegando ao XBOX Game Pass em novembro e saiba também quem deixa o catálogo neste mês",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/high-on-life-2-640x400.webp",
-   "at": 1794946860000,
-   "source": "Adrenaline"
   },
   {
    "title": "Panini anuncia Solo Leveling: Ragnarok, Gyarus não podem ser gentis com otakus?! e outros títulos",
@@ -947,14 +953,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Nintendo é a publisher com mais indicações ao The Game Awards 2026",
-   "url": "https://www.adrenaline.com.br/games/nintendo-e-a-publisher-com-mais-indicacoes-ao-the-game-awards-2026/",
-   "summary": "Nintendo lidera o The Game Awards 2026 com 12 indicações e supera Capcom e PlayStation; confira os indicados!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/nintendo-e-a-publisher-com-mais-indicacoes-ao-the-game-awards-2026-cover-640x400.jpg",
-   "at": 1794943799000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Shigeru Miyamoto recebe o primeiro Legend Award do D.I.C.E. Awards",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/nintendo-shigeru-miyamoto-legend-dice-awards",
    "summary": "A cerimônia acontecerá dia 18 de fevereiro em Las Vegas",
@@ -962,22 +960,6 @@
    "at": 1794943500000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "GTA 6 a 120 FPS? Ferramenta gratuita promete mais fluidez, mas tem uma limitação",
-   "url": "https://www.hardware.com.br/games/gta-6-a-120-fps-smoovplay/",
-   "summary": "SmoovPlay utiliza inteligência artificial para gerar quadros adicionais e melhorar a fluidez visual de GTA 6, mas não elimina o atraso nos comandos",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-6-a-120-FPS-Ferramenta-gratuita-promete-mais-fluidez-mas-tem-uma-limitacao.jpg",
-   "at": 1794942519000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Modder cria versão “HD-2D” de Pokémon Emerald recompilado no PC",
-   "url": "https://www.adrenaline.com.br/games/pc-games/modder-cria-versao-hd-2d-de-pokemon-emerald-recompilado-no-pc/",
-   "summary": "Terceiro jogo da terceira geração de Pokémon recebe nova versão não oficial para PC inspirada pelo estilo retrô da Square Enix",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/pokemon-bravely-emerald-recompilado-hd-2d-640x400.jpg",
-   "at": 1794942478000,
-   "source": "Adrenaline"
   },
   {
    "title": "LiSA é indicada ao Grammy pelo seu tema musical para The Irregular at Magic High School THE MOVIE -Yotsuba Succession Arc-",
@@ -996,33 +978,6 @@
    "at": 1794921360000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia",
-   "url": "https://www.intoxianime.com/2026/11/kanan-sama-wa-akumade-2o-temporada-ganha-trailer-e-janela-de-estreia/",
-   "summary": "... O post Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794919041000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Jirai Nandesuka – Comédia Romântica sobre garota sombria ganha visual e data de estreia",
-   "url": "https://www.intoxianime.com/2026/11/jirai-nandesuka-comedia-romantica-sobre-garota-sombria-ganha-visual-e-data-de-estreia/",
-   "summary": "... O post Jirai Nandesuka – Comédia Romântica sobre garota sombria ganha visual e data de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794919039000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Yuukyuu no Gusha – Anime sobre Mago recluso ganha trailer com OP e ED e data",
-   "url": "https://www.intoxianime.com/2026/11/yuukyuu-no-gusha-anime-sobre-mago-recluso-ganha-trailer-com-op-e-ed-e-data/",
-   "summary": "... O post Yuukyuu no Gusha – Anime sobre Mago recluso ganha trailer com OP e ED e data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794919037000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
   },
   {
    "title": "‘Re:ZERO’ tem 5ª temporada anunciada",
@@ -1133,42 +1088,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Skip to Loafer – 2º temporada ganha trailer",
-   "url": "https://www.intoxianime.com/2026/11/skip-to-loafer-2o-temporada-ganha-trailer/",
-   "summary": "... O post Skip to Loafer – 2º temporada ganha trailer apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794833765000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Witch Watch – 2º temporada ganha visual e janela de estreia",
-   "url": "https://www.intoxianime.com/2026/11/witch-watch-2o-temporada-ganha-visual-e-janela-de-estreia/",
-   "summary": "... O post Witch Watch – 2º temporada ganha visual e janela de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794833764000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "[Rumor]The Genius Inventor’s – Mangá sobre Garota Inventora pode ter anime",
-   "url": "https://www.intoxianime.com/2026/11/rumorthe-genius-inventors-manga-sobre-garota-inventora-pode-ter-anime/",
-   "summary": "... O post [Rumor]The Genius Inventor’s – Mangá sobre Garota Inventora pode ter anime apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794833763000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "[Atualizado]Diamond no Kouzai – Drama sobre Beisebol tem anuncio de anime vazado",
-   "url": "https://www.intoxianime.com/2026/11/diamond-no-kouzai-drama-sobre-beisebol-tem-anuncio-de-anime-vazado/",
-   "summary": "... O post [Atualizado]Diamond no Kouzai – Drama sobre Beisebol tem anuncio de anime vazado apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1794833762000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
    "title": "Mega Man: Dual Override revela Cleanser Man, chefe criado por artista brasileiro",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/16/mega-man-dual-override-cleanser-man-trailer",
    "summary": "O jogo tem lançamento marcado para 2027.",
@@ -1246,15 +1165,6 @@
    "summary": "O anime Nabe ni Tama wo Ukenagara (Getting Shots on a Frying Pan or Nabetama for short) divulgou seu primeiro vídeo promocional, elenco principal e equipe de produção. A série…",
    "img": "https://animenew.com.br/wp-content/uploads/2026/11/Nabe-ni-Tama-wo-Ukenagara-revela-elenco-e-estreia-em-janeiro.webp",
    "at": 1794527604000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "Gundam Seed Freedom Zero ganhará novel em janeiro",
-   "url": "https://animenew.com.br/gundam-seed-freedom-zero-novel/",
-   "summary": "A franquia Gundam Seed ganhará uma nova adaptação em formato de novel. Sendo assim a obra será baseada em Mobile Suit Gundam Seed FREEDOM ZERO, prelúdio do filme lançado em 2024.…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Gundam-Seed-Freedom-Zero-ganhara-novel-em-janeiro.webp",
-   "at": 1794451840000,
    "cat": "geek",
    "source": "AnimeNew"
   }
