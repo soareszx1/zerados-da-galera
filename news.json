@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795039201489,
+ "atualizadoEm": 1795051580777,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,12 +79,150 @@
  ],
  "itens": [
   {
+   "title": "Resident Evil Requiem, The Legend of Zelda: Ocarina of Time são indicados a Jogo do Ano no The Game Awards",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/resident-evil-requiem-ocarina-of-time-remake-game-awards-indicados",
+   "summary": "Resident Evil Requiem está entre os títulos com mais indicações, concorrendo a seis prêmios",
+   "img": "https://a.storyblok.com/f/178900/3840x2160/79ffed34b3/resident-evil-requiem-tga.jpg",
+   "at": 1795050900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "GTA 6: onde encontrar todos os clubes de strip do jogo",
+   "url": "https://www.adrenaline.com.br/games/gta-6-onde-encontrar-todos-os-clubes-de-strip-do-jogo/",
+   "summary": "Strip clubs e boates de GTA 6 em Vice City: saiba onde ficam Delights Cabaret, Jack of Hearts, NINE1NINE, The Vault e VYB!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/gta-6-onde-encontrar-todos-os-clubes-de-strip-do-jogo-cover-640x400.jpg",
+   "at": 1795050041000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Blood Addict Manga Ends",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/blood-addict-manga-ends/.243919",
+   "summary": "Series debuted in April 2025",
+   "img": "",
+   "at": 1795050000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Sesuji's About a Pilgrimage to the Defiled Sacred Grounds Novel Gets Live-Action Film in 2027",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/sesuji-about-a-pilgrimage-to-the-defiled-sacred-grounds-novel-gets-live-action-film-in-2027/.243940",
+   "summary": "Horror novel launched in 2024",
+   "img": "",
+   "at": 1795050000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "2ª temporada de Spice and Wolf: MERCHANT MEETS THE WISE WOLF tem transmissão confirmada na Crunchyroll",
+   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/19/spice-and-wolf-merchant-meets-the-wise-wolf-anime-temporada-2-transmissao-crunchyroll",
+   "summary": "A nova temporada tem previsão de estreia para janeiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/1766x994/cd01b8f1ae/spice-and-wolf-merchant-meets-the-wise-wolf-season-2.png",
+   "at": 1795050000000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "\"We're Going Bananas For Our Newest Furry Friend\" - Donkey Kong Is Coming Soon To Build-A-Bear Workshop",
+   "url": "https://www.nintendolife.com/news/2026/11/were-going-bananas-for-our-newest-furry-friend-donkey-kong-is-coming-soon-to-build-a-bear-workshop",
+   "summary": "Pauline when? We understand GTA 6 is a big deal, but Build-A-Bear Workshop has also teased some important news this week. Read the full article on nintendolife.com",
+   "img": "https://images.nintendolife.com/841c3570b4fb6/large.jpg",
+   "at": 1795049700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "K Manga Adds Godmother Manga",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/k-manga-adds-godmother-manga/.243918",
+   "summary": "Series from Young Magazine US launches in Monthly Young Magazine on Wednesday",
+   "img": "",
+   "at": 1795046400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Novo trailer de ‘Sakamoto Days’ revela música de abertura e confirma data de estreia da 2ª temporada",
+   "url": "https://www.jbox.com.br/2026/11/18/novo-trailer-de-sakamoto-days-revela-musica-de-abertura-e-confirma-data-de-estreia-da-2a-temporada/",
+   "summary": "Animê também revelou mais nomes no elenco de vozes.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Sakamoto-Days-segunda-temporada-destacada.jpg?ssl=1",
+   "at": 1795044160000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Jogos de PC em oferta por menos de R$ 15 na Black Friday da Epic Games",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-por-menos-de-r-15-na-black-friday-da-epic-games/",
+   "summary": "Os interessados podem aproveitar as ofertas para grandes jogos na Promoção de Black Friday da Epic Games por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/03/need_for-speed-heat-640x400.jpg",
+   "at": 1795043640000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Hiromasa Okujima Announces 1st Original Boys-Love Manga",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/hiromasa-okujima-announces-1st-original-boys-love-manga/.243958",
+   "summary": "Bad boy romance title launches in 2027",
+   "img": "",
+   "at": 1795042800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Spice and Wolf: 2ª temporada do remake estreia em janeiro",
+   "url": "https://www.jbox.com.br/2026/11/18/spice-and-wolf-2a-temporada-do-remake-estreia-em-janeiro/",
+   "summary": "Nova adaptação da série de light novels estreou em 2024, estando disponível dublada na Crunchyroll.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/spice-and-wolf-remake-2a-temporada-destacada.jpg?ssl=1",
+   "at": 1795042614000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "2ª temporada de Spice and Wolf: MERCHANT MEETS THE WISE WOLF tem estreia confirmada para janeiro de 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/18/anime-spice-and-wolf-merchant-meets-the-wise-wolf-temporada-2-estreia-janeiro-2027-arte",
+   "summary": "Também foi revelada uma nova arte promocional da série de fantasia",
+   "img": "https://a.storyblok.com/f/178900/1766x995/e183edfd6c/spice-and-wolf-merchant-meets-the-wise-wolf-season-2.png",
+   "at": 1795042200000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "PRÉ-VENDA | DualSense Edição GTA 6 Edição Limitada para PS5",
+   "url": "https://www.adrenaline.com.br/games/playstation/pre-venda-dualsense-edicao-gta-6-edicao-limitada-para-ps5/",
+   "summary": "Os novos controles DualSense Edição Limitada de Grand Theft Auto 6 já estão em pré-venda com desconto no pagamento à vista",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/09/dualsense-grand-theft-auto-6-640x400.webp",
+   "at": 1795040604000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Can You Romance Mandy In GTA 6?",
+   "url": "https://www.gamespot.com/articles/can-you-romance-mandy-in-gta-6/",
+   "summary": "There are plenty of memorable moments from the first few hours of the story in Grand Theft Auto 6. From rescuing a friend at a gang hideout to reliving Lucia's run-in with the…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/ec6c97eed96cae40fa93ac3c509f671e-1.jpg?w=300",
+   "at": 1795039748000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Duel Masters GT Manga Gets 4th Part",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-18/duel-masters-gt-manga-gets-4th-part/.243957",
+   "summary": "3rd part ended on Wednesday",
+   "img": "",
+   "at": 1795039200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Rockstar já havia dado prévia de local de GTA 6 lá em 2021 — e o que havia lá dentro valeu a pena a espera",
    "url": "https://br.ign.com/grand-theft-auto-vi/157762/rockstar-ja-havia-dado-previa-de-local-de-gta-6-la-em-2021-e-o-que-havia-la-dentro-valeu-a-pena-a-es",
    "summary": "Não dá para saber ao certo se essa casa sempre foi planejada para ser assim ou se alguém do estúdio decidiu se divertir um pouco",
    "img": "https://sm.ign.com/ign_br/news/a/a-gta-6-lo/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in_ya2x.jpg",
    "at": 1795037762000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Fortnite’s Treasure Hunt Burned Me Out Just In Time For GTA 6",
+   "url": "https://www.gamespot.com/articles/fortnites-treasure-hunt-burned-me-out-just-in-time-for-gta-6/",
+   "summary": "I'm a male Millennial gamer pushing 40, so GTA is in my bones. But I currently like Fortnite more than I like any other game, and I figured I'd have a hard time pulling myself…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fortnite-burnout.jpg?w=300",
+   "at": 1795037614000,
+   "source": "GameSpot"
   },
   {
    "title": "Even the Student Council Has Its Holes! ‒ Episode 7",
@@ -397,14 +535,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Don’t Expect To See Vice City For A Long Time In GTA 6",
-   "url": "https://www.gamespot.com/articles/dont-expect-to-see-vice-city-for-a-long-time-in-gta-6/",
-   "summary": "For those still waiting for GTA 6 to unlock, it's possible you have something of a mistaken impression of what the early hours will look like. Despite partially sharing a setting…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261101165407_-Large.jpeg?w=300",
-   "at": 1795023621000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Most, though not quite all, of the 34 fired Rockstar employees are named in the GTA 6 credits",
    "url": "https://www.eurogamer.net/fired-rockstar-employees-named-gta-6-credits-tribunal",
    "summary": "Eurogamer can confirm that at least 28 of the 34 employees fired by Rockstar roughly a year ago - in an action that directly led to the employment tribunal Rockstar is currently…",
@@ -419,22 +549,6 @@
    "img": "https://images.nintendolife.com/fb499c129102d/large.jpg",
    "at": 1795023000000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "How To Own More Cars And Other Vehicles In GTA 6",
-   "url": "https://www.gamespot.com/articles/how-to-own-more-cars-and-other-vehicles-in-gta-6/",
-   "summary": "The early part of Grand Theft Auto 6 basically gives you the chance to own a single vehicle, or two if you purchased the Ultimate Edition to get Jason's motorcycle. Aside from…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_09.0ng.c8ack3fp.jpg?w=300",
-   "at": 1795022528000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Jason Loves Cats In GTA 6, But Not All Of Them",
-   "url": "https://www.gamespot.com/articles/jason-loves-cats-in-gta-6-but-not-all-of-them/",
-   "summary": "Grand Theft Auto 6 co-protagonist Jason is, like many Americans, a fan of cats. Naturally, being an open-world game with seemingly endless possibilities, GTA 6 does indeed let…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261101165517_.jpg?w=300",
-   "at": 1795021631000,
-   "source": "GameSpot"
   },
   {
    "title": "All GTA 6 Radio Stations And Songs",
@@ -627,14 +741,6 @@
    "source": "JBox"
   },
   {
-   "title": "GTA 6 usa o AMD FSR 4 para rodar no Xbox Series S com Ray Tracing",
-   "url": "https://www.adrenaline.com.br/games/gta-6-usa-o-amd-fsr-4-para-rodar-no-xbox-series-s-com-ray-tracing/",
-   "summary": "A Rockstar Games lidou com as especificações únicas de cada console para garantir que GTA 6 tivesse bons visuais em todos eles",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-19-Bilhoes-Take-Two-640x400.jpeg",
-   "at": 1795012631000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "2ª temporada de ‘Cyberpunk: Mercenários’ é indicada ao The Game Awards",
    "url": "https://www.jbox.com.br/2026/11/18/2a-temporada-de-cyberpunk-mercenarios-e-indicada-ao-the-game-awards/",
    "summary": "Confira também a lista completa dos games que vão concorrer ao evento deste ano.",
@@ -718,14 +824,6 @@
    "source": "Xbox Wire Brasil"
   },
   {
-   "title": "DOOM: The Dark Ages é o primeiro game a suportar FSR 4.1 pela Vulkan",
-   "url": "https://www.adrenaline.com.br/games/pc-games/doom-the-dark-ages-e-o-primeiro-game-a-suportar-fsr-4-1-pela-vulkan/",
-   "summary": "Update 5 de DOOM: The Dark Ages leva FSR 4.1 ao game rodando pela Vulkan, com Frame Generation 4",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/doom-dark-ages-fsr-4-vulkan-640x400.jpg",
-   "at": 1795009045000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Presidente da Rockstar faz rara declaração sobre GTA 6: “Tentamos superar suas expectativas”",
    "url": "https://www.hardware.com.br/games/gta-6-declaracao-sam-houser/",
    "summary": "Sam Houser celebra o lançamento de GTA 6 e promete uma experiência que une nostalgia e novidades em Vice City",
@@ -799,15 +897,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "KuKu-Loop: The 100th Time's the Charm Anime Reveals Main Cast, Staff, 2027 TV Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-18/kuku-loop-the-100th-time-the-charm-anime-reveals-main-cast-staff-2027-tv-debut/.243942",
-   "summary": "Ikumi Hasegawa, Kazuki Ura star in XINGFU anime",
-   "img": "",
-   "at": 1795003219000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Sony lança atualização obrigatória para jogar GTA 6 no PS5 às vésperas da estreia",
    "url": "https://www.hardware.com.br/games/gta-6-ps5-atualizacao-obrigatoria/",
    "summary": "Novo firmware chega às vésperas do lançamento de GTA 6 e traz correções de segurança; até quem já fez o pré-download precisa atualizar o console",
@@ -824,14 +913,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "É o jogo do ano? Confira as notas de GTA 6 pela imprensa mundial",
-   "url": "https://www.adrenaline.com.br/games/e-o-jogo-do-ano-confira-as-notas-de-gta-6-pela-imprensa-mundial/",
-   "summary": "GTA 6 parece justificar o hype e não recebeu nenhuma nota menor do que 90 até o momento",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-30-FPS-Consoles-640x400.jpeg",
-   "at": 1795001594000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Slay the Spire 2 is one of this year's best selling games despite only being available on PC, and its players are \"obsessed\"",
    "url": "https://www.eurogamer.net/slay-the-spire-2-8-million-sales-steam-estimates",
    "summary": "One million copies for each month on sale, it seems. Slay the Spire 2, Mega Crit's roguelike deckbuilder, is estimated to have sold 7.9m copies since its release in Steam Early…",
@@ -840,39 +921,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Spice & Wolf: merchant meets the wise wolf Season 2 to Debut in January",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-18/spice-and-wolf-merchant-meets-the-wise-wolf-season-2-to-debut-in-january/.243941",
-   "summary": "Season 2's key visual, character visuals also revealed",
-   "img": "",
-   "at": 1794999997000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Guide: 42 Switch 1 & 2 Games You Should Check Out In Nintendo's Black Friday eShop Sale (Europe)",
    "url": "https://www.nintendolife.com/guides/42-switch-1-and-2-games-you-should-check-out-in-nintendos-black-friday-eshop-sale-europe",
    "summary": "Every game we scored 9/10 or higher, plus a personal pick. The once one-day event of 'Black Friday' seems to last for almost all of November these days. Anyway, Nintendo has…",
    "img": "https://images.nintendolife.com/45234664374fa/large.jpg",
    "at": 1794997800000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "New Votoms Anime Films Stream 1st 9 Minutes",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-18/new-votoms-anime-films-stream-1st-9-minutes/.243938",
-   "summary": "1st film opens in Japan on Friday",
-   "img": "",
-   "at": 1794992558000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Identity V Game's Oha Suta Daigo Gakuen Short Anime Unveils More Cast, Staff, November 24 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-18/identity-v-game-oha-suta-daigo-gakuen-short-anime-unveils-more-cast-staff-november-24-debut/.243933",
-   "summary": "Takehito Koyasu, Nobunaga Shimazaki, Yūichirō Umehara, Makoto Furukawa co-star",
-   "img": "",
-   "at": 1794986406000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Spyro's New Adventure Seemingly Teased For The Game Awards 2026",
@@ -889,15 +943,6 @@
    "img": "https://images.nintendolife.com/8505e1d0e1c55/large.jpg",
    "at": 1794978000000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Frieren Joins Mahjong Soul Game for Limited-Time Crossover",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-17/frieren-joins-mahjong-soul-game-for-limited-time-crossover/.243854",
-   "summary": "Frieren is taking another several years to learn the popular tile-based game",
-   "img": "",
-   "at": 1794977940000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Avatar Fighting Game's New Update Improves Performance On Switch 2",
@@ -1061,47 +1106,11 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Madoka Magica: Conheça o elenco principal de dublagem dos filmes no Brasil",
-   "url": "https://www.jbox.com.br/2026/11/16/madoka-magica-conheca-o-elenco-principal-de-dublagem-dos-filmes-no-brasil/",
-   "summary": "Após muita espera, história original teve sua trilogia disponibilizada em nosso idioma pela Crunchyroll.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/madoka-magica-beginnings-destacada.jpg?ssl=1",
-   "at": 1794843387000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
    "title": "2ª temporada de Skip and Loafer ganha novo trailer e imagem promocional",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/16/skip-and-loafer-temporada-2-anime-trailer-imagem",
    "summary": "A Crunchyroll já confirmou que vai exibir o anime quando ele for ao ar",
    "img": "https://a.storyblok.com/f/178900/1460x821/541e01c090/skip-and-loafer-season-2.jpg",
    "at": 1794837000000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime Are You a Landmine, Chihara-san? divulga nova imagem promocional",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/16/are-you-a-landmine-chihara-san-anime-imagem-promocional",
-   "summary": "O anime de comédia romântica estreia no dia 7 de janeiro de 2027 no Japão",
-   "img": "https://a.storyblok.com/f/178900/1460x821/04b5edb974/are-you-a-landmine-chihara-san.jpg",
-   "at": 1794835500000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Mega Man: Dual Override revela Cleanser Man, chefe criado por artista brasileiro",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/16/mega-man-dual-override-cleanser-man-trailer",
-   "summary": "O jogo tem lançamento marcado para 2027.",
-   "img": "https://a.storyblok.com/f/178900/1024x576/2a3df17212/mega-man-dual-override-cleanser-man.jpg",
-   "at": 1794821580000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime Bride of the Barrier Master divulga trailer dedicado a Hazuki Ichise",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/15/bride-of-the-barrier-master-anime-trailer-hazuki-ichise",
-   "summary": "A estreia da série está prevista para janeiro de 2027",
-   "img": "https://a.storyblok.com/f/178900/1460x821/58f2402d96/bride_of_the_barrier_master_header3.jpg",
-   "at": 1794765300000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1131,15 +1140,6 @@
    "at": 1794607883000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "2º ato de ‘Stranger Than Heaven’ é destaque em novo trailer",
-   "url": "https://www.jbox.com.br/2026/11/13/2o-ato-de-stranger-than-heaven-e-destaque-em-novo-trailer/",
-   "summary": "Jogo da franquia 'Yakuza/Like a Dragon' tem lançamento marcado para janeiro do ano que vem.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/stranger-than-heaven-2o-ato-destacada.jpg?ssl=1",
-   "at": 1794605929000,
-   "cat": "geek",
-   "source": "JBox"
   },
   {
    "title": "Metaphor: ReFantazio chega ao Nintendo Switch 2",
