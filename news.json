@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795061366842,
+ "atualizadoEm": 1795073426077,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 10
   },
   {
    "nome": "Anime News Network",
@@ -78,6 +78,55 @@
   }
  ],
  "itens": [
+  {
+   "title": "Trails In The Sky Switch 2 Updates Add 30fps Lock Option In Graphics Mode",
+   "url": "https://www.nintendolife.com/news/2026/11/trails-in-the-sky-switch-2-updates-add-30fps-lock-option-in-graphics-mode",
+   "summary": "Available in the 1st and 2nd Chapters. Trails in the Sky 1st Chapter has rolled out a new update this week, bumping it up to Version 1.0.8 on the Switch and Switch 2. It comes…",
+   "img": "https://images.nintendolife.com/5e2a74e6d1bf7/large.jpg",
+   "at": 1795071300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "\"BMXing Tanuki Game\" Was Prepared For GTA 6's Launch, But Wasn't Expecting Zelda",
+   "url": "https://www.nintendolife.com/news/2026/11/bmxing-tanuki-game-was-prepared-for-gta-6s-launch-but-wasnt-expecting-zelda",
+   "summary": "Ocarina's remake arrived a week before Tanuki: Pon's Summer. November is a huge month for video games, with not only the release of the Ocarina of Time remake but also the…",
+   "img": "https://images.nintendolife.com/c542639839ff9/large.jpg",
+   "at": 1795067100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "GTA 6 – 13 Things I Wish I Knew",
+   "url": "https://www.gamespot.com/videos/gta-6-13-things-i-wish-i-knew/",
+   "summary": "Rockstar’s Grand Theft Auto VI is finally out! Here are 13 crucial tips that will give you a leg up in the wild fictional state of Leonida.",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA6_13ThingsToKnow_SITE.jpg?w=300",
+   "at": 1795064400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA 6 First 20 Minutes of PS5 Pro Gameplay",
+   "url": "https://www.gamespot.com/videos/gta-6-first-20-minutes-of-ps5-pro-gameplay/",
+   "summary": "GTAVI is finally out and here's how Rockstar's ambitious open-world game runs on Sony's PlayStation 5 Pro.",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTAVI_OpeningGameplay_20261110_site.jpg?w=300",
+   "at": 1795064400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA 6 – Six Things You Should Do Everyday",
+   "url": "https://www.gamespot.com/videos/gta-6-six-things-you-should-do-everyday/",
+   "summary": "Grand Theft Auto VI is all about routine. Here are some activities you should do every single in-game day in order to stay on top.",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA6_ThingsYouShouldDoEveryDay_SITE.jpg?w=300",
+   "at": 1795064400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Orb: On the Movements of the Earth Creator Uoto Pens 1st Nonfiction Book",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-18/orb-on-the-movements-of-the-earth-creator-uoto-pens-1st-nonfiction-book/.243944",
+   "summary": "Anti-Serialization Hypothesis examines history from Gutenberg to manga's future",
+   "img": "",
+   "at": 1795063714000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Pac-Man's New Animated Short Reveals Return to Macy's Thanksgiving Parade",
    "url": "https://www.animenewsnetwork.com/interest/2026-11-18/pac-man-new-animated-short-reveals-return-to-macy-thanksgiving-parade/.243943",
@@ -506,36 +555,12 @@
    "source": "Anime News Network"
   },
   {
-   "title": "The Game Awards Snubbed 2D Games, And I Took That Personally",
-   "url": "https://www.gamespot.com/articles/the-game-awards-snubbed-2d-games-and-i-took-that-personally/",
-   "summary": "The Game Awards nominees have been announced, officially starting the season of debate and discussion around the best games of the year. As always, this inspires some conversation…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/images_62177a.jpg?w=300",
-   "at": 1795028249000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 6 Has A Hilarious Riff On Easter Eggs",
-   "url": "https://www.gamespot.com/articles/gta-6-has-a-hilarious-riff-on-easter-eggs/",
-   "summary": "Now that Rockstar's GTA 6 is available , people are discovering all manner of things in the game's gigantic open world . One such finding is that GTA 6 has its own take on Easter…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261101085452_.jpg?w=300",
-   "at": 1795027778000,
-   "source": "GameSpot"
-  },
-  {
    "title": "GTA 6 won't let you use cheats until you complete the main story, and locks progression when you do",
    "url": "https://www.eurogamer.net/gta-6-no-cheats-until-completing-main-story",
    "summary": "Here's a twist: you can't use cheats in Grand Theft Auto 6 until you complete the entire game's main story. Read more",
    "img": "https://assetsio.gnwcdn.com/GTA-6-review-2.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795027340000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Best Ways To Spend Your Money In GTA 6",
-   "url": "https://www.gamespot.com/articles/best-ways-to-spend-your-money-in-gta-6/",
-   "summary": "From the very first mission in Grand Theft Auto 6 until the credits roll, money is the core focus throughout the story. It's the constant motivation for both Jason and Lucia, as…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_18.001ebutl6h-9w.jpg?w=300",
-   "at": 1795027100000,
-   "source": "GameSpot"
   },
   {
    "title": "Principal roteirista de Clair Obscur: Expedition 33 sai da Sandfall para ajudar desenvolvedores a contar histórias melhores",
@@ -625,15 +650,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-boat-beer.jpeg?w=300",
    "at": 1795021309000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Witch and Mercenary Volumes 1-2 Light Novel Review",
-   "url": "https://www.animenewsnetwork.com/review/witch-and-mercenary-volumes-1-2/light-novel-series/.243465",
-   "summary": "Forced into killing by their environment, a witch and a mercenary travel to an unknown land to break free from their turbulent pasts. But the new continent isn’t all that…",
-   "img": "",
-   "at": 1795021200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Jogos da CAPCOM em oferta na Nuuvem com até 87% de desconto + cupom limitado de 15%",
@@ -889,6 +905,33 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia",
+   "url": "https://www.intoxianime.com/2026/11/sakamoto-days-2o-temporada-ganha-trailer-com-op-e-data-de-estreia/",
+   "summary": "... O post Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005635000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual",
+   "url": "https://www.intoxianime.com/2026/11/soara-to-mamono-anime-sobre-guerreira-vivendo-com-monstros-ganha-visual/",
+   "summary": "... O post Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005631000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia",
+   "url": "https://www.intoxianime.com/2026/11/spice-wolf-2o-temporada-do-remake-ganha-visual-e-previsao-de-estreia/",
+   "summary": "... O post Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005629000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "GTA 6 impressiona Digital Foundry com gráficos de nova geração, mas PS5 apresenta quedas de FPS",
    "url": "https://www.hardware.com.br/games/gta-6-impressiona-digital-foundry/",
    "summary": "Análise técnica de GTA 6 destaca iluminação com ray tracing, clima dinâmico e qualidade visual próxima do 4K nativo no PS5 Pro, enquanto o PS5 padrão enfrenta oscilações de…",
@@ -934,22 +977,6 @@
    "summary": "Every game we scored 9/10 or higher, plus a personal pick. The once one-day event of 'Black Friday' seems to last for almost all of November these days. Anyway, Nintendo has…",
    "img": "https://images.nintendolife.com/45234664374fa/large.jpg",
    "at": 1794997800000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Spyro's New Adventure Seemingly Teased For The Game Awards 2026",
-   "url": "https://www.nintendolife.com/news/2026/11/spyros-new-adventure-seemingly-teased-for-the-game-awards-2026",
-   "summary": "Taking flight next year. Earlier this year, Activision and Toys for Bob lifted the lid on Spyro: A Realm Beyond for the Switch 2 and other platforms. Following the announcement…",
-   "img": "https://images.nintendolife.com/17184805286a9/large.jpg",
-   "at": 1794981300000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Guide: Stage Tour All Songs List - Full Tracklist, Every Confirmed Artist",
-   "url": "https://www.nintendolife.com/guides/stage-tour-all-songs-list-full-tracklist-every-confirmed-artist",
-   "summary": "For a song. Stage Tour launches on 10th December 2026 , bringing the rhythm-based musical gameplay of classics like Rock Band and Guitar Hero series back on modern consoles,…",
-   "img": "https://images.nintendolife.com/8505e1d0e1c55/large.jpg",
-   "at": 1794978000000,
    "source": "Nintendo Life"
   },
   {
@@ -1023,6 +1050,33 @@
    "at": 1794921360000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/11/kanan-sama-wa-akumade-2o-temporada-ganha-trailer-e-janela-de-estreia/",
+   "summary": "... O post Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794919041000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Jirai Nandesuka – Comédia Romântica sobre garota sombria ganha visual e data de estreia",
+   "url": "https://www.intoxianime.com/2026/11/jirai-nandesuka-comedia-romantica-sobre-garota-sombria-ganha-visual-e-data-de-estreia/",
+   "summary": "... O post Jirai Nandesuka – Comédia Romântica sobre garota sombria ganha visual e data de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794919039000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Yuukyuu no Gusha – Anime sobre Mago recluso ganha trailer com OP e ED e data",
+   "url": "https://www.intoxianime.com/2026/11/yuukyuu-no-gusha-anime-sobre-mago-recluso-ganha-trailer-com-op-e-ed-e-data/",
+   "summary": "... O post Yuukyuu no Gusha – Anime sobre Mago recluso ganha trailer com OP e ED e data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794919037000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "‘Re:ZERO’ tem 5ª temporada anunciada",
@@ -1113,6 +1167,42 @@
    "at": 1794837000000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Skip to Loafer – 2º temporada ganha trailer",
+   "url": "https://www.intoxianime.com/2026/11/skip-to-loafer-2o-temporada-ganha-trailer/",
+   "summary": "... O post Skip to Loafer – 2º temporada ganha trailer apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794833765000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Witch Watch – 2º temporada ganha visual e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/11/witch-watch-2o-temporada-ganha-visual-e-janela-de-estreia/",
+   "summary": "... O post Witch Watch – 2º temporada ganha visual e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794833764000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "[Rumor]The Genius Inventor’s – Mangá sobre Garota Inventora pode ter anime",
+   "url": "https://www.intoxianime.com/2026/11/rumorthe-genius-inventors-manga-sobre-garota-inventora-pode-ter-anime/",
+   "summary": "... O post [Rumor]The Genius Inventor’s – Mangá sobre Garota Inventora pode ter anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794833763000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "[Atualizado]Diamond no Kouzai – Drama sobre Beisebol tem anuncio de anime vazado",
+   "url": "https://www.intoxianime.com/2026/11/diamond-no-kouzai-drama-sobre-beisebol-tem-anuncio-de-anime-vazado/",
+   "summary": "... O post [Atualizado]Diamond no Kouzai – Drama sobre Beisebol tem anuncio de anime vazado apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794833762000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "Re:ZERO é renovado para sua 5ª temporada",
