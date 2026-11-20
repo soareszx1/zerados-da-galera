@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795125605613,
+ "atualizadoEm": 1795137662858,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 10
   },
   {
    "nome": "Anime News Network",
@@ -79,6 +79,85 @@
  ],
  "itens": [
   {
+   "title": "Anime Majutsu wo Kiwamete Tabi ni Deta Tensei Elf, Moteamashita Jumyo de Ikeru Densetsu to Naru revela data de estreia e músicas-tema em novo trailer",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/majutsu-wo-kiwamete-tabi-ni-deta-tensei-elf-data-estreia-musicas-tema-trailer",
+   "summary": "Yuki Inaba dirige a série de fantasia no Studio Palette",
+   "img": "https://a.storyblok.com/f/178900/1460x821/85380a7108/majutsu-wo-kiwamete-tabi-ni-deta-tensei-elf-moteamashita-jumyo-de-ikeru-densetsu-to-naru.jpg",
+   "at": 1795134900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "LEGO City Undercover's Developer Is Teasing \"Something\"",
+   "url": "https://www.nintendolife.com/news/2026/11/lego-city-undercovers-developer-is-teasing-something",
+   "summary": "\"Speaking of LEGO City Undercover\". If you're itching to jump into a busy city filled with chaos, you might want to keep an eye on TT Games this week. The developer behind…",
+   "img": "https://images.nintendolife.com/8bf2013d43a66/large.jpg",
+   "at": 1795134600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Anime Inu x Boku Secret Service comemora 15º aniversário com nova ilustração promocional",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/inu-x-boku-secret-service-15-aniversario-ilustracao-promocional",
+   "summary": "O público japonês poderá rever todos os 12 episódios da série",
+   "img": "https://a.storyblok.com/f/178900/960x540/0d84ff5b49/inu-x-boku-hero.png",
+   "at": 1795134300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "2ª temporada de YAIBA: Samurai Legend revela música de abertura e dublador de Gekko",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/yaiba-samurai-legend-2-temporada-musica-abertura-dublador-gekko",
+   "summary": "A série reboot retorna no próximo ano",
+   "img": "https://a.storyblok.com/f/178900/960x540/95e9dc045b/yaiba-samurai-legend.jpg",
+   "at": 1795133100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime Super Psychic Policeman Chojo divulga vídeo com a letra de \"Chinjuku Sentai Chinranger\"",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/super-psychic-policeman-chojo-video-letra-chinjuku-sentai-chinranger",
+   "summary": "Vídeo homenageia as aberturas de Super Sentai e destaca a música apresentada no episódio 7",
+   "img": "https://a.storyblok.com/f/178900/960x540/6ebe2ff6f4/chinjuku-sentai-chinranger-lyric-video.png",
+   "at": 1795130100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Jogos de Nintendo Switch 1 & 2 em oferta de Black Friday; até 80% de desconto",
+   "url": "https://www.adrenaline.com.br/games/nintendo/jogos-de-nintendo-switch-1-2-em-oferta-de-black-friday-ate-80-de-desconto/",
+   "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/metroid-dread-640x400.webp",
+   "at": 1795129260000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "‘GTA 6’ japonês remove nudez e reduz violência em versão censurada",
+   "url": "https://www.jbox.com.br/2026/11/19/gta-6-japones-remove-nudez-e-reduz-violencia-em-versao-censurada/",
+   "summary": "E aí, o protagonista do jogo toma banho... usando roupas de baixo.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/gtavi-destacada.jpg?ssl=1",
+   "at": 1795128222000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Novo anime de Oishinbo ganha novo trailer e arte promocional",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/novo-anime-oishinbo-estreia-4-de-janeiro-trailer-arte-elenco",
+   "summary": "A série de temática culinária estreia dia 4 de janeiro",
+   "img": "https://a.storyblok.com/f/178900/960x540/4c9c784479/new-oishinbo-tv-anime.jpg",
+   "at": 1795125900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Criterion Channel Adds Speed Racer Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-19/criterion-channel-adds-speed-racer-anime/.243995",
+   "summary": "Anime streams in English/Japanese versions in December",
+   "img": "",
+   "at": 1795125600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Códigos de trapaça de GTA 6: veja a lista completa de cheats para usar no PS5 e no Xbox Series X|S",
    "url": "https://br.ign.com/grand-theft-auto-vi/157797/codigos-de-trapaca-de-gta-6-veja-a-lista-completa-de-cheats-para-usar-no-ps5-e-no-xbox-series-xs",
    "summary": "Saiba como ativar os códigos e confira a lista completa dos comandos Quer causar o caos em Vice City sem limites? Grand Theft Auto VI continua a tradição com nada menos que 61…",
@@ -93,6 +172,15 @@
    "img": "https://assetsio.gnwcdn.com/DLteRYHW5NJSTNhEkVHtk3.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795122580000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Grotesqqque Anime Film Screens in Los Angeles on December 3 for 1-Week Only",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-19/grotesqqque-anime-film-screens-in-los-angeles-on-december-3-for-1-week-only/.243997",
+   "summary": "Omnibus film with 3 stories screens at Alamo Drafthouse Cinema Downtown Los Angeles",
+   "img": "",
+   "at": 1795122575000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Infamous GTA 6 leaker CyberLeek is back, and this time the group claims to have leaked a full development build of the game",
@@ -404,14 +492,6 @@
    "img": "https://images.nintendolife.com/e72297849d73c/large.jpg",
    "at": 1795111200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "My Conveyors Are Spaghetti, And Yours Could Be Too As Satisfactory Drops To Its Lowest Price",
-   "url": "https://www.gamespot.com/articles/my-conveyors-are-spaghetti-and-yours-could-be-too-as-satisfactory-drops-to-its-lowest-price/",
-   "summary": "As more and more parts are required to send through the Space Elevator stages, my humble factory expands. What was once a simple system, requiring nothing but biofuel and a small…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-satisfactory-deal-lowest-price.jpg?w=300",
-   "at": 1795111200000,
-   "source": "GameSpot"
   },
   {
    "title": "Getbackers Manga Gets Comic Anime From AI Platform MangaNow Studio",
@@ -727,6 +807,60 @@
    "source": "Anime News Network"
   },
   {
+   "title": "KuKu-Loop – Novel sobre Garota vivendo em Loop de Morte tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/kuku-loop-novel-sobre-garota-vivendo-em-loop-de-morte-tem-anuncio-de-anime/",
+   "summary": "... O post KuKu-Loop – Novel sobre Garota vivendo em Loop de Morte tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093795000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Boukensha License – Anime sobre Aventureiro e garota amaldiçoada ganha trailer com OP e Data",
+   "url": "https://www.intoxianime.com/2026/11/boukensha-license-anime-sobre-aventureiro-e-garota-amaldicoada-ganha-trailer-com-op-e-data/",
+   "summary": "... O post Boukensha License – Anime sobre Aventureiro e garota amaldiçoada ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093793000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Oishinbo – Anime sobre Repórter Culinário ganha com OP e Data de estreia",
+   "url": "https://www.intoxianime.com/2026/11/oishinbo-anime-sobre-reporter-culinario-ganha-com-op-e-data-de-estreia/",
+   "summary": "... O post Oishinbo – Anime sobre Repórter Culinário ganha com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093790000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Not-Sew-Wicked – Webtoon sobre Madrasta tentando ser Boa tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/not-sew-wicked-webtoon-sobre-madrasta-tentando-ser-boa-tem-anuncio-de-anime/",
+   "summary": "... O post Not-Sew-Wicked – Webtoon sobre Madrasta tentando ser Boa tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093788000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Majutsu wo Kiwamete – Anime sobre homem reencarnando como elfo ganha trailer com OP e ED e data",
+   "url": "https://www.intoxianime.com/2026/11/majutsu-wo-kiwamete-anime-sobre-homem-reencarnando-como-elfo-ganha-trailer-com-op-e-ed-e-data/",
+   "summary": "... O post Majutsu wo Kiwamete – Anime sobre homem reencarnando como elfo ganha trailer com OP e ED e data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093787000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Isekai Munchkin – Anime sobre protagonista com 1 de HP ganha trailer com OP e ED e data",
+   "url": "https://www.intoxianime.com/2026/11/isekai-munchkin-anime-sobre-protagonista-com-1-de-hp-ganha-trailer-com-op-e-ed-e-data/",
+   "summary": "... O post Isekai Munchkin – Anime sobre protagonista com 1 de HP ganha trailer com OP e ED e data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795093782000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "Modders conseguem aplicar DLSS 5 em GTA 6 usando Remote Play do PS5",
    "url": "https://www.adrenaline.com.br/games/modders-conseguem-aplicar-dlss-5-em-gta-6-usando-remote-play-do-ps5/",
    "summary": "Opção ainda não é uma emulação e experiência de jogo não é otimizada.",
@@ -792,14 +926,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "11 dicas para começar bem sua aventura na Leonida de GTA 6",
-   "url": "https://www.adrenaline.com.br/games/11-dicas-para-comecar-bem-sua-aventura-na-leonida-de-gta-6/",
-   "summary": "GTA 6 finalmente chegou, e algumas dicas podem ajudar a tornar mais prazerosa sua experiência no novo mundo da Rockstar Games",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Dicas-GTA-6-Comecar-Bem-640x400.jpeg",
-   "at": 1795088510000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "O grande dia chegou: GTA 6 finalmente está disponível",
    "url": "https://www.hardware.com.br/games/gta-6-finalmente-esta-disponivel/",
    "summary": "GTA 6 chegou oficialmente ao PS5 e Xbox Series, colocando fim a uma das maiores esperas da história dos videogames",
@@ -843,30 +969,12 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Shin Oishinbo Anime Reveals More Cast, Staff, January 4 Debut in Main Trailer",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-19/shin-oishinbo-anime-reveals-more-cast-staff-january-4-debut-in-main-trailer/.243985",
-   "summary": "Daisuke Ono, Yasuaki Takumi, Akane Fujita, Tomokazu Seki join anime's cast",
-   "img": "",
-   "at": 1795083487000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Guide: 50 Best Wii Games Of All Time",
    "url": "https://www.nintendolife.com/guides/50-best-wii-games-of-all-time",
    "summary": "Our guide to the best games on Wii. 19th November 2026 marks the 20th anniversary of Wii's Japanese launch, so it's the perfect time to revisit our list of the best games on the…",
    "img": "https://images.nintendolife.com/311f8ca8d5477/large.jpg",
    "at": 1795082400000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "The Reincarnated Elf Left on a Journey to Master His Magic Anime's New Video Reveals More Cast/Staff, Theme Songs, December 30 Streaming Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-19/the-reincarnated-elf-left-on-a-journey-to-master-his-magic-anime-new-video-reveals-more-cast-staff-/.243936",
-   "summary": "Artist ao performs opening, band moon drop perform ending song",
-   "img": "",
-   "at": 1795078800000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Trails In The Sky Switch 2 Updates Add 30fps Lock Option In Graphics Mode",
@@ -1016,6 +1124,33 @@
    "source": "AnimeNew"
   },
   {
+   "title": "Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia",
+   "url": "https://www.intoxianime.com/2026/11/sakamoto-days-2o-temporada-ganha-trailer-com-op-e-data-de-estreia/",
+   "summary": "... O post Sakamoto Days – 2º temporada ganha trailer com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005635000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual",
+   "url": "https://www.intoxianime.com/2026/11/soara-to-mamono-anime-sobre-guerreira-vivendo-com-monstros-ganha-visual/",
+   "summary": "... O post Soara to Mamono – Anime sobre Guerreira vivendo com Monstros ganha visual apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005631000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia",
+   "url": "https://www.intoxianime.com/2026/11/spice-wolf-2o-temporada-do-remake-ganha-visual-e-previsao-de-estreia/",
+   "summary": "... O post Spice & Wolf – 2º temporada do Remake ganha visual e previsão de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795005629000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "Mangá Märchen Crown será encerrado em novembro",
    "url": "https://animenew.com.br/marchen-crown-manga-chega-ao-fim/",
    "summary": "O mangá Märchen Crown, escrito por Aka Akasaka, Aoi Kujira e ilustrado por Ajichika, chegará ao fim em 19 de novembro, conforme anúncio da revista Young Jump. A informação…",
@@ -1034,15 +1169,6 @@
    "source": "JBox"
   },
   {
-   "title": "Panini anuncia Solo Leveling: Ragnarok, Gyarus não podem ser gentis com otakus?! e outros títulos",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/panini-solo-leveling-ragnarok-gyarus-nao-podem-ser-gentis-com-otakus-a-brisa-marinha-e-a-morada-dos-dragoes-dragon-ball-forever-cowa",
-   "summary": "Dragon Ball Forever, Cowa! e A Brisa Marinha e a Morada dos Dragões também foram anunciados.",
-   "img": "https://a.storyblok.com/f/178900/1280x720/de63ae87a6/gals-cant-be-kind-to-otaku-opening-hero.png",
-   "at": 1794944820000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "BABYMETAL e LiSA são indicados ao GRAMMY na nova categoria ‘Melhor Performance de Pop Asiático’",
    "url": "https://www.jbox.com.br/2026/11/17/babymetal-e-lisa-sao-indicados-ao-grammy-na-nova-categoria-melhor-performance-de-pop-asiatico/",
    "summary": "A cantora e o grupo japonês dividem a disputa com nomes do K-Pop e do pop filipino em uma categoria que vem levantando debates e gerando boicotes.",
@@ -1052,40 +1178,13 @@
    "source": "JBox"
   },
   {
-   "title": "Mecânicas de Danganronpa 2×2 são apresentadas em novo trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/danganronpa-2x2-trailer-mecanicas",
-   "summary": "O jogo tem lançamento marcado para janeiro de 2027.",
-   "img": "https://a.storyblok.com/f/178900/1024x576/d52da4574d/danganronpa-2x2.jpg",
-   "at": 1794943980000,
+   "title": "Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/11/kanan-sama-wa-akumade-2o-temporada-ganha-trailer-e-janela-de-estreia/",
+   "summary": "... O post Kanan-sama wa Akumade – 2º temporada ganha trailer e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1794919041000,
    "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Shigeru Miyamoto recebe o primeiro Legend Award do D.I.C.E. Awards",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/nintendo-shigeru-miyamoto-legend-dice-awards",
-   "summary": "A cerimônia acontecerá dia 18 de fevereiro em Las Vegas",
-   "img": "https://a.storyblok.com/f/178900/1200x675/b97892a452/miyamoto-legend-award.jpeg",
-   "at": 1794943500000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "LiSA é indicada ao Grammy pelo seu tema musical para The Irregular at Magic High School THE MOVIE -Yotsuba Succession Arc-",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/lisa-grammy-indicacao-melhor-performance-musica-pop-asiatica",
-   "summary": "“YES” é a única música de anime na categoria de Melhor Performance de Música Pop Asiática",
-   "img": "https://a.storyblok.com/f/178900/960x540/8f6f958af2/lisa-header.jpg",
-   "at": 1794929520000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "2ª temporada de Mistress Kanan is Devilishly Easy confirma lançamento para 2027 em novo trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/17/mistress-kanan-is-devilishly-easy-temporada-2-anime-2027-trailer",
-   "summary": "A primeira temporada está disponível aqui na Crunchyroll",
-   "img": "https://a.storyblok.com/f/178900/2664x1498/d1362d57e8/mistress-kanan-is-devilishly-easy-season-2.png",
-   "at": 1794921360000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
+   "source": "IntoxiAnime"
   },
   {
    "title": "‘Re:ZERO’ tem 5ª temporada anunciada",
@@ -1093,15 +1192,6 @@
    "summary": "Fase mais recente foi exibida entre abril e setembro deste ano, adaptando o arco 6 da série de light novels.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/re-zero-subaru-destacada.jpg?ssl=1",
    "at": 1794877520000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Os Cavaleiros do Zodíaco: Almanaque Científico do Japão anuncia colaboração com o mangá ‘Next Dimension’",
-   "url": "https://www.jbox.com.br/2026/11/16/os-cavaleiros-do-zodiaco-almanaque-cientifico-do-japao-anuncia-colaboracao-com-o-manga-next-dimension/",
-   "summary": "Parceria é uma celebração ao lançamento da 100ª edição da publicação.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Os-Cavaleiros-do-Zodiaco-next-dimension-destacada.jpg?ssl=1",
-   "at": 1794870900000,
    "cat": "geek",
    "source": "JBox"
   },
