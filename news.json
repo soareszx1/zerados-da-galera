@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795224309902,
+ "atualizadoEm": 1795233719159,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,19 +79,51 @@
  ],
  "itens": [
   {
-   "title": "Inacreditável! GTA 6 já teria vendido 32 milhões de cópias",
-   "url": "https://www.adrenaline.com.br/games/inacreditavel-gta-6-ja-teria-vendido-32-milhoes-de-copias/",
-   "summary": "GTA 6 vende 32,5 milhões antes do lançamento e fatura US$ 3,79 bilhões no dia de estreia. Saiba os detalhes e recordes!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/10/GTA-6-Comentarios-Politicos-640x400.jpeg",
-   "at": 1795219299000,
-   "source": "Adrenaline"
+   "title": "The Wolf Among Us Remastered Has Been Delayed For Switch",
+   "url": "https://www.nintendolife.com/news/2026/11/the-wolf-among-us-remastered-has-been-delayed-for-switch",
+   "summary": "Update: It's now \"estimated\" to release later this month. : Telltale Games has announced the Nintendo Switch version of The Wolf Among Us Remastered \"needs a little bit more…",
+   "img": "https://images.nintendolife.com/3768f6736f5ca/large.jpg",
+   "at": 1795231800000,
+   "source": "Nintendo Life"
   },
   {
    "title": "Jogos da Electronic Arts em oferta no Nintendo Switch 1 & 2; até 90% de desconto",
    "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-electronic-arts-em-oferta-no-nintendo-switch-1-2-ate-90-de-desconto/",
    "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/07/ea-sports-fc-27-5-640x400.webp",
-   "at": 1795219200000,
+   "at": 1795228440000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Anniversary: Super Smash Bros. Melee Has Now Been Duking It Out For 25 Years",
+   "url": "https://www.nintendolife.com/news/2026/11/anniversary-super-smash-bros-melee-has-now-been-duking-it-out-for-25-years",
+   "summary": "NSO release when? One first-party title from the GameCube library that's well and truly outlived this particular Nintendo generation is Super Smash Bros. Melee , and today happens…",
+   "img": "https://images.nintendolife.com/af5e86154689b/large.jpg",
+   "at": 1795227900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Death Stranding para PS4 e PS5 despenca de preço na Black da Amazon",
+   "url": "https://br.ign.com/descontos/157831/death-stranding-para-ps4-e-ps5-despenca-de-preco-na-black-da-amazon",
+   "summary": "Jogo de Hideo Kojima sai por R$ 55 no PS4 e R$ 106 na Versão do Diretor para PS5",
+   "img": "https://sm.ign.com/ign_br/blogroll/h/h3death-st/h3death-stranding-directors-cuth3brdeath-stranding-is-making_u8hb.jpg",
+   "at": 1795227851000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Play GTA 6 In First Person With This Glitch",
+   "url": "https://www.gamespot.com/videos/play-gta-6-in-first-person-with-this-glitch/",
+   "summary": "So it turns out you can play GTA 6 in first person mode right now with a glitch. Check out the video on how to play in this mode. (Note it's probably going to get patched so enjoy…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta6_first_person_glitch_SITE.jpg?w=300",
+   "at": 1795222800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Inacreditável! GTA 6 já teria vendido 32 milhões de cópias",
+   "url": "https://www.adrenaline.com.br/games/inacreditavel-gta-6-ja-teria-vendido-32-milhoes-de-copias/",
+   "summary": "GTA 6 vende 32,5 milhões antes do lançamento e fatura US$ 3,79 bilhões no dia de estreia. Saiba os detalhes e recordes!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/10/GTA-6-Comentarios-Politicos-640x400.jpeg",
+   "at": 1795219299000,
    "source": "Adrenaline"
   },
   {
@@ -385,14 +417,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "GTA 6 Is Crashing On Some PS5s With CE-108255-1 Error Code",
-   "url": "https://www.gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code/",
-   "summary": "After years of waiting, GTA fans can finally play GTA 6 , but some players are encountering a dreaded error code that makes the game crash or otherwise fail. Users are reporting…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTALucia.png?w=300",
-   "at": 1795194680000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Jogos da PlayStation em oferta na Steam com até 75% de desconto",
    "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-playstation-em-oferta-na-steam-com-ate-75-de-desconto-2/",
    "summary": "Confira os principais jogos distribuídos pela PlayStation disponíveis com desconto nesta oferta por tempo limitado na Steam",
@@ -638,14 +662,6 @@
    "img": "https://images.nintendolife.com/dcf51d099b468/large.jpg",
    "at": 1795185900000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Todos os easter eggs (até o momento) de GTA 5 em GTA 6",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157813/todos-os-easter-eggs-ate-o-momento-de-gta-5-em-gta-6",
-   "summary": "Leonida não está tão longe de Los Santos GTA 6 chegou apenas ontem para o resto do mundo, mas muitos jogadores já estão achando diversos easter eggs referentes aos outros jogos da…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/gta-20261120-103344-0000_tm9m.jpg",
-   "at": 1795185030000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Controles DualSense Hyperpop Collection em promoção! Estilo neon para turbinar seu setup PS5",
@@ -1018,14 +1034,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Top 20 Best-Selling Wii Games Of All Time Revealed (US)",
-   "url": "https://www.nintendolife.com/news/2026/11/top-20-best-selling-wii-games-of-all-time-revealed-us",
-   "summary": "Wa wa Wii wa! In case you need another reminder of how old you are, the Wii has just turned 20 years old in North America (those in Europe have until 8th December to hit the…",
-   "img": "https://images.nintendolife.com/7588632be07f3/large.jpg",
-   "at": 1795113900000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Anime Charisma dá as boas-vindas ao Terra em novo trailer de personagem",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/anime-charisma-terra-trailer-personagem",
    "summary": "A adaptação da franquia transmídia estreia dia 7 de janeiro",
@@ -1033,14 +1041,6 @@
    "at": 1795113120000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Ubisoft Is Laying Off Staff From Two Of Its Biggest Studios",
-   "url": "https://www.nintendolife.com/news/2026/11/ubisoft-is-laying-off-staff-from-two-of-its-biggest-studios",
-   "summary": "GuilleMORE?! Ubisoft has confirmed that it is laying off a total of 166 members of staff from its Canadian offices. The teams affected, Ubisoft Montréal and Ubisoft Québec, are…",
-   "img": "https://images.nintendolife.com/e72297849d73c/large.jpg",
-   "at": 1795111200000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Conheça os dubladores brasileiros de The Exiled Heavy Knight Knows How to Game the System",
