@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795266597566,
+ "atualizadoEm": 1795276576621,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 14
+   "itens": 15
   },
   {
    "nome": "Eurogamer",
@@ -78,6 +78,210 @@
   }
  ],
  "itens": [
+  {
+   "title": "Série de light novels May I Ask for One Final Thing? chega ao fim em dezembro",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/may-i-ask-for-one-final-thing-novel-final",
+   "summary": "Obra é publicada desde 2019.",
+   "img": "https://a.storyblok.com/f/178900/960x540/d243a81008/may-i-ask-for-one-final-thing.png",
+   "at": 1795276380000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Dragon Quest deveria acabar após a morte de Akira Toriyama, sugere compositor",
+   "url": "https://www.hardware.com.br/games/dragon-quest-acabar-akira-toriyama/",
+   "summary": "Yasunori Mitsuda questiona a continuidade do estilo artístico do criador de Dragon Ball após sua morte e acredita que Yuji Horii deveria desenvolver um RPG completamente novo",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Dragon-Quest-deveria-acabar-apos-a-morte-de-Akira-Toriyama-sugere-compositor.jpg",
+   "at": 1795275362000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Jogos do Homem-Aranha e God of War Ragnarok para PS5 estão com até 69% de desconto na Amazon",
+   "url": "https://www.hardware.com.br/hardware-indica/jogos-do-homem-aranha-e-god-of-war-ragnarok-para-ps5-estao-com-ate-69-de-desconto-na-amazon/",
+   "summary": "Spider-Man 2 e God of War Ragnarök para PS5 com até 69% de desconto na Amazon. Aproveite agora.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/06/2-15-1600x900.jpg",
+   "at": 1795275050000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "STEEL BALL RUN JoJo's Bizarre Adventure ‒ Episode 10",
+   "url": "https://www.animenewsnetwork.com/review/steel-ball-run-jojo-bizarre-adventure/episode-10/.244058",
+   "summary": "This episode punches up many of the ideas that made the original Dio one of the most iconic villains in anime, and it's so much fun to see Araki’s original ideas explored again.",
+   "img": "",
+   "at": 1795275000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Sindicatos europeus da indústria de games publicam manifesto contra o uso de IA generativa",
+   "url": "https://www.hardware.com.br/games/sindicatos-europeus-da-industria-games-publicam-manifesto-contra-uso-ia-generativa/",
+   "summary": "Manifesto conjunto defende que jogos devem ser feitos por pessoas e pede que empresas proíbam o uso de ferramentas de inteligência artificial generativa.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-17-160903-1416x797.jpg",
+   "at": 1795274474000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "New Hana-Kimi Live-Action Series Reveals Theme Songs, Short Video",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/new-hana-kimi-live-action-series-reveals-theme-songs-short-video/.244043",
+   "summary": "CIRRA, Ryugujo perform themes for series debuting on December 5",
+   "img": "",
+   "at": 1795274100000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "2º filme de Armored Trooper VOTOMS: Die Graue Hexe tem estreia marcada para 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/armored-trooper-votoms-die-graue-hexe-segundo-filme-2027",
+   "summary": "Primeira parte estreou no último dia 20.",
+   "img": "https://a.storyblok.com/f/178900/960x540/1e63a8db48/votoms-2kvs.jpg",
+   "at": 1795273980000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Últimas unidades da oferta: monitor gamer LG UltraGear de 25\" e 200 Hz por R$ 551 na Amazon",
+   "url": "https://br.ign.com/descontos/157834/ultimas-unidades-da-oferta-monitor-gamer-lg-ultragear-de-25-e-200-hz-por-r-551-na-amazon",
+   "summary": "O desconto é exclusivo para membros Prime",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/lg-ultragear-25g523b-capa-1280x720_ujk7.jpg",
+   "at": 1795273852000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
+   "url": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
+   "summary": "Some Grand Theft Auto 6 players on PS5 say the game keeps crashing with error code CE-108255-1, and in some cases, it's stopping them from progressing through the story. Read more",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-21-at-14.55.00.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795273430000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Fita promocional de The Legend of Zelda: Ocarina of Time lançada em 1998 foi o mais próximo que tivemos de ouvir personagens falarem até o remake do Nintendo Sw",
+   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157683/fita-promocional-de-the-legend-of-zelda-ocarina-of-time-lancada-em-1998-foi-o-mais-proximo-que-tivem",
+   "summary": "Kaori Mizuhashi faz resumão da franquia até Ocarina osMuitos anos antes de Kaori Mizuhashi reprisar o papel da Navi na versão japonesa do remake de Ocarina of Time , a atriz nos…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/oot-20261116-161921-0000_2g8r.png",
+   "at": 1795273235000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Godzilla Minus Zero confirma participação especial de Hideaki Anno",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/filme-godzilla-minus-zero-hideaki-anno-participacao",
+   "summary": "O 31º filme japonês de Godzilla já arrecadou mais de 15 bilhões de ienes em todo o mundo",
+   "img": "https://a.storyblok.com/f/178900/960x540/b60cf9b1a1/godzilla-minus-zero-hideaki-anno.jpg",
+   "at": 1795272600000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "BanG Dream! YUME ∞ MITA tem novo anime anunciado",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/bang-dream-yume-mita-novo-anime-anuncio",
+   "summary": "Primeira temporada com foco na banda Mugendai Mewtype foi exibida este ano.",
+   "img": "https://a.storyblok.com/f/178900/960x540/e5515fb9e2/bang-dream-yume-mita-header.jpg",
+   "at": 1795272180000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Com artes de Jim Kay, edição especial do primeiro livro de Harry Potter entra em oferta na Amazon",
+   "url": "https://br.ign.com/descontos/157833/com-artes-de-jim-kay-edicao-especial-do-primeiro-livro-de-harry-potter-entra-em-oferta-na-amazon",
+   "summary": "Edição tem capa dura, ilustrações coloridas e uma luva ilustrada",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/harry-potter-pedra-filosofal-jim-kay-produto-1280x720_4n85.jpg",
+   "at": 1795272158000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "DualSense com 26% de desconto: o que muda (e o que você ganha) com um segundo controle",
+   "url": "https://www.hardware.com.br/hardware-indica/dualsense-com-26-de-desconto-o-que-muda-e-o-que-voce-ganha-com-um-segundo-controle/",
+   "summary": "Saiba por que ter um segundo DualSense faz diferença no PS5 e aproveite o modelo clássico com 26% de desconto.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/07/1-117-1600x900.jpg",
+   "at": 1795271406000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Magic Knight Rayearth ‒ Episode 7",
+   "url": "https://www.animenewsnetwork.com/review/magic-knight-rayearth/episode-7/.244057",
+   "summary": "The mental image of someone having to fill out an I-9 form to work for Zagato is hilarious.",
+   "img": "",
+   "at": 1795271400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "GTA 6 has a 99 Metascore from critics, but players are review bombing it",
+   "url": "https://www.eurogamer.net/gta-6-review-bombed-metacritic-user-score",
+   "summary": "Grand Theft Auto 6 might be one of the best-reviewed games of all time, but you wouldn't know it from its Metacritic user score. Read more",
+   "img": "https://assetsio.gnwcdn.com/GTA-6-Radio-Station-Hosts-Tracks-Header.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795270780000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Um Sinal de Afeto chega ao fim daqui três capítulos",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/um-sinal-de-afeto-manga-final",
+   "summary": "Mangá entrou na reta final no início deste ano.",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/16898daebb/a-sign-of-affection.jpg",
+   "at": 1795270620000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Jogo sem IA vira destaque em competição da Epic Games dedicada à inteligência artificial",
+   "url": "https://www.hardware.com.br/games/jogo-sem-ia-destaque-epic-lsd/",
+   "summary": "LSD:FIH chamou a atenção entre mais de 2.700 jogos inscritos na Epic AI MegaJam 2026, mesmo tendo sido desenvolvido sem inteligência artificial generativa",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Jogo-sem-IA-vira-destaque-em-competicao-da-Epic-Games-dedicada-a-inteligencia-artificial.jpg",
+   "at": 1795270577000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Japan's Video Game Rankings, November 9-15",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/japan-video-game-rankings-november-9-15/.244013",
+   "summary": "The Legend of Zelda: Ocarina of Time remake stays at #1 for 2nd week",
+   "img": "",
+   "at": 1795270500000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jogos de PlayStation em oferta por menos de R$ 35 na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-em-oferta-por-menos-de-r-35-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/07/Criador-Dead-Space-Dirigir-Games-The-Callisto-Protocol-640x400.jpg",
+   "at": 1795269600000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Anime de Tamon's B-side tem 2ª temporada anunciada",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/tamons-b-side-anime-2-temporada-anuncio",
+   "summary": "Primeira temporada foi exibida em 2025.",
+   "img": "https://a.storyblok.com/f/178900/960x540/090172740e/tamons-b-side.jpg",
+   "at": 1795268820000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Amazon está dando R$ 1.000 de desconto na próxima compra para quem levar um iPhone 18 Pro ou Pro Max",
+   "url": "https://br.ign.com/descontos/157832/amazon-esta-dando-r-1000-de-desconto-na-proxima-compra-para-quem-levar-um-iphone-18-pro-ou-pro-max",
+   "summary": "O benefício é exclusivo para membros Prime e vale em eletrônicos selecionados",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/iphone-18_wbuh.jpg",
+   "at": 1795268466000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The Ramparts of Ice Season 2 ‒ Episode 22",
+   "url": "https://www.animenewsnetwork.com/review/the-ramparts-of-ice-season-2/episode-22/.244036",
+   "summary": "Not only do I think Momoka deserves this, I also think the show is glossing over just how much she contributed to the problem.",
+   "img": "",
+   "at": 1795267800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Omniscient Reader's Viewpoint Webtoon Returns With Season 2 on November 24",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/omniscient-reader-viewpoint-webtoon-returns-with-season-2-on-november-24/.244045",
+   "summary": "REDICE Studio streams promo video to reveal return, series went on hiatus after end of 1st season in June",
+   "img": "",
+   "at": 1795266900000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "“Gabe Newell nos protege de empresas parasitárias como a Microsoft”: veterano de DOOM vê cofundador da Valve como um herói",
    "url": "https://br.ign.com/doom/157796/gabe-newell-nos-protege-de-empresas-parasitarias-como-a-microsoft-veterano-de-doom-ve-cofundador-da",
@@ -137,6 +341,15 @@
    "img": "https://assetsio.gnwcdn.com/gta-6-launch-jason-lucia.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795265400000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Tamon's B-Side Anime Gets 2nd Season",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/tamon-b-side-anime-gets-2nd-season/.244056",
+   "summary": "Announced at real-life \"F/ACE First Live \"Nautical Star\" concert",
+   "img": "",
+   "at": 1795265327000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Japanese Animation TV Ranking, November 9-15",
@@ -427,15 +640,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "This Week in Games - Cleaning Bots, Ocarina Thoughts, and Sonic's 35th Anniversary",
-   "url": "https://www.animenewsnetwork.com/this-week-in-games/2026-11-20/cleaning-bots-ocarina-thoughts-and-sonic-35th-anniversary/.243880",
-   "summary": "Jean-Karlo shares his impressions of the Game of the Year contender and takes a trip through Green Hill to celebrate Sonic's anniversary.",
-   "img": "",
-   "at": 1795208312000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "GTA 6 Has Dexter References, And Now Dexter Himself Has Reacted",
    "url": "https://www.gamespot.com/articles/gta-6-has-dexter-references-and-now-dexter-himself-has-reacted/",
    "summary": "Actor Michael C. Hall has reacted to how GTA 6 features references to his Miami-set TV show Dexter, in which he famously played the serial killer Dexter. Appearing on the Barstool…",
@@ -466,15 +670,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/7-scaled.jpg",
    "at": 1795204752000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Yen Press Licenses [Oshi No Ko] Étude for Two, Bungo Stray Dogs: The Untold Origins of the Detective Agency, More Manga/Novels",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/yen-press-licenses-oshi-no-ko-etude-for-two-bungo-stray-dogs-the-untold-origins-of-the-detective-/.244035",
-   "summary": "Also: Mercenary Sisters , Caring for a Corpse , Megarosalia , more",
-   "img": "",
-   "at": 1795204651000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Don’t Blink: These Are The Fastest Cars In GTA 6",
@@ -584,15 +779,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Chiruran Manga Gets New Stage Play by All-Female Troupe O'Clock Kumamoto Revue",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/chiruran-manga-gets-new-stage-play-by-all-female-troupe-oclock-kumamoto-revue/.244024",
-   "summary": "Series' original author Umemura writes script for play opening in early summer 2027",
-   "img": "",
-   "at": 1795197600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Filme live-action de ‘Mashle: Magia e Músculos’ ganha pôster com Mash comendo um choux cream",
    "url": "https://www.jbox.com.br/2026/11/20/filme-live-action-de-mashle-magia-e-musculos-ganha-poster-com-mash-comendo-um-choux-cream/",
    "summary": "Produção estrelada por Mackenyu estreia em março de 2027.",
@@ -660,30 +846,12 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Overgeared Volumes 4-6 K-Comic Review",
-   "url": "https://www.animenewsnetwork.com/review/overgeared/volumes-4-6/.243215",
-   "summary": "Every time I finish a volume of Overgeared , I think the same thing: Grid's a jerk, but… . It's hard to say whether this is a feature or a bug.",
-   "img": "",
-   "at": 1795194000000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Jogada da Semana: Altura",
    "url": "https://blog.br.playstation.com/2026/11/20/jogada-da-semana-altura/",
    "summary": "Frio na barriga, adrenalina, e muita beleza! Sempre queremos atingir o ponto mais alto em um game, e a comunidade foi além com essas imagens incríveis, vamos conhecer algumas…",
    "img": "",
    "at": 1795193571000,
    "source": "PlayStation Blog BR"
-  },
-  {
-   "title": "Duel Masters LOST Anime Gets 5th Part",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/duel-masters-lost-anime-gets-5th-part/.244025",
-   "summary": "Manga's 5th part Duel Masters LOST ~Shitsuraku no Duel~ debuted on September 17",
-   "img": "",
-   "at": 1795193181000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "13 arrested in Shanghai as police crackdown on bootleg Final Fantasy 7 Tifa figurine operation",
@@ -711,15 +879,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "BanG Dream! Yume∞Mita Series Confirms New Anime in Production",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/bang-dream-yume-mita-series-confirms-new-anime-in-production/.244026",
-   "summary": "TV anime based on BanG Dream! project's Mugendai Mewtype band premiered on July 2",
-   "img": "",
-   "at": 1795190357000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "GTA 6 players are already pulling off high-flying tricks and other impressive stunts, just days after launch",
    "url": "https://www.eurogamer.net/gta-6-plane-vehicle-stunts-impressive",
    "summary": "One of the best things to emerge from Grand Theft Auto over the years has been the community's truly spectacular stunts: players soaring under bridges, leaping across buildings,…",
@@ -736,14 +895,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Quantos capítulos tem GTA 6?",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157824/quantos-capitulos-tem-gta-6",
-   "summary": "E uma bela história de amor GTA 6 chegou ontem para o resto do mundo (depois da Nova Zelândia, claro) e muitos estão se perguntando quanto tempo você passará com Jason e Lucia…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-fans/gta-6-fans-are-divided-over-confirmation-of-30fps_fxpf.jpg",
-   "at": 1795189779000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Remake de Star Wars: KOTOR deve ser reapresentado no The Game Awards 2026",
    "url": "https://www.adrenaline.com.br/games/remake-de-star-wars-kotor-deve-ser-reapresentado-no-the-game-awards-2026/",
    "summary": "Anunciado em 2021, o remake de Star Wars: Knights of the Old Republic passou por varios problemas em seu desenvolvimento",
@@ -752,29 +903,12 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Jogadores de GTA 6 se recusam a usar bug que dá dinheiro infinito, pois afirmam que estraga a experiência",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157825/jogadores-de-gta-6-se-recusam-a-usar-bug-que-da-dinheiro-infinito-pois-afirmam-que-estraga-a-experie",
-   "summary": "“Não, eu prefiro simplesmente, sabe, jogar e conquistar as coisas”",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-play/gta-6-players-are-refusing-to-make-use-of-an-infinite-money_8t6p.jpg",
-   "at": 1795188625000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Zelda Playable & Electric Ocarinas Will Initially Be Sold On An Invite-Only Basis (Europe)",
    "url": "https://www.nintendolife.com/news/2026/11/zelda-playable-and-electric-ocarinas-will-initially-be-sold-on-an-invite-only-basis-europe",
    "summary": "And you'll need to pass the criteria to register interest. We've been keeping an eye out for news of Nintendo's playable and electric ocarinas going on sale in Europe for a good…",
    "img": "https://images.nintendolife.com/eaad7a33a6355/large.jpg",
    "at": 1795188600000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "FX Fighter Kurumi-chan ‒ Episode 8",
-   "url": "https://www.animenewsnetwork.com/review/fx-fighter-kurumi-chan/episode-8/.244010",
-   "summary": "After all her insistence that she's not to be imitated or given responsibility or blamed, it is following Kurumi's examples of \"borrowing\" for investments that's led her protege…",
-   "img": "",
-   "at": 1795188600000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Fatal Fury: City of the Wolves ganha animação para Laocorn",
@@ -794,28 +928,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "É possível terminar o relacionamento de Jason e Lucia em GTA 6?",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157823/e-possivel-terminar-o-relacionamento-de-jason-e-lucia-em-gta-6",
-   "summary": "Para aqueles que querem a vida de solteiro GTA 6 é um marco na franquia da Rockstar porque, pela primeira vez, a história é protagonizada por um casal. Jason e Lucia são o coração…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/jason-and-lucia-13_py1c.jpg",
-   "at": 1795187923000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Próxima semana em XBOX: novos jogos para 23 a 27 de novembro",
    "url": "https://news.xbox.com/pt-br/2026/11/20/proxima-semana-em-xbox-novos-jogos-para-23-a-27-de-novembro/",
    "summary": "The post Próxima semana em XBOX: novos jogos para 23 a 27 de novembro appeared first on Xbox Wire em Português .",
    "img": "",
    "at": 1795187700000,
    "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "GTA 6 Bikini Girl Screenshots",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157822/gta-6-bikini-girl-screenshots",
-   "summary": "",
-   "img": "https://sm.ign.com/ign_br/gallery/g/gta-6-biki/gta-6-bikini-girl-screenshots_7qk3.jpg",
-   "at": 1795187230000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Modders acreditam que GTA 6 poderá ser jogado no PC em uma semana",
@@ -898,22 +1016,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Steam Machine de 512 GB já pode ser comprada sem lista de espera",
-   "url": "https://www.adrenaline.com.br/hardware/steam-machine-de-512-gb-ja-pode-ser-comprada-sem-lista-de-espera/",
-   "summary": "No entanto, o modelo de 2TB da Steam Machine ainda continua bastante restrito e a situação só tende a piorar",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Steam-Machine-512-GB-Pronta-Entrega-640x400.jpeg",
-   "at": 1795179790000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "GTA 6 já teria vendido quase 25 milhões de cópias e arrecadado US$ 2,36 bilhões",
-   "url": "https://www.hardware.com.br/games/gta-6-25-milhoes-236-bilhoes/",
-   "summary": "Estimativas da Sensor Tower apontam que GTA 6 teve um lançamento histórico, com o PS5 concentrando cerca de 75% das vendas",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/GTA-6-esta-assustando-a-industria-de-jogos-mas-analista-acredita-que-o-medo-e-exagerado.jpg",
-   "at": 1795178810000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha visual e data",
    "url": "https://www.intoxianime.com/2026/11/kaketa-tsuki-anime-sobre-garota-reencarnada-em-vampiro-ganha-visual-e-data/",
    "summary": "... O post Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha visual e data apareceu primeiro em IntoxiAnime .",
@@ -950,54 +1052,6 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Playing GTA 6 this weekend? Here's 16 spoiler-free tips for your first playthrough",
-   "url": "https://www.eurogamer.net/gta-6-spoiler-free-advice",
-   "summary": "It's launch weekend for GTA 6 - in case you hadn't noticed - and since I've played the best part of a hundred hours of this thing, I thought it might be useful to share a few…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-tips-header.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795177990000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "XBOX libera 4 jogos para jogar de graça neste fim de semana – veja lista!",
-   "url": "https://www.adrenaline.com.br/games/xbox/xbox-libera-4-jogos-para-jogar-de-graca-neste-fim-de-semana-veja-lista-11/",
-   "summary": "Assinantes XBOX Game Pass Essential, Premium e Ultimate podem aproveitar esses jogos grátis para jogar durante os próximos dias",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/deadlink-640x400.webp",
-   "at": 1795177844000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "GTA 6 pode ser jogado a 60 FPS, mas o método para isso não é simples",
-   "url": "https://www.adrenaline.com.br/games/gta-6-pode-ser-jogado-a-60-fps-mas-o-metodo-para-isso-nao-e-simples/",
-   "summary": "GTA 6 pode ser jogado a 60 FPS com a ajuda de um PC, do Veyra e de uma placa de captura, entre outros requisitos",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-60-FPS-640x400.jpeg",
-   "at": 1795177688000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Total War: Warhammer 40,000 breaks the game into star system mini-campaigns, each with their own stories and objectives",
-   "url": "https://www.eurogamer.net/total-war-warhammer-40000-campaign-space-marines",
-   "summary": "There is perhaps nothing so brutal in a Total War game than getting an army full of elite units wiped out, and it appears that pain remains a factor in the upcoming Total War…",
-   "img": "https://assetsio.gnwcdn.com/total-war-warhammer-40k-space-marine.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795176730000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6: Hacker afirma ter vazado versão quase completa do jogo para Xbox com mais de 200 GB",
-   "url": "https://www.hardware.com.br/games/gta-6-hacker-vazado-jogo-xbox/",
-   "summary": "Cyberleek promete liberar o arquivo necessário para executar GTA 6 em 23 de novembro, mas autenticidade do material ainda não foi confirmada",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/South-Park-surpreende-ao-revelar-nova-gameplay-de-GTA-6-com-mecanica-inusitada.jpg",
-   "at": 1795174845000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Dynasty Warriors 3: Complete Edition Remastered Gets A New Switch 2 Update",
-   "url": "https://www.nintendolife.com/news/2026/11/dynasty-warriors-3-complete-edition-remastered-gets-a-new-switch-2-update",
-   "summary": "Includes additional functionality, adjustments and bug fixes. These past few months have been packed with many exciting game releases, and one title that might be worth taking…",
-   "img": "https://images.nintendolife.com/722df72fe36b4/large.jpg",
-   "at": 1795152600000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Anime Majutsu wo Kiwamete Tabi ni Deta Tensei Elf, Moteamashita Jumyo de Ikeru Densetsu to Naru revela data de estreia e músicas-tema em novo trailer",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/majutsu-wo-kiwamete-tabi-ni-deta-tensei-elf-data-estreia-musicas-tema-trailer",
    "summary": "Yuki Inaba dirige a série de fantasia no Studio Palette",
@@ -1025,15 +1079,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Anime Super Psychic Policeman Chojo divulga vídeo com a letra de \"Chinjuku Sentai Chinranger\"",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/super-psychic-policeman-chojo-video-letra-chinjuku-sentai-chinranger",
-   "summary": "Vídeo homenageia as aberturas de Super Sentai e destaca a música apresentada no episódio 7",
-   "img": "https://a.storyblok.com/f/178900/960x540/6ebe2ff6f4/chinjuku-sentai-chinranger-lyric-video.png",
-   "at": 1795130100000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "‘GTA 6’ japonês remove nudez e reduz violência em versão censurada",
    "url": "https://www.jbox.com.br/2026/11/19/gta-6-japones-remove-nudez-e-reduz-violencia-em-versao-censurada/",
    "summary": "E aí, o protagonista do jogo toma banho... usando roupas de baixo.",
@@ -1043,15 +1088,6 @@
    "source": "JBox"
   },
   {
-   "title": "Novo anime de Oishinbo ganha novo trailer e arte promocional",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/novo-anime-oishinbo-estreia-4-de-janeiro-trailer-arte-elenco",
-   "summary": "A série de temática culinária estreia dia 4 de janeiro",
-   "img": "https://a.storyblok.com/f/178900/960x540/4c9c784479/new-oishinbo-tv-anime.jpg",
-   "at": 1795125900000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "‘Mahjong Soul’ ganha crossover com ‘Frieren’",
    "url": "https://www.jbox.com.br/2026/11/19/mahjong-soul-ganha-crossover-com-frieren/",
    "summary": "Quatro personagens chegam através da colaboração, contando com visuais limitados especialmente para o jogo.",
@@ -1059,42 +1095,6 @@
    "at": 1795121718000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Anime I Lost My Adventurer's License, but It's Fine Because I Have an Adorable Daughter Now ganha trailer com tema de abertura e data de estreia",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/anime-i-lost-my-adventurers-license-but-its-fine-because-i-have-an-adorable-daughter-now-trailer-arte-estreia-7-de-janeiro",
-   "summary": "Também foi revelada uma nova arte promocional",
-   "img": "https://a.storyblok.com/f/178900/960x540/dfe27145ca/i-lost-my-adventurers-license-but-its-fine-because-i-have-an-adorable-daughter-now.jpg",
-   "at": 1795114680000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime Charisma dá as boas-vindas ao Terra em novo trailer de personagem",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/anime-charisma-terra-trailer-personagem",
-   "summary": "A adaptação da franquia transmídia estreia dia 7 de janeiro",
-   "img": "https://a.storyblok.com/f/178900/1920x1080/8e601929d3/charisma-terra.png",
-   "at": 1795113120000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Conheça os dubladores brasileiros de The Exiled Heavy Knight Knows How to Game the System",
-   "url": "https://crunchyroll.com/pt-br/news/announcements/2026/11/19/dubladores-the-exiled-heavy-knight-knows-how-to-game-the-system",
-   "summary": "Os quatro primeiros episódios dublados já estão disponíveis, com mais episódios chegando em breve!",
-   "img": "https://a.storyblok.com/f/178900/960x540/30171908cd/the-exiled-heavy-knight-knows-how-to-game-the-system-trailer-2.jpg",
-   "at": 1795107600000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Prévia de 40 minutos do jogo Expelled from Paradise: The Stellar Angel é divulgada",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/19/expelled-from-paradise-the-stellar-angel-previa-jogo",
-   "summary": "A visual novel vai ser lançada no dia 25 de novembro para Switch e PC.",
-   "img": "https://a.storyblok.com/f/178900/997x561/eaa041ab3a/expelled-from-paradise-the-stellar-angel.jpg",
-   "at": 1795097220000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
   },
   {
    "title": "KuKu-Loop – Novel sobre Garota vivendo em Loop de Morte tem anuncio de anime",
