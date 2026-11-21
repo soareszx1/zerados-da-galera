@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795276576621,
+ "atualizadoEm": 1795287557500,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,73 @@
  ],
  "itens": [
   {
+   "title": "Unannounced Nioh 3 Complete Edition has been rated in Korea",
+   "url": "https://www.eurogamer.net/nioh-3-complete-edition-rated-korea",
+   "summary": "A rating for the unannounced Nioh 3 Complete Edition has popped up on Korea's Game Rating and Administration Committee ( GRAC ). Read more",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-21-at-17.11.47.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795281590000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Polícia japonesa prende ladrão apelidado \"Homem-Aranha da Chuva\" depois de 10 anos aterrorizando os prédios de Tóquio",
+   "url": "https://br.ign.com/homem-aranha-um-novo-dia/157728/policia-japonesa-prende-ladrao-apelidado-homem-aranha-da-chuva-depois-de-10-anos-aterrorizando-os-pr",
+   "summary": "Suspeito escalava e invadia prédios em dias chuvosos para não ser notado ​A Polícia Metropolitana de Tóquio prendeu Yuki Horiguchi , de 33 anos, suspeito de ser o autor de uma…",
+   "img": "https://sm.ign.com/ign_br/photo/default/sbnd-27223-r-resized-1785242428532_waay.jpg",
+   "at": 1795280433000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "This Musical Adventure Tells A Very British Tale Through Deep Cleaning And Ghost Busting",
+   "url": "https://www.gamespot.com/articles/this-musical-adventure-tells-a-very-british-tale-through-deep-cleaning-and-ghost-busting/",
+   "summary": "Don’t let the title fool you; the Grand Hotel is definitely haunted in There Are No Ghosts at The Grand, a supernatural clean-‘em-up where you’ll renovate a dilapidated building,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/g1.jpg?w=300",
+   "at": 1795280400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Angel Next Door Spoils Me Rotten Season 2 Anime Series Review",
+   "url": "https://www.animenewsnetwork.com/review/angel-next-door-spoils-me-rotten/season-2/.243054",
+   "summary": "I regret to inform you that, as it turns out, the first season is only the shaky preamble to the cacophonous chronicle of courtship that is its second season.",
+   "img": "",
+   "at": 1795280400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "The Apothecary Diaries Season 3 ‒ Episode 56",
+   "url": "https://www.animenewsnetwork.com/review/the-apothecary-diaries-season-3/episode-56/.244059",
+   "summary": "As Shakespeare said in Henry IV Part Two , “uneasy is the head that wears a crown.”",
+   "img": "",
+   "at": 1795278600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Please Put Them On, Takamine-san! chega ao fim em janeiro",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/please-put-them-on-takamine-san-manga-final-janeiro",
+   "summary": "Obra está em publicação desde 2019.",
+   "img": "https://a.storyblok.com/f/178900/1280x720/20432ccc60/please-put-them-on-takamine-san-opening-hero.png",
+   "at": 1795277580000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Feature: Don't Have Your Wii Set Up? Here Are 20 Wii Games You Can Play On Switch",
+   "url": "https://www.nintendolife.com/features/dont-have-your-wii-set-up-here-are-20-wii-games-you-can-play-on-switch",
+   "summary": "SWiitching it up. Many people reading this will have a Wii in the house. Even if it's collecting dust in the cupboard after launching 20 years ago, there's over 100 million of the…",
+   "img": "https://images.nintendolife.com/125bc1bb59dcb/large.jpg",
+   "at": 1795276800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Phasmophobia's next update lets you ask ghosts to throw things and it's out next week",
+   "url": "https://www.eurogamer.net/phasmophobia-resonance-update-release-date-dowsing-rods-unity-6",
+   "summary": "Phasmophobia 's next update, Resonance, arrives on 24th November, bringing a brand-new piece of ghost-hunting kit, more voice commands, and a move to the Unity 6 engine. Read more",
+   "img": "https://assetsio.gnwcdn.com/unnamed_6vaP0JC.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795276570000,
+   "source": "Eurogamer"
+  },
+  {
    "title": "Série de light novels May I Ask for One Final Thing? chega ao fim em dezembro",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/may-i-ask-for-one-final-thing-novel-final",
    "summary": "Obra é publicada desde 2019.",
@@ -86,6 +153,14 @@
    "at": 1795276380000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Persona 6 ainda não tem data de estreia, mas Atlus já garante o próximo game",
+   "url": "https://www.adrenaline.com.br/games/persona-6-ainda-nao-tem-data-de-estreia-mas-atlus-ja-garante-o-proximo-game/",
+   "summary": "Atlus promete \"algo melhor do que tudo que já fizeram\" para Persona 6, e uma espera menor para Persona 7",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/persona-6-menos-espera-continuacao-640x400.jpg",
+   "at": 1795275588000,
+   "source": "Adrenaline"
   },
   {
    "title": "Dragon Quest deveria acabar após a morte de Akira Toriyama, sugere compositor",
@@ -485,9 +560,9 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Zelda's Ocarina Remake Is One Of Metacritic's Highest-Rated Games In 2026, According To User Scores",
-   "url": "https://www.nintendolife.com/news/2026/11/zeldas-ocarina-remake-is-one-of-metacritics-highest-rated-games-in-2026-according-to-user-scores",
-   "summary": "Players' voice. It's been a huge year for the games industry with all sorts of heavy-hitters releasing over the past few months, and as we look towards the end of 2026, we're now…",
+   "title": "Ocarina Remake's 'Positive' User Review Score Is Now Under Fire",
+   "url": "https://www.nintendolife.com/news/2026/11/ocarina-remakes-positive-user-review-score-is-now-under-fire",
+   "summary": "GTA 6 fans are reportedly review bombing the game. It's been a huge year for the games industry with all sorts of heavy-hitters releasing over the past few months, and as we look…",
    "img": "https://images.nintendolife.com/0ff8b95fda54c/large.jpg",
    "at": 1795239000000,
    "source": "Nintendo Life"
@@ -498,15 +573,6 @@
    "summary": "Grab your Universal Heart Compact and “Moon Cosmic, Make-up!”",
    "img": "",
    "at": 1795237140000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Uniqlo Unfurls New Studio Ghibli T-Shirts",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-20/uniqlo-unfurls-new-studio-ghibli-t-shirts/.244028",
-   "summary": "Show off your Ghibli love with the new collection",
-   "img": "",
-   "at": 1795233600000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -589,15 +655,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Featured_GTA6LeonidaStories_ThePlane_20201119V2.jpg?w=300",
    "at": 1795213800000,
    "source": "GameSpot"
-  },
-  {
-   "title": "North American Anime, Manga Releases, November 15-21",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/north-american-anime-manga-releases-november-15-21/.243879",
-   "summary": "Jujutsu Kaisen: Hidden Inventory / Premature Death – The Movie anime; BECK, Heroes, Love is Money manga ship",
-   "img": "",
-   "at": 1795212000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "GTA 6 Is Out, And People Are Planning To Party–Outside The Game In A Much Different World",
@@ -797,14 +854,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "GTA 6 não tem oficialmente perspectiva em 1ª pessoa, mas há um modo de forçar o jogo a fazer; aqui está o passo a passo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157826/gta-6-nao-tem-oficialmente-um-modo-em-1a-pessoa-mas-ha-um-modo-de-forcar-o-jogo-a-fazer-aqui-esta-o",
-   "summary": "Uma nova perspectiva GTA 6 pode ter sido lançado sem a possibilidade de jogar em 1ª pessoas, mas, como qualquer coisa, se há vontade, há um jeito de fazer isso acontecer.…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-does/gta-6-doesnt-officially-have-first-person-but-you-can-force_gcrx.jpg",
-   "at": 1795195217000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Nvidia co-founder Jensen Huang accused of decades of bullying and workplace abuse in new investigation",
    "url": "https://www.eurogamer.net/jensen-huang-nvidia-investigation-harassment",
    "summary": "An investigation into the workplace behavior of Nvidia co-founder Jensen Huang, who resigned recently after a series of extramarital affairs came to light, has uncovered decades…",
@@ -820,14 +869,6 @@
    "at": 1795195020000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "GTA 6 Has The Best Use Of PS5’s DualSense Controller Yet",
-   "url": "https://www.gamespot.com/articles/gta-6-has-the-best-use-of-ps5s-dualsense-controller-yet/",
-   "summary": "I expected Xbox Series X|S's Quick Resume to be the defining feature of this console generation, but it's been the unique features offered by PS5's DualSense controller that have…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261111102628_-Large.jpeg?w=300",
-   "at": 1795194952000,
-   "source": "GameSpot"
   },
   {
    "title": "Jogos da PlayStation em oferta na Steam com até 75% de desconto",
@@ -984,38 +1025,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Nintendo Switch 2 em promoção na Black Friday: bundle com EA Sports FC 27 por R$3.657",
-   "url": "https://www.hardware.com.br/hardware-indica/nintendo-switch-2-em-promocao-na-black-friday-bundle-com-ea-sports-fc-27-por-r3-657/",
-   "summary": "Nintendo Switch 2 está em promoção na Black Friday da Amazon por preço competitivo! Entenda o que ele traz de novo.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/switch-2capa-1200x675.jpg",
-   "at": 1795181415000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "I completed GTA 6's indie game darling pastiche, Tenebrae Lux, and all I got was this lousy sense of accomplishment",
-   "url": "https://www.eurogamer.net/tenebrae-lux-gta-6-now-playing",
-   "summary": "\"We are but Promethean wanderers on the fringes of oblivion, clinging to a semblance of light amidst the vast abyss of our own ignorance. Voyaging uncharted waters may appear…",
-   "img": "https://assetsio.gnwcdn.com/Tenebrae-lux-gta.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795180860000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Zelda Switch 2 Console Is Back In Stock Soon If You Missed Out (US)",
-   "url": "https://www.nintendolife.com/news/2026/11/zelda-switch-2-console-is-back-in-stock-soon-if-you-missed-out-us",
-   "summary": "Just hold on a little while longer. If you live in the US and happened to miss out on the Zelda 40th Anniversary Switch 2 console, then good news – more is on the way. This was…",
-   "img": "https://images.nintendolife.com/353ac63fcff76/large.jpg",
-   "at": 1795180500000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "UK Prime Minister won't be playing GTA 6, government says, while hailing Rockstar Games a \"British success story\"",
-   "url": "https://www.eurogamer.net/gta-6-uk-prime-minister-andy-burnham",
-   "summary": "Grand Theft Auto 6 's seismic launch has registered on a governmental level. A spokesperson for UK Prime Minister Andy Burnham has hailed the game as a \"British success story\",…",
-   "img": "https://assetsio.gnwcdn.com/andy-burnham-prime-minister-gta-6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795180110000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha visual e data",
    "url": "https://www.intoxianime.com/2026/11/kaketa-tsuki-anime-sobre-garota-reencarnada-em-vampiro-ganha-visual-e-data/",
    "summary": "... O post Kaketa Tsuki – Anime sobre garota reencarnada em vampiro ganha visual e data apareceu primeiro em IntoxiAnime .",
@@ -1066,15 +1075,6 @@
    "summary": "O público japonês poderá rever todos os 12 episódios da série",
    "img": "https://a.storyblok.com/f/178900/960x540/0d84ff5b49/inu-x-boku-hero.png",
    "at": 1795134300000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "2ª temporada de YAIBA: Samurai Legend revela música de abertura e dublador de Gekko",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/yaiba-samurai-legend-2-temporada-musica-abertura-dublador-gekko",
-   "summary": "A série reboot retorna no próximo ano",
-   "img": "https://a.storyblok.com/f/178900/960x540/95e9dc045b/yaiba-samurai-legend.jpg",
-   "at": 1795133100000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
