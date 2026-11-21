@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795255078334,
+ "atualizadoEm": 1795266597566,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 13
+   "itens": 14
   },
   {
    "nome": "Eurogamer",
@@ -79,6 +79,149 @@
  ],
  "itens": [
   {
+   "title": "“Gabe Newell nos protege de empresas parasitárias como a Microsoft”: veterano de DOOM vê cofundador da Valve como um herói",
+   "url": "https://br.ign.com/doom/157796/gabe-newell-nos-protege-de-empresas-parasitarias-como-a-microsoft-veterano-de-doom-ve-cofundador-da",
+   "summary": "Gabe Newell é uma das figuras mais reconhecidas no mundo dos jogos, tanto por seus elogios quanto por suas críticas",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_86yp.png",
+   "at": 1795266036000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Nem Marvel’s Wolverine salvou: Sony fica fora do Jogo do Ano após 12 anos",
+   "url": "https://www.hardware.com.br/games/sony-fica-fora-goty-2026/",
+   "summary": "No The Game Awards 2026, Sony não teve nenhum jogo indicado ao GOTY pela primeira vez em 12 anos",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Nem-Marvels-Wolverine-salvou-Sony-fica-fora-do-Jogo-do-Ano-apos-12-anos.jpg",
+   "at": 1795265631000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Mangás mais Vendidos (Novembro 09 – Novembro 15)",
+   "url": "https://www.intoxianime.com/2026/11/mangas-mais-vendidos-novembro-09-novembro-15/",
+   "summary": "... O post Mangás mais Vendidos (Novembro 09 – Novembro 15) apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265627000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Getbackers – Anime Clássico de Ação vira polêmica por receber continuação com IA",
+   "url": "https://www.intoxianime.com/2026/11/getbackers-anime-classico-de-acao-vira-polemica-por-receber-continuacao-com-ia/",
+   "summary": "... O post Getbackers – Anime Clássico de Ação vira polêmica por receber continuação com IA apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265620000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Tamon’s B-Side – Anime tem anuncio de 2º temporada",
+   "url": "https://www.intoxianime.com/2026/11/tamons-b-side-anime-tem-anuncio-de-2o-temporada/",
+   "summary": "... O post Tamon’s B-Side – Anime tem anuncio de 2º temporada apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265620000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Bang Dream! – Novo anime tem anuncio de 2º temporada",
+   "url": "https://www.intoxianime.com/2026/11/bang-dream-novo-anime-tem-anuncio-de-2o-temporada/",
+   "summary": "... O post Bang Dream! – Novo anime tem anuncio de 2º temporada apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265617000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "GTA 6 features the series' first non-binary character, says actor Jesse James Rose, and players can't hurt them",
+   "url": "https://www.eurogamer.net/gta-6-first-non-binary-character-jesse-james-rose",
+   "summary": "Grand Theft Auto 6 features the first non-binary character in the series' history, according to actor Jesse James Rose, who plays the role of a museum curator in the game. Read…",
+   "img": "https://assetsio.gnwcdn.com/gta-6-launch-jason-lucia.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795265400000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Japanese Animation TV Ranking, November 9-15",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/japanese-animation-tv-ranking-november-9-15/.244015",
+   "summary": "The Apothecary Diaries season 3 earns 4.0% rating",
+   "img": "",
+   "at": 1795263300000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Masashi Kishimoto trará uma das batalhas mais aguardadas pelos fãs em novo mangá de Naruto",
+   "url": "https://br.ign.com/naruto-1/157794/masashi-kishimoto-trara-uma-das-batalhas-mais-aguardadas-pelos-fas-em-novo-manga-de-naruto",
+   "summary": "Com Masashi Kishimoto no comando de um novo mangá de Naruto, os fãs de longa data podem esperar grandes momentos",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_sv94.png",
+   "at": 1795262435000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Doraemon Anime's 1-Hour New Year's Special to Feature New Tool",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/doraemon-anime-1-hour-new-year-special-to-feature-new-tool/.244050",
+   "summary": "Special will adapt \"secret tool memo\" from Fujiko F. Fujio currently on display at Fujiko F. Fujio Museum",
+   "img": "",
+   "at": 1795259100000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Sem Akira Toriyama, série Dragon Quest não seria a mesma, diz compositor de Chrono Trigger",
+   "url": "https://br.ign.com/dragon-ball/157792/sem-akira-toriyama-serie-dragon-quest-nao-seria-a-mesma-diz-compositor-de-chrono-trigger",
+   "summary": "“Acho que esse tipo de abordagem não é bom para o artista, para os fãs de Toriyama, nem mesmo para o falecido Toriyama”",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_j9um.png",
+   "at": 1795258837000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos para XBOX em oferta com até 95% de desconto na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/xbox/jogos-para-xbox-em-oferta-com-ate-95-de-desconto-na-black-friday/",
+   "summary": "Os interessados já podem aproveitar as ofertas na loja do Xbox por tempo limitado e adquirir os jogos da lista de desejos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/09/Gears-War-E-Day-Ray-Tracing-PC-640x470.jpeg",
+   "at": 1795258800000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "'May I Ask for One Final Thing?' Novel Series Ends in 8th Volume",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-21/may-i-ask-for-one-final-thing-novel-series-ends-in-8th-volume/.244044",
+   "summary": "Franchise inspired anime adaptation that debuted in October 2025",
+   "img": "",
+   "at": 1795255500000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "George Lucas Would Have Killed Luke Skywalker and Other Weird Star Wars Facts",
+   "url": "https://br.ign.com/star-wars-episodio-viii-os-ultimos-jedi-1/157764/george-lucas-would-have-killed-luke-skywalker-and-other-weird-star-wars-facts",
+   "summary": "",
+   "img": "https://sm.ign.com/ign_br/gallery/g/george-luc/george-lucas-would-have-killed-luke-skywalker-and-other-weir_m8z3.jpg",
+   "at": 1795255241000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "“Pareceu criminoso”: Adam Driver ainda não consegue acreditar na forma como Disney lidou com cancelamento do filme de Star Wars, The Hunt for Ben Solo",
+   "url": "https://br.ign.com/star-wars-episode-ix/157763/pareceu-criminoso-adam-driver-ainda-nao-consegue-acreditar-na-forma-como-disney-lidou-com-cancelamen",
+   "summary": "“Estamos todos seguindo em frente”",
+   "img": "https://sm.ign.com/ign_br/news/i/it-felt-cr/it-felt-criminal-adam-driver-still-cant-believe-how-disney-h_w8mc.jpg",
+   "at": 1795255241000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "What if Vampire Survivors met Grand Theft Auto 2? Maniac is a brilliant mash-up that dares to ask that question",
+   "url": "https://www.eurogamer.net/grand-theft-auto-6-vampire-survivors-maniac-interview",
+   "summary": "What would you get if you combined the chaotic top-down action of old-school Grand Theft Auto 2 with the chaotic top-down action of Vampire Survivors? That's the question Soldat…",
+   "img": "https://assetsio.gnwcdn.com/gta-week-maniac-header.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795255200000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Talking Point: What Are You Playing This Weekend? (21st November)",
+   "url": "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-21st-november",
+   "summary": "GT, Ay? Pretty quiet week in the world of video games, eh? Nothing particularly groundbreaking released that we can think of... Oh wait! Yes, that Grand Theft Auto 6 launched,…",
+   "img": "https://images.nintendolife.com/dbeba6ba29daf/large.jpg",
+   "at": 1795255200000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "'Please Put Them On, Takamine-san' Manga Ends in January",
    "url": "https://www.animenewsnetwork.com/news/2026-11-21/please-put-them-on-takamine-san-manga-ends-in-january/.244048",
    "summary": "Series inspired anime adaptation in April 2025",
@@ -119,6 +262,14 @@
    "img": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-4.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795248000000,
    "source": "Eurogamer"
+  },
+  {
+   "title": "Guide: Zelda: Ocarina Of Time Walkthrough (Switch 2 Remake): Guide To The Main Quest, Side Quests & Collectables",
+   "url": "https://www.nintendolife.com/guides/zelda-ocarina-of-time-walkthrough-switch-2-remake",
+   "summary": "Your companion to a huge adventure. Zelda: Ocarina of Time is a dense adventure with many secrets to find, and while the critical path is fairly linear, it's rarely…",
+   "img": "https://images.nintendolife.com/9fa3a2c73d8a6/large.jpg",
+   "at": 1795248000000,
+   "source": "Nintendo Life"
   },
   {
    "title": "Zelda's Ocarina Remake Is One Of Metacritic's Highest-Rated Games In 2026, According To User Scores",
@@ -195,7 +346,7 @@
    "source": "GameSpot"
   },
   {
-   "title": "Inacreditável! GTA 6 já teria vendido 32 milhões de cópias",
+   "title": "Inacreditável! GTA 6 já vendeu 32 milhões de cópias",
    "url": "https://www.adrenaline.com.br/games/inacreditavel-gta-6-ja-teria-vendido-32-milhoes-de-copias/",
    "summary": "GTA 6 vende 32,5 milhões antes do lançamento e fatura US$ 3,79 bilhões no dia de estreia. Saiba os detalhes e recordes!",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/10/GTA-6-Comentarios-Politicos-640x400.jpeg",
@@ -667,61 +818,12 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Jogadores podem encontrar a “garota de biquíni” do trailer de GTA 6 dentro do jogo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157821/jogadores-podem-encontrar-a-garota-de-biquini-do-trailer-de-gta-6-dentro-do-jogo",
-   "summary": "Um rosto familiar",
-   "img": "https://sm.ign.com/ign_br/news/y/you-can-fi/you-can-find-the-bikini-girl-from-the-gta-6-trailer-in-game_dct9.jpg",
-   "at": 1795187230000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "\"Estou amargurada, c******\": gamer e rapper, Doja Cat fica xinga e implora para que a Rockstar coloque alguma de suas músicas na rádio de GTA 6",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157802/estou-amargurada-c-gamer-e-rapper-doja-cat-fica-xinga-e-implora-para-que-a-rockstar-coloque-alguma-d",
-   "summary": "\"Vocês quebraram meu coração\" Doja Cat está extremamente infeliz por ter sido ignorada em GTA 6 e está expressando seus sentimentos em vários posts empolgantes nas redes sociais.…",
-   "img": "https://sm.ign.com/ign_br/news/i/im-so-fkin/im-so-fkin-bitter-doja-cat-begs-rockstar-to-put-her-music-on_dphh.jpg",
-   "at": 1795186976000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Primeiro volume do mangá de Blue Lock está por menos da metade do preço na Black da Amazon",
-   "url": "https://br.ign.com/descontos/157818/primeiro-volume-do-manga-de-blue-lock-esta-por-menos-da-metade-do-preco-na-black-da-amazon",
-   "summary": "O primeiro volume do mangá de futebol está saindo por R$ 22,83 por tempo limitado",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blue-lock-isagi-capa-1280x720_g1f4.jpg",
-   "at": 1795186860000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "How to Play GTA 6 in First-Person (It's a Glitch!)",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157827/how-to-play-gta-6-in-first-person-its-a-glitch",
-   "summary": "GTA 6 doesn't feature a proper first-person camera... Yet! But that hasn't stopped players from discovering a potential camera glitch in Grand Theft Auto 6, allowing anyone to…",
-   "img": "https://sm.ign.com/ign_br/video/h/how-to-pla/how-to-play-gta-6-in-first-person-its-a-glitch_swrr.jpg",
-   "at": 1795186800000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Crunchyroll Streams My Hero Academia The Movie: World Heroes' Mission Anime",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/crunchyroll-streams-my-hero-academia-the-movie-world-heroes-mission-anime/.244023",
-   "summary": "Film opened in August 2021 in Japan",
-   "img": "",
-   "at": 1795186253000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Modders acreditam que GTA 6 poderá ser jogado no PC em uma semana",
    "url": "https://www.adrenaline.com.br/games/modders-acreditam-que-gta-6-podera-ser-jogado-no-pc-em-uma-semana/",
    "summary": "Lançado no dia 19 de novembro para consoles, GTA 6 não deve demorar muito a receber um port não oficial",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-PC-Modders-640x400.jpeg",
    "at": 1795186165000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Dados do Google Trends mostram que interesse em torno de GTA 6 explodiu e gerou dúvidas práticas de consumo no Brasil",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157819/dados-do-google-trends-mostram-que-interesse-em-torno-de-gta-6-explodiu-e-gerou-duvidas-praticas-de",
-   "summary": "As consultas sobre o novo jogo da franquia superaram em 5 vezes as do antecessor (GTA 5) em 24 horas",
-   "img": "https://sm.ign.com/ign_br/photo/default/jason-and-lucia-20-1793891731333_4qnv.jpg",
-   "at": 1795186104000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Pokémon-Like Temtem's Bullet Heaven Spin-Off Arrives On Switch Next Year",
@@ -738,24 +840,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/cont.jpg",
    "at": 1795185019000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Reincarnated as a Sword Season 2 ‒ Episode 8",
-   "url": "https://www.animenewsnetwork.com/review/reincarnated-as-a-sword-season-2/episode-8/.243973",
-   "summary": "In the name of efficiency, I'm fine with this being a way to get Teacher, Fran, and the others into prison so that they can then get broken out of prison by new characters.",
-   "img": "",
-   "at": 1795185000000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Maison and the Man-Eating Apartment Manga Ends in Next Chapter",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-20/maison-and-the-man-eating-apartment-manga-ends-in-next-chapter/.244004",
-   "summary": "Kuu Tanaka, Akima launched manga in March 2025; English version available on Manga Plus",
-   "img": "",
-   "at": 1795184100000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Fãs criam port de Monster Hunter Generations Ultimat para PC com suporte a 240 FPS e multiplayer online",
@@ -898,14 +982,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Ubisoft cria novo estúdio focado na inteligência artificial",
-   "url": "https://www.adrenaline.com.br/games/ubisoft-cria-novo-estudio-focado-na-inteligencia-artificial/",
-   "summary": "A Ubisoft afirma que o Motherbrain vai ajudar suas divisões a criar inovações de gameplay e jogos mais envolventes",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Ubisoft-Motherbrain-Estudio-IA-640x400.jpeg",
-   "at": 1795175432000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "GTA 6: Hacker afirma ter vazado versão quase completa do jogo para Xbox com mais de 200 GB",
    "url": "https://www.hardware.com.br/games/gta-6-hacker-vazado-jogo-xbox/",
    "summary": "Cyberleek promete liberar o arquivo necessário para executar GTA 6 em 23 de novembro, mas autenticidade do material ainda não foi confirmada",
@@ -914,51 +990,11 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "GTA 6 day-one sales are enormous, estimates suggest, making previous $2 billion opening weekend predictions seem conservative",
-   "url": "https://www.eurogamer.net/gta-6-sales-estimate-rockstar-grand-theft-auto",
-   "summary": "Grand Theft Auto 6 is estimated to have sold nearly 25 million copies in one day, generating approximately $2.5bn in sales revenue - a staggering result that's beyond even what…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-9.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795174830000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "\"You broke my heart\" - popular artist Doja Cat gutted to not have her music in Grand Theft Auto 6",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-doja-cat-gutted-not-in-soundtrack",
-   "summary": "As countless people flock to Grand Theft Auto 6 following its launch earlier this week, a common highlight gamers have been highlighting are the many radio stations present in the…",
-   "img": "https://assetsio.gnwcdn.com/doja-cat-gta.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795168690000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Dynasty Warriors 3: Complete Edition Remastered Gets A New Switch 2 Update",
    "url": "https://www.nintendolife.com/news/2026/11/dynasty-warriors-3-complete-edition-remastered-gets-a-new-switch-2-update",
    "summary": "Includes additional functionality, adjustments and bug fixes. These past few months have been packed with many exciting game releases, and one title that might be worth taking…",
    "img": "https://images.nintendolife.com/722df72fe36b4/large.jpg",
    "at": 1795152600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Xenoblade Chronicles 3 Version 3.0.0 Is Now Live, Here Are The Patch Notes",
-   "url": "https://www.nintendolife.com/news/2026/11/xenoblade-chronicles-3-version-3-0-0-is-now-live-here-are-the-patch-notes",
-   "summary": "Get ready for the Switch 2 Edition. Ahead of the launch of Xenoblade Chronicles 3 's Switch 2 Edition on 3rd December 2026 , Nintendo and Monolith Soft have this week rolled out a…",
-   "img": "https://images.nintendolife.com/933155d0dc85a/large.jpg",
-   "at": 1795144500000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Toby Fox Shares Deltarune Chapter 6 And 7 Development Update",
-   "url": "https://www.nintendolife.com/news/2026/11/toby-fox-shares-deltarune-chapter-6-and-7-development-update",
-   "summary": "The sixth chapter is \"progressing well\". Toby Fox, the creator of Deltarune (and Undertale ), has this week released his 'Fall 2026' newsletter, giving fans a \"status update\" on…",
-   "img": "https://images.nintendolife.com/9fccf9e070abd/large.jpg",
-   "at": 1795141800000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Call Of Duty: Modern Warfare 4 Tops \"Best-Selling\" Games In October (US)",
-   "url": "https://www.nintendolife.com/news/2026/11/call-of-duty-modern-warfare-4-tops-best-selling-games-in-october-us",
-   "summary": "CoD has dominated for 19 consecutive years in its debut month. October was another action-packed month for 2026, with Call of Duty: Modern Warfare 4 dropping on Switch 2, and…",
-   "img": "https://images.nintendolife.com/fa74e264a77de/large.jpg",
-   "at": 1795138200000,
    "source": "Nintendo Life"
   },
   {
@@ -1066,42 +1102,6 @@
    "summary": "... O post KuKu-Loop – Novel sobre Garota vivendo em Loop de Morte tem anuncio de anime apareceu primeiro em IntoxiAnime .",
    "img": "",
    "at": 1795093795000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Boukensha License – Anime sobre Aventureiro e garota amaldiçoada ganha trailer com OP e Data",
-   "url": "https://www.intoxianime.com/2026/11/boukensha-license-anime-sobre-aventureiro-e-garota-amaldicoada-ganha-trailer-com-op-e-data/",
-   "summary": "... O post Boukensha License – Anime sobre Aventureiro e garota amaldiçoada ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795093793000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Oishinbo – Anime sobre Repórter Culinário ganha com OP e Data de estreia",
-   "url": "https://www.intoxianime.com/2026/11/oishinbo-anime-sobre-reporter-culinario-ganha-com-op-e-data-de-estreia/",
-   "summary": "... O post Oishinbo – Anime sobre Repórter Culinário ganha com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795093790000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Not-Sew-Wicked – Webtoon sobre Madrasta tentando ser Boa tem anuncio de anime",
-   "url": "https://www.intoxianime.com/2026/11/not-sew-wicked-webtoon-sobre-madrasta-tentando-ser-boa-tem-anuncio-de-anime/",
-   "summary": "... O post Not-Sew-Wicked – Webtoon sobre Madrasta tentando ser Boa tem anuncio de anime apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795093788000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Majutsu wo Kiwamete – Anime sobre homem reencarnando como elfo ganha trailer com OP e ED e data",
-   "url": "https://www.intoxianime.com/2026/11/majutsu-wo-kiwamete-anime-sobre-homem-reencarnando-como-elfo-ganha-trailer-com-op-e-ed-e-data/",
-   "summary": "... O post Majutsu wo Kiwamete – Anime sobre homem reencarnando como elfo ganha trailer com OP e ED e data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795093787000,
    "cat": "geek",
    "source": "IntoxiAnime"
   },
