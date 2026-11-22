@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795362931914,
+ "atualizadoEm": 1795373999087,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,12 +79,121 @@
  ],
  "itens": [
   {
+   "title": "LEGO do Dragão Ender bate as asas com manivela e está com 34% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157839/lego-do-dragao-ender-bate-as-asas-com-manivela-e-esta-com-34-de-desconto-na-amazon",
+   "summary": "Conjunto de 710 peças tem cabeça, pescoço, cauda e pernas articuladas e item bônus para o jogo",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/black-friday-lego-do-dragao-ender-vilao-do-minecraft-bate-as_m3ub.jpg",
+   "at": 1795372230000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Chainsaw Man, Jujutsu Kaisen, More Manga Rank on NYT November Bestseller List",
+   "url": "https://www.animenewsnetwork.com/daily-briefs/2026-11-21/chainsaw-man-jujutsu-kaisen-more-manga-rank-on-nyt-november-bestseller-list/.244054",
+   "summary": "The 22nd volume of Tatsuki Fujimoto's Chainsaw Man manga ranked at #4 on The New York Times' monthly Graphic Books and Manga bestseller list released in...",
+   "img": "",
+   "at": 1795371300000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jogos da Nintendo em oferta de Black Friday na Nuuvem por tempo limitado",
+   "url": "https://www.adrenaline.com.br/noticias/jogos-da-nintendo-em-oferta-de-black-friday-na-nuuvem-por-tempo-limitado/",
+   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/12/donkey-kong-country-returns-hd-640x400.jpg",
+   "at": 1795368420000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Para quem quer reviver a história de Ellie e Abby, The Last of Us Part II Remastered atinge 45% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157838/para-quem-quer-reviver-a-historia-de-ellie-e-abby-the-last-of-us-part-ii-remastered-atinge-45-de-des",
+   "summary": "Versão para PS5 traz modo roguelike Sem Volta, melhorias gráficas e recursos do controle DualSense",
+   "img": "https://sm.ign.com/ign_br/news/t/the-last-o/the-last-of-us-part-2-multiplayer-mod-cancelled-at-sonys-req_g89u.jpg",
+   "at": 1795367801000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Chainsaw Man Ranks #2 on Bookscan's October Adult Graphic Novel List in U.S.",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-22/chainsaw-man-ranks-no.2-on-bookscan-october-adult-graphic-novel-list-in-u.s/.244062",
+   "summary": "13 manga volumes including Jujutsu Kaisen, The Summer Hikaru Died, The Guy She Was Interested In Wasn't a Guy at All, Dandadan, Phantom Busters, Demon Slayer, One Piece make list",
+   "img": "",
+   "at": 1795367700000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "O principal detalhe da trama de GTA 6 foi escondido a sete chaves",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157785/o-principal-detalhe-da-trama-de-gta-6-foi-escondido-a-sete-chaves",
+   "summary": "Ah... que deleite não terem revelado isso antes Desde o primeiro teaser de GTA 6 , soubemos que o novo jogo da lendária franquia da Rockstar seguiria o casal Jason e Lucia e a…",
+   "img": "https://sm.ign.com/ign_br/photo/default/image-5291fe7c-3347-4214-8145-2073259ee2dc-1795015747531_8cbc.jpg",
+   "at": 1795366832000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Japanese Ghost Stories Folio Society Edition Book Review",
+   "url": "https://www.animenewsnetwork.com/review/japanese-ghost-stories/folio-society-edition-book/.243250",
+   "summary": "If you're already a fan of yokai, ghost stories, and folklore, this new edition of the early 20th-century book is a beautiful addition to any collection.",
+   "img": "",
+   "at": 1795366800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jujutsu Kaisen Ranks #4 on Bookscan's September Adult Graphic Novel List in U.S.",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-22/jujutsu-kaisen-ranks-no.4-on-bookscan-september-adult-graphic-novel-list-in-u.s/.244055",
+   "summary": "16 manga volumes including Spy x Family, The Summer Hikaru Died, Steel Ball Run, Demon Slayer, Gachiakuta, One Piece, Witch Hat Atelier, Kaiju No. 8, The Apothecary Diaries make…",
+   "img": "",
+   "at": 1795364100000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Voice Actor Kiyono Yasuno Announces Marriage",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-22/voice-actor-kiyono-yasuno-announces-marriage/.244093",
+   "summary": "Voice of Saekano's Megumi Katō, Macross Delta Kaname Buccaneer, My Hero Academia's Nejire Hado",
+   "img": "",
+   "at": 1795364008000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "GTA 6's strong and silent Jason was inspired by Steve McQueen and former Army Rangers, says Rockstar",
+   "url": "https://www.eurogamer.net/gta-6-jason-steve-mcqueen-army-rangers",
+   "summary": "If you've noticed that Grand Theft Auto 6 's Jason Duval isn't much of a talker, that's by design, as his quiet nature was inspired by Steve McQueen and the studio's research into…",
+   "img": "https://assetsio.gnwcdn.com/GTA_6_Mission_List_5.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795363860000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Brasileiro relata que GTA 6 passou a travar a cada 5 minutos no PS5 Slim",
+   "url": "https://www.hardware.com.br/games/gta6/brasileiro-gta-6-travar-cada-5-minutos-ps5-slim/",
+   "summary": "Brasileiro relata que GTA 6 começou a travar a cada 5 minutos no PS5 Slim. Limpeza de cache e reconstrução do banco de dados não resolveram.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/brasileiro-gta-6-travando-ps5.jpg",
+   "at": 1795363779000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Feature: A Lost Box Restored My Faith In Zelda's Staying Power",
+   "url": "https://www.nintendolife.com/features/a-lost-box-restored-my-faith-in-zeldas-staying-power",
+   "summary": "Passing the torch. Let's see what's in the box The Treasure Chest A few weeks ago, my brother sent me a photo with zero context. He was at our parents’ house, helping them pack up…",
+   "img": "https://images.nintendolife.com/c24d67b6ff55e/large.jpg",
+   "at": 1795363200000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "GTA 6 enfrenta onda de reclamações no PS5, com travamentos e suspeitas de superaquecimento",
    "url": "https://www.hardware.com.br/noticias/gta-6-ps5-travamentos-superaquecimento/",
    "summary": "GTA 6 acumula relatos de travamentos no PS5. Jogadores enfrentam o erro CE-108255-1, enquanto um caso de superaquecimento registra 100,9 °C.",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-6-ps5-crash.jpg",
    "at": 1795362833000,
    "source": "Hardware.com.br"
+  },
+  {
+   "title": "Jogos de PlayStation em oferta por menos de R$ 40 na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-playstation-em-oferta-por-menos-de-r-40-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/03/need-for-speed-hot-pursuit-remastered-640x400.webp",
+   "at": 1795360793000,
+   "source": "Adrenaline"
   },
   {
    "title": "Novo anime de Aria the Scarlet Ammo estreia em abril de 2027",
@@ -102,6 +211,15 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Roteirista-de-Clair-Obscur-Expedition-33-faz-duro-alerta-sobre-o-futuro-da-industria-de-jogos.jpg",
    "at": 1795359900000,
    "source": "Hardware.com.br"
+  },
+  {
+   "title": "Witch on the Holy Night Film Expands 981 Cuts for ScreenX Release",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-22/witch-on-the-holy-night-film-expands-981-cuts-for-screenx-release/.244092",
+   "summary": "New trailer: ufotable updated 67 minutes for premium screenings starting on Friday",
+   "img": "",
+   "at": 1795359764000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Proibido perder aura: novo game brasileiro leva meme ao pé da letra",
@@ -241,7 +359,7 @@
   {
    "title": "GTA 6 player gets 30-day PSN ban for sharing in-game nudist photo with a friend",
    "url": "https://www.eurogamer.net/gta-6-psn-ban-nude-photos-nudist-resort",
-   "summary": "A Grand Theft Auto 6 player says they've been hit with a 30-day PlayStation Network ban after sending a friend a photo they took in the game's nudist resort. Read more",
+   "summary": "A Grand Theft Auto 6 player says they've been hit with a 30-day PlayStation Network social features ban after sending a friend a photo they took in the game's nudist resort. Read…",
    "img": "https://assetsio.gnwcdn.com/gta-6-rockstar-art-jason-and-lucia-sitting-together.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795346530000,
    "source": "Eurogamer"
@@ -375,33 +493,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Classroom of the Elite Anime's 5th Season Reveals Full Title, Visual, 2027 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-21/classroom-of-the-elite-anime-5th-season-reveals-full-title-visual-2027-debut/.244051",
-   "summary": "New season to cover 1st half of 2nd semester in Year 2",
-   "img": "",
-   "at": 1795317300000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Mawaru Penguindrum Anime Inspires Stage Reading Production by Kunihiko Ikuhara",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-21/mawaru-penguindrum-anime-inspires-stage-reading-production-by-kunihiko-ikuhara/.244065",
-   "summary": "Ikuhara co-writes, co-directs February 6-7 Reading in the dark: Kodomo Broiler Sensō",
-   "img": "",
-   "at": 1795309013000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Kurumizawa's Folly Manga Ends in 3 Chapters",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-21/kurumizawa-folly-manga-ends-in-3-chapters/.244064",
-   "summary": "Series debuted in September 2025",
-   "img": "",
-   "at": 1795307129000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "\"We're Going Bananas For Our Newest Furry Friend\" - Donkey Kong Out Now On Build-A-Bear Workshop",
    "url": "https://www.nintendolife.com/news/2026/11/were-going-bananas-for-our-newest-furry-friend-donkey-kong-out-now-on-build-a-bear-workshop",
    "summary": "Pauline when? : We understand GTA 6 is a big deal, but Build-A-Bear Workshop has also teased some important news this week. On its official Instagram page , the store where you…",
@@ -449,24 +540,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/g1.jpg?w=300",
    "at": 1795280400000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Angel Next Door Spoils Me Rotten Season 2 Anime Series Review",
-   "url": "https://www.animenewsnetwork.com/review/angel-next-door-spoils-me-rotten/season-2/.243054",
-   "summary": "I regret to inform you that, as it turns out, the first season is only the shaky preamble to the cacophonous chronicle of courtship that is its second season.",
-   "img": "",
-   "at": 1795280400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "The Apothecary Diaries Season 3 ‒ Episode 56",
-   "url": "https://www.animenewsnetwork.com/review/the-apothecary-diaries-season-3/episode-56/.244059",
-   "summary": "As Shakespeare said in Henry IV Part Two , “uneasy is the head that wears a crown.”",
-   "img": "",
-   "at": 1795278600000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Please Put Them On, Takamine-san! chega ao fim em janeiro",
@@ -525,15 +598,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/06/2-15-1600x900.jpg",
    "at": 1795275050000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "STEEL BALL RUN JoJo's Bizarre Adventure ‒ Episode 10",
-   "url": "https://www.animenewsnetwork.com/review/steel-ball-run-jojo-bizarre-adventure/episode-10/.244058",
-   "summary": "This episode punches up many of the ideas that made the original Dio one of the most iconic villains in anime, and it's so much fun to see Araki’s original ideas explored again.",
-   "img": "",
-   "at": 1795275000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Sindicatos europeus da indústria de games publicam manifesto contra o uso de IA generativa",
@@ -721,36 +785,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Masashi Kishimoto trará uma das batalhas mais aguardadas pelos fãs em novo mangá de Naruto",
-   "url": "https://br.ign.com/naruto-1/157794/masashi-kishimoto-trara-uma-das-batalhas-mais-aguardadas-pelos-fas-em-novo-manga-de-naruto",
-   "summary": "Com Masashi Kishimoto no comando de um novo mangá de Naruto, os fãs de longa data podem esperar grandes momentos",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_sv94.png",
-   "at": 1795262435000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Sem Akira Toriyama, série Dragon Quest não seria a mesma, diz compositor de Chrono Trigger",
-   "url": "https://br.ign.com/dragon-ball/157792/sem-akira-toriyama-serie-dragon-quest-nao-seria-a-mesma-diz-compositor-de-chrono-trigger",
-   "summary": "“Acho que esse tipo de abordagem não é bom para o artista, para os fãs de Toriyama, nem mesmo para o falecido Toriyama”",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_j9um.png",
-   "at": 1795258837000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Jogos para XBOX em oferta com até 95% de desconto na Black Friday",
    "url": "https://www.adrenaline.com.br/games/xbox/jogos-para-xbox-em-oferta-com-ate-95-de-desconto-na-black-friday/",
    "summary": "Os interessados já podem aproveitar as ofertas na loja do Xbox por tempo limitado e adquirir os jogos da lista de desejos",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/09/Gears-War-E-Day-Ray-Tracing-PC-640x470.jpeg",
    "at": 1795258800000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "George Lucas Would Have Killed Luke Skywalker and Other Weird Star Wars Facts",
-   "url": "https://br.ign.com/star-wars-episodio-viii-os-ultimos-jedi-1/157764/george-lucas-would-have-killed-luke-skywalker-and-other-weird-star-wars-facts",
-   "summary": "",
-   "img": "https://sm.ign.com/ign_br/gallery/g/george-luc/george-lucas-would-have-killed-luke-skywalker-and-other-weir_m8z3.jpg",
-   "at": 1795255241000,
-   "source": "IGN Brasil"
   },
   {
    "title": "What if Vampire Survivors met Grand Theft Auto 2? Maniac is a brilliant mash-up that dares to ask that question",
@@ -1003,22 +1043,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "GTA 6’s Auto-Drive Feature Is Easy To Miss But Extremely Handy",
-   "url": "https://www.gamespot.com/articles/gta-6s-auto-drive-feature-is-easy-to-miss-but-extremely-handy/",
-   "summary": "GTA 6 may still very much be a Grand Theft Auto game, but some fundamental changes--a stronger focus on realism, money being scarce --do a lot to shake things up. Driving might…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261031144152_-Large.jpeg?w=300",
-   "at": 1795199440000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 6 credits actually include 'Florida Joker', the viral internet personality who once demanded $10 million from Rockstar Games",
-   "url": "https://www.eurogamer.net/gta-6-credits-florida-joker-rockstar",
-   "summary": "Lawrence Sullivan, better known to the online world as the 'Florida Joker', is in GTA 6 . After accusing Rockstar Games of using his likeness without consent and then demanding a…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-trailer-florida-joker.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795199030000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Saihate Station tem versão para Switch anunciada",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/saihate-station-twilight-edition-switch-anuncio",
    "summary": "A Twilight Edition será lançada no dia 25 de março de 2027.",
@@ -1053,30 +1077,6 @@
    "at": 1795195020000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Jogos da PlayStation em oferta na Steam com até 75% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-playstation-em-oferta-na-steam-com-ate-75-de-desconto-2/",
-   "summary": "Confira os principais jogos distribuídos pela PlayStation disponíveis com desconto nesta oferta por tempo limitado na Steam",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/05/Ghost-of-Tsushima-veja-diferencas-do-jogo-rodando-no-PS5-e-no-PC-640x400.jpg",
-   "at": 1795194435000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Persona 6 Doesn't Have A Date Yet, But Atlus Says You Won't Have To Wait As Long For Persona 7",
-   "url": "https://www.nintendolife.com/news/2026/11/persona-6-doesnt-have-a-date-yet-but-atlus-says-you-wont-have-to-wait-as-long-for-persona-7",
-   "summary": "A'ight, slow down. There's been a lot of talk around how long GTA fans have been waiting for the latest entry to launch, but Persona isn't actually that far behind. Persona 5 – in…",
-   "img": "https://images.nintendolife.com/137e24710fabd/large.jpg",
-   "at": 1795194000000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Jogada da Semana: Altura",
-   "url": "https://blog.br.playstation.com/2026/11/20/jogada-da-semana-altura/",
-   "summary": "Frio na barriga, adrenalina, e muita beleza! Sempre queremos atingir o ponto mais alto em um game, e a comunidade foi além com essas imagens incríveis, vamos conhecer algumas…",
-   "img": "",
-   "at": 1795193571000,
-   "source": "PlayStation Blog BR"
   },
   {
    "title": "Anime de Mercedes and the Waning Moon tem estreia marcada para o dia 10 de janeiro do ano que vem",
