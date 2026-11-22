@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795352881999,
+ "atualizadoEm": 1795362931914,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,88 @@
   }
  ],
  "itens": [
+  {
+   "title": "GTA 6 enfrenta onda de reclamações no PS5, com travamentos e suspeitas de superaquecimento",
+   "url": "https://www.hardware.com.br/noticias/gta-6-ps5-travamentos-superaquecimento/",
+   "summary": "GTA 6 acumula relatos de travamentos no PS5. Jogadores enfrentam o erro CE-108255-1, enquanto um caso de superaquecimento registra 100,9 °C.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-6-ps5-crash.jpg",
+   "at": 1795362833000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Novo anime de Aria the Scarlet Ammo estreia em abril de 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/22/aria-the-scarlet-ammo-aniversario-15-anos-anime-data-abril-2027",
+   "summary": "Produção comemora os 15 anos da primeira adaptação.",
+   "img": "https://a.storyblok.com/f/178900/960x540/0d6452bcc7/aria-the-scarlet-ammo.jpg",
+   "at": 1795360020000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Roteirista de Clair Obscur: Expedition 33 faz duro alerta sobre o futuro da indústria de jogos",
+   "url": "https://www.hardware.com.br/games/clair-obscur-expedition-33-fundo-narrativas-demissoes/",
+   "summary": "Jennifer Svedberg-Yen critica fechamento de estúdios, alerta para a perda de profissionais experientes e pretende financiar novos desenvolvedores",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Roteirista-de-Clair-Obscur-Expedition-33-faz-duro-alerta-sobre-o-futuro-da-industria-de-jogos.jpg",
+   "at": 1795359900000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Proibido perder aura: novo game brasileiro leva meme ao pé da letra",
+   "url": "https://br.ign.com/games/157704/proibido-perder-aura-novo-game-brasileiro-leva-meme-ao-pe-da-letra",
+   "summary": "6 7 Keep Farming Aura eleva o meme para algo tangível. Lançado recentemente pela Gian Warror Studio, a premissa coloca o jogador no papel de um completo desconhecido com um…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/1_auf5.png",
+   "at": 1795359633000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Única foto da equipe original de GTA foi ignorada na época pelas revistas por falta de confiança no jogo",
+   "url": "https://www.hardware.com.br/noticias/unica-foto-conhecida-da-equipe-original-de-gta/",
+   "summary": "Registro de 1997 reúne os desenvolvedores do primeiro GTA, quando o projeto ainda era considerado o menos promissor do estúdio.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-equipe-original-1600x900.jpg",
+   "at": 1795357468000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Mailbox: Ocarina Intruders, Pikmin Day, Too Many Humans - Nintendo Life Letters",
+   "url": "https://www.nintendolife.com/news/2026/11/mailbox-ocarina-intruders-pikmin-day-too-many-humans-nintendo-life-letters",
+   "summary": "Issue #42 - November 2026. Hello, you. Yes, you. It's just us here today - everyone else is busy in Hyrule or Leonida right now. In fact, it's been like that for most of the…",
+   "img": "https://images.nintendolife.com/5890246f89f6b/large.jpg",
+   "at": 1795356000000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "The One. Later On… tem anime anunciado para 2027",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/22/the-one-later-on-anime-anuncio-2027",
+   "summary": "Série de light novels original já está finalizada.",
+   "img": "https://a.storyblok.com/f/178900/1280x720/a00167a4aa/the-one-later-on-header.jpg",
+   "at": 1795355220000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Diretor do filme de BioShock diz que jogo tem “um dos melhores mundos já criados”",
+   "url": "https://www.hardware.com.br/games/filme-bioshock-diretor-elogia/",
+   "summary": "Francis Lawrence destaca o potencial da adaptação da Netflix, mas admite que transformar a experiência do jogador em uma história para o cinema continua sendo um desafio",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Diretor-do-filme-de-BioShock-diz-que-jogo-tem-um-dos-melhores-mundos-ja-criados.jpg",
+   "at": 1795354525000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it",
+   "url": "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed",
+   "summary": "Nicalis has removed AI-generated music from The Binding of Isaac : Repentance+ after players discovered it in the game's latest update, prompting a wave of negative reviews on…",
+   "img": "https://assetsio.gnwcdn.com/sc8p6p.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795353560000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "O Baldur's Gate 3 da ficção científica: este RPG é o jogo que mais aguardado do início de 2027",
+   "url": "https://br.ign.com/warhammer-40000-dark-heresy/157835/o-baldurs-gate-3-da-ficcao-cientifica-este-rpg-e-o-jogo-que-mais-aguardado-do-inicio-de-2027",
+   "summary": "Dark Heresy é um Warhammer combinado com BG3 Quando um ambicioso RPG promete combinar os dois, é difícil ficar indiferente.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_ccxf.jpg",
+   "at": 1795352435000,
+   "source": "IGN Brasil"
+  },
   {
    "title": "Produtor de Final Fantasy afirma que Zelda: Ocarina of Time é uma verdadeira aula de como fazer remakes",
    "url": "https://www.hardware.com.br/games/zelda-ocarina-of-time-aula-remakes/",
@@ -671,14 +753,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "“Pareceu criminoso”: Adam Driver ainda não consegue acreditar na forma como Disney lidou com cancelamento do filme de Star Wars, The Hunt for Ben Solo",
-   "url": "https://br.ign.com/star-wars-episode-ix/157763/pareceu-criminoso-adam-driver-ainda-nao-consegue-acreditar-na-forma-como-disney-lidou-com-cancelamen",
-   "summary": "“Estamos todos seguindo em frente”",
-   "img": "https://sm.ign.com/ign_br/news/i/it-felt-cr/it-felt-criminal-adam-driver-still-cant-believe-how-disney-h_w8mc.jpg",
-   "at": 1795255241000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "What if Vampire Survivors met Grand Theft Auto 2? Maniac is a brilliant mash-up that dares to ask that question",
    "url": "https://www.eurogamer.net/grand-theft-auto-6-vampire-survivors-maniac-interview",
    "summary": "What would you get if you combined the chaotic top-down action of old-school Grand Theft Auto 2 with the chaotic top-down action of Vampire Survivors? That's the question Soldat…",
@@ -693,14 +767,6 @@
    "img": "https://images.nintendolife.com/dbeba6ba29daf/large.jpg",
    "at": 1795255200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Estrela de Resident Evil: Requiem, Hopes Grace Ashcroft afirma que tem “um longo caminho pela frente”, mesmo que ela “nunca venha a ser uma personagem do tipo L",
-   "url": "https://br.ign.com/resident-evil-requiem/157758/estrela-de-resident-evil-requiem-hopes-grace-ashcroft-afirma-que-tem-um-longo-caminho-pela-frente-me",
-   "summary": "“Ela nunca vai ser do tipo durona, sabe”",
-   "img": "https://sm.ign.com/ign_br/news/r/resident-e/resident-evil-requiem-star-hopes-grace-ashcroft-has-a-long-w_gjuz.jpg",
-   "at": 1795251641000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Sakurai Celebrates Kirby Air Riders' First Anniversary And Seemingly Ponders His Future As A Game Creator",
@@ -980,14 +1046,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Nvidia co-founder Jensen Huang accused of decades of bullying and workplace abuse in new investigation",
-   "url": "https://www.eurogamer.net/jensen-huang-nvidia-investigation-harassment",
-   "summary": "An investigation into the workplace behavior of Nvidia co-founder Jensen Huang, who resigned recently after a series of extramarital affairs came to light, has uncovered decades…",
-   "img": "https://assetsio.gnwcdn.com/jensen-huang-speaking.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795195190000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Anime de A Pen, Handcuffs, and a Common-Law Marriage ganha data de estreia em novo trailer",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/a-pen-handcuffs-and-a-common-law-marriage-anime-data-trailer-9-janeiro",
    "summary": "Adaptação estreia no dia 9 de janeiro de 2027.",
@@ -1026,64 +1084,6 @@
    "summary": "Adaptação estreia no dia 10 de janeiro do ano que vem.",
    "img": "https://a.storyblok.com/f/178900/1460x821/744bdd101f/mercedes_and_the_waning_moon_punch_header.jpg",
    "at": 1795192020000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Microsoft rejeitou GTA 3 para o Xbox em 2001 e perdeu uma das maiores oportunidades da história dos games",
-   "url": "https://www.hardware.com.br/games/microsoft-rejeitou-gta-3-para-o-xbox-em-2001/",
-   "summary": "Executivos da empresa acreditavam que a franquia não conseguiria fazer a transição do 2D para o 3D; jogo acabou se tornando um fenômeno no PlayStation 2.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-3.jpg",
-   "at": 1795190477000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Remake de Star Wars: KOTOR deve ser reapresentado no The Game Awards 2026",
-   "url": "https://www.adrenaline.com.br/games/remake-de-star-wars-kotor-deve-ser-reapresentado-no-the-game-awards-2026/",
-   "summary": "Anunciado em 2021, o remake de Star Wars: Knights of the Old Republic passou por varios problemas em seu desenvolvimento",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Star-Wars-Kotor-Remake-Game-Awards-640x400.jpeg",
-   "at": 1795188676000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Zelda Playable & Electric Ocarinas Will Initially Be Sold On An Invite-Only Basis (Europe)",
-   "url": "https://www.nintendolife.com/news/2026/11/zelda-playable-and-electric-ocarinas-will-initially-be-sold-on-an-invite-only-basis-europe",
-   "summary": "And you'll need to pass the criteria to register interest. We've been keeping an eye out for news of Nintendo's playable and electric ocarinas going on sale in Europe for a good…",
-   "img": "https://images.nintendolife.com/eaad7a33a6355/large.jpg",
-   "at": 1795188600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Fatal Fury: City of the Wolves ganha animação para Laocorn",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/fatal-fury-city-of-the-wolves-laocorn-animacao",
-   "summary": "O personagem foi lançado no jogo ontem, dia 19 de novembro.",
-   "img": "https://a.storyblok.com/f/178900/1024x576/c943a83fac/fatal-fury-city-of-the-wolves-laocorn-animacao.jpg",
-   "at": 1795188180000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Próxima semana em XBOX: novos jogos para 23 a 27 de novembro",
-   "url": "https://news.xbox.com/pt-br/2026/11/20/proxima-semana-em-xbox-novos-jogos-para-23-a-27-de-novembro/",
-   "summary": "The post Próxima semana em XBOX: novos jogos para 23 a 27 de novembro appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1795187700000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Modders acreditam que GTA 6 poderá ser jogado no PC em uma semana",
-   "url": "https://www.adrenaline.com.br/games/modders-acreditam-que-gta-6-podera-ser-jogado-no-pc-em-uma-semana/",
-   "summary": "Lançado no dia 19 de novembro para consoles, GTA 6 não deve demorar muito a receber um port não oficial",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-PC-Modders-640x400.jpeg",
-   "at": 1795186165000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Anime Majutsu wo Kiwamete Tabi ni Deta Tensei Elf, Moteamashita Jumyo de Ikeru Densetsu to Naru revela data de estreia e músicas-tema em novo trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/20/majutsu-wo-kiwamete-tabi-ni-deta-tensei-elf-data-estreia-musicas-tema-trailer",
-   "summary": "Yuki Inaba dirige a série de fantasia no Studio Palette",
-   "img": "https://a.storyblok.com/f/178900/1460x821/85380a7108/majutsu-wo-kiwamete-tabi-ni-deta-tensei-elf-moteamashita-jumyo-de-ikeru-densetsu-to-naru.jpg",
-   "at": 1795134900000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
