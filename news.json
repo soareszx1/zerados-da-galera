@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795420130432,
+ "atualizadoEm": 1795429438687,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 10
   },
   {
    "nome": "Anime News Network",
@@ -78,6 +78,54 @@
   }
  ],
  "itens": [
+  {
+   "title": "Kirby And The World Beyond Details Revealed In Nintendo Catalogue",
+   "url": "https://www.nintendolife.com/news/2026/11/kirby-and-the-world-beyond-details-revealed-in-nintendo-catalogue",
+   "summary": "One of 2027's big-hitters. New details regarding Kirby and the World Beyond have been revealed via Nintendo's winter catalogue in Japan (via Genki_JPN on X). While hardly…",
+   "img": "https://images.nintendolife.com/d014361034d87/large.jpg",
+   "at": 1795428900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Queen's Domain review",
+   "url": "https://www.eurogamer.net/queens-domain-review",
+   "summary": "Where to start with Queen's Domain? It's tempting to begin with King's Field; after all, FromSoftware's seminal first-person action-RPG is an explicit inspiration for developer…",
+   "img": "https://assetsio.gnwcdn.com/queens-domain-header_not_gta2.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795428290000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "GTA 6: Como concluir as missões secundárias da vizinha Shirley?",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157843/gta-6-como-concluir-as-missoes-secundarias-da-vizinha-shirley",
+   "summary": "Uma recompensa muito boa te aguarda no final Sempre que alguém te chamar em GTA VI, vá falar com essa pessoa: há uma boa chance de você conseguir algumas recompensas interessantes.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_xgwy.jpg",
+   "at": 1795428030000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Why can't you play darts in GTA 6 when you could in previous games? Because Rockstar \"didn't have the resources\" to do it to a standard it'd be happy with",
+   "url": "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources",
+   "summary": "If you've been a fan of Grand Theft Auto for a while, you might have noticed a strange absence in GTA 6 . While the game is packed full of different activities, the recurring…",
+   "img": "https://assetsio.gnwcdn.com/grand-theft-auto-6-drinking.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795427430000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Activision patents AI voice system that learns from in-game chat and creates audio for NPCs who can even speak in place of you",
+   "url": "https://www.eurogamer.net/activision-ai-voice-chat-npc-patent",
+   "summary": "Call of Duty publisher Activision has filed for a new patent allowing it to train NPCs on real-world player voice chat. The patent describes an AI-driven system that listens in on…",
+   "img": "https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-2.jpeg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795426070000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Por que GTA 6 teve indicações ao The Game Awards mesmo antes de ser lançado? A resposta é algo semelhante ao Oscar",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157795/por-que-gta-6-teve-indicacoes-ao-the-game-awards-mesmo-antes-de-ser-lancado-a-resposta-e-algo-semelh",
+   "summary": "Lista da premiação saiu dois dias antes do lançamento oficial do jogo O processo para as diversas indicações de GTA 6 no The Game Awards é semelhante ao que utilizam no Oscar.",
+   "img": "https://sm.ign.com/ign_br/photo/default/grand-theft-auto-vi-20261115231444-1794995516103_n3j3.jpg",
+   "at": 1795424436000,
+   "source": "IGN Brasil"
+  },
   {
    "title": "Live-Action Wakako-zake Season 10 Unveils January 6 Debut, Year-End Special, Opening Song Artists",
    "url": "https://www.animenewsnetwork.com/news/2026-11-22/live-action-wakako-zake-season-10-unveils-january-6-debut-year-end-special-opening-song-artists/.244087",
@@ -452,6 +500,51 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/11/classroom-of-the-elite-5o-temporada-ganha-teaser-visual-e-janela-de-estreia/",
+   "summary": "... O post Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349499000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "The Detective Is Already Dead – 2º temporada ganha trailer para novo arco",
+   "url": "https://www.intoxianime.com/2026/11/the-detective-is-already-dead-2o-temporada-ganha-trailer-para-novo-arco/",
+   "summary": "... O post The Detective Is Already Dead – 2º temporada ganha trailer para novo arco apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349497000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP",
+   "url": "https://www.intoxianime.com/2026/11/bride-of-the-barrier-romance-sobre-garota-escondendo-poderes-ganha-trailer-com-op/",
+   "summary": "... O post Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349493000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Shiboyugi – Anime tem anuncio de continuação",
+   "url": "https://www.intoxianime.com/2026/11/shiboyugi-anime-tem-anuncio-de-continuacao/",
+   "summary": "... O post Shiboyugi – Anime tem anuncio de continuação apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349492000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Shouzen – Anime sobre sacerdote e garota criada por criaturas sobrenaturais ganha trailer",
+   "url": "https://www.intoxianime.com/2026/11/shouzen-anime-sobre-sacerdote-e-garota-criada-por-criaturas-sobrenaturais-ganha-trailer/",
+   "summary": "... O post Shouzen – Anime sobre sacerdote e garota criada por criaturas sobrenaturais ganha trailer apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349490000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "Nahato's 'The One. Later On...' Light Novels Get TV Anime in 2027",
    "url": "https://www.animenewsnetwork.com/news/2026-11-22/nahato-the-one-later-on-light-novels-get-tv-anime-in-2027/.244089",
    "summary": "Kent Itō, Yui Ogura star in Jumondo anime",
@@ -698,14 +791,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Fita promocional de The Legend of Zelda: Ocarina of Time lançada em 1998 foi o mais próximo que tivemos de ouvir personagens falarem até o remake do Nintendo Sw",
-   "url": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/157683/fita-promocional-de-the-legend-of-zelda-ocarina-of-time-lancada-em-1998-foi-o-mais-proximo-que-tivem",
-   "summary": "Kaori Mizuhashi faz resumão da franquia até Ocarina osMuitos anos antes de Kaori Mizuhashi reprisar o papel da Navi na versão japonesa do remake de Ocarina of Time , a atriz nos…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/oot-20261116-161921-0000_2g8r.png",
-   "at": 1795273235000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Godzilla Minus Zero confirma participação especial de Hideaki Anno",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/filme-godzilla-minus-zero-hideaki-anno-participacao",
    "summary": "O 31º filme japonês de Godzilla já arrecadou mais de 15 bilhões de ienes em todo o mundo",
@@ -722,14 +807,6 @@
    "at": 1795272180000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Com artes de Jim Kay, edição especial do primeiro livro de Harry Potter entra em oferta na Amazon",
-   "url": "https://br.ign.com/descontos/157833/com-artes-de-jim-kay-edicao-especial-do-primeiro-livro-de-harry-potter-entra-em-oferta-na-amazon",
-   "summary": "Edição tem capa dura, ilustrações coloridas e uma luva ilustrada",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/harry-potter-pedra-filosofal-jim-kay-produto-1280x720_4n85.jpg",
-   "at": 1795272158000,
-   "source": "IGN Brasil"
   },
   {
    "title": "DualSense com 26% de desconto: o que muda (e o que você ganha) com um segundo controle",
@@ -790,6 +867,42 @@
    "source": "Hardware.com.br"
   },
   {
+   "title": "Mangás mais Vendidos (Novembro 09 – Novembro 15)",
+   "url": "https://www.intoxianime.com/2026/11/mangas-mais-vendidos-novembro-09-novembro-15/",
+   "summary": "... O post Mangás mais Vendidos (Novembro 09 – Novembro 15) apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265627000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Getbackers – Anime Clássico de Ação vira polêmica por receber continuação com IA",
+   "url": "https://www.intoxianime.com/2026/11/getbackers-anime-classico-de-acao-vira-polemica-por-receber-continuacao-com-ia/",
+   "summary": "... O post Getbackers – Anime Clássico de Ação vira polêmica por receber continuação com IA apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265620000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Tamon’s B-Side – Anime tem anuncio de 2º temporada",
+   "url": "https://www.intoxianime.com/2026/11/tamons-b-side-anime-tem-anuncio-de-2o-temporada/",
+   "summary": "... O post Tamon’s B-Side – Anime tem anuncio de 2º temporada apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265620000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Bang Dream! – Novo anime tem anuncio de 2º temporada",
+   "url": "https://www.intoxianime.com/2026/11/bang-dream-novo-anime-tem-anuncio-de-2o-temporada/",
+   "summary": "... O post Bang Dream! – Novo anime tem anuncio de 2º temporada apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795265617000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "GTA 6 features the series' first non-binary character, says actor Jesse James Rose, and players can't hurt them",
    "url": "https://www.eurogamer.net/gta-6-first-non-binary-character-jesse-james-rose",
    "summary": "Grand Theft Auto 6 features the first non-binary character in the series' history, according to actor Jesse James Rose, who plays the role of a museum curator in the game. Read…",
@@ -828,14 +941,6 @@
    "img": "https://images.nintendolife.com/4f77abbc60571/large.jpg",
    "at": 1795249800000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "What we've been playing - \"It's slow, it's awkward, it's weird, and it's hard\"",
-   "url": "https://www.eurogamer.net/what-weve-been-playing-its-slow-its-awkward-its-weird-and-its-hard",
-   "summary": "Did anything notable happen this week? Not that I can remember. The weather was quite rainy - will that do? I'm just being silly, of course. We've had - and I suppose are still…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-4.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795248000000,
-   "source": "Eurogamer"
   },
   {
    "title": "Guide: Zelda: Ocarina Of Time Walkthrough (Switch 2 Remake): Guide To The Main Quest, Side Quests & Collectables",
@@ -974,28 +1079,13 @@
    "source": "GameSpot"
   },
   {
-   "title": "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
-   "url": "https://www.eurogamer.net/gta-6-biggest-entertainment-launch",
-   "summary": "Surprise, surprise - GTA 6 is officially the biggest entertainment launch of all time, surpassing its predecessor's 13-year-long record and the already optimistic analyst…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-4.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795204840000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Don’t Blink: These Are The Fastest Cars In GTA 6",
-   "url": "https://www.gamespot.com/articles/dont-blink-these-are-the-fastest-cars-in-gta-6/",
-   "summary": "The state of Leonida is home to some of the rarest and most expensive cars we've ever seen in the Grand Theft Auto franchise. GTA 6 features over a dozen supercars, which are…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/1a1fa4f321856-screenshotUrl.jpg?w=300",
-   "at": 1795204378000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 6 Sets Even More Records",
-   "url": "https://www.gamespot.com/articles/gta-6-sets-even-more-records/",
-   "summary": "Rockstar's Grand Theft Auto 6 has finally arrived, and, to the surprise of no one, it's putting up some big numbers that speak to the pent-up demand. GTA 6 sold more than 30…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA6Circana.png?w=300",
-   "at": 1795204371000,
-   "source": "GameSpot"
+   "title": "Sony diz que pretende fazer Demon Slayer durar 100 anos e que gostaria de Comprar a JUMP",
+   "url": "https://www.intoxianime.com/2026/11/sony-diz-que-pretende-fazer-demon-slayer-durar-100-anos-e-que-gostaria-de-comprar-a-jump/",
+   "summary": "... O post Sony diz que pretende fazer Demon Slayer durar 100 anos e que gostaria de Comprar a JUMP apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795201649000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "Produção do jogo de cartas WIXOSS chega ao fim em 2027",
