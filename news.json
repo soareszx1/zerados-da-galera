@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795547555798,
+ "atualizadoEm": 1795558211446,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 10
   },
   {
    "nome": "Anime News Network",
@@ -78,6 +78,185 @@
   }
  ],
  "itens": [
+  {
+   "title": "Salto de The Witcher 3 para The Witcher 4 será comparável ao de GTA 5 para o 6, diz CD Projekt Red",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157923/salto-de-the-witcher-3-para-the-witcher-4-sera-comparavel-ao-de-gta-5-para-o-6-diz-cd-projekt-red",
+   "summary": "Melhor e maior A CD Projekt Red espera um salto entre The Witcher 3 e 4 que seja comparável ao salto entre GTA 5 e 6. Em uma recente teleconferência sobre resultados financeiros…",
+   "img": "https://sm.ign.com/ign_br/news/t/the-witche/the-witcher-4-will-have-a-comparable-leap-from-gta-5-to-gta_pfbv.jpg",
+   "at": 1795556461000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Kamen Rider Shinobi: Episódio final ganha trailer, pôster e nova personagem",
+   "url": "https://www.jbox.com.br/2026/11/24/kamen-rider-shinobi-episodio-final-ganha-trailer-poster-e-nova-personagem/",
+   "summary": "Especial estreia no fim de dezembro no TTFC e destaca a forma Saint Shinobi.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/krshinobi3.jpg?ssl=1",
+   "at": 1795556149000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Jogos de Ação para PlayStation em oferta na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-acao-para-playstation-em-oferta-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/04/Assassins-Creed-Black-Flag-Resynced-1-640x400.jpeg",
+   "at": 1795554000000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Where To Find The Haunted Lighthouse And Ghost Ship In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-ghost-ship-haunted-lighthouse/",
+   "summary": "The cities of Grand Theft Auto 6 are full of mysteries, many of which occur late at night. So, if you’re not planning on clubbing (or cuddling ) with your partner, you might want…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-haunted-lighthouse-ghost-ship-mystery-.jpg?w=300",
+   "at": 1795553944000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How To Find The Truffade Thrax In GTA 6",
+   "url": "https://www.gamespot.com/articles/how-to-find-the-truffade-thrax-in-gta-6/",
+   "summary": "The Truffade Thrax is the fastest stock car in all of Grand Theft Auto 6 . While other upgraded cars can reach a higher speed rating, the Thrax remains arguably the best car you…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/1a1fa6682c537-screenshotUrl.jpg?w=300",
+   "at": 1795553681000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Call Of Duty’s 19-Year Sales Streak Continues",
+   "url": "https://www.gamespot.com/articles/call-of-dutys-19-year-sales-streak-continues/",
+   "summary": "Circana has released its latest monthly sales report for the US video game industry, and in terms of game sales, Call of Duty: Modern Warfare 4 led the way. It was the No. 1…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MW4ImageNew.jpg?w=300",
+   "at": 1795553393000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "All Race Challenges & Racetrack Locations In GTA 6",
+   "url": "https://www.gamespot.com/articles/all-race-challenges-racetrack-locations-in-gta-6/",
+   "summary": "For the first time in the Grand Theft Auto franchise, Rockstar Games has created actual racetracks for players to race on in GTA 6 . While you can still compete in street races…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Racetracks.jpg?w=300",
+   "at": 1795553250000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Best Cars To Get Early In GTA 6",
+   "url": "https://www.gamespot.com/articles/best-cars-to-get-early-in-gta-6/",
+   "summary": "During the first part of Grand Theft Auto 6 , you have some looming responsibilities that the game clearly wants you to prioritize. Whether it's fixing up Jason's house in Key…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/1a20e41684792-screenshotUrl.jpg?w=300",
+   "at": 1795552358000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Lords of the Fallen 2 delayed to April 2027, exact release date coming next month",
+   "url": "https://www.eurogamer.net/lords-of-the-fallen-2-delayed-april-2027",
+   "summary": "Lords of the Fallen 2 will now launch in April 2027, and we'll find out exactly when next month. Read more",
+   "img": "https://assetsio.gnwcdn.com/Lords-of-the-Fallen-II---Announcement-Trailer-_-PS5-Games-0-28-screenshot-(1).png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795552200000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Just Like GTA 6, The Witcher 4 Has A PlayStation Deal",
+   "url": "https://www.gamespot.com/articles/just-like-gta-6-the-witcher-4-has-a-playstation-deal/",
+   "summary": "CD Projekt Red has announced that just today, November 24, the Polish studio signed new deals with Sony Interactive Entertainment for The Witcher 4 's upcoming marketing campaign,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/WitcherCiri.png?w=300",
+   "at": 1795551108000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Continuação do anime de Witch on the Holy Night é anunciada",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/anime-witch-on-the-holy-night-continuacao-anuncio",
+   "summary": "O seu 1º longa-metragem em anime está atualmente em cartaz nos cinemas japoneses",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/f517d54733/witch-on-the-holy-night.png",
+   "at": 1795550700000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Stop Kicking The Dogs In GTA 6–Buy Them Treats Instead",
+   "url": "https://www.gamespot.com/articles/stop-kicking-the-dogs-in-gta-6-buy-them-treats-instead/",
+   "summary": "GTA 6 drops Jason and Lucia into a vast criminal world of rival gangs all across Leonida, and many of those gangs use guard dogs to help fend off trespassers. Inevitably, this has…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/582aaf85-f7ad-490f-9208-be09e506673e-e1795550451378.png?w=300",
+   "at": 1795550621000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Rip And Tear Into Doom: The Dark Ages’ Newest Game Mode For A Fraction Of The Price",
+   "url": "https://www.gamespot.com/articles/rip-and-tear-into-doom-the-dark-ages-newest-game-mode-for-a-fraction-of-the-price/",
+   "summary": "Doom Slayer’s arsenal keeps growing, and so does his hatred of demons. After releasing the impressive Revelations expansion earlier this year, Doom: The Dark Ages is giving Doom…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-doom-the-dark-ages-discount.jpg?w=300",
+   "at": 1795550400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Phantom Blade Zero cai na pirataria depois de ter Denuvo crackeado no PC",
+   "url": "https://www.adrenaline.com.br/games/pc-games/phantom-blade-zero-cai-na-pirataria-depois-de-ter-denuvo-crackeado-no-pc/",
+   "summary": "Faltando poucos dias para completar um mês de seu lançamento, Phantom Blade Zero se torna nova vítima de voices38",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/phantom-blade-zero-denuvo-crackeado-640x400.jpg",
+   "at": 1795549527000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Witch on the Holy Night: Filme tem continuação anunciada",
+   "url": "https://www.jbox.com.br/2026/11/24/witch-on-the-holy-night-filme-tem-continuacao-anunciada/",
+   "summary": "Longa-metragem que adapta história dos criadores de 'Fate/stay night' chega em janeiro de 2027 aos cinemas brasileiros.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/02/witch-on-the-holy-night-destacada.jpg?ssl=1",
+   "at": 1795549189000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Switch 2’s Black Friday Bundle With Mario Kart World Is Available Now For $500",
+   "url": "https://www.gamespot.com/articles/switch-2s-black-friday-bundle-with-mario-kart-world-is-available-now-for-500/",
+   "summary": "It's Black Friday week, and one of the best gaming deals is a Switch 2 bundle featuring Mario Kart World and other extras for $50 off the normal price. As announced previously ,…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/MKWorldSwitch.png?w=300",
+   "at": 1795549113000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Nintendo Switch Online recebe atualização muito aguardada, juntamente com outro clássico do GameCube",
+   "url": "https://br.ign.com/wave-race-blue-storm/157918/nintendo-switch-online-recebe-atualizacao-muito-aguardada-juntamente-com-outro-classico-do-gamecube",
+   "summary": "“Alerta de tempestade! Prepare-se para enfrentar as ondas!”",
+   "img": "https://sm.ign.com/ign_br/news/n/nintendo-s/nintendo-switch-online-just-got-a-long-awaited-update-alongs_ymdu.jpg",
+   "at": 1795548781000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Best XBOX Gifts For 2026: Controllers, Games, and More",
+   "url": "https://www.gamespot.com/articles/best-xbox-gifts-for-2026-controllers-games-and-more/",
+   "summary": "The holidays are once again upon us, and as the shopping season ramps up, there are a lot of decisions that have to be made. One of them is figuring out what to get the gamers in…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/15-off-textless-16x9-Large.jpeg?w=300",
+   "at": 1795548589000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Jogos para XBOX em oferta por menos de R$ 20 na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/xbox/jogos-para-xbox-em-oferta-por-menos-de-r-20-na-black-friday/",
+   "summary": "Os interessados já podem aproveitar as ofertas na loja do Xbox por tempo limitado e adquirir os jogos da lista de desejos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/09/mortal-kombat-11-640x400.jpg",
+   "at": 1795548227000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Novo anime de 2027 promete ser a mistura perfeita de Dungeon Meshi e Frieren e a Jornada para o Além",
+   "url": "https://br.ign.com/frieren-e-a-jornada-para-o-alem/157917/novo-anime-de-2027-promete-ser-a-mistura-perfeita-de-dungeon-meshi-e-frieren-e-a-jornada-para-o-alem",
+   "summary": "Nova história paralela chegar em dezembro no Japão Frieren e a Jornada para o Além continua em hiato, mas fãs podem dar uma apaziguada na espera porque a editora da obra anunciou…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/b41ba-17698402394340_1u2s.jpg",
+   "at": 1795548195000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Fortnite: como conseguir Token de Acesso à Loja Pirata",
+   "url": "https://br.ign.com/descontos/157915/fortnite-como-conseguir-token-de-acesso-a-loja-pirata",
+   "summary": "Saiba como conseguir Token de Acesso à Loja Pirata no Fortnite, quais são as chances e como farmar baús antes do fim da temporada.",
+   "img": "https://sm.ign.com/ign_br/photo/default/fortnite-pirate-shop-access-free-item-shop-promo-ign-1793556_wxub.jpg",
+   "at": 1795548098000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Já da para jogar GTA 6 por streaming no PlayStation 5, mas não no Brasil",
+   "url": "https://www.adrenaline.com.br/games/ja-da-para-jogar-gta-6-por-streaming-no-playstation-5-mas-nao-no-brasil/",
+   "summary": "Streaming de GTA 6 no PS Plus Premium dispensa 212 GB de armazenamento no PS5, mas serviço segue sem previsão de chegada ao Brasil!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Time-Desenvolvimento-Games-640x400.jpeg",
+   "at": 1795547193000,
+   "source": "Adrenaline"
+  },
   {
    "title": "Nioh 3 chega ao XBOX em 2027",
    "url": "https://news.xbox.com/pt-br/2026/11/24/nioh-3-chega-ao-xbox-em-2027/",
@@ -333,14 +512,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Ghostrunner 2’s Complete Edition Has Never Been Cheaper, So Sharpen Your Katana",
-   "url": "https://www.gamespot.com/articles/ghostrunner-2s-complete-edition-has-never-been-cheaper-so-sharpen-your-katana/",
-   "summary": "Ghostrunner 2 is hard. I don’t mean that in a bad way; if anything, that’s a huge compliment. Any and every hit could be your last, and when you’re running around arenas at a…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-ghostrunner-2-all-dlc-lowest-price.jpg?w=300",
-   "at": 1795533737000,
-   "source": "GameSpot"
-  },
-  {
    "title": "2ª temporada de Twisted-Wonderland: A Série ganha trailer com prévia do tema de encerramento",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/disney-twisted-wonderland-the-animation-season-2-episode-of-savanaclaw-anime-payoff-trailer",
    "summary": "O anime retorna no dia 23 de dezembro.",
@@ -391,14 +562,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "GTA 6 Players On PS5 Averaged 17+ Hours During First Weekend",
-   "url": "https://www.gamespot.com/articles/gta-6-players-on-ps5-averaged-17-hours-during-first-weekend/",
-   "summary": "Rockstar's Grand Theft Auto 6 is finally here, and it's breaking records everywhere, including at PlayStation. The gaming giant has announced that GTA 6 is the \"biggest launch in…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Ambrosia_06_a29239.jpg?w=300",
-   "at": 1795531946000,
-   "source": "GameSpot"
-  },
-  {
    "title": "100 mil em apenas 10 minutos: jogadores de GTA 6 já estão otimizando glitch de dinheiro infinito para ser ainda mais rápido Minutes",
    "url": "https://br.ign.com/grand-theft-auto-vi/157901/100-mil-em-apenas-10-minutos-jogadores-de-gta-6-ja-estao-otimizando-glitch-de-dinheiro-infinito-para",
    "summary": "Para que usar trapaça? O glitch de dinheiro infinito já está fazendo sucesso na comunidade de GTA 6 , mas jogadores estão levando isso a outro patamar. Novas estratégias…",
@@ -446,14 +609,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/valve-proton-11-0-3-linux-15-jogos-crysis-amd-far-cry-5-hdr-steam-deck-oled-2-640x400.jpg",
    "at": 1795531080000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Jogadores de GTA 6 estão convencidos de que a Rockstar pintou uma parede falsa propositalmente para criar situações a lá Looney Tunes",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157900/gta-6-players-are-convinced-rockstar-painted-a-fake-tunnel-just-to-trick-them-into-a-looney-tunes-st",
-   "summary": "Isso é tudo, pessoal! Jogadores de GTA 6 estão convencidos de que a Rockstar Games pintou um túnel falso em Vice City apenas para induzi-los a colidir contra ele, em um acidente…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-play/gta-6-players-are-convinced-rockstar-painted-a-fake-tunnel-j_ep7p.jpg",
-   "at": 1795530762000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Efeito GTA 6: golpistas aproveitam a alta procura pelo PS5 e usam consoles a preços baixos como isca",
@@ -520,30 +675,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Lego’s First Marvel Rivals Set Is A 495-Piece Tribute To The Game’s Most Adorable Terror",
-   "url": "https://www.gamespot.com/articles/lego-first-marvel-rivals-set-is-a-495-piece-tribute-to-the-games-most-adorable-terror/",
-   "summary": "Next month marks the second anniversary of Marvel Rivals , and to celebrate, a new Lego set is on the way that lets you build the game's unofficial mascot, Jeff the Land Shark.…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jeff-17.jpg?w=300",
-   "at": 1795528800000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "How To Unlock Hurricanes In GTA 6",
-   "url": "https://www.gamespot.com/articles/how-to-unlock-hurricanes-in-gta-6/",
-   "summary": "Despite being used in advertising Leonida's dynamic weather, hurricanes are actually locked behind a secret mission in GTA 6 . Be careful proceeding though, since after you…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/382_gtavi_giexclusive04.jpg?w=300",
-   "at": 1795528710000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "How To Play GTA 6 On Your PC Or Phone Via Remote Play On Xbox",
-   "url": "https://www.gamespot.com/articles/how-to-play-gta-6-on-your-pc-or-phone-via-remote-play-on-xbox/",
-   "summary": "Rockstar's Grand Theft Auto 6 can be streamed via Xbox Cloud Gaming , and Microsoft has also now confirmed support for Remote Play on Xbox. This means you can play GTA 6 on your…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261103112343-2.jpg?w=300",
-   "at": 1795527910000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Unofficial GTA 6 PC port effort suffers setback as Rockstar seemingly takes down Project Leonida, one of the internet's biggest recompilation projects",
    "url": "https://www.eurogamer.net/grand-theft-auto-6-project-leonida-discord-github-vanish",
    "summary": "A lot has happened in the last 24 hours in the community working to get Grand Theft Auto 6 running on PC. And now, Rockstar has dealt a major blow to their efforts. Read more",
@@ -560,52 +691,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "21 anos depois: sequência de um dos melhores filmes de Nicolas Cage ganha trailer e data de estreia",
-   "url": "https://br.ign.com/nicolas-cage/157893/21-anos-depois-sequencia-de-um-dos-melhores-filmes-de-nicolas-cage-ganha-trailer-e-data-de-estreia",
-   "summary": "Longa-metragem chega aos cinemas no dia 28 de janeiro de 2027 Cage retorna como Yuri Orlov em Lords of War.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_vm8n.jpg",
-   "at": 1795525233000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6: How To Go To Hell And Fight Satan",
-   "url": "https://www.gamespot.com/articles/gta-6-how-to-go-to-hell-and-fight-satan/",
-   "summary": "Grand Theft Auto 6 gets downright weird when you go off the beaten track, and one secret mission will see you travel to the bowels of hell to fight Beezleboss himself, Satan. This…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-25.jpg?w=300",
-   "at": 1795525181000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "All GTA 6 Animals And Wildlife Spawn Locations",
-   "url": "https://www.gamespot.com/articles/all-gta-6-animals-and-wildlife-spawn-locations/",
-   "summary": "You can go birdwatching in GTA 6 . Seriously. You can put aside that life of crime and take up the rather harmless hobby of logging new birds. It's not just birds, as there are…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-wildlife-guide.jpg?w=300",
-   "at": 1795525169000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Agradecemos por tornarem Grand Theft Auto VI o maior lançamento da história PlayStation",
    "url": "https://blog.br.playstation.com/2026/11/24/agradecemos-por-tornarem-grand-theft-auto-vi-o-maior-lancamento-da-historia-playstation/",
    "summary": "Após uma longa espera, os jogadores finalmente tiveram a chance de mergulhar em Grand Theft Auto VI. Foi incrível ver a comunidade PlayStation ao redor do mundo começar suas…",
    "img": "",
    "at": 1795524699000,
    "source": "PlayStation Blog BR"
-  },
-  {
-   "title": "How To Tow Away And Steal ATMs In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-steal-atm-tow-trucks/",
-   "summary": "There are hundreds of ATMs all over the world of Grand Theft Auto 6 . To be fair, you’re not going to withdraw cash from them often, as it’s always better to keep money in your…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-steal-atm-tow-truck-.jpg?w=300",
-   "at": 1795523696000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "All Gym Locations In GTA 6",
-   "url": "https://www.gamespot.com/articles/all-gym-locations-in-gta-6/",
-   "summary": "In Grand Theft Auto 6 , a large emphasis is placed on Jason and Lucia working out and staying in shape. The better shape the characters are in, the higher their stats, which…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_Duval_15.0oze53sounjp2.jpg?w=300",
-   "at": 1795523525000,
-   "source": "GameSpot"
   },
   {
    "title": "Prêmios Steam 2026 quer decidir qual é o GOTY definitivo da última década",
@@ -616,20 +707,31 @@
    "source": "Adrenaline"
   },
   {
-   "title": "GTA 6 realmente está terminando relacionamento de casais?",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157892/gta-6-realmente-esta-terminando-relacionamento-de-casais",
-   "summary": "Game está arruinando relacionamentos, segundo as redes sociais. Ou, pelo menos, servindo como um excelente isco para engajamento Grand Theft Auto 6 tem tudo o que você poderia…",
-   "img": "https://sm.ign.com/ign_br/news/a/are-couple/are-couples-really-breaking-up-over-gta-6_p8rz.png",
-   "at": 1795521637000,
-   "source": "IGN Brasil"
+   "title": "Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação",
+   "url": "https://www.intoxianime.com/2026/11/witch-on-the-holy-night-anime-sobre-jogo-dos-criadores-de-fate-series-tem-anuncio-de-continuacao/",
+   "summary": "... O post Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795522437000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
-   "title": "Um dos maiores filmes de ficção do ano faz parte de uma franquia avaliada em US$ 3 bilhões e chegou junto com GTA 6",
-   "url": "https://br.ign.com/jogos-vorazes-amanhecer-na-colheita/157891/um-dos-maiores-filmes-de-ficcao-do-ano-faz-parte-de-uma-franquia-avaliada-em-us-3-bilhoes-e-chegou-j",
-   "summary": "Hora de pausar o GTA para dar uma passadinha no cinema! Você já pode assistir ao prelúdio da popular saga nos cinemas.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/image-1_6pbj.jpg",
-   "at": 1795521635000,
-   "source": "IGN Brasil"
+   "title": "When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer",
+   "url": "https://www.intoxianime.com/2026/11/when-trying-to-get-back-comedia-romantica-sobre-amigas-de-infancia-problematicas-ganha-trailer/",
+   "summary": "... O post When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795522434000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Twisted-Wonderland – 2º temporada ganha trailer com OP e ED",
+   "url": "https://www.intoxianime.com/2026/11/twisted-wonderland-2o-temporada-ganha-trailer-com-op-e-ed/",
+   "summary": "... O post Twisted-Wonderland – 2º temporada ganha trailer com OP e ED apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795522431000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "Rockstar is actively shopping Red Dead Redemption movie and TV rights around, just don't expect the same for Grand Theft Auto",
@@ -737,14 +839,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Modders already have GTA 6 running on PC, after CyberLeek released a full Xbox build of the game",
-   "url": "https://www.eurogamer.net/gta-6-cyberleek-leaked-xbox-build-ported-pc",
-   "summary": "A PC version of Grand Theft Auto 6 - one from unofficial sources, at least - may be closer than we thought. After suddenly returning last week with a near-full build of the Xbox…",
-   "img": "https://assetsio.gnwcdn.com/GTA6_5nov-(14).jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795511360000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Witch on the Holy Night Anime Film's Sequel Confrmed",
    "url": "https://www.animenewsnetwork.com/news/2026-11-24/witch-on-the-holy-night-anime-film-sequel-confrmed/.244151",
    "summary": "1st film earned 516 million yen in 1st 4 days",
@@ -805,14 +899,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "PSA: You Can Now Turn Off The Border Graphic In Switch Online's GameCube App",
-   "url": "https://www.nintendolife.com/news/2026/11/psa-you-can-now-turn-off-the-border-graphic-in-switch-onlines-gamecube-app",
-   "summary": "Finally! Following the release of Wave Race: Blue Storm on the 'Nintendo Classics' GameCube app today, users have discovered one other exciting update in Version 2.2.0 . Read the…",
-   "img": "https://images.nintendolife.com/239910857c6fa/large.jpg",
-   "at": 1795489500000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Psyren TV Anime Adds 6 Cast Members",
    "url": "https://www.animenewsnetwork.com/news/2026-11-23/psyren-tv-anime-adds-6-cast-members/.244142",
    "summary": "Takaya Kuroda, Wataru Komada, Mutsumi Tamura, Mitsuki Saiga, Ayana Taketatsu, Kana Ichinose join cast",
@@ -822,22 +908,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Relatório indica que GTA 6 já vendeu 45 milhões de cópias",
-   "url": "https://www.adrenaline.com.br/games/relatorio-indica-que-gta-6-ja-vendeu-45-milhoes-de-copias/",
-   "summary": "Sucesso comercial: GTA 6 supera os 40 milhões de unidades facilmente e se torna um dos games mais bem-sucedidos da atual geração!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/gta-6-the-album-deluxe-edition-23-faixas-bonus-travis-scott-anitta-overmono-lista-5-640x360.jpg",
-   "at": 1795485955000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Final Fantasy VII Revelation Has Been Rated For Switch 2 By The ESRB",
-   "url": "https://www.nintendolife.com/news/2026/11/final-fantasy-vii-revelation-has-been-rated-for-switch-2-by-the-esrb",
-   "summary": "The third and final chapter arrives next April. One of the most anticipated games of 2027 is the final chapter in Square Enix's Final Fantasy VII Remake trilogy. Revelation is…",
-   "img": "https://images.nintendolife.com/94932e9dd3450/large.jpg",
-   "at": 1795485600000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Manga Creator Tsukasa Sei Dies",
    "url": "https://www.animenewsnetwork.com/news/2026-11-23/manga-creator-tsukasa-sei-dies/.244102",
    "summary": "Sei serialized Mukashi wa Yokatta manga in Shonen Jump+ in 2023",
@@ -845,14 +915,6 @@
    "at": 1795484054000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Nintendo Expands Switch 2's GameCube Library With Another Game This Week",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-expands-switch-2s-gamecube-library-with-another-game-this-week",
-   "summary": "Wave Race: Blue Storm makes a splash. Nintendo's GameCube title Wave Race: Blue Storm has today made a splash on the Switch Online + Expansion Pack service. If you have an active…",
-   "img": "https://images.nintendolife.com/d02a7bd9b8f6c/large.jpg",
-   "at": 1795483800000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Deadline: Live-Action Naruto Film in Talks to Cast Hiroyuki Sanada as Sarutobi",
@@ -936,14 +998,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Jogos de PC em oferta no Esquenta Black Friday da Nuuvem com até 95% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-no-esquenta-black-friday-da-nuuvem-com-ate-95-de-desconto/",
-   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/08/Estudio-Clair-Obscur-Expansao-Desenvolvimento-640x400.jpg",
-   "at": 1795474800000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Blue Box Season 2 ‒ Episode 7",
    "url": "https://www.animenewsnetwork.com/review/blue-box-season-2/episode-7/.244120",
    "summary": "Blue Box is finally paying off all those romantic promises made in that very first episode, and it's come with interest to spare, ensuring all accounts are settled in full.",
@@ -987,6 +1041,42 @@
    "at": 1795451977000,
    "cat": "geek",
    "source": "JBox"
+  },
+  {
+   "title": "As a Reincarnated Aristocrat – 3º temporada ganha trailer para próximo arco",
+   "url": "https://www.intoxianime.com/2026/11/as-a-reincarnated-aristocrat-3o-temporada-ganha-trailer-para-proximo-arco/",
+   "summary": "... O post As a Reincarnated Aristocrat – 3º temporada ganha trailer para próximo arco apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795439403000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Link Click – 2º parte da 3º temporada ganha trailer e estreia em 2027",
+   "url": "https://www.intoxianime.com/2026/11/link-click-2o-parte-da-3o-temporada-ganha-trailer-e-estreia-em-2027/",
+   "summary": "... O post Link Click – 2º parte da 3º temporada ganha trailer e estreia em 2027 apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795439397000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "The One Later On – Novel sobre Protagonista banido tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/the-one-later-on-novel-sobre-protagonista-banido-tem-anuncio-de-anime/",
+   "summary": "... O post The One Later On – Novel sobre Protagonista banido tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795439392000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Shadow Diver – Filme Chinês sobre Garota-Dragão ganha trailer",
+   "url": "https://www.intoxianime.com/2026/11/shadow-diver-filme-chines-sobre-garota-dragao-ganha-trailer/",
+   "summary": "... O post Shadow Diver – Filme Chinês sobre Garota-Dragão ganha trailer apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795439391000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
   },
   {
    "title": "Sakamoto Days chega ao fim na Shonen Jump",
@@ -1070,6 +1160,33 @@
    "source": "Crunchyroll Notícias"
   },
   {
+   "title": "Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia",
+   "url": "https://www.intoxianime.com/2026/11/classroom-of-the-elite-5o-temporada-ganha-teaser-visual-e-janela-de-estreia/",
+   "summary": "... O post Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349499000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "The Detective Is Already Dead – 2º temporada ganha trailer para novo arco",
+   "url": "https://www.intoxianime.com/2026/11/the-detective-is-already-dead-2o-temporada-ganha-trailer-para-novo-arco/",
+   "summary": "... O post The Detective Is Already Dead – 2º temporada ganha trailer para novo arco apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349497000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP",
+   "url": "https://www.intoxianime.com/2026/11/bride-of-the-barrier-romance-sobre-garota-escondendo-poderes-ganha-trailer-com-op/",
+   "summary": "... O post Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795349493000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
    "title": "Witch on the Holy Night - O Filme revela sua 3ª arte promocional e comercial para TV",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/witch-on-the-holy-night-o-filme-arte-3-comercial-tv",
    "summary": "O filme em anime estreou ontem nos cinemas japoneses",
@@ -1084,15 +1201,6 @@
    "summary": "Obra está em publicação desde 2019.",
    "img": "https://a.storyblok.com/f/178900/1280x720/20432ccc60/please-put-them-on-takamine-san-opening-hero.png",
    "at": 1795277580000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Série de light novels May I Ask for One Final Thing? chega ao fim em dezembro",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/may-i-ask-for-one-final-thing-novel-final",
-   "summary": "Obra é publicada desde 2019.",
-   "img": "https://a.storyblok.com/f/178900/960x540/d243a81008/may-i-ask-for-one-final-thing.png",
-   "at": 1795276380000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1133,15 +1241,6 @@
    "source": "JBox"
   },
   {
-   "title": "Spice and Wolf: 2ª temporada do remake estreia em janeiro",
-   "url": "https://www.jbox.com.br/2026/11/18/spice-and-wolf-2a-temporada-do-remake-estreia-em-janeiro/",
-   "summary": "Nova adaptação da série de light novels estreou em 2024, estando disponível dublada na Crunchyroll.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/spice-and-wolf-remake-2a-temporada-destacada.jpg?ssl=1",
-   "at": 1795042614000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
    "title": "Mistress Kanan ganha trailer e estreia em 2027",
    "url": "https://animenew.com.br/mistress-kanan-temporada-2-trailer-2027/",
    "summary": "A segunda temporada de Mistress Kanan is Devilishly Easy (Kanan-sama wa Akumade Choroi) ganhou seu primeiro trailer completo, novo visual promocional e detalhes do elenco e da…",
@@ -1149,15 +1248,6 @@
    "at": 1795033953000,
    "cat": "geek",
    "source": "AnimeNew"
-  },
-  {
-   "title": "Crítica | Fall in Love, You False Angels – Volume 1 | JBC",
-   "url": "https://www.jbox.com.br/2026/11/18/critica-fall-in-love-you-false-angels-volume-1-jbc/",
-   "summary": "Mangá de Coco Uzuki tem início pouco inspirado, que peca especialmente na construção dos protagonistas.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/10/jbox-critica-destacada-fallinloveyoufalseangel1.jpg?ssl=1",
-   "at": 1795012697000,
-   "cat": "geek",
-   "source": "JBox"
   },
   {
    "title": "The Days of Diamond terá adaptação para anime",
