@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795537433124,
+ "atualizadoEm": 1795547555798,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -58,8 +58,8 @@
   },
   {
    "nome": "IntoxiAnime",
-   "ok": true,
-   "itens": 10
+   "ok": false,
+   "itens": 0
   },
   {
    "nome": "Anime News Network",
@@ -79,12 +79,225 @@
  ],
  "itens": [
   {
+   "title": "Nioh 3 chega ao XBOX em 2027",
+   "url": "https://news.xbox.com/pt-br/2026/11/24/nioh-3-chega-ao-xbox-em-2027/",
+   "summary": "The post Nioh 3 chega ao XBOX em 2027 appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1795546824000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Cantor e compositor Kamijo se apresenta em São Paulo em fevereiro",
+   "url": "https://www.jbox.com.br/2026/11/24/cantor-e-compositor-kamijo-se-apresenta-em-sao-paulo-em-fevereiro/",
+   "summary": "Show faz parte da nova turnê mundial do artista, com ingressos já à venda.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/kamijo-destacada.jpg?ssl=1",
+   "at": 1795546171000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "The Steam Awards turn 10 with throwback categories and a Game of the Year Hall of Fame",
+   "url": "https://www.eurogamer.net/steam-awards-2026-nominations-open-hall-of-fame",
+   "summary": "Nominations for the 2026 Steam Awards are now open, and to mark the event's 10th anniversary, Valve has brought back some categories from years past and added a Hall of Fame. Read…",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-24-at-18.32.30.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795545510000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "“Gamers obcecados podem largar seus controles”: clube de strip-tease da vida real afirma ter recebido “centenas de pedidos” de fãs de GTA 6",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157914/gamers-obcecados-podem-largar-seus-controles-clube-de-strip-tease-da-vida-real-afirma-ter-recebido-c",
+   "summary": "“A demanda por experiências autênticas no mundo real nunca foi tão alta”",
+   "img": "https://sm.ign.com/ign_br/news/r/real-life-/real-life-strip-club-says-its-had-hundreds-of-inquiries-from_8xzf.jpg",
+   "at": 1795545471000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "O Senhor dos Anéis: Os Anéis de Poder é renovado para 4ª temporada",
+   "url": "https://br.ign.com/senhor-dos-aneis-serie/157913/o-senhor-dos-aneis-os-aneis-de-poder-e-renovado-para-4a-temporada",
+   "summary": "Episódios 7 e 8 chegaram hoje ao Prime Video O Senhor dos Anéis: Os Anéis de Poder acaba de ser renovado para a 4ª temporada após os dois episódios finais chegarem ao Prime Video.…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/1-20261124-153034-0000_qwhs.jpg",
+   "at": 1795545307000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "WoW: Forever’s Best Buffs Now Work As Intended",
+   "url": "https://www.gamespot.com/articles/wow-forevers-best-buffs-now-work-as-intended/",
+   "summary": "World of Warcraft: Forever players will now be able to get even more benefit from the game's strongest buffs, as developer Blizzard's latest hotfix has made World Buffs persist…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/WoW-Forever-World-Buff-Hotfix.jpg?w=300",
+   "at": 1795545169000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Anime de Shozen ganha trailer, arte e adições ao seu elenco de voz",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/anime-shozen-trailer-arte-2",
+   "summary": "A série de fantasia irá estrear em abril de 2027",
+   "img": "https://a.storyblok.com/f/178900/1460x821/3b8b8cd152/shozen-hero.png",
+   "at": 1795544880000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Aliens: Fireteams Elite 2 recebe 5 novas armas e mapa de conteúdo para 2027",
+   "url": "https://www.adrenaline.com.br/games/aliens-fireteams-elite-2-recebe-5-novas-armas-e-mapa-de-conteudo-para-2027/",
+   "summary": "Empresa confirmou que está trabalhando para corrigir muitos dos problemas do jogo e melhorar a experiência",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/32-640x400.jpg",
+   "at": 1795544291000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "You can expect a similar leap between The Witcher 3 and The Witcher 4 as there is between GTA 5 and GTA 6, CD Projekt Red says",
+   "url": "https://www.eurogamer.net/cd-projekt-red-cdpr-witcher-3-4-gta-5-6",
+   "summary": "CD Projekt Red has said people can expect a similar qualitative and technological leap from The Witcher 3 to The Witcher 4 as has been witnessed between Grand Theft Auto 5 and…",
+   "img": "https://assetsio.gnwcdn.com/ciri-the-witcher-4.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795544010000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "GTA 6 parece tão bom que fotos e vídeos reais estão sendo confundidos com capturas do jogo",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157912/gta-6-parece-tao-bom-que-fotos-e-videos-reais-estao-sendo-confundidos-com-capturas-do-jogo",
+   "summary": "“Meu cérebro não aguenta mais”",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-look/gta-6-looks-so-good-that-real-photos-and-videos-are-being-mi_mnhy.jpg",
+   "at": 1795543886000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Como jogar Grand Theft Auto VI pela nuvem e com Remote Play",
+   "url": "https://news.xbox.com/pt-br/2026/11/24/como-jogar-grand-theft-auto-vi-pela-nuvem-e-com-remote-play/",
+   "summary": "The post Como jogar Grand Theft Auto VI pela nuvem e com Remote Play appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1795543221000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "GTA 6 launch knocked Call of Duty's daily players down 42 percent, Alinea estimates",
+   "url": "https://www.eurogamer.net/gta-6-call-of-duty-fortnite-fc-27-daily-players-alinea",
+   "summary": "Grand Theft Auto 6 's launch took a big bite out of Call of Duty’s player base, according to new estimates from Alinea Analytics, and four days on, it still hasn't recovered. Read…",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-24-at-17.54.07.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795543190000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Atriz que interpreta Mandy em GTA 6 considera a fama “agridoce”, pois pessoas continuam se passando por ela nas redes sociais",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157910/atriz-que-interpreta-mandy-em-gta-6-considera-a-fama-agridoce-pois-pessoas-continuam-se-passando-por",
+   "summary": "“Não sei como isso aconteceu”",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-mand/gta-6-mandy-actor-calls-viral-fame-bittersweet-because-peopl_d6dc.jpg",
+   "at": 1795542190000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Mito ou verdade: o que é verdadeiro e o que é falso sobre as informações que circulam sobre GTA 6",
+   "url": "https://www.adrenaline.com.br/games/mito-ou-verdade-o-que-e-verdadeiro-e-o-que-e-falso-sobre-as-informacoes-que-circulam-sobre-gta-6/",
+   "summary": "Saiba quais boatos sobre GTA 6 são falsos e o que o jogo realmente apresenta, do roubo de carros ao salvamento automático!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/como-xbox-series-s-roda-gta-vi-720p-amd-fsr-4-1080p-ray-tracing-rockstar-4-640x360.jpg",
+   "at": 1795540936000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Vazamentos de The Last of Us: Part 2 agravaram reações negativas, afirma Laura Bailey",
+   "url": "https://br.ign.com/the-last-of-us-part-ii/157909/vazamentos-de-the-last-of-us-part-2-agravaram-reacoes-negativas-afirma-laura-bailey",
+   "summary": "“Isso simplesmente se transformou em um pesadelo na internet”",
+   "img": "https://sm.ign.com/ign_br/news/t/the-last-o/the-last-of-us-part-2-leaks-made-backlash-worse-laura-bailey_f8yn.jpg",
+   "at": 1795540763000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Sony libera GTA 6 na nuvem sem exigir um PS5, mas deixa jogadores de PC de fora",
+   "url": "https://www.hardware.com.br/games/gta-6-na-nuvem-sem-exigir-um-ps5/",
+   "summary": "PlayStation Portal ganha suporte ao streaming do jogo da Rockstar, mas recurso exige PS Plus Premium e não está disponível oficialmente no Brasil",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Sony-libera-GTA-6-na-nuvem-sem-exigir-um-PS5-mas-deixa-jogadores-de-PC-de-fora.jpg",
+   "at": 1795540441000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "GTA 5 e Red Dead Redemption 2 entre os mais vendidos da Steam em semana de GTA 6",
+   "url": "https://www.adrenaline.com.br/games/pc-games/gta-5-e-red-dead-redemption-2-entre-os-mais-vendidos-da-steam-em-semana-de-gta-6/",
+   "summary": "Phantom Blade Zero e Grand Theft Auto V Enhanced são alguns jogos entre os mais vendidos da semana na Steam",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/GTA-5-230-Milhoes-Rockstar-Games-640x400.jpeg",
+   "at": 1795539986000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "GTA 6: altere todas essas configurações antes de iniciar o jogo",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157908/gta-6-altere-todas-essas-configuracoes-antes-de-iniciar-o-jogo",
+   "summary": "Antes de mergulhar de cabeça no mundo de GTA 6, recomendamos alterar algumas configurações para aproveitar ao máximo tudo o que o jogo tem a oferecer",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_a391.png",
+   "at": 1795539837000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Witcher 4 Has Fewer People Working On It Than It Did 3 Months Ago, But Just Barely",
+   "url": "https://www.gamespot.com/articles/witcher-4-has-fewer-people-working-on-it-than-it-did-3-months-ago-but-just-barely/",
+   "summary": "As part of CD Projekt's latest earnings report, the Polish developer revealed new information about its projects and headcount. For the quarter that ended on October 31, The…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/W4.png?w=300",
+   "at": 1795539681000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Jogos da Capcom em oferta no Nintendo Switch 1 & 2; até 75% de desconto",
+   "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-capcom-em-oferta-no-nintendo-switch-1-2-ate-75-de-desconto-2/",
+   "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/07/street-fighter-6-1-640x400.jpg",
+   "at": 1795539600000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Rascal Does Not Dream of a Dear Friend Anime Film Review",
+   "url": "https://www.animenewsnetwork.com/review/rascal-does-not-dream-of-a-dear-friend-anime-film/.243539",
+   "summary": "Not only does this film have to tie up the remaining ongoing mystery from the previous season, but it also needs to put a capstone on the entire franchise as a whole.",
+   "img": "",
+   "at": 1795539600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Steam e multiplayer gratuito: os planos originais da Microsoft para o próximo Xbox",
+   "url": "https://www.hardware.com.br/games/steam-e-multiplayer-gratuito-xbox/",
+   "summary": "Xbox Project Helix foi originalmente concebido como um híbrido entre console e PC, mas mudanças na liderança e preocupações financeiras podem ter alterado os planos",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Steam-e-multiplayer-gratuito-os-planos-originais-da-Microsoft-para-o-proximo-Xbox.jpg",
+   "at": 1795538888000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "GTA 6 players are discovering, who needs a gun when it's easier to rob a store with a crate of beer?",
+   "url": "https://www.eurogamer.net/grand-theft-auto-6-beer-robberies",
+   "summary": "Guns might be the weapon of choice for most Grand Theft Auto 6 players, but it turns out some enterprising digital criminals are taking a more inventive approach to robberies. Who…",
+   "img": "https://assetsio.gnwcdn.com/GTA-6-review-25.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795538030000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "GTA 6 Is Giving Pornhub A Hard Time",
+   "url": "https://www.gamespot.com/articles/gta-6-is-giving-pornhub-a-hard-time/",
+   "summary": "Not even porn is immune to the GTA 6 effect, as it's just one of several forms of entertainment that has seen a decline in viewership since the massive open-world game launched.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-27.jpg?w=300",
+   "at": 1795537877000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "HIDIVE to Premiere Murciélago Anime at Anime Frontier Event in Texas",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-24/hidive-to-premiere-murcielago-anime-at-anime-frontier-event-in-texas/.244121",
+   "summary": "Fort Worth convention to host world premiere on December 5 before January 2027 TV debut",
+   "img": "",
+   "at": 1795537444000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Scott Pilgrim e Ramona Flowers chegam ao Fortnite esta semana",
    "url": "https://br.ign.com/fortnite/157905/scott-pilgrim-e-ramona-flowers-chegam-ao-fortnite-esta-semana",
    "summary": "We are Sex Bob-Omb! Scott Pilgrim chega ao mundo de Fortnite ainda esta semana, como parte do próximo crossover. Visuais de personagem para Scott Pilgrim e Ramona Flowers ficarão…",
    "img": "https://sm.ign.com/ign_br/news/s/scott-pilg/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week_ebt6.jpg",
    "at": 1795536424000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Duel Masters Pure PLAY'S Manga Ends on November 30",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-24/duel-masters-pure-play-manga-ends-on-november-30/.244139",
+   "summary": "Series debuted on September September 18",
+   "img": "",
+   "at": 1795536303000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Star Wars em oferta! Funko Pop! do Darth Vader despenca de preço com cupom exclusivo da Amazon",
@@ -101,6 +314,15 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261030130806_.jpg?w=300",
    "at": 1795535200000,
    "source": "GameSpot"
+  },
+  {
+   "title": "Digimon Become Tamagotchi & Tamagotchi Become Digimon!",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-24/digimon-become-tamagotchi-and-tamagotchi-become-digimon/.244155",
+   "summary": "Digimon & Tamagotchi franchises both celebrate 30th anniversary with new crossover retro toys",
+   "img": "",
+   "at": 1795534963000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "GTA 6 Has A Secret Mission That Feels Like Hard Target Meets Saw",
@@ -394,41 +616,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação",
-   "url": "https://www.intoxianime.com/2026/11/witch-on-the-holy-night-anime-sobre-jogo-dos-criadores-de-fate-series-tem-anuncio-de-continuacao/",
-   "summary": "... O post Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522437000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer",
-   "url": "https://www.intoxianime.com/2026/11/when-trying-to-get-back-comedia-romantica-sobre-amigas-de-infancia-problematicas-ganha-trailer/",
-   "summary": "... O post When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522434000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Twisted-Wonderland – 2º temporada ganha trailer com OP e ED",
-   "url": "https://www.intoxianime.com/2026/11/twisted-wonderland-2o-temporada-ganha-trailer-com-op-e-ed/",
-   "summary": "... O post Twisted-Wonderland – 2º temporada ganha trailer com OP e ED apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522431000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Xbox Project Helix Was Reportedly Designed To Make Online Multiplayer Free",
-   "url": "https://www.gamespot.com/articles/xbox-project-helix-was-reportedly-designed-to-make-online-multiplayer-free/",
-   "summary": "For years, most multiplayer games on Xbox consoles required a subscription to go online. From Xbox Live to Xbox Game Pass, Microsoft paywalled multiplayer on its platforms, but…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/06/Xbox.png?w=300",
-   "at": 1795521802000,
-   "source": "GameSpot"
-  },
-  {
    "title": "GTA 6 realmente está terminando relacionamento de casais?",
    "url": "https://br.ign.com/grand-theft-auto-vi/157892/gta-6-realmente-esta-terminando-relacionamento-de-casais",
    "summary": "Game está arruinando relacionamentos, segundo as redes sociais. Ou, pelo menos, servindo como um excelente isco para engajamento Grand Theft Auto 6 tem tudo o que você poderia…",
@@ -493,28 +680,12 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "GTA 6 Hacker Releases Full Xbox Build, And PC Modders Are Already Trying To Get It Running",
-   "url": "https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/",
-   "summary": "Infamous GTA 6 Leaker Cyberleek resurfaced last week , threatening to release a crucial file for the Xbox build of GTA 6 that could be used to create an unofficial PC port of the…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-31-1.jpg?w=300",
-   "at": 1795519422000,
-   "source": "GameSpot"
-  },
-  {
    "title": "GTA 6 já foi adaptado para o PC com ajuda do Claude AI",
    "url": "https://www.adrenaline.com.br/games/gta-6-ja-foi-adaptado-para-o-pc-com-ajuda-do-claude-ai/",
    "summary": "Diversos projetos já estão dando os primeiros passos para fazer com que GTA 6 não seja mais exclusivo aos consoles",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Adaptado-PC-Claude-640x400.jpeg",
    "at": 1795518566000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Há 40 anos, um navio despejou água de lastro nos Grandes Lagos. Agora, os EUA oferecem US$ 500 mil para combater a praga que surgiu",
-   "url": "https://br.ign.com/tech/157888/ha-40-anos-um-navio-despejou-agua-de-lastro-nos-grandes-lagos-agora-os-eua-oferecem-us-500-mil-para",
-   "summary": "Mexilhões estão destruindo ecossistemas locais e interrompendo as operações de usinas hidrelétricas próximas Nos Estados Unidos, foi lançado um programa para impedir a…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_aupc.jpg",
-   "at": 1795518034000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Tiny Bookshop Sells 1 Million Copies, New DLC Expansion Announced",
@@ -566,28 +737,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Sexo em GTA 6: como fazer com que Jason e Lucia tenham relações sexuais no jogo?",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157880/sexo-em-gta-6-como-fazer-com-que-jason-e-lucia-tenham-relacoes-sexuais-no-jogo",
-   "summary": "O nível de relacionamento tem efeito na intimidade do casal Você está morrendo de vontade de saber se e como Jason e Lucia acabam na cama juntos? E se há outros romances, talvez…",
-   "img": "https://sm.ign.com/ign_br/photo/default/jason-and-lucia-gta-6-2-1795447285811_6bew.jpg",
-   "at": 1795514436000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Modders already have GTA 6 running on PC, after CyberLeek released a full Xbox build of the game",
    "url": "https://www.eurogamer.net/gta-6-cyberleek-leaked-xbox-build-ported-pc",
    "summary": "A PC version of Grand Theft Auto 6 - one from unofficial sources, at least - may be closer than we thought. After suddenly returning last week with a near-full build of the Xbox…",
    "img": "https://assetsio.gnwcdn.com/GTA6_5nov-(14).jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795511360000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Quando será lançado GTA 6 Online? Veja o que sabemos e o que esperar do modo que ainda nem foi anunciado",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157875/quando-sera-lancado-gta-6-online-veja-o-que-sabemos-e-o-que-esperar-do-modo-que-ainda-nem-foi-anunci",
-   "summary": "Até o momento, GTA 6 oferece apenas o modo para um jogador Há poucas notícias sobre o modo, mas seria quase impossível a Rockstar não lançar um online após o sucesso no GTA 5.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_5172.jpg",
-   "at": 1795510835000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Witch on the Holy Night Anime Film's Sequel Confrmed",
@@ -667,14 +822,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Como manter suas tarefas no Claude Code rodando sem deixar o notebook ligado",
-   "url": "https://br.ign.com/tech/157898/como-manter-suas-tarefas-no-claude-code-rodando-sem-deixar-o-notebook-ligado",
-   "summary": "Programação, relatórios e monitoramento estão entre os usos em um servidor remoto, que também permite acompanhar o agente pelo celular",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/cloud-computing-from-laptop-to-server_3d9k.jpg",
-   "at": 1795487765000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Relatório indica que GTA 6 já vendeu 45 milhões de cópias",
    "url": "https://www.adrenaline.com.br/games/relatorio-indica-que-gta-6-ja-vendeu-45-milhoes-de-copias/",
    "summary": "Sucesso comercial: GTA 6 supera os 40 milhões de unidades facilmente e se torna um dos games mais bem-sucedidos da atual geração!",
@@ -683,28 +830,12 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Loja oficial de Pokémon TCG faz liquidação de ETB da expansão Reinado Delta com 15% de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/157895/loja-oficial-de-pokemon-tcg-faz-liquidacao-de-etb-da-expansao-reinado-delta-com-15-de-desconto-na-am",
-   "summary": "Com Mega Rayquaza ex na embalagem, a Coleção Treinador Avançado chega à Amazon com preço reduzido pela Copag. Veja os detalhes da expansão Megaevolução — Reinado Delta e clique…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/ign-48_pf2f.png",
-   "at": 1795485642000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Final Fantasy VII Revelation Has Been Rated For Switch 2 By The ESRB",
    "url": "https://www.nintendolife.com/news/2026/11/final-fantasy-vii-revelation-has-been-rated-for-switch-2-by-the-esrb",
    "summary": "The third and final chapter arrives next April. One of the most anticipated games of 2027 is the final chapter in Square Enix's Final Fantasy VII Remake trilogy. Revelation is…",
    "img": "https://images.nintendolife.com/94932e9dd3450/large.jpg",
    "at": 1795485600000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "10% OFF! Jogo Donkey Kong Bananza para Switch 2 surge em oferta no Esquenta Black Friday da Amazon",
-   "url": "https://br.ign.com/descontos/157897/10-off-jogo-donkey-kong-bananza-para-switch-2-surge-em-oferta-no-esquenta-black-friday-da-amazon",
-   "summary": "Donkey Kong e Pauline abrem caminho pelo subsolo em uma aventura exclusiva do Switch 2, agora com 10% off na Amazon no esquenta da Black Friday. Confira a oferta e leve o jogo…",
-   "img": "https://sm.ign.com/ign_br/photo/t/the-best-g/the-best-game-of-2025_g44w.jpg",
-   "at": 1795484306000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Manga Creator Tsukasa Sei Dies",
@@ -787,14 +918,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Can You Romance Vicki In GTA 6?",
-   "url": "https://www.gamespot.com/articles/can-you-romance-vicki-in-gta-6/",
-   "summary": "The main story in Grand Theft Auto 6 actively pushes Jason and Lucia into a romantic relationship, even though the player can resist it, if they prefer. However, there are plenty…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/9uy4bx7jyzlh1-e1795478260126.jpg?w=300",
-   "at": 1795478552000,
-   "source": "GameSpot"
-  },
-  {
    "title": "2ª temporada de The Detective Is Already Dead divulga trailer e ilustração promocional de novo arco",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/23/the-detective-is-already-dead-2-temporada-novo-arco-trailer-ilustracao-promocional",
    "summary": "A nova temporada já está disponível na Crunchyroll",
@@ -848,80 +971,6 @@
    "source": "JBox"
   },
   {
-   "title": "Black Clover Season 2 ‒ Episode 178",
-   "url": "https://www.animenewsnetwork.com/review/black-clover-season-2/episode-178/.244066",
-   "summary": "Nice cinematic touch ya got going on here, Black Clover . Nice cinematic touch. Somewhere out there, the ghost of Sergei Eisenstein is blushing.",
-   "img": "",
-   "at": 1795469400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Atriz de God of War Laufey vai repetir o papel na série da Amazon",
-   "url": "https://www.adrenaline.com.br/games/atriz-de-god-of-war-laufey-vai-repetir-o-papel-na-serie-da-amazon/",
-   "summary": "Deborah Ann Woll vai interpretar Faye tanto nos jogos quanto na série live action de God of War",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Atriz-God-War-Laufey-Serie-Amazon-01-640x400.jpeg",
-   "at": 1795468748000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Arc G3 Play: Novo chip da Intel pode abrir caminho para consoles portáteis mais acessíveis",
-   "url": "https://www.hardware.com.br/noticias/intel-arc-g3-play-8-e-cores-consoles-portateis/",
-   "summary": "Intel prepara o Arc G3 Play para consoles portáteis, com 8 E-Cores, GPU Xe3 reduzida e possível foco em aparelhos abaixo de US$ 800.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/intel-g3-play.jpg",
-   "at": 1795468132000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Jogos de Corrida para PlayStation em oferta na Black Friday",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-corrida-para-playstation-em-oferta-na-black-friday/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/05/forza-horizon-5-640x400.jpg",
-   "at": 1795467505000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Criador do E.T. de Atari acredita que IA pode trazer outra quebra da indústria",
-   "url": "https://www.adrenaline.com.br/games/criador-do-e-t-de-atari-acredita-que-ia-pode-trazer-outra-quebra-da-industria/",
-   "summary": "Segundo o criador do E.T. do Atari, a IA vai ajudar a inundar o mercado de jogos que não valem o tempo do público",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Criador-ET-Atari-Quebra-Industria-Games-640x400.jpeg",
-   "at": 1795466799000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Romelia War Chronicle ‒ Episode 8",
-   "url": "https://www.animenewsnetwork.com/review/romelia-war-chronicle/episode-8/.244099",
-   "summary": "Romelia is cunning enough to understand that wars are won first and foremost by the strength of the supply line.",
-   "img": "",
-   "at": 1795465800000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Riot Games anuncia Ionic Spark, novo grupo musical de Teamfight Tactics com clipe produzido pelo MAPPA",
-   "url": "https://www.adrenaline.com.br/games/ionic-spark-riot-games-teamfight-tactics/",
-   "summary": "Grupo virtual inspirado no J-pop reúne Gwen, Elise, Briar e Aurora; primeiro single, SPARKLE, será lançado em 30 de novembro com videoclipe do estúdio responsável por Jujutsu…",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/ionic-spark-640x360.jpg",
-   "at": 1795465727000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Deltarune Chapter 6 is playable \"from the beginning to the end,\" Toby Fox says, but the RPG's final part has \"only just started\"",
-   "url": "https://www.eurogamer.net/deltarune-chapter-6-playable-toby-fox",
-   "summary": "Toby Fox has given eager fans an update on the development of Deltarune Chapter 6 and Chapter 7 - the Undertale follow-up's final two episodes. Read more",
-   "img": "https://assetsio.gnwcdn.com/deltarune-characters.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795464290000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Corsair lança Clipper Core 100, teclado mecânico gamer desenvolvido para a América Latina",
-   "url": "https://www.adrenaline.com.br/perifericos/teclado-corsair-clipper-core-100/",
-   "summary": "Novo teclado tem switches vermelhos pré-lubrificados, iluminação RGB, estrutura de alumínio e polling rate de 1.000 Hz; modelo já está disponível no Brasil pela Pichau e KaBuM!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/clipper-100-core-cover-640x427.jpg",
-   "at": 1795463842000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Classroom of the Elite: 5ª temporada estreia em 2027",
    "url": "https://www.jbox.com.br/2026/11/23/classroom-of-the-elite-5a-temporada-estreia-em-2027/",
    "summary": "Título completo da nova fase inclui as divisões '5ª Temporada: 2º ano, 2º semestre [1ª metade]'.",
@@ -931,64 +980,6 @@
    "source": "JBox"
   },
   {
-   "title": "Overgeared ‒ Episode 9",
-   "url": "https://www.animenewsnetwork.com/review/overgeared/episode-9/.244103",
-   "summary": "As Overgeared keeps trying to let Grid cake and eat it too, all its attempts to subvert the usual expectations of a gamer fantasy just circle back to playing them straight.",
-   "img": "",
-   "at": 1795462200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Jogos em oferta na Steam com até 90% de desconto nesta semana",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-em-oferta-na-steam-com-ate-90-de-desconto-nesta-semana-38/",
-   "summary": "A Steam renovou as ofertas da semana em sua plataforma com diversos jogos para PC com desconto por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/11/Baldurs-Gate-3-e-o-grande-vencedor-do-Golden-Joystick-Awards-2023-640x400.jpg",
-   "at": 1795461825000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Activision calls Banjo-Kazooie one of its \"iconic gaming franchises,\" raising hopes for long-awaited new game",
-   "url": "https://www.eurogamer.net/activision-banjo-kazooie-iconic-gaming-franchise",
-   "summary": "Banjo-Kazooie - the iconic Rare platformer starring an absent-minded bear and the sassy red bird he carries in a backpack - has been on hiatus for years, but a new Activision job…",
-   "img": "https://assetsio.gnwcdn.com/bj-freezeezy.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795461750000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "\"We Cannot Believe We Are Reaching Milestones Like This\" - Queen's Domain Dev Celebrates Opening Sales",
-   "url": "https://www.nintendolife.com/news/2026/11/we-cannot-believe-we-are-reaching-milestones-like-this-queens-domain-dev-celebrates-opening-sales",
-   "summary": "Yaas Queen. The FromSoft-inspired RPG Queen's Domain might have launched in one of the busiest periods of game releases in recent memory, but that's not to say nobody has been…",
-   "img": "https://images.nintendolife.com/ea0c3ebe5c12c/large.jpg",
-   "at": 1795459500000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "The Anime News Network Holiday Gift Guide 2026",
-   "url": "https://www.animenewsnetwork.com/feature/2026-11-23/the-anime-news-network-holiday-gift-guide-2026/.243869",
-   "summary": "Unlike boring catalogs, our gift guide helps you find what the otaku in your life might be missing, from fancy Blu-ray sets to a Baki rug for your at-home grappling matches!",
-   "img": "",
-   "at": 1795459039000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Jogos para XBOX em oferta por menos de R$ 15 na Black Friday",
-   "url": "https://www.adrenaline.com.br/games/xbox/jogos-para-xbox-em-oferta-por-menos-de-r-15-na-black-friday/",
-   "summary": "Os interessados já podem aproveitar as ofertas na loja do Xbox por tempo limitado e adquirir os jogos da lista de desejos",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2024/04/battlefield-2042-640x400.jpg",
-   "at": 1795457759000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "God of War Laufey's Faye actor jumps from games to live-action, as Amazon casts Deborah Ann Woll in upcoming series",
-   "url": "https://www.eurogamer.net/god-of-war-laufey-faye-amazon-series",
-   "summary": "After appearing in both God of War Ragnarok and next year's God of War Laufey, Deborah Ann Woll is about to reprise her role as Faye in Amazon Prime Video's upcoming live-action…",
-   "img": "https://assetsio.gnwcdn.com/Faye-holds-a-mythical-sword-in-new-God-of-War-game-from-Sony-Santa-Monica.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795457390000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "2ª temporada de ‘Akane-banashi’ ganha data de estreia em janeiro",
    "url": "https://www.jbox.com.br/2026/11/23/2a-temporada-de-akane-banashi-ganha-data-de-estreia-em-janeiro/",
    "summary": "Mês de lançamento já estava confirmado, e agora o dia também foi revelado.",
@@ -996,42 +987,6 @@
    "at": 1795451977000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "As a Reincarnated Aristocrat – 3º temporada ganha trailer para próximo arco",
-   "url": "https://www.intoxianime.com/2026/11/as-a-reincarnated-aristocrat-3o-temporada-ganha-trailer-para-proximo-arco/",
-   "summary": "... O post As a Reincarnated Aristocrat – 3º temporada ganha trailer para próximo arco apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795439403000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Link Click – 2º parte da 3º temporada ganha trailer e estreia em 2027",
-   "url": "https://www.intoxianime.com/2026/11/link-click-2o-parte-da-3o-temporada-ganha-trailer-e-estreia-em-2027/",
-   "summary": "... O post Link Click – 2º parte da 3º temporada ganha trailer e estreia em 2027 apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795439397000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "The One Later On – Novel sobre Protagonista banido tem anuncio de anime",
-   "url": "https://www.intoxianime.com/2026/11/the-one-later-on-novel-sobre-protagonista-banido-tem-anuncio-de-anime/",
-   "summary": "... O post The One Later On – Novel sobre Protagonista banido tem anuncio de anime apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795439392000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Shadow Diver – Filme Chinês sobre Garota-Dragão ganha trailer",
-   "url": "https://www.intoxianime.com/2026/11/shadow-diver-filme-chines-sobre-garota-dragao-ganha-trailer/",
-   "summary": "... O post Shadow Diver – Filme Chinês sobre Garota-Dragão ganha trailer apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795439391000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
   },
   {
    "title": "Sakamoto Days chega ao fim na Shonen Jump",
@@ -1115,33 +1070,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia",
-   "url": "https://www.intoxianime.com/2026/11/classroom-of-the-elite-5o-temporada-ganha-teaser-visual-e-janela-de-estreia/",
-   "summary": "... O post Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795349499000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "The Detective Is Already Dead – 2º temporada ganha trailer para novo arco",
-   "url": "https://www.intoxianime.com/2026/11/the-detective-is-already-dead-2o-temporada-ganha-trailer-para-novo-arco/",
-   "summary": "... O post The Detective Is Already Dead – 2º temporada ganha trailer para novo arco apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795349497000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP",
-   "url": "https://www.intoxianime.com/2026/11/bride-of-the-barrier-romance-sobre-garota-escondendo-poderes-ganha-trailer-com-op/",
-   "summary": "... O post Bride of the Barrier – Romance sobre garota escondendo poderes ganha trailer com OP apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795349493000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
    "title": "Witch on the Holy Night - O Filme revela sua 3ª arte promocional e comercial para TV",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/witch-on-the-holy-night-o-filme-arte-3-comercial-tv",
    "summary": "O filme em anime estreou ontem nos cinemas japoneses",
@@ -1165,15 +1093,6 @@
    "summary": "Obra é publicada desde 2019.",
    "img": "https://a.storyblok.com/f/178900/960x540/d243a81008/may-i-ask-for-one-final-thing.png",
    "at": 1795276380000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "2º filme de Armored Trooper VOTOMS: Die Graue Hexe tem estreia marcada para 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/armored-trooper-votoms-die-graue-hexe-segundo-filme-2027",
-   "summary": "Primeira parte estreou no último dia 20.",
-   "img": "https://a.storyblok.com/f/178900/960x540/1e63a8db48/votoms-2kvs.jpg",
-   "at": 1795273980000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
@@ -1237,15 +1156,6 @@
    "summary": "Mangá de Coco Uzuki tem início pouco inspirado, que peca especialmente na construção dos protagonistas.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/10/jbox-critica-destacada-fallinloveyoufalseangel1.jpg?ssl=1",
    "at": 1795012697000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "2ª temporada de ‘Cyberpunk: Mercenários’ é indicada ao The Game Awards",
-   "url": "https://www.jbox.com.br/2026/11/18/2a-temporada-de-cyberpunk-mercenarios-e-indicada-ao-the-game-awards/",
-   "summary": "Confira também a lista completa dos games que vão concorrer ao evento deste ano.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Cyberpunk-mercenarios-2-destacada.jpg?ssl=1",
-   "at": 1795011995000,
    "cat": "geek",
    "source": "JBox"
   },
