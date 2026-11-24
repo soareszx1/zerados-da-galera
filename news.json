@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795526944099,
+ "atualizadoEm": 1795537433124,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,257 @@
   }
  ],
  "itens": [
+  {
+   "title": "Scott Pilgrim e Ramona Flowers chegam ao Fortnite esta semana",
+   "url": "https://br.ign.com/fortnite/157905/scott-pilgrim-e-ramona-flowers-chegam-ao-fortnite-esta-semana",
+   "summary": "We are Sex Bob-Omb! Scott Pilgrim chega ao mundo de Fortnite ainda esta semana, como parte do próximo crossover. Visuais de personagem para Scott Pilgrim e Ramona Flowers ficarão…",
+   "img": "https://sm.ign.com/ign_br/news/s/scott-pilg/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week_ebt6.jpg",
+   "at": 1795536424000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Star Wars em oferta! Funko Pop! do Darth Vader despenca de preço com cupom exclusivo da Amazon",
+   "url": "https://br.ign.com/descontos/157904/star-wars-em-oferta-funko-pop-do-darth-vader-despenca-de-preco-com-cupom-exclusivo-da-amazon",
+   "summary": "O colecionável de um dos vilões mais icônicos da cultura pop está com preço reduzido na Amazon, com desconto extra para quem aplicar o cupom BRINQSBF na compra!",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_97ke.jpg",
+   "at": 1795535624000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Thursday Night Football Had Lowest Viewership All Season On GTA 6 Launch Day",
+   "url": "https://www.gamespot.com/articles/thursday-night-football-had-lowest-viewership-all-season-on-gta-6-launch-day/",
+   "summary": "The Thursday Night Football matchup on November 19, the day that GTA 6 came out, had the lowest viewership of the entire season so far for a TNF game, but the low ratings might…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261030130806_.jpg?w=300",
+   "at": 1795535200000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "GTA 6 Has A Secret Mission That Feels Like Hard Target Meets Saw",
+   "url": "https://www.gamespot.com/articles/gta-6-has-a-secret-mission-that-feels-like-hard-target-meets-saw/",
+   "summary": "In the mood for a little bloodsport? In GTA 6 , you can teach one loud-mouthed hunter that Lucia (or Jason) is the deadliest game, as this secret mission will require cunning and…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-Lucia.jpg?w=300",
+   "at": 1795534383000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Ghostrunner 2’s Complete Edition Has Never Been Cheaper, So Sharpen Your Katana",
+   "url": "https://www.gamespot.com/articles/ghostrunner-2s-complete-edition-has-never-been-cheaper-so-sharpen-your-katana/",
+   "summary": "Ghostrunner 2 is hard. I don’t mean that in a bad way; if anything, that’s a huge compliment. Any and every hit could be your last, and when you’re running around arenas at a…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-ghostrunner-2-all-dlc-lowest-price.jpg?w=300",
+   "at": 1795533737000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "2ª temporada de Twisted-Wonderland: A Série ganha trailer com prévia do tema de encerramento",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/disney-twisted-wonderland-the-animation-season-2-episode-of-savanaclaw-anime-payoff-trailer",
+   "summary": "O anime retorna no dia 23 de dezembro.",
+   "img": "https://a.storyblok.com/f/178900/1460x821/8f6aa803ab/disney-twisted-wonderland-the-animation-season-2.jpg",
+   "at": 1795533420000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "GTA 6 registrou a melhor estreia de toda a história do PlayStation",
+   "url": "https://www.adrenaline.com.br/games/gta-6-registrou-a-melhor-estreia-de-toda-a-historia-do-playstation/",
+   "summary": "A Sony afirma que 39 milhões de pessoas jogaram GTA 6 no PS5 no dia de sua estreia",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Melhor-Estreia-PlayStation-01-640x400.jpeg",
+   "at": 1795533182000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Fortnite - Official Scott Pilgrim Trailer",
+   "url": "https://br.ign.com/fortnite/157906/fortnite-official-scott-pilgrim-trailer",
+   "summary": "They’re not playing games anymore! Scott Pilgrim and Ramona Flowers are coming to Fortnite this week. Watch the latest trailer for Fortnite to see Scott and Ramona rocking out.",
+   "img": "https://sm.ign.com/ign_br/video/f/fortnite-o/fortnite-official-scott-pilgrim-trailer_n3ex.jpg",
+   "at": 1795533064000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "3ª temporada de As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World ganha prévia do Arco do Assassino em novo trailer",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/anime-as-a-reincarnated-aristocrat-temporada-3-arco-do-assassino-trailer-elenco",
+   "summary": "Três adições ao elenco de voz também foram anunciadas",
+   "img": "https://a.storyblok.com/f/178900/1460x821/eed642364c/reincarnated-aristocrat-assassin-arc-hero.png",
+   "at": 1795533000000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Remedy CEO praises Rockstar's support for the Max Payne 1 & 2 remake and respecting Remedy's creative vision",
+   "url": "https://www.eurogamer.net/remedy-max-payne-1-2-remake-rockstar-relationship",
+   "summary": "Alan Wake and Control studio Remedy Entertainment is currently developing a highly-anticipated Max Payne 1 & 2 remake. The Finnish studio is doing so in partnership with Grand…",
+   "img": "https://assetsio.gnwcdn.com/max-payne-remedy.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795532960000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Jogos da XBOX em oferta na Steam com até 85% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-xbox-em-oferta-na-steam-com-ate-85-de-desconto/",
+   "summary": "Confira os principais jogos distribuídos pela Xbox disponíveis com desconto nesta oferta por tempo limitado na Steam",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/gears-of-war-e-day-revela-trailer-na-gamescom-2026-com-marcus-fenix-e-dominic-santiago-cover-640x400.jpg",
+   "at": 1795532400000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "GTA 6 Players On PS5 Averaged 17+ Hours During First Weekend",
+   "url": "https://www.gamespot.com/articles/gta-6-players-on-ps5-averaged-17-hours-during-first-weekend/",
+   "summary": "Rockstar's Grand Theft Auto 6 is finally here, and it's breaking records everywhere, including at PlayStation. The gaming giant has announced that GTA 6 is the \"biggest launch in…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Ambrosia_06_a29239.jpg?w=300",
+   "at": 1795531946000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "100 mil em apenas 10 minutos: jogadores de GTA 6 já estão otimizando glitch de dinheiro infinito para ser ainda mais rápido Minutes",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157901/100-mil-em-apenas-10-minutos-jogadores-de-gta-6-ja-estao-otimizando-glitch-de-dinheiro-infinito-para",
+   "summary": "Para que usar trapaça? O glitch de dinheiro infinito já está fazendo sucesso na comunidade de GTA 6 , mas jogadores estão levando isso a outro patamar. Novas estratégias…",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-play/gta-6-players-are-optimizing-the-money-glitch-to-within-an-i_ysw7.jpg",
+   "at": 1795531607000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "The Reason Behind Pokémon's Mysterious Social Media Countdown Has Been Revealed",
+   "url": "https://www.nintendolife.com/news/2026/11/the-reason-behind-pokemons-mysterious-social-media-countdown-has-been-revealed",
+   "summary": "Update: Brace for disappointment. The Pokémon Company is no stranger to a little over-hyping every now and then, but its latest bit of marketing has us seriously thinking that…",
+   "img": "https://images.nintendolife.com/a7720b6a8f9c3/large.jpg",
+   "at": 1795531500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Para fãs de Kingdom Hearts: coletânea com jogos da franquia para PS5 despenca de preço na Black Friday da Amazon",
+   "url": "https://br.ign.com/descontos/157899/para-fas-de-kingdom-hearts-coletanea-com-jogos-da-franquia-para-ps5-despenca-de-preco-na-black-frida",
+   "summary": "A coletânea reúne os jogos da franquia para PS5 e aparece com desconto especial durante a Black Friday da Amazon!",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_3dyj.jpg",
+   "at": 1795531453000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "3ª temporada de Link Click ganha trailer e arte para sua 2ª parte",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/link-click-temporada-3-parte-dois-trailer-arte",
+   "summary": "Todos os 12 episódios da 1ª parte da atual temporada da animação estão disponíveis aqui na Crunchyroll!",
+   "img": "https://a.storyblok.com/f/178900/960x540/5e5913ff58/link-click-season-3-part-one.jpg",
+   "at": 1795531200000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "As Blizzard whacks one World of Warcraft: Forever gold farming exploit, it struggles to contain all of the alternatives popping up",
+   "url": "https://www.eurogamer.net/blizzard-world-of-warcraft-forever-gold-exploits",
+   "summary": "World of Warcraft: Forever is in the grip of a gold-farming bonanza, as Blizzard's attempts to curb them are met with a seemingly endless wave of alternative money-making methods.…",
+   "img": "https://assetsio.gnwcdn.com/world-of-warcraft-forever-kroldrok-stronghold-jpg.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795531110000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Valve melhora jogos do Windows no Linux com Proton 11.0-3",
+   "url": "https://www.adrenaline.com.br/games/pc-games/valve-proton-11-0-3-linux-15-jogos-crysis-amd-far-cry-5-hdr-steam-deck-oled/",
+   "summary": "Versão libera 15 títulos, conserta Crysis em CPUs AMD recentes e o HDR de Far Cry 5 para o Steam Deck OLED. Confira as principais correções.",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/valve-proton-11-0-3-linux-15-jogos-crysis-amd-far-cry-5-hdr-steam-deck-oled-2-640x400.jpg",
+   "at": 1795531080000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Jogadores de GTA 6 estão convencidos de que a Rockstar pintou uma parede falsa propositalmente para criar situações a lá Looney Tunes",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157900/gta-6-players-are-convinced-rockstar-painted-a-fake-tunnel-just-to-trick-them-into-a-looney-tunes-st",
+   "summary": "Isso é tudo, pessoal! Jogadores de GTA 6 estão convencidos de que a Rockstar Games pintou um túnel falso em Vice City apenas para induzi-los a colidir contra ele, em um acidente…",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-play/gta-6-players-are-convinced-rockstar-painted-a-fake-tunnel-j_ep7p.jpg",
+   "at": 1795530762000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Efeito GTA 6: golpistas aproveitam a alta procura pelo PS5 e usam consoles a preços baixos como isca",
+   "url": "https://www.hardware.com.br/noticias/gta-6-golpes-ps5-precos-baixos/",
+   "summary": "A alta procura pelo PS5 após o lançamento de GTA 6 acende um alerta para golpes com consoles anunciados abaixo do preço de mercado. Saiba como se proteger.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/golpe-ps5.jpg",
+   "at": 1795530645000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "7 jogos incríveis para o PS5 que estão com descontos de até 69% na Amazon",
+   "url": "https://www.hardware.com.br/hardware-indica/7-jogos-incriveis-para-o-ps5-que-estao-com-descontos-de-ate-69-na-amazon/",
+   "summary": "7 jogos para PS5 com até 69% de desconto na Amazon: Horizon, Spider-Man 2, God of War, Ghost of Tsushima e mais. Confira a lista completa.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/05/capa-1376x774.jpg",
+   "at": 1795530626000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "GTA VI esconde portal secreto que transporta Jason de volta para Vice City de 2002",
+   "url": "https://www.hardware.com.br/games/gta-vi-esconde-portal-secreto-para-vice-city-de-2002/",
+   "summary": "Easter egg permite visitar uma recriação da era do PS2, com direito a itens clássicos do jogo original.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-6-portal-secreto-1600x900.jpg",
+   "at": 1795530038000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Um fenômeno impossível de repetir: GTA 6 pode ser o último jogo dessa magnitude",
+   "url": "https://www.hardware.com.br/games/gta-6-ultimo-jogo-dessa-magnitude/",
+   "summary": "Mesmo com vendas bilionárias, GTA 6 dificilmente deverá incentivar outras empresas a investir em projetos de escala semelhante",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Um-fenomeno-impossivel-de-repetir-GTA-6-pode-ser-o-ultimo-jogo-dessa-magnitude.jpg",
+   "at": 1795529184000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Idosos de uma casa de repouso trocam jogos de tabuleiro por GTA 6, e senhora de 86 anos já quer ganhar o jogo de Natal",
+   "url": "https://www.hardware.com.br/noticia/gta-6-idosos-casa-repouso-franca/",
+   "summary": "Idosos de uma residência na França experimentam GTA 6, e senhora de 86 anos fica tão impressionada que decide pedir o jogo de presente de Natal.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/idoso-gta-6.jpg",
+   "at": 1795529085000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Today's Nintendo Switch Online update finally introduces a feature players have been asking for since 2018",
+   "url": "https://www.eurogamer.net/nintendo-switch-update-version-2-2-0-borders",
+   "summary": "There's been an exciting addition to the Nintendo Classics GameCube app today, as users have discovered a small - but oft-requested - change in the software's Version 2.2.0. Read…",
+   "img": "https://assetsio.gnwcdn.com/border-switch.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795528920000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "“Podem comprar sem medo”: Controle Switch 2 Pro conquista usuários na Amazon e está mais barato!",
+   "url": "https://www.hardware.com.br/hardware-indica/podem-comprar-sem-medo-controle-switch-2-pro-conquista-usuarios-na-amazon-e-esta-mais-barato/",
+   "summary": "Controle Nintendo Switch 2 Pro no menor preço da Amazon: ergonomia premiada, botões GL/GR e bateria de até 10 dias.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/2.jpg",
+   "at": 1795528810000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Mini Review: KuloNiku: Bowl Up! (Switch 2) - A Satisfying, Tactile Cooking Sim",
+   "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/kuloniku-bowl-up",
+   "summary": "Order up! I have a real soft spot for games that simulate cooking. A strange thing given my aversion to crafting mechanics, but cooking? I could do that all day. KuloNiku: Bowl…",
+   "img": "https://images.nintendolife.com/d9ebc9d1596e1/large.jpg",
+   "at": 1795528800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Lego’s First Marvel Rivals Set Is A 495-Piece Tribute To The Game’s Most Adorable Terror",
+   "url": "https://www.gamespot.com/articles/lego-first-marvel-rivals-set-is-a-495-piece-tribute-to-the-games-most-adorable-terror/",
+   "summary": "Next month marks the second anniversary of Marvel Rivals , and to celebrate, a new Lego set is on the way that lets you build the game's unofficial mascot, Jeff the Land Shark.…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jeff-17.jpg?w=300",
+   "at": 1795528800000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How To Unlock Hurricanes In GTA 6",
+   "url": "https://www.gamespot.com/articles/how-to-unlock-hurricanes-in-gta-6/",
+   "summary": "Despite being used in advertising Leonida's dynamic weather, hurricanes are actually locked behind a secret mission in GTA 6 . Be careful proceeding though, since after you…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/382_gtavi_giexclusive04.jpg?w=300",
+   "at": 1795528710000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How To Play GTA 6 On Your PC Or Phone Via Remote Play On Xbox",
+   "url": "https://www.gamespot.com/articles/how-to-play-gta-6-on-your-pc-or-phone-via-remote-play-on-xbox/",
+   "summary": "Rockstar's Grand Theft Auto 6 can be streamed via Xbox Cloud Gaming , and Microsoft has also now confirmed support for Remote Play on Xbox. This means you can play GTA 6 on your…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261103112343-2.jpg?w=300",
+   "at": 1795527910000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Unofficial GTA 6 PC port effort suffers setback as Rockstar seemingly takes down Project Leonida, one of the internet's biggest recompilation projects",
+   "url": "https://www.eurogamer.net/grand-theft-auto-6-project-leonida-discord-github-vanish",
+   "summary": "A lot has happened in the last 24 hours in the community working to get Grand Theft Auto 6 running on PC. And now, Rockstar has dealt a major blow to their efforts. Read more",
+   "img": "https://assetsio.gnwcdn.com/gta-6-hackers.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795527600000,
+   "source": "Eurogamer"
+  },
   {
    "title": "Samsung lança o monitor gamer mais rápido do mundo com impressionantes 1.100 Hz",
    "url": "https://www.hardware.com.br/tecnologia/samsung-monitor-gamer-1100hz/",
@@ -194,7 +445,7 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Rockstar is actively shopping Read Dead Redemption movie and TV rights around, just don't expect the same for Grand Theft Auto",
+   "title": "Rockstar is actively shopping Red Dead Redemption movie and TV rights around, just don't expect the same for Grand Theft Auto",
    "url": "https://www.eurogamer.net/red-dead-redemption-movie-tv-rights-100-million-usd-no-gta",
    "summary": "Rockstar Games is seemingly interested in expanding Red Dead Redemption beyond video games, after years of Hollywood knocking on its doors. According to a new report, the company…",
    "img": "https://assetsio.gnwcdn.com/rdr-2-hollywood-header-1.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -544,38 +795,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "This Couldn’t Have Gone Worse In GTA 6",
-   "url": "https://www.gamespot.com/videos/this-couldnt-have-gone-worse-in-gta-6/",
-   "summary": "Jason happens upon the M7 Gang's hideout, but everything goes wrong from the jump.",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Featured_GTA6LeonidaStories_TheBag_20201119V1.jpg?w=300",
-   "at": 1795478400000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Where To Find Bikinis For Lucia And Swimsuits For Jason In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-bikini-swimsuit-lucia-jason/",
-   "summary": "Before the launch of Grand Theft Auto 6 , the internet was bombarded with tons of promotional material showcasing sun-scorched beaches and stunning bods. Then, when you start the…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-bikini-lucia-swimsuit-.jpg?w=300",
-   "at": 1795477908000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 6 Laptop Password Puzzle Guide",
-   "url": "https://www.gamespot.com/articles/gta-6-laptop-password-puzzle-guide/",
-   "summary": "There certainly are plenty of brain teasers in Grand Theft Auto 6 . While the vast majority require thorough exploration, a few are found in areas near and dear to you. In fact,…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-laptop-puzzle-chapter-3-.jpg?w=300",
-   "at": 1795477348000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Use This GTA 6 Infinite Money Glitch Before It’s Patched",
-   "url": "https://www.gamespot.com/articles/gta-6-infinite-cash-money-cheat-exploit/",
-   "summary": "In Grand Theft Auto 6 , Jason and Lucia are on the run from the law and hardened criminals. They can’t just start their own financial empires or rule the seedy underworld of…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-infinite-money-exploit-cheat-.jpg?w=300",
-   "at": 1795477044000,
-   "source": "GameSpot"
-  },
-  {
    "title": "2ª temporada de The Detective Is Already Dead divulga trailer e ilustração promocional de novo arco",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/23/the-detective-is-already-dead-2-temporada-novo-arco-trailer-ilustracao-promocional",
    "summary": "A nova temporada já está disponível na Crunchyroll",
@@ -585,14 +804,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Monitor LG UltraGear de 180 Hz deixa os jogos mais fluidos e sai por menos de R$ 750 no Pix na Amazon",
-   "url": "https://br.ign.com/descontos/157890/monitor-lg-ultragear-de-180-hz-deixa-os-jogos-mais-fluidos-e-sai-por-menos-de-r-750-no-pix-na-amazon",
-   "summary": "Modelo 24GS60F-B tem resolução Full HD, resposta de 1 ms e compatibilidade com G-SYNC e FreeSync",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/para-quem-joga-no-pc-monitor-lg-ultragear-de-180-hz-e-tela-i_vqb2.jpg",
-   "at": 1795476810000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Firefly Wedding ‒ Episode 7",
    "url": "https://www.animenewsnetwork.com/review/firefly-wedding/episode-7/.244135",
    "summary": "Our boy Shinpei is just as much a prisoner as Satoko is.",
@@ -600,14 +811,6 @@
    "at": 1795476600000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Esquenta Black Friday! Pro Controller para Nintendo Switch 2 surge no precinho na Amazon",
-   "url": "https://br.ign.com/descontos/157896/esquenta-black-friday-pro-controller-para-nintendo-switch-2-surge-no-precinho-na-amazon",
-   "summary": "Controle oficial da Nintendo traz botões GL e GR programáveis, botão C para o GameChat e entrada para fone de ouvido. Confira o preço atualizado na Amazon e leve o seu para a…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/controle-pro-nintendo-switch-2-thumb_vybz.jpg",
-   "at": 1795474924000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Jogos de PC em oferta no Esquenta Black Friday da Nuuvem com até 95% de desconto",
@@ -636,30 +839,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Artbook de Demon Slayer focado em Mugen Train reúne mais de 500 ilustrações e sai por menos de R$ 70 na Amazon",
-   "url": "https://br.ign.com/descontos/157885/artbook-de-demon-slayer-focado-em-mugen-train-reune-mais-de-500-ilustracoes-e-sai-por-menos-de-r-70",
-   "summary": "Volume 2 da Panini tem 144 páginas em formato grande e capa inédita de Akira Matsushima",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/artbook-de-demon-slayer-focado-em-mugen-train-reune-mais-de_v1tc.jpg",
-   "at": 1795472499000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "R$300 OFF no Galaxy S26! Loja oficial da Samsung deixa o modelo com 5G e 256GB em oferta no Mercado Livre",
-   "url": "https://br.ign.com/descontos/157894/r300-off-no-galaxy-s26-loja-oficial-da-samsung-deixa-o-modelo-com-5g-e-256gb-em-oferta-no-mercado-li",
-   "summary": "Tela de 6,3\", Exynos 2600, câmera tripla e Galaxy AI em um aparelho compacto. O Galaxy S26 ganhou desconto na loja oficial da Samsung no Mercado Livre. Veja as condições, compare…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/samsung-galaxy-s26-5g-256gb-6h72_354373_ypvs.jpg",
-   "at": 1795470925000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6: Todos os finais e como consegui-los",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157884/gta-6-todos-os-finais-e-como-consegui-los",
-   "summary": "Decisões ocultas, perfil criminal, dinheiro e relacionamento influenciam no resultado final Diferente de GTA 4 e GTA 5, onde você escolhia o desfecho em um menu na última missão,…",
-   "img": "https://sm.ign.com/ign_br/photo/default/lucia-caminos-12-1793891731332_4qfb.jpg",
-   "at": 1795469928000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Naruto: Hiroyuki Sanada negocia para viver o Terceiro Hokage no filme live-action",
    "url": "https://www.jbox.com.br/2026/11/23/naruto-hiroyuki-sanada-negocia-para-viver-o-terceiro-hokage-no-filme-live-action/",
    "summary": "Astro de ‘Xógum’ pode se juntar a Charles Melton na adaptação dirigida por Destin Daniel Cretton.",
@@ -678,14 +857,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "This GTA 6 Glitch (Almost) Ruined The Game’s Most Iconic Scene",
-   "url": "https://www.gamespot.com/articles/this-gta-6-glitch-almost-ruined-the-games-most-iconic-scene/",
-   "summary": "Note: This story will discuss a pivotal mission in Chapter 2 of Grand Theft Auto 6. A powerful sequence in Grand Theft Auto 6 is quickly becoming a favorite among the game's many…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-glitch.jpg?w=300",
-   "at": 1795469021000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Atriz de God of War Laufey vai repetir o papel na série da Amazon",
    "url": "https://www.adrenaline.com.br/games/atriz-de-god-of-war-laufey-vai-repetir-o-papel-na-serie-da-amazon/",
    "summary": "Deborah Ann Woll vai interpretar Faye tanto nos jogos quanto na série live action de God of War",
@@ -700,14 +871,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/intel-g3-play.jpg",
    "at": 1795468132000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Teclado mecânico HyperX Alloy Origins Core está com 41% de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/157882/teclado-mecanico-hyperx-alloy-origins-core-esta-com-41-de-desconto-na-amazon",
-   "summary": "Modelo tem switches mecânicos HX Red, iluminação RGB personalizável e conexão USB-C",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/capa-4_quyg.png",
-   "at": 1795467643000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Jogos de Corrida para PlayStation em oferta na Black Friday",
@@ -743,14 +906,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "GTA 6 Online Could Be Bigger Than Fortnite, Bank Of America Stock Analyst Says",
-   "url": "https://www.gamespot.com/articles/gta-6-online-could-be-bigger-than-fortnite-bank-of-america-stock-analyst-says/",
-   "summary": "Rockstar Games and parent company Take-Two are riding high currently from the success of Grand Theft Auto 6 with a reported 45 million copies sold and $4 billion in revenue…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA6Online.png?w=300",
-   "at": 1795465718000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Deltarune Chapter 6 is playable \"from the beginning to the end,\" Toby Fox says, but the RPG's final part has \"only just started\"",
    "url": "https://www.eurogamer.net/deltarune-chapter-6-playable-toby-fox",
    "summary": "Toby Fox has given eager fans an update on the development of Deltarune Chapter 6 and Chapter 7 - the Undertale follow-up's final two episodes. Read more",
@@ -774,22 +929,6 @@
    "at": 1795462471000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "GTA 6’s Donnie Actor Underwent Brain Surgery While He Was Awake And Playing Guitar",
-   "url": "https://www.gamespot.com/articles/gta-6s-donnie-actor-underwent-brain-surgery-while-he-was-awake-and-playing-guitar/",
-   "summary": "Grand Theft Auto 6 features a big cast of characters with fascinating, memorable storylines, and one such character is the drug-smuggler Donnie . He's played by actor Brad Carter,…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_13_042520.jpg?w=300",
-   "at": 1795462275000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "All Airports In GTA 6",
-   "url": "https://www.gamespot.com/articles/all-airports-in-gta-6/",
-   "summary": "Some points of interest are more important than others in Grand Theft Auto 6 , and airports are always at the top of a player's list of places to see. While airports often play a…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grassrivers_05.0.dx967tljry-1.jpg?w=300",
-   "at": 1795462261000,
-   "source": "GameSpot"
   },
   {
    "title": "Overgeared ‒ Episode 9",
@@ -850,62 +989,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Arknights: Endfield anuncia nova atualização com personagem grátis e revela novidades da versão 2.0",
-   "url": "https://www.adrenaline.com.br/games/arknights-endfield-atualizacao/",
-   "summary": "Atualização A Gente se Vê no Mundo dos Cogumelos apresenta nova área, Operadora Kay, modo permanente de construção de fábricas e jogos de cartas multiplayer; próxima expansão…",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/arknights-endfield-640x360.jpg",
-   "at": 1795457132000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Opinion: After Finishing Ocarina Of Time, I'm Left Jonesing For A Proper Sequel",
-   "url": "https://www.nintendolife.com/features/opinion-after-finishing-ocarina-of-time-im-left-jonesing-for-a-proper-sequel",
-   "summary": "Not that one (but also that one). Yesterday I finished the Ocarina of Time remake. Having replayed the original over the summer with my kids, we've beansed it through this one,…",
-   "img": "https://images.nintendolife.com/767bf0c405c44/large.jpg",
-   "at": 1795456800000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Jogador manda imagem de nudez em GTA 6 por mensagem da PSN e leva suspensão de 30 dias",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogador-manda-imagem-de-nudez-em-gta-6-por-mensagem-da-psn-e-leva-suspensao-de-30-dias/",
-   "summary": "Suspensão de jogador na PSN por causa de GTA 6 lembra a todos que regras nos games são diferentes de regras do console",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/psn-banido-gta-6-compartilhar-nudez-640x400.jpg",
-   "at": 1795455907000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Primeiro patch de GTA 6 corrige salvamento automático, uma das maiores queixas dos fãs",
-   "url": "https://www.adrenaline.com.br/games/gta-6-primeiro-patch-corrige-salvamento-automatico-clima-ps5-xbox-series-notas-atualizacao/",
-   "summary": "Atualização para PS5 e Xbox Series também conserta o clima parado, travamentos, ligações que não liberavam missões e a polícia sem fim. Veja a lista.",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/gta-6-primeiro-patch-corrige-salvamento-automatico-clima-ps5-xbox-series-notas-atualizacao-640x400.jpg",
-   "at": 1795455531000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Super Nintendo de 35 anos consegue rodar ChatGPT graças a chip usado em Yoshi’s Island",
-   "url": "https://www.hardware.com.br/tecnologia/super-nintendo-chatgpt/",
-   "summary": "Projeto independente utiliza um modelo de inteligência artificial com 2,2 milhões de parâmetros e funciona até mesmo em um console original, sem depender da nuvem",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Super-Nintendo-de-35-anos-consegue-rodar-ChatGPT-gracas-a-chip-usado-em-Yoshis-Island.jpg",
-   "at": 1795454270000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Random: GTA 6 Hides An Adorable Mario & Luigi Easter Egg In Its Massive World",
-   "url": "https://www.nintendolife.com/news/2026/11/random-gta-6-hides-an-adorable-mario-and-luigi-easter-egg-in-its-massive-world",
-   "summary": "Wahoo! After 13 long years, Grand Theft Auto 6 is finally out and breaking records left, right, and centre. While folks who only own a Switch or Switch 2 can't get in on the…",
-   "img": "https://images.nintendolife.com/838496fd7656e/large.jpg",
-   "at": 1795454100000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Dawn of War 4's newest trailer teases the appearance of a fan-favourite character in the game's post-launch DLC",
-   "url": "https://www.eurogamer.net/dawn-of-war-4-trailer-vashtorr-chaos-tease",
-   "summary": "As Dawn of War 4 's December release date inches ever closer, a new trailer appears to have teased a fan-favourite character's inclusion in the RTS's first post-launch DLC. Read…",
-   "img": "https://assetsio.gnwcdn.com/Warhammer-40%2C000_-Dawn-of-War-4---Official-Announcement-Trailer-_-gamescom-2025-0-16-screenshot.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795453600000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "2ª temporada de ‘Akane-banashi’ ganha data de estreia em janeiro",
    "url": "https://www.jbox.com.br/2026/11/23/2a-temporada-de-akane-banashi-ganha-data-de-estreia-em-janeiro/",
    "summary": "Mês de lançamento já estava confirmado, e agora o dia também foi revelado.",
@@ -913,62 +996,6 @@
    "at": 1795451977000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "GTA 6 just got a patch that fixed a progression bug on PS5 and Xbox Series X/S",
-   "url": "https://www.eurogamer.net/gta-6-xbox-playstation-patch-autosave-vignette",
-   "summary": "Rockstar just issued a new patch for GTA 6 on PlayStation 5 and Xbox Series X/S, targeting a few issues players have been reporting since the game launched last Thursday (19th…",
-   "img": "https://assetsio.gnwcdn.com/GTA-6-vignette.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795447350000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Nvidia makes stunning decision to reinstate Jensen Huang as CEO",
-   "url": "https://www.eurogamer.net/nvidia-jensen-huang-ceo-reinstated-affair",
-   "summary": "Gaming tech giant Nvidia has decided to reinstate Jensen Huang as its president and CEO, despite allegedly saying it wouldn't, and despite a string of extramarital affairs and…",
-   "img": "https://assetsio.gnwcdn.com/NVIDIA-CEO-Jensen-Huang-Keynote-at-CES-2025-20-19-screenshot.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795446060000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Has Rockstar taken the \"Grand Theft Auto\" out of GTA 6? Or has it just gamified car-jacking properly for the first time?",
-   "url": "https://www.eurogamer.net/gta-6-car-theft-gamified",
-   "summary": "It's impossible to have a big game launch these days without some section of the internet, somewhere, finding grievances with the final product because it does not align with the…",
-   "img": "https://assetsio.gnwcdn.com/car-gta-6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795445900000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Jensen Huang Has Been Reinstated As Nvidia's President And CEO",
-   "url": "https://www.nintendolife.com/news/2026/11/jensen-huang-has-been-reinstated-as-nvidias-president-and-ceo",
-   "summary": "Company produces custom processor for Switch 2. Nvidia, one of the largest tech firms in the world and the company responsible for the Switch 2's custom processor, has found…",
-   "img": "https://images.nintendolife.com/4c6081233fb13/large.jpg",
-   "at": 1795443600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Unreal Engine 6 vai apostar em programação com IA e abandona sistema visual de Blueprints",
-   "url": "https://www.hardware.com.br/games/unreal-engine-6-vai-apostar-em-programacao-com-ia/",
-   "summary": "Epic Games antecipou a transição para nova arquitetura, acreditando que a inteligência artificial será capaz de converter projetos antigos automaticamente.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/unreal-engine-6-1600x900.jpg",
-   "at": 1795443596000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "GTA 6 can run at 60fps on Xbox Series X if you use a glitch, but there's a catch",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-60-fps-glitch-xbox",
-   "summary": "Grand Theft Auto 6 runs at 30 frames-per-second across all the consoles it's currently available on , including the more powerful PlayStation 5 Pro . The game doesn't offer a…",
-   "img": "https://assetsio.gnwcdn.com/GTA6_5nov-(29).jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795443120000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Fantasy RPG 'Sovereign Tower' Brings Some Round Table Management To Switch Next Year",
-   "url": "https://www.nintendolife.com/news/2026/11/fantasy-rpg-sovereign-tower-brings-some-round-table-management-to-switch-next-year",
-   "summary": "Knight's watch. Sovereign Tower launched on Steam earlier this year and quickly picked up its fair share of fans for its wacky round table management. Today, developer Wild Wits…",
-   "img": "https://images.nintendolife.com/95bf7bf1e112c/large.jpg",
-   "at": 1795442400000,
-   "source": "Nintendo Life"
   },
   {
    "title": "As a Reincarnated Aristocrat – 3º temporada ganha trailer para próximo arco",
@@ -1147,33 +1174,6 @@
    "summary": "Primeira parte estreou no último dia 20.",
    "img": "https://a.storyblok.com/f/178900/960x540/1e63a8db48/votoms-2kvs.jpg",
    "at": 1795273980000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Godzilla Minus Zero confirma participação especial de Hideaki Anno",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/filme-godzilla-minus-zero-hideaki-anno-participacao",
-   "summary": "O 31º filme japonês de Godzilla já arrecadou mais de 15 bilhões de ienes em todo o mundo",
-   "img": "https://a.storyblok.com/f/178900/960x540/b60cf9b1a1/godzilla-minus-zero-hideaki-anno.jpg",
-   "at": 1795272600000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "BanG Dream! YUME ∞ MITA tem novo anime anunciado",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/bang-dream-yume-mita-novo-anime-anuncio",
-   "summary": "Primeira temporada com foco na banda Mugendai Mewtype foi exibida este ano.",
-   "img": "https://a.storyblok.com/f/178900/960x540/e5515fb9e2/bang-dream-yume-mita-header.jpg",
-   "at": 1795272180000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Um Sinal de Afeto chega ao fim daqui três capítulos",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/um-sinal-de-afeto-manga-final",
-   "summary": "Mangá entrou na reta final no início deste ano.",
-   "img": "https://a.storyblok.com/f/178900/1920x1080/16898daebb/a-sign-of-affection.jpg",
-   "at": 1795270620000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
