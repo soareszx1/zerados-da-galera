@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795592252200,
+ "atualizadoEm": 1795602124861,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,73 @@
   }
  ],
  "itens": [
+  {
+   "title": "Promising action-RPG, Showa American Story, has been delayed into late 2027 in order to feel \"cohesive, responsive and complete\" at launch",
+   "url": "https://www.eurogamer.net/showa-american-story-delay-2027",
+   "summary": "Publisher 4Divinity and developer Nekcom Entertainment have announced that upcoming action-RPG Showa American Story will now launch on 28th October, 2027. This comes after various…",
+   "img": "https://assetsio.gnwcdn.com/Showa-American-Story-header.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795601480000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "5 melhores dicas para aproveitar o mapa de GTA 6 ao máximo",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157922/5-melhores-dicas-para-aproveitar-o-mapa-de-gta-6-ao-maximo",
+   "summary": "Apesar dos vários tutoriais, o game não revela todo o potencial de cara Descubra uma lista de dicas essenciais para desbloquear tudo o que o mapa Leonida tem a oferecer em GTA VI.",
+   "img": "https://sm.ign.com/ign_br/photo/g/gta-6-the-/gta-6-the-optional-missions-you-wont-want-to-miss_t6ve.jpg",
+   "at": 1795600840000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Capcom's sci-fi dinosaur shooter Exoprimal is shutting down next year",
+   "url": "https://www.eurogamer.net/exo-primal-shutting-down-2027",
+   "summary": "Sad news dinosaur lovers. Exoprimal - Capcom's third-person sci-fi shooter with a Jurassic twist - will be shutting down next year. With its closure, the game will no longer be…",
+   "img": "https://assetsio.gnwcdn.com/exoprimal-header_LnCNkXk.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795599880000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Migratory Birds & Snail TV Anime Debuts Next Summer",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/migratory-birds-and-snail-tv-anime-debuts-next-summer/.244185",
+   "summary": "Adaptation of Makoto Takatsu's road trip manga announced in 2024",
+   "img": "",
+   "at": 1795599874000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Performance analysis reveals GTA 6 has a more stable frame-rate on Xbox Series X compared to PlayStation 5",
+   "url": "https://www.eurogamer.net/grand-theft-auto-6-frame-rate-xbox-series-x-ps5",
+   "summary": "If you don't own a PlayStation 5 Pro , the best way to play Grand Theft Auto 6 is reportedly on Xbox Series X. That's according to new performance analysis, which shows…",
+   "img": "https://assetsio.gnwcdn.com/GTA_6_Mission_List_4.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795598110000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Carro de Velozes e Furiosos no GTA 6: onde encontrar o Penumbra FF na Ilha Vespucci?",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157920/carro-de-velozes-e-furiosos-no-gta-6-onde-encontrar-o-penumbra-ff-na-ilha-vespucci",
+   "summary": "Veja onde achar o lendário Eclipse que Brian O'Conner usa no primeiro filme Descubra como obter o carro de Paul Walker de Velozes e Furiosos e quanto custará para mantê-lo para…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_zdff.jpg",
+   "at": 1795597238000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Kindergarten Wars Anime's Video Reveals More Staff, ado's Opening Song, April Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/kindergarten-wars-anime-video-reveals-more-staff-ado-opening-song-april-debut/.244176",
+   "summary": "Ado performs anime's opening theme \"Bibayatarametta\"",
+   "img": "",
+   "at": 1795597200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "The Kept Man of the Princess Knight Anime's New Video Reveals More Cast, Ending Song, January 3 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/the-kept-man-of-the-princess-knight-anime-new-video-reveals-more-cast-ending-song-january-3-debut/.244177",
+   "summary": "Yūya Hirose, Manaka Iwami, Shion Wakayama, Saori Ōnishi join anime's cast",
+   "img": "",
+   "at": 1795593600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Historie Anime's Video Unveils More Cast & Staff, Theme Songs, January 8 Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-24/historie-anime-video-unveils-more-cast-and-staff-theme-songs-january-8-debut/.244173",
@@ -244,7 +311,7 @@
   {
    "title": "Jogos da Rockstar em oferta na Steam com até 75% de desconto",
    "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-rockstar-em-oferta-na-steam-com-ate-75-de-desconto/",
-   "summary": "Confira os principais jogos distribuídos pela Xbox disponíveis com desconto nesta oferta por tempo limitado na Steam",
+   "summary": "Confira os principais jogos distribuídos pela Rockstar disponíveis com desconto nesta oferta por tempo limitado na Steam",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/03/red-dead-redemption-2-640x400.webp",
    "at": 1795560230000,
    "source": "Adrenaline"
@@ -651,36 +718,11 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Scott Pilgrim e Ramona Flowers chegam ao Fortnite esta semana",
-   "url": "https://br.ign.com/fortnite/157905/scott-pilgrim-e-ramona-flowers-chegam-ao-fortnite-esta-semana",
-   "summary": "We are Sex Bob-Omb! Scott Pilgrim chega ao mundo de Fortnite ainda esta semana, como parte do próximo crossover. Visuais de personagem para Scott Pilgrim e Ramona Flowers ficarão…",
-   "img": "https://sm.ign.com/ign_br/news/s/scott-pilg/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week_ebt6.jpg",
-   "at": 1795536424000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Duel Masters Pure PLAY'S Manga Ends on November 30",
    "url": "https://www.animenewsnetwork.com/news/2026-11-24/duel-masters-pure-play-manga-ends-on-november-30/.244139",
    "summary": "Series debuted on September September 18",
    "img": "",
    "at": 1795536303000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Star Wars em oferta! Funko Pop! do Darth Vader despenca de preço com cupom exclusivo da Amazon",
-   "url": "https://br.ign.com/descontos/157904/star-wars-em-oferta-funko-pop-do-darth-vader-despenca-de-preco-com-cupom-exclusivo-da-amazon",
-   "summary": "O colecionável de um dos vilões mais icônicos da cultura pop está com preço reduzido na Amazon, com desconto extra para quem aplicar o cupom BRINQSBF na compra!",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_97ke.jpg",
-   "at": 1795535624000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Digimon Become Tamagotchi & Tamagotchi Become Digimon!",
-   "url": "https://www.animenewsnetwork.com/interest/2026-11-24/digimon-become-tamagotchi-and-tamagotchi-become-digimon/.244155",
-   "summary": "Digimon & Tamagotchi franchises both celebrate 30th anniversary with new crossover retro toys",
-   "img": "",
-   "at": 1795534963000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -945,48 +987,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Adaptado-PC-Claude-640x400.jpeg",
    "at": 1795518566000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Tiny Bookshop Sells 1 Million Copies, New DLC Expansion Announced",
-   "url": "https://www.nintendolife.com/news/2026/11/tiny-bookshop-sells-1-million-copies-new-dlc-expansion-announced",
-   "summary": "Launching next month. Tiny Bookshop , the charming indie title in which you take on the role of bookseller in a quaint seaside resort, has officially sold surpassed 1 million…",
-   "img": "https://images.nintendolife.com/950a56c568e45/large.jpg",
-   "at": 1795518000000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "UK Charts: No Disc, No Problem - GTA 6 Shoves Zelda Further Down The Ranking",
-   "url": "https://www.nintendolife.com/news/2026/11/uk-charts-no-disc-no-problem-gta-6-shoves-zelda-further-down-the-ranking",
-   "summary": "Disc/Reward. The latest physical sales chart for the UK is in, and in perhaps the most unsurprising bit of news in yonks , Grand Theft Auto 6 is quite the hit. Yes, the lack of a…",
-   "img": "https://images.nintendolife.com/a9d8369924b57/large.jpg",
-   "at": 1795515300000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Twisted-Wonderland: Episode of Savanaclaw Anime's New Video Unveils Ending Song",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/twisted-wonderland-episode-of-savanaclaw-anime-new-video-unveils-ending-song/.244154",
-   "summary": "Savanaclaw dorm members perform \"DIADEM\" ending song",
-   "img": "",
-   "at": 1795515270000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "More than 39 million people have played GTA 6 on PlayStation alone, Sony says, as the game breaks all-time player numbers on the platform",
-   "url": "https://www.eurogamer.net/more-than-39-million-people-have-played-gta-6-on-playstation-alone-sony-says-as-the-game-breaks-all-time-player-numbers-on-the-platform",
-   "summary": "Sony's revealed staggering statistics relating to the popularity of Grand Theft Auto on PlayStation 5, not least that more than 39 million unique people have played the game…",
-   "img": "https://assetsio.gnwcdn.com/jason-lucia-gta-6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795514900000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Witch on the Holy Night Anime Film's Sequel Confrmed",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/witch-on-the-holy-night-anime-film-sequel-confrmed/.244151",
-   "summary": "1st film earned 516 million yen in 1st 4 days",
-   "img": "",
-   "at": 1795509108000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Anime Magical Buffs: The Support Caster is Stronger Than He Realized! anuncia três novos nomes para o elenco",
