@@ -1,9 +1,9 @@
 {
- "atualizadoEm": 1795571965,
+ "atualizadoEm": 1795577965,
  "jogos": {
   "absolver": {
    "appid": 473690,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -20,7 +20,7 @@
   },
   "aionii": {
    "appid": 3393110,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -34,7 +34,7 @@
   },
   "alanwakeii": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -48,7 +48,7 @@
   },
   "arksurvivalofthefittest": {
    "appid": 407530,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Sobrevivência",
@@ -79,7 +79,7 @@
   },
   "armareforger": {
    "appid": 1874880,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -95,7 +95,7 @@
   },
   "assassinscreediiiremastered": {
    "appid": 911400,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -111,7 +111,7 @@
   },
   "assassinscreedivblackflag": {
    "appid": 242050,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -127,7 +127,7 @@
   },
   "assassinscreedodyssey": {
    "appid": 812140,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -143,7 +143,7 @@
   },
   "assassinscreedvalhalla": {
    "appid": 2208920,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -174,7 +174,7 @@
   },
   "atomicheart": {
    "appid": 668580,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -191,7 +191,7 @@
   },
   "baldursgateiii": {
    "appid": 1086940,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -206,7 +206,7 @@
   },
   "batmanarkhamasylum": {
    "appid": 35020,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -223,7 +223,7 @@
   },
   "batmanarkhamasylumgotyedition": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania"
@@ -235,7 +235,7 @@
   },
   "batmanarkhamcity": {
    "appid": 200240,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -251,7 +251,7 @@
   },
   "batmanarkhamcitygoty": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -266,7 +266,7 @@
   },
   "batmanarkhamknight": {
    "appid": 208650,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -283,7 +283,7 @@
   },
   "batmanarkhamorigins": {
    "appid": 209000,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -299,7 +299,7 @@
   },
   "battleblocktheater": {
    "appid": 238460,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Cooperativo",
@@ -313,7 +313,7 @@
   },
   "battlefieldvi": {
    "appid": 2807960,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -326,7 +326,7 @@
   },
   "bioshockinfinite": {
    "appid": 8870,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -342,7 +342,7 @@
   },
   "blackdesert": {
    "appid": 582660,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -357,7 +357,7 @@
    "v": 6
   },
   "blackdesertsaretired": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "black-desert-sa-retired",
    "titulo": "Black Desert SA (Retired)",
    "v": 6,
@@ -365,7 +365,7 @@
   },
   "blackmythwukong": {
    "appid": 2358720,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -381,7 +381,7 @@
   },
   "blasphemous": {
    "appid": 774361,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -398,7 +398,7 @@
   },
   "blasphemousii": {
    "appid": 2114740,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -415,7 +415,7 @@
   },
   "bloodborne": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -430,7 +430,7 @@
   },
   "bloodstainedritualofthenight": {
    "appid": 692850,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -447,7 +447,7 @@
   },
   "bluefire": {
    "appid": 1220150,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -464,7 +464,7 @@
   },
   "borderlandsiii": {
    "appid": 397540,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -480,7 +480,7 @@
   },
   "brawlhalla": {
    "appid": 291550,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -496,7 +496,7 @@
   },
   "callofduty": {
    "appid": 1938090,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -524,7 +524,7 @@
   },
   "castlecrashers": {
    "appid": 204360,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "2D",
@@ -541,7 +541,7 @@
   },
   "celeste": {
    "appid": 504230,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -571,7 +571,7 @@
   },
   "counterstrikeii": {
    "appid": 730,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -585,7 +585,7 @@
   },
   "darksouls": {
    "appid": 374320,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -602,7 +602,7 @@
   },
   "darksoulsii": {
    "appid": 236430,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -618,7 +618,7 @@
   },
   "darksoulsiii": {
    "appid": 374320,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -635,7 +635,7 @@
   },
   "darksoulsremastered": {
    "appid": 570940,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -650,7 +650,7 @@
   },
   "deadcells": {
    "appid": 588650,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -667,7 +667,7 @@
   },
   "deathstranding": {
    "appid": 3280350,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -683,7 +683,7 @@
   },
   "defjamfightforny": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta"
@@ -695,7 +695,7 @@
   },
   "devilmaycryv": {
    "appid": 601150,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -736,7 +736,7 @@
   },
   "dmcdevilmaycry": {
    "appid": 220440,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -750,7 +750,7 @@
   },
   "donkeykongbananza": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -764,7 +764,7 @@
   },
   "dontstarvetogether": {
    "appid": 322330,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Sobrevivência",
@@ -781,7 +781,7 @@
   },
   "dragonsdogmaii": {
    "appid": 2054970,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -813,7 +813,7 @@
   },
   "eldenring": {
    "appid": 1245620,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -829,7 +829,7 @@
   },
   "elderscrollsonline": {
    "appid": 306130,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -860,14 +860,14 @@
    "v": 6
   },
   "fearstofathomepisode1": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "fears-to-fathom-episode-1",
    "titulo": "Fears to Fathom - Episode 1",
    "v": 6,
    "vazio": true
   },
   "fearstofathomepisodeiii": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "fears-to-fathom-episode-3",
    "titulo": "Fears to Fathom - Episode 3",
    "v": 6,
@@ -875,7 +875,7 @@
   },
   "fifastreet": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Esporte"
@@ -887,7 +887,7 @@
   },
   "finalfantasyviiremake": {
    "appid": 1462040,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -916,7 +916,7 @@
   },
   "forzahorizon": {
    "appid": 2483190,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -931,21 +931,21 @@
    "v": 6
   },
   "forzahorizonii": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "forza-horizon-2",
    "titulo": "Forza Horizon 2",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniii": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "forza-horizon-3",
    "titulo": "Forza Horizon 3",
    "v": 6,
    "vazio": true
   },
   "forzahorizoniv": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "forza-horizon-4",
    "titulo": "Forza Horizon 4",
    "v": 6,
@@ -953,7 +953,7 @@
   },
   "forzahorizonv": {
    "appid": 1551360,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -969,7 +969,7 @@
   },
   "forzahorizonvi": {
    "appid": 2483190,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -984,14 +984,14 @@
    "v": 6
   },
   "forzamotorsportiv": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "forza-motorsport-4",
    "titulo": "Forza Motorsport 4",
    "v": 6,
    "vazio": true
   },
   "gearsofwariv": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "gears-of-war-4",
    "titulo": "Gears of War 4",
    "v": 6,
@@ -999,7 +999,7 @@
   },
   "godofwar": {
    "appid": 1593500,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1016,7 +1016,7 @@
   },
   "godofwariii": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Hack and slash",
@@ -1030,7 +1030,7 @@
   },
   "grandchase": {
    "appid": 985810,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1047,7 +1047,7 @@
   },
   "grandtheftautoiv": {
    "appid": 12210,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1063,7 +1063,7 @@
   },
   "grandtheftautoivthelostanddamned": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1076,7 +1076,7 @@
   },
   "grandtheftautosanandreas": {
    "appid": 1547000,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1091,7 +1091,7 @@
   },
   "grandtheftautotheballadofgaytony": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1104,7 +1104,7 @@
   },
   "grandtheftautothetrilogythedefinitiveedition": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1117,7 +1117,7 @@
   },
   "grandtheftautov": {
    "appid": 3240220,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1165,7 +1165,7 @@
   },
   "grandtheftautovicecity": {
    "appid": 1546990,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1180,7 +1180,7 @@
   },
   "granturismoiiiaspec": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -1191,14 +1191,14 @@
    "v": 6
   },
   "granturismoiv": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "gran-turismo-4",
    "titulo": "Gran Turismo 4",
    "v": 6,
    "vazio": true
   },
   "granturismovii": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "gran-turismo-7",
    "titulo": "Gran Turismo 7",
    "v": 6,
@@ -1206,7 +1206,7 @@
   },
   "gris": {
    "appid": 683320,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Indie",
@@ -1222,15 +1222,14 @@
   },
   "hadesii": {
    "appid": 1145350,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
     "Roguelike",
     "Hack and slash",
     "RPG",
-    "Narrativo",
-    "Indie"
+    "Narrativo"
    ],
    "nome": "Hades II",
    "slug": "hades-ii",
@@ -1239,7 +1238,7 @@
   },
   "haloiv": {
    "appid": 1064273,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1254,7 +1253,7 @@
   },
   "halothemasterchiefcollection": {
    "appid": 976730,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -1269,7 +1268,7 @@
   },
   "haveanicedeath": {
    "appid": 1740720,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Roguelike",
@@ -1285,7 +1284,7 @@
   },
   "hifirush": {
    "appid": 1817230,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1300,7 +1299,7 @@
   },
   "hollowknight": {
    "appid": 367520,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -1317,7 +1316,7 @@
   },
   "hollowknightsilksong": {
    "appid": 1030300,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -1334,7 +1333,7 @@
   },
   "horizonforbiddenwest": {
    "appid": 2420110,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1350,7 +1349,7 @@
   },
   "infamoussecondson": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1377,7 +1376,7 @@
   },
   "kurtzpel": {
    "appid": 844870,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1391,7 +1390,7 @@
   },
   "lastofus": {
    "appid": 1888930,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Narrativo",
@@ -1424,7 +1423,7 @@
   },
   "legendofzeldatearsofthekingdom": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -1439,7 +1438,7 @@
   },
   "liesofp": {
    "appid": 1627720,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -1455,7 +1454,7 @@
   },
   "lifeisstrange": {
    "appid": 532210,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Narrativo",
@@ -1468,7 +1467,7 @@
   },
   "mafiaii": {
    "appid": 50130,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1485,7 +1484,7 @@
   },
   "mafiaiii": {
    "appid": 600160,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1501,7 +1500,7 @@
   },
   "mafiatheoldcountry": {
    "appid": 1941540,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Narrativo",
@@ -1517,7 +1516,7 @@
   },
   "marvelsspiderman": {
    "appid": 2651280,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1533,7 +1532,7 @@
   },
   "marvelsspidermanii": {
    "appid": 2651280,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1549,7 +1548,7 @@
   },
   "megamanxlegacycollection": {
    "appid": 743890,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1563,7 +1562,7 @@
   },
   "megamanxlegacycollectionii": {
    "appid": 743900,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1577,7 +1576,7 @@
   },
   "megamanzerozxlegacycollection": {
    "appid": 999020,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -1594,7 +1593,7 @@
   },
   "metalgearsoliddeltasnakeeater": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Furtivo",
@@ -1608,7 +1607,7 @@
   },
   "middleearthshadowofwar": {
    "appid": 356190,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -1625,7 +1624,7 @@
   },
   "midnightclubiiidubedition": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -1637,7 +1636,7 @@
   },
   "monsterhunterworld": {
    "appid": 582010,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Cooperativo",
@@ -1653,7 +1652,7 @@
   },
   "moonlighter": {
    "appid": 606150,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Hack and slash",
@@ -1670,7 +1669,7 @@
   },
   "narutoshippudenultimateninjastormiv": {
    "appid": 349040,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -1686,7 +1685,7 @@
   },
   "needforspeed": {
    "appid": 1262540,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -1702,7 +1701,7 @@
   },
   "needforspeedhotpursuit": {
    "appid": 1328660,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -1717,7 +1716,7 @@
   },
   "needforspeedmostwanted": {
    "appid": 1262560,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -1732,7 +1731,7 @@
   },
   "needforspeedtherun": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida"
@@ -1744,7 +1743,7 @@
   },
   "needforspeedunbound": {
    "appid": 1846380,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -1759,7 +1758,7 @@
   },
   "oriandtheblindforest": {
    "appid": 261570,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -1776,7 +1775,7 @@
   },
   "oriandtheblindforestdefinitiveedition": {
    "appid": 387290,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -1793,7 +1792,7 @@
   },
   "oriandthewillofthewisps": {
    "appid": 1057090,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -1824,7 +1823,7 @@
   },
   "paladins": {
    "appid": 444090,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -1839,7 +1838,7 @@
   },
   "paydayii": {
    "appid": 218620,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Cooperativo",
@@ -1854,7 +1853,7 @@
   },
   "phantombladezero": {
    "appid": 4115450,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -1870,7 +1869,7 @@
   },
   "phasmophobia": {
    "appid": 739630,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -1884,7 +1883,7 @@
   },
   "pokemonemerald": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1896,7 +1895,7 @@
   },
   "pokemonfirered": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -1910,7 +1909,7 @@
   },
   "pokemonlegendsarceus": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -1924,7 +1923,7 @@
   },
   "pokemonletsgopikachuandletsgoeevee": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1936,7 +1935,7 @@
   },
   "pokemonswordandshield": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG"
@@ -1948,7 +1947,7 @@
   },
   "portalii": {
    "appid": 620,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -1965,7 +1964,7 @@
   },
   "princeofpersiathelostcrown": {
    "appid": 2751000,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Metroidvania",
@@ -1982,7 +1981,7 @@
   },
   "projectzomboid": {
    "appid": 108600,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Sobrevivência",
@@ -1999,7 +1998,7 @@
   },
   "realmofthemadgodexalt": {
    "appid": 200210,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "2D",
@@ -2015,7 +2014,7 @@
   },
   "reddeadredemption": {
    "appid": 2668510,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2031,7 +2030,7 @@
   },
   "reddeadredemptionii": {
    "appid": 1174180,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2047,7 +2046,7 @@
   },
   "residentevil": {
    "appid": 304240,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2063,7 +2062,7 @@
   },
   "residentevil0": {
    "appid": 339340,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2078,7 +2077,7 @@
   },
   "residentevilii": {
    "appid": 883710,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2094,7 +2093,7 @@
   },
   "residenteviliv": {
    "appid": 2050650,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2111,7 +2110,7 @@
   },
   "residenteviliv2005": {
    "appid": 254700,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2127,7 +2126,7 @@
   },
   "residentevilrequiem": {
    "appid": 3764200,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2144,7 +2143,7 @@
   },
   "residentevilrevelations": {
    "appid": 222480,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2161,7 +2160,7 @@
   },
   "residentevilrevelationsii": {
    "appid": 287290,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2177,7 +2176,7 @@
    "v": 6
   },
   "residentevilreverse": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "resident-evil-re-verse",
    "titulo": "Resident Evil Re:Verse",
    "v": 6,
@@ -2185,7 +2184,7 @@
   },
   "residentevilv": {
    "appid": 21690,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Cooperativo",
@@ -2202,7 +2201,7 @@
   },
   "residentevilvi": {
    "appid": 221040,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -2218,7 +2217,7 @@
   },
   "residentevilviibiohazard": {
    "appid": 418370,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2233,7 +2232,7 @@
   },
   "residentevilvillage": {
    "appid": 1196590,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Terror",
@@ -2264,7 +2263,7 @@
   },
   "riseofthetombraider": {
    "appid": 391220,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2281,7 +2280,7 @@
   },
   "saintsrowii": {
    "appid": 9480,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2297,7 +2296,7 @@
   },
   "saintsrowthethird": {
    "appid": 55230,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2330,7 +2329,7 @@
   },
   "seaofthieves": {
    "appid": 1172620,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2346,7 +2345,7 @@
   },
   "sekiroshadowsdietwice": {
    "appid": 814380,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -2363,7 +2362,7 @@
   },
   "shadowofthecolossus": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2376,7 +2375,7 @@
   },
   "shadowofthetombraider": {
    "appid": 750920,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2393,7 +2392,7 @@
   },
   "shiftiiunleashed": {
    "appid": 47920,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -2407,7 +2406,7 @@
   },
   "silverpines": {
    "appid": 2333000,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2455,7 +2454,7 @@
   },
   "speedrunners": {
    "appid": 207140,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -2471,7 +2470,7 @@
   },
   "spore": {
    "appid": 17390,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2487,7 +2486,7 @@
   },
   "sporecreepycutepartspack": {
    "appid": 17440,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Simulação",
@@ -2502,7 +2501,7 @@
   },
   "sporegalacticadventures": {
    "appid": 24720,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Simulação",
@@ -2546,7 +2545,7 @@
   },
   "stellarblade": {
    "appid": 3489700,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Ação",
@@ -2562,7 +2561,7 @@
   },
   "streetfightervi": {
    "appid": 1364780,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -2577,7 +2576,7 @@
   },
   "supermariobroswonder": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2591,7 +2590,7 @@
   },
   "supermarioworld": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma"
@@ -2603,7 +2602,7 @@
   },
   "supermeatboy": {
    "appid": 40800,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2617,7 +2616,7 @@
   },
   "supermomboquest": {
    "appid": 1262040,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2634,7 +2633,7 @@
   },
   "tekkenviii": {
    "appid": 1778820,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -2647,7 +2646,7 @@
   },
   "titansouls": {
    "appid": 297130,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Soulslike",
@@ -2663,7 +2662,7 @@
   },
   "tokyoxtremeracer": {
    "appid": 2634950,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Corrida",
@@ -2676,7 +2675,7 @@
    "v": 6
   },
   "tokyoxtremeraceriii": {
-   "em": 1795571965,
+   "em": 1795577965,
    "slug": "tokyo-xtreme-racer-3",
    "titulo": "Tokyo Xtreme Racer 3",
    "v": 6,
@@ -2684,7 +2683,7 @@
   },
   "tombraider": {
    "appid": 391220,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
@@ -2717,7 +2716,7 @@
   },
   "tomclancysrainbowsixsiege": {
    "appid": 359550,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -2731,7 +2730,7 @@
   },
   "transformice": {
    "appid": 335240,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "2D",
@@ -2748,7 +2747,7 @@
   },
   "trickytowers": {
    "appid": 437920,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Puzzle",
@@ -2761,7 +2760,7 @@
   },
   "trine": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2774,7 +2773,7 @@
   },
   "trineii": {
    "appid": 204260,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2791,7 +2790,7 @@
   },
   "trineiiitheartifactsofpower": {
    "appid": 319910,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2807,7 +2806,7 @@
   },
   "trineivthenightmareprince": {
    "appid": 690640,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2824,7 +2823,7 @@
   },
   "ultimatemarvelvscapcomiii": {
    "appid": 357190,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Luta",
@@ -2838,7 +2837,7 @@
   },
   "unboundworldsapart": {
    "appid": 814680,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Indie",
@@ -2855,7 +2854,7 @@
   },
   "unchartedivathiefsend": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro",
@@ -2870,7 +2869,7 @@
   },
   "valheim": {
    "appid": 892970,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Sobrevivência",
@@ -2885,7 +2884,7 @@
   },
   "valorant": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Tiro"
@@ -2897,7 +2896,7 @@
   },
   "wallpaperengine": {
    "appid": 431960,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Indie",
@@ -2910,7 +2909,7 @@
   },
   "webbed": {
    "appid": 1390350,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Plataforma",
@@ -2927,7 +2926,7 @@
   },
   "witcheriiiwildhunt": {
    "appid": 292030,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Mundo aberto",
@@ -2943,7 +2942,7 @@
   },
   "witcheriiiwildhuntremastered": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "RPG",
@@ -2956,7 +2955,7 @@
   },
   "wizardoflegend": {
    "appid": 445980,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Roguelike",
@@ -2973,7 +2972,7 @@
   },
   "zeldaocarinaoftime": {
    "appid": null,
-   "em": 1794972713,
+   "em": 1795577965,
    "emBreve": false,
    "estilos": [
     "Aventura",
