@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795558211446,
+ "atualizadoEm": 1795570215428,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,93 @@
   }
  ],
  "itens": [
+  {
+   "title": "Mario Kart World Has Been Updated To Version 1.9.0, Here Are The Full Patch Notes",
+   "url": "https://www.nintendolife.com/news/2026/11/mario-kart-world-has-been-updated-to-version-1-9-0-here-are-the-full-patch-notes",
+   "summary": "Knockout Tour updates, adjustments, fixes and more. Nintendo has rolled out a new update for its Switch 2 exclusive Mario Kart World this week. It bumps the title up to Version…",
+   "img": "https://images.nintendolife.com/09611fbabd149/large.jpg",
+   "at": 1795568700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Go To Hell In GTA 6 (And Get A Permanent Health Boost)",
+   "url": "https://www.gamespot.com/videos/go-to-hell-in-gta-6-and-get-a-permanent-health-boost/",
+   "summary": "A quick trip to hell Grand Theft Auto VI has more perks than you might think. Here’s how to trigger one of the more elaborate encounters in Rockstar’s open world game.",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTAVI_GoToHell_20261124_v3.jpg?w=300",
+   "at": 1795568400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Série A Tale of the Secret Saint ultrapassa 5 milhões de cópias em circulação",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/a-tale-of-the-secret-saint-5-milhoes-copias-circulacao",
+   "summary": "O anime produzido pelo estúdio FelixFilm já está disponível na Crunchyroll",
+   "img": "https://a.storyblok.com/f/178900/960x540/6c98a23ca7/a-tale-of-the-secret-saint-5-million-copies.jpg",
+   "at": 1795566900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Magical Girl Raising Project restart ‒ Episode 8",
+   "url": "https://www.animenewsnetwork.com/review/magical-girl-raising-project-restart/episode-8/.244146",
+   "summary": "There's just one problem: Detec Bell isn't actually a very good detective. She's not even the best detective in the death game.",
+   "img": "",
+   "at": 1795566600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Anime Jimoto no Ijimekko-tachi ni Shikaeshi Shiyoto Shitara, Betsu no Tatakai ga Hajimatta revela elenco principal em seu primeiro trailer",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/jimoto-no-ijimekko-tachi-anime-elenco-principal-primeiro-trailer",
+   "summary": "A série de anime tem estreia prevista para 2027",
+   "img": "https://a.storyblok.com/f/178900/1920x1076/480d12dfda/jimoto-no-ijimekko-tachi-ni-shikaeshi-shiyoto-shitara-betsu-no-tatakai-ga-hajimatta-anime-teaser-trailer.png",
+   "at": 1795565100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime PSYREN anuncia seis novos nomes para o elenco",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/psyren-anime-anuncia-seis-novos-nomes-elenco",
+   "summary": "A série de ação e suspense está disponível na Crunchyroll",
+   "img": "https://a.storyblok.com/f/178900/960x540/40cafe3e83/psyren-new-cast-members.jpg",
+   "at": 1795564500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "A Certain Dark Item ‒ Episode 7",
+   "url": "https://www.animenewsnetwork.com/review/a-certain-dark-item/episode-7/.244147",
+   "summary": "Kaede acts as a dark mirror to Mugino.",
+   "img": "",
+   "at": 1795563000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jogos da Rockstar em oferta na Steam com até 75% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-rockstar-em-oferta-na-steam-com-ate-75-de-desconto/",
+   "summary": "Confira os principais jogos distribuídos pela Xbox disponíveis com desconto nesta oferta por tempo limitado na Steam",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/03/red-dead-redemption-2-640x400.webp",
+   "at": 1795560230000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Devils' Crest ‒ Episode 4",
+   "url": "https://www.animenewsnetwork.com/review/devils-crest/episode-4/.244145",
+   "summary": "Lord of the Flies anyone?",
+   "img": "",
+   "at": 1795559400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "‘Smoking Behind the Supermarket with You’ deve ser publicado pela JBC",
+   "url": "https://www.jbox.com.br/2026/11/24/smoking-behind-the-supermarket-with-you-deve-ser-publicado-pela-jbc/",
+   "summary": "Mangá ganhou registro no ISBN, mas ainda não foi anunciado oficialmente pela editora.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Smoking-Behind-the-Supermarket-with-You-destacada.jpg?ssl=1",
+   "at": 1795558692000,
+   "cat": "geek",
+   "source": "JBox"
+  },
   {
    "title": "Salto de The Witcher 3 para The Witcher 4 será comparável ao de GTA 5 para o 6, diz CD Projekt Red",
    "url": "https://br.ign.com/grand-theft-auto-vi/157923/salto-de-the-witcher-3-para-the-witcher-4-sera-comparavel-ao-de-gta-5-para-o-6-diz-cd-projekt-red",
@@ -293,7 +380,7 @@
   {
    "title": "O Senhor dos Anéis: Os Anéis de Poder é renovado para 4ª temporada",
    "url": "https://br.ign.com/senhor-dos-aneis-serie/157913/o-senhor-dos-aneis-os-aneis-de-poder-e-renovado-para-4a-temporada",
-   "summary": "Episódios 7 e 8 chegaram hoje ao Prime Video O Senhor dos Anéis: Os Anéis de Poder acaba de ser renovado para a 4ª temporada após os dois episódios finais chegarem ao Prime Video.…",
+   "summary": "Episódios 7 e 8 chegam hoje ao Prime Video O Senhor dos Anéis: Os Anéis de Poder acaba de ser renovado para a 4ª temporada pouco antes dos dois episódios finais chegarem ao Prime…",
    "img": "https://sm.ign.com/ign_br/screenshot/default/1-20261124-153034-0000_qwhs.jpg",
    "at": 1795545307000,
    "source": "IGN Brasil"
@@ -502,14 +589,6 @@
    "at": 1795534963000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "GTA 6 Has A Secret Mission That Feels Like Hard Target Meets Saw",
-   "url": "https://www.gamespot.com/articles/gta-6-has-a-secret-mission-that-feels-like-hard-target-meets-saw/",
-   "summary": "In the mood for a little bloodsport? In GTA 6 , you can teach one loud-mouthed hunter that Lucia (or Jason) is the deadliest game, as this secret mission will require cunning and…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-Lucia.jpg?w=300",
-   "at": 1795534383000,
-   "source": "GameSpot"
   },
   {
    "title": "2ª temporada de Twisted-Wonderland: A Série ganha trailer com prévia do tema de encerramento",
@@ -865,22 +944,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "ICYMI: Here's Another Look At The Zelda: Ocarina Of Time amiibo For Switch 2",
-   "url": "https://www.nintendolife.com/news/2026/11/icymi-heres-another-look-at-the-zelda-ocarina-of-time-amiibo-for-switch-2",
-   "summary": "Releasing in 2027. In September, Nintendo revealed it would be releasing two new amiibo in 2027 based on characters from the Zelda: Ocarina of Time Switch 2 remake. Read the full…",
-   "img": "https://images.nintendolife.com/c669eb5359e85/large.jpg",
-   "at": 1795498500000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Pikmin 4 Switch 2 Edition + Dandori Academy X Tetris 99 Event Announced, Unlock A Special Theme",
-   "url": "https://www.nintendolife.com/news/2026/11/pikmin-4-switch-2-edition-plus-dandori-academy-x-tetris-99-event-announced-unlock-a-special-theme",
-   "summary": "Dropping later this week. Nintendo has announced a Pikmin 4 Switch 2 Edition + Dandori Academy crossover for its addictive online battle royale game Tetris 99 . It's taking place…",
-   "img": "https://images.nintendolife.com/03f8d03ac15d5/large.jpg",
-   "at": 1795493100000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Getbackers Voice Comic Staff Apologizes for Generative AI Use in PR Video",
    "url": "https://www.animenewsnetwork.com/news/2026-11-23/getbackers-voice-comic-staff-apologizes-for-generative-ai-use-in-pr-video/.244140",
    "summary": "Staff: Voice comic itself does not use generative AI",
@@ -962,15 +1025,6 @@
    "source": "AnimeNew"
   },
   {
-   "title": "#I'm Looking For a Zombie ‒ Episode 7",
-   "url": "https://www.animenewsnetwork.com/review/im-looking-for-a-zombie/episode-7/.244136",
-   "summary": "This whole mini-arc was nothing but setup, with barely any payoff.",
-   "img": "",
-   "at": 1795480200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Anime de Firefly Wedding apresenta Kotaro Ogawa em novo trailer de personagem",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/firefly-wedding-kotaro-ogawa-novo-trailer-personagem",
    "summary": "A adaptação do mangá de romance histórico de Oreco Tachibana está em simulcast aqui na Crunchyroll",
@@ -987,24 +1041,6 @@
    "at": 1795476900000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Firefly Wedding ‒ Episode 7",
-   "url": "https://www.animenewsnetwork.com/review/firefly-wedding/episode-7/.244135",
-   "summary": "Our boy Shinpei is just as much a prisoner as Satoko is.",
-   "img": "",
-   "at": 1795476600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Blue Box Season 2 ‒ Episode 7",
-   "url": "https://www.animenewsnetwork.com/review/blue-box-season-2/episode-7/.244120",
-   "summary": "Blue Box is finally paying off all those romantic promises made in that very first episode, and it's come with interest to spare, ensuring all accounts are settled in full.",
-   "img": "",
-   "at": 1795473000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Continuação do anime de SHIBOYUGI: Jogos Mortais para Colocar Comida na Mesa é confirmada",
@@ -1151,15 +1187,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "The One. Later On… tem anime anunciado para 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/22/the-one-later-on-anime-anuncio-2027",
-   "summary": "Série de light novels original já está finalizada.",
-   "img": "https://a.storyblok.com/f/178900/1280x720/a00167a4aa/the-one-later-on-header.jpg",
-   "at": 1795355220000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia",
    "url": "https://www.intoxianime.com/2026/11/classroom-of-the-elite-5o-temporada-ganha-teaser-visual-e-janela-de-estreia/",
    "summary": "... O post Classroom of the Elite – 5º temporada ganha teaser, visual e janela de estreia apareceu primeiro em IntoxiAnime .",
@@ -1187,24 +1214,6 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Witch on the Holy Night - O Filme revela sua 3ª arte promocional e comercial para TV",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/witch-on-the-holy-night-o-filme-arte-3-comercial-tv",
-   "summary": "O filme em anime estreou ontem nos cinemas japoneses",
-   "img": "https://a.storyblok.com/f/178900/960x544/91c8487e12/witch_on_the_holy_night_header3.jpg",
-   "at": 1795289100000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Please Put Them On, Takamine-san! chega ao fim em janeiro",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/21/please-put-them-on-takamine-san-manga-final-janeiro",
-   "summary": "Obra está em publicação desde 2019.",
-   "img": "https://a.storyblok.com/f/178900/1280x720/20432ccc60/please-put-them-on-takamine-san-opening-hero.png",
-   "at": 1795277580000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "Filme live-action de ‘Mashle: Magia e Músculos’ ganha pôster com Mash comendo um choux cream",
    "url": "https://www.jbox.com.br/2026/11/20/filme-live-action-de-mashle-magia-e-musculos-ganha-poster-com-mash-comendo-um-choux-cream/",
    "summary": "Produção estrelada por Mackenyu estreia em março de 2027.",
@@ -1228,15 +1237,6 @@
    "summary": "Quatro personagens chegam através da colaboração, contando com visuais limitados especialmente para o jogo.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/frieren-mahjong-soul-destacada.jpg?ssl=1",
    "at": 1795121718000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Novo trailer de ‘Sakamoto Days’ revela música de abertura e confirma data de estreia da 2ª temporada",
-   "url": "https://www.jbox.com.br/2026/11/18/novo-trailer-de-sakamoto-days-revela-musica-de-abertura-e-confirma-data-de-estreia-da-2a-temporada/",
-   "summary": "Animê também revelou mais nomes no elenco de vozes.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Sakamoto-Days-segunda-temporada-destacada.jpg?ssl=1",
-   "at": 1795044160000,
    "cat": "geek",
    "source": "JBox"
   },
