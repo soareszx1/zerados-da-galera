@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795678570396,
+ "atualizadoEm": 1795688535603,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -78,6 +78,63 @@
   }
  ],
  "itens": [
+  {
+   "title": "Ubisoft Employees Reportedly Need To Justify Not Using AI When Pitching Projects",
+   "url": "https://www.nintendolife.com/news/2026/11/ubisoft-employees-reportedly-need-to-justify-not-using-ai-when-pitching-projects",
+   "summary": "You WILL use it, minions! A new report from Vertical Slice reveals that Ubisoft is now requesting that its internal teams explain how they intend to utilise generative AI to…",
+   "img": "https://images.nintendolife.com/55b2dec277125/large.jpg",
+   "at": 1795688100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Sony confirma jogos mensais do PS Plus de dezembro de 2026; confira a lista completa",
+   "url": "https://br.ign.com/playstation-plus-1/157970/sony-confirma-jogos-mensais-do-ps-plus-de-dezembro-de-2026-confira-a-lista-completa",
+   "summary": "Os títulos estarão disponíveis para download de 1º de dezembro até 4 de janeiro",
+   "img": "https://sm.ign.com/ign_br/news/s/sony-confi/sony-confirms-playstation-plus-monthly-games-for-december-20_v8nx.jpg",
+   "at": 1795687379000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Todas as equipes que veremos em Vingadores: Doutor Destino",
+   "url": "https://br.ign.com/avengers-doomsday/157955/todas-as-equipes-que-veremos-em-vingadores-doutor-destino",
+   "summary": "Reúnam-se! Várias vezes... Um elenco muito recheado estará no novo Avengers, confira quem participará do filme que estreia em 16 de dezembro.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_bup3.jpg",
+   "at": 1795687228000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
+   "url": "https://www.eurogamer.net/playstation-5-xbox-series-s-x-console-hardware-sales-gta-6",
+   "summary": "Despite the far higher prices of PlayStation and Xbox consoles today compared to their launch, or even the same period last year, both brands of console saw a significant boost in…",
+   "img": "https://assetsio.gnwcdn.com/gta-6-lucia-duffle-bag-low-angle-1.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795686010000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Final do Capítulo 1 de GTA 6: veja a lista do que fazer antes da última missão para não deixar nada para trás",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157953/final-do-capitulo-1-de-gta-6-veja-a-lista-do-que-fazer-antes-da-ultima-missao-para-nao-deixar-nada-p",
+   "summary": "Dicas para se preparar para o primeiro ponto sem retorno do jogo Neste guia, veremos qual é essa famosa missão final do primeiro capítulo e o que você precisa fazer antes de…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_vbgz.jpg",
+   "at": 1795683644000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos de Luta para PlayStation em oferta na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-luta-para-playstation-em-oferta-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/marvel-tokon-fighting-souls-game-640x400.webp",
+   "at": 1795683600000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "1st Witch on the Holy Night Film Opens at #2",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/1st-witch-on-the-holy-night-film-opens-at-no.2/.244181",
+   "summary": "Godzilla Minus Zero stays at #1 in 3rd weekend",
+   "img": "",
+   "at": 1795677685000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Japan's Gundam Base Stores Toughen ID Verification for Buyers",
    "url": "https://www.animenewsnetwork.com/interest/2026-11-25/japan-gundam-base-stores-toughen-id-verification-for-buyers/.244190",
@@ -759,14 +816,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Estrelado pelo ator de IT: A Coisa, um dos melhores filmes de guerra de 2026 chegou à Netflix",
-   "url": "https://br.ign.com/netflix/157944/estrelado-pelo-ator-de-it-a-coisa-um-dos-melhores-filmes-de-guerra-de-2026-chegou-a-netflix",
-   "summary": "\"Este é, em grande parte, um filme baseado na realidade\"",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/blob_k11j.png",
-   "at": 1795619324000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Logitech G515 LIGHTSPEED com 38% de desconto: teclado gamer mecânico sem fio ultrafino",
    "url": "https://www.hardware.com.br/hardware-indica/logitech-g515-lightspeed-com-40-de-desconto-teclado-gamer-mecanico-sem-fio-ultrafino/",
    "summary": "Logitech G515 LIGHTSPEED com 38% de desconto. Teclado mecânico slim, sem fio e com até 36h de bateria.",
@@ -781,22 +830,6 @@
    "img": "",
    "at": 1795618803000,
    "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Lançamento oficial do Path of Exile 2: como se preparar",
-   "url": "https://br.ign.com/descontos/157940/lancamento-oficial-do-path-of-exile-2-como-se-preparar",
-   "summary": "O lançamento oficial do Path of Exile 2 está marcado para dezembro. Confira as novas classes, onde baixar o jogo e como se preparar.",
-   "img": "https://sm.ign.com/ign_br/news/p/path-of-ex/path-of-exile-2-release-date-sets-10-launch-in-december-2026_csh9.jpg",
-   "at": 1795618642000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Número de jogadores de Call of Duty caiu mais de 40% após lançamento de GTA 6, segundo analistas",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157938/numero-de-jogadores-de-call-of-duty-caiu-mais-de-40-apos-lancamento-de-gta-6-segundo-analistas",
-   "summary": "Grande impacto",
-   "img": "https://sm.ign.com/ign_br/news/c/call-of-du/call-of-dutys-player-count-dropped-by-over-40-following-gta_sbd6.jpg",
-   "at": 1795618498000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Yooka-Laylee And The Impossible Lair Is Getting A Definitive Edition On Switch 2",
@@ -837,15 +870,6 @@
    "img": "https://images.nintendolife.com/d13caead8eb4a/large.jpg",
    "at": 1795615200000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Dragon And Chameleon Is A Series Born From Unwavering Commitment",
-   "url": "https://www.animenewsnetwork.com/feature/2026-11-25/dragon-and-chameleon-is-a-series-born-from-unwavering-commitment/.242930",
-   "summary": "It's clear there is a lot of passion and dedication for this series, not just from the author, but from everyone involved in helping bring it to as many people as possible.",
-   "img": "",
-   "at": 1795615200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Blizzard is making a lot of the Diablo 4's event-specific Diablo 2 anniversary content permanent because everyone loved it in Season 15",
@@ -972,30 +996,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/22-jensen-voltando-a-nvidia-640x400.jpg",
    "at": 1795609762000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Driver problemático da NVIDIA pode desgastar SSDs e reduzir o desempenho em jogos",
-   "url": "https://www.hardware.com.br/tecnologia/driver-nvidia-desempenho-jogos-cod/",
-   "summary": "Benchmark de Call of Duty: Modern Warfare 4 registra perda de aproximadamente 20 FPS",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Driver-problematico-da-NVIDIA-pode-desgastar-SSDs-e-reduzir-o-desempenho-em-jogos.jpg",
-   "at": 1795609563000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Lords of the Fallen 2 é adiado novamente e só chega em abril de 2027",
-   "url": "https://www.adrenaline.com.br/games/lords-of-the-fallen-2-e-adiado-novamente-e-so-chega-em-abril-de-2027/",
-   "summary": "A CI Games promete revelar a data de estreia de Lords of the Fallen 2 em dezembro deste ano",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Lords-Fallen-2-Abril-2027-640x400.jpg",
-   "at": 1795608496000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "CD Projekt Red signs new marketing partnership deal with Sony for The Witcher 4, and to increase \"the presence\" of its games on PlayStation",
-   "url": "https://www.eurogamer.net/cd-projekt-red-signs-new-marketing-partnership-deal-with-sony-for-the-witcher-4-and-to-increase-the-presence-of-its-games-on-playstation",
-   "summary": "As part of The Witcher and Cyberpunk studio CD Projekt Red's recent Q3 earnings report, the developer offered some updates on upcoming game The Witcher 4 . Read more",
-   "img": "https://assetsio.gnwcdn.com/Ciri-in-The-Witcher-4.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795608260000,
-   "source": "Eurogamer"
   },
   {
    "title": "Anime de The Kept Man of the Princess Knight ganha data de estreia em novo trailer",
