@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795656590298,
+ "atualizadoEm": 1795666579211,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,94 @@
  ],
  "itens": [
   {
+   "title": "\"No One Gets Left Behind\" - CDPR On The Witcher 4 Releasing On All Platforms At The Same Time",
+   "url": "https://www.nintendolife.com/news/2026/11/no-one-gets-left-behind-cdpr-on-the-witcher-4-releasing-on-all-platforms-at-the-same-time",
+   "summary": "\"Switch 2 is clearly getting left behind\". This week, CD Projekt Red and Sony announced an exclusive marketing deal for Ciri's upcoming title, The Witcher 4 . It's raised some…",
+   "img": "https://images.nintendolife.com/27449059c43b8/large.jpg",
+   "at": 1795664100000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Under Ninja Manga Goes on 4-Week Hiatus",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/under-ninja-manga-goes-on-4-week-hiatus/.244180",
+   "summary": "Manga resumes serialization on December 28",
+   "img": "",
+   "at": 1795663689000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Exoprimal Game Ends Service in September 2027",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/exoprimal-game-ends-service-in-september-2027/.244201",
+   "summary": "Game to be delisted after March 30",
+   "img": "",
+   "at": 1795663159000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Melty Blood:Twi-Lumina 2D Fighter Game's New Trailer Confirms Crossplay",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/melty-blood-twi-lumina-2d-fighter-game-new-trailer-confirms-crossplay/.244202",
+   "summary": "Game launches for PS5, PS4, Switch 2, Switch, Xbox One, PC on April 22",
+   "img": "",
+   "at": 1795662578000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Bandai Card Games Launches Digimon Alysion Game",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/bandai-card-games-launches-digimon-alysion-game/.244210",
+   "summary": "Free-to-play smartphone card game announced in March 2025",
+   "img": "",
+   "at": 1795661860000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nobunaga's Ambition Series Gets New Game Next March",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/nobunaga-ambition-series-gets-new-game-next-march/.244203",
+   "summary": "Hishou launches with series' 1st story mode for PS5, Switch 2, Windows via Steam",
+   "img": "",
+   "at": 1795661590000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Sentimental Graffiti Remake Game Listed on March 25",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/sentimental-graffiti-remake-game-listed-on-march-25/.244207",
+   "summary": "Game launches on PS5, Switch",
+   "img": "",
+   "at": 1795660924000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Video: Xenoblade Chronicles 3 - Switch 2 Edition Overview Trailer Showcases New Features & Enhancements",
+   "url": "https://www.nintendolife.com/news/2026/11/video-xenoblade-chronicles-3-switch-2-edition-overview-trailer-showcases-new-features-and-enhancements",
+   "summary": "Here's what you can expect from this upgrade. Following a game update last week, preparing for the release of Xenoblade Chronicles 3 - Switch 2 Edition , Nintendo has now released…",
+   "img": "https://images.nintendolife.com/28643afe09182/large.jpg",
+   "at": 1795658700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Anime Fool Night divulga vídeo de abertura sem créditos",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/fool-night-anime-video-abertura-sem-creditos",
+   "summary": "Shingo Yamashita dirige o vídeo de abertura da série",
+   "img": "https://a.storyblok.com/f/178900/1280x720/c75d134f08/fool-night-op-hero.png",
+   "at": 1795658100000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Anime Haru to Gen revela música-tema em novo teaser",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/haru-to-gen-anime-musica-tema-novo-teaser",
+   "summary": "A adaptação do mangá de Yuka Oshima estreia em 4 de janeiro",
+   "img": "https://a.storyblok.com/f/178900/960x539/fa8d6f84d3/haru_to_gen_header3.jpg",
+   "at": 1795657500000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
    "title": "At 25:00 in Akasaka tem adaptação em anime anunciada para 2027",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/at-2500-in-akasaka-adaptacao-anime-2027",
    "summary": "Os membros principais do elenco também foram revelados",
@@ -88,20 +176,29 @@
    "source": "Crunchyroll Notícias"
   },
   {
+   "title": "Live-Action 'The Long Summer of August 31' Series Trailer Unveils Cast, Staff, Disney+ Streaming, January 8 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/live-action-the-long-summer-of-august-31-series-trailer-unveils-cast-staff-disney-streaming-january-/.244206",
+   "summary": "Ryūga Satō, Runa Takashima star in series",
+   "img": "",
+   "at": 1795656219000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "The Legend Of Zelda: Ocarina Of Time Switch 2 Updated (Version 1.1.2), Here Are The Patch Notes",
+   "url": "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
+   "summary": "It resolves multiple bugs. The Legend of Zelda: Ocarina of Time for the Switch 2 has today received its second game update, bumping the title up to Version 1.1.2 . Here are the…",
+   "img": "https://images.nintendolife.com/dc7b1435d1646/large.jpg",
+   "at": 1795655700000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "Mario, Pikachu, And Other Gaming Icon Balloons Won’t Be Flying This Thanksgiving",
    "url": "https://www.gamespot.com/articles/mario-pikachu-and-other-gaming-icon-balloons-wont-be-flying-this-thanksgiving/",
    "summary": "New York City is no stranger to bad weather, be it blazing-hot summers, snow-packed winters, or fierce windstorms. Unfortunately for countless families who have made it a holiday…",
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GettyImages-2248749755.jpg?w=300",
    "at": 1795655139000,
    "source": "GameSpot"
-  },
-  {
-   "title": "Video: Xenoblade Chronicles 3 - Switch 2 Edition Overview Trailer Showcases New Features & Enhancements",
-   "url": "https://www.nintendolife.com/news/2026/11/video-xenoblade-chronicles-3-switch-2-edition-overview-trailer-showcases-new-features-and-enhancements",
-   "summary": "Here's what you can expect from this upgrade. Following a game update last week, preparing for the release of Xenoblade Chronicles 3 - Switch 2 Edition , Nintendo has now released…",
-   "img": "https://images.nintendolife.com/28643afe09182/large.jpg",
-   "at": 1795655100000,
-   "source": "Nintendo Life"
   },
   {
    "title": "BUCK∞TICK divulga videoclipe da música de abertura de DARK MACHINE THE ANIMATION",
@@ -129,8 +226,8 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Precure Franchise Announces FUNtastic Precure! Anime",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/precure-franchise-announces-funtastic-precure-anime/.244204",
+   "title": "Precure Franchise Announces FUNtasic Precure! Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/precure-franchise-announces-funtasic-precure-anime/.244204",
    "summary": "New anime marks 24th main entry in magical girl franchise",
    "img": "",
    "at": 1795652913000,
@@ -865,22 +962,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "The Witcher 4 terá salto tecnológico comparável ao de GTA 5 para GTA 6, acredita CD Projekt",
-   "url": "https://www.hardware.com.br/games/the-witcher-4-tera-salto-tecnologico/",
-   "summary": "Estúdio promete melhorias em praticamente todos os aspectos do RPG, que segue previsto para 2028 e conta com mais de 500 desenvolvedores",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/The-Witcher-4-tera-salto-tecnologico-comparavel-ao-de-GTA-5-para-GTA-6-acredita-CD-Projekt.jpg",
-   "at": 1795607490000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "GTA 6 roda melhor no Xbox Series X do que no PS5 base, aponta Digital Foundry",
-   "url": "https://www.hardware.com.br/games/gta-6-roda-melhor-no-xbox-series-x/",
-   "summary": "Análise técnica revela que o console da Microsoft apresenta menos quedas de FPS e oferece uma experiência mais fluida",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Rockstar-admite-que-criar-missoes-mais-livres-em-GTA-6-foi-dificil-mas-garante-que-valeu-a-pena.jpg",
-   "at": 1795606083000,
-   "source": "Hardware.com.br"
-  },
-  {
    "title": "'At 25:00, in Akasaka' Boys-Love Manga Gets TV Anime in 2027",
    "url": "https://www.animenewsnetwork.com/news/2026-11-25/at-25-00-in-akasaka-boys-love-manga-gets-tv-anime-in-2027/.244187",
    "summary": "Sōma Saitō, Takuya Satō star in anime of Hiroko Natsuno's manga",
@@ -931,69 +1012,6 @@
    "summary": "Ado performs anime's opening theme \"Bibayatarametta\"",
    "img": "",
    "at": 1795597200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "The Kept Man of the Princess Knight Anime's New Video Reveals More Cast, Ending Song, January 3 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/the-kept-man-of-the-princess-knight-anime-new-video-reveals-more-cast-ending-song-january-3-debut/.244177",
-   "summary": "Yūya Hirose, Manaka Iwami, Shion Wakayama, Saori Ōnishi join anime's cast",
-   "img": "",
-   "at": 1795593600000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Historie Anime's Video Unveils More Cast & Staff, Theme Songs, January 8 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/historie-anime-video-unveils-more-cast-and-staff-theme-songs-january-8-debut/.244173",
-   "summary": "Fumihiko Tachiki, Akira Sekine, Toshiki Masuda, Ryōta Takeuchi, Seiichirō Yamashita join cast",
-   "img": "",
-   "at": 1795579733000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "'Haru to Gen ~70-sai, Hajimete Kosodate~' Anime's Teaser Reveals More Cast, Ending Song",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/haru-to-gen-~70-sai-hajimete-kosodate~-anime-teaser-reveals-more-cast-ending-song/.244149",
-   "summary": "Jin Urayama, HItomi Shogawa, Nao Shiraki, Akiko Seri join cast with music by Kuricorder Quartet",
-   "img": "",
-   "at": 1795576373000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Live-Action 10 Things I Want to Do Before I Turn 40 Film's Trailer Reveals Theme Song",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/live-action-10-things-i-want-to-do-before-i-turn-40-film-trailer-reveals-theme-song/.244169",
-   "summary": "sumika performs theme song \"Taisetsu\" for January 22 film",
-   "img": "",
-   "at": 1795572272000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Frieren: Beyond Journey's End Manga Gets Spinoff Manga Mini-Series",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/frieren-beyond-journey-end-manga-gets-spinoff-manga-mini-series/.244165",
-   "summary": "Sōsō no Frieren: Betsutan launches on December 2",
-   "img": "",
-   "at": 1795571433000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Live-Action 2027 Kaiji Film Unveils Full Trailer, Poster, More Cast",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/live-action-2027-kaiji-film-unveils-full-trailer-poster-more-cast/.244168",
-   "summary": "Katsuhisa Namase, Ken Mitsuishi, Yusuke Onuki, more join cast of January 29 film",
-   "img": "",
-   "at": 1795569900000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Mitei Hattori's Smile! Manga Gets Live-Action Series With Global Release Plans",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/mitei-hattori-smile-manga-gets-live-action-series-with-global-release-plans/.244167",
-   "summary": "Suzuki=Bakudan's Akira Nagai, Ryohei Kumamoto helm psychological suspense story",
-   "img": "",
-   "at": 1795568104000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -1075,24 +1093,6 @@
    "summary": "A série de fantasia irá estrear em abril de 2027",
    "img": "https://a.storyblok.com/f/178900/1460x821/3b8b8cd152/shozen-hero.png",
    "at": 1795544880000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "2ª temporada de Twisted-Wonderland: A Série ganha trailer com prévia do tema de encerramento",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/disney-twisted-wonderland-the-animation-season-2-episode-of-savanaclaw-anime-payoff-trailer",
-   "summary": "O anime retorna no dia 23 de dezembro.",
-   "img": "https://a.storyblok.com/f/178900/1460x821/8f6aa803ab/disney-twisted-wonderland-the-animation-season-2.jpg",
-   "at": 1795533420000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "3ª temporada de As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World ganha prévia do Arco do Assassino em novo trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/anime-as-a-reincarnated-aristocrat-temporada-3-arco-do-assassino-trailer-elenco",
-   "summary": "Três adições ao elenco de voz também foram anunciadas",
-   "img": "https://a.storyblok.com/f/178900/1460x821/eed642364c/reincarnated-aristocrat-assassin-arc-hero.png",
-   "at": 1795533000000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
