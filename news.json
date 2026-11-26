@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795666579211,
+ "atualizadoEm": 1795678570396,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,8 +79,52 @@
  ],
  "itens": [
   {
-   "title": "\"No One Gets Left Behind\" - CDPR On The Witcher 4 Releasing On All Platforms At The Same Time",
-   "url": "https://www.nintendolife.com/news/2026/11/no-one-gets-left-behind-cdpr-on-the-witcher-4-releasing-on-all-platforms-at-the-same-time",
+   "title": "Japan's Gundam Base Stores Toughen ID Verification for Buyers",
+   "url": "https://www.animenewsnetwork.com/interest/2026-11-25/japan-gundam-base-stores-toughen-id-verification-for-buyers/.244190",
+   "summary": "Stores now only accept passport or Japan's My Number Card as ID",
+   "img": "",
+   "at": 1795669140000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Mouse P.I. For Hire Teases DLC Announcement, Taking Place Next Week",
+   "url": "https://www.nintendolife.com/news/2026/11/mouse-p-i-for-hire-teases-dlc-announcement-taking-place-next-week",
+   "summary": "The investigation continues. A lot of developers have decided to tease announcements in the lead up to certain end-of-year events and celebrations, and the latest one comes from…",
+   "img": "https://images.nintendolife.com/9b33a6258997f/large.jpg",
+   "at": 1795665900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Live-Action 'Kekkon Shimashō, Koi Suru Mae ni' Series Reveals Cast, Theme Song Artists, January 2027 Streaming Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/live-action-kekkon-shimasho-koi-suru-mae-ni-series-reveals-cast-theme-song-artists-january-2027-/.244170",
+   "summary": "Former Nogizaka46 idol Tamami Sakaguchi, Genin wa Jibun ni Aru's Jun Mutō star in shorts with song by YU's",
+   "img": "",
+   "at": 1795665885000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Nioh 3 Game Streams First Look Trailer for New DLC",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/nioh-3-game-streams-first-look-trailer-for-new-dlc/.244166",
+   "summary": "Bloody Insurrection DLC Vol. 2 launches on December 17",
+   "img": "",
+   "at": 1795665011000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Live-Action High School Family: Kokosei Kazoku Film Gets Spinoff Shorts",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-25/live-action-high-school-family-kokosei-kazoku-film-gets-spinoff-shorts/.244171",
+   "summary": "11 short episodes stream in lead-up to film's January opening",
+   "img": "",
+   "at": 1795664781000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "\"No One Gets Left Behind\" - CDPR On The Witcher 4 Releasing For All Platforms At The Same Time",
+   "url": "https://www.nintendolife.com/news/2026/11/no-one-gets-left-behind-cdpr-on-the-witcher-4-releasing-for-all-platforms-at-the-same-time",
    "summary": "\"Switch 2 is clearly getting left behind\". This week, CD Projekt Red and Sony announced an exclusive marketing deal for Ciri's upcoming title, The Witcher 4 . It's raised some…",
    "img": "https://images.nintendolife.com/27449059c43b8/large.jpg",
    "at": 1795664100000,
@@ -144,7 +188,7 @@
    "title": "Video: Xenoblade Chronicles 3 - Switch 2 Edition Overview Trailer Showcases New Features & Enhancements",
    "url": "https://www.nintendolife.com/news/2026/11/video-xenoblade-chronicles-3-switch-2-edition-overview-trailer-showcases-new-features-and-enhancements",
    "summary": "Here's what you can expect from this upgrade. Following a game update last week, preparing for the release of Xenoblade Chronicles 3 - Switch 2 Edition , Nintendo has now released…",
-   "img": "https://images.nintendolife.com/28643afe09182/large.jpg",
+   "img": "https://images.nintendolife.com/969f77044296e/large.jpg",
    "at": 1795658700000,
    "source": "Nintendo Life"
   },
@@ -954,23 +998,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Ho-Ho-Holy Moly, Nintendo's Winter Range Is Awesome",
-   "url": "https://www.nintendolife.com/news/2026/11/ho-ho-holy-moly-nintendos-winter-range-is-awesome",
-   "summary": "Exclusive to Japan, for now. Nintendo has unleashed its Winter merch range in Japan, and we're super jealous. Hopefully it make its way over to western shores, because there's…",
-   "img": "https://images.nintendolife.com/4a5bf646eca33/large.jpg",
-   "at": 1795608000000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "'At 25:00, in Akasaka' Boys-Love Manga Gets TV Anime in 2027",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/at-25-00-in-akasaka-boys-love-manga-gets-tv-anime-in-2027/.244187",
-   "summary": "Sōma Saitō, Takuya Satō star in anime of Hiroko Natsuno's manga",
-   "img": "",
-   "at": 1795605476000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Anime de The Kept Man of the Princess Knight ganha data de estreia em novo trailer",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/the-kept-man-of-the-princess-knight-anime-trailer-data-3-janeiro-2027",
    "summary": "Série estreia no dia 3 de janeiro de 2027.",
@@ -987,33 +1014,6 @@
    "at": 1795603980000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "'Now That We Draw' Anime's New Video Unveils More Cast, Ending Song Artist, January 8 Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/now-that-we-draw-anime-new-video-unveils-more-cast-ending-song-artist-january-8-debut/.244186",
-   "summary": "Hina Yomiya joins cast; Inner Journey perform ending song \"Serifu wa Iranai\"",
-   "img": "",
-   "at": 1795603835000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Migratory Birds & Snail TV Anime Debuts Next Summer",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/migratory-birds-and-snail-tv-anime-debuts-next-summer/.244185",
-   "summary": "Adaptation of Makoto Takatsu's road trip manga announced in 2024",
-   "img": "",
-   "at": 1795599874000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Kindergarten Wars Anime's Video Reveals More Staff, ado's Opening Song, April Debut",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/kindergarten-wars-anime-video-reveals-more-staff-ado-opening-song-april-debut/.244176",
-   "summary": "Ado performs anime's opening theme \"Bibayatarametta\"",
-   "img": "",
-   "at": 1795597200000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Série A Tale of the Secret Saint ultrapassa 5 milhões de cópias em circulação",
