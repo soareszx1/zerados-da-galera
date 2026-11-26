@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795720397361,
+ "atualizadoEm": 1795730800632,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 14
+   "itens": 15
   },
   {
    "nome": "Eurogamer",
@@ -79,6 +79,131 @@
  ],
  "itens": [
   {
+   "title": "Black da Amazon com 62% OFF: Monitor portátil é opção para quem precisa de uma tela extra em viagens e no dia a dia",
+   "url": "https://br.ign.com/descontos/158002/black-da-amazon-com-62-off-monitor-portatil-e-opcao-para-quem-precisa-de-uma-tela-extra-em-viagens-e",
+   "summary": "Tela extra de 15,6 polegadas pode facilitar multitarefas, estudos e jogos sem exigir espaço para um monitor tradicional",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2026-11-26t184344029_qj87.jpg",
+   "at": 1795730321000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Novo anime de Oishinbo ganha trailer especial",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/novo-anime-oishinbo-trailer-especial",
+   "summary": "A série de temática culinária estreia dia 4 de janeiro",
+   "img": "https://a.storyblok.com/f/178900/960x540/f12a029d51/new-oishinbo.jpg",
+   "at": 1795729680000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Ao no Hana Utsuwa no Mori Live-Action Series Gets 2-Episode Spinoff Drama on December 21",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-24/ao-no-hana-utsuwa-no-mori-live-action-series-gets-2-episode-spinoff-drama-on-december-21/.244150",
+   "summary": "Ao no Hana Utsuwa no Mori Spinoff Ano Ko no Kuchibeni features new story, cast members; main series also to end on December 17",
+   "img": "",
+   "at": 1795727700000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "‘Haru to Gen’ tem novo trailer com música de encerramento",
+   "url": "https://www.jbox.com.br/2026/11/26/haru-to-gen-tem-novo-trailer-com-musica-de-encerramento/",
+   "summary": "Comédia de episódios curtos sobre um avô cuidando de sua neta estreia em janeiro.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/haru-to-gen-destacada-1.jpg?ssl=1",
+   "at": 1795727539000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Esquenta Black Friday: Nintendo Switch 2 com EA Sports FC 27 está com quase R$ 1.180 de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/158001/esquenta-black-friday-nintendo-switch-2-com-ea-sports-fc-27-esta-com-quase-r-1180-de-desconto-na-ama",
+   "summary": "Console tem tela de 7,9 polegadas em 1080p, Joy-Con 2 magnéticos e GameChat com microfone embutido",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/nintendo-switch-2-com-ea-sports-fc-27-1_ty7a.jpg",
+   "at": 1795726088000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "EA removes some live service fluff from Skate and ends seasonal structure \"in favour of regular, agile content updates\"",
+   "url": "https://www.eurogamer.net/ea-removes-live-service-skate-seasons",
+   "summary": "EA is ditching seasonal updates and shaving some of the live service fluff off Skate (for some reason stylised as skate.) going forward. Normally, such news would be cause for…",
+   "img": "https://assetsio.gnwcdn.com/skate-header_g4XD29A.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795725320000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Reboot de Fable foi afetado por The Witcher 3, afirma Playground Games",
+   "url": "https://www.adrenaline.com.br/games/reboot-de-fable-foi-afetado-por-the-witcher-3-afirma-playground-games/",
+   "summary": "Fable foi inspirado por The Witcher 3, Assassin’s Creed e outros jogos de mundo aberto modernos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Fable-Reboot-The-Witcher-640x400.jpg",
+   "at": 1795724983000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Historie: Novo trailer divulgado confirma estreia da adaptação em janeiro",
+   "url": "https://www.jbox.com.br/2026/11/26/historie-novo-trailer-divulgado-confirma-estreia-da-adaptacao-em-janeiro/",
+   "summary": "Adaptação do mangá de Hitoshi Iwaaki terá músicas das bandas yorushika e RETRORIRON, enquanto obra se prepara para voltar do hiato.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/historie-destacada.jpg?ssl=1",
+   "at": 1795723269000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "GTA 6 recebeu recursos extras para rodar no Xbox One, afirma Digital Foundry",
+   "url": "https://www.adrenaline.com.br/games/gta-6-recebeu-recursos-extras-para-rodar-no-xbox-one-afirma-digital-foundry/",
+   "summary": "A Microsoft parece ter reforçado sua infraestrutura para garantir que GTA 6 roda bem no Xbox One via streaming",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Recursos-Extras-Xbox-One-640x360.jpeg",
+   "at": 1795722955000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Nintendo confirma presença na CCXP 26: confira jogos e brindes do estande",
+   "url": "https://br.ign.com/nintendo/157998/nintendo-confirma-presenca-na-ccxp-26-confira-jogos-e-brindes-do-estande",
+   "summary": "Evento acontece do dia 3 a 6 de dezembro em São Paulo A Nintendo confirmou presença na CCXP 26, evento que acontecerá no São Paulo Expo, em São Paulo, do dia 3 a 6 de dezembro.…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/n1_pfrd.jpg",
+   "at": 1795722006000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos na Steam em oferta de Black Friday com até 95% de desconto",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-na-steam-em-oferta-de-black-friday-com-ate-95-de-desconto/",
+   "summary": "A Steam iniciou a sua Grande Promoção de Black Friday em sua plataforma trazendo diversos jogos para PC com desconto por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/05/007-First-Light-Gameplay-60-FPS-640x400.jpg",
+   "at": 1795721902000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Valve encerra listas de espera do Steam Machine e alerta para escassez de unidades",
+   "url": "https://www.hardware.com.br/games/valve-encerra-listas-de-espera-do-steam-machine-e-alerta-para-escassez-de-unidades/",
+   "summary": "Aumento sem precedentes nos preços de memória e armazenamento impede a empresa de prever quantos dispositivos conseguirá fabricar.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/02/Steam-Deck-2.jpg",
+   "at": 1795720933000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "The Witcher 3's new patch adds 40 cross-platform mods, fixes plenty of game-breaking bugs and \"various lighting issues\"",
+   "url": "https://www.eurogamer.net/the-witcher-3-patch-40-mods-bugs",
+   "summary": "Developer CD Projekt Red has rolled out a new patch for The Witcher 3: Wild Hunt - Remastered on all platforms, which squashes dozens of bugs and adds 40 cross-platform mods with…",
+   "img": "https://assetsio.gnwcdn.com/geralt-witcher-3-remastered.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795720850000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Live-Action Quiztopia Series Adds 13 Cast Members",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-quiztopia-series-adds-13-cast-members/.244100",
+   "summary": "Series debuts on Netflix on December 17",
+   "img": "",
+   "at": 1795720500000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "XBOX libera 2 jogos para jogar de graça neste fim de semana – veja lista!",
+   "url": "https://www.adrenaline.com.br/games/xbox/xbox-libera-2-jogos-para-jogar-de-graca-neste-fim-de-semana-veja-lista-2/",
+   "summary": "Assinantes XBOX Game Pass Essential, Premium e Ultimate podem aproveitar esses jogos grátis para jogar durante os próximos dias",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Warhammer-40000_-Mechanicus-640x400.webp",
+   "at": 1795720069000,
+   "source": "Adrenaline"
+  },
+  {
    "title": "Toei Animation anuncia sua 24ª série em anime Precure: “FUNtastic Precure!”",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/precure-anime-24-funtasic-precure-toei-animation",
    "summary": "Foi lançado um site teaser com o logo e o slogan da série",
@@ -86,6 +211,14 @@
    "at": 1795719900000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Jogos de PC em oferta na Black Friday Nuuvem com até 95% de desconto + cupom limitado",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-na-black-friday-nuuvem-com-ate-95-de-desconto-cupom-limitado/",
+   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/phantom-blade-zero-640x400.webp",
+   "at": 1795719663000,
+   "source": "Adrenaline"
   },
   {
    "title": "Ubisoft Wants Rayman To Become A Huge, Transmedia Star",
@@ -99,7 +232,7 @@
    "title": "Animê ‘The Kept Man of the Princess Knight’ ganha nova prévia com música de encerramento e mais",
    "url": "https://www.jbox.com.br/2026/11/26/anime-the-kept-man-of-the-princess-knight-ganha-nova-previa-com-musica-de-encerramento-e-mais/",
    "summary": "Produção que adapta a light novel de Toru Shirogane estreia em janeiro.",
-   "img": "",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/The-Kept-Man-of-the-Princess-Knight-destacada-1.jpg?ssl=1",
    "at": 1795719494000,
    "cat": "geek",
    "source": "JBox"
@@ -320,7 +453,7 @@
   },
   {
    "title": "Bread & Fred para PC de graça hoje – resgate agora!",
-   "url": "https://www.adrenaline.com.br/noticias/bread-fred-para-pc-de-graca-hoje-resgate-agora/",
+   "url": "https://www.adrenaline.com.br/games/pc-games/bread-fred-para-pc-de-graca-hoje-resgate-agora/",
    "summary": "Confira os detalhes do novo jogo de graça por tempo limitado na Epic Games Store e resgate-os até o dia 3 de dezembro",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/05/bread-and-fred-game-640x400.jpg",
    "at": 1795708800000,
@@ -614,30 +747,6 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Doutor Destino: 7 curiosidades sobre o antagonista de Vingadores",
-   "url": "https://br.ign.com/avengers-doomsday/157962/doutor-destino-7-curiosidades-sobre-o-antagonista-de-vingadores",
-   "summary": "Tudo que você precisa saber sobre o vilão do longa que chega em 16 de dezembro nos cinemas O Doutor Destino é um dos vilões que mais despertam o fascínio dos fãs da Marvel. Criado…",
-   "img": "https://sm.ign.com/ign_br/news/a/avengers-s/avengers-secret-wars-will-be-a-different-genre-to-doomsday-a_gvvw.jpg",
-   "at": 1795694444000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6: Essas 3 coisas desaparecem para sempre após o final do Capítulo 2",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157961/gta-6-essas-3-coisas-desaparecem-para-sempre-apos-o-final-do-capitulo-2",
-   "summary": "Veja o que não deixar para trás antes de ir para o terceiro ato Apesar de você poder voltar para a área no capítulo seguinte, algumas coisas estarão indisponíveis mesmo assim.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_e33w.jpg",
-   "at": 1795694439000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "\"Seria absolutamente incrível\": Hideki Kamiya quer fazer um novo jogo de Castlevania com a Konami",
-   "url": "https://br.ign.com/castlevania-belmonts-curse-1/157957/seria-absolutamente-incrivel-hideki-kamiya-quer-fazer-um-novo-jogo-de-castlevania-com-a-konami",
-   "summary": "Não nos dê esperança Hideki Kamiya, a mente por trás de Devil May Cry , Bayonetta e Okami , deseja criar um novo jogo da franquia Castlevania, afirmando que sua equipe na CLOVERS…",
-   "img": "https://sm.ign.com/ign_br/news/i/it-would-b/it-would-be-absolutely-incredible-hideki-kamiya-wants-to-mak_h41q.jpg",
-   "at": 1795692628000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "GTA 6 já estaria rodando a mais de 30 FPS no PC em versões não oficiais",
    "url": "https://www.hardware.com.br/games/gta-6-30-fps-no-pc/",
    "summary": "Projetos de recompilação avançam com auxílio da inteligência artificial, apesar das tentativas da Take-Two de interromper o desenvolvimento",
@@ -762,24 +871,6 @@
    "summary": "11 short episodes stream in lead-up to film's January opening",
    "img": "",
    "at": 1795664781000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Under Ninja Manga Goes on 4-Week Hiatus",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/under-ninja-manga-goes-on-4-week-hiatus/.244180",
-   "summary": "Manga resumes serialization on December 28",
-   "img": "",
-   "at": 1795663689000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Exoprimal Game Ends Service in September 2027",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/exoprimal-game-ends-service-in-september-2027/.244201",
-   "summary": "Game to be delisted after March 30",
-   "img": "",
-   "at": 1795663159000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -937,14 +1028,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "The Fable reboot had to look beyond Lionhead's RPG trilogy because games like The Witcher 3 \"became the gold standard\"",
-   "url": "https://www.eurogamer.net/fable-the-witcher-3-gold-standard",
-   "summary": "Developer Playground Games had to look beyond Lionhead's original run of Fable games when rebooting the classic fantasy series, and it's all thanks to games like The Witcher 3 ,…",
-   "img": "https://assetsio.gnwcdn.com/fighting-a-fire-breathing-chicken-in-Fable.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795636630000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "GTA 6 é mais estável no Series X do que no PS5, apesar de seu marketing oficial",
    "url": "https://www.adrenaline.com.br/games/gta-6-e-mais-estavel-no-series-x-do-que-no-ps5-apesar-de-seu-marketing-oficial/",
    "summary": "Segundo a Digital Foundry, o Series X é o melhor console básico para jogar GTA 6",
@@ -961,60 +1044,12 @@
    "source": "PlayStation Blog BR"
   },
   {
-   "title": "Pokémon Fire Red agora pode ser jogado pelo Microsoft Excel",
-   "url": "https://www.adrenaline.com.br/games/pokemon-fire-red-agora-pode-ser-jogado-pelo-microsoft-excel/",
-   "summary": "Projeto inusitado leva remake do primeiro Pokémon para o famoso software de escritório da MIcrosoft",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/pokemon-fire-red-excel-640x400.jpg",
-   "at": 1795634301000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Jogos da SEGA em oferta no Nintendo Switch 1 & 2; até 80% de desconto",
-   "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-sega-em-oferta-no-nintendo-switch-1-2-ate-80-de-desconto-2/",
-   "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/03/SONIC-X-SHADOW-GENERATIONS-640x400.webp",
-   "at": 1795633200000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Original Devil May Cry and Bayonetta director Hideki Kamiya really wants Konami to let him make a \"truly insane\" Castlevania game",
-   "url": "https://www.eurogamer.net/hideki-kamiya-konami-truly-insane-castlevania",
-   "summary": "Action game maestro Hideki Kamiya really wants to make a new Castlevania game with publisher Konami. Read more",
-   "img": "https://assetsio.gnwcdn.com/0608_01.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795632920000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "PlayStation Plus de dezembro tem jogos revelados; saiba quando resgatar",
-   "url": "https://www.adrenaline.com.br/games/playstation/playstation-plus-de-dezembro-tem-jogos-revelados-saiba-quando-resgatar/",
-   "summary": "Saiba quando os novos jogos grátis da PlayStation Plus de dezembro estarão disponíveis e qual o prazo para serem resgatados em sua conta",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/playstation-plus-dezembro-640x400.webp",
-   "at": 1795627917000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "GTA 6 estaria “fritando” consoles PS5, segundo relatos de jogadores",
    "url": "https://www.hardware.com.br/games/gta-6-fritando-consoles-ps5/",
    "summary": "Relatos de travamentos e supostos danos permanentes ao hardware preocupam jogadores",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/PS5-em-Chamas-em-Vice-City-1600x900.jpg",
    "at": 1795627021000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "Brasileiro é o primeiro jogador do mundo a alcançar 10 milhões de Gamerscore no Xbox",
-   "url": "https://www.adrenaline.com.br/games/xbox-gamerscore-10-milhoes-recorde/",
-   "summary": "Marcello Malta, conhecido como SiegfriedX, levou 20 anos e mais de 6.400 jogos para atingir a marca histórica; jogador desbloqueia pelo menos uma conquista por dia desde 2020",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/SiegfriedX_Hero-bd338bdd544274a3c7a6-640x480.jpg",
-   "at": 1795626419000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Nintendo Switch 2 poderia rodar GTA 6, mas com grandes sacrifícios gráficos",
-   "url": "https://www.adrenaline.com.br/games/nintendo-switch-2-poderia-rodar-gta-6-mas-com-grandes-sacrificios-graficos/",
-   "summary": "Maior desafio é que sacrifícios gráficos podem exigir versão exclusiva de GTA Online para o console.",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/39-gta-vi-no-switch-2-640x400.jpg",
-   "at": 1795626247000,
-   "source": "Adrenaline"
   },
   {
    "title": "Dragon Ball Super: Beerus mostra como o Deus da Destruição pode ser realmente aterrorizante",
@@ -1024,14 +1059,6 @@
    "at": 1795626000000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Tim Sweeney chama Claude de “lixo” após IA bloquear seu trabalho",
-   "url": "https://www.hardware.com.br/tecnologia/tim-sweeney-claude-lixo/",
-   "summary": "Tim Sweeney é um dos principais defensores da inteligência artificial na indústria de jogos e aposta na tecnologia como um dos pilares da Unreal Engine 6",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Tim-Sweeney-chama-Claude-de-lixo-apos-IA-bloquear-seu-trabalho.jpg",
-   "at": 1795625440000,
-   "source": "Hardware.com.br"
   },
   {
    "title": "Anime de Historié tem estreia marcada para o dia 8 de janeiro em trailer",
@@ -1106,38 +1133,11 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Série A Tale of the Secret Saint ultrapassa 5 milhões de cópias em circulação",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/a-tale-of-the-secret-saint-5-milhoes-copias-circulacao",
-   "summary": "O anime produzido pelo estúdio FelixFilm já está disponível na Crunchyroll",
-   "img": "https://a.storyblok.com/f/178900/960x540/6c98a23ca7/a-tale-of-the-secret-saint-5-million-copies.jpg",
-   "at": 1795566900000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "‘Smoking Behind the Supermarket with You’ deve ser publicado pela JBC",
    "url": "https://www.jbox.com.br/2026/11/24/smoking-behind-the-supermarket-with-you-deve-ser-publicado-pela-jbc/",
    "summary": "Mangá ganhou registro no ISBN, mas ainda não foi anunciado oficialmente pela editora.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Smoking-Behind-the-Supermarket-with-You-destacada.jpg?ssl=1",
    "at": 1795558692000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Kamen Rider Shinobi: Episódio final ganha trailer, pôster e nova personagem",
-   "url": "https://www.jbox.com.br/2026/11/24/kamen-rider-shinobi-episodio-final-ganha-trailer-poster-e-nova-personagem/",
-   "summary": "Especial estreia no fim de dezembro no TTFC e destaca a forma Saint Shinobi.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/krshinobi3.jpg?ssl=1",
-   "at": 1795556149000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Witch on the Holy Night: Filme tem continuação anunciada",
-   "url": "https://www.jbox.com.br/2026/11/24/witch-on-the-holy-night-filme-tem-continuacao-anunciada/",
-   "summary": "Longa-metragem que adapta história dos criadores de 'Fate/stay night' chega em janeiro de 2027 aos cinemas brasileiros.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/02/witch-on-the-holy-night-destacada.jpg?ssl=1",
-   "at": 1795549189000,
    "cat": "geek",
    "source": "JBox"
   },
