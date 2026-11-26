@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795709886880,
+ "atualizadoEm": 1795720397361,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 12
+   "itens": 14
   },
   {
    "nome": "Eurogamer",
@@ -79,6 +79,229 @@
  ],
  "itens": [
   {
+   "title": "Toei Animation anuncia sua 24ª série em anime Precure: “FUNtastic Precure!”",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/precure-anime-24-funtasic-precure-toei-animation",
+   "summary": "Foi lançado um site teaser com o logo e o slogan da série",
+   "img": "https://a.storyblok.com/f/178900/960x540/533654b826/funtasic-precure-logo.png",
+   "at": 1795719900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Ubisoft Wants Rayman To Become A Huge, Transmedia Star",
+   "url": "https://www.nintendolife.com/news/2026/11/ubisoft-wants-rayman-to-become-a-huge-transmedia-star",
+   "summary": "Legends Retold is just the beginning. Ubisoft is gearing up to launch Rayman Legends Retold , a reimagined remake of the 2013 original . While many have questioned the decision to…",
+   "img": "https://images.nintendolife.com/2176eb7643445/large.jpg",
+   "at": 1795719600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Animê ‘The Kept Man of the Princess Knight’ ganha nova prévia com música de encerramento e mais",
+   "url": "https://www.jbox.com.br/2026/11/26/anime-the-kept-man-of-the-princess-knight-ganha-nova-previa-com-musica-de-encerramento-e-mais/",
+   "summary": "Produção que adapta a light novel de Toru Shirogane estreia em janeiro.",
+   "img": "",
+   "at": 1795719494000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "LEGO na Black Friday: Sonic, Marvel, Pokémon e Star Wars com até 54% de desconto para montar sua coleção",
+   "url": "https://br.ign.com/descontos/157987/lego-na-black-friday-sonic-marvel-pokemon-e-star-wars-com-ate-54-de-desconto-para-montar-sua-colecao",
+   "summary": "Ofertas incluem desde montagens compactas inspiradas em Sonic até modelos de Star Wars com mais de mil peças",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2026-11-26t150748667_cu4n.jpg",
+   "at": 1795718644000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Black Friday: TV TCL de 75 polegadas tem 32% de desconto na Amazon",
+   "url": "https://br.ign.com/descontos/157993/black-friday-tv-tcl-de-75-polegadas-tem-32-de-desconto-na-amazon",
+   "summary": "Com tela gigante de 75 polegadas, modelo da TCL é uma oportunidade para quem quer aproveitar filmes, séries e jogos com uma experiência mais imersiva sem pagar o preço cheio!",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_bnae.png",
+   "at": 1795718124000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Killer Shark in Another World tem anime anunciado",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/killer-shark-in-another-world-anime-anuncio",
+   "summary": "Também foi revelado a equipe principal de produção, trailer e arte promocional da adaptação do mangá de kuboken",
+   "img": "https://a.storyblok.com/f/178900/960x538/4e44f018c0/killer-shark-in-another-world-pv3.jpg",
+   "at": 1795717980000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Gallery: Get A Closer Look At Nintendo's Playable Ocarina Of Time",
+   "url": "https://www.nintendolife.com/news/2026/11/gallery-get-a-closer-look-at-nintendos-playable-ocarina-of-time",
+   "summary": "Give us a tune. Just last week, Nintendo announced that the upcoming playable and electric ocarinas, launching in conjunction with Ocarina of Time , will initially be sold on an…",
+   "img": "https://images.nintendolife.com/e0787ab453cfb/large.jpg",
+   "at": 1795717800000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Nioh and Ninja Gaiden studio is using AI for QA, but argues \"that a game becomes fun when crafted by human hands\"",
+   "url": "https://www.eurogamer.net/nioh-ai-qa-game-human-hands",
+   "summary": "Team Ninja (Nioh, Ninja Gaiden) is the latest game development studio to implement AI into some of its workflow, but producer Kohei Shibata still believes that fun games need to…",
+   "img": "https://assetsio.gnwcdn.com/nioh-3-gameplay-screen-6.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795716870000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "MELTY BLOOD: TWI-LUMINA ganha trailer com várias novidades sobre o jogo",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/melty-blood-twi-lumina-trailer-satsuki-cross-play",
+   "summary": "O jogo tem lançamento marcado para abril de 2027.",
+   "img": "https://a.storyblok.com/f/178900/1024x576/7d8879d7eb/melty-blood-twi-lumina-satsuki.jpg",
+   "at": 1795716780000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Review: Gamesir Nova Vision Controller For Switch 1 & 2 - Unique Features Elevate This Mid-Range Pad",
+   "url": "https://www.nintendolife.com/reviews/gamesir-nova-vision-controller-for-switch-1-and-2-unique-features-elevate-this-mid-range-pad",
+   "summary": "What a vision. Accessory developer Gamesir doesn’t often make controllers with the Switch 1 and 2 in mind, instead focusing primarily on Xbox and PC. So when it announced the new…",
+   "img": "https://images.nintendolife.com/637448a224e55/large.jpg",
+   "at": 1795716000000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Metal Slug entra para a crescente lista de jogos da SNK que vão virar filme",
+   "url": "https://www.adrenaline.com.br/games/metal-slug-entra-para-a-crescente-lista-de-jogos-da-snk-que-vao-virar-filme/",
+   "summary": "SNK continua a expandir sua aposta no cinema, agora mirando no clássico run'n'gun Metal Slug",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/metal-slug-snk-filme-640x400.jpg",
+   "at": 1795715522000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
+   "url": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
+   "summary": "Grand Theft Auto 6 has had a huge effect on physical game sales in the UK, despite not actually containing a disc in the box. Read more",
+   "img": "https://assetsio.gnwcdn.com/cal-gta-6-artwork.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795714230000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Here Are All The Games Coming To Switch eShop This Week (November 26)",
+   "url": "https://www.nintendolife.com/news/2026/11/here-are-all-the-games-coming-to-switch-eshop-this-week-november-26",
+   "summary": "Wilds, Withered Worlds, Wind Monsters. It's time for North America's Nintendo Download Thanksgiving update and our Switch eShop round-up for November 26th . Monster Hunter Wilds…",
+   "img": "https://images.nintendolife.com/e175229a4c0ab/large.jpg",
+   "at": 1795714200000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "The Dragon Prince's Ill-Mated Betrothal Manga Ends, Gets 3-Chapter Epilogue",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/the-dragon-prince-ill-mated-betrothal-manga-ends-gets-3-chapter-epilogue/.244106",
+   "summary": "Manga's main story ended on September 17",
+   "img": "",
+   "at": 1795713300000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Funko Friday! Colecionáveis despencam de preço na Black da Amazon",
+   "url": "https://br.ign.com/descontos/157986/funko-friday-colecionaveis-despencam-de-preco-na-black-da-amazon",
+   "summary": "Colecionáveis de games, animes, filmes e até do esporte aparecem com descontos para quem quer aumentar a coleção sem gastar tanto!",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_d4pp.png",
+   "at": 1795713258000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Anbernic anuncia portátil RG 47G1 com cores clássicas do Game Boy Color",
+   "url": "https://www.adrenaline.com.br/mobile/anbernic-anuncia-portatil-rg-47g1-com-cores-classicas-do-game-boy-color/",
+   "summary": "Novo portátil Android para emulação da Anbernic traz visual de Game Boy Clássico, mas mira em jogos mais avançados",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/anbernic-rg-47g1-game-boy-color-640x400.jpg",
+   "at": 1795713217000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "GitHub apaga publicação que celebrava sucesso de emulador de PS5 e o associava a GTA 6",
+   "url": "https://www.hardware.com.br/games/github-apaga-publicacao-que-celebrava-sucesso-de-emulador-de-ps5/",
+   "summary": "Conta oficial da plataforma da Microsoft comemorou sucesso do AnyPS5, mas removeu a mensagem pouco depois.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-github-ps5-1600x900.jpg",
+   "at": 1795713041000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "\"Where's the ding?!!\" - I asked the PowerWash Simulator 2 team what they thought of Jason's nozzle work in GTA 6",
+   "url": "https://www.eurogamer.net/gta-6-powerwashing-powerwash-simultor-futurlab",
+   "summary": "Among the many, many side activities you can do in GTA 6 , there's powerwashing. Relatively early on, as part of Chapter 1's Down to Earth mission , Jason whips out his nozzle and…",
+   "img": "https://assetsio.gnwcdn.com/gta-powerwash-header-2.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795712870000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Rockstar Games Has A GTA 6 Hit On Its Hands, But Its Union Vote Is A Loss",
+   "url": "https://www.gamespot.com/articles/rockstar-games-has-a-gta-6-hit-on-its-hands-but-its-union-vote-is-a-loss/",
+   "summary": "Roughly 75% of Rockstar Games staff in the UK have voted against a formal recognition agreement with the Independent Workers' Union of Great Britain (IWGB). The news came in the…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-6-launch-screens-7-4.jpg?w=300",
+   "at": 1795712721000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Japanese Charts: No Prizes For Guessing What Has Overtaken Zelda & Switch 2 This Week",
+   "url": "https://www.nintendolife.com/news/2026/11/japanese-charts-no-prizes-for-guessing-what-has-overtaken-zelda-and-switch-2-this-week",
+   "summary": "Saria, not sorry. The latest Japanese charts are in from Famitsu , and in perhaps the least surprising debut in recent memory, Grand Theft Auto VI is a hit. Rockstar's…",
+   "img": "https://images.nintendolife.com/5131158a1ac51/large.jpg",
+   "at": 1795712400000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "ANOMALITH Game Review",
+   "url": "https://www.animenewsnetwork.com/review/game/pc-playsation-5-nintendo-switch-2/anomalith/.243577",
+   "summary": "The best way to describe ANOMALITH's strengths is that it manages to do a lot with very little, though that means it often bites off more than it can chew.",
+   "img": "",
+   "at": 1795712400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Crunchyroll fará edição especial do Estúdio de Dublagem fora da CCXP focado em vilões de anime",
+   "url": "https://br.ign.com/anime/157991/crunchyroll-fara-edicao-especial-do-estudio-de-dublagem-fora-da-ccxp-focado-em-viloes-de-anime",
+   "summary": "Evento acontece neste sábado na cidade de São Paulo Os otakus de plantão da cidade de São Paulo Paulo terão a oportunidade de soltar a voz e assumir o papel de grandes…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/c1-20261126-135155-0000_etzs.jpg",
+   "at": 1795712325000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Quanto custa jogar GTA 6 na conta de luz? Estudo revela que HDR pode aumentar significativamente o consumo",
+   "url": "https://www.hardware.com.br/tecnologia/gta-6-conta-de-luz-hdr/",
+   "summary": "Xbox Series S apresenta o menor consumo energético, enquanto ativar o HDR pode fazer uma televisão gastar mais energia que o próprio console",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Quanto-custa-jogar-GTA-6-na-conta-de-luz-Estudo-revela-que-HDR-pode-aumentar-significativamente-o-consumo.jpg",
+   "at": 1795711107000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "GTA 6's Physical Launch Has Been An Astronomical Success, Despite No Discs",
+   "url": "https://www.nintendolife.com/news/2026/11/gta-6s-physical-launch-has-been-an-astronomical-success-despite-no-discs",
+   "summary": "The biggest physical launch since 2019. All eyes have been on the launch of GTA 6 this month, with the game's so-called physical launch being a particularly interesting litmus…",
+   "img": "https://images.nintendolife.com/38a239861875b/large.jpg",
+   "at": 1795710600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Quer uma TV nova na Black Friday? Hisense QLED de 55 polegadas está com 24% de desconto",
+   "url": "https://br.ign.com/descontos/157984/quer-uma-tv-nova-na-black-friday-hisense-qled-de-55-polegadas-esta-com-24-de-desconto",
+   "summary": "Modelo acompanha recursos para games e modo dedicado a esportes, além de compatibilidade com Alexa e Google Home",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2026-11-26t130456007_qj8a.jpg",
+   "at": 1795709938000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "How To Get The Anime Car In GTA 6",
+   "url": "https://www.gamespot.com/articles/how-to-get-the-anime-car-in-gta-6/",
+   "summary": "There are a few ways to get an anime car in GTA 6 , but if you don't want to spend any money, we've stumbled upon one just there for the taking. There's no huge mission or…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/66d64a05-69a4-4341-adb4-1cacbfa26f04.png?w=300",
+   "at": 1795709807000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "MangaPlaza Add Seven Seas Titles to Catalogue",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/mangaplaza-add-seven-seas-titles-to-catalogue/.244200",
+   "summary": "Titles include Mushoku Tensei , The Saint's Magic Power is Omnipotent , The Strange House , more",
+   "img": "",
+   "at": 1795709700000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Ultraman Nexus: Box em Blu-ray ganha trailer e detalhes dos extras",
    "url": "https://www.jbox.com.br/2026/11/26/ultraman-nexus-box-em-blu-ray-ganha-trailer-e-detalhes-dos-extras/",
    "summary": "Com lançamento em dezembro, edição remasterizada reúne toda a série, o filme ‘Ultraman The Next’ e livretos inéditos.",
@@ -96,12 +319,28 @@
    "source": "Xbox Wire Brasil"
   },
   {
+   "title": "Bread & Fred para PC de graça hoje – resgate agora!",
+   "url": "https://www.adrenaline.com.br/noticias/bread-fred-para-pc-de-graca-hoje-resgate-agora/",
+   "summary": "Confira os detalhes do novo jogo de graça por tempo limitado na Epic Games Store e resgate-os até o dia 3 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/05/bread-and-fred-game-640x400.jpg",
+   "at": 1795708800000,
+   "source": "Adrenaline"
+  },
+  {
    "title": "Talking Point: Ocarina Of Time Revolutionised The 3D Swordfight, But How Does The Remake Hold Up In A Vintage Year For Clashing Blades?",
    "url": "https://www.nintendolife.com/features/talking-point-ocarina-of-time-revolutionised-the-3d-swordfight-but-how-does-the-remake-hold-up-in-a-vintage-year-for-clashing-blades",
    "summary": "Finding the cutting edge of sword combat. Forget the hubbub around Grand Theft Auto . Big Walk ? Big deal. It’s all noise designed to distract us from 2026’s real legacy: that…",
    "img": "https://images.nintendolife.com/54756797ecfc9/large.jpg",
    "at": 1795708800000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "Por que as luzes de GTA 6 são roxas? Entenda a ligação do jogo com a Flórida",
+   "url": "https://www.adrenaline.com.br/games/por-que-as-luzes-de-gta-6-sao-roxas-entenda-a-ligacao-do-jogo-com-a-florida/",
+   "summary": "Um dos grandes mistérios de GTA 6 está diretamente relacionado a um problema da cidade de Orlando",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Luzes-GTA-6-Roxo-Rockstar-640x400.jpeg",
+   "at": 1795707458000,
+   "source": "Adrenaline"
   },
   {
    "title": "‘Kindergarten Wars’ ganha trailer com música de abertura da Ado",
@@ -424,22 +663,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Novo teaser de Vingadores mostra Magneto tentando arrancar a máscara do Doutor Destino",
-   "url": "https://br.ign.com/avengers-doomsday/157971/novo-teaser-de-vingadores-mostra-magneto-tentando-arrancar-a-mascara-do-doutor-destino",
-   "summary": "Muitas teorias",
-   "img": "https://sm.ign.com/ign_br/news/a/avengers-d/avengers-doomsday-teaser-shows-magneto-trying-to-rip-dooms-m_bb48.jpg",
-   "at": 1795690847000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "A Netflix vai se despedir de mais de 80 séries em 2027, dentre elas está uma trilogia idealizada por Guillermo del Toro",
-   "url": "https://br.ign.com/netflix/157956/a-netflix-vai-se-despedir-de-mais-de-80-series-em-2027-dentre-elas-esta-uma-trilogia-idealizada-por",
-   "summary": "Última chance para ver Caçadores de Trolls, Os 3 Lá Embaixo e Wizards As três séries de Tales of Arcadia serão removidas do catálogo em 21 de julho de 2027, juntamente com outras…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_9wwr.jpg",
-   "at": 1795690843000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Arcanadea TV Anime Casts M.A.O, Ai Kakuma",
    "url": "https://www.animenewsnetwork.com/news/2026-11-26/arcanadea-tv-anime-casts-m.a.o-ai-kakuma/.244225",
    "summary": "Both voice actors reprise roles from other works in franchise for anime debuting in January",
@@ -457,14 +680,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Spotify revela aumento significativo nas reproduções das músicas que aparecem em GTA 6",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157968/spotify-revela-aumento-significativo-nas-reproducoes-das-musicas-que-aparecem-em-gta-6",
-   "summary": "O entusiasmo em torno do novo jogo da Rockstar está inspirando os ouvintes a adicionarem muitas músicas às suas playlists",
-   "img": "https://sm.ign.com/ign_br/news/s/spotify-re/spotify-reveals-massive-spike-in-streams-for-music-featured_zvs2.jpg",
-   "at": 1795689037000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "The Final-Boss Prince is Somehow Obsessed with the Chubby Villainess TV Anime Reveals January 1 Debut in Video",
    "url": "https://www.animenewsnetwork.com/news/2026-11-26/the-final-boss-prince-is-somehow-obsessed-with-the-chubby-villainess-tv-anime-reveals-january-1-/.244224",
    "summary": "New visual, more cast, theme song artists also revealed",
@@ -480,22 +695,6 @@
    "img": "https://images.nintendolife.com/55b2dec277125/large.jpg",
    "at": 1795688100000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Sony confirma jogos mensais do PS Plus de dezembro de 2026; confira a lista completa",
-   "url": "https://br.ign.com/playstation-plus-1/157970/sony-confirma-jogos-mensais-do-ps-plus-de-dezembro-de-2026-confira-a-lista-completa",
-   "summary": "Os títulos estarão disponíveis para download de 1º de dezembro até 4 de janeiro",
-   "img": "https://sm.ign.com/ign_br/news/s/sony-confi/sony-confirms-playstation-plus-monthly-games-for-december-20_v8nx.jpg",
-   "at": 1795687379000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Todas as equipes que veremos em Vingadores: Doutor Destino",
-   "url": "https://br.ign.com/avengers-doomsday/157955/todas-as-equipes-que-veremos-em-vingadores-doutor-destino",
-   "summary": "Reúnam-se! Várias vezes... Um elenco muito recheado estará no novo Avengers, confira quem participará do filme que estreia em 16 de dezembro.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_bup3.jpg",
-   "at": 1795687228000,
-   "source": "IGN Brasil"
   },
   {
    "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
@@ -567,14 +766,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "\"No One Gets Left Behind\" - CDPR On The Witcher 4 Releasing For All Platforms At The Same Time",
-   "url": "https://www.nintendolife.com/news/2026/11/no-one-gets-left-behind-cdpr-on-the-witcher-4-releasing-for-all-platforms-at-the-same-time",
-   "summary": "\"Switch 2 is clearly getting left behind\". This week, CD Projekt Red and Sony announced an exclusive marketing deal for Ciri's upcoming title, The Witcher 4 . It's raised some…",
-   "img": "https://images.nintendolife.com/27449059c43b8/large.jpg",
-   "at": 1795664100000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Under Ninja Manga Goes on 4-Week Hiatus",
    "url": "https://www.animenewsnetwork.com/news/2026-11-25/under-ninja-manga-goes-on-4-week-hiatus/.244180",
    "summary": "Manga resumes serialization on December 28",
@@ -591,41 +782,6 @@
    "at": 1795663159000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "Melty Blood:Twi-Lumina 2D Fighter Game's New Trailer Confirms Crossplay",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/melty-blood-twi-lumina-2d-fighter-game-new-trailer-confirms-crossplay/.244202",
-   "summary": "Game launches for PS5, PS4, Switch 2, Switch, Xbox One, PC on April 22",
-   "img": "",
-   "at": 1795662578000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Bandai Card Games Launches Digimon Alysion Game",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/bandai-card-games-launches-digimon-alysion-game/.244210",
-   "summary": "Free-to-play smartphone card game announced in March 2025",
-   "img": "",
-   "at": 1795661860000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Nobunaga's Ambition Series Gets New Game Next March",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/nobunaga-ambition-series-gets-new-game-next-march/.244203",
-   "summary": "Hishou launches with series' 1st story mode for PS5, Switch 2, Windows via Steam",
-   "img": "",
-   "at": 1795661590000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Video: Xenoblade Chronicles 3 - Switch 2 Edition Overview Trailer Showcases New Features & Enhancements",
-   "url": "https://www.nintendolife.com/news/2026/11/video-xenoblade-chronicles-3-switch-2-edition-overview-trailer-showcases-new-features-and-enhancements",
-   "summary": "Here's what you can expect from this upgrade. Following a game update last week, preparing for the release of Xenoblade Chronicles 3 - Switch 2 Edition , Nintendo has now released…",
-   "img": "https://images.nintendolife.com/969f77044296e/large.jpg",
-   "at": 1795658700000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Anime Fool Night divulga vídeo de abertura sem créditos",
@@ -655,14 +811,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "The Legend Of Zelda: Ocarina Of Time Switch 2 Updated (Version 1.1.2), Here Are The Patch Notes",
-   "url": "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
-   "summary": "It resolves multiple bugs. The Legend of Zelda: Ocarina of Time for the Switch 2 has today received its second game update, bumping the title up to Version 1.1.2 . Here are the…",
-   "img": "https://images.nintendolife.com/dc7b1435d1646/large.jpg",
-   "at": 1795655700000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Mario, Pikachu, And Other Gaming Icon Balloons Won’t Be Flying This Thanksgiving",
    "url": "https://www.gamespot.com/articles/mario-pikachu-and-other-gaming-icon-balloons-wont-be-flying-this-thanksgiving/",
    "summary": "New York City is no stranger to bad weather, be it blazing-hot summers, snow-packed winters, or fierce windstorms. Unfortunately for countless families who have made it a holiday…",
@@ -678,14 +826,6 @@
    "at": 1795654980000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Nintendo Restocks Metroid Dread Physical Copies Ahead Of Metroid Ravenous Launch",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-restocks-metroid-dread-physical-copies-ahead-of-metroid-ravenous-launch",
-   "summary": "Demand for Dread. When Nintendo announced Metroid Ravenous for the Switch 2, there was a reported increase in Metroid Dread sales. This also led to a supposed boost in physical…",
-   "img": "https://images.nintendolife.com/5ab90e7bf18ac/large.jpg",
-   "at": 1795653900000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Jogos da Capcom em oferta na Nuuvem com até 87% de desconto",
@@ -813,22 +953,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "All Missable Missions In GTA 6 And How To Start Them",
-   "url": "https://www.gamespot.com/articles/all-missable-missions-in-gta-6-and-how-to-start-them/",
-   "summary": "Strangers and Freaks have returned in GTA 6. Though you only see these missable side missions referred to in that way in the Achievement and Trophy lists, there are still some…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/1a210e58c2854-screenshotUrl.jpg?w=300",
-   "at": 1795635620000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "What Is The Point Of No Return In The GTA 6 Story?",
-   "url": "https://www.gamespot.com/articles/what-is-the-point-of-no-return-in-the-gta-6-story/",
-   "summary": "We've never seen a main story in the Grand Theft Auto franchise like the one in GTA 6 . It's an absolute behemoth, stretching across five chapters and just under 100 main story…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_and_Lucia_08.0.bq0bdrl6g5y.jpg?w=300",
-   "at": 1795635106000,
-   "source": "GameSpot"
-  },
-  {
    "title": "20 Anos de PlayStation Store: como a vitrine digital da Sony moldou a indústria moderna dos games",
    "url": "https://blog.br.playstation.com/2026/11/25/20-anos-de-playstation-store-como-a-vitrine-digital-da-sony-moldou-a-industria-moderna-dos-games/",
    "summary": "Em novembro de 2006, o lançamento do PlayStation 3 veio acompanhado de um divisor de águas silencioso para a indústria dos games da época: a estreia da PlayStation Store. Vinte…",
@@ -845,22 +969,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "How To Complete The Project Rumba Secret In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-project-rumba-brainwash/",
-   "summary": "There are a lot of secrets left to be discovered in Grand Theft Auto 6 . Some have an eerie flair as they delve into the supernatural, while others are hilarious Easter eggs and…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-project-rumba-brainwash-.jpg?w=300",
-   "at": 1795633800000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Where To Find President Russo’s Bunkers In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-bunker-president-russo/",
-   "summary": "Grand Theft Auto 6 has its fair share of secrets. While the vast majority can be found in building interiors and far-flung islands, a few are located deep underground in…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-president-russo-bunker-locations-.jpg?w=300",
-   "at": 1795633800000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Jogos da SEGA em oferta no Nintendo Switch 1 & 2; até 80% de desconto",
    "url": "https://www.adrenaline.com.br/games/nintendo/jogos-da-sega-em-oferta-no-nintendo-switch-1-2-ate-80-de-desconto-2/",
    "summary": "Confira a lista de jogos em oferta no Nintendo Switch e não perca a oportunidade de comprar estes jogos com desconto por tempo limitado",
@@ -874,14 +982,6 @@
    "summary": "Action game maestro Hideki Kamiya really wants to make a new Castlevania game with publisher Konami. Read more",
    "img": "https://assetsio.gnwcdn.com/0608_01.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795632920000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "EA is resurrecting a dead commentator with AI for EA Sports FC 27, years after his last appearance in a FIFA game",
-   "url": "https://www.eurogamer.net/ea-sports-fc27-dead-commentator-ai",
-   "summary": "EA Sports FC 27 is using gen-AI to digitally recreate the voice of veteran football commentator John Motson - the FIFA video game series' first ever real-world announcer who died…",
-   "img": "https://assetsio.gnwcdn.com/ea-fc-27-best-wonderkids-00.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795629540000,
    "source": "Eurogamer"
   },
   {
@@ -901,22 +1001,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Final Fantasy Resonance Devs Are Somehow Surprised That Fans Still Like Turn-Based Combat",
-   "url": "https://www.nintendolife.com/news/2026/11/final-fantasy-resonance-devs-are-somehow-surprised-that-fans-still-like-turn-based-combat",
-   "summary": "\"I expected opinions on it might be divided\". Final Fantasy Resonance was met with high praise when it launched on 22nd October 2026, earning a score of 8/10 from us and a critic…",
-   "img": "https://images.nintendolife.com/71db75b8e23ea/large.jpg",
-   "at": 1795626900000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Here are our PS Plus monthly games for December 2026",
-   "url": "https://www.eurogamer.net/playstation-plus-monthly-games-december-2026",
-   "summary": "There's a chill in the air and a snowman (plastic) at the end of the street, meaning winter is firmly upon us. So what better way to make it way through the long dark nights than…",
-   "img": "https://assetsio.gnwcdn.com/playstation-plus-june-header.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795626880000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Brasileiro é o primeiro jogador do mundo a alcançar 10 milhões de Gamerscore no Xbox",
    "url": "https://www.adrenaline.com.br/games/xbox-gamerscore-10-milhoes-recorde/",
    "summary": "Marcello Malta, conhecido como SiegfriedX, levou 20 anos e mais de 6.400 jogos para atingir a marca histórica; jogador desbloqueia pelo menos uma conquista por dia desde 2020",
@@ -930,14 +1014,6 @@
    "summary": "Maior desafio é que sacrifícios gráficos podem exigir versão exclusiva de GTA Online para o console.",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/39-gta-vi-no-switch-2-640x400.jpg",
    "at": 1795626247000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Jogos da Bethesda em oferta na Steam com até 85% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-bethesda-em-oferta-na-steam-com-ate-85-de-desconto/",
-   "summary": "Confira os principais jogos distribuídos pela Bethesda disponíveis com desconto nesta oferta por tempo limitado na Steam",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/03/The-Elder-Scrolls-V_-Skyrim-Anniversary-Edition-640x400.webp",
-   "at": 1795626000000,
    "source": "Adrenaline"
   },
   {
@@ -955,46 +1031,6 @@
    "summary": "Tim Sweeney é um dos principais defensores da inteligência artificial na indústria de jogos e aposta na tecnologia como um dos pilares da Unreal Engine 6",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Tim-Sweeney-chama-Claude-de-lixo-apos-IA-bloquear-seu-trabalho.jpg",
    "at": 1795625440000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "Novo mouse gamer sem fio Mambasnake M1 suporta carregamento por indução",
-   "url": "https://www.adrenaline.com.br/perifericos/novo-mouse-gamer-sem-fio-mambasnake-m1-suporta-carregamento-por-inducao/",
-   "summary": "Mambasnake M1 não vem com o polling mais avançado da atualidade, mas traz recurso incomum para mouses",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/mambasnake-m1-mouse-sem-fio-inducao-640x400.jpg",
-   "at": 1795624977000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Why did Rockstar Games make empathy a key mechanic in GTA 6? \"Because it's fun\" says head of development Rob Nelson",
-   "url": "https://www.eurogamer.net/gta-6-empathy-criminal-profile-why-rockstar-added-it-rob-nelson",
-   "summary": "There's been plenty of chatter about Grand Theft Auto 6 's 'honour system', so to speak, implemented here via what the game calls your Criminal Profile. Read more",
-   "img": "https://assetsio.gnwcdn.com/GTA-6-review-14.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795624950000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Jogos Mensais PlayStation Plus de dezembro: Tony Hawk’s Pro Skater 3+4, Dragon Ball Xenoverse 2, Amnesia: The Bunker",
-   "url": "https://blog.br.playstation.com/2026/11/25/jogos-mensais-playstation-plus-de-dezembro-tony-hawks-pro-skater-34-dragon-ball-xenoverse-2-amnesia-the-bunker/",
-   "summary": "Mande ver nos corrimãos, enfrente ícones e fuja de horrores além da compreensão com os Jogos Mensais PlayStation Plus de dezembro. Tony Hawk’s Pro Skater 3+4, Dragon Ball…",
-   "img": "",
-   "at": 1795624303000,
-   "source": "PlayStation Blog BR"
-  },
-  {
-   "title": "Star Trek: Voyager - Across The Unknown Final DLC Ventures To Switch 2 Next Month",
-   "url": "https://www.nintendolife.com/news/2026/11/star-trek-voyager-across-the-unknown-final-dlc-ventures-to-switch-2-next-month",
-   "summary": "The Year of Hell is right around the corner. Daedalic Entertainment and GameXcite are wrapping up the bonus content for Star Trek: Voyager - Across The Unknown with one final wave…",
-   "img": "https://images.nintendolife.com/74626a9bf4381/large.jpg",
-   "at": 1795624200000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Samsung Smart TV 55″ Crystal UHD 4K U8000H sai por R$2.570: Vision AI Companion, Modo Estádio, Xbox Cloud Gaming e mais",
-   "url": "https://www.hardware.com.br/hardware-indica/samsung-smart-tv-55-crystal-uhd-4k-u8000h-sai-por-menos-de-r2-570-vision-ai-companion-modo-estadio-xbox-cloud-gaming-e-mais/",
-   "summary": "Samsung Crystal UHD U8000H 55″ 4K, modelo atual com Vision AI e 7 anos de updates, sai por menos de R$2.570.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/a5-1456x819.jpg",
-   "at": 1795622458000,
    "source": "Hardware.com.br"
   },
   {
@@ -1079,24 +1115,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Anime Jimoto no Ijimekko-tachi ni Shikaeshi Shiyoto Shitara, Betsu no Tatakai ga Hajimatta revela elenco principal em seu primeiro trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/jimoto-no-ijimekko-tachi-anime-elenco-principal-primeiro-trailer",
-   "summary": "A série de anime tem estreia prevista para 2027",
-   "img": "https://a.storyblok.com/f/178900/1920x1076/480d12dfda/jimoto-no-ijimekko-tachi-ni-shikaeshi-shiyoto-shitara-betsu-no-tatakai-ga-hajimatta-anime-teaser-trailer.png",
-   "at": 1795565100000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime PSYREN anuncia seis novos nomes para o elenco",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/psyren-anime-anuncia-seis-novos-nomes-elenco",
-   "summary": "A série de ação e suspense está disponível na Crunchyroll",
-   "img": "https://a.storyblok.com/f/178900/960x540/40cafe3e83/psyren-new-cast-members.jpg",
-   "at": 1795564500000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "‘Smoking Behind the Supermarket with You’ deve ser publicado pela JBC",
    "url": "https://www.jbox.com.br/2026/11/24/smoking-behind-the-supermarket-with-you-deve-ser-publicado-pela-jbc/",
    "summary": "Mangá ganhou registro no ISBN, mas ainda não foi anunciado oficialmente pela editora.",
@@ -1115,29 +1133,11 @@
    "source": "JBox"
   },
   {
-   "title": "Continuação do anime de Witch on the Holy Night é anunciada",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/24/anime-witch-on-the-holy-night-continuacao-anuncio",
-   "summary": "O seu 1º longa-metragem em anime está atualmente em cartaz nos cinemas japoneses",
-   "img": "https://a.storyblok.com/f/178900/1920x1080/f517d54733/witch-on-the-holy-night.png",
-   "at": 1795550700000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "Witch on the Holy Night: Filme tem continuação anunciada",
    "url": "https://www.jbox.com.br/2026/11/24/witch-on-the-holy-night-filme-tem-continuacao-anunciada/",
    "summary": "Longa-metragem que adapta história dos criadores de 'Fate/stay night' chega em janeiro de 2027 aos cinemas brasileiros.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/02/witch-on-the-holy-night-destacada.jpg?ssl=1",
    "at": 1795549189000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Cantor e compositor Kamijo se apresenta em São Paulo em fevereiro",
-   "url": "https://www.jbox.com.br/2026/11/24/cantor-e-compositor-kamijo-se-apresenta-em-sao-paulo-em-fevereiro/",
-   "summary": "Show faz parte da nova turnê mundial do artista, com ingressos já à venda.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/kamijo-destacada.jpg?ssl=1",
-   "at": 1795546171000,
    "cat": "geek",
    "source": "JBox"
   },
