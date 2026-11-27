@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795764917827,
+ "atualizadoEm": 1795774781156,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 15
+   "itens": 14
   },
   {
    "nome": "Eurogamer",
@@ -79,9 +79,50 @@
  ],
  "itens": [
   {
+   "title": "Anime Fool Night anuncia três novos integrantes do elenco",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/fool-night-anime-tres-novos-integrantes-elenco",
+   "summary": "Nobuo Tobita, Akiko Yajima e Yumiko Kobayashi entram para o elenco",
+   "img": "https://a.storyblok.com/f/178900/1920x1080/885b0a8543/fool-night-pv3.jpeg",
+   "at": 1795774200000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "GTA 6: Localização de todos os carros de luxo para completar a lista de desejos de Randy",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157999/gta-6-localizacao-de-todos-os-carros-de-luxo-para-completar-a-lista-de-desejos-de-randy",
+   "summary": "Nem todos os carros estarão marcados no mapa Muitas vezes, o próprio Randy mostra a localização dos carros. Em outras ocasiões, porém, você terá que procurá-los por conta própria.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_cn68.jpg",
+   "at": 1795773801000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Marvelous, developer of the Story of Seasons series, opens up voluntary redundancy scheme as it seeks to reduce headcount by 65 employees",
+   "url": "https://www.eurogamer.net/marvelous-developer-volentary-redundancy-amidst-console-business-restructuring",
+   "summary": "Marvelous, the studio known for its work on the Story of Seasons series as well as the upcoming Eternal Anima, has announced the introduction of a voluntary redundancy scheme.…",
+   "img": "https://assetsio.gnwcdn.com/eternal-anima-key-art.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795773130000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "\"Cyberpunk 2 está cancelado\": diretor criativo da CD Projekt RED ficou tão impressionado com GTA 6 que brincou sobre cancelar seu próximo jogo",
+   "url": "https://br.ign.com/cyberpunk-2077-codename-orion/157995/cyberpunk-2-esta-cancelado-diretor-criativo-da-cd-projekt-red-ficou-tao-impressionado-com-gta-6-que",
+   "summary": "Muitos devs enfrentam uma crise de confiança após GTA 6 Após GTA 6, alguns desenvolvedores estão brincando que não faz sentido tentar competir novamente, incluindo o diretor…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_46tq.jpg",
+   "at": 1795770201000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Team Cherry 'Special Presentation' Will Share Hollow Knight: Silksong DLC News Today",
+   "url": "https://www.nintendolife.com/news/2026/11/team-cherry-special-presentation-will-share-hollow-knight-silksong-dlc-news-today",
+   "summary": "DLSEA of Sorrow. Update: The day is finally upon us! The Cherry Time! presentation is set to kick off later on today, promising some long-awaited news on the Sea of Sorrow. Is it…",
+   "img": "https://images.nintendolife.com/5e8ad7f83348f/large.jpg",
+   "at": 1795770000000,
+   "source": "Nintendo Life"
+  },
+  {
    "title": "Random: Did Dave The Diver Just Tease A GTA 6 Collab?",
    "url": "https://www.nintendolife.com/news/2026/11/random-did-dave-the-diver-just-tease-a-gta-6-collab",
-   "summary": "We can dream, right? If you didn't already know, Dave The Diver actually has something in common with Rockstar's new open-world title, Grand Theft Auto 6 . In both games, you can…",
+   "summary": "Is it a joke or something more? If you didn't already know, Dave The Diver actually has something in common with Rockstar's new open-world title, Grand Theft Auto 6 . In both…",
    "img": "https://images.nintendolife.com/91be8dcea1a07/large.jpg",
    "at": 1795762500000,
    "source": "Nintendo Life"
@@ -472,14 +513,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Funko Friday! Colecionáveis despencam de preço na Black da Amazon",
-   "url": "https://br.ign.com/descontos/157986/funko-friday-colecionaveis-despencam-de-preco-na-black-da-amazon",
-   "summary": "Colecionáveis de games, animes, filmes e até do esporte aparecem com descontos para quem quer aumentar a coleção sem gastar tanto!",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_d4pp.png",
-   "at": 1795713258000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Anbernic anuncia portátil RG 47G1 com cores clássicas do Game Boy Color",
    "url": "https://www.adrenaline.com.br/mobile/anbernic-anuncia-portatil-rg-47g1-com-cores-classicas-do-game-boy-color/",
    "summary": "Novo portátil Android para emulação da Anbernic traz visual de Game Boy Clássico, mas mira em jogos mais avançados",
@@ -518,14 +551,6 @@
    "img": "https://images.nintendolife.com/5131158a1ac51/large.jpg",
    "at": 1795712400000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "Crunchyroll fará edição especial do Estúdio de Dublagem fora da CCXP focado em vilões de anime",
-   "url": "https://br.ign.com/anime/157991/crunchyroll-fara-edicao-especial-do-estudio-de-dublagem-fora-da-ccxp-focado-em-viloes-de-anime",
-   "summary": "Evento acontece neste sábado na cidade de São Paulo Os otakus de plantão da cidade de São Paulo Paulo terão a oportunidade de soltar a voz e assumir o papel de grandes…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/c1-20261126-135155-0000_etzs.jpg",
-   "at": 1795712325000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Quanto custa jogar GTA 6 na conta de luz? Estudo revela que HDR pode aumentar significativamente o consumo",
@@ -659,14 +684,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "One Of 2025's Best Roguelikes Will Soon Be Free For Switch Online Members",
-   "url": "https://www.nintendolife.com/news/2026/11/one-of-2025s-best-roguelikes-will-soon-be-free-for-switch-online-members",
-   "summary": "Rogue 'em up until 3rd December. Nintendo is back with another Free Game Trial for all of its NSO members in Europe, and it's a real good'un this time. Last year's wonderful…",
-   "img": "https://images.nintendolife.com/b5fcb7992a479/large.jpg",
-   "at": 1795703400000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "We are already in a world where people think about promoting games as human-made, Citizen Sleeper creator says",
    "url": "https://www.eurogamer.net/citizen-sleeper-creator-gen-ai-human-made-games-signet-city",
    "summary": "Citizen Sleeper creator Gareth Damian Martin - also known by their studio name Jump Over the Age - believes we're reaching a point of gen-AI saturation whereby game-makers are…",
@@ -787,14 +804,6 @@
    "summary": "Many World of Warcraft: Forever players are currently in the midst of a substantial PvP reputation grind. However, this process has been disrupted due to a sudden change to one of…",
    "img": "https://assetsio.gnwcdn.com/world-of-warcraft-alterac-valley.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795689970000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 reinvigorates PlayStation 5 and Xbox Series S/X console sales in the US, even at their inflated prices",
-   "url": "https://www.eurogamer.net/playstation-5-xbox-series-s-x-console-hardware-sales-gta-6",
-   "summary": "Despite the far higher prices of PlayStation and Xbox consoles today compared to their launch, or even the same period last year, both brands of console saw a significant boost in…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-lucia-duffle-bag-low-angle-1.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795686010000,
    "source": "Eurogamer"
   },
   {
@@ -1003,15 +1012,6 @@
    "summary": "Série estreia no dia 3 de janeiro de 2027.",
    "img": "https://a.storyblok.com/f/178900/960x540/e8d02bdd40/the-kept-man-of-the-princess-knight.jpg",
    "at": 1795605180000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime de Migratory Birds and Snail estreia no 3º trimestre de 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/migratory-birds-and-snail-anime-3-trimestre-2027-temporada-de-julho",
-   "summary": "Adaptação foi anunciada em 2024.",
-   "img": "https://a.storyblok.com/f/178900/800x419/97e3c60874/migratory-birds-and-snail-volume-7-header.jpg",
-   "at": 1795603980000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
   },
