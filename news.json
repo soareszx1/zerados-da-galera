@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795796251816,
+ "atualizadoEm": 1795806683536,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 13
+   "itens": 12
   },
   {
    "nome": "Eurogamer",
@@ -78,6 +78,160 @@
   }
  ],
  "itens": [
+  {
+   "title": "Yooka-Laylee studio explains upcoming Definitive Edition's absence on Xbox to 'frustrated' fans",
+   "url": "https://www.eurogamer.net/yooka-laylee-skipping-xbox-costs",
+   "summary": "Yooka-Laylee and the Impossible Lair : Definitive Edition is notably skipping Xbox Series X/S consoles, and the studio blames \"technical challenges and costs.\" Read more",
+   "img": "https://assetsio.gnwcdn.com/yooka-replayee.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795806490000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "É possível comprar casas no GTA 6? Veja como a Rockstar lida com a questão imobiliária",
+   "url": "https://br.ign.com/grand-theft-auto-vi/158039/e-possivel-comprar-casas-no-gta-6-veja-como-a-rockstar-lida-com-a-questao-imobiliaria",
+   "summary": "Explicação está na lore do game Se você gostava das propriedades de GTA San Andreas, vai ter que se acostumar com outro ritmo no GTA 6.",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_cn5j.jpg",
+   "at": 1795806030000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Emulação de Xbox Series X|S no PC ganha ferramenta que reúne vários emuladores",
+   "url": "https://www.adrenaline.com.br/games/xbox/xsemu-emulacao-xbox-series-pc-launcher-runners-xcl-victory-kelvaroq/",
+   "summary": "XSEmu, do desenvolvedor Zortos, junta forks do VIctory e o Kelvaroq num launcher para Windows; primeira versão roda GTA 6 sem iluminação. Entenda.",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/xsemu-emulacao-xbox-series-pc-launcher-runners-xcl-victory-kelvaroq-640x400.jpg",
+   "at": 1795805288000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Rumored The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
+   "url": "https://www.eurogamer.net/simpsons-hit-and-run-remake-rumored-cancelled",
+   "summary": "A rumored remake of The Simpsons: Hit & Run (the internet's most-wanted video game revival) may be in trouble. Read more",
+   "img": "https://assetsio.gnwcdn.com/OOgTcp23xRHycNyLw2Zdyj0nrVKNWh.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795802900000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Hollow Knight: Silksong – Sea of Sorrow Official Launch Trailer",
+   "url": "https://www.gamespot.com/videos/hollow-knight-silksong-sea-of-sorrow-official-launch-trailer/",
+   "summary": "Voyage above and beneath a vast forgotten sea in Hollow Knight: Silksong's first giant expansion, releasing free for all players on December 11, 2026!",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Hollow-Knight_-Silksong-Sea-of-Sorrow-Launch-Trailer.mp4.00_00_42_19.Still001.jpg?w=300",
+   "at": 1795802528000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Site News: Nintendo Life's Black Friday Sale",
+   "url": "https://www.nintendolife.com/news/2026/11/site-news-nintendo-lifes-black-friday-sale",
+   "summary": "Support us with 10% off. Tis the season for Black Friday deals and we've got a couple of our own to offer to you. We hope that you are already aware that Nintendo Life relies on…",
+   "img": "https://images.nintendolife.com/eecbc5fa0f938/large.jpg",
+   "at": 1795802400000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Estúdio de Hollow Knight anuncia a Team Cherry Presents, para atuar também como distribuidora",
+   "url": "https://www.adrenaline.com.br/games/estudio-de-hollow-knight-anuncia-a-team-cherry-presents-para-atuar-tambem-como-distribuidora/",
+   "summary": "Team Cherry vai ajudar no lançamento de indies de outros estúdios e já anuncia três novos jogos",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/team-cherry-presents-distribuidora-hollow-knight-640x400.jpg",
+   "at": 1795802171000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Ultraman Teo: Novo filme ganha título, sinopse e data de estreia no Japão",
+   "url": "https://www.jbox.com.br/2026/11/27/ultraman-teo-novo-filme-ganha-titulo-sinopse-e-data-de-estreia-no-japao/",
+   "summary": "Longa marca o último trabalho da atriz Noa Nakada, falecida recentemente.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/ultrateo.jpg?ssl=1",
+   "at": 1795801399000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "All Meditation Spots In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-meditation-spot-locations-guide/",
+   "summary": "Sometimes, you just want to step away and relax from all the hustle and bustle in Grand Theft Auto 6 . By “hustle,” we mean ransacking the vaults of banks, and by “bustle,” we…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-meditation-spots-guide-.jpg?w=300",
+   "at": 1795799868000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Nintendo Switch OLED com Super Mario Bros. Wonder fica mais barato com cupom-relâmpago na Amazon",
+   "url": "https://br.ign.com/descontos/158037/nintendo-switch-oled-com-super-mario-bros-wonder-fica-mais-barato-com-cupom-relampago-na-amazon",
+   "summary": "Além do console e do jogo Super Mario Bros. Wonder, o pacote também inclui três meses de assinatura do Nintendo Switch Online para aproveitar os recursos extras da plataforma",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_7vjg.png",
+   "at": 1795799540000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "\"Extremamente desapontado\": Denis Villeneuve não gostou que a Disney colocou Vingadores: Doutor Destino no mesmo dia de lançamento de Duna: Parte Três",
+   "url": "https://br.ign.com/duna-parte-3/158035/extremamente-desapontado-denis-villeneuve-nao-gostou-que-a-disney-colocou-vingadores-doutor-destino",
+   "summary": "\"Aceitei meu destino, rezando aos deuses do cinema\" Denis Villeneuve revelou sua decepção com a decisão da Disney de lançar Vingadores: Doutor Destino nos cinemas no mesmo dia que…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/d1-20261127-140618-0000_2cmw.jpg",
+   "at": 1795799227000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Father, I Don't Want This Marriage Volumes 1-4 K-Comic Review",
+   "url": "https://www.animenewsnetwork.com/review/father-i-dont-want-this-marriage/volumes-1-4/.243392",
+   "summary": "Father, I Don’t Want This Marriage rapidly becomes a case of misunderstandings fueling misconceptions in delightful romcom fashion, albeit with a dark underbelly.",
+   "img": "",
+   "at": 1795798800000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Jogada da Semana: Livros",
+   "url": "https://blog.br.playstation.com/2026/11/27/jogada-da-semana-livros/",
+   "summary": "Sempre paramos para ler sobre os mundos dos nossos games, dentro e fora deles! Vamos conhecer algumas das imagens mais eruditas enviadas pela comunidade: Abrimos com…",
+   "img": "",
+   "at": 1795798735000,
+   "source": "PlayStation Blog BR"
+  },
+  {
+   "title": "How To Play Tennis And All Court Locations In GTA 6",
+   "url": "https://www.gamespot.com/articles/how-to-play-tennis-and-all-court-locations-in-gta-6/",
+   "summary": "Tennis was one of the most beloved minigames from Grand Theft Auto 5, and by all indications, it appeared that Rockstar Games was bringing it back for GTA 6 . However, players are…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Vice_City_03.0nqzlrqdmlze.jpg?w=300",
+   "at": 1795798625000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Don't expect a GTA set outside the USA anytime soon, as Rockstar has \"not had a lot of conversations over doing it anywhere else\"",
+   "url": "https://www.eurogamer.net/gta-outside-usa-unlikely-rockstar-not-had-conversations-over-anywhere-else",
+   "summary": "Would Rockstar really set a future Grand Theft Auto game outside of the United States? The concept's been mooted recently, particularly in reporting on a recent Rockstar interview…",
+   "img": "https://assetsio.gnwcdn.com/GTA-6-review-5.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795797960000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "2 Smart TVs pelo preço de 1! Combo oficial da Samsung traz dois modelos em oferta na Black da Amazon",
+   "url": "https://br.ign.com/descontos/158034/2-smart-tvs-pelo-preco-de-1-combo-oficial-da-samsung-traz-dois-modelos-em-oferta-na-black-da-amazon",
+   "summary": "Samsung reúne a MiniLED 4K de 75\" e a QLED Full HD de 43\" em um só combo oficial na Amazon. Compare os modelos, veja o que cada tecnologia entrega e clique para garantir as duas…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_94kr.png",
+   "at": 1795796965000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogadores encontram glitch em GTA 6 que impede progredir na campanha do game; saiba o que fazer se isso ocorrer",
+   "url": "https://br.ign.com/grand-theft-auto-vi/158033/jogadores-encontram-glitch-em-gta-6-que-impede-progredir-na-campanha-do-game-saiba-o-que-fazer-se-is",
+   "summary": "Uma ligação que nunca chegou... Alguns jogadores relataram um estranho glitch que impede o progresso da campanha de GTA 6 mesmo após um pacote de atualização para o jogo lançado…",
+   "img": "https://sm.ign.com/ign_br/photo/default/jason-and-lucia-20-1793891731333_4qnv.jpg",
+   "at": 1795796910000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Próxima Semana em XBOX: novos jogos de 30 de novembro a 4 de dezembro",
+   "url": "https://news.xbox.com/pt-br/2026/11/27/proxima-semana-em-xbox-novos-jogos-de-30-de-novembro-a-4-de-dezembro/",
+   "summary": "The post Próxima Semana em XBOX: novos jogos de 30 de novembro a 4 de dezembro appeared first on Xbox Wire em Português .",
+   "img": "",
+   "at": 1795796378000,
+   "source": "Xbox Wire Brasil"
+  },
+  {
+   "title": "Team Cherry Uses The Pull Of Silksong To Highlight A Trio Of Wonderful-Looking Indies",
+   "url": "https://www.nintendolife.com/news/2026/11/team-cherry-uses-the-pull-of-silksong-to-highlight-a-trio-of-wonderful-looking-indies",
+   "summary": "And we want them all! Just when we thought that we couldn't have any more respect for Team Cherry, the dev goes and uses its platform to highlight even more adorable-looking…",
+   "img": "https://images.nintendolife.com/f019befa6a610/large.jpg",
+   "at": 1795796100000,
+   "source": "Nintendo Life"
+  },
   {
    "title": "DualSense de Gran Turismo: garanta a edição limitada com desconto na Amazon",
    "url": "https://www.hardware.com.br/artigos/dualsense-de-gran-turismo-amazon/",
@@ -165,14 +319,6 @@
    "img": "https://assetsio.gnwcdn.com/Lucia-drive.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795790580000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Watch: Team Cherry's 'Cherry Time!' Special Presentation - Live!",
-   "url": "https://www.nintendolife.com/news/2026/11/watch-team-cherrys-cherry-time-special-presentation-live",
-   "summary": "Take a dip in the DLSEA. Ever one for a surprise, Team Cherry revealed earlier this week that it has a special presentation in store. Well, guess what? 'Cherry Time' is right…",
-   "img": "https://images.nintendolife.com/82ee74c5babc4/large.jpg",
-   "at": 1795789800000,
-   "source": "Nintendo Life"
   },
   {
    "title": "The World's Strongest Witch ‒ Episode 8",
@@ -284,14 +430,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Novo The Legend of Zelda 3D e de mundo aberto ainda está longe de ser lançado, mas deve continuar o que Breath of the Wild e Tears of the Kingdom fizeram tão be",
-   "url": "https://br.ign.com/the-legend-of-zelda-breath-of-the-wild/158025/novo-the-legend-of-zelda-3d-e-de-mundo-aberto-ainda-esta-longe-de-ser-lancado-mas-deve-continuar-o-q",
-   "summary": "Mais detalhes sobre o possível próximo game da franquia Após o remake de Ocarina of Time sair para consoles Nintendo Switch 2, todos já estão se perguntando sobre os próximos…",
-   "img": "https://sm.ign.com/ign_br/shot/r/reviewed-b/reviewed-by-jose-oterobr-march-2-2017br-the-legend-of-zelda_sbyb.jpg",
-   "at": 1795785988000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Projeto musical do anime Are You a Landmine, Chihara-san? divulga seu 5º videoclipe, \"Darling Dance\"",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/are-you-a-landmine-chihara-san-projeto-musical-quinto-videoclipe-darling-dance",
    "summary": "O anime tem estreia marcada para 7 de janeiro de 2027",
@@ -307,14 +445,6 @@
    "img": "https://images.nintendolife.com/7a9407df611f7/large.jpg",
    "at": 1795785300000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "McAfee Total Protection Plus protege até 5 dispositivos e está com R$ 70 de desconto",
-   "url": "https://br.ign.com/descontos/158024/mcafee-total-protection-plus-protege-ate-5-dispositivos-por-1-ano-e-esta-com-r-70-de-desconto",
-   "summary": "A internet está presente em praticamente todas as atividades do dia a dia, desde compras e pagamentos até conversas, trabalho e entretenimento. Com tantas informações pessoais…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/shutterstock-2771206043_s8g5.jpg",
-   "at": 1795784849000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Killer Shark – Isekai sobre Garota e Tubarão Assassino tem anuncio de anime",
@@ -420,14 +550,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "GTA 6: Lista de todos os códigos dos cofres do jogo",
-   "url": "https://br.ign.com/grand-theft-auto-vi/158004/gta-6-lista-de-todos-os-codigos-dos-cofres-do-jogo",
-   "summary": "Roubar esconderijos de gangues e empresas em Vice City às vezes exige mais do que força bruta Descubra a lista de combinações de cofres, códigos e códigos de teclado confirmados…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_37h3.jpg",
-   "at": 1795781001000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Anime Charisma apresenta Minato Ohse em novo trailer de personagem",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/charisma-anime-minato-ohse-trailer-personagem",
    "summary": "A adaptação do projeto multimídia estreia em 7 de janeiro",
@@ -503,30 +625,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Diretor de GTA 6 revela que a Rockstar criou três animações para cada interação com objetos",
-   "url": "https://br.ign.com/grand-theft-auto-vi/158016/diretor-de-gta-6-revela-que-a-rockstar-criou-tres-animacoes-para-cada-interacao-com-objetos",
-   "summary": "O jason fazendo six-seven com uma lata em cada mão",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-anim/gta-6-animation-director-reveals-rockstar-made-3-animations_cd5x.jpg",
-   "at": 1795777410000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Jason and Lucia Screenshots",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157976/jason-and-lucia-screenshots",
-   "summary": "",
-   "img": "https://sm.ign.com/ign_br/gallery/j/jason-and-/jason-and-lucia-screenshots_nkp6.jpg",
-   "at": 1795777410000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6 Has Massive Underground Caves Worth Diving Into",
-   "url": "https://www.gamespot.com/articles/gta-6-selkie-hole-underwater-cave-tunnel/",
-   "summary": "Take a break from all the car chases and crimes in Grand Theft Auto 6 , and relax in the quaint Emerald Springs resort. Oh, what's that? Is there something interesting nearby?…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-selkie-hole-underwater-cave-.jpg?w=300",
-   "at": 1795777324000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition ganha trailer com detalhes da nova versão",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/xenoblade-chronicles-3-nintendo-switch-2-edition-trailer-detalhes",
    "summary": "A nova atualização para o Nintendo Switch 2 chega em 3 de dezembro",
@@ -536,14 +634,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Xbox Game Pass Kicks Off December With Horror, Cozy Adventures, And More",
-   "url": "https://www.gamespot.com/articles/xbox-game-pass-kicks-off-december-with-horror-cozy-adventures-and-more/",
-   "summary": "One last month of 2026 brings two more waves of Xbox Game Pass titles to close out the year. Subscribers can once again look forward to some new arrivals in the Xbox Game Pass…",
-   "img": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4541297-hela.jpg?w=300",
-   "at": 1795777124000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Red Cat Ramen Anime's 2nd Season Reveals Main Promo Video, January 10 Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-27/red-cat-ramen-anime-2nd-season-reveals-main-promo-video-january-10-debut/.244255",
    "summary": "Rikon Densetsu, Hana Hope perform theme songs",
@@ -551,14 +641,6 @@
    "at": 1795777051000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "All NoFlusher Tags In GTA 6",
-   "url": "https://www.gamespot.com/articles/all-noflusher-tags-in-gta-6/",
-   "summary": "Grand Theft Auto 6 has several moments that rely heavily on over-the-top silliness. One, in particular, involves poo. Specifically, it’s about a group of individuals who do not…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-noflushers-tags-final-flush-_0e837d.jpg?w=300",
-   "at": 1795777015000,
-   "source": "GameSpot"
   },
   {
    "title": "The Cat and the Dragon Anime's 2nd Season Reveals January Debut, More Cast in 1st Promo Video",
@@ -685,15 +767,6 @@
    "summary": "Hayase plays Ikoi Hayase, a teenager left running a liquor store after family tragedy",
    "img": "",
    "at": 1795746339000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "The Fall 2026 Anime Preview Guide - Fool Night",
-   "url": "https://www.animenewsnetwork.com/preview-guide/2026/fall/fool-night/.244237",
-   "summary": "Just when you thought The Fall 2026 Anime Preview Guide was done for good, we're back for one last ride with Fool Night !",
-   "img": "",
-   "at": 1795745400000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -915,14 +988,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Review: Gamesir Nova Vision Controller For Switch 1 & 2 - Unique Features Elevate This Mid-Range Pad",
-   "url": "https://www.nintendolife.com/reviews/gamesir-nova-vision-controller-for-switch-1-and-2-unique-features-elevate-this-mid-range-pad",
-   "summary": "What a vision. Accessory developer Gamesir doesn’t often make controllers with the Switch 1 and 2 in mind, instead focusing primarily on Xbox and PC. So when it announced the new…",
-   "img": "https://images.nintendolife.com/637448a224e55/large.jpg",
-   "at": 1795716000000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Metal Slug entra para a crescente lista de jogos da SNK que vão virar filme",
    "url": "https://www.adrenaline.com.br/games/metal-slug-entra-para-a-crescente-lista-de-jogos-da-snk-que-vao-virar-filme/",
    "summary": "SNK continua a expandir sua aposta no cinema, agora mirando no clássico run'n'gun Metal Slug",
@@ -996,14 +1061,6 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Por que as luzes de GTA 6 são roxas? Entenda a ligação do jogo com a Flórida",
-   "url": "https://www.adrenaline.com.br/games/por-que-as-luzes-de-gta-6-sao-roxas-entenda-a-ligacao-do-jogo-com-a-florida/",
-   "summary": "Um dos grandes mistérios de GTA 6 está diretamente relacionado a um problema da cidade de Orlando",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Luzes-GTA-6-Roxo-Rockstar-640x400.jpeg",
-   "at": 1795707458000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "‘Kindergarten Wars’ ganha trailer com música de abertura da Ado",
    "url": "https://www.jbox.com.br/2026/11/26/kindergarten-wars-ganha-trailer-com-musica-de-abertura-da-ado/",
    "summary": "Animê que adapta o mangá de sucesso da Jump+ estreia em abril de 2027.",
@@ -1013,30 +1070,6 @@
    "source": "JBox"
   },
   {
-   "title": "GTA 6 reportedly sets massive livestreaming record, watched more in its first week than Elden Ring, Diablo 4, Valorant, and Lost Ark combined",
-   "url": "https://www.eurogamer.net/grand-theft-auto-6-first-week-hours-watched-record",
-   "summary": "Grand Theft Auto 6 has broken another livestreaming record. After attracting more viewers across livestreaming platforms than any game ever on its launch day, Rockstar's…",
-   "img": "https://assetsio.gnwcdn.com/gta-6-vice-city-characters-gold-ak-1.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795707140000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Rockstar Games employees vote against union recognition",
-   "url": "https://www.eurogamer.net/rockstar-games-employees-vote-against-union-recognition",
-   "summary": "Rockstar Games employees have voted against official recognition of the Rockstar Game Workers Union, with 93.2 percent of staff participating in the vote. Read more",
-   "img": "https://assetsio.gnwcdn.com/grand-theft-auto-6-character-4k-wallpaper-uhdpaper.com-269%401%40n.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795706940000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Jogos de PC em oferta de Black Friday com até 95% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-de-black-friday-com-ate-95-de-desconto/",
-   "summary": "Os interessados podem aproveitar as ofertas da GOG por tempo limitado, até que novos jogos entrem em promoção",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/11/kingdom-come-deliverance-2-640x400.webp",
-   "at": 1795705200000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Migratory Birds & Snail: Animê está previsto para a Temporada de Verão de 2027",
    "url": "https://www.jbox.com.br/2026/11/26/migratory-birds-snail-anime-esta-previsto-para-a-temporada-de-verao-de-2027/",
    "summary": "Anúncio foi feito através do obi do volume mais recente do mangá.",
@@ -1044,30 +1077,6 @@
    "at": 1795704598000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Promoção imperdível Black Friday: Controles DualSense Hyperpop Collection trazem estilo neon para turbinar seu setup PS5",
-   "url": "https://www.hardware.com.br/hardware-indica/promocao-imperdivel-black-friday-controles-dualsense-hyperpop-collection-trazem-estilo-neon-para-turbinar-seu-setup-ps5/",
-   "summary": "Controles DualSense Hyperpop Collection a partir de R$405. Três cores vibrantes com toda tecnologia PS5.",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/10/cont.jpg",
-   "at": 1795703419000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "We are already in a world where people think about promoting games as human-made, Citizen Sleeper creator says",
-   "url": "https://www.eurogamer.net/citizen-sleeper-creator-gen-ai-human-made-games-signet-city",
-   "summary": "Citizen Sleeper creator Gareth Damian Martin - also known by their studio name Jump Over the Age - believes we're reaching a point of gen-AI saturation whereby game-makers are…",
-   "img": "https://assetsio.gnwcdn.com/citizensleeper2_cropped.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795702700000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "After playing the game, 30% of polled GTA 6 players want to buy flowers for a loved one, 9% accidentally punched cats",
-   "url": "https://www.eurogamer.net/gta-6-30-percent-buy-flowers-punch-cats",
-   "summary": "A new survey of Grand Theft Auto 6 players has found some particularly interesting results. 30 percent came away from the game with the desire to buy someone special flowers. Nine…",
-   "img": "https://assetsio.gnwcdn.com/cat-gta-6.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795702150000,
-   "source": "Eurogamer"
   },
   {
    "title": "Filme live-action de Kaiji: Jinsei Revenge Game aposta alto com novo trailer, pôster e adições no seu elenco",
@@ -1138,15 +1147,6 @@
    "summary": "'Sousou no Frieren Betsutan' conta história que se passa entre os dois primeiros capítulos do mangá, focada em Frieren e Heiter.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/frieren-e-a-jornada-para-o-alem-heiter-destacada.jpg?ssl=1",
    "at": 1795640482000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Now That We Draw: Divulgado trailer com prévia da música de abertura",
-   "url": "https://www.jbox.com.br/2026/11/25/now-that-we-draw-divulgado-trailer-com-previa-da-musica-de-abertura/",
-   "summary": "Animê sobre casal de estudantes que escrevem mangá estreia em janeiro.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/now-that-we-draw-destacada.jpg?ssl=1",
-   "at": 1795638426000,
    "cat": "geek",
    "source": "JBox"
   },
