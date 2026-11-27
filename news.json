@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795730800632,
+ "atualizadoEm": 1795743148491,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -79,6 +79,113 @@
  ],
  "itens": [
   {
+   "title": "Splatoon 3 Version 12.0.1 Update Out Now, Here Are The Patch Notes",
+   "url": "https://www.nintendolife.com/news/2026/11/splatoon-3-version-12-0-1-update-out-now-here-are-the-patch-notes",
+   "summary": "Includes a fix for Anarchy Battle. Last week, Nintendo released a major update for its team-based squid-shooter Splatoon 3 , bumping the game up to Version 12.0.0 . It included…",
+   "img": "https://images.nintendolife.com/44b2b1eff4f0d/large.jpg",
+   "at": 1795741500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Killer Shark in Another World ganhará anime",
+   "url": "https://animenew.com.br/killer-shark-in-another-world-anime/",
+   "summary": "O mangá Killer Shark in Another World, de kuboken (Isekai Kuimetsu no Same), terá uma adaptação em anime para televisão. O anúncio aconteceu através da Kadokawa nesta…",
+   "img": "https://animenew.com.br/wp-content/uploads/2026/11/Killer-Shark-in-Another-World-ganhara-anime.webp",
+   "at": 1795741339000,
+   "cat": "geek",
+   "source": "AnimeNew"
+  },
+  {
+   "title": "Black Friday: Galaxy S26 FE com carregador de 25W na caixa está com 41% de desconto no Mercado Livre",
+   "url": "https://br.ign.com/descontos/158007/black-friday-galaxy-s26-fe-com-carregador-de-25w-na-caixa-esta-com-41-de-desconto-no-mercado-livre",
+   "summary": "Celular da Samsung traz tela AMOLED de 120 Hz, câmera com zoom óptico de 3x e certificação IP68",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/black-friday-galaxy-s26-fe-com-carregador-de-25w-na-caixa-es_eqxk.jpg",
+   "at": 1795741089000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos de PC em oferta na Flash Sale da Black Friday Nuuvem com cupom limitado",
+   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-de-pc-em-oferta-na-flash-sale-da-black-friday-nuuvem-com-cupom-limitado/",
+   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/01/Black-Myth-Wukong-ainda-nao-chegou-ao-Xbox-gracas-as-limitacoes-do-Series-S-640x400.jpg",
+   "at": 1795739558000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Seu PC ainda usa HD? 3 SSDs em oferta na Black Friday da Amazon custam a partir de menos de R$ 190",
+   "url": "https://br.ign.com/descontos/158006/seu-pc-ainda-usa-hd-3-ssds-em-oferta-na-black-friday-da-amazon-custam-a-partir-de-menos-de-r-190",
+   "summary": "Seleção reúne modelos SATA de entrada e um NVMe M.2 para quem busca mais velocidade no desktop",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/black-friday-3-ssds-para-tirar-o-pc-da-lentidao-com-ate-36-d_ep2g.jpg",
+   "at": 1795739419000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "AO VIVO | As melhores ofertas da Black Friday 2026",
+   "url": "https://www.adrenaline.com.br/tech/black-friday-2026-ao-vivo/",
+   "summary": "Chegou a Black Friday 2026! Acompanhe nossas lives e confira as melhores promoções de hardware, games, celulares, notebooks, smart TVs e muito mais!",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Thumb-Black-Friday-v2-site-640x400.jpg",
+   "at": 1795735304000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Black Friday no Switch: Zelda, Metroid Prime, Resident Evil Requiem e mais jogos para Switch 1 e 2 têm até 54% OFF",
+   "url": "https://br.ign.com/descontos/158000/black-friday-no-switch-zelda-metroid-prime-resident-evil-requiem-e-mais-jogos-para-switch-1-e-2-tem",
+   "summary": "Franquias populares estão com ofertas para quem quer ampliar a biblioteca de jogos ou garantir novidades",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/shadow_4bqz.png",
+   "at": 1795734060000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Black Friday: monitor LG UltraGear de 27 polegadas e 240 Hz está com R$ 800 de desconto no Pix na Amazon",
+   "url": "https://br.ign.com/descontos/158003/black-friday-monitor-lg-ultragear-de-27-polegadas-e-240-hz-esta-com-r-800-de-desconto-no-pix-na-amaz",
+   "summary": "Modelo 27G440A tem compatibilidade com G-Sync e FreeSync Premium, 99% do sRGB e base com ajuste de altura",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/black-friday-monitor-lg-ultragear-de-27-polegadas-e-240-hz-e_5gcd.jpg",
+   "at": 1795734040000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Criador do NVIDIA Profile Inspector lança ferramenta que reduz flicker do G-Sync em monitores OLED",
+   "url": "https://www.adrenaline.com.br/nvidia/nvidia-g-sync-tweaks-orbmu2k-flicker-oled-lfc-60-fps/",
+   "summary": "Programa gratuito adia a duplicação de quadros (LFC) até 48 FPS e evita o vaivém entre 60 Hz e 120 Hz das telas de alta taxa. Veja como usar.",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/nvidia-g-sync-tweaks-orbmu2k-flicker-oled-lfc-60-fps-1-640x400.jpg",
+   "at": 1795732604000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Intel Core Ultra 9 4970K BFC teria 28 núcleos, 5,5 GHz e 144 MB de cache para enfrentar o Ryzen X3D",
+   "url": "https://www.adrenaline.com.br/intel/intel-core-ultra-9-4970k-bfc-28-nucleos-144-mb-cache-bllc-ryzen-x3d/",
+   "summary": "Documento vazado das amostras QS lista sete chips Nova Lake-S; só três ganham bLLC, a memória extra que mira jogos. Veja como fica a briga com a AMD.",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/intel-core-ultra-9-4970k-bfc-28-nucleos-144-mb-cache-bllc-ryzen-x3d-640x400.jpg",
+   "at": 1795732452000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Kagurabachi: Exibição antecipada na CCXP 2026 contará com dublagem em português",
+   "url": "https://www.jbox.com.br/2026/11/26/kagurabachi-exibicao-antecipada-na-ccxp-2026-contara-com-dublagem-em-portugues/",
+   "summary": "Painel no evento tem presença confirmada de Erick Bougleux e Leonardo Santhos, codiretores da dublagem, além de nomes ainda não divulgados.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/06/Kagurabachi-destacada.jpg?ssl=1",
+   "at": 1795730783000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Nearly Three Decades And Four Consoles Later, I Finally Beat Ocarina Of Time",
+   "url": "https://www.gamespot.com/articles/nearly-three-decades-and-four-consoles-later-i-finally-beat-ocarina-of-time/",
+   "summary": "I finally did it. As Princess Zelda held the transformed, monstrous Ganon in place with her magic, I delivered the final blow with the Master Sword. The Demon King was sealed away…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/125697-125698-nintendo-the-legend-of-zelda-ocarina-of-time-ss-5-1280x720-1.jpeg?w=300",
+   "at": 1795730400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Live-Action Darwin's Game Film's Trailer Reveals More Cast",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-darwin-game-film-trailer-reveals-more-cast/.244219",
+   "summary": "Raul, Gaku Sano, Haruse Akune, Hinano Nakayama, Kōki Maeda, Kentarō Maeda join cast",
+   "img": "",
+   "at": 1795730400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "Black da Amazon com 62% OFF: Monitor portátil é opção para quem precisa de uma tela extra em viagens e no dia a dia",
    "url": "https://br.ign.com/descontos/158002/black-da-amazon-com-62-off-monitor-portatil-e-opcao-para-quem-precisa-de-uma-tela-extra-em-viagens-e",
    "summary": "Tela extra de 15,6 polegadas pode facilitar multitarefas, estudos e jogos sem exigir espaço para um monitor tradicional",
@@ -97,7 +204,7 @@
   },
   {
    "title": "Ao no Hana Utsuwa no Mori Live-Action Series Gets 2-Episode Spinoff Drama on December 21",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-24/ao-no-hana-utsuwa-no-mori-live-action-series-gets-2-episode-spinoff-drama-on-december-21/.244150",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/ao-no-hana-utsuwa-no-mori-live-action-series-gets-2-episode-spinoff-drama-on-december-21/.244150",
    "summary": "Ao no Hana Utsuwa no Mori Spinoff Ano Ko no Kuchibeni features new story, cast members; main series also to end on December 17",
    "img": "",
    "at": 1795727700000,
@@ -112,6 +219,14 @@
    "at": 1795727539000,
    "cat": "geek",
    "source": "JBox"
+  },
+  {
+   "title": "Jogos de Luta para PlayStation em oferta na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-luta-para-playstation-em-oferta-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/marvel-tokon-fighting-souls-game-640x400.webp",
+   "at": 1795726800000,
+   "source": "Adrenaline"
   },
   {
    "title": "Esquenta Black Friday: Nintendo Switch 2 com EA Sports FC 27 está com quase R$ 1.180 de desconto na Amazon",
@@ -631,44 +746,12 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Diretor do live-action de Solo Leveling sai da produção após dois episódios; o que isso quer dizer para a série da Netflix?",
-   "url": "https://br.ign.com/solo-leveling/157980/diretor-do-live-action-de-solo-leveling-sai-da-producao-apos-dois-episodios-o-que-isso-quer-dizer-pa",
-   "summary": "Posição já foi preenchida com outro diretor O co-diretor do live-action de Solo Leveling , Lee Hae-jun, deixou a produção da Netflix após dois episódios. Segundo o ChosunBiz , não…",
-   "img": "https://sm.ign.com/ign_br/photo/t/the-bigges/the-biggest-anime-coming-in-2025_a1hr.jpg",
-   "at": 1795701110000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Mudança climática ainda não está funcionando em GTA 6 mesmo após atualização? Essa dica pode ajudar a dar gatilho na chuva e tempestades",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157978/mudanca-climatica-ainda-nao-esta-funcionando-em-gta-6-mesmo-apos-atualizacao-essa-dica-pode-ajudar-a",
-   "summary": "Tática pode ser usada por jogadores de PlayStation 5 A Rockstar lançou recentemente a primeira atualização pós-lançamento para GTA 6 que, entre outras coisas, incluiu uma correção…",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-weat/gta-6-weather-still-not-varied-even-after-the-patch-ps5-play_s39f.jpg",
-   "at": 1795699419000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Fans report Umamusume: Pretty Derby AI clone brimming with ads, Cygames gets it taken offline",
    "url": "https://www.eurogamer.net/umamusame-pretty-derby-ai-clone-taken-off-mobile-after-reports",
    "summary": "An AI clone of Umamusume: Pretty Derby has been stuck off the Google Play Store after it drew the ire of fans, and the community organised to report the offending title to…",
    "img": "https://assetsio.gnwcdn.com/screenshot-from-Umamusume-Pretty-Derby-showing-female-anime-characters-racing.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795698900000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6 não permite que você repita as missões, e a Rockstar tem um bom motivo para isso",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157972/gta-6-nao-permite-que-voce-repita-as-missoes-e-a-rockstar-tem-um-bom-motivo-para-isso",
-   "summary": "Tanto GTA 5 quanto Red Dead Redemption 2 permitiam que os jogadores repetissem missões livremente, mas esse não é o caso em GTA 6",
-   "img": "https://sm.ign.com/ign_br/news/g/gta-6-does/gta-6-doesnt-let-you-replay-missions-and-rockstar-says-there_4szv.jpg",
-   "at": 1795698225000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "GTA 6: Como conseguir a dança especial da Vicki no clube de striptease? Você só tem uma chance!",
-   "url": "https://br.ign.com/grand-theft-auto-vi/157964/gta-6-como-conseguir-a-danca-especial-da-vicki-no-clube-de-striptease-voce-so-tem-uma-chance",
-   "summary": "Um dia específico após uma missão específica Uma performance que só pode ser presenciada no dia de uma certa missão. Se não conseguir, é preciso carregar um save anterior ou jogar…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_6w36.jpg",
-   "at": 1795698215000,
-   "source": "IGN Brasil"
   },
   {
    "title": "\"Here We Go Again\" - After Delaying For Silksong, Indie Dev Braces For A Sea Of Sorrow Clash",
@@ -814,14 +897,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Jogos de Luta para PlayStation em oferta na Black Friday",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-luta-para-playstation-em-oferta-na-black-friday/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/marvel-tokon-fighting-souls-game-640x400.webp",
-   "at": 1795683600000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "1st Witch on the Holy Night Film Opens at #2",
    "url": "https://www.animenewsnetwork.com/news/2026-11-26/1st-witch-on-the-holy-night-film-opens-at-no.2/.244181",
    "summary": "Godzilla Minus Zero stays at #1 in 3rd weekend",
@@ -840,14 +915,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "Mouse P.I. For Hire Teases DLC Announcement, Taking Place Next Week",
-   "url": "https://www.nintendolife.com/news/2026/11/mouse-p-i-for-hire-teases-dlc-announcement-taking-place-next-week",
-   "summary": "The investigation continues. A lot of developers have decided to tease announcements in the lead up to certain end-of-year events and celebrations, and the latest one comes from…",
-   "img": "https://images.nintendolife.com/9b33a6258997f/large.jpg",
-   "at": 1795665900000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Live-Action 'Kekkon Shimashō, Koi Suru Mae ni' Series Reveals Cast, Theme Song Artists, January 2027 Streaming Debut",
    "url": "https://www.animenewsnetwork.com/news/2026-11-25/live-action-kekkon-shimasho-koi-suru-mae-ni-series-reveals-cast-theme-song-artists-january-2027-/.244170",
    "summary": "Former Nogizaka46 idol Tamami Sakaguchi, Genin wa Jibun ni Aru's Jun Mutō star in shorts with song by YU's",
@@ -862,15 +929,6 @@
    "summary": "Bloody Insurrection DLC Vol. 2 launches on December 17",
    "img": "",
    "at": 1795665011000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Live-Action High School Family: Kokosei Kazoku Film Gets Spinoff Shorts",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-25/live-action-high-school-family-kokosei-kazoku-film-gets-spinoff-shorts/.244171",
-   "summary": "11 short episodes stream in lead-up to film's January opening",
-   "img": "",
-   "at": 1795664781000,
    "cat": "geek",
    "source": "Anime News Network"
   },
@@ -919,14 +977,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Jogos da Capcom em oferta na Nuuvem com até 87% de desconto",
-   "url": "https://www.adrenaline.com.br/games/pc-games/jogos-da-capcom-em-oferta-na-nuuvem-com-ate-87-de-desconto-3/",
-   "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/08/resident-evil-requiem-5-640x400.webp",
-   "at": 1795647600000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "Anime de Now That We Draw rabisca um novo trailer e arte promocional",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/anime-now-that-we-draw-estreia-8-de-janeiro-2027-trailer-arte",
    "summary": "A série de comédia romântica vai estrear dia 8 de janeiro de 2027",
@@ -934,14 +984,6 @@
    "at": 1795646700000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "PRÉ-VENDA | God of War Laufey para PS5 em oferta com cupom limitado",
-   "url": "https://www.adrenaline.com.br/games/playstation/pre-venda-god-of-war-laufey-para-ps5-em-oferta-com-cupom-limitado/",
-   "summary": "A mídia física de God of War Laufey para PlayStation 5 já está em pré-venda com lançamento marcado para 2027",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/09/god-of-war-laufey-640x400.webp",
-   "at": 1795645860000,
-   "source": "Adrenaline"
   },
   {
    "title": "Brasileiro vence concurso e cria novo chefão de ‘Mega Man: Dual Override’",
@@ -979,14 +1021,6 @@
    "source": "JBox"
   },
   {
-   "title": "Jogos de Tiro para PlayStation em oferta na Black Friday",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-tiro-para-playstation-em-oferta-na-black-friday/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/10/Ajuste-Mouse-Experiencia-Battlefield-6-PC-640x400.jpg",
-   "at": 1795640400000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "How To Talk To Your Relatives (And Their Cool-Ass Kids) About GTA 6 This Thanksgiving",
    "url": "https://www.gamespot.com/articles/how-to-talk-to-your-relatives-and-their-cool-ass-kids-about-gta-6-this-thanksgiving/",
    "summary": "Every Thanksgiving brings the possibility of fraught conversations. Your sister's divorce. Your second cousin's polycule. Politics . So surely one of the biggest entertainment…",
@@ -1018,22 +1052,6 @@
    "at": 1795638426000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Fastest Land, Air, And Sea Vehicles In GTA 6 And How To Get Them",
-   "url": "https://www.gamespot.com/articles/fastest-land-air-and-sea-vehicles-in-gta-6-and-how-to-get-them/",
-   "summary": "From the moment you set foot on the map of Leonida, you likely have a side goal of acquiring the fastest vehicle possible in Grand Theft Auto 6 . It might not be your immediate…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?w=300",
-   "at": 1795638034000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "GTA 6 é mais estável no Series X do que no PS5, apesar de seu marketing oficial",
-   "url": "https://www.adrenaline.com.br/games/gta-6-e-mais-estavel-no-series-x-do-que-no-ps5-apesar-de-seu-marketing-oficial/",
-   "summary": "Segundo a Digital Foundry, o Series X é o melhor console básico para jogar GTA 6",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Estabilidade-Xbox-Series-X-640x400.jpeg",
-   "at": 1795636115000,
-   "source": "Adrenaline"
   },
   {
    "title": "20 Anos de PlayStation Store: como a vitrine digital da Sony moldou a indústria moderna dos games",
@@ -1131,15 +1149,6 @@
    "at": 1795603980000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "‘Smoking Behind the Supermarket with You’ deve ser publicado pela JBC",
-   "url": "https://www.jbox.com.br/2026/11/24/smoking-behind-the-supermarket-with-you-deve-ser-publicado-pela-jbc/",
-   "summary": "Mangá ganhou registro no ISBN, mas ainda não foi anunciado oficialmente pela editora.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Smoking-Behind-the-Supermarket-with-You-destacada.jpg?ssl=1",
-   "at": 1795558692000,
-   "cat": "geek",
-   "source": "JBox"
   },
   {
    "title": "Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação",
@@ -1246,15 +1255,6 @@
    "summary": "A segunda temporada de Mistress Kanan is Devilishly Easy (Kanan-sama wa Akumade Choroi) ganhou seu primeiro trailer completo, novo visual promocional e detalhes do elenco e da…",
    "img": "https://animenew.com.br/wp-content/uploads/2026/11/Mistress-Kanan-ganha-trailer-e-estreia-em-2027.webp",
    "at": 1795033953000,
-   "cat": "geek",
-   "source": "AnimeNew"
-  },
-  {
-   "title": "The Days of Diamond terá adaptação para anime",
-   "url": "https://animenew.com.br/the-days-of-diamond-anime/",
-   "summary": "O mangá The Days of Diamond, de Ōhashi Hirai, ganhará uma adaptação em anime para TV. O anúncio revelou a primeira imagem promocional e os principais nomes da equipe de produção.…",
-   "img": "https://animenew.com.br/wp-content/uploads/2026/11/The-Days-of-Diamond-tera-adaptacao-para-anime.webp",
-   "at": 1795007166000,
    "cat": "geek",
    "source": "AnimeNew"
   }
