@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795753212326,
+ "atualizadoEm": 1795764917827,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -63,8 +63,8 @@
   },
   {
    "nome": "Anime News Network",
-   "ok": true,
-   "itens": 15
+   "ok": false,
+   "itens": 0
   },
   {
    "nome": "Crunchyroll Notícias",
@@ -78,6 +78,30 @@
   }
  ],
  "itens": [
+  {
+   "title": "Random: Did Dave The Diver Just Tease A GTA 6 Collab?",
+   "url": "https://www.nintendolife.com/news/2026/11/random-did-dave-the-diver-just-tease-a-gta-6-collab",
+   "summary": "We can dream, right? If you didn't already know, Dave The Diver actually has something in common with Rockstar's new open-world title, Grand Theft Auto 6 . In both games, you can…",
+   "img": "https://images.nintendolife.com/91be8dcea1a07/large.jpg",
+   "at": 1795762500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Pokémon Champions X Pokémon GO Collab Taking Place Next Month",
+   "url": "https://www.nintendolife.com/news/2026/11/pokemon-champions-x-pokemon-go-collab-taking-place-next-month",
+   "summary": "Unlock a special outfit. As you've likely already seen, Pokémon Champions is getting a balance update, more Pokémon and more Mega Evolutions next month on 2nd December 2026 . Read…",
+   "img": "https://images.nintendolife.com/20a05c2e7714c/large.jpg",
+   "at": 1795757700000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Jupiter's Picross Series For Switch Has Officially Surpassed One Million Sales",
+   "url": "https://www.nintendolife.com/news/2026/11/jupiters-picross-series-for-switch-has-officially-surpassed-one-million-sales",
+   "summary": "The first title released on the eShop in 2017. If you've ever bought one of Jupiter Corporation's Picross games on the Switch, you've helped the series reach a major milestone.…",
+   "img": "https://images.nintendolife.com/de9b7adb8d052/large.jpg",
+   "at": 1795753800000,
+   "source": "Nintendo Life"
+  },
   {
    "title": "Black Friday da Amazon leva controle Xbox Pulse Red ao seu menor preço histórico",
    "url": "https://br.ign.com/descontos/158013/black-friday-da-amazon-leva-controle-xbox-pulse-red-ao-seu-menor-preco-historico",
@@ -111,57 +135,12 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Live-Action This World is Worth Fighting For Series Casts Ikoi Hayase",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-this-world-is-worth-fighting-for-series-casts-ikoi-hayase/.244236",
-   "summary": "Hayase plays Ikoi Hayase, a teenager left running a liquor store after family tragedy",
-   "img": "",
-   "at": 1795746339000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "The Fall 2026 Anime Preview Guide - Fool Night",
-   "url": "https://www.animenewsnetwork.com/preview-guide/2026/fall/fool-night/.244237",
-   "summary": "Just when you thought The Fall 2026 Anime Preview Guide was done for good, we're back for one last ride with Fool Night !",
-   "img": "",
-   "at": 1795745400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "No Longer Heroine's Momoko Kōda Launches New Manga on December 21",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/no-longer-heroine-momoko-koda-launches-new-manga-on-december-21/.244110",
-   "summary": "Kono Oto, Myaku Ari desu ka? romantic comedy follows novel-writing girl, playboy doctor",
-   "img": "",
-   "at": 1795744871000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "LEGO do Laboratório do Homem de Ferro traz três armaduras de Tony Stark e está com 27% de desconto na Amazon",
    "url": "https://br.ign.com/descontos/158009/lego-do-laboratorio-do-homem-de-ferro-traz-tres-armaduras-de-tony-stark-e-esta-com-27-de-desconto-na",
    "summary": "Conjunto 76315 tem 384 peças, robô Dum-E para montar e minifiguras de Pepper Potts e Aldrich Killian",
    "img": "https://sm.ign.com/ign_br/screenshot/default/lego-do-laboratorio-do-homem-de-ferro-traz-tres-armaduras-de_11ws.jpg",
    "at": 1795744262000,
    "source": "IGN Brasil"
-  },
-  {
-   "title": "Isekai Affair Writer Masakazu Ooi Launches New Manga",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/isekai-affair-writer-masakazu-ooi-launches-new-manga/.244113",
-   "summary": "Ooi launched Ma Mama Musō~Maō no Mama ni Amae Makuttara Saikyō ni! Saijaku Skill \"Amaenbō\" de Musōshite Akugyaku Yūsha ni Fukushūshimasu on November 20",
-   "img": "",
-   "at": 1795743499000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "'Ask and You Will Receive' Boys-Love Manga Gets Live-Action Series",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/ask-and-you-will-receive-boys-love-manga-gets-live-action-series/.244235",
-   "summary": "Rei Sawamura, Ryūdai Onikura star in January 2027 series",
-   "img": "",
-   "at": 1795741755000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Splatoon 3 Version 12.0.1 Update Out Now, Here Are The Patch Notes",
@@ -262,15 +241,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Live-Action Darwin's Game Film's Trailer Reveals More Cast",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-darwin-game-film-trailer-reveals-more-cast/.244219",
-   "summary": "Raul, Gaku Sano, Haruse Akune, Hinano Nakayama, Kōki Maeda, Kentarō Maeda join cast",
-   "img": "",
-   "at": 1795730400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Black da Amazon com 62% OFF: Monitor portátil é opção para quem precisa de uma tela extra em viagens e no dia a dia",
    "url": "https://br.ign.com/descontos/158002/black-da-amazon-com-62-off-monitor-portatil-e-opcao-para-quem-precisa-de-uma-tela-extra-em-viagens-e",
    "summary": "Tela extra de 15,6 polegadas pode facilitar multitarefas, estudos e jogos sem exigir espaço para um monitor tradicional",
@@ -286,15 +256,6 @@
    "at": 1795729680000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Ao no Hana Utsuwa no Mori Live-Action Series Gets 2-Episode Spinoff Drama on December 21",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/ao-no-hana-utsuwa-no-mori-live-action-series-gets-2-episode-spinoff-drama-on-december-21/.244150",
-   "summary": "Ao no Hana Utsuwa no Mori Spinoff Ano Ko no Kuchibeni features new story, cast members; main series also to end on December 17",
-   "img": "",
-   "at": 1795727700000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "‘Haru to Gen’ tem novo trailer com música de encerramento",
@@ -385,15 +346,6 @@
    "img": "https://assetsio.gnwcdn.com/geralt-witcher-3-remastered.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795720850000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Live-Action Quiztopia Series Adds 13 Cast Members",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-quiztopia-series-adds-13-cast-members/.244100",
-   "summary": "Series debuts on Netflix on December 17",
-   "img": "",
-   "at": 1795720500000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "XBOX libera 2 jogos para jogar de graça neste fim de semana – veja lista!",
@@ -520,15 +472,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "The Dragon Prince's Ill-Mated Betrothal Manga Ends, Gets 3-Chapter Epilogue",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/the-dragon-prince-ill-mated-betrothal-manga-ends-gets-3-chapter-epilogue/.244106",
-   "summary": "Manga's main story ended on September 17",
-   "img": "",
-   "at": 1795713300000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Funko Friday! Colecionáveis despencam de preço na Black da Amazon",
    "url": "https://br.ign.com/descontos/157986/funko-friday-colecionaveis-despencam-de-preco-na-black-da-amazon",
    "summary": "Colecionáveis de games, animes, filmes e até do esporte aparecem com descontos para quem quer aumentar a coleção sem gastar tanto!",
@@ -577,15 +520,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "ANOMALITH Game Review",
-   "url": "https://www.animenewsnetwork.com/review/game/pc-playsation-5-nintendo-switch-2/anomalith/.243577",
-   "summary": "The best way to describe ANOMALITH's strengths is that it manages to do a lot with very little, though that means it often bites off more than it can chew.",
-   "img": "",
-   "at": 1795712400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Crunchyroll fará edição especial do Estúdio de Dublagem fora da CCXP focado em vilões de anime",
    "url": "https://br.ign.com/anime/157991/crunchyroll-fara-edicao-especial-do-estudio-de-dublagem-fora-da-ccxp-focado-em-viloes-de-anime",
    "summary": "Evento acontece neste sábado na cidade de São Paulo Os otakus de plantão da cidade de São Paulo Paulo terão a oportunidade de soltar a voz e assumir o papel de grandes…",
@@ -616,15 +550,6 @@
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/66d64a05-69a4-4341-adb4-1cacbfa26f04.png?w=300",
    "at": 1795709807000,
    "source": "GameSpot"
-  },
-  {
-   "title": "MangaPlaza Add Seven Seas Titles to Catalogue",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/mangaplaza-add-seven-seas-titles-to-catalogue/.244200",
-   "summary": "Titles include Mushoku Tensei , The Saint's Magic Power is Omnipotent , The Strange House , more",
-   "img": "",
-   "at": 1795709700000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Ultraman Nexus: Box em Blu-ray ganha trailer e detalhes dos extras",
@@ -717,15 +642,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "kuboken's Killer Shark in Another World Manga Gets TV Anime",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/kuboken-killer-shark-in-another-world-manga-gets-tv-anime/.244231",
-   "summary": "Shige Fukase directs series at Studio Lings",
-   "img": "",
-   "at": 1795705200000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "Migratory Birds & Snail: Animê está previsto para a Temporada de Verão de 2027",
    "url": "https://www.jbox.com.br/2026/11/26/migratory-birds-snail-anime-esta-previsto-para-a-temporada-de-verao-de-2027/",
    "summary": "Anúncio foi feito através do obi do volume mais recente do mangá.",
@@ -767,14 +683,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Nintendo Promises To Fix The Long Load Times On Pikmin 4 - Switch 2 Edition",
-   "url": "https://www.nintendolife.com/news/2026/11/nintendo-promises-to-fix-the-long-load-times-on-pikmin-4-switch-2-edition",
-   "summary": "\"We apologise for the inconvenience\". Nintendo has issued a statement acknowledging load time issues on Pikmin 4 - Nintendo Switch 2 Edition + Dandori Academy on Switch 2. The…",
-   "img": "https://images.nintendolife.com/226eca7fe50a1/large.jpg",
-   "at": 1795701600000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Hidden Control Options In GTA 6",
    "url": "https://www.gamespot.com/videos/hidden-control-options-in-gta-6/",
    "summary": "Grand Theft Auto 6 has a bunch of hidden commands never explained, we show off a couple you can pull off.",
@@ -807,14 +715,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "\"Here We Go Again\" - After Delaying For Silksong, Indie Dev Braces For A Sea Of Sorrow Clash",
-   "url": "https://www.nintendolife.com/news/2026/11/here-we-go-again-after-delaying-for-silksong-indie-dev-braces-for-a-sea-of-sorrow-clash",
-   "summary": "\"Does the universe have it in for us?\". There were a good few indies set for launch in September last year that ended up being delayed to escape the blast radius of Hollow Knight:…",
-   "img": "https://images.nintendolife.com/7e8236bd31484/large.jpg",
-   "at": 1795697100000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "GTA 6’s Furry Rescue Mission Is A Little Weird, But The Rewards Are Worth It",
    "url": "https://www.gamespot.com/articles/gta-6-furry-rescue-mission-is-a-little-weird-but-the-rewards-are-worth-it/",
    "summary": "No matter what you do in GTA 6 , it pales in comparison to being a Furry in that game. Anyone looking to externalize their inner animal spirit is in danger of being hunted, and…",
@@ -845,15 +745,6 @@
    "img": "https://assetsio.gnwcdn.com/Screenshot-2025-01-27-152746.png?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795695340000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Fool Night Anime Reveals 3 More Cast Members",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/fool-night-anime-reveals-3-more-cast-members/.244230",
-   "summary": "Entire series debuted on Netflix worldwide on Thursday",
-   "img": "",
-   "at": 1795695300000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Filme live-action de Kaiji: Jinsei Revenge Game aposta alto com novo trailer, pôster e adições no seu elenco",
@@ -889,32 +780,6 @@
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/GTA-6-ja-estaria-rodando-a-mais-de-30-FPS-no-PC-em-versoes-nao-oficiais.jpg",
    "at": 1795692333000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "EA Sports FC 27 Is Using AI To Add The Voice Of Late Commentator John Motson",
-   "url": "https://www.nintendolife.com/news/2026/11/ea-sports-fc-27-is-using-ai-to-add-the-voice-of-late-commentator-john-motson",
-   "summary": "Motson's widow and son gave permission. EA Sports FC 27 will today add the voice of the iconic commentator John Motson, who sadly passed away in 2023. This marks the first…",
-   "img": "https://images.nintendolife.com/8d626945117d7/large.jpg",
-   "at": 1795691700000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "Shin Oishinbo TV Anime Reveals Special Promo Video",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/shin-oishinbo-tv-anime-reveals-special-promo-video/.244229",
-   "summary": "Series debuts on January 4",
-   "img": "",
-   "at": 1795691351000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
-   "title": "Arcanadea TV Anime Casts M.A.O, Ai Kakuma",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-26/arcanadea-tv-anime-casts-m.a.o-ai-kakuma/.244225",
-   "summary": "Both voice actors reprise roles from other works in franchise for anime debuting in January",
-   "img": "",
-   "at": 1795690075000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Blizzard adjusts popular World of Warcraft: Forever Battleground to stop players power-grinding rewards",
