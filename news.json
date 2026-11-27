@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795806683536,
+ "atualizadoEm": 1795817274638,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 12
+   "itens": 13
   },
   {
    "nome": "Eurogamer",
@@ -79,6 +79,114 @@
  ],
  "itens": [
   {
+   "title": "Anime Mobile Suit Gundam ZZ ganha arte em comemoração ao seu 40º aniversário",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/anime-mobile-suit-gundam-zz-aniversario-40-anos-arte",
+   "summary": "O anime é continuação direta de Mobile Suit Zeta Gundam",
+   "img": "https://a.storyblok.com/f/178900/960x540/f678174049/gundam-zz-40th-anniversary-header.jpg",
+   "at": 1795815300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Monogatari: Novo episódio de ‘Off & Monster Season’ estreia em dezembro",
+   "url": "https://www.jbox.com.br/2026/11/27/monogatari-novo-episodio-de-off-monster-season-estreia-em-dezembro/",
+   "summary": "Capítulo chamado 'Karen Ogre' adapta uma das histórias da novel 'Wazamonogatari'.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/monogatari-off-monster-season-karen-ogre-destacada.jpg?ssl=1",
+   "at": 1795814499000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "Doutor Destino: quem é o vilão que mudará tudo na Marvel? - IGN Pop",
+   "url": "https://br.ign.com/cinema-tv/157982/doutor-destino-quem-e-o-vilao-que-mudara-tudo-na-marvel-ign-pop",
+   "summary": "Doutor Destino está chegando ao Universo Cinematográfico da Marvel, e ele pode ser uma ameaça ainda maior que Thanos! Mas quem é Victor Von Doom? Conheça a origem trágica do…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/pop-1126-drdestino_yhqd.jpg",
+   "at": 1795813804000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jogos de RPG para PlayStation em oferta na Black Friday",
+   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-rpg-para-playstation-em-oferta-na-black-friday/",
+   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/04/clair-obscur-expedition-33-vendas-1-milhao-640x400.jpg",
+   "at": 1795813200000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Marvel's Iron Man might be planning to rear its head at The Game Awards, if EA Motive's updated website is any indication",
+   "url": "https://www.eurogamer.net/iron-man-game-awards-ea-motive",
+   "summary": "EA Motive's Iron Man game has been quietly cooking away for a few years now, but don't worry. The wait to finally, officially see the superhero romp in action might be over soon,…",
+   "img": "https://assetsio.gnwcdn.com/ea-motive-new-title-teaser-16x9.jpg.adapt.1456w.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795811250000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Terrifier chega ao Dead By Daylight e se une ao extenso catálogo de franquia de terror do game",
+   "url": "https://br.ign.com/dead-by-daylight/158043/terrifier-chega-ao-dead-by-daylight-e-se-une-ao-extenso-catalogo-de-franquia-de-terror-do-game",
+   "summary": "As mortes grotescas de Terrifier chegam ao Dead By Daylight",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/dbd-waffle-ch-keyart-16-9-d0b4a5f84c_a6ce.png",
+   "at": 1795811059000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Pokémon: Nova temporada tem estreia marcada para outubro de 2027",
+   "url": "https://www.jbox.com.br/2026/11/27/pokemon-nova-temporada-tem-estreia-marcada-para-outubro-de-2027/",
+   "summary": "Animê vai continuar acompanhando a jornada de Liko e Rain, protagonistas de 'Horizontes', que termina em dezembro.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2025/07/pokemonhorizontes2-parte3-destacada.jpg?ssl=1",
+   "at": 1795810722000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
+   "title": "“Brasil conta com uma indústria de games cada vez mais ampla”: Pesquisa da Indústria Brasileira de Games 2026 revela mercado nacional aquecido",
+   "url": "https://br.ign.com/games/158040/brasil-conta-com-uma-industria-de-games-cada-vez-mais-ampla-pesquisa-da-industria-brasileira-de-game",
+   "summary": "Levantamento desenvolvido pela Abragames e Go Gamers destaca potencial de internacionalização do mercado brasileiro",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/unnamed-2_re51.jpg",
+   "at": 1795809697000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Digital Extremes says Warframe's imminent Tau update is practically big enough to be a sequel as it reveals new details, including dog walking",
+   "url": "https://www.eurogamer.net/warframe-tau-dev-stream-december-9th",
+   "summary": "Warframe 's latest devstream has just gone live, revealing more about the new Tau solar system players will be able to explore as part of December's \"massive\" new update, which…",
+   "img": "https://assetsio.gnwcdn.com/WF_TauUpdate_MajorKeyart_1080p.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795809600000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Black Friday: Volante Logitech G923 entra em oferta na Amazon com mais de R$ 1.250 em desconto",
+   "url": "https://www.hardware.com.br/hardware-indica/black-friday-volante-logitech-g923-oferta-amazon/",
+   "summary": "Volante compatível com PS5, PS4 e PC vem acompanhado de pedais com embreagem e tecnologias para aumentar a imersão.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Captura-de-tela-2026-11-27-165342-1376x774.jpg",
+   "at": 1795809257000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Cofundador da RARE revela imagens inéditas de Conker 64",
+   "url": "https://www.adrenaline.com.br/games/cofundador-da-rare-revela-imagens-ineditas-de-conker-64/",
+   "summary": "Antes de virar Bad Fur Day, Twelve Tales: Conker 64 foi criado para ser um jogo de plataforma infantil",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Cofundador-RARE-Conker-64-Video-640x400.jpeg",
+   "at": 1795807563000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "After drawing ire for selling new Mass Effect merch following BioWare closure, EA is now flogging new Dragon Age tat too",
+   "url": "https://www.eurogamer.net/dragon-age-mass-effect-bioware-closure-ea-new-merchandise",
+   "summary": "Seemingly unperturbed by the criticism it faced after selling new Mass Effect merchandise following the shock closure of developer BioWare, EA is now flogging new merchandise for…",
+   "img": "https://assetsio.gnwcdn.com/dorian-dragon-age-inquisition-artwork.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795807240000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "HarperCollins Brasil vai apresentar novo selo de mangás e quadrinhos na CCXP 2026",
+   "url": "https://www.jbox.com.br/2026/11/27/harpercollins-brasil-vai-apresentar-novo-selo-de-mangas-e-quadrinhos-na-ccxp-2026/",
+   "summary": "Painel está marcado para a sexta-feira, dia 4.",
+   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/harper-collins-destacada.jpg?ssl=1",
+   "at": 1795806731000,
+   "cat": "geek",
+   "source": "JBox"
+  },
+  {
    "title": "Yooka-Laylee studio explains upcoming Definitive Edition's absence on Xbox to 'frustrated' fans",
    "url": "https://www.eurogamer.net/yooka-laylee-skipping-xbox-costs",
    "summary": "Yooka-Laylee and the Impossible Lair : Definitive Edition is notably skipping Xbox Series X/S consoles, and the studio blames \"technical challenges and costs.\" Read more",
@@ -103,7 +211,7 @@
    "source": "Adrenaline"
   },
   {
-   "title": "Rumored The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
+   "title": "Rumoured The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
    "url": "https://www.eurogamer.net/simpsons-hit-and-run-remake-rumored-cancelled",
    "summary": "A rumored remake of The Simpsons: Hit & Run (the internet's most-wanted video game revival) may be in trouble. Read more",
    "img": "https://assetsio.gnwcdn.com/OOgTcp23xRHycNyLw2Zdyj0nrVKNWh.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -388,22 +496,6 @@
    "source": "Anime News Network"
   },
   {
-   "title": "GTA 6: Parece que Jason e Mandy realmente têm um passado",
-   "url": "https://br.ign.com/grand-theft-auto-vi/158027/gta-6-parece-que-jason-e-mandy-realmente-tem-um-passado",
-   "summary": "Jason, você é melhor que isso Atenção! A matéria contém spoilers de GTA 6! Mandy se tornou a personagem favorita de muitos assim que GTA 6 chegou para os consoles. Não é difícil…",
-   "img": "https://sm.ign.com/ign_br/news/i/it-turns-o/it-turns-out-jason-might-have-a-history-with-mandy-in-gta-6_hcvh.jpg",
-   "at": 1795787601000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Sua TV muito mais inteligente! Fire TV Stick HD fica no precinho na Black da Amazon",
-   "url": "https://br.ign.com/descontos/158028/sua-tv-muito-mais-inteligente-fire-tv-stick-hd-fica-no-precinho-na-black-da-amazon",
-   "summary": "O dispositivo da Amazon leva aplicativos de streaming, filmes e séries para sua TV, com instalação simples e controle remoto com Alexa integrada.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/download_y5xa.jpg",
-   "at": 1795787250000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Anime Welcome to Demon School! Iruma-kun: IruMafia Edition revela artista responsável por seu tema de abertura",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/anime-welcome-to-demon-school-iruma-kun-irumafia-edition-abertura-artista",
    "summary": "A adaptação do mangá spin-off estreia em janeiro na TV japonesa",
@@ -420,14 +512,6 @@
    "at": 1795786200000,
    "cat": "geek",
    "source": "Anime News Network"
-  },
-  {
-   "title": "DualSense Galactic Purple despenca de preço e vira destaque na Black Friday da Amazon",
-   "url": "https://br.ign.com/descontos/158026/dualsense-galactic-purple-despenca-de-preco-e-vira-destaque-na-black-friday-da-amazon",
-   "summary": "O controle sem fio do PS5 está com preço reduzido na Black Friday da Amazon, uma boa oportunidade para quem quer renovar o setup ou garantir uma nova opção para jogar.",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/captura-de-tela-2026-11-27-102801_t5m2.png",
-   "at": 1795786188000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Projeto musical do anime Are You a Landmine, Chihara-san? divulga seu 5º videoclipe, \"Darling Dance\"",
@@ -996,43 +1080,11 @@
    "source": "Adrenaline"
   },
   {
-   "title": "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box",
-   "url": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk",
-   "summary": "Grand Theft Auto 6 has had a huge effect on physical game sales in the UK, despite not actually containing a disc in the box. Read more",
-   "img": "https://assetsio.gnwcdn.com/cal-gta-6-artwork.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795714230000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Anbernic anuncia portátil RG 47G1 com cores clássicas do Game Boy Color",
-   "url": "https://www.adrenaline.com.br/mobile/anbernic-anuncia-portatil-rg-47g1-com-cores-classicas-do-game-boy-color/",
-   "summary": "Novo portátil Android para emulação da Anbernic traz visual de Game Boy Clássico, mas mira em jogos mais avançados",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/anbernic-rg-47g1-game-boy-color-640x400.jpg",
-   "at": 1795713217000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "GitHub apaga publicação que celebrava sucesso de emulador de PS5 e o associava a GTA 6",
    "url": "https://www.hardware.com.br/games/github-apaga-publicacao-que-celebrava-sucesso-de-emulador-de-ps5/",
    "summary": "Conta oficial da plataforma da Microsoft comemorou sucesso do AnyPS5, mas removeu a mensagem pouco depois.",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/gta-github-ps5-1600x900.jpg",
    "at": 1795713041000,
-   "source": "Hardware.com.br"
-  },
-  {
-   "title": "\"Where's the ding?!!\" - I asked the PowerWash Simulator 2 team what they thought of Jason's nozzle work in GTA 6",
-   "url": "https://www.eurogamer.net/gta-6-powerwashing-powerwash-simultor-futurlab",
-   "summary": "Among the many, many side activities you can do in GTA 6 , there's powerwashing. Relatively early on, as part of Chapter 1's Down to Earth mission , Jason whips out his nozzle and…",
-   "img": "https://assetsio.gnwcdn.com/gta-powerwash-header-2.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795712870000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "Quanto custa jogar GTA 6 na conta de luz? Estudo revela que HDR pode aumentar significativamente o consumo",
-   "url": "https://www.hardware.com.br/tecnologia/gta-6-conta-de-luz-hdr/",
-   "summary": "Xbox Series S apresenta o menor consumo energético, enquanto ativar o HDR pode fazer uma televisão gastar mais energia que o próprio console",
-   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Quanto-custa-jogar-GTA-6-na-conta-de-luz-Estudo-revela-que-HDR-pode-aumentar-significativamente-o-consumo.jpg",
-   "at": 1795711107000,
    "source": "Hardware.com.br"
   },
   {
@@ -1045,36 +1097,11 @@
    "source": "JBox"
   },
   {
-   "title": "Dias para Jogar de Graça: Warhammer 40,000: Mechanicus e Little Rocket Lab",
-   "url": "https://news.xbox.com/pt-br/2026/11/26/dias-para-jogar-de-graca-warhammer-40000-mechanicus-e-little-rocket-lab/",
-   "summary": "The post Dias para Jogar de Graça: Warhammer 40,000: Mechanicus e Little Rocket Lab appeared first on Xbox Wire em Português .",
-   "img": "",
-   "at": 1795708816000,
-   "source": "Xbox Wire Brasil"
-  },
-  {
-   "title": "Bread & Fred para PC de graça hoje – resgate agora!",
-   "url": "https://www.adrenaline.com.br/games/pc-games/bread-fred-para-pc-de-graca-hoje-resgate-agora/",
-   "summary": "Confira os detalhes do novo jogo de graça por tempo limitado na Epic Games Store e resgate-os até o dia 3 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/05/bread-and-fred-game-640x400.jpg",
-   "at": 1795708800000,
-   "source": "Adrenaline"
-  },
-  {
    "title": "‘Kindergarten Wars’ ganha trailer com música de abertura da Ado",
    "url": "https://www.jbox.com.br/2026/11/26/kindergarten-wars-ganha-trailer-com-musica-de-abertura-da-ado/",
    "summary": "Animê que adapta o mangá de sucesso da Jump+ estreia em abril de 2027.",
    "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/kindergarden-wars-destacada.jpg?ssl=1",
    "at": 1795707165000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "Migratory Birds & Snail: Animê está previsto para a Temporada de Verão de 2027",
-   "url": "https://www.jbox.com.br/2026/11/26/migratory-birds-snail-anime-esta-previsto-para-a-temporada-de-verao-de-2027/",
-   "summary": "Anúncio foi feito através do obi do volume mais recente do mangá.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/migratory-birds-and-snail-destacada.jpg?ssl=1",
-   "at": 1795704598000,
    "cat": "geek",
    "source": "JBox"
   },
@@ -1122,33 +1149,6 @@
    "at": 1795657500000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "At 25:00 in Akasaka tem adaptação em anime anunciada para 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/at-2500-in-akasaka-adaptacao-anime-2027",
-   "summary": "Os membros principais do elenco também foram revelados",
-   "img": "https://a.storyblok.com/f/178900/2664x1498/bcb120686a/at-25-00-in-arasaka.png",
-   "at": 1795656300000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Brasileiro vence concurso e cria novo chefão de ‘Mega Man: Dual Override’",
-   "url": "https://www.jbox.com.br/2026/11/25/brasileiro-vence-concurso-e-cria-novo-chefao-de-mega-man-dual-override/",
-   "summary": "Conhecido como miya iregyuradabii, ilustrador comemorou a vitória e detalhou processo de criação nas redes sociais.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/Cleanser-Man-Mega-Man-destacada.jpg?ssl=1",
-   "at": 1795644859000,
-   "cat": "geek",
-   "source": "JBox"
-  },
-  {
-   "title": "‘Frieren’ ganha minissérie especial em dezembro",
-   "url": "https://www.jbox.com.br/2026/11/25/frieren-ganha-minisserie-especial-em-dezembro/",
-   "summary": "'Sousou no Frieren Betsutan' conta história que se passa entre os dois primeiros capítulos do mangá, focada em Frieren e Heiter.",
-   "img": "https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2026/11/frieren-e-a-jornada-para-o-alem-heiter-destacada.jpg?ssl=1",
-   "at": 1795640482000,
-   "cat": "geek",
-   "source": "JBox"
   },
   {
    "title": "Now That We Draw – Comédia romântica sobre Gal Mangaka ganha trailer com OP e Data",
