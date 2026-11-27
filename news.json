@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795774781156,
+ "atualizadoEm": 1795786140916,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 14
+   "itens": 15
   },
   {
    "nome": "Eurogamer",
@@ -63,8 +63,8 @@
   },
   {
    "nome": "Anime News Network",
-   "ok": false,
-   "itens": 0
+   "ok": true,
+   "itens": 15
   },
   {
    "nome": "Crunchyroll Notícias",
@@ -78,6 +78,325 @@
   }
  ],
  "itens": [
+  {
+   "title": "Projeto musical do anime Are You a Landmine, Chihara-san? divulga seu 5º videoclipe, \"Darling Dance\"",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/are-you-a-landmine-chihara-san-projeto-musical-quinto-videoclipe-darling-dance",
+   "summary": "O anime tem estreia marcada para 7 de janeiro de 2027",
+   "img": "https://a.storyblok.com/f/178900/960x540/297b464802/mai-chihara-darling-dance-mv.jpg",
+   "at": 1795785900000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Pokémon Winds & Waves Release Date Speculation Rises From Gap In Anime Scheduling",
+   "url": "https://www.nintendolife.com/news/2026/11/pokemon-winds-and-waves-release-date-speculation-rises-from-gap-in-anime-scheduling",
+   "summary": "Raised eye Browt. We know that Pokémon Winds and Waves will launch on Switch 2 at some point in 2027 , but that's it. The Pokémon Company is still keeping quiet about the upcoming…",
+   "img": "https://images.nintendolife.com/7a9407df611f7/large.jpg",
+   "at": 1795785300000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "McAfee Total Protection Plus protege até 5 dispositivos por 1 ano e está com R$ 70 de desconto",
+   "url": "https://br.ign.com/descontos/158024/mcafee-total-protection-plus-protege-ate-5-dispositivos-por-1-ano-e-esta-com-r-70-de-desconto",
+   "summary": "A internet está presente em praticamente todas as atividades do dia a dia, desde compras e pagamentos até conversas, trabalho e entretenimento. Com tantas informações pessoais…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/shutterstock-2771206043_s8g5.jpg",
+   "at": 1795784849000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Killer Shark – Isekai sobre Garota e Tubarão Assassino tem anuncio de anime",
+   "url": "https://www.intoxianime.com/2026/11/killer-shark-isekai-sobre-garota-e-tubarao-assassino-tem-anuncio-de-anime/",
+   "summary": "... O post Killer Shark – Isekai sobre Garota e Tubarão Assassino tem anuncio de anime apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795784409000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Monogatari Series – Continuação em anime ganha trailer com com OP e Data de estreia",
+   "url": "https://www.intoxianime.com/2026/11/monogatari-series-continuacao-em-anime-ganha-trailer-com-com-op-e-data-de-estreia/",
+   "summary": "... O post Monogatari Series – Continuação em anime ganha trailer com com OP e Data de estreia apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795784408000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Red Cat Ramen – 2º temporada ganha trailer com OP e ED e Data",
+   "url": "https://www.intoxianime.com/2026/11/red-cat-ramen-2o-temporada-ganha-trailer-com-op-e-ed-e-data/",
+   "summary": "... O post Red Cat Ramen – 2º temporada ganha trailer com OP e ED e Data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795784405000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Inherit the Winds – Anime Original de Drama e Ação ganha trailer com OP e ED e Data",
+   "url": "https://www.intoxianime.com/2026/11/inherit-the-winds-anime-original-de-drama-e-acao-ganha-trailer-com-op-e-ed-e-data/",
+   "summary": "... O post Inherit the Winds – Anime Original de Drama e Ação ganha trailer com OP e ED e Data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795784403000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "I Was Wrong About GTA 6",
+   "url": "https://www.gamespot.com/articles/i-was-wrong-about-gta-6/",
+   "summary": "Some months ago, I wrote about how, even prior to its full reveal, we already knew what GTA 6 was going to be . Although not unique to the franchise by any means, GTA games had…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261031144152_-Large-1.jpeg?w=300",
+   "at": 1795784400000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "The Cat and the Dragon – 2º temporada ganha trailer com OP e Data",
+   "url": "https://www.intoxianime.com/2026/11/the-cat-and-the-dragon-2o-temporada-ganha-trailer-com-op-e-data/",
+   "summary": "... O post The Cat and the Dragon – 2º temporada ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795784400000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Jogadores de GTA 6 descobrem como corrigir bug no sistema climático que persiste após atualização",
+   "url": "https://www.hardware.com.br/games/gta-6-solucao-bug-clima-ps5/",
+   "summary": "Limpar o cache do PS5 pode resolver problema que impede a formação de chuvas e tempestades em GTA 6",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Jogadores-de-GTA-6-descobrem-como-corrigir-bug-no-sistema-climatico-que-persiste-apos-atualizacao.jpg",
+   "at": 1795783850000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "At last, I've finally played Faraway, an enigma I've been waiting 16 years to see",
+   "url": "https://www.eurogamer.net/faraway-eliss-annapurna-interactive-16-years-finally-here",
+   "summary": "For 16 years I've been watching the skies. It was 16 years ago, back in the first giddy rush of smartphone gaming, that I saw a 30-second trailer for a game set in space. It was a…",
+   "img": "https://assetsio.gnwcdn.com/20261026151726_1.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795782780000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Rare Co-Founder Tim Stamper Unveils A Treasure Trove Of Conker Dev Material",
+   "url": "https://www.nintendolife.com/news/2026/11/rare-co-founder-tim-stamper-unveils-a-treasure-trove-of-conker-dev-material",
+   "summary": "Let's dive in. Rare co-founder Tim Stamper has begun uploading new videos to his YouTube channel ' InTimsWorld ', the first of which being a deep dive into the development of…",
+   "img": "https://images.nintendolife.com/5836417fca9df/large.jpg",
+   "at": 1795782600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Nia Liston: The Merciless Maiden ‒ Episode 8",
+   "url": "https://www.animenewsnetwork.com/review/nia-liston-the-merciless-maiden/episode-8/.244172",
+   "summary": "I love that this silly show can make me feel so seen.",
+   "img": "",
+   "at": 1795782600000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Filme live-action de Darwin's Game revela trailer principal, imagem promocional e novos integrantes do elenco",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/darwins-game-filme-live-action-trailer-principal-ilustracao-promocional-elenco",
+   "summary": "A adaptação estreia nos cinemas japoneses em 12 de março de 2027",
+   "img": "https://a.storyblok.com/f/178900/960x540/8749d35163/darwins-game-live-action-header.jpg",
+   "at": 1795782300000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Are you a warlock tired of being summon-kicked in World of Warcraft: Forever? There's now a mod to fight back with",
+   "url": "https://www.eurogamer.net/world-of-warcraft-forever-summon-kicking-warlock-addon",
+   "summary": "Being recruited to a World of Warcraft party as a warlock, only to be swiftly kicked again after using your powers to magically summon the party members together in the same…",
+   "img": "https://assetsio.gnwcdn.com/WoW_Forever_Cinematic_Still_7.jpeg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795781350000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "GTA 6: Lista de todos os códigos dos cofres do jogo",
+   "url": "https://br.ign.com/grand-theft-auto-vi/158004/gta-6-lista-de-todos-os-codigos-dos-cofres-do-jogo",
+   "summary": "Roubar esconderijos de gangues e empresas em Vice City às vezes exige mais do que força bruta Descubra a lista de combinações de cofres, códigos e códigos de teclado confirmados…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_37h3.jpg",
+   "at": 1795781001000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Anime Charisma apresenta Minato Ohse em novo trailer de personagem",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/charisma-anime-minato-ohse-trailer-personagem",
+   "summary": "A adaptação do projeto multimídia estreia em 7 de janeiro",
+   "img": "https://a.storyblok.com/f/178900/1280x720/fb598aa1aa/charisma-minato-ohse-hero.png",
+   "at": 1795780800000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Pokémon Anime Gets New Season Featuring Liko, Roy in October 2027",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/pokemon-anime-gets-new-season-featuring-liko-roy-in-october-2027/.244257",
+   "summary": "Separate new Pokémon program to air starting on January 8",
+   "img": "",
+   "at": 1795779946000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Doug Bowser 'Apologises' To The \"Haters\" Of His Icky AI-Generated Thanksgiving Post",
+   "url": "https://www.nintendolife.com/news/2026/11/doug-bowser-apologises-to-the-haters-of-his-icky-ai-generated-thanksgiving-post",
+   "summary": "Bowser's Fury. Happy belated Thanksgiving to all of our friends across the pond! As you all wake up to tummies full of turkey, you'll be pleased to see that former Nintendo of…",
+   "img": "https://images.nintendolife.com/729a6c4580a45/large.jpg",
+   "at": 1795779900000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Rockstar boss \"so grateful\" to have kept GTA 6's big prologue twist a secret - and reveals Tomás' story could have been very different",
+   "url": "https://www.eurogamer.net/gta-6-rockstar-debated-changing-jason-lucias-big-secret",
+   "summary": "If you've played the first 20 minutes or so of Grand Theft Auto 6 , you'll know there's a hugely significant plot revelation there - one Rockstar somehow managed to keep entirely…",
+   "img": "https://assetsio.gnwcdn.com/GTA-6-review-21.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795779060000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Não é só o PS5: jogadores de GTA 6 também relatam consoles Xbox inutilizados",
+   "url": "https://www.hardware.com.br/games/gta-6-consoles-xbox-inutilizados/",
+   "summary": "Assistência técnica registra aumento na quantidade de consoles Xbox com problemas de superaquecimento, desligamentos inesperados e falhas de inicialização",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Nao-e-so-o-PS5-jogadores-de-GTA-6-tambem-relatam-consoles-Xbox-inutilizados.jpg",
+   "at": 1795778580000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Gero Performs Opening Theme for Welcome to Demon School! Iruma-kun: IruMafia Edition TV Anime",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/gero-performs-opening-theme-for-welcome-to-demon-school-iruma-kun-irumafia-edition-tv-anime/.244256",
+   "summary": "12-episode spinoff series debuts on January 4",
+   "img": "",
+   "at": 1795778201000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "How To Get A Helicopter In GTA 6",
+   "url": "https://www.gamespot.com/articles/how-to-get-a-helicopter-in-gta-6/",
+   "summary": "You’ll spend so many hours driving across the state of Leonida in Grand Theft Auto 6 , that your feet will start to ache in the real world. But there are still other modes of…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-helicopter-locations-guide-.jpg?w=300",
+   "at": 1795778067000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "How To Steal And Register Cars With Advanced Trackers In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-advanced-trackers-steal-register-cars/",
+   "summary": "Grand Theft Auto 6 has a massive world, and you can be sure that there are thousands of vehicles driving across the countryside at any given point in time. While the vast majority…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-advanced-trackers-steal-cars-.jpg?w=300",
+   "at": 1795777947000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "All GTA 6 Book Swap Locations",
+   "url": "https://www.gamespot.com/articles/all-gta-6-book-swap-locations/",
+   "summary": "Those who grew up in the 80s and 90s would remember things known as gamebooks, the precursors to modern-day role-playing and narrative-driven games. You might recall the Choose…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-book-swap-locations-guide-.jpg?w=300",
+   "at": 1795777703000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Diretor de GTA 6 revela que a Rockstar criou três animações para cada interação com objetos",
+   "url": "https://br.ign.com/grand-theft-auto-vi/158016/diretor-de-gta-6-revela-que-a-rockstar-criou-tres-animacoes-para-cada-interacao-com-objetos",
+   "summary": "O jason fazendo six-seven com uma lata em cada mão",
+   "img": "https://sm.ign.com/ign_br/news/g/gta-6-anim/gta-6-animation-director-reveals-rockstar-made-3-animations_cd5x.jpg",
+   "at": 1795777410000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Jason and Lucia Screenshots",
+   "url": "https://br.ign.com/grand-theft-auto-vi/157976/jason-and-lucia-screenshots",
+   "summary": "",
+   "img": "https://sm.ign.com/ign_br/gallery/j/jason-and-/jason-and-lucia-screenshots_nkp6.jpg",
+   "at": 1795777410000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Satanás em GTA 6: como ir ao inferno para encontrar o diabo em missão estilo Doom?",
+   "url": "https://br.ign.com/grand-theft-auto-vi/158005/satanas-em-gta-6-como-ir-ao-inferno-para-encontrar-o-diabo-em-missao-estilo-doom",
+   "summary": "Descubra a localização da macabra missão que rende uma ótima escopeta Ao explorar a região norte de Port Gellhorn à noite, você encontrará dois metaleiros com uma missão louca…",
+   "img": "https://sm.ign.com/ign_br/screenshot/default/imagem_s247.jpg",
+   "at": 1795777401000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "GTA 6 Has Massive Underground Caves Worth Diving Into",
+   "url": "https://www.gamespot.com/articles/gta-6-selkie-hole-underwater-cave-tunnel/",
+   "summary": "Take a break from all the car chases and crimes in Grand Theft Auto 6 , and relax in the quaint Emerald Springs resort. Oh, what's that? Is there something interesting nearby?…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-selkie-hole-underwater-cave-.jpg?w=300",
+   "at": 1795777324000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition ganha trailer com detalhes da nova versão",
+   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/xenoblade-chronicles-3-nintendo-switch-2-edition-trailer-detalhes",
+   "summary": "A nova atualização para o Nintendo Switch 2 chega em 3 de dezembro",
+   "img": "https://a.storyblok.com/f/178900/960x538/14cee6b608/xenoblade-chronicles-3-switch2-pv.jpg",
+   "at": 1795777200000,
+   "cat": "geek",
+   "source": "Crunchyroll Notícias"
+  },
+  {
+   "title": "Xbox Game Pass Kicks Off December With Horror, Cozy Adventures, And More",
+   "url": "https://www.gamespot.com/articles/xbox-game-pass-kicks-off-december-with-horror-cozy-adventures-and-more/",
+   "summary": "One last month of 2026 brings two more waves of Xbox Game Pass titles to close out the year. Subscribers can once again look forward to some new arrivals in the Xbox Game Pass…",
+   "img": "https://www.gamespot.com/wp-content/uploads/original/1601/16018044/4541297-hela.jpg?w=300",
+   "at": 1795777124000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Red Cat Ramen Anime's 2nd Season Reveals Main Promo Video, January 10 Debut",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/red-cat-ramen-anime-2nd-season-reveals-main-promo-video-january-10-debut/.244255",
+   "summary": "Rikon Densetsu, Hana Hope perform theme songs",
+   "img": "",
+   "at": 1795777051000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "All NoFlusher Tags In GTA 6",
+   "url": "https://www.gamespot.com/articles/all-noflusher-tags-in-gta-6/",
+   "summary": "Grand Theft Auto 6 has several moments that rely heavily on over-the-top silliness. One, in particular, involves poo. Specifically, it’s about a group of individuals who do not…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-noflushers-tags-final-flush-_0e837d.jpg?w=300",
+   "at": 1795777015000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "Where To Find All 1010 Murals In GTA 6 To Get A Free Car And Garage",
+   "url": "https://www.gamespot.com/articles/gta-6-1010-murals-grotti-cheetah/",
+   "summary": "Around halfway through Grand Theft Auto 6 ’s campaign, you’ll reach Vice City. You’ll spend several hours just tackling missions and gathering collectibles. While you’re at it, we…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-1010-murals-.jpg?w=300",
+   "at": 1795776590000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "The Cat and the Dragon Anime's 2nd Season Reveals January Debut, More Cast in 1st Promo Video",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/the-cat-and-the-dragon-anime-2nd-season-reveals-january-debut-more-cast-in-1st-promo-video/.244253",
+   "summary": "Emiri Iwai, Satoshi Hino, more join cast; Harutya performs opening theme",
+   "img": "",
+   "at": 1795775474000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Relançamento de Homem-Aranha: Um Novo Dia incluirá cena cortada de Vingadores: Doutor Destino",
+   "url": "https://br.ign.com/homem-aranha-um-novo-dia/158017/relancamento-de-homem-aranha-um-novo-dia-incluira-cena-cortada-de-vingadores-doutor-destino",
+   "summary": "O artigo publicou também sobre a possibilidade de Vingadores: Doutor Destino e Duna: Parte 3 baterem recordes de bilheteria",
+   "img": "https://sm.ign.com/ign_br/news/s/spider-man/spider-man-brand-new-day-rerelease-includes-a-scene-cut-from_7xh8.jpg",
+   "at": 1795775408000,
+   "source": "IGN Brasil"
+  },
+  {
+   "title": "Here's A Handful Of The Spiciest Black Friday Switch 2 Deals",
+   "url": "https://www.nintendolife.com/news/2026/11/heres-a-handful-of-the-spiciest-black-friday-switch-2-deals",
+   "summary": "Updated throughout the day. It's Black Friday once more, and retailers the world over are looking to flush their inventory ahead of the holidays. There are, however, still a few…",
+   "img": "https://images.nintendolife.com/66e38e402d7cc/large.jpg",
+   "at": 1795774500000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "Inherit the Winds TV Anime Reveals January 10 Debut in Video",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/inherit-the-winds-tv-anime-reveals-january-10-debut-in-video/.244248",
+   "summary": "Main promo video also previews opening theme song",
+   "img": "",
+   "at": 1795774441000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
   {
    "title": "Anime Fool Night anuncia três novos integrantes do elenco",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/fool-night-anime-tres-novos-integrantes-elenco",
@@ -104,6 +423,24 @@
    "source": "Eurogamer"
   },
   {
+   "title": "Odekake Kozame Gets 1st Stop-Motion Short",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/odekake-kozame-gets-1st-stop-motion-short/.244247",
+   "summary": "Short debuted on Friday",
+   "img": "",
+   "at": 1795770797000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Monogatari Off & Monster Season Anime's New Episode Airs on December 31",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/monogatari-off-and-monster-season-anime-new-episode-airs-on-december-31/.244241",
+   "summary": "Mulasaki Ima performs theme song",
+   "img": "",
+   "at": 1795770625000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "\"Cyberpunk 2 está cancelado\": diretor criativo da CD Projekt RED ficou tão impressionado com GTA 6 que brincou sobre cancelar seu próximo jogo",
    "url": "https://br.ign.com/cyberpunk-2077-codename-orion/157995/cyberpunk-2-esta-cancelado-diretor-criativo-da-cd-projekt-red-ficou-tao-impressionado-com-gta-6-que",
    "summary": "Muitos devs enfrentam uma crise de confiança após GTA 6 Após GTA 6, alguns desenvolvedores estão brincando que não faz sentido tentar competir novamente, incluindo o diretor…",
@@ -120,12 +457,30 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Random: Did Dave The Diver Just Tease A GTA 6 Collab?",
-   "url": "https://www.nintendolife.com/news/2026/11/random-did-dave-the-diver-just-tease-a-gta-6-collab",
+   "title": "Random: Did Dave The Diver Just Tease A GTA 6 Collab? It Seems Unlikely, But Some Fans Are Hopeful",
+   "url": "https://www.nintendolife.com/news/2026/11/random-did-dave-the-diver-just-tease-a-gta-6-collab-it-seems-unlikely-but-some-fans-are-hopeful",
    "summary": "Is it a joke or something more? If you didn't already know, Dave The Diver actually has something in common with Rockstar's new open-world title, Grand Theft Auto 6 . In both…",
    "img": "https://images.nintendolife.com/91be8dcea1a07/large.jpg",
    "at": 1795762500000,
    "source": "Nintendo Life"
+  },
+  {
+   "title": "Solitary Gourmet Live-Action Series Gets 10th Straight New Year's Eve Special",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/solitary-gourmet-live-action-series-gets-10th-straight-new-year-eve-special/.244238",
+   "summary": "New special will be set in Thailand",
+   "img": "",
+   "at": 1795760342000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Masaaki Yuasa's Daisy's Life Anime Film Reveals Clip, 2027 Delay",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-27/masaaki-yuasa-daisy-life-anime-film-reveals-clip-2027-delay/.244239",
+   "summary": "2 new screenshots, more staff also unveiled for film",
+   "img": "",
+   "at": 1795759131000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Pokémon Champions X Pokémon GO Collab Taking Place Next Month",
@@ -176,12 +531,57 @@
    "source": "Nintendo Life"
   },
   {
+   "title": "Live-Action This World is Worth Fighting For Series Casts Ikoi Hayase",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/live-action-this-world-is-worth-fighting-for-series-casts-ikoi-hayase/.244236",
+   "summary": "Hayase plays Ikoi Hayase, a teenager left running a liquor store after family tragedy",
+   "img": "",
+   "at": 1795746339000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "The Fall 2026 Anime Preview Guide - Fool Night",
+   "url": "https://www.animenewsnetwork.com/preview-guide/2026/fall/fool-night/.244237",
+   "summary": "Just when you thought The Fall 2026 Anime Preview Guide was done for good, we're back for one last ride with Fool Night !",
+   "img": "",
+   "at": 1795745400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "No Longer Heroine's Momoko Kōda Launches New Manga on December 21",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/no-longer-heroine-momoko-koda-launches-new-manga-on-december-21/.244110",
+   "summary": "Kono Oto, Myaku Ari desu ka? romantic comedy follows novel-writing girl, playboy doctor",
+   "img": "",
+   "at": 1795744871000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
    "title": "LEGO do Laboratório do Homem de Ferro traz três armaduras de Tony Stark e está com 27% de desconto na Amazon",
    "url": "https://br.ign.com/descontos/158009/lego-do-laboratorio-do-homem-de-ferro-traz-tres-armaduras-de-tony-stark-e-esta-com-27-de-desconto-na",
    "summary": "Conjunto 76315 tem 384 peças, robô Dum-E para montar e minifiguras de Pepper Potts e Aldrich Killian",
    "img": "https://sm.ign.com/ign_br/screenshot/default/lego-do-laboratorio-do-homem-de-ferro-traz-tres-armaduras-de_11ws.jpg",
    "at": 1795744262000,
    "source": "IGN Brasil"
+  },
+  {
+   "title": "Isekai Affair Writer Masakazu Ooi Launches New Manga",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/isekai-affair-writer-masakazu-ooi-launches-new-manga/.244113",
+   "summary": "Ooi launched Ma Mama Musō~Maō no Mama ni Amae Makuttara Saikyō ni! Saijaku Skill \"Amaenbō\" de Musōshite Akugyaku Yūsha ni Fukushūshimasu on November 20",
+   "img": "",
+   "at": 1795743499000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "'Ask and You Will Receive' Boys-Love Manga Gets Live-Action Series",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-26/ask-and-you-will-receive-boys-love-manga-gets-live-action-series/.244235",
+   "summary": "Rei Sawamura, Ryūdai Onikura star in January 2027 series",
+   "img": "",
+   "at": 1795741755000,
+   "cat": "geek",
+   "source": "Anime News Network"
   },
   {
    "title": "Splatoon 3 Version 12.0.1 Update Out Now, Here Are The Patch Notes",
@@ -241,14 +641,6 @@
    "source": "IGN Brasil"
   },
   {
-   "title": "Black Friday: monitor LG UltraGear de 27 polegadas e 240 Hz está com R$ 800 de desconto no Pix na Amazon",
-   "url": "https://br.ign.com/descontos/158003/black-friday-monitor-lg-ultragear-de-27-polegadas-e-240-hz-esta-com-r-800-de-desconto-no-pix-na-amaz",
-   "summary": "Modelo 27G440A tem compatibilidade com G-Sync e FreeSync Premium, 99% do sRGB e base com ajuste de altura",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/black-friday-monitor-lg-ultragear-de-27-polegadas-e-240-hz-e_5gcd.jpg",
-   "at": 1795734040000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Criador do NVIDIA Profile Inspector lança ferramenta que reduz flicker do G-Sync em monitores OLED",
    "url": "https://www.adrenaline.com.br/nvidia/nvidia-g-sync-tweaks-orbmu2k-flicker-oled-lfc-60-fps/",
    "summary": "Programa gratuito adia a duplicação de quadros (LFC) até 48 FPS e evita o vaivém entre 60 Hz e 120 Hz das telas de alta taxa. Veja como usar.",
@@ -282,14 +674,6 @@
    "source": "GameSpot"
   },
   {
-   "title": "Black da Amazon com 62% OFF: Monitor portátil é opção para quem precisa de uma tela extra em viagens e no dia a dia",
-   "url": "https://br.ign.com/descontos/158002/black-da-amazon-com-62-off-monitor-portatil-e-opcao-para-quem-precisa-de-uma-tela-extra-em-viagens-e",
-   "summary": "Tela extra de 15,6 polegadas pode facilitar multitarefas, estudos e jogos sem exigir espaço para um monitor tradicional",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2026-11-26t184344029_qj87.jpg",
-   "at": 1795730321000,
-   "source": "IGN Brasil"
-  },
-  {
    "title": "Novo anime de Oishinbo ganha trailer especial",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/novo-anime-oishinbo-trailer-especial",
    "summary": "A série de temática culinária estreia dia 4 de janeiro",
@@ -314,14 +698,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/marvel-tokon-fighting-souls-game-640x400.webp",
    "at": 1795726800000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Esquenta Black Friday: Nintendo Switch 2 com EA Sports FC 27 está com quase R$ 1.180 de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/158001/esquenta-black-friday-nintendo-switch-2-com-ea-sports-fc-27-esta-com-quase-r-1180-de-desconto-na-ama",
-   "summary": "Console tem tela de 7,9 polegadas em 1080p, Joy-Con 2 magnéticos e GameChat com microfone embutido",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/nintendo-switch-2-com-ea-sports-fc-27-1_ty7a.jpg",
-   "at": 1795726088000,
-   "source": "IGN Brasil"
   },
   {
    "title": "EA removes some live service fluff from Skate and ends seasonal structure \"in favour of regular, agile content updates\"",
@@ -355,14 +731,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/GTA-6-Recursos-Extras-Xbox-One-640x360.jpeg",
    "at": 1795722955000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Nintendo confirma presença na CCXP 26: confira jogos e brindes do estande",
-   "url": "https://br.ign.com/nintendo/157998/nintendo-confirma-presenca-na-ccxp-26-confira-jogos-e-brindes-do-estande",
-   "summary": "Evento acontece do dia 3 a 6 de dezembro em São Paulo A Nintendo confirmou presença na CCXP 26, evento que acontecerá no São Paulo Expo, em São Paulo, do dia 3 a 6 de dezembro.…",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/n1_pfrd.jpg",
-   "at": 1795722006000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Jogos na Steam em oferta de Black Friday com até 95% de desconto",
@@ -429,22 +797,6 @@
    "at": 1795719494000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "LEGO na Black Friday: Sonic, Marvel, Pokémon e Star Wars com até 54% de desconto para montar sua coleção",
-   "url": "https://br.ign.com/descontos/157987/lego-na-black-friday-sonic-marvel-pokemon-e-star-wars-com-ate-54-de-desconto-para-montar-sua-colecao",
-   "summary": "Ofertas incluem desde montagens compactas inspiradas em Sonic até modelos de Star Wars com mais de mil peças",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2026-11-26t150748667_cu4n.jpg",
-   "at": 1795718644000,
-   "source": "IGN Brasil"
-  },
-  {
-   "title": "Black Friday: TV TCL de 75 polegadas tem 32% de desconto na Amazon",
-   "url": "https://br.ign.com/descontos/157993/black-friday-tv-tcl-de-75-polegadas-tem-32-de-desconto-na-amazon",
-   "summary": "Com tela gigante de 75 polegadas, modelo da TCL é uma oportunidade para quem quer aproveitar filmes, séries e jogos com uma experiência mais imersiva sem pagar o preço cheio!",
-   "img": "https://sm.ign.com/ign_br/screenshot/default/apresentacao-proposta-comercial-basica-e-simples-em-tons-de_bnae.png",
-   "at": 1795718124000,
-   "source": "IGN Brasil"
   },
   {
    "title": "Killer Shark in Another World tem anime anunciado",
@@ -561,22 +913,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "GTA 6's Physical Launch Has Been An Astronomical Success, Despite No Discs",
-   "url": "https://www.nintendolife.com/news/2026/11/gta-6s-physical-launch-has-been-an-astronomical-success-despite-no-discs",
-   "summary": "The biggest physical launch since 2019. All eyes have been on the launch of GTA 6 this month, with the game's so-called physical launch being a particularly interesting litmus…",
-   "img": "https://images.nintendolife.com/38a239861875b/large.jpg",
-   "at": 1795710600000,
-   "source": "Nintendo Life"
-  },
-  {
-   "title": "How To Get The Anime Car In GTA 6",
-   "url": "https://www.gamespot.com/articles/how-to-get-the-anime-car-in-gta-6/",
-   "summary": "There are a few ways to get an anime car in GTA 6 , but if you don't want to spend any money, we've stumbled upon one just there for the taking. There's no huge mission or…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/66d64a05-69a4-4341-adb4-1cacbfa26f04.png?w=300",
-   "at": 1795709807000,
-   "source": "GameSpot"
-  },
-  {
    "title": "Ultraman Nexus: Box em Blu-ray ganha trailer e detalhes dos extras",
    "url": "https://www.jbox.com.br/2026/11/26/ultraman-nexus-box-em-blu-ray-ganha-trailer-e-detalhes-dos-extras/",
    "summary": "Com lançamento em dezembro, edição remasterizada reúne toda a série, o filme ‘Ultraman The Next’ e livretos inéditos.",
@@ -600,14 +936,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2023/05/bread-and-fred-game-640x400.jpg",
    "at": 1795708800000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "Talking Point: Ocarina Of Time Revolutionised The 3D Swordfight, But How Does The Remake Hold Up In A Vintage Year For Clashing Blades?",
-   "url": "https://www.nintendolife.com/features/talking-point-ocarina-of-time-revolutionised-the-3d-swordfight-but-how-does-the-remake-hold-up-in-a-vintage-year-for-clashing-blades",
-   "summary": "Finding the cutting edge of sword combat. Forget the hubbub around Grand Theft Auto . Big Walk ? Big deal. It’s all noise designed to distract us from 2026’s real legacy: that…",
-   "img": "https://images.nintendolife.com/54756797ecfc9/large.jpg",
-   "at": 1795708800000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Por que as luzes de GTA 6 são roxas? Entenda a ligação do jogo com a Flórida",
@@ -635,14 +963,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
-   "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us",
-   "summary": "Every game we scored 9/10 or higher, plus a personal pick. Just a reminder that this sale runs until December 2nd, so you've still got plenty of time if you're after a bargain but…",
-   "img": "https://images.nintendolife.com/5de74a44a4847/large.jpg",
-   "at": 1795707000000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Rockstar Games employees vote against union recognition",
    "url": "https://www.eurogamer.net/rockstar-games-employees-vote-against-union-recognition",
    "summary": "Rockstar Games employees have voted against official recognition of the Rockstar Game Workers Union, with 93.2 percent of staff participating in the vote. Read more",
@@ -657,14 +977,6 @@
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/11/kingdom-come-deliverance-2-640x400.webp",
    "at": 1795705200000,
    "source": "Adrenaline"
-  },
-  {
-   "title": "The Witcher 3 Remastered Ver. 5.02 Update Is Now Live, Here Are The Full Patch Notes",
-   "url": "https://www.nintendolife.com/news/2026/11/the-witcher-3-remastered-ver-5-02-update-is-now-live-here-are-the-full-patch-notes",
-   "summary": "Toss a patch to your Witcher. CD Projekt Red is still sending out the patches for The Witcher III: Wild Hunt - Remastered , and the latest has gone live today. The ver. 5.02…",
-   "img": "https://images.nintendolife.com/68e0a50601c2b/large.jpg",
-   "at": 1795705200000,
-   "source": "Nintendo Life"
   },
   {
    "title": "Migratory Birds & Snail: Animê está previsto para a Temporada de Verão de 2027",
@@ -700,22 +1012,6 @@
    "source": "Eurogamer"
   },
   {
-   "title": "Hidden Control Options In GTA 6",
-   "url": "https://www.gamespot.com/videos/hidden-control-options-in-gta-6/",
-   "summary": "Grand Theft Auto 6 has a bunch of hidden commands never explained, we show off a couple you can pull off.",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Guide_HiddenControls_Thumb1.jpg?w=300",
-   "at": 1795701600000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Destiny 2’s Returning Content Makes This The Perfect Time To Grab Its Complete DLC Bundle",
-   "url": "https://www.gamespot.com/articles/destiny-2s-returning-content-makes-this-the-perfect-time-to-grab-its-complete-dlc-bundle/",
-   "summary": "I have a love-hate relationship with Destiny 2 . I love the game and hate the fact that most of the content from Forsaken and before has essentially vanished, making it harder to…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/fanatical-destiny-2-collection-deal.jpg?w=300",
-   "at": 1795701600000,
-   "source": "GameSpot"
-  },
-  {
    "title": "\"I'm betting on the sickos\" - Signet City plans to 'expand the scope of RPGs' by drawing on the success of Citizen Sleeper",
    "url": "https://www.eurogamer.net/citizen-sleeper-signet-city-fungalpunk-1980s-rpg",
    "summary": "When I last spoke to Citizen Sleeper creator Gareth Damian Martin, it was on the eve of Citizen Sleeper 2's release . Like its predecessor, the game was a critical hit, cementing…",
@@ -729,38 +1025,6 @@
    "summary": "An AI clone of Umamusume: Pretty Derby has been stuck off the Google Play Store after it drew the ire of fans, and the community organised to report the offending title to…",
    "img": "https://assetsio.gnwcdn.com/screenshot-from-Umamusume-Pretty-Derby-showing-female-anime-characters-racing.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795698900000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "GTA 6’s Furry Rescue Mission Is A Little Weird, But The Rewards Are Worth It",
-   "url": "https://www.gamespot.com/articles/gta-6-furry-rescue-mission-is-a-little-weird-but-the-rewards-are-worth-it/",
-   "summary": "No matter what you do in GTA 6 , it pales in comparison to being a Furry in that game. Anyone looking to externalize their inner animal spirit is in danger of being hunted, and…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTA-Fox-2.jpg?w=300",
-   "at": 1795696962000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Fed up of Steam's lack of action regarding AI slop? Maybe you should take a look at the 'Games Without AI' event, instead",
-   "url": "https://www.eurogamer.net/games-without-ai-steam-event",
-   "summary": "Yesterday, a new Steam event went live that claims all games featured in it have avoided AI entirely during development. The event, called 'Games Without AI', has been set up by a…",
-   "img": "https://assetsio.gnwcdn.com/games-without-AI.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795695750000,
-   "source": "Eurogamer"
-  },
-  {
-   "title": "You Can Find Lucia’s Discarded Gun From The GTA 6 Prologue",
-   "url": "https://www.gamespot.com/articles/you-can-find-lucias-discarded-gun-from-the-gta-6-prologue/",
-   "summary": "In the prologue sequence for GTA 6 , Lucia finds herself in a bit of trouble, forced to discard a handgun she'd used to hold up a store. However, it's not lost forever. You can…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Lucia_Caminos_13_242d72.jpg?w=300",
-   "at": 1795695506000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail",
-   "url": "https://www.eurogamer.net/ubisoft-reportedly-goes-all-in-on-company-wide-generative-ai-use-and-if-developers-dont-want-to-use-it-they-have-to-explain-why-in-detail",
-   "summary": "Ubisoft is clearly serious about implementing generative-AI deeply into the game development process. The French publisher now expects teams pitching new project ideas to be…",
-   "img": "https://assetsio.gnwcdn.com/Screenshot-2025-01-27-152746.png?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795695340000,
    "source": "Eurogamer"
   },
   {
@@ -799,14 +1063,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Blizzard adjusts popular World of Warcraft: Forever Battleground to stop players power-grinding rewards",
-   "url": "https://www.eurogamer.net/world-of-warcraft-forever-alterac-valley-battleground-patched",
-   "summary": "Many World of Warcraft: Forever players are currently in the midst of a substantial PvP reputation grind. However, this process has been disrupted due to a sudden change to one of…",
-   "img": "https://assetsio.gnwcdn.com/world-of-warcraft-alterac-valley.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795689970000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Anime Fool Night divulga vídeo de abertura sem créditos",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/26/fool-night-anime-video-abertura-sem-creditos",
    "summary": "Shingo Yamashita dirige o vídeo de abertura da série",
@@ -832,14 +1088,6 @@
    "at": 1795656300000,
    "cat": "geek",
    "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Mario, Pikachu, And Other Gaming Icon Balloons Won’t Be Flying This Thanksgiving",
-   "url": "https://www.gamespot.com/articles/mario-pikachu-and-other-gaming-icon-balloons-wont-be-flying-this-thanksgiving/",
-   "summary": "New York City is no stranger to bad weather, be it blazing-hot summers, snow-packed winters, or fierce windstorms. Unfortunately for countless families who have made it a holiday…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GettyImages-2248749755.jpg?w=300",
-   "at": 1795655139000,
-   "source": "GameSpot"
   },
   {
    "title": "BUCK∞TICK divulga videoclipe da música de abertura de DARK MACHINE THE ANIMATION",
@@ -869,23 +1117,6 @@
    "source": "JBox"
   },
   {
-   "title": "Anime de Kindergarten Wars ganha novo trailer e estreia em abril de 2027",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/anime-kindergarten-wars-estreia-abril-2027-trailer-arte-abertura-ado",
-   "summary": "Ado é a responsável pelo tema de abertura da série",
-   "img": "https://a.storyblok.com/f/178900/1920x1080/4267904746/kindergarten-wars-anime-shocked.png",
-   "at": 1795644300000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "How To Unlock The Alien Questline in GTA 6",
-   "url": "https://www.gamespot.com/videos/how-to-unlock-the-alien-questline-in-gta-6/",
-   "summary": "Aliens are real (In Grand Theft Auto VI) and we’re going to show you exactly how to kick off and complete the secret UFO missions in Rockstar’s open world game.",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/GTAVI_Aliens_v3.jpg?w=300",
-   "at": 1795644000000,
-   "source": "GameSpot"
-  },
-  {
    "title": "‘Frieren’ ganha minissérie especial em dezembro",
    "url": "https://www.jbox.com.br/2026/11/25/frieren-ganha-minisserie-especial-em-dezembro/",
    "summary": "'Sousou no Frieren Betsutan' conta história que se passa entre os dois primeiros capítulos do mangá, focada em Frieren e Heiter.",
@@ -893,30 +1124,6 @@
    "at": 1795640482000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "How To Talk To Your Relatives (And Their Cool-Ass Kids) About GTA 6 This Thanksgiving",
-   "url": "https://www.gamespot.com/articles/how-to-talk-to-your-relatives-and-their-cool-ass-kids-about-gta-6-this-thanksgiving/",
-   "summary": "Every Thanksgiving brings the possibility of fraught conversations. Your sister's divorce. Your second cousin's polycule. Politics . So surely one of the biggest entertainment…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261031131929_.jpg?w=300",
-   "at": 1795638589000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "How To Rob Banks In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-how-to-rob-banks/",
-   "summary": "It goes without saying that you’ll commit countless crimes in Grand Theft Auto 6 . From punching hapless civilians and stealing their cars, to threatening storeowners as you take…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-rob-banks-vaults-.jpg?w=300",
-   "at": 1795638496000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "How To Open Bank Vaults In GTA 6",
-   "url": "https://www.gamespot.com/articles/how-to-break-into-bank-vaults-in-gta-6/",
-   "summary": "From the start of Chapter 4 in Grand Theft Auto 6 , you'll get the opportunity to rob banks in GTA 6 . Previously, you could rob pawn shops, jewelry stores, and other small-time…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Jason_and_Lucia_02.0uig00eojlokf_766374.jpg?w=300",
-   "at": 1795638469000,
-   "source": "GameSpot"
   },
   {
    "title": "Now That We Draw: Divulgado trailer com prévia da música de abertura",
@@ -944,24 +1151,6 @@
    "source": "Hardware.com.br"
   },
   {
-   "title": "Dragon Ball Super: Beerus mostra como o Deus da Destruição pode ser realmente aterrorizante",
-   "url": "https://crunchyroll.com/pt-br/news/features/2026/11/25/dragon-ball-super-beerus-deus-da-destruicao-aterrorizante",
-   "summary": "Tem um motivo para até o Vegeta ficar com medo dele",
-   "img": "https://a.storyblok.com/f/178900/960x540/c8586ccdc3/dragon-ball-super-beerus.png",
-   "at": 1795626000000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Anime de Historié tem estreia marcada para o dia 8 de janeiro em trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/historie-anime-data-trailer-8-de-janeiro",
-   "summary": "Novas informações sobre a série foram divulgadas.",
-   "img": "https://a.storyblok.com/f/178900/1460x821/046bd64155/historie.jpg",
-   "at": 1795611180000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
    "title": "Now That We Draw – Comédia romântica sobre Gal Mangaka ganha trailer com OP e Data",
    "url": "https://www.intoxianime.com/2026/11/now-that-we-draw-comedia-romantica-sobre-gal-mangaka-ganha-trailer-com-op-e-data/",
    "summary": "... O post Now That We Draw – Comédia romântica sobre Gal Mangaka ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
@@ -985,60 +1174,6 @@
    "summary": "... O post The Kept Man – Romance entre Cavaleiro e Princesa ganha trailer com ED e Data apareceu primeiro em IntoxiAnime .",
    "img": "",
    "at": 1795610289000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Historie – Anime do Autor de Parasyte ganha trailer com OP e Data",
-   "url": "https://www.intoxianime.com/2026/11/historie-anime-do-autor-de-parasyte-ganha-trailer-com-op-e-data/",
-   "summary": "... O post Historie – Anime do Autor de Parasyte ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795610283000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Governo Japonês revela IA “caçadora de pirataria” para identificar site de animes",
-   "url": "https://www.intoxianime.com/2026/11/governo-japones-revela-ia-cacadora-de-pirataria-para-identificar-site-de-animes/",
-   "summary": "... O post Governo Japonês revela IA “caçadora de pirataria” para identificar site de animes apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795610281000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Anime de The Kept Man of the Princess Knight ganha data de estreia em novo trailer",
-   "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/25/the-kept-man-of-the-princess-knight-anime-trailer-data-3-janeiro-2027",
-   "summary": "Série estreia no dia 3 de janeiro de 2027.",
-   "img": "https://a.storyblok.com/f/178900/960x540/e8d02bdd40/the-kept-man-of-the-princess-knight.jpg",
-   "at": 1795605180000,
-   "cat": "geek",
-   "source": "Crunchyroll Notícias"
-  },
-  {
-   "title": "Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação",
-   "url": "https://www.intoxianime.com/2026/11/witch-on-the-holy-night-anime-sobre-jogo-dos-criadores-de-fate-series-tem-anuncio-de-continuacao/",
-   "summary": "... O post Witch on the Holy Night – Anime sobre jogo dos criadores de Fate Series tem anuncio de continuação apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522437000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer",
-   "url": "https://www.intoxianime.com/2026/11/when-trying-to-get-back-comedia-romantica-sobre-amigas-de-infancia-problematicas-ganha-trailer/",
-   "summary": "... O post When Trying to Get Back – Comédia Romântica sobre Amigas de Infância problemáticas ganha trailer apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522434000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
-   "title": "Twisted-Wonderland – 2º temporada ganha trailer com OP e ED",
-   "url": "https://www.intoxianime.com/2026/11/twisted-wonderland-2o-temporada-ganha-trailer-com-op-e-ed/",
-   "summary": "... O post Twisted-Wonderland – 2º temporada ganha trailer com OP e ED apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795522431000,
    "cat": "geek",
    "source": "IntoxiAnime"
   },
