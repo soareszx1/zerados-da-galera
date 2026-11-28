@@ -1,5 +1,5 @@
 {
- "atualizadoEm": 1795881488681,
+ "atualizadoEm": 1795892719759,
  "fontes": [
   {
    "nome": "PlayStation Blog BR",
@@ -29,7 +29,7 @@
   {
    "nome": "Hardware.com.br",
    "ok": true,
-   "itens": 14
+   "itens": 15
   },
   {
    "nome": "Eurogamer",
@@ -78,6 +78,131 @@
   }
  ],
  "itens": [
+  {
+   "title": "Mangás mais Vendidos (Novembro 16 – Novembro 22)",
+   "url": "https://www.intoxianime.com/2026/11/mangas-mais-vendidos-novembro-16-novembro-22/",
+   "summary": "... O post Mangás mais Vendidos (Novembro 16 – Novembro 22) apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795892418000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "How To Unlock Permanent Health, Stamina, And Focus Buffs In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-permanent-health-stamina-focus-increase-boosts/",
+   "summary": "Activities in Grand Theft Auto 6 tend to be rewarding in more ways than one. Some give you cash, vehicles, and weapons, while others net you new cosmetic options. Likewise, there…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-permanent-health-stamina-focus-increase-boost-.jpg?w=300",
+   "at": 1795890361000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "All Luxury Watches In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-luxury-watches-guide/",
+   "summary": "You’ll barely feel the passage of time while playing Grand Theft Auto 6 . One moment it’s still early evening and you decide to do a couple of missions. The next it’s already noon…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-luxury-watches-guide-.jpg?w=300",
+   "at": 1795890215000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "All Secret Tattoos From Magazines In GTA 6",
+   "url": "https://www.gamespot.com/articles/gta-6-magazine-tattoos-guide/",
+   "summary": "Tattoos are an empowering form of self-expression, and you can choose from various options to make your characters look more badass in Grand Theft Auto 6 . Dozens of parlors dot…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-magazine-tattoos-guide-.jpg?w=300",
+   "at": 1795889951000,
+   "source": "GameSpot"
+  },
+  {
+   "title": "No Man's Sky's QSSR upgrade on PS5 is \"night and day\", says Hello Games developer",
+   "url": "https://www.eurogamer.net/no-mans-sky-qssr-ps5-upscaling-hello-games",
+   "summary": "Hello Games has confirmed that its procedurally generated space sim, No Man's Sky , is getting a major visual upgrade on PS5 as it swaps its existing upscaling for Sony's new…",
+   "img": "https://assetsio.gnwcdn.com/Screenshot-2026-11-28-at-17.55.34.png?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795888950000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Enxurrada de jogos de IA força cancelamento do evento Atari Homebrew Awards",
+   "url": "https://www.hardware.com.br/noticias/atari-homebrew-awards-suspenso-ia/",
+   "summary": "Organizador afirma que a explosão de jogos desenvolvidos com auxílio de IA tornou impossível estabelecer critérios justos.",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/MAPnuzm_PvkkZ3A44ZV0LmRhNeydfsYGwWC_dbIO1EnBFYWg7Vnh9zm18w5AoCeDVSkgMg8LVNfcMjb2LWFQ1kQpoTPImVlF5iyipjPhTgSaCu38UiDG6_e8IxgTdNpzp9GSX7wcbzJV7WwGYFyUVZzgEY4K6Zeyk2ZJW76cgR9wAxKiY7tK-6EV6_tJfcIo.jpg",
+   "at": 1795888346000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Fuyu Yukimiya Launches Girl Meets Cakeboy Manga",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-28/fuyu-yukimiya-launches-girl-meets-cakeboy-manga/.243920",
+   "summary": "Series from Sakura's Dedication manga creator debuts on December 24",
+   "img": "",
+   "at": 1795887000000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Dead Age 2 para PC de graça hoje – resgate agora!",
+   "url": "https://www.adrenaline.com.br/games/pc-games/dead-age-2-para-pc-de-graca-hoje-resgate-agora/",
+   "summary": "Confira os detalhes do novo jogo de graça por tempo limitado na GOG e resgate-o para a sua conta até o dia 30 de novembro",
+   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/dead-age-2-640x400.webp",
+   "at": 1795886400000,
+   "source": "Adrenaline"
+  },
+  {
+   "title": "Guia de Novos Animes de Janeiro 2027",
+   "url": "https://www.intoxianime.com/2026/11/guia-de-novos-animes-de-janeiro-2027/",
+   "summary": "... O post Guia de Novos Animes de Janeiro 2027 apareceu primeiro em IntoxiAnime .",
+   "img": "",
+   "at": 1795885731000,
+   "cat": "geek",
+   "source": "IntoxiAnime"
+  },
+  {
+   "title": "Samurai Ballerina -L'étoile de Paris en fleur- Anime Movie Review",
+   "url": "https://www.animenewsnetwork.com/review/samurai-ballerina-letoile-de-paris-en-fleur/anime-movie/.243707",
+   "summary": "It’s essentially “cultural cross-pollination – the anime,” which doesn’t sound initially exciting, but it’s very entertaining!",
+   "img": "",
+   "at": 1795885200000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Entusiasta consegue rodar GTA 5 em placa de vídeo de 2007 com apenas 64 MB de VRAM",
+   "url": "https://www.hardware.com.br/games/gta-5-em-placa-de-video-de-2007/",
+   "summary": "Com ajustes extremos e overclock, uma antiga Radeon HD 2350 conseguiu executar GTA 5 até 20 FPS, mas com veículos invisíveis e gráficos que lembram a era do PS2",
+   "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Entusiasta-consegue-rodar-GTA-5-em-placa-de-video-de-2007-com-apenas-64-MB-de-VRAM.jpg",
+   "at": 1795884159000,
+   "source": "Hardware.com.br"
+  },
+  {
+   "title": "Call of Duty movie will \"probably\" feature Captain Price",
+   "url": "https://www.eurogamer.net/call-of-duty-movie-captain-price-peter-berg",
+   "summary": "Captain Price will \"probably\" pop up in the upcoming Call of Duty film. Read more",
+   "img": "https://assetsio.gnwcdn.com/cod-modern-warfare-4-captain-price.jpg?width=690&quality=85&format=jpg&auto=webp",
+   "at": 1795883620000,
+   "source": "Eurogamer"
+  },
+  {
+   "title": "Sty's The Sorcery Emperor's Aide Breaks the Second Catastrophe Novels Get Manga Adaptation",
+   "url": "https://www.animenewsnetwork.com/news/2026-11-28/sty-the-sorcery-emperor-aide-breaks-the-second-catastrophe-novels-get-manga-adaptation/.244083",
+   "summary": "Raku Okuda launched manga adaptation on Thursday",
+   "img": "",
+   "at": 1795883400000,
+   "cat": "geek",
+   "source": "Anime News Network"
+  },
+  {
+   "title": "Opinion: Zelda: Ocarina Of Time Is Still Nintendo's Best Credits Sequence",
+   "url": "https://www.nintendolife.com/features/opinion-zelda-ocarina-of-time-is-still-nintendos-best-credits-sequence",
+   "summary": "Credit where credit's due. Editor's note: It really should go without saying...so we're not going to say it. Common sense is your friend, as always. Like many people, I replayed…",
+   "img": "https://images.nintendolife.com/30dda5634c006/large.jpg",
+   "at": 1795881600000,
+   "source": "Nintendo Life"
+  },
+  {
+   "title": "How To Unlock More Hair And Makeup For Jason And Lucia In GTA 6 – Magazine Styles Guide",
+   "url": "https://www.gamespot.com/articles/gta-6-magazine-styles-jason-lucia/",
+   "summary": "Jason and Lucia are often on the run in Grand Theft Auto 6 , but that doesn’t mean they can’t pull a Mangione and look good while they’re at it. Yes, your characters can be…",
+   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-style-magazines-jason-lucia-_3c122b.jpg?w=300",
+   "at": 1795880427000,
+   "source": "GameSpot"
+  },
   {
    "title": "Controle Xbox de Gears of War: E-Day atinge menor preço histórico na Ressaca Black Friday Amazon",
    "url": "https://br.ign.com/descontos/158050/controle-xbox-de-gears-of-war-e-day-atinge-menor-preco-historico-na-ressaca-black-friday-amazon",
@@ -188,7 +313,7 @@
    "source": "Anime News Network"
   },
   {
-   "title": "It looks like GTA 6's Jason and Mandy might have had a history after all",
+   "title": "An easy-to-miss GTA 6 scene sheds new light on Mandy and Jason",
    "url": "https://www.eurogamer.net/gta-6-jason-mandy-history-lucia-meditation-dialogue",
    "summary": "Warning: spoilers for GTA 6 follow. Read more",
    "img": "https://assetsio.gnwcdn.com/gta-6-pipework-meeting-mandy.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -401,30 +526,12 @@
    "source": "Anime News Network"
   },
   {
-   "title": "'Noa Is My Senior, and My Friend' TV Anime Reveals Teaser Video",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-28/noa-is-my-senior-and-my-friend-tv-anime-reveals-teaser-video/.244268",
-   "summary": "Anime based on Enma Akiyama's manga premieres in 2027",
-   "img": "",
-   "at": 1795856400000,
-   "cat": "geek",
-   "source": "Anime News Network"
-  },
-  {
    "title": "What we've been playing - \"It is 2014 and a woman on a bus calls me disgusting and a charlatan\"",
    "url": "https://www.eurogamer.net/what-weve-been-playing-woman-on-a-bus",
    "summary": "It's nearly December. In fact, it will be next week. How do you feel about that? I'm undecided and I also have cold feet. But enough of that, welcome back to our regular feature…",
    "img": "https://assetsio.gnwcdn.com/the-binding-of-isaac-repentance-nintendo-switch-2-screenshot-art-1.jpg?width=690&quality=85&format=jpg&auto=webp",
    "at": 1795852800000,
    "source": "Eurogamer"
-  },
-  {
-   "title": "Webtoon-Based Live-Action Series Portraits of Delusion Sets January 6 Premiere on Disney+",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-28/webtoon-based-live-action-series-portraits-of-delusion-sets-january-6-premiere-on-disney/.244246",
-   "summary": "Series set in 1930s colonial Korea follows artist fleeing authorities who takes commission to paint portrait of owner of mysterious hotel",
-   "img": "",
-   "at": 1795851000000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Últimas unidades! Mouse ergonômico Logitech Lift está com preços a partir de R$ 224",
@@ -499,15 +606,6 @@
    "img": "https://images.nintendolife.com/44b2b1eff4f0d/large.jpg",
    "at": 1795825800000,
    "source": "Nintendo Life"
-  },
-  {
-   "title": "New Live-Action Hana-Kimi Series Unveils More Cast, New Trailer",
-   "url": "https://www.animenewsnetwork.com/news/2026-11-27/new-live-action-hana-kimi-series-unveils-more-cast-new-trailer/.244263",
-   "summary": "Kei Hosogai, Miu Arai, Ryōko Yūi, Yūto Adachi join series debuting next Saturday",
-   "img": "",
-   "at": 1795825123000,
-   "cat": "geek",
-   "source": "Anime News Network"
   },
   {
    "title": "Anime Inherit the Winds confirma estreia para 10 de janeiro de 2027 em novo trailer",
@@ -884,30 +982,12 @@
    "source": "IntoxiAnime"
   },
   {
-   "title": "Inherit the Winds – Anime Original de Drama e Ação ganha trailer com OP e ED e Data",
-   "url": "https://www.intoxianime.com/2026/11/inherit-the-winds-anime-original-de-drama-e-acao-ganha-trailer-com-op-e-ed-e-data/",
-   "summary": "... O post Inherit the Winds – Anime Original de Drama e Ação ganha trailer com OP e ED e Data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795784403000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
-  },
-  {
    "title": "I Was Wrong About GTA 6",
    "url": "https://www.gamespot.com/articles/i-was-wrong-about-gta-6/",
    "summary": "Some months ago, I wrote about how, even prior to its full reveal, we already knew what GTA 6 was going to be . Although not unique to the franchise by any means, GTA games had…",
    "img": "https://www.gamespot.com/wp-content/uploads/2026/11/Grand-Theft-Auto-VI_20261031144152_-Large-1.jpeg?w=300",
    "at": 1795784400000,
    "source": "GameSpot"
-  },
-  {
-   "title": "The Cat and the Dragon – 2º temporada ganha trailer com OP e Data",
-   "url": "https://www.intoxianime.com/2026/11/the-cat-and-the-dragon-2o-temporada-ganha-trailer-com-op-e-data/",
-   "summary": "... O post The Cat and the Dragon – 2º temporada ganha trailer com OP e Data apareceu primeiro em IntoxiAnime .",
-   "img": "",
-   "at": 1795784400000,
-   "cat": "geek",
-   "source": "IntoxiAnime"
   },
   {
    "title": "Jogadores de GTA 6 descobrem como corrigir bug no sistema climático que persiste após atualização",
@@ -943,14 +1023,6 @@
    "source": "Crunchyroll Notícias"
   },
   {
-   "title": "Are you a warlock tired of being summon-kicked in World of Warcraft: Forever? There's now a mod to fight back with",
-   "url": "https://www.eurogamer.net/world-of-warcraft-forever-summon-kicking-warlock-addon",
-   "summary": "Being recruited to a World of Warcraft party as a warlock, only to be swiftly kicked again after using your powers to magically summon the party members together in the same…",
-   "img": "https://assetsio.gnwcdn.com/WoW_Forever_Cinematic_Still_7.jpeg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795781350000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Anime Charisma apresenta Minato Ohse em novo trailer de personagem",
    "url": "https://crunchyroll.com/pt-br/news/latest/2026/11/27/charisma-anime-minato-ohse-trailer-personagem",
    "summary": "A adaptação do projeto multimídia estreia em 7 de janeiro",
@@ -968,44 +1040,12 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Rockstar boss \"so grateful\" to have kept GTA 6's big prologue twist a secret - and reveals Tomás' story could have been very different",
-   "url": "https://www.eurogamer.net/gta-6-rockstar-debated-changing-jason-lucias-big-secret",
-   "summary": "If you've played the first 20 minutes or so of Grand Theft Auto 6 , you'll know there's a hugely significant plot revelation there - one Rockstar somehow managed to keep entirely…",
-   "img": "https://assetsio.gnwcdn.com/GTA-6-review-21.jpg?width=690&quality=85&format=jpg&auto=webp",
-   "at": 1795779060000,
-   "source": "Eurogamer"
-  },
-  {
    "title": "Não é só o PS5: jogadores de GTA 6 também relatam consoles Xbox inutilizados",
    "url": "https://www.hardware.com.br/games/gta-6-consoles-xbox-inutilizados/",
    "summary": "Assistência técnica registra aumento na quantidade de consoles Xbox com problemas de superaquecimento, desligamentos inesperados e falhas de inicialização",
    "img": "https://www.hardware.com.br/wp-content/uploads/2026/11/Nao-e-so-o-PS5-jogadores-de-GTA-6-tambem-relatam-consoles-Xbox-inutilizados.jpg",
    "at": 1795778580000,
    "source": "Hardware.com.br"
-  },
-  {
-   "title": "How To Get A Helicopter In GTA 6",
-   "url": "https://www.gamespot.com/articles/how-to-get-a-helicopter-in-gta-6/",
-   "summary": "You’ll spend so many hours driving across the state of Leonida in Grand Theft Auto 6 , that your feet will start to ache in the real world. But there are still other modes of…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-helicopter-locations-guide-.jpg?w=300",
-   "at": 1795778067000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "How To Steal And Register Cars With Advanced Trackers In GTA 6",
-   "url": "https://www.gamespot.com/articles/gta-6-advanced-trackers-steal-register-cars/",
-   "summary": "Grand Theft Auto 6 has a massive world, and you can be sure that there are thousands of vehicles driving across the countryside at any given point in time. While the vast majority…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-advanced-trackers-steal-cars-.jpg?w=300",
-   "at": 1795777947000,
-   "source": "GameSpot"
-  },
-  {
-   "title": "All GTA 6 Book Swap Locations",
-   "url": "https://www.gamespot.com/articles/all-gta-6-book-swap-locations/",
-   "summary": "Those who grew up in the 80s and 90s would remember things known as gamebooks, the precursors to modern-day role-playing and narrative-driven games. You might recall the Choose…",
-   "img": "https://www.gamespot.com/wp-content/uploads/2026/11/gta-6-book-swap-locations-guide-.jpg?w=300",
-   "at": 1795777703000,
-   "source": "GameSpot"
   },
   {
    "title": "Xenoblade Chronicles 3 – Nintendo Switch 2 Edition ganha trailer com detalhes da nova versão",
@@ -1058,14 +1098,6 @@
    "source": "Nintendo Life"
   },
   {
-   "title": "Jupiter's Picross Series For Switch Has Officially Surpassed One Million Sales",
-   "url": "https://www.nintendolife.com/news/2026/11/jupiters-picross-series-for-switch-has-officially-surpassed-one-million-sales",
-   "summary": "The first title released on the eShop in 2017. If you've ever bought one of Jupiter Corporation's Picross games on the Switch, you've helped the series reach a major milestone.…",
-   "img": "https://images.nintendolife.com/de9b7adb8d052/large.jpg",
-   "at": 1795753800000,
-   "source": "Nintendo Life"
-  },
-  {
    "title": "Killer Shark in Another World ganhará anime",
    "url": "https://animenew.com.br/killer-shark-in-another-world-anime/",
    "summary": "O mangá Killer Shark in Another World, de kuboken (Isekai Kuimetsu no Same), terá uma adaptação em anime para televisão. O anúncio aconteceu através da Kadokawa nesta…",
@@ -1080,30 +1112,6 @@
    "summary": "Os interessados podem aproveitar as ofertas da Nuuvem e adquirir seus jogos preferidos da lista por tempo limitado",
    "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/01/Black-Myth-Wukong-ainda-nao-chegou-ao-Xbox-gracas-as-limitacoes-do-Series-S-640x400.jpg",
    "at": 1795739558000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "AO VIVO | As melhores ofertas da Black Friday 2026",
-   "url": "https://www.adrenaline.com.br/tech/black-friday-2026-ao-vivo/",
-   "summary": "Chegou a Black Friday 2026! Acompanhe nossas lives e confira as melhores promoções de hardware, games, celulares, notebooks, smart TVs e muito mais!",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/Thumb-Black-Friday-v2-site-640x400.jpg",
-   "at": 1795735304000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Criador do NVIDIA Profile Inspector lança ferramenta que reduz flicker do G-Sync em monitores OLED",
-   "url": "https://www.adrenaline.com.br/nvidia/nvidia-g-sync-tweaks-orbmu2k-flicker-oled-lfc-60-fps/",
-   "summary": "Programa gratuito adia a duplicação de quadros (LFC) até 48 FPS e evita o vaivém entre 60 Hz e 120 Hz das telas de alta taxa. Veja como usar.",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/nvidia-g-sync-tweaks-orbmu2k-flicker-oled-lfc-60-fps-1-640x400.jpg",
-   "at": 1795732604000,
-   "source": "Adrenaline"
-  },
-  {
-   "title": "Intel Core Ultra 9 4970K BFC teria 28 núcleos, 5,5 GHz e 144 MB de cache para enfrentar o Ryzen X3D",
-   "url": "https://www.adrenaline.com.br/intel/intel-core-ultra-9-4970k-bfc-28-nucleos-144-mb-cache-bllc-ryzen-x3d/",
-   "summary": "Documento vazado das amostras QS lista sete chips Nova Lake-S; só três ganham bLLC, a memória extra que mira jogos. Veja como fica a briga com a AMD.",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2026/11/intel-core-ultra-9-4970k-bfc-28-nucleos-144-mb-cache-bllc-ryzen-x3d-640x400.jpg",
-   "at": 1795732452000,
    "source": "Adrenaline"
   },
   {
@@ -1132,14 +1140,6 @@
    "at": 1795727539000,
    "cat": "geek",
    "source": "JBox"
-  },
-  {
-   "title": "Jogos de Luta para PlayStation em oferta na Black Friday",
-   "url": "https://www.adrenaline.com.br/games/playstation/jogos-de-luta-para-playstation-em-oferta-na-black-friday/",
-   "summary": "Veja a lista com os principais jogos para PS5 e PS4 na Promoção de Black Friday na PS Store, válida até 1 de dezembro",
-   "img": "https://www.adrenaline.com.br/wp-content/uploads/2025/06/marvel-tokon-fighting-souls-game-640x400.webp",
-   "at": 1795726800000,
-   "source": "Adrenaline"
   },
   {
    "title": "Historie: Novo trailer divulgado confirma estreia da adaptação em janeiro",
